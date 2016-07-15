@@ -1,0 +1,4 @@
+E:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.PassvationMode\bin\Debug\HebianGu.FrameWorkMode.PassvationMode.exe
+E:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.PassvationMode\bin\Debug\HebianGu.FrameWorkMode.PassvationMode.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.PassvationMode\obj\Debug\HebianGu.FrameWorkMode.PassvationMode.exe
+E:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.PassvationMode\obj\Debug\HebianGu.FrameWorkMode.PassvationMode.pdb

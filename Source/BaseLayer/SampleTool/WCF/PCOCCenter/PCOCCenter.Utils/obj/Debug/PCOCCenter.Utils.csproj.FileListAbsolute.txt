@@ -22,3 +22,8 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.P
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\PCOCCenter.Utils.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\OPT.PCOCCenter.Utils.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\OPT.PCOCCenter.Utils.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Utils.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Utils.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\PCOCCenter.Utils.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\OPT.PCOCCenter.Utils.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Utils\obj\Debug\OPT.PCOCCenter.Utils.pdb

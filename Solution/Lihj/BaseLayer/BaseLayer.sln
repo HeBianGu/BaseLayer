@@ -453,6 +453,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Net", "..\..\..\Sourc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Faker.Mono", "..\..\..\Source\OpenFrame\Faker.Net\Faker.Mono.csproj", "{3E4DAE88-371F-41DD-B8DC-0002025CA569}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HebianGu.FrameWorkMode.PassvationMode", "..\..\..\Source\FrameWorkMode\HebianGu.FrameWorkMode.PassvationMode\HebianGu.FrameWorkMode.PassvationMode.csproj", "{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -1643,6 +1645,16 @@ Global
 		{3E4DAE88-371F-41DD-B8DC-0002025CA569}.Release|Mixed Platforms.Build.0 = Release|x86
 		{3E4DAE88-371F-41DD-B8DC-0002025CA569}.Release|x86.ActiveCfg = Release|x86
 		{3E4DAE88-371F-41DD-B8DC-0002025CA569}.Release|x86.Build.0 = Release|x86
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1827,6 +1839,7 @@ Global
 		{6A5F3318-9021-47D3-ADE5-60880DBFECE7} = {3ED004C7-3A1B-482A-92FF-28C742B77101}
 		{2B927364-63F5-4401-A9CC-46FD994451C3} = {3ED004C7-3A1B-482A-92FF-28C742B77101}
 		{87CBF098-9B34-4DC4-986C-69F3BC8A6D2E} = {3ED004C7-3A1B-482A-92FF-28C742B77101}
+		{E4E91017-42A5-4458-8B69-D5F0F15B5DA7} = {3ED004C7-3A1B-482A-92FF-28C742B77101}
 		{F4E27022-496C-48E5-8986-F68355C2ECB3} = {3C4412CC-86E4-44CD-95F7-35861E9F6D35}
 		{3E4DAE88-371F-41DD-B8DC-0002025CA569} = {3C4412CC-86E4-44CD-95F7-35861E9F6D35}
 	EndGlobalSection

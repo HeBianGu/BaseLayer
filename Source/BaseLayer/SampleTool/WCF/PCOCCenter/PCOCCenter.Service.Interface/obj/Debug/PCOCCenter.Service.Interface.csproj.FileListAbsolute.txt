@@ -25,3 +25,8 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.P
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb
