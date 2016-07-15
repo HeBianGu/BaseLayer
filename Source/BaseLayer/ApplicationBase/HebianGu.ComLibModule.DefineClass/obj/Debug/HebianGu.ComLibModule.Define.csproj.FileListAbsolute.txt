@@ -1,0 +1,13 @@
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.Define.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.Define.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DefineClass.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DefineClass.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.Define.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DefineClass\obj\Debug\HebianGu.ComLibModule.DefineClass.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DefineClass.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DefineClass.pdb

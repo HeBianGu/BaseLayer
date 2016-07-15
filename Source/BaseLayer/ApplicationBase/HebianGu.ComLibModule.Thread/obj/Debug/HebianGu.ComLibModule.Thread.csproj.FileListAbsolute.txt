@@ -1,0 +1,15 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\bin\Debug\HebianGu.ComLibModule.Thread.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\bin\Debug\HebianGu.ComLibModule.Thread.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.ThreadEx.ProgBackWorkForm.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Thread.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Thread.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Thread.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Thread.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.ThreadEx.ProgBackWorkForm.resources
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\obj\Debug\HebianGu.ComLibModule.Thread.pdb

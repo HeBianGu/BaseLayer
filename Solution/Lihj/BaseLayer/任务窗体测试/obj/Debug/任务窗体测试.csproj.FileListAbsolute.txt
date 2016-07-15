@@ -1,0 +1,13 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\任务窗体测试.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\任务窗体测试.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\任务窗体测试.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.Form1.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.Properties.Resources.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\HebianGu.ComLibModule.Task.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\HebianGu.ComLibModule.Task.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\obj\Debug\任务窗体测试.Form2.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务窗体测试\bin\Debug\HebianGu.ComLibModule.Task.xml

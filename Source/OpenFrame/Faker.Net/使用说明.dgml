@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="开发的时候是不是为测试数据烦恼？Faker.Net可以非常方便帮你生成大批量测试数据。例如人员表里面的姓名、性别什么的。" Bounds="-58.4000000000001,-92,686.86,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

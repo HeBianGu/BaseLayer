@@ -1,0 +1,8 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\bin\Debug\HebianGu.ComLibModule.Stream.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\bin\Debug\HebianGu.ComLibModule.Stream.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\obj\Debug\HebianGu.ComLibModule.Stream.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\obj\Debug\HebianGu.ComLibModule.Stream.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Stream.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Stream.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\obj\Debug\HebianGu.ComLibModule.Stream.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Stream\obj\Debug\HebianGu.ComLibModule.Stream.pdb

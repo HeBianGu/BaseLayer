@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="0958e4a3-75d7-4d69-8957-6fdb35a581aa" name="产品模块" linkedPackageId="005f33dd-ba5b-4fc4-ad8c-4df6cf4a13b4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="72766dba-56f5-4898-abf8-a24b0d501c96" name="IBxFunctionModule" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c69d6a57-62c7-42e7-a75b-30576ee0be65" />
+        <generalsInternal>
+          <generalization Id="0fed2cb3-54fb-4fd9-9ca7-3f0f67a17969" isSubstitutable="false">
+            <interfaceMoniker Id="ae23f921-3690-4ae5-81bb-87af111e0c40" LastKnownName="IBxModule" />
+            <elementDefinition Id="b7555d8c-0202-4959-930a-60c266e09a53" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="ae23f921-3690-4ae5-81bb-87af111e0c40" name="IBxModule" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03cc4c7f-d876-49a9-b2f9-65fedc4c598f" />
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="005f33dd-ba5b-4fc4-ad8c-4df6cf4a13b4" name="ModelingProject1">
+    <elementDefinition Id="c658d0d1-1370-40c9-8b02-510bb8770de4" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6e01d70b-8297-4638-b019-7832708d0287">
+        <profileInstance Id="41188f89-a96b-473a-837b-537f9afcdcfc" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5804adf7-3f70-4415-919b-a5c100df132f">
+        <profileInstance Id="928108f3-ab6d-4ac3-93f6-4d20dda915f3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

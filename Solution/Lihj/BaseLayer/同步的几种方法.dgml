@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="9f577a92-712f-4441-9296-d9ad63a465d01" Bounds="277.546560749661,133.655384885359,164,25.8366666666666" Label="　九、同步事件和等待句柄" UseManualLocation="True" />
+    <Node Id="Http://www.51csharp.com/kaifajiqiao/169.html" Category="Comment" Bounds="83.5933333311747,-15.5816198221843,173.266666666667,41.6733333333333" Label="http://www.51csharp.com/kaifajiqiao/169.html" UseManualLocation="True" />
+    <Node Id="一、volatile关键字" Bounds="229.548593992508,62.8177066001356,121.423333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="七、SynchronizationAttribute" Bounds="-30.5064479441355,64.7864549298374,187.593333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="三、System.Threading.Interlocked" Bounds="-91.8813920084635,250.94810139974,214.013333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="二、lock关键字" Bounds="83.3977354111541,315.640260416667,103.373333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="五、Mutex" Bounds="-31.2124784060269,136.50985,80.48,25.8366666666666" UseManualLocation="True" />
+    <Node Id="八、MethodImplAttribute" Bounds="302.723116334011,228.150005169627,166.823333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="六、ReaderWriterLock" Bounds="216.771068742508,308.761393379887,146.533333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="同步" Category="Category1" Bounds="163.419087347536,166.900967019299,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="四、Monitor" Bounds="-16.1199399820964,195.111334733073,90.6233333333333,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Http://www.51csharp.com/kaifajiqiao/169.html" Target="同步" Bounds="172.398184589937,26.091713511149,13.7417100594806,131.857733517375" />
+    <Link Source="同步" Target="9f577a92-712f-4441-9296-d9ad63a465d01" Bounds="213.419087347536,161.208425652009,70.7971483997518,13.7540300524501" />
+    <Link Source="同步" Target="一、volatile关键字" Bounds="201.059143189362,95.0872432587617,70.2667639176344,71.8137237605373" />
+    <Link Source="同步" Target="七、SynchronizationAttribute" Bounds="86.0928698852437,96.3134564579161,86.4963770072497,70.5875105613829" />
+    <Link Source="同步" Target="三、System.Threading.Interlocked" Bounds="49.8589810322537,191.62157320673,114.225417496167,55.3990870474585" />
+    <Link Source="同步" Target="二、lock关键字" Bounds="142.754446675414,192.737633685966,41.0324064668549,114.430808270637" />
+    <Link Source="同步" Target="五、Mutex" Bounds="58.1410845824119,157.748619323433,105.278002765124,17.835376418913" />
+    <Link Source="同步" Target="八、MethodImplAttribute" Bounds="213.419087347536,187.563885064028,122.417571634401,37.9229301474366" />
+    <Link Source="同步" Target="六、ReaderWriterLock" Bounds="197.672856014536,192.737633685966,77.8700756487662,108.707233790049" />
+    <Link Source="同步" Target="四、Monitor" Bounds="83.3653820424418,184.248559180436,80.0537053050942,14.1831432368399" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

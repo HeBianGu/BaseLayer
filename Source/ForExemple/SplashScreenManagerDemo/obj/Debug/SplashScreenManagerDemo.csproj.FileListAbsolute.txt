@@ -1,0 +1,12 @@
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\bin\Debug\SplashScreenManagerDemo.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\bin\Debug\SplashScreenManagerDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\bin\Debug\SplashScreenManagerDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.WaitForm1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.SplashScreen1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.exe.licenses
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\SplashScreenManagerDemo\obj\Debug\SplashScreenManagerDemo.csprojResolveAssemblyReference.cache

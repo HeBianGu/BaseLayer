@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Diagnostics.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Diagnostics.DiagContext">
+			<summary>
+            Provides diagnostics tracing.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.Create(System.String)">
+			<summary>
+            For internal use only.
+            Initializes and returns a new instance of the <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> class.
+            </summary>
+			<param name="displayName">The name used to identify the logging output and for any dynamic trace switches.</param>
+			<returns>A new <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> instance.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.RaiseException(System.String)">
+			<summary>
+            Custom exception raising procedure
+            </summary>
+			<param name="errorMessage">String with an error message</param>
+			<remarks>This overload will create a new custom exception and publish it before throwing</remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.RaiseException(System.String,System.Exception)">
+			<summary>
+            Custom exception raising procedure
+            </summary>
+			<param name="errorMessage">String with an error message</param>
+			<param name="inner">original <see cref="T:System.Exception" /> instance</param>
+			<remarks>This overload will also publish the exception obtained before raising it.</remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.RaiseException(System.String,System.Exception,System.Boolean,System.Boolean)">
+			<summary>
+            Custom exception raising procedure
+            </summary>
+			<param name="errorMessage">supplied string with an error message</param>
+			<param name="inner">original <see cref="T:System.Exception" /> instance</param>
+			<param name="publish">publish with the registered publishers if true</param>
+			<param name="wrap">will wrap the supplied <see cref="T:System.Exception" /> into custom <see cref="T:GrapeCity.ActiveReports.Diagnostics.DdrException" /></param>
+			<remarks>If the inner exception should be thrown 'as is', errorMessage will be added to the inner exception Source???</remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.PublishException(System.Exception)">
+			<remarks>
+            These methods don't handle the exceptions per se, although they may (theoretically) through
+            exceptions on their own.
+            </remarks>
+			<summary>
+            Exception publishing procedure.
+            </summary>
+			<param name="ex">
+				<see cref="T:System.Exception" /> instances</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.PublishException(System.Exception,System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Exception publishing procedure.
+            </summary>
+			<param name="ex">
+				<see cref="T:System.Exception" /> instances</param>
+			<param name="additionalInfo">
+				<see cref="T:System.Collections.Specialized.NameValueCollection" /> 
+            of additional data that should be published along with the exception information.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String)">
+			<summary>
+            Traces the provided error message.
+            </summary>
+			<param name="message">The message to trace.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String,System.Object[])">
+			<summary>
+            Traces the provided error message using the provided format arguments.
+            </summary>
+			<param name="format">The message to trace.</param>
+			<param name="args">Arguments as that will be replaced in the <paramref name="format" /> string with {0} placeholders.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceErrorIfNot(System.Boolean,System.String,System.Object[])">
+			<summary>
+            Traces the provided error message using the provided format arguments.
+            </summary>
+			<param name="assertion">The assertion to validate. The message will be traced if this condition is not true.</param>
+			<param name="format">The message to trace.</param>
+			<param name="args">Arguments as that will be replaced in the <paramref name="format" /> string with {0} placeholders.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceErrorIfNot(System.Boolean,System.String)">
+			<summary>
+            Traces the provided error message if the specified condition is false.
+            </summary>
+			<param name="assertion">The assertion to validate. The message will be traced if this condition is not true.</param>
+			<param name="message">The error message to trace.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceWarning(System.String)">
+			<summary>
+            Traces the provided warning message.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceWarning(System.String,System.Object[])">
+			<summary>
+            Traces the provided warning message using the provided format arguments.
+            </summary>
+			<param name="format"></param>
+			<param name="args"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceInformation(System.String)">
+			<summary>
+            Traces the provided informational message.
+            </summary>
+			<param name="message"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceInformation(System.String,System.Object[])">
+			<summary>
+            Traces the provided informational message using the provided format arguments.
+            </summary>
+			<param name="format"></param>
+			<param name="args"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceVerbose(System.String)">
+			<summary>
+            Traces the provided verbose message.
+            </summary>
+			<param name="message"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceVerbose(System.String,System.Object[])">
+			<summary>
+            Traces the provided verbose message using the provided format arguments.
+            </summary>
+			<param name="format"></param>
+			<param name="args"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.Assert(System.Boolean,System.String)">
+			<summary>
+            Checks for condition and traces the provided message using <see cref="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String,System.Object[])" /> method if the condition is false.
+            </summary>
+			<param name="condition">condition to test (if true prevents the message from being traced)</param>
+			<param name="message">The message to trace.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.Assert(System.Boolean,System.String,System.Object[])">
+			<summary>
+            Checks for condition and traces the provided message using <see cref="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String,System.Object[])" /> method if the condition is false.
+            </summary>
+			<param name="condition">condition to test (if true prevents the message from being traced)</param>
+			<param name="message">The message to trace.</param>
+			<param name="args">An array of objects to write in the assertion using format.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.Fail(System.String)">
+			<summary>
+            Emits the specified error message using <see cref="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String,System.Object[])" />.
+            </summary>
+			<param name="message">A message to emit</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.Fail(System.String,System.Object[])">
+			<summary>
+            Emits the specified error message using <see cref="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.TraceError(System.String,System.Object[])" />.
+            </summary>
+			<param name="message">A message to emit</param>
+			<param name="args">An array of objects to write in the fail message using format.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.DiagContext.CreateTimer(System.Boolean)">
+			<summary>
+            Creates a new <see cref="T:GrapeCity.ActiveReports.Diagnostics.ITimer" /> object and returns it.
+            </summary>
+			<param name="start">True to start the timer</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Data">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> that Data components should use to register diagnostic information.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Summaries">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> that summary calculation code should use to register diagnostic information.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.ReportObjectModel">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> that <see cref="N:GrapeCity.ActiveReports.ReportObjectModel" /> components should use to register diagnostic information.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Layout">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for layout engine.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Designer">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for core designer.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Validation">
+			<summary>
+            Returns an instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for validation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.HtmlRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Html rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.EmailRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Email rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.PdfRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Pdf rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.WordRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Word rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.ExcelTransformationDevice">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Excel transformation device.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.XmlRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Xml rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.FormattedText">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the formatted text report item.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.GraphicsRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Graphics rendering extension.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Render">
+			<summary>
+            The instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> used by the core rendering processor.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.Licensing">
+			<summary>
+            The instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> used by the licensing process.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.PagingRuntime">
+			<summary>
+            The instance of <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> used by the paging runtime.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.DiagContext.RdfRenderingExtension">
+			<summary>
+            Returns an instance of a <see cref="T:GrapeCity.ActiveReports.Diagnostics.DiagContext" /> for the Rdf rendering extension.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Diagnostics.ITimer">
+			<summary>
+            Defines the interface for a performance timer class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.ITimer.Start">
+			<summary>
+            Starts the timer.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Diagnostics.ITimer.Stop">
+			<summary>
+            Stops the timer and returns the elapsed time in seconds.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Diagnostics.ITimer.Elapsed">
+			<summary>
+            Returns the number of seconds elapsed since <see cref="M:GrapeCity.ActiveReports.Diagnostics.ITimer.Start" /> was called.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.IXmlTraceProvider">
+			<summary>
+For internal use only.
+</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.IXmlTraceProvider.ToXmlString(System.Xml.XmlWriter)">
+			<summary>
+For internal use only.
+</summary>
+		</member>
+	</members>
+</doc>

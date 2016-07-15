@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="57c8f837-62a8-4b97-99b6-85e01f445d171" Bounds="-182,-260.574349177498,550.676666666667,611.793333333333" Label="Server App.config&#xD;&#xA;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;configuration&gt;&#xD;&#xA;  &lt;system.serviceModel&gt;&#xD;&#xA;    &lt;services&gt;&#xD;&#xA;      &lt;service behaviorConfiguration=&quot;NewBehavior&quot; name=&quot;Learn.Library.WCF.MyService&quot;&gt;&#xD;&#xA;        &lt;host&gt;&#xD;&#xA;          &lt;baseAddresses&gt;&#xD;&#xA;            &lt;add baseAddress=&quot;http://localhost:8080/MyService&quot; /&gt;&#xD;&#xA;          &lt;/baseAddresses&gt;&#xD;&#xA;        &lt;/host&gt;&#xD;&#xA;        &lt;endpoint address=&quot;&quot; binding=&quot;basicHttpBinding&quot;&#xD;&#xA;          contract=&quot;Learn.Library.WCF.IContract&quot; /&gt;&#xD;&#xA;        &lt;endpoint address=&quot;mex&quot; binding=&quot;mexHttpBinding&quot;&#xD;&#xA;          contract=&quot;IMetadataExchange&quot; /&gt;&#xD;&#xA;      &lt;/service&gt;&#xD;&#xA;    &lt;/services&gt;&#xD;&#xA;    &lt;behaviors&gt;&#xD;&#xA;      &lt;serviceBehaviors&gt;&#xD;&#xA;        &lt;behavior name=&quot;NewBehavior&quot;&gt;&#xD;&#xA;          &lt;serviceMetadata httpGetEnabled=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;/behavior&gt;&#xD;&#xA;      &lt;/serviceBehaviors&gt;&#xD;&#xA;    &lt;/behaviors&gt;&#xD;&#xA;  &lt;/system.serviceModel&gt;&#xD;&#xA;&lt;/configuration&gt;&#xD;&#xA;&#xD;&#xA;Client App.config&#xD;&#xA;&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xD;&#xA;&lt;configuration&gt;&#xD;&#xA;  &lt;system.serviceModel&gt;&#xD;&#xA;    &lt;client&gt;&#xD;&#xA;      &lt;endpoint address=&quot;http://localhost:8080/MyService&quot; binding=&quot;basicHttpBinding&quot;&#xD;&#xA;        contract=&quot;ConsoleApplication1.localhost.ICalculate&quot;&#xD;&#xA;        name=&quot;BasicHttpBinding_ICalculate&quot; /&gt;&#xD;&#xA;    &lt;/client&gt;&#xD;&#xA;  &lt;/system.serviceModel&gt;&#xD;&#xA;&lt;/configuration&gt;" UseManualLocation="True" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

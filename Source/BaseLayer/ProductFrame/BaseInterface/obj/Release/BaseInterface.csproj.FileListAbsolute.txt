@@ -1,0 +1,4 @@
+E:\6.x\6.2\DEV\Product\Bin\BaseInterface.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\BaseInterface\obj\Release\BaseInterface.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\BaseInterface\obj\Release\BaseInterface.pdb
+E:\6.x\6.2\DEV\Product\Bin\BaseInterface.pdb

@@ -1,0 +1,8 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\bin\Debug\HebianGu.ComLibModule.Math.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\bin\Debug\HebianGu.ComLibModule.Math.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.Math.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.Math.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Math.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Math.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.Math.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.Math.pdb

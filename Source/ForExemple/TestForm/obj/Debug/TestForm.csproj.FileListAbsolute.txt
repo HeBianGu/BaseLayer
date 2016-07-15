@@ -1,0 +1,11 @@
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\bin\Debug\TestForm.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\bin\Debug\TestForm.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\bin\Debug\TestForm.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\bin\Debug\HebianGu.ComLibModule.Control.dll
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\bin\Debug\HebianGu.ComLibModule.Control.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\TestForm\obj\Debug\TestForm.pdb

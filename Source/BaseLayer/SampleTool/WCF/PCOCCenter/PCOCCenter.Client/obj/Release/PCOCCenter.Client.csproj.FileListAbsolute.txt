@@ -1,0 +1,9 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.Client.dll
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.Client.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\PCOCCenter.Client.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\OPT.PCOCCenter.Client.FileTransferForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\OPT.PCOCCenter.Client.LoginForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\OPT.PCOCCenter.Client.Properties.Resources.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\PCOCCenter.Client.csproj.GenerateResource.Cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\OPT.PCOCCenter.Client.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Release\OPT.PCOCCenter.Client.pdb

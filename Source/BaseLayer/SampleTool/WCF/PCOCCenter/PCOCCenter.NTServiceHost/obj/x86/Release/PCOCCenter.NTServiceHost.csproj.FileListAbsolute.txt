@@ -1,0 +1,8 @@
+E:\PCOCPlatform\Product\Bin\OPT.PCOCCenter.NTServiceHost.exe.config
+E:\PCOCPlatform\Product\Bin\OPT.PCOCCenter.NTServiceHost.exe
+E:\PCOCPlatform\Product\Bin\OPT.PCOCCenter.NTServiceHost.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Release\PCOCCenter.NTServiceHost.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Release\OPT.PCOCCenter.NTServiceHost.ProjectInstaller.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Release\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Release\OPT.PCOCCenter.NTServiceHost.exe
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Release\OPT.PCOCCenter.NTServiceHost.pdb

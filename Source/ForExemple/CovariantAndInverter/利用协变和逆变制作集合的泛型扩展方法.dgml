@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="6f591929-86d8-4b7c-9127-ad1c6da100cb1" Bounds="0,2.9631747124678,676.396666666667,360.52" Label="    /// &lt;summary&gt; 合并数组为一个关键字 &lt;/summary&gt;&#xD;&#xA;    public static class ItemExtend&#xD;&#xA;    {&#xD;&#xA;        public static ItemsKey&lt;T&gt; CombineItem&lt;T&gt;(this IEnumerable&lt;ItemsKey&lt;T&gt;&gt; itemKey) where T : Item, new()&#xD;&#xA;        {&#xD;&#xA;            ItemsKey&lt;T&gt; itemAll = null;&#xD;&#xA;&#xD;&#xA;            foreach (var item in itemKey)&#xD;&#xA;            {&#xD;&#xA;                if (itemAll == null)&#xD;&#xA;                {&#xD;&#xA;                    itemAll = item;&#xD;&#xA;                }&#xD;&#xA;                else&#xD;&#xA;                {&#xD;&#xA;                    itemAll.Items.AddRange(item.Items);&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;&#xD;&#xA;            return itemAll;&#xD;&#xA;        }&#xD;&#xA;&#xD;&#xA;    }" />
+    <Node Id="PublicClassWPIMULT:ItemsKey&lt;WPIMULT.Item&gt;" Bounds="190.732902869176,462.780241646035,326.083333333333,25.24" Label="    public class WPIMULT : ItemsKey&lt;WPIMULT.Item&gt;" UseManualLocation="True" />
+    <Node Id="ab770fd5-2ff4-448c-aa9c-e8d57bc817a31" Bounds="546.816236202509,393.483274712468,422.706666666667,177.64" Label="List&lt;WPIMULT&gt; wpimult = this.FindAll&lt;WPIMULT&gt;();&#xD;&#xA;            this.DeleteAll&lt;WPIMULT&gt;();&#xD;&#xA;            if (wpimult != null &amp;&amp; wpimult.Count &gt; 0)&#xD;&#xA;            {&#xD;&#xA;                IEnumerable&lt;ItemsKey&lt;WPIMULT.Item&gt;&gt; items = wpimult;&#xD;&#xA;&#xD;&#xA;                items.CombineItem();&#xD;&#xA;                //wpimult.CombineItem&lt;WPIMULT&gt;();&#xD;&#xA;&#xD;&#xA;                this.AddRange(wpimult);&#xD;&#xA;            }" />
+    <Node Id="定义集合泛型方法" Category="Comment" Bounds="268.198333333333,-52.2769252875323,140,25.24" Label="定义集合泛型扩展方法" />
+    <Node Id="通过协变调用扩展方法" Category="Comment" Bounds="707.198333333333,222.88,140,25.24" />
+  </Nodes>
+  <Links>
+    <Link Source="6f591929-86d8-4b7c-9127-ad1c6da100cb1" Target="ab770fd5-2ff4-448c-aa9c-e8d57bc817a31" Bounds="591.321200805921,363.483164558411,34.7954310541612,24.7793669316941" />
+    <Link Source="ab770fd5-2ff4-448c-aa9c-e8d57bc817a31" Target="PublicClassWPIMULT:ItemsKey&lt;WPIMULT.Item&gt;" Bounds="525.814925249885,478.336978426876,21.0013581160003,0.358494148485704" />
+    <Link Source="定义集合泛型方法" Target="6f591929-86d8-4b7c-9127-ad1c6da100cb1" Bounds="338.198333333333,-27.0369252875323,5.6843418860808E-14,21.0001000000001" />
+    <Link Source="通过协变调用扩展方法" Target="ab770fd5-2ff4-448c-aa9c-e8d57bc817a31" Bounds="765.70951842112,248.120015258789,10.5157724529181,136.389891191335" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

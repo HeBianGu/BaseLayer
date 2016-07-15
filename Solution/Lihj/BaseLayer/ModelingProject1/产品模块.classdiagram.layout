@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="产品模块">
+  <logicalClassDesignerModelMoniker Id="0958e4a3-75d7-4d69-8957-6fdb35a581aa" />
+  <nestedChildShapes>
+    <interfaceShape Id="addd79fc-2592-4dee-ad72-3e0cc4145153" absoluteBounds="0.625, 2.75, 2.125, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="72766dba-56f5-4898-abf8-a24b0d501c96" LastKnownName="IBxFunctionModule" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="eb22a26c-1d23-493a-b033-19e0097f7ff2" absoluteBounds="0.63999999999999968, 3.14, 2.0949999999999998, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="af962bf3-016f-404d-a547-4a4c5f6659ed" absoluteBounds="0.63999999999999968, 3.376318359375, 2.0949999999999998, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <interfaceShape Id="3e2b1275-0f5d-4ab3-988c-4a8b8b482639" absoluteBounds="3, 0.625, 1.5, 0.95263671875" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="ae23f921-3690-4ae5-81bb-87af111e0c40" LastKnownName="IBxModule" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3d29f096-d7b5-4142-adf7-19d1a109f762" absoluteBounds="3.015, 1.0150000000000001, 1.4700000000000002, 0.226318359375" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3d907f12-f526-451e-8b8d-fda92f722a6c" absoluteBounds="3.015, 1.251318359375, 1.4700000000000002, 0.226318359375" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <generalizationConnector edgePoints="[(1.6875 : 2.75); (1.6875 : 1.95263671875); (3.75 : 1.95263671875); (3.75 : 1.57763671875)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110">
+      <generalizationMoniker Id="0fed2cb3-54fb-4fd9-9ca7-3f0f67a17969" />
+      <relativeChildShapes />
+      <nodes>
+        <interfaceShapeMoniker Id="addd79fc-2592-4dee-ad72-3e0cc4145153" />
+        <interfaceShapeMoniker Id="3e2b1275-0f5d-4ab3-988c-4a8b8b482639" />
+      </nodes>
+    </generalizationConnector>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

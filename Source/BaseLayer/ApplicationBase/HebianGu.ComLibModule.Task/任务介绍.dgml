@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="TaskContinueOptions枚举中的值可以指定连续任务只有在起始任务成功或者失败时启动" Bounds="340.159479573568,-216.211119083659,491.593333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="　如果父任务在子任务之前结束，父任务的状态就会显示为WatingForChildrenToComplete。子任务的任务完成后，父任务的状态就是RanToCompletion" Bounds="-59.7214134724935,291.440187174479,342.786666666667,25.8366666666666" Label="父任务的状态就会显示为WatingForChildrenToComplete。" UseManualLocation="True" />
+    <Node Id="一个任务启动一个新任务时，就启动了一个父/子层次结构" Bounds="-187.233613789876,115.777673176575,325.126666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="任务Task" Category="Category1" Bounds="53.0403267288668,-0.956075432871611,69.6,25.8366666666667" UseManualLocation="True" />
+    <Node Id="任务处理程序不带参数或者带一个Object类型的参数" Bounds="21.5533314005534,-160.374352416992,297.946666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="任务的层次结构" Category="Category2" Bounds="-68.840522664388,59.940906509908,111.036666666667,25.8366666666667" Label="3、务的层次结构" UseManualLocation="True" />
+    <Node Id="创建连续的任务" Category="Category2" Bounds="172.050002479553,3.49999972025553,123.036666666667,25.8366666666667" Label="2、创建连续的任务" UseManualLocation="True" />
+    <Node Id="启动任务" Category="Category2" Bounds="-68.8405208587646,-80.4559722628859,87.0366666666667,25.8366666666667" Label="1、启动任务" UseManualLocation="True" />
+    <Node Id="如果任务使用子任务创建了其它任务，子任务就优先于其它任务" Bounds="-166.5,-222.711113944499,356,25.8366666666667" UseManualLocation="True" />
+    <Node Id="子任务的任务完成后，父任务的状态就是RanToCompletion" Bounds="-309.344746805827,253.542726236979,219.623333333333,25.8366666666667" Label="父任务的状态就是RanToCompletion" UseManualLocation="True" />
+    <Node Id="调用SecondTask()方法的新任务应该在t1任务完成后立即启动过，在第一个任务结束时，还可以启动多个任务" Bounds="288.499984944661,-104.537585750326,599.573333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="连续处理程序有一个Task类型的参数，可以访问起始任务的相关信息" Bounds="166.893046569824,171.614439843241,381.6,25.8366666666667" UseManualLocation="True" />
+    <Node Id="连续的任务通过在任务上调用ContinueWith()方法来定义" Bounds="425.5,-37.6658080037435,323.586666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="通过创建任务，我们可以指定在一个任务完成过后，开始运行另外一个指定的任务。" Bounds="380.5,87.4345998616536,464,25.8366666666667" UseManualLocation="True" />
+    <Node Id="默认情况下，任务是异步运行的。。。" Bounds="-274.446670532227,-141.29273892924,224,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="一个任务启动一个新任务时，就启动了一个父/子层次结构" Target="　如果父任务在子任务之前结束，父任务的状态就会显示为WatingForChildrenToComplete。子任务的任务完成后，父任务的状态就是RanToCompletion" Bounds="-14.6435891282495,141.614339843241,110.770508005948,142.716106347621" Label="如果父任务在子任务之前结束" LabelBounds="-116.838277566079,214.198680864071,156,15.8366666666667" />
+    <Link Source="一个任务启动一个新任务时，就启动了一个父/子层次结构" Target="子任务的任务完成后，父任务的状态就是RanToCompletion" Bounds="-176.066514394351,141.614339843241,134.999218160385,106.358676701193" Label="子任务的任务完成后" LabelBounds="-107.329192049148,196.36468611031,108,15.8366666666667" />
+    <Link Source="任务Task" Target="任务的层次结构" Bounds="15.8485594767948,24.8805908377965,50.5317328366393,30.4186789667424" />
+    <Link Source="任务Task" Target="创建连续的任务" Bounds="122.640322494507,13.0263729402075,40.4138852822325,1.23577698698913" />
+    <Link Source="任务Task" Target="启动任务" Bounds="0.430479678688323,-49.4456544439976,69.0215040776973,48.4895786151274" />
+    <Link Source="任务的层次结构" Target="一个任务启动一个新任务时，就启动了一个父/子层次结构" Bounds="-20.2523114025844,85.7775731765747,4.30464010672939,21.1804066926791" />
+    <Link Source="创建连续的任务" Target="连续处理程序有一个Task类型的参数，可以访问起始任务的相关信息" Bounds="243.106389128711,29.3366663869222,99.7028122521462,135.037434925307" Label="t1.ContinueWith(SecondTask)" LabelBounds="121.312164470115,98.0433377489251,170.036666666667,15.8366666666667" />
+    <Link Source="创建连续的任务" Target="连续的任务通过在任务上调用ContinueWith()方法来定义" Bounds="295.08666982015,-10.7887619472581,172.263777277297,20.0477142641343" />
+    <Link Source="创建连续的任务" Target="通过创建任务，我们可以指定在一个任务完成过后，开始运行另外一个指定的任务。" Bounds="291.889522030893,29.3366663869222,253.502273134432,56.1515825605662" Label="t1.ContinueWith(SecondTask)" LabelBounds="409.825118540028,37.5746438340681,170.036666666667,15.8366666666667" />
+    <Link Source="启动任务" Target="任务处理程序不带参数或者带一个Object类型的参数" Bounds="6.33561873312934,-131.137344453916,124.200314416847,50.6813721910303" />
+    <Link Source="启动任务" Target="如果任务使用子任务创建了其它任务，子任务就优先于其它任务" Bounds="-21.9783271834757,-188.161591144995,27.8791805639789,107.705618882109" />
+    <Link Source="启动任务" Target="默认情况下，任务是异步运行的。。。" Bounds="-125.102383740047,-111.806208997791,70.6626115991905,31.3502367349054" />
+    <Link Source="调用SecondTask()方法的新任务应该在t1任务完成后立即启动过，在第一个任务结束时，还可以启动多个任务" Target="TaskContinueOptions枚举中的值可以指定连续任务只有在起始任务成功或者失败时启动" Bounds="586.413517180832,-181.376411473475,1.60354283557763,76.8388230742233" />
+    <Link Source="连续的任务通过在任务上调用ContinueWith()方法来定义" Target="调用SecondTask()方法的新任务应该在t1任务完成后立即启动过，在第一个任务结束时，还可以启动多个任务" Bounds="587.485224509898,-69.7019144607053,0.475865862635942,32.0361055032875" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

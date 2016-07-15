@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="62e1a386-b0ca-4c44-b4c8-20c3324a70a71" Bounds="0,111.673333333333,578.416666666667,833.506666666667" Label="/// &lt;summary&gt;&#xD;&#xA;        /// 应用程序的主入口点。&#xD;&#xA;        /// &lt;/summary&gt;&#xD;&#xA;        [STAThread]&#xD;&#xA;        static void Main(string[] args)&#xD;&#xA;        {&#xD;&#xA;            // 运行服务 &#xD;&#xA;            if (args.Length == 0)&#xD;&#xA;            {&#xD;&#xA;                ServiceBase[] ServicesToRun;&#xD;&#xA;                ServicesToRun = new ServiceBase[] &#xD;&#xA;                { &#xD;&#xA;                    new NTService() &#xD;&#xA;                };&#xD;&#xA;                ServiceBase.Run(ServicesToRun);&#xD;&#xA;            }&#xD;&#xA;            // 安装服务&#xD;&#xA;            else if (args[0].ToLower() == &quot;/i&quot; || args[0].ToLower() == &quot;-i&quot;)&#xD;&#xA;            {&#xD;&#xA;                //try&#xD;&#xA;                //{&#xD;&#xA;                string[] cmdline = { };&#xD;&#xA;                string serviceFileName = System.Reflection.Assembly.GetExecutingAssembly().Location;&#xD;&#xA;                TransactedInstaller transactedInstaller = new TransactedInstaller();&#xD;&#xA;                AssemblyInstaller assemblyInstaller = new AssemblyInstaller(serviceFileName, cmdline);&#xD;&#xA;                transactedInstaller.Installers.Add(assemblyInstaller);&#xD;&#xA;                transactedInstaller.Install(new System.Collections.Hashtable());&#xD;&#xA;&#xD;&#xA;                //}&#xD;&#xA;                //catch (Exception ex)&#xD;&#xA;                //{&#xD;&#xA;                //    string msg = ex.Message;&#xD;&#xA;                //}&#xD;&#xA;            }&#xD;&#xA;            // 删除服务 &#xD;&#xA;            else if (args[0].ToLower() == &quot;/u&quot; || args[0].ToLower() == &quot;-u&quot;)&#xD;&#xA;            {&#xD;&#xA;                //try&#xD;&#xA;                //{&#xD;&#xA;                string[] cmdline = { };&#xD;&#xA;                string serviceFileName = System.Reflection.Assembly.GetExecutingAssembly().Location;&#xD;&#xA;                TransactedInstaller transactedInstaller = new TransactedInstaller();&#xD;&#xA;                AssemblyInstaller assemblyInstaller = new AssemblyInstaller(serviceFileName, cmdline);&#xD;&#xA;                transactedInstaller.Installers.Add(assemblyInstaller);&#xD;&#xA;                transactedInstaller.Uninstall(null);&#xD;&#xA;                //}&#xD;&#xA;                //catch (Exception ex)&#xD;&#xA;                //{&#xD;&#xA;                //    string msg = ex.Message;&#xD;&#xA;                //}&#xD;&#xA;            }&#xD;&#xA;        }" />
+    <Node Id="Cmd命令" Bounds="1010.11644704718,61.3682172185604,68.9366666666667,25.8366666666667" Label="cmd命令" UseManualLocation="True" />
+    <Node Id="Services.msc" Bounds="1111.11644704718,143.380384095102,90.5233333333333,25.8366666666667" Label="services.msc" UseManualLocation="True" />
+    <Node Id="Window服务操作" Bounds="798.788333333333,0,112.84,25.8366666666667" Label="window服务操作" />
+    <Node Id="a27df55f-e9ee-4197-9e2f-a9fc28c4f4f51" Bounds="611.23385179565,324.3012215478,493.033333333333,469.263333333333" Label="&#xD;&#xA;    [RunInstaller(true)]&#xD;&#xA;    public partial class ProjectInstaller : System.Configuration.Install.Installer&#xD;&#xA;    {&#xD;&#xA;        private Process p = new Process();&#xD;&#xA;        public ProjectInstaller()&#xD;&#xA;        {&#xD;&#xA;            InitializeComponent();&#xD;&#xA;            p.StartInfo.FileName = &quot;cmd.exe&quot;;&#xD;&#xA;            p.StartInfo.UseShellExecute = false;&#xD;&#xA;            p.StartInfo.RedirectStandardInput = true;&#xD;&#xA;            p.StartInfo.RedirectStandardOutput = true;&#xD;&#xA;            p.StartInfo.RedirectStandardError = true;&#xD;&#xA;            p.StartInfo.CreateNoWindow = true;&#xD;&#xA;            p.Start();&#xD;&#xA;        }&#xD;&#xA;        private void ProjectInstaller_AfterInstall(object sender, InstallEventArgs e)&#xD;&#xA;        {&#xD;&#xA;            string Cmdstring = &quot;sc start OPTHMWorkScream&quot;; //CMD命令&#xD;&#xA;            p.StandardInput.WriteLine(Cmdstring);&#xD;&#xA;            p.StandardInput.WriteLine(&quot;exit&quot;);&#xD;&#xA;        }&#xD;&#xA;        private void ProjectInstaller_BeforeUninstall(object sender, InstallEventArgs e)&#xD;&#xA;        {&#xD;&#xA;            string Cmdstring = &quot;sc stop OPTHMWorkScream&quot;; //CMD命令&#xD;&#xA;            p.StandardInput.WriteLine(Cmdstring);&#xD;&#xA;            p.StandardInput.WriteLine(&quot;exit&quot;);&#xD;&#xA;        }&#xD;&#xA;    }" UseManualLocation="True" />
+    <Node Id="启动后自动安装" Bounds="803.208333333333,55.8366666666666,104,25.8366666666667" />
+    <Node Id="安装卸载" Bounds="704.208333333333,55.8366666666666,68,25.8366666666667" />
+  </Nodes>
+  <Links>
+    <Link Source="Cmd命令" Target="Services.msc" Bounds="1062.19416200578,87.2048838852271,69.3178659291939,50.851944553439" />
+    <Link Source="Window服务操作" Target="Cmd命令" Bounds="895.073041582712,25.8366166666667,106.720881725159,34.583369207884" />
+    <Link Source="Window服务操作" Target="启动后自动安装" Bounds="855.208333333333,25.8366166666667,0,21.0000499999999" />
+    <Link Source="Window服务操作" Target="安装卸载" Bounds="773.399766634159,25.8366166666667,54.7395745237674,26.1237679497113" />
+    <Link Source="启动后自动安装" Target="a27df55f-e9ee-4197-9e2f-a9fc28c4f4f51" Bounds="855.275331041065,81.6733333333333,1.21165328977054,233.628009249381" />
+    <Link Source="安装卸载" Target="62e1a386-b0ca-4c44-b4c8-20c3324a70a71" Bounds="584.70545441888,81.6733833333333,140.884454247018,144.232928389594" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

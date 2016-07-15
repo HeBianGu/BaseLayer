@@ -1,0 +1,5 @@
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\DemoTaskManager\DemoConsoleExe\bin\Debug\DemoConsoleExe.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\DemoTaskManager\DemoConsoleExe\bin\Debug\DemoConsoleExe.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\DemoTaskManager\DemoConsoleExe\bin\Debug\DemoConsoleExe.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\DemoTaskManager\DemoConsoleExe\obj\Debug\DemoConsoleExe.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\DemoTaskManager\DemoConsoleExe\obj\Debug\DemoConsoleExe.pdb

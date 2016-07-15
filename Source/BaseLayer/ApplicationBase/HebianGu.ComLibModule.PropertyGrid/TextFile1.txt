@@ -1,0 +1,1782 @@
+﻿
+登录 | 注册
+卢弋 的个人技术专栏 -- 总结使人进步开心 学习 分享
+目录视图摘要视图订阅
+2016软考项目经理实战班     学院周年礼-顶尖课程钜惠呈现     有奖征文：在云上开发的无限可能     2015年度社区之星 放榜啦
+关闭
+ C# PropertyGrid控件应用心得
+标签： c#stringattributesobjectmicrosoftclass
+2010-03-29 11:29 47318人阅读 评论(60) 收藏 举报
+版权声明：本文为博主原创文章，未经博主允许不得转载。
+
+目录(?)[+]
+最近项目中做一模块时偶发奇想，希望使用propertygrid的控件实现类似visual studio的属性样式，于是拿来一用，发现还真不是自己想象的那么简单，如果要实现一个比较好的展示，还真的需要不少技巧，通过自己的实践和网络的力量，“逢山开道，遇水搭桥”，总算是摸出一些门道，不敢私藏，拿出来与大家分享，呵呵。
+
+ 
+
+先来转一个基础的，源自msdn
+
+http://www.microsoft.com/taiwan/msdn/library/2002/Jul-2002/article/usingpropgrid.htm
+
+摘要： 本文旨在帮助您了解 Microsoft .NET 框架中的 PropertyGrid 控件，以及如何针对您的应用程序自定义该控件。
+
+适用于： 
+    Microsoft® .NET® 框架
+    Microsoft® Visual Studio® .NET
+目录
+
+PropertyGrid 控件简介 
+创建 PropertyGrid 控件 
+何处使用 PropertyGrid 控件 
+选择对象 
+自定义 PropertyGrid 控件 
+显示复杂属性 
+为属性提供自定义 UI
+
+
+PropertyGrid 控件简介
+
+如果您使用过 Microsoft® Visual Basic® 或 Microsoft Visual Studio .NET，那么您一定使用过属性浏览器来浏览、查看和编辑一个或多个对象的属性。.NET 框架 PropertyGrid 控件是 Visual Studio .NET 属性浏览器的核心。PropertyGrid 控件显示对象或类型的属性，并主要通过使用反射来检索项目的属性。（反射是在运行时提供类型信息的技术。）
+
+下面的屏幕快照显示了 PropertyGrid 在窗体上的外观。
+
+窗体上的 PropertyGrid
+
+图 1：窗体上的 PropertyGrid
+
+PropertyGrid 包含以下部分：
+
+属性
+可展开属性
+属性类别标题
+属性说明
+属性编辑器
+属性选项卡
+命令窗格（显示控件设计器提供的设计器操作）
+创建 PropertyGrid 控件
+
+要使用 Visual Studio .NET 创建 PropertyGrid 控件，需要将该控件添加到工具箱中，因为默认情况下并不包含该控件。在 Tools （工具）菜单中，选择 Customize Toolbox （自定义工具箱）。在对话框中选择 Framework Components （框架组件）选项卡，然后选择 PropertyGrid 。
+
+如果您从命令行编译代码，请使用 /reference 选项并指定 System.Windows.Forms.dll。
+
+以下代码显示了如何创建 PropertyGrid 控件并将其添加到窗体中。
+
+[c-sharp] view plaincopy
+using System;  
+using System.Drawing;  
+using System.ComponentModel;  
+using System.Windows.Forms;  
+using System.Globalization;  
+public class OptionsDialog : System.Windows.Forms.Form  
+{  
+    private System.Windows.Forms.PropertyGrid OptionsPropertyGrid;  
+    public OptionsDialog()  
+    {  
+       OptionsPropertyGrid = new PropertyGrid();  
+       OptionsPropertyGrid.Size = new Size(300, 250);  
+       this.Controls.Add(OptionsPropertyGrid);  
+       this.Text = "选项对话框";  
+    }  
+    [STAThread]  
+    static void Main()  
+    {  
+       Application.Run(new OptionsDialog());  
+    }  
+}  
+
+何处使用 PropertyGrid 控件 
+在应用程序中的很多地方，您都可以使用户与 PropertyGrid 进行交互，从而获得更丰富的编辑体验。例如，某个应用程序包含多个用户可以设置的“设置”或选项，其中一些可能十分复杂。您可以使用单选按钮、组合框或文本框来表示这些选项。但本文将逐步介绍如何使用 PropertyGrid 控件创建选项窗口来设置应用程序选项。上面所创建的 OptionsDialog 窗体即是选项窗口的开始。现在，我们创建一个名为 AppSettings 的类，其中包含映射到应用程序设置的所有属性。如果创建单独的类而不使用多个分散的变量，设置将更便于管理和维护。
+
+[c-sharp] view plaincopy
+public class AppSettings{  
+     private bool saveOnClose = true;  
+     private string greetingText = "欢迎使用应用程序！";  
+     private int itemsInMRU = 4;  
+     private int maxRepeatRate = 10;  
+     private bool settingsChanged = false;  
+     private string appVersion = "1.0";  
+      
+     public bool SaveOnClose  
+     {  
+         get { return saveOnClose; }  
+         set { saveOnClose = value;}  
+     }  
+     public string GreetingText  
+     {  
+         get { return greetingText; }  
+         set { greetingText = value; }  
+     }  
+     public int MaxRepeatRate  
+     {  
+         get { return maxRepeatRate; }  
+         set { maxRepeatRate = value; }  
+     }  
+     public int ItemsInMRUList  
+     {  
+         get { return itemsInMRU; }  
+         set { itemsInMRU = value; }  
+     }  
+     public bool SettingsChanged  
+     {  
+         get { return settingsChanged; }  
+         set { settingsChanged = value; }  
+     }  
+     public string AppVersion  
+     {  
+         get { return appVersion; }  
+         set { appVersion = value; }  
+     }  
+}  
+选项窗口上的 PropertyGrid 将使用此类，因此请将类定义添加到应用程序项目中，在添加时可创建新文件或将其添加到现有窗体源代码的下方。
+
+选择对象
+
+要标识 PropertyGrid 显示的内容，请将 PropertyGrid.SelectedObject 属性设置为一个对象实例。然后，PropertyGrid 将完成其余的工作。每次设置 SelectedObject 时，PropertyGrid 都会刷新显示的属性。这提供了一种简单的方法来强制刷新属性，或在运行时切换对象。您还可以调用 PropertyGrid.Refresh 方法来刷新属性。
+
+接下来，您需要更新 OptionsDialog 构造函数中的代码，以创建一个 AppSettings 对象，并将其设置为 PropertyGrid.SelectedObject 属性的值。
+
+[c-sharp] view plaincopy
+public OptionsDialog()  
+{  
+    OptionsPropertyGrid = new PropertyGrid();  
+    OptionsPropertyGrid.Size = new Size(300, 250);  
+    this.Controls.Add(OptionsPropertyGrid);  
+    this.Text = "选项对话框";  
+    // 创建 AppSettings 类并在 PropertyGrid 中显示该类。  
+    AppSettings appset = new AppSettings();  
+    OptionsPropertyGrid.SelectedObject = appset;  
+}  
+编译并运行该应用程序。下面的屏幕快照显示了应用程序的外观。
+
+PropertyGrid 中选定的 AppSettings 类
+
+图 2：PropertyGrid 中选定的 AppSettings 类
+
+自定义 PropertyGrid 控件
+
+您可以修改 PropertyGrid 的某些外观特征以满足自己的需要。可以更改某些属性的显示方式，甚至选择不显示某些属性。那么，如何对 PropertyGrid 进行自定义呢？
+
+更改 PropertyGrid 的外观特征
+
+PropertyGrid 的许多外观特征都可以自定义。下面列出了其中的一部分：
+
+通过 HelpBackColor 、HelpForeColor 和 HelpVisible 属性可以更改背景颜色、更改字体颜色或隐藏说明窗格。
+通过 ToolbarVisible 属性可以隐藏工具栏，通过 BackColor 属性可以更改工具栏的颜色，通过 LargeButtons 属性可以显示大工具栏按钮。
+使用 PropertySort 属性可以按字母顺序对属性进行排序和分类。
+通过 BackColor 属性可以更改拆分器的颜色。
+通过 LineColor 属性可以更改网格线和边框。
+本示例中的选项窗口不需要工具栏，因此可以将 ToolbarVisible 设置为 false 。其余属性均保留默认设置。
+
+更改属性的显示方式
+要更改某些属性的显示方式，您可以对这些属性应用不同的特性。特性是用于为类型、字段、方法和属性等编程元素添加批注的声明标记，在运行时可以使用反射对其进行检索。下面列出了其中的一部分：
+
+DescriptionAttribute - 设置显示在属性下方说明帮助窗格中的属性文本。这是一种为活动属性（即具有焦点的属性）提供帮助文本的有效方法。可以将此特性应用于 MaxRepeatRate 属性。
+CategoryAttribute - 设置属性在网格中所属的类别。当您需要将属性按类别名称分组时，此特性非常有用。如果没有为属性指定类别，该属性将被分配给杂项 类别。可以将此特性应用于所有属性。
+BrowsableAttribute – 表示是否在网格中显示属性。此特性可用于在网格中隐藏属性。默认情况下，公共属性始终显示在网格中。可以将此特性应用于 SettingsChanged 属性。
+ReadOnlyAttribute – 表示属性是否为只读。此特性可用于禁止在网格中编辑属性。默认情况下，带有 get 和 set 访问函数的公共属性在网格中是可以编辑的。可以将此特性应用于 AppVersion 属性。
+DefaultValueAttribute – 表示属性的默认值。如果希望为属性提供默认值，然后确定该属性值是否与默认值相同，则可使用此特性。可以将此特性应用于所有属性。
+DefaultPropertyAttribute – 表示类的默认属性。在网格中选择某个类时，将首先突出显示该类的默认属性。可以将此特性应用于 AppSettings 类。
+现在，我们将其中的一些特性应用于 AppSettings 类，以更改属性在 PropertyGrid 中的显示方式。
+
+[c-sharp] view plaincopy
+[DefaultPropertyAttribute("SaveOnClose")]  
+public class AppSettings{  
+     private bool saveOnClose = true;  
+     private string greetingText = "欢迎使用应用程序！";  
+     private int maxRepeatRate = 10;  
+     private int itemsInMRU = 4;  
+     private bool settingsChanged = false;  
+     private string appVersion = "1.0";  
+     [CategoryAttribute("文档设置"),  
+     DefaultValueAttribute(true)]  
+     public bool SaveOnClose  
+     {  
+         get { return saveOnClose; }  
+         set { saveOnClose = value;}  
+     }  
+     [CategoryAttribute("全局设置"),  
+     ReadOnlyAttribute(true),  
+     DefaultValueAttribute("欢迎使用应用程序！")]  
+     public string GreetingText  
+     {  
+         get { return greetingText; }  
+         set { greetingText = value; }  
+     }  
+     [CategoryAttribute("全局设置"),  
+     DefaultValueAttribute(4)]  
+     public int ItemsInMRUList  
+     {  
+         get { return itemsInMRU; }  
+         set { itemsInMRU = value; }  
+     }  
+     [DescriptionAttribute("以毫秒表示的文本重复率。"),  
+     CategoryAttribute("全局设置"),  
+     DefaultValueAttribute(10)]  
+     public int MaxRepeatRate  
+     {  
+         get { return maxRepeatRate; }  
+         set { maxRepeatRate = value; }  
+     }  
+     [BrowsableAttribute(false),  
+     DefaultValueAttribute(false)]  
+     public bool SettingsChanged  
+     {  
+         get { return settingsChanged; }  
+         set { settingsChanged = value; }  
+     }  
+     [CategoryAttribute("版本"),  
+     DefaultValueAttribute("1.0"),  
+     ReadOnlyAttribute(true)]  
+     public string AppVersion  
+     {  
+         get { return appVersion; }  
+         set { appVersion = value; }  
+     }  
+}  
+将这些特性应用于 AppSettings 类后，编译并运行该应用程序。下面的屏幕快照显示了应用程序的外观。
+
+PropertyGrid 中显示的带有类别和默认值的属性
+
+图 3：PropertyGrid 中显示的带有类别和默认值的属性
+
+使用此版本的选项窗口后，您会注意到以下几点：
+
+显示窗口时，将首先突出显示 SaveOnClose 属性。
+选中 MaxRepeatRate 属性时，说明帮助窗格中将显示“以毫秒表示的文本重复率”。
+SaveOnClose 属性显示在“文档设置”类别下。其他属性分别显示在“全局设置”和“版本”类别下。
+SettingsChanged 属性将不再显示。
+AppVersion 属性为只读。只读属性以灰显文本显示。
+如果 SaveOnClose 属性包含的值不是 true ，该值将以粗体显示。PropertyGrid 使用粗体文本表示包含非默认值的属性。
+显示复杂属性
+到现在为止，选项窗口显示的都是简单的类型，如整数、布尔值和字符串。那么，如何显示更复杂的类型呢？如果应用程序需要跟踪窗口大小、文档字体或工具栏颜色等信息，该如何处理呢？.NET 框架提供的某些数据类型具有特殊的显示功能，能使这些类型在 PropertyGrid 中更具可用性。
+
+对所提供类型的支持 
+首先，请更新 AppSettings 类，为窗口大小（Size 类型）、窗口字体（Font 类型）和工具栏颜色（Color 类型）添加新属性。
+
+[c-sharp] view plaincopy
+[DefaultPropertyAttribute("SaveOnClose")]  
+public class AppSettings{  
+     private bool saveOnClose = true;  
+     private string greetingText = "欢迎使用应用程序！";  
+     private int maxRepeatRate = 10;  
+     private int itemsInMRU = 4;  
+     private bool settingsChanged = false;  
+     private string appVersion = "1.0";  
+       
+     private Size windowSize = new Size(100,100);  
+     private Font windowFont = new Font("宋体", 9, FontStyle.Regular);  
+     private Color toolbarColor = SystemColors.Control;  
+     [CategoryAttribute("文档设置"),  
+     DefaultValueAttribute(true)]  
+     public bool SaveOnClose  
+     {  
+         get { return saveOnClose; }  
+         set { saveOnClose = value;}  
+     }  
+     [CategoryAttribute("文档设置")]  
+     public Size WindowSize   
+     {  
+         get { return windowSize; }  
+         set { windowSize = value;}  
+     }  
+     [CategoryAttribute("文档设置")]  
+     public Font WindowFont   
+     {  
+         get {return windowFont; }  
+         set { windowFont = value;}  
+     }  
+     [CategoryAttribute("全局设置")]  
+     public Color ToolbarColor  
+     {  
+         get { return toolbarColor; }  
+         set { toolbarColor = value; }  
+     }  
+     [CategoryAttribute("全局设置"),  
+     ReadOnlyAttribute(true),  
+     DefaultValueAttribute("欢迎使用应用程序！")]  
+     public string GreetingText  
+     {  
+         get { return greetingText; }  
+         set { greetingText = value; }  
+     }  
+     [CategoryAttribute("全局设置"),  
+     DefaultValueAttribute(4)]  
+     public int ItemsInMRUList  
+     {  
+         get { return itemsInMRU; }  
+         set { itemsInMRU = value; }  
+     }  
+     [DescriptionAttribute("以毫秒表示的文本重复率。"),  
+     CategoryAttribute("全局设置"),  
+     DefaultValueAttribute(10)]  
+     public int MaxRepeatRate  
+     {  
+         get { return maxRepeatRate; }  
+         set { maxRepeatRate = value; }  
+     }  
+     [BrowsableAttribute(false),  
+     DefaultValueAttribute(false)]  
+     public bool SettingsChanged  
+     {  
+         get { return settingsChanged; }  
+         set { settingsChanged = value; }  
+     }  
+     [CategoryAttribute("版本"),  
+     DefaultValueAttribute("1.0"),  
+     ReadOnlyAttribute(true)]  
+     public string AppVersion  
+     {  
+         get { return appVersion; }  
+         set { appVersion = value; }  
+     }  
+}  
+下面的屏幕快照显示了新属性在 PropertyGrid 中的外观。
+
+显示在 PropertyGrid 中的 .NET 框架数据类型
+
+图 4：显示在 PropertyGrid 中的 .NET 框架数据类型
+
+请注意，WindowFont 属性带有一个省略号 (...) 按钮，按下该按钮将显示字体选择对话框。此外，还可以展开该属性以显示更多的 Font 属性。某些 Font 属性提供有关字体的值和详细信息的下拉列表。您可以展开 WindowSize 属性以显示 Size 类型的更多属性。最后，请注意，ToolbarColor 属性包含一个选定颜色的样本，以及一个用于选择不同颜色的自定义下拉列表。对于这些以及其他数据类型，.NET 框架提供了其他的类，可以使在 PropertyGrid 中的编辑更加容易。
+
+对自定义类型的支持
+现在，您需要在 AppSettings 类中添加另外两个属性，即 DefaultFileName 和 SpellCheckOptions 。 DefaultFileName 属性用于获取或设置字符串；SpellCheckOptions 属性用于获取或设置 SpellingOptions 类的实例。
+
+SpellingOptions 类是一个新类，用于管理应用程序的拼写检查属性。对于何时创建单独的类以管理对象的属性，并没有严格的规定，而取决于您的整个类设计。将 SpellingOptions 类定义添加到应用程序项目中 - 可以添加到新文件中，也可以添加到窗体源代码的下方。
+
+[c-sharp] view plaincopy
+[DescriptionAttribute("展开以查看应用程序的拼写选项。")]  
+public class SpellingOptions{  
+     private bool spellCheckWhileTyping = true;  
+     private bool spellCheckCAPS = false;  
+     private bool suggestCorrections = true;  
+     [DefaultValueAttribute(true)]  
+     public bool SpellCheckWhileTyping   
+     {  
+         get { return spellCheckWhileTyping; }  
+         set { spellCheckWhileTyping = value; }  
+     }  
+     [DefaultValueAttribute(false)]  
+     public bool SpellCheckCAPS   
+     {  
+         get { return spellCheckCAPS; }  
+         set { spellCheckCAPS = value; }  
+     }  
+     [DefaultValueAttribute(true)]  
+     public bool SuggestCorrections   
+     {  
+         get { return suggestCorrections; }  
+         set { suggestCorrections = value; }  
+     }  
+}  
+再次编译并运行选项窗口应用程序。下面的屏幕快照显示了应用程序的外观。
+
+在 PropertyGrid 中显示的不带类型转换器的自定义数据类型
+
+图 5：在 PropertyGrid 中显示的不带类型转换器的自定义数据类型
+
+请注意 SpellcheckOptions 属性的外观。与 .NET 框架类型不同，它不展开或显示自定义的字符串表示。如果要在自己的复杂类型中提供与 .NET 框架类型相同的编辑体验，该如何处理呢？.NET 框架类型使用 TypeConverter 和 UITypeEditor 类提供大部分 PropertyGrid 编辑支持，您也可以使用这些类。
+
+添加可展开属性支持
+要使 PropertyGrid 能够展开 SpellingOptions 属性，您需要创建 TypeConverter 。TypeConverter 提供了从一种类型转换为另一种类型的方法。PropertyGrid 使用 TypeConverter 将对象类型转换为 String ，并使用该 String 在网格中显示对象值。在编辑过程中，TypeConverter 会将 String 转换回对象类型。.NET 框架提供的 ExpandableObjectConverter 类可以简化这一过程。
+
+提供可展开对象支持
+创建一个从 ExpandableObjectConverter 继承而来的类。 
+[c-sharp] view plaincopy
+public class SpellingOptionsConverter:ExpandableObjectConverter   
+{   }  
+如果 destinationType 参数与使用此类型转换器的类（示例中的 SpellingOptions 类）的类型相同，则覆盖 CanConvertTo 方法并返回 true ；否则返回基类 CanConvertTo 方法的值。 
+[c-sharp] view plaincopy
+public override bool CanConvertTo(ITypeDescriptorContext context,  
+                                   System.Type destinationType)   
+{  
+     if (destinationType == typeof(SpellingOptions))  
+         return true;  
+     return base.CanConvertTo(context, destinationType);  
+}  
+覆盖 ConvertTo 方法，并确保 destinationType 参数是一个 String ，并且值的类型与使用此类型转换器的类（示例中的 SpellingOptions 类）相同。如果其中任一情况为 false ，都将返回基类 ConvertTo 方法的值；否则，返回值对象的字符串表示。字符串表示需要使用唯一分隔符将类的每个属性隔开。由于整个字符串都将显示在 PropertyGrid 中，因此需要选择一个不会影响可读性的分隔符，逗号的效果通常比较好。 
+[c-sharp] view plaincopy
+public override object ConvertTo(ITypeDescriptorContext context, CultureInfo culture,  
+    object value, System.Type destinationType)   
+{  
+     if (destinationType == typeof(System.String) &&   
+          value is SpellingOptions){  
+         SpellingOptions so = (SpellingOptions)value;  
+         return "在键入时检查:" + so.SpellCheckWhileTyping +   
+                "，检查大小写: " + so.SpellCheckCAPS +  
+                "，建议更正: " + so.SuggestCorrections;  
+     }  
+     return base.ConvertTo(context, culture, value, destinationType);  
+}  
+（可选）通过指定类型转换器可以从字符串进行转换，您可以启用网格中对象字符串表示的编辑。要执行此操作，首先需要覆盖 CanConvertFrom 方法并返回 true （如果源 Type 参数为 String 类型）；否则，返回基类 CanConvertFrom 方法的值。 
+[c-sharp] view plaincopy
+public override bool CanConvertFrom(ITypeDescriptorContext context, System.Type sourceType)   
+{  
+     if (sourceType == typeof(string))  
+         return true;  
+     return base.CanConvertFrom(context, sourceType);  
+}  
+要启用对象基类的编辑，同样需要覆盖 ConvertFrom 方法并确保值参数是一个 String 。如果不是 String ，将返回基类 ConvertFrom 方法的值；否则，返回基于值参数的类（示例中的 SpellingOptions 类）的新实例。您需要根据值参数解析类的每个属性的值。了解在 ConvertTo 方法中创建的分隔字符串的格式将有助于您的解析。 
+[c-sharp] view plaincopy
+public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)   
+{  
+     if (value is string) {  
+         try {  
+             string s = (string) value;  
+             int colon = s.IndexOf(':');  
+             int comma = s.IndexOf(',');  
+             if (colon != -1 && comma != -1) {  
+                 string checkWhileTyping = s.Substring(colon + 1 , (comma - colon - 1));  
+                 colon = s.IndexOf(':', comma + 1);  
+                 comma = s.IndexOf(',', comma + 1);  
+                 string checkCaps = s.Substring(colon + 1 , (comma - colon -1));  
+                 colon = s.IndexOf(':', comma + 1);  
+                 string suggCorr = s.Substring(colon + 1);  
+                 SpellingOptions so = new SpellingOptions();  
+                 so.SpellCheckWhileTyping =Boolean.Parse(checkWhileTyping);  
+                 so.SpellCheckCAPS = Boolean.Parse(checkCaps);  
+                 so.SuggestCorrections = Boolean.Parse(suggCorr);  
+                 return so;  
+             }  
+         }  
+         catch {  
+             throw new ArgumentException(  
+                 "无法将“" + (string)value +   
+                                    "”转换为 SpellingOptions 类型");  
+         }  
+     }     
+     return base.ConvertFrom(context, culture, value);  
+}  
+现在已经有了一个类型转换器类，下面您需要确定使用该类的目标类。您可以通过将 TypeConverterAttribute 应用到目标类（示例中的 SpellingOptions 类）来执行此操作。 
+[c-sharp] view plaincopy
+// 应用于 SpellingOptions 类的 TypeConverter 特性。  
+[TypeConverterAttribute(typeof(SpellingOptionsConverter)),  
+DescriptionAttribute(“展开以查看应用程序的拼写选项。")]  
+public class SpellingOptions{ ... }  
+再次编译并运行选项窗口应用程序。下面的屏幕快照显示了选项窗口目前的外观。
+
+在 PropertyGrid 中显示的带有类型转换器的自定义数据类型
+
+图 6：在 PropertyGrid 中显示的带有类型转换器的自定义数据类型
+
+注意： 如果只需要可展开对象支持，而不需要自定义字符串表示，则只需将 TypeConverterAttribute 应用到类中。将 ExpandableObjectConverter 指定为类型转换器类型。
+添加域列表和简单的下拉列表属性支持
+对于基于 Enum 类型返回枚举的属性，PropertyGrid 会自动在下拉列表中显示枚举值。EnumConverter 也提供了这一功能。对于自己的属性，您可能希望为用户提供一个有效值列表（有时也称为选取列表或域列表），而其类型并不是基于 Enum 。如果域值在运行时之前未知，或者值可以更改，则属于这种情况。
+
+修改选项窗口，提供一个用户可从中选择的默认文件名的域列表。您已经将 DefaultFileName 属性添加到 AppSettings 类。下一步是在 PropertyGrid 中显示属性的下拉列表，以提供域列表。
+
+提供简单的下拉列表属性支持
+创建一个从类型转换器类继承而来的类。由于 DefaultFileName 属性属于 String 类型，因此可以从 StringConverter 中继承。如果属性类型的类型转换器不存在，则可以从 TypeConverter 继承；这里并不需要。
+
+[c-sharp] view plaincopy
+public class FileNameConverter: StringConverter {   }  
+覆盖 GetStandardValuesSupported 方法并返回 true ，表示此对象支持可以从列表中选取的一组标准值。   
+[c-sharp] view plaincopy
+public override bool GetStandardValuesSupported(ITypeDescriptorContext context)  
+{  
+    return true;  
+}  
+覆盖 GetStandardValues 方法并返回填充了标准值的 StandardValuesCollection 。创建 StandardValuesCollection 的方法之一是在构造函数中提供一个值数组。对于选项窗口应用程序，您可以使用填充了建议的默认文件名的 String 数组。   
+[c-sharp] view plaincopy
+public override StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)  
+{  
+    return new StandardValuesCollection(new string[]{"新文件", "文件1", "文档1"});  
+}   
+（可选）如果希望用户能够键入下拉列表中没有包含的值，请覆盖 GetStandardValuesExclusive 方法并返回 false 。这从根本上将下拉列表样式变成了组合框样式。
+[c-sharp] view plaincopy
+public override bool GetStandardValuesExclusive(ITypeDescriptorContext context)  
+{  
+    return false;  
+}  
+拥有自己的用于显示下拉列表的类型转换器类后，您需要确定使用该类的目标。在本示例中，目标为 DefaultFileName 属性，因为类型转换器是针对该属性的。将 TypeConverterAttribute 应用到目标属性中。
+[c-sharp] view plaincopy
+// 应用到 DefaultFileName 属性的 TypeConverter 特性。  
+[TypeConverter(typeof(FileNameConverter)),  
+CategoryAttribute("文档设置")]  
+public string DefaultFileName  
+{  
+    get{ return defaultFileName; }  
+    set{ defaultFileName = value; }  
+}  
+再次编译并运行选项窗口应用程序。下面的屏幕快照显示了选项窗口目前的外观。请注意 DefaultFileName 属性的外观。
+
+在 PropertyGrid 中显示下拉域列表
+
+图 7：在 PropertyGrid 中显示下拉域列表
+
+
+
+为属性提供自定义 UI 
+
+如上所述，.NET 框架类型使用 TypeConverter 和 UITypeEditor 类（以及其他类）来提供 PropertyGrid 编辑支持。有关如何使用 TypeConverter ，请参阅对自定义类型的支持 一节；您也可以使用 UITypeEditor 类来自定义 PropertyGrid 。
+
+您可以在 PropertyGrid 中提供小图形表示和属性值，类似于为 Image 和 Color 类提供的内容。要在自定义中执行此操作，请从 UITypeEditor 继承，覆盖 GetPaintValueSupported 并返回 true 。然后，覆盖 UITypeEditor.PaintValue 方法，并在自己的方法中使用 PaintValueEventArgs. Graphics 参数绘制图形。最后，将 Editor 特性应用到使用 UITypeEditor 类的类或属性。
+
+下面的屏幕快照显示了结果外观。
+在 PropertyGrid 中显示属性的自定义图形 
+图 8：在 PropertyGrid 中显示属性的自定义图形 
+
+您也可以提供自己的下拉列表控件，这与 Control.Dock 属性用来为用户提供靠接选择的控件类似。要执行此操作，请从 UITypeEditor 继承，覆盖 GetEditStyle ，然后返回一个 UITypeEditorEditStyle 枚举值，例如 DropDown 。您的自定义下拉列表控件必须从 Control 或 Control 的派生类（例如 UserControl ）继承而来。然后，覆盖 UITypeEditor.EditValue 方法。使用 IServiceProvider 参数调用 IServiceProvider.GetService 方法，以获取一个 IWindowsFormsEditorService 实例。最后，调用 IWindowsFormsEditorService.DropDownControl 方法来显示您的自定义下拉列表控件。请记住将 Editor 特性应用到使用 UITypeEditor 类的类或属性中。
+
+下面的屏幕快照显示了结果外观。
+在 PropertyGrid 中显示属性的自定义下拉列表控件 
+图 9：在 PropertyGrid 中显示属性的自定义下拉列表控件 
+
+除了使用 TypeEditor 和 UITypeEditor 类外，还可以自定义 PropertyGrid 以显示其他属性选项卡。属性选项卡从 PropertyTab 类继承而来。如果您使用过 Microsoft Visual C#™ .NET 中的属性浏览器，那么就可能看到过自定义的 PropertyTab 。Events 选项卡（带有闪电图形的按钮）就是一个自定义的 PropertyTab 。下面的屏幕快照显示了自定义 PropertyTab 的另一个示例。可以使用 PropertyTab 编辑按钮的边界点，以创建自定义的按钮形状。
+在 PropertyGrid 中显示自定义选项卡 
+图 10：在 PropertyGrid 中显示自定义选项卡
+
+ 
+
+ 
+
+如果想在item中增加自定义的显示方式，比如日期选择啦、下拉框啦、甚至文件选择、拾色器等等，我们可以参考如下：
+
+ 
+
+ 
+
+改变 PropertyGrid 控件的编辑风格（1）加入日期控件
+
+编辑日期类型数据
+
+[c-sharp] view plaincopy
+using System;  
+  
+using System.Windows.Forms;  
+  
+using System.Drawing.Design;  
+  
+using System.Windows.Forms.Design;  
+  
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    /// <summary>  
+  
+    /// 在PropertyGrid 上显示日期控件   
+  
+    /// </summary>  
+  
+    public class PropertyGridDateItem : UITypeEditor  
+  
+    {  
+  
+        MonthCalendar dateControl = new MonthCalendar();  
+  
+        public PropertyGridDateItem()  
+  
+        {  
+  
+            dateControl.MaxSelectionCount = 1;  
+  
+        }  
+  
+        public override UITypeEditorEditStyle GetEditStyle(System.ComponentModel.ITypeDescriptorContext context)  
+  
+        {  
+  
+            return UITypeEditorEditStyle.DropDown;  
+  
+        }  
+  
+        public override object EditValue(System.ComponentModel.ITypeDescriptorContext context,   
+  
+System.IServiceProvider provider, object value)  
+  
+        {  
+  
+            try  
+  
+            {  
+  
+                IWindowsFormsEditorService edSvc =   
+  
+(IWindowsFormsEditorService)provider.GetService(typeof(IWindowsFormsEditorService));  
+  
+                if (edSvc != null)  
+  
+                {  
+  
+                    if (value is string)  
+  
+                    {  
+  
+                        dateControl.SelectionStart = DateTime.Parse(value as String);  
+  
+                        edSvc.DropDownControl(dateControl);  
+  
+                        return dateControl.SelectionStart.ToShortDateString();  
+  
+                    }  
+  
+                    else if (value is DateTime)  
+  
+                    {  
+  
+                        dateControl.SelectionStart = (DateTime)value;  
+  
+                        edSvc.DropDownControl(dateControl);  
+  
+                        return dateControl.SelectionStart;  
+  
+                    }  
+  
+                }  
+  
+            }  
+  
+            catch (Exception ex)  
+  
+            {  
+  
+                System.Console.WriteLine("PropertyGridDateItem Error : " + ex.Message);  
+  
+                return value;  
+  
+            }  
+  
+            return value;  
+  
+        }  
+  
+    }  
+  
+}   
+步骤二：编辑属性类，指定编辑属性。示例如下：
+
+[c-sharp] view plaincopy
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    public class SomeProperties  
+  
+    {  
+  
+        private string _finished_time = "";  
+  
+        //……  
+  
+        [Description("完成时间"), Category("属性"), EditorAttribute(typeof(PropertyGridDateItem),   
+  
+typeof(System.Drawing.Design.UITypeEditor))]  
+  
+        public String 完成时间  
+  
+        {  
+  
+            get { return _finished_date; }  
+  
+            set { _finished_date = value; }  
+  
+        }  
+  
+        //……  
+  
+    }  
+  
+}  
+ 步骤三：设置 PropertyGrid 的属性对象。示例如下：
+
+[c-sharp] view plaincopy
+    
+private void Form1_Load(object sender, System.EventArgs e)  
+  
+        {  
+  
+            this.propertyGrid1.SelectedObject = new SomeProperties();  
+  
+        }  
+ 
+
+改变 PropertyGrid 控件的编辑风格（2）——编辑多行文本
+
+效果：
+
+适用场合：
+
+1、 编辑多行文本；
+
+2、 编辑长文本。
+
+ 步骤一：定义从UITypeEditor 派生的类，示例如下：
+
+[c-sharp] view plaincopy
+    
+using System;  
+  
+using System.Windows.Forms;  
+  
+using System.Drawing.Design;  
+  
+using System.Windows.Forms.Design;  
+  
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    /// <summary>  
+  
+    /// PropertyGridMutiText 的摘要说明。  
+  
+    /// </summary>  
+  
+    public class PropertyGridRichText : UITypeEditor  
+  
+    {  
+  
+        public override UITypeEditorEditStyle GetEditStyle(System.ComponentModel.ITypeDescriptorContext context)  
+  
+        {  
+  
+            return UITypeEditorEditStyle.DropDown;  
+  
+        }  
+  
+        public override object EditValue(System.ComponentModel.ITypeDescriptorContext context, System.IServiceProvider provider, object value)  
+  
+        {  
+  
+            try  
+  
+            {  
+  
+                IWindowsFormsEditorService edSvc =   
+  
+(IWindowsFormsEditorService)provider.GetService(typeof(IWindowsFormsEditorService));  
+  
+                if (edSvc != null)  
+  
+                {  
+  
+                    if (value is string)  
+  
+                    {  
+  
+                        RichTextBox box = new RichTextBox();  
+  
+                        box.Text = value as string;  
+  
+                        edSvc.DropDownControl(box);  
+  
+                        return box.Text;  
+  
+                    }  
+  
+                }  
+  
+            }  
+  
+            catch (Exception ex)  
+  
+            {  
+  
+                System.Console.WriteLine("PropertyGridRichText Error : " + ex.Message);  
+  
+                return value;  
+  
+            }  
+  
+            return value;  
+  
+        }  
+  
+    }  
+  
+}   
+ 步骤二：编辑属性类，指定编辑属性。示例如下：
+
+[c-sharp] view plaincopy
+    
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    public class SomeProperties  
+  
+    {  
+  
+        private string _finished_time = "";  
+  
+        //   ……  
+  
+        // 多行文本编辑框  
+  
+        string _mutiLineSample = "";  
+  
+        [Description("多行文本编辑框"), Category("属性"), EditorAttribute(typeof(PropertyGridRichText),   
+  
+typeof(System.Drawing.Design.UITypeEditor))]  
+  
+        public String 多行文本  
+  
+        {  
+  
+            get { return _mutiLineSample; }  
+  
+            set { _mutiLineSample = value; }  
+  
+        }  
+  
+        //……  
+  
+    }  
+  
+}   
+ 步骤三：设置PropertyGrid的属性对象。示例如下：
+
+[c-sharp] view plaincopy
+    
+private void Form1_Load(object sender, System.EventArgs e)  
+  
+        {  
+  
+            this.propertyGrid1.SelectedObject = new SomeProperties();  
+  
+        }  
+改变 PropertyGrid 控件的编辑风格（3）——打开对话框
+
+适用场合：
+
+1、 打开文件、打印设置等通用对话框
+
+2、 打开特定的对话框
+
+ 步骤一：定义从UITypeEditor 派生的类，以 OpenFileDialog 对话框为例，示例代码如下：
+
+[c-sharp] view plaincopy
+    
+using System;  
+  
+using System.Windows.Forms;  
+  
+using System.Drawing.Design;  
+  
+using System.Windows.Forms.Design;  
+  
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    /// <summary>  
+  
+    /// IMSOpenFileInPropertyGrid 的摘要说明。  
+  
+    /// </summary>  
+  
+    public class PropertyGridFileItem : UITypeEditor  
+  
+    {  
+  
+        public override UITypeEditorEditStyle GetEditStyle(System.ComponentModel.ITypeDescriptorContext context)  
+  
+        {  
+  
+            return UITypeEditorEditStyle.Modal;  
+  
+        }  
+  
+        public override object EditValue(System.ComponentModel.ITypeDescriptorContext context, System.  
+  
+IServiceProvider provider, object value)  
+  
+        {  
+  
+            IWindowsFormsEditorService edSvc =   
+  
+(IWindowsFormsEditorService)provider.GetService(typeof(IWindowsFormsEditorService));  
+  
+            if (edSvc != null)  
+  
+            {  
+  
+                // 可以打开任何特定的对话框  
+  
+                OpenFileDialog dialog = new OpenFileDialog();  
+  
+                dialog.AddExtension = false;  
+  
+                if (dialog.ShowDialog().Equals(DialogResult.OK))  
+  
+                {  
+  
+                    return dialog.FileName;  
+  
+                }  
+  
+            }  
+  
+            return value;  
+  
+        }  
+  
+    }  
+  
+}   
+ 步骤二：编辑属性类，指定编辑属性。示例如下：
+
+[c-sharp] view plaincopy
+    
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    public class SomeProperties  
+  
+    {  
+  
+        private string _finished_time = "";  
+  
+        //……  
+  
+        // 文件  
+  
+        string _fileName = "";  
+  
+        [Description("文件打开对话框"), Category("属性"), EditorAttribute(typeof(PropertyGridFileItem),   
+  
+typeof(System.Drawing.Design.UITypeEditor))]  
+  
+        public String 文件  
+  
+        {  
+  
+            get { return _fileName; }  
+  
+            set { _fileName = value; }  
+  
+        }  
+  
+        //……  
+  
+    }  
+  
+}   
+ 步骤三：设置PropertyGrid的属性对象。示例如下：
+
+[c-sharp] view plaincopy
+   
+private void Form1_Load(object sender, System.EventArgs e)  
+  
+       {  
+  
+           this.propertyGrid1.SelectedObject = new SomeProperties();  
+  
+       }  
+改变 PropertyGrid 控件的编辑风格（4）——加入选择列表
+
+适用场合：限制选择输入
+
+ 步骤一：定义从UITypeEditor 继承的抽象类：ComboBoxItemTypeConvert。示例如下：
+
+[c-sharp] view plaincopy
+    
+using System;  
+  
+using System.Collections;  
+  
+using System.ComponentModel;  
+  
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    /// IMSTypeConvert 的摘要说明。  
+  
+    public abstract class ComboBoxItemTypeConvert : TypeConverter  
+  
+    {  
+  
+        public Hashtable _hash = null;  
+  
+        public ComboBoxItemTypeConvert()  
+  
+        {  
+  
+            _hash = new Hashtable();  
+  
+            GetConvertHash();  
+  
+        }  
+  
+        public abstract void GetConvertHash();  
+  
+        public override bool GetStandardValuesSupported(ITypeDescriptorContext context)  
+  
+        {  
+  
+            return true;  
+  
+        }  
+  
+        public override StandardValuesCollection GetStandardValues(ITypeDescriptorContext context)  
+  
+        {  
+  
+            int[] ids = new int[_hash.Values.Count];  
+  
+            int i = 0;  
+  
+            foreach (DictionaryEntry myDE in _hash)  
+  
+            {  
+  
+                ids[i++] = (int)(myDE.Key);  
+  
+            }  
+  
+            return new StandardValuesCollection(ids);  
+  
+        }  
+  
+        public override bool CanConvertFrom(ITypeDescriptorContext context, Type sourceType)  
+  
+        {  
+  
+            if (sourceType == typeof(string))  
+  
+            {  
+  
+                return true;  
+  
+            }  
+  
+            return base.CanConvertFrom(context, sourceType);  
+  
+        }  
+  
+        public override object ConvertFrom(ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object v)  
+  
+        {  
+  
+            if (v is string)  
+  
+            {  
+  
+                foreach (DictionaryEntry myDE in _hash)  
+  
+                {  
+  
+                    if (myDE.Value.Equals((v.ToString())))  
+  
+                        return myDE.Key;  
+  
+                }  
+  
+            }  
+  
+            return base.ConvertFrom(context, culture, v);  
+  
+        }  
+  
+        public override object ConvertTo(ITypeDescriptorContext context, System.Globalization.CultureInfo culture,   
+  
+object v, Type destinationType)  
+  
+        {  
+  
+            if (destinationType == typeof(string))  
+  
+            {  
+  
+                foreach (DictionaryEntry myDE in _hash)  
+  
+                {  
+  
+                    if (myDE.Key.Equals(v))  
+  
+                        return myDE.Value.ToString();  
+  
+                }  
+  
+                return "";  
+  
+            }  
+  
+            return base.ConvertTo(context, culture, v, destinationType);  
+  
+        }  
+  
+        public override bool GetStandardValuesExclusive(  
+  
+            ITypeDescriptorContext context)  
+  
+        {  
+  
+            return false;  
+  
+        }  
+  
+    }  
+  
+}   
+ 步骤二：定义 ComboBoxItemTypeConvert 的派生类，派生类中实现父类的抽象方法：public abstract void GetConvertHash(); 示例如下：
+
+[c-sharp] view plaincopy
+    
+using System;  
+  
+using System.Collections;  
+  
+using System.ComponentModel;  
+  
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    public class PropertyGridBoolItem : ComboBoxItemTypeConvert  
+  
+    {  
+  
+        public override void GetConvertHash()  
+  
+        {  
+  
+            _hash.Add(0, "是");  
+  
+            _hash.Add(1, "否");  
+  
+        }  
+  
+    }  
+  
+    public class PropertyGridComboBoxItem : ComboBoxItemTypeConvert  
+  
+    {  
+  
+        public override void GetConvertHash()  
+  
+        {  
+  
+            _hash.Add(0, "炒肝");  
+  
+            _hash.Add(1, "豆汁");  
+  
+            _hash.Add(2, "灌肠");  
+  
+        }  
+  
+    }  
+  
+}  
+  步骤三：编辑属性类，指定编辑属性。示例如下：
+
+[c-sharp] view plaincopy
+    
+namespace blog.csdn.net.zhangyuk  
+  
+{  
+  
+    public class SomeProperties  
+  
+    {  
+  
+        private string _finished_time = "";  
+  
+        // ……  
+  
+        // 布尔  
+  
+        bool _bool = true;  
+  
+        [Description("布尔"), Category("属性"), TypeConverter(typeof(PropertyGridBoolItem))]  
+  
+        public int 布尔  
+  
+        {  
+  
+            get { return _bool == true ? 0 : 1; }  
+  
+            set { _bool = (value == 0 ? true : false); }  
+  
+        }  
+  
+        // 选择列表  
+  
+        int _comboBoxItems = 0;  
+  
+        [Description("选择列表"), Category("属性"), TypeConverter(typeof(PropertyGridComboBoxItem))]  
+  
+        public int 选择列表  
+  
+        {  
+  
+            get { return _comboBoxItems; }  
+  
+            set { _comboBoxItems = value; }  
+  
+        }  
+  
+        //……  
+  
+    }  
+  
+}  
+ 步骤四：设置PropertyGrid的属性对象。示例如下：
+
+[c-sharp] view plaincopy
+    
+private void Form1_Load(object sender, System.EventArgs e)  
+  
+        {  
+  
+            this.propertyGrid1.SelectedObject = new SomeProperties();  
+  
+        }  
+ 
+
+如果想改变item的displayname为中文我们该怎么办呢？
+
+ 
+
+运行时自定义PropertyGrid显示属性项目 
+
+简述
+
+在PropertyGrid所显示的属性内容包括属性分类(Category)及组件属性，
+
+在一般情况下直接使用PropertyGrid来显示一个对象的所有属性是非常方便的，只需一个语句就能完成：
+
+propertyGrid.SelectedObject = component;
+
+但在实际应用中可能会不需要显示所有属性项目，而是通过外部指定（通过XML等进行描述），这些设置一般情况下在创建组件时用代码中的Attribute来进行具体设置，如所属分类，显示标题等，这只能针对于一些自建的组件可以这么做。
+
+问题描述
+
+像上面所说，在创建自建组件时可以用Attribute的方式来设置PropertyGrid的显示样式，但这种方法不能应用于已有的组件，像系统中的TextBox,Button等，除非自己建立一个由这些组件派生的类，当然这样做会加大复杂度。像要实现下面所显示的这种效果在实际操作时会很麻烦。
+
+左图是TextBox原有的所有属性，右图是经过处理后的属性
+
+ 
+
+ 
+
+解决方法
+
+在.Net中提供了一个自定义类型说明的接口（System.ComponentModel.ICustomTypeDescriptor），PropertyGrid可以直接自动处理用此接口生成的对象，因此在处理这个问题的时候只需要创建一个基于这个接口的处理类就可以达到世期望的目标，在这个接口中提供了GetProperties方法用于返回所选组件的所有属性，因此我们可以通过这个方法可以对我们所需要的属性进行过滤，下面是一段GetPropertys的处理代码：
+
+ 
+
+[c-sharp] view plaincopy
+    
+public PropertyDescriptorCollection GetProperties(Attribute[] attributes)   
+    {   
+      List<CustomPropertyDescriptor> tmpPDCLst = new List<CustomPropertyDescriptor>();   
+      PropertyDescriptorCollection tmpPDC = TypeDescriptor.GetProperties(mCurrentSelectObject, attributes);   
+      IEnumerator tmpIe = tmpPDC.GetEnumerator();   
+      CustomPropertyDescriptor tmpCPD;   
+      PropertyDescriptor tmpPD;   
+      while (tmpIe.MoveNext())   
+      {   
+        tmpPD = tmpIe.Current as PropertyDescriptor;   
+        if (mObjectAttribs.ContainsKey(tmpPD.Name))   
+        {   
+          tmpCPD = new CustomPropertyDescriptor(mCurrentSelectObject, tmpPD);   
+          tmpCPD.SetDisplayName(mObjectAttribs[tmpPD.Name]);   
+          //此处用于处理属性分类的名称，可以在XML等设置文件中进行设置，在这段代码中只是简单的在分类后加了“中文”两个字   
+          tmpCPD.SetCategory(tmpPD.Category + "中文");     
+          tmpPDCLst.Add(tmpCPD);   
+        }   
+      }   
+      return new PropertyDescriptorCollection(tmpPDCLst.ToArray());   
+    }   
+ 
+
+当然在进行属性过虑之后，PropertyGrid中所显示的属性名称都还是原有名称，若想同时改变在PropertyGrid中显示出来的名称则需要重写PropertyDescriptor中的部分方法，在上面这段代码中的CustomPropertyDescriptor就是一个基于PropertyDescriptor的类。
+
+在CustomPropertyDescriptor类中最主要的是重写DisplayName与Category这两个属性，但由于在PropertyDescriptor中这两个属性是只读的，因此在这个类中需要加入两个用于设置这两个属性的方法（或直接用Field）在这里我使用了SetDispalyName与SetCategory这两个方法： 
+
+[c-sharp] view plaincopy
+    
+private string mCategory;    
+      public override string Category    
+      {    
+        get { return mCategory; }    
+      }    
+      private string mDisplayName ;    
+      public override string DisplayName    
+      {    
+        get { return mDisplayName; }    
+      }    
+      public void SetDisplayName(string pDispalyName)    
+      {    
+        mDisplayName = pDispalyName;    
+      }    
+      public void SetCategory(string pCategory)    
+      {    
+        mCategory = pCategory;    
+      }    
+ 
+  就这样的几步，便可以将PropertyGrid中显示的内容完全自定义。
+
+在写ICustomTypeDescriptor接口时，其他的一些方法可以用TypeDescriptor直接返回相关方法调用，并在GetPropertyOwner方法中应返回当前选择对象否则将不会对修改值起任何作用
+
+   
+
+[c-sharp] view plaincopy
+    
+public object GetPropertyOwner(PropertyDescriptor pd)    
+    {   
+       return mCurrentSelectObject;    
+    }   
+ 
+
+ 
+
+  在写CustomPropertyDescriptor类时需要一个PropertyDescriptor对象，在实现一些方法时直接返回这个对象的值。
+
+  当然也可以通过这个方法来自定义一些Events的输出， 
+
+使用方法 
+
+     
+
+[c-sharp] view plaincopy
+//加载组件属性，从XML文件载入，此处为Button   
+    XmlNode tmpXNode = mXDoc.SelectSingleNode("Components/Component[@Name=/"Button/"]");   
+    //选择属性设置   
+    XmlNodeList tmpXPropLst = tmpXNode.SelectNodes("Propertys/Property");   
+    //创建CustomProperty对象   
+    CustomProperty cp = new CustomProperty(sender, tmpXPropLst);   
+    //设置PropertyGrid选择对象   
+    propertyGrid1.SelectedObject = cp;  
+ 
+
+对于显示的item顺序如果想自定义怎么办呢？
+
+[c-sharp] view plaincopy
+//  
+       // 摘要:  
+       //     使用该集合的默认排序（通常为字母顺序）对集合中的成员进行排序。  
+       public virtual PropertyDescriptorCollection Sort();  
+       //  
+       // 摘要:  
+       //     使用指定的 System.Collections.IComparer 对此集合中的成员排序。  
+       public virtual PropertyDescriptorCollection Sort(IComparer comparer);  
+       //  
+       // 摘要:  
+       //     对此集合中的成员排序。首先应用指定的顺序，然后应用此集合的默认排序，后者通常为字母顺序。  
+       public virtual PropertyDescriptorCollection Sort(string[] names);  
+       //  
+       // 摘要:  
+       //     对此集合中的成员排序。首先应用指定的顺序，然后使用指定的 System.Collections.IComparer 进行排序。  
+       public virtual PropertyDescriptorCollection Sort(string[] names, IComparer comparer);  
+  
+       /// <summary>  
+       /// 返回此类型说明符所表示的对象的已筛选属性描述符的集合。  
+       /// </summary>  
+       /// <param name="attributes">用作筛选器的属性数组。它可以是 null。</param>  
+       /// <returns>  
+       /// 一个 <see cref="T:System.ComponentModel.PropertyDescriptorCollection"></see>，包含此类型说明符所表示的对象的属性说明。默认为 <see cref="F:System.ComponentModel.PropertyDescriptorCollection.Empty"></see>。  
+       /// </returns>  
+        public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)  
+       {  
+           int i = 0;  
+           //parameterList是外面传入的待显示数据。  
+           PropertyDescriptor[] newProps = new PropertyDescriptor[parameterList.Count];  
+           foreach (ConfigParameter parameter in parameterList)  
+           {  
+               //由ConfigParameter，你自己定义的类型，转成PropertyDescriptor类型：  
+               newProps[i++] = new SystemOptionsPropertyDescriptor(parameter, true, attributes);  
+           }  
+  
+           //取得了PropertyDescriptor[] newProps;现在可以对它排序，否则就按照newProps的原有顺序显示；  
+             
+           //1.直接返回  
+  
+           PropertyDescriptorCollection tmpPDC = new PropertyDescriptorCollection(newProps);  
+           return tmpPDC;  
+  
+           //2.默认字母顺序  
+           PropertyDescriptorCollection tmpPDC = new PropertyDescriptorCollection(newProps);  
+           return tmpPDC.Sort();  
+  
+           //3.数组的顺序：sortName就是属性的顺序，内容就是各个属性名。  
+           string[] sortName = new string[] { "a","b","c","d" };  
+           return tmpPDC.Sort(sortName);  
+  
+           //4.comparer规则定义的排序方式  
+           ParameterListComparer myComp = new ParameterListComparer();//ParameterListComparer : IComparer  
+           return tmpPDC.Sort(myComp);  
+  
+           //5.先数组，后comparer  
+           return tmpPDC.Sort(sortName,myComp);  
+  
+           //而我采用的是把数据传入之前就排序完毕的方法:即调用之前，把数据parameterList排好顺序，再 1.直接返回。  
+       }  
+  
+       //对于数组排序方法，可以声明称一个事件，由外部传入属性的实现顺序：  
+       public delegate string[] SortEventHandler();  
+       public class CustomTypeDescriptorExtend : CustomTypeDescriptor  
+       {  
+           public SortEventHandler OnSort;  
+  
+           //......其它代码  
+  
+           public override PropertyDescriptorCollection GetProperties(Attribute[] attributes)  
+           {  
+               string[] sortName = OnSort();  
+               PropertyDescriptorCollection tmpPDC = TypeDescriptor.GetProperties(typeof(CustomTypeDescriptorExtend), attributes);  
+               return tmpPDC.Sort(sortName);  
+           }  
+       }  
+  
+       //使用时：  
+       public MyMethod()  
+       {  
+           CustomTypeDescriptorExtend s = new CustomTypeDescriptorExtend();  
+           s.OnSort += new SortEventHandler(SetSortors);  
+           PropertyGrid1.SelectedObject = s;  
+           PropertyGrid1.PropertySort = PropertySort.Categorized;  
+       }  
+  
+       public string[] SetSortors()  
+       {  
+           return new string[] { "B", "A", "C" };  
+       }  
+ 
+
+如果希望在程序运行中修改某些属性值的话，应该怎么办呢？
+
+[c-sharp] view plaincopy
+ void SetPropertyVisibility(object obj, string propertyName, bool visible)   
+{   
+Type type = typeof(BrowsableAttribute);   
+PropertyDescriptorCollection props = TypeDescriptor.GetProperties(obj);   
+AttributeCollection attrs = props[propertyName].Attributes;   
+FieldInfo fld = type.GetField("browsable", BindingFlags.Instance | BindingFlags.NonPublic);   
+fld.SetValue(attrs[type], visible);   
+}   
+  
+void SetPropertyReadOnly(object obj, string propertyName, bool readOnly)   
+{   
+Type type = typeof(System.ComponentModel.ReadOnlyAttribute);   
+PropertyDescriptorCollection props = TypeDescriptor.GetProperties(obj);   
+AttributeCollection attrs = props[propertyName].Attributes;   
+FieldInfo fld = type.GetField("isReadOnly", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.CreateInstance);   
+fld.SetValue(attrs[type], readOnly);   
+}  
+ 
+
+ 
+
+总之，PropertyGrid通过很多技巧能够达到很炫的效果，不过由于PropertyGrid与对象严格绑定，需要大量的convert/uiedittype/attributes等配合实现，同时要注意在使用过程中PropertyGrid的改变就代表了内存对象的改变，这一点一定要记住。同时字段的属性，特别是类型属性一定要严格控制好，否则convert过程中就会异常了。
+
+顶
+1
+踩
+0
+上一篇深度解析 TypeConverter & TypeConverterAttribute （二）
+下一篇Microsoft Agent 应用心得
+主题推荐visual studio控件应用网络class
+猜你在找
+.NET平台和C#编程从入门到精通使用C#开发信息管理系统特供精品.Net基础全套视频教程ASP.NET下工作流技术WorkFlow4.0应用开发基于.NET三层架构+高级SQL开发图书借阅管理系统
+急救在visual studionet 中使用aspnet应用程序制作网页时从web窗体中拉出的控件不能在浏览时显示Visual Studio风格开发系列 - PropertyGrid控件C# 充分利用 NET 框架的 PropertyGrid 控件C# 将自己编写的控件放到 Visual Studio 工具箱中Visual Studio C# 中使用用户控件Visual Studio C# 中使用用户控件
+
+查看评论
+51楼 zhanghailun413 2015-11-09 20:07发表 [回复]
+
+异常的强大,尤其是在配置项特别 多的时候太TMD的有用了
+50楼 皮特胖胖 2015-09-24 18:45发表 [回复]
+
+刚刚才发现这个强大的控件，感谢感谢
+49楼 keyayi 2014-12-24 10:27发表 [回复]
+
+非常好，求源码，keyayi2008@sina.com
+48楼 aenb888 2014-06-14 18:37发表 [回复]
+
+也想问这个：
+博主，有个问题请教一下：如何实现属性的缩进？像树形控件那样，不同的节点前都有一个缩进？
+47楼 therry_ding 2013-10-21 13:14发表 [回复]
+
+博主，有个问题请教一下：如何实现属性的缩进？像树形控件那样，不同的节点前都有一个缩进？
+46楼 fenyuzhu 2013-07-16 11:46发表 [回复]
+
+然后我想继续按照这种格式修改Category,,代码执行不报错,但是刷新后,还是不显示修改后的值代码如下:
+
+public static void SetPropertyCategory(object obj, string propertyName, string value)
+{
+Type type = typeof(System.ComponentModel.CategoryAttribute);
+PropertyDescriptorCollection props = TypeDescriptor.GetProperties(obj);
+AttributeCollection attrs = props[propertyName].Attributes;
+FieldInfo fld = type.GetField("categoryValue", BindingFlags.Instance | BindingFlags.Public | BindingFlags.CreateInstance | BindingFlags.NonPublic);
+fld.SetValue(attrs[type], value);
+45楼 fenyuzhu 2013-07-16 11:41发表 [回复]
+
+求教:我按照您的修改显隐性的代码写了个修改DisplayName的代码,能成功修改,但是当我修改描述Description和Category时,代码执行通过,,但是刷新后,不显示修改的值
+这是修改Description的代码 Type type = typeof(System.ComponentModel.DescriptionAttribute);
+PropertyDescriptorCollection props = TypeDescriptor.GetProperties(obj);
+AttributeCollection attrs = props[propertyName].Attributes;
+FieldInfo fld = type.GetField("description",BindingFlags.Instance | BindingFlags.Public | BindingFlags.CreateInstance | BindingFlags.NonPublic);
+// type.FullName
+fld.SetValue(attrs[type], value);
+44楼 xiaoxinmiao 2013-07-04 23:29发表 [回复]
+
+写的很好吖 ，求源码 xiaoxm_001@163.com
+非常感谢
+43楼 一马 2013-06-14 17:29发表 [回复]
+
+MSDN网址已经失效
+可以考虑http://msdn.microsoft.com/zh-cn/library/aa302326.aspx
+42楼 rabiboy 2013-06-08 17:49发表 [回复]
+
+您好，请问一下，如何通过程序来提取我在propertygrid中输入的各个参数的值呢？谢谢
+41楼 sevenny_lin 2013-05-30 01:00发表 [回复]
+
+如果想改变item的displayname为中文我们该怎么办呢？
+
+被楼主误导了，为了个小功能，继承重写那么多类和方法，我一直持怀疑的态度，后来用reflector.exe查看DisplayName的实现：
+public virtual string DisplayName
+{
+get
+{
+DisplayNameAttribute attribute = this.Attributes[typeof(DisplayNameAttribute)] as DisplayNameAttribute;
+if ((attribute != null) && !attribute.IsDefaultAttribute())
+{
+return attribute.DisplayName;
+}
+return this.displayName;
+}
+}
+
+
+很明显在属性里加个DisplayNameAttribute就OK.
+
+[DisplayNameAttribute("背景色")]
+public Color BackColor { get; set; }
+40楼 ghost5216 2013-04-12 14:15发表 [回复]
+
+百度到博主文章，很有受益，先谢谢了。
+
+有个问题，要请教？关于PorpertyGird中RichTextEditor的使用。
+想输入多行的时候，回车该怎么处理，一按回车，文本框就没了。
+39楼 草青工作室 2013-02-21 14:18发表 [回复]
+
+很好，很强大 ~~~~
+38楼 guo302 2012-08-02 15:50发表 [回复]
+
+楼主您好！麻烦把源代码发一份到我邮箱好吗？先谢了！15328531@qq.com
+37楼 赫山老妖 2012-07-15 00:15发表 [回复]
+
+如果想改变item的displayname为中文我们该怎么办呢？
+其实有一个简单办法
+[DisplayNameAttribute("中文显示名称")]
+搞定呵呵
+36楼 c243001806 2012-06-29 14:02发表 [回复]
+
+大哥，能给我也发一份源码吗? cl243001806@126.com
+35楼 Mr_graceless 2012-06-19 11:08发表 [回复]
+
+看了N多的例子，都没有写到绑定了自定义的类之后，如何和实际的button了，label了发生关系。
+34楼 sunmeal 2012-03-20 09:03发表 [回复]
+
+楼主很强大，能将后面自定义显示信息和更换为中文那部分（就是根据xml动态调整显示样式）的源码给我一下吗，那个中间的处理类，我这边拼不出来。谢谢，sunmeal@126.com
+33楼 sunmeal 2012-03-19 18:54发表 [回复]
+
+楼主很强大，能将后面自定义显示信息和更换为中文那部分（就是根据xml动态调整显示样式）的源码给我一下吗，那个中间的处理类，我这边拼不出来。谢谢
+32楼 shygenpichong 2012-03-09 13:53发表 [回复]
+
+楼主你能把改变item的displayname为中文的全部代码发到我邮箱吗，shy0806.cn@163.com
+31楼 mongolianscdn 2012-03-07 11:07发表 [回复]
+
+请问我把你的代码拷过去运行，日期控件弹不出来，一步一步测试看没运行到GetEditStyle和EditValue函数这儿，你们有这个问题吗？
+30楼 AccessZHB 2011-12-31 15:46发表 [回复]
+
+超赞~！~学习此控件很好的文章
+29楼 hoodlum0053 2011-11-24 15:36发表 [回复]
+
+谢谢楼主分享，很实用
+28楼 eur911 2011-11-21 11:08发表 [回复]
+
+太感谢了
+27楼 xulintao328882110 2011-11-18 15:51发表 [回复]
+
+楼主啊，小弟求救来了，我的PropertyGrid属性控件中，有个对象是List泛型集合。在属性控件中点击弹出VS自带的集合属性编辑器，此时对其值进行修改，不知道怎么获得此时修改的值。楼主我的QQ号码是328882110，我就在这个地方卡壳了。大侠，楼主、前辈。拉小弟一把吧
+第二天了
+Re: luyifeiniu 2011-11-19 11:39发表 [回复]
+
+回复xulintao328882110：发程序到我邮箱吧ly21ca@sina.com
+Re: luyifeiniu 2011-12-01 14:58发表 [回复]
+
+回复luyifeiniu：回复邮件了，查收。
+26楼 xulintao328882110 2011-11-17 16:22发表 [回复]
+
+楼主啊，小弟求救来了，我的PropertyGrid属性控件中，有个对象是List泛型集合。在属性控件中点击弹出VS自带的集合属性编辑器，此时对其值进行修改，不知道怎么获得此时修改的值。楼主我的QQ号码是328882110，我就在这个地方卡壳了。大侠，楼主、前辈。拉小弟一把吧
+25楼 jglie 2011-11-16 23:50发表 [回复]
+
+必须好顶。最近正好用到了此控件。学习了受益不小，感谢楼主的分享。
+24楼 jglie 2011-11-16 23:48发表 [回复]
+
+必须要顶。楼主写太详细了。在此学到了很多东西，楼主的分享！
+23楼 pellojava 2011-11-07 11:07发表 [回复]
+
+這個可以頂
+22楼 jlh729 2011-10-18 09:30发表 [回复]
+
+顶一个！！！！！！！！
+21楼 bossmaster 2011-10-14 15:35发表 [回复]
+
+楼主好，我能不能将所有的属性都建立在一个属性类中，然后在查询显示的时候按需要将不同的属性选择性的显示在ProperGrid控件中呢？谢谢楼主了哈！
+20楼 glowd 2011-10-03 14:05发表 [回复]
+
+楼主，我想问一下如何不让propertygrid的自验证对话框（错误验证）弹出来，然后再自定义验证对话框。
+例如：有一属性为int型，如果输入1.2就会弹出错误对话框。敬请楼主解答，感激不尽！
+19楼 glowd 2011-10-02 10:55发表 [回复]
+
+很好，很强大！
+18楼 Tim-Xu 2011-09-26 20:25发表 [回复]
+
+顶.收藏拉
+17楼 rainforest92 2011-09-11 16:34发表 [回复]
+
+楼主，我用的类中几个属性是double类型的，我想让它在propertygrid里保留2位，但是不能改原值。这个怎么弄？
+16楼 zhangyange 2011-09-02 11:58发表 [回复]
+
+没有看懂啊
+15楼 y315728570 2011-08-29 15:31发表 [回复]
+
+楼主，我想知道这个控件的事件那块，是怎么处理的啊。
+14楼 oliver2378 2011-08-19 10:49发表 [回复]
+
+这个必须顶，谢谢博主！
+13楼 sjxbf 2011-08-17 21:53发表 [回复]
+
+博主你好 我还是不太明白，你说的Converter是什么 请详细说说吧 谢谢
+12楼 sjxbf 2011-08-12 11:43发表 [回复]
+
+博主你好 当输入非法属性时，程序会弹出Property Grid控件自定义非法属性的警告提示，请问怎么自定义这种警告提示？ 谢谢！
+Re: luyifeiniu 2011-08-12 18:38发表 [回复]
+
+回复sjxbf：你可以先在Converter中判断输入的类型，错误的通过自定义异常抛出，外面接受自定义异常，然乎提示。
+11楼 sjp0329 2011-08-05 15:03发表 [回复]
+
+博主你好，你写的文章对实际应用很有帮助，我参照你的文章，完成了下拉菜单以及显示中文属性的练习。没有问题。但当把两者结合的时候，中文属性没问题，但是下拉式菜单被屏蔽掉了。就[TypeConverter(typeof(FileNameConverter)]和实现ICustomTypeDescriptor接口控制显示方式两个技巧放在一起时，不能显示下拉框，程序没有执行FileNameConverter的任何代码。请问问题能出在哪里？感觉是实现ICustomTypeDescriptor的代码屏蔽掉了什么，可我实在找不出来问题在哪，因为我对这部分内容理解的不太清楚。
+Re: luyifeiniu 2011-08-12 10:55发表 [回复]
+
+回复sjp0329：没有看到代码不好说哦，我在考虑是否也像之前解决邮件代理问题的方式写个Demo，把所有的特性都实现一把。
+10楼 闲渔Love吉他 2011-08-04 11:01发表 [回复]
+
+Up，必须顶！
+9楼 小冷关山 2011-06-13 11:29发表 [回复]
+
+挺好，顶一个
+8楼 art9527 2011-06-10 09:05发表 [回复]
+
+[e01][e01][e01][e01][e01][e01][e01][e01][e01][e01]
+7楼 jjcl521 2011-05-12 15:36发表 [回复]
+
+排序问题parameterList 是什么意思呢？
+Re: luyifeiniu 2011-05-13 16:53发表 [回复]
+
+回复jjcl521：//parameterList是外面传入的待显示数据。然后实现一个比较的接口或是比较器，来把其内容进行排序。
+6楼 jinrong530802000 2011-04-27 23:40发表 [回复]
+
+[e01]
+5楼 C囧囧 2011-04-09 13:33发表 [回复]
+
+[e01][e01],写的很详细，也很有指导意义
+4楼 C囧囧 2011-04-07 21:23发表 [回复]
+
+好，写的很详细[e01][e03][e03][e03]
+3楼 pukerno3 2011-03-10 09:51发表 [回复]
+
+预览了下，ok，非常非常好，等看玩了再继续评价。
+2楼 xiaoyanke2006 2011-03-07 21:55发表 [回复]
+
+[e03][e01]
+1楼 xingheng907 2010-12-13 11:03发表 [回复]
+
+[e01]
+您还没有登录,请[登录]或[注册]
+* 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场
+核心技术类目
+全部主题 Hadoop AWS 移动游戏 Java Android iOS Swift 智能硬件 Docker OpenStack VPN Spark ERP IE10 Eclipse CRM JavaScript 数据库 Ubuntu NFC WAP jQuery BI HTML5 Spring Apache .NET API HTML SDK IIS Fedora XML LBS Unity Splashtop UML components Windows Mobile Rails QEMU KDE Cassandra CloudStack FTC coremail OPhone CouchBase 云计算 iOS6 Rackspace Web App SpringSide Maemo Compuware 大数据 aptech Perl Tornado Ruby Hibernate ThinkPHP HBase Pure Solr Angular Cloud Foundry Redis Scala Django Bootstrap
+个人资料
+ 访问我的空间 
+luyifeiniu
+ 
+访问：211375次
+积分：2667
+等级： 
+排名：第7897名
+原创：54篇转载：53篇译文：0篇评论：381条
+文章搜索
+
+搜索
+文章分类
+.NET(46)
+ERP(2)
+Java(2)
+其它技术(7)
+基础知识(15)
+数据库技术(18)
+杂七杂八(9)
+脚本技术(10)
+设计模式(4)
+文章存档
+2011年09月(1)
+2011年03月(1)
+2010年12月(8)
+2010年08月(1)
+2010年06月(2)
+展开
+阅读排行
+C# PropertyGrid控件应用心得(47310)
+C#实现ActiveX控件开发与部署---安装打包篇(9804)
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送(9443)
+单田芳评书口头语全集(4105)
+C#访问系统环境变量(4025)
+C#实现ActiveX控件开发与部署---部署与升级篇(3909)
+深度解析 TypeConverter & TypeConverterAttribute （一） (3779)
+Microsoft Agent 应用心得(3522)
+深度解析 TypeConverter & TypeConverterAttribute （二） (3179)
+使用EventWaitHandle控制线程间的同步(2845)
+评论排行
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送(308)
+C# PropertyGrid控件应用心得(60)
+C#实现ActiveX控件开发与部署---安装打包篇(7)
+XML中的XPath查询语法(3)
+C#实现ActiveX控件开发与部署---部署与升级篇(3)
+使用EventWaitHandle控制线程间的同步(2)
+Microsoft Agent 应用心得(2)
+C#访问系统环境变量(2)
+深度解析 TypeConverter & TypeConverterAttribute （二） (1)
+给ActiveX控件做数字签名(1)
+推荐文章
+*算法与数据结构学习资源大搜罗——良心推荐
+*架构设计：系统间通信（17）——服务治理与Dubbo 中篇（分析）
+*数据库性能优化之SQL语句优化
+*Android应用开发allowBackup敏感信息泄露的一点反思
+*Linux多线程实践（四 ）线程的特定数据
+* 使用Rx缓存网络数据
+最新评论
+C# PropertyGrid控件应用心得
+zhanghailun413: 异常的强大,尤其是在配置项特别 多的时候太TMD的有用了
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+syanguo: 楼主，这几天搞代理头都大了，能发给我一份源码吗？邮箱是1043201581@qq.com 谢谢啦！
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+xincchen: 需要做邮件群发，不熟悉，麻烦给我份代码参考下吧。309644242@qq.com,谢谢！！
+C# PropertyGrid控件应用心得
+皮特胖胖: 刚刚才发现这个强大的控件，感谢感谢
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+ttf1: 楼主在吗，我也遇到问题，期待完整代码~谢谢~18158964@qq.com
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+小风风云: 太厉害了，求源码 qinzhb@163.com
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+LiGentian2015: 发一份源码吧，谢谢!!736725863@qq.com
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+zhyan318: 楼主求份源码，qingdafrank@163.com，谢谢啦
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+yongshun_li: 大神，帮个忙啊 ，我弄好久还是发不成功，很崩溃，您能不能发一份给我啊，565701696@qq.co...
+如何在代理环境下发送邮件？——C#实现Socket代理方式的邮件发送
+yongshun_li: 楼主可以给我发一份吗，谢谢！！！ 565701696@qq.com
+技术相关
+食鸟轩
+mail_ricklee的专栏
+Windows Server2003秘笈放送
+慧心弋笑的BLOG
+公司简介|招贤纳士|广告服务|银行汇款帐号|联系方式|版权声明|法律顾问|问题报告|合作伙伴|论坛反馈
+网站客服杂志客服微博客服webmaster@csdn.net400-600-2320|北京创新乐知信息技术有限公司 版权所有|江苏乐知网络技术有限公司 提供商务支持
+京 ICP 证 09002463 号|Copyright © 1999-2014, CSDN.NET, All Rights Reserved GongshangLogo
+

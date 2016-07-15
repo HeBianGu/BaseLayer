@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="LoggerStatic.OutputLog(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName,System.Reflection.MethodBase.GetCurrentMethod().Name,Ex);" Bounds="-143.199996541341,150.480100002728,462.546666666667,70.96" Label="  LoggerStatic.OutputLog(&#xD;&#xA;System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName,&#xD;&#xA;System.Reflection.MethodBase.GetCurrentMethod().Name,&#xD;&#xA;                                            ex);" UseManualLocation="True" />
+    <Node Id="Output.Logger.Error(ex.StackTrace);" Bounds="290.073345947266,65.5683172521397,237.85,25.24" Label="    Output.Logger.Error(ex.StackTrace);" UseManualLocation="True" />
+    <Node Id="日志" Bounds="59.2733325958252,-16.840199997272,50,25.24" />
+    <Node Id="设置当前雷鸣和方法名" Category="Comment" Bounds="30.0733333333329,308.708316031436,140,25.24" Label="设置当前雷鸣和方法名" UseManualLocation="True" />
+    <Node Id="输入日志格式" Bounds="38.2733325958252,38.399900002728,92,25.24" />
+    <Node Id="输出堆栈信息" Category="Comment" Bounds="495.273345947266,163.16831725214,92,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="日志" Target="输入日志格式" Bounds="84.2733325958252,8.39980000272798,0,21.0001" />
+    <Link Source="设置当前雷鸣和方法名" Target="LoggerStatic.OutputLog(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName,System.Reflection.MethodBase.GetCurrentMethod().Name,Ex);" Bounds="92.0132454881513,230.404950613288,6.94136255302782,78.3033727509702" />
+    <Link Source="输入日志格式" Target="LoggerStatic.OutputLog(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName,System.Reflection.MethodBase.GetCurrentMethod().Name,Ex);" Bounds="84.628720044547,63.6399012756348,2.19213130869755,77.8437652068656" />
+    <Link Source="输入日志格式" Target="Output.Logger.Error(ex.StackTrace);" Bounds="130.273332595825,54.8685334521978,150.849384103494,12.6209520320745" />
+    <Link Source="输出堆栈信息" Target="Output.Logger.Error(ex.StackTrace);" Bounds="433.343929026755,96.151869764392,90.8258257319858,67.0164474877476" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

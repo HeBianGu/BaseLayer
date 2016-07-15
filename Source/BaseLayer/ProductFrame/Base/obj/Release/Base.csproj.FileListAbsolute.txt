@@ -1,0 +1,5 @@
+E:\6.x\6.2\DEV\Product\Bin\Base.dll
+E:\6.x\6.2\DEV\Product\Bin\Base.pdb
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Release\Base.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Release\Base.pdb
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Release\Base.csprojResolveAssemblyReference.cache

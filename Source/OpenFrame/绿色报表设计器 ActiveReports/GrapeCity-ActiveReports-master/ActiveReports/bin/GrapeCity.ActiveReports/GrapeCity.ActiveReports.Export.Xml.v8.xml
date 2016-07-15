@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Xml.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Section.TextExport">
+			<summary>
+            The ActiveReports for .NET Text Export Component.
+            </summary>
+			<remarks>
+				<para>
+            		The default character encoding used for the TextExport is ASCII.  If your 
+            		reports may contain internationalized characters then consider using the 
+            		<see cref="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Encoding" /> property to specify the <see cref="T:System.Text.UTF8Encoding" /> 
+            		or <see cref="T:System.Text.UnicodeEncoding" /> instead.  The current Encoding’s 
+            		preamble is written out according to the rules of <see cref="T:System.IO.StreamWriter" />.
+            	</para>
+			</remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String)">
+			<summary>
+            Exports the specified document to a text format file.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String,System.String)">
+			<summary>
+            Exports the specified document to a text format file.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="stream">The Stream to write the text to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to the specified stream in text format.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="stream">The Stream to write the text to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String,System.String)">
+			<summary>
+            Exports the specified document to a text format file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String)">
+			<summary>
+            Exports the specified document to a text format file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the text to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to the specified stream in text format.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the text to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Encoding">
+			<summary>
+            Sets or returns the character encoding used for the outputted text.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.PageDelimiter">
+			<summary>
+            Sets or returns the text inserted between pages.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.TextDelimiter">
+			<summary>
+            Sets or returns the text inserted between text fields.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.SuppressEmptyLines">
+			<summary>
+            Determines whether empty lines will be inserted for layout purposes.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Section.TextExport.Pagination">
+			<summary>
+            Gets or sets the value indicates should pagination be used for resulted text document or not
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Section.TextExportException">
+			<summary>
+            Thrown when a general TextExport specific error occurs.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Page.FunctionalExtensions">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Page.FunctionalExtensions.MatchBlock`2">
+			<summary>
+            Represents expression matching result.
+            </summary>
+			<typeparam name="T"></typeparam>
+			<typeparam name="TResult"></typeparam>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension">
+			<summary>
+Implementation of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension" />. Allows to render <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to XML file.
+</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Xml\XmlRenderingExtension.slashdoc" path="/Libraries/Types/Type[@name=&quot;XmlRenderingExtension&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Xml\XmlRenderingExtension.slashdoc" path="/Libraries/Types/Type[@name=&quot;XmlRenderingExtension&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension.GetSupportedSettings">
+			<summary>
+Gets supported settings of <see cref="T:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension" />.
+</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension.GetSupportedSettings(System.Boolean)">
+			<summary>
+Gets supported settings of <see cref="T:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension" />.
+</summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xml.Page.Settings">
+			<summary>
+            Specifies the available setting names used with the <see cref="T:GrapeCity.ActiveReports.Export.Xml.Page.XmlRenderingExtension" />.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xml.Page.Settings.ApplySettings(System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Applies any settings passed in the NameValueCollection settings parameters.
+            </summary>
+			<param name="settings">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> containing new settings.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Page.Settings.OutputHiddenMatrixMembersPropertyName">
+			<summary>
+            Specifies a setting name that determines if any hidden members in a Matrix ReportItem are written out.
+            Possible values: 
+            <list type="bullet"><item><description>yes</description></item><item><description>no</description></item></list>
+            Default: yes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Page.Settings.EncodingPropertyName">
+			<summary>
+            Specifies the setting name that determines the text encoding to use.
+            </summary>
+			<remarks>
+            Valid values are the code page name of the preferred encoding. For example: utf-8, utf-16, utf-32, iso-8859-1, iso-2022-jp, etc...
+            Default: utf-8
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Page.Settings.XslStylesheetPropertyName">
+			<summary>
+            Specifies the full path and filename of an Xsl Stylesheet to use during the rendering process.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Page.Settings.Encoding">
+			<summary>
+            Returns the value of the current Encoding setting.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Xml.Page.Settings.XslStylesheet">
+			<summary>
+            Gets or sets the path of the Xsl Stylesheet used during the rendering process.
+            </summary>
+		</member>
+	</members>
+</doc>

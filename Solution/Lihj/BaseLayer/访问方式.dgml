@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="BottomToTop" Layout="ForceDirected" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="使用WebClient类" Bounds="365.509180297852,192.088309020775,115.77,25.8366666666667" UseManualLocation="True" />
+    <Node Id="角色模拟" Bounds="62.0743408203125,186.088309020775,68,25.8366666666667" UseManualLocation="True" />
+    <Node Id="访问远程资源方式" Category="Category1" Bounds="190.502510070801,135.925075687442,116,25.8366666666667" UseManualLocation="True" />
+    <Node Id="调用NetUse命令" Bounds="191.252314046224,4.25154235410871,112.343333333333,25.8366666666667" Label="调用Net use命令" UseManualLocation="True" />
+    <Node Id="调用WNetAddConnection2、WNetAddConnection3或者NetUseAdd函数，进行磁盘映射" Bounds="-8.00000976562501,275.761842342122,514.23,25.8366666666667" Label="调用WNetAddConnection2、WNetAddConnection3或者NetUseAdd函数，进行磁盘映射" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="访问远程资源方式" Target="使用WebClient类" Bounds="288.730051147581,161.761747639974,85.8675821106265,27.5747860336859" />
+    <Link Source="访问远程资源方式" Target="角色模拟" Bounds="138.377235586032,161.761747639974,70.8710548454469,23.3232528001554" />
+    <Link Source="访问远程资源方式" Target="调用NetUse命令" Bounds="247.603508607998,39.0879075400747,0.793181356688279,96.8371734332326" />
+    <Link Source="访问远程资源方式" Target="调用WNetAddConnection2、WNetAddConnection3或者NetUseAdd函数，进行磁盘映射" Bounds="248.559084998015,161.761747639974,0.459902879099275,105.000181137284" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -1,0 +1,5 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.CMD.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.CMD.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CMD\obj\Debug\HebianGu.ComLibModule.CMD.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CMD\obj\Debug\HebianGu.ComLibModule.CMD.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CMD\obj\Debug\HebianGu.ComLibModule.CMD.pdb

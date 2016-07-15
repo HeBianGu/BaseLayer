@@ -1,0 +1,18 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.Hosting.exe.config
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.Hosting.exe
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.Hosting.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.exe
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Hosting.exe.config
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Hosting.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Hosting.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.pdb

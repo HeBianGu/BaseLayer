@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GZipEncoder">
+</Property><Property Name="解决方案文件" Value="E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\GZipEncoder.sln">
+</Property><Property Name="用户选项文件" Value="E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\GZipEncoder.suo">
+</Property><Property Name="Date" Value="2013年7月29日 星期一">
+</Property><Property Name="Time" Value="9:11">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GZipEncoder.sln" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipEncoder.sln">
+</Event><Event ErrorLevel="0" Project="" Source="GZipEncoder.suo" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipEncoder.suo">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipEncoder.csproj" Description="项目文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipEncoder.csproj">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipEncoder.csproj.user" Description="项目用户文件成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipEncoder.csproj.user">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipMessageEncoderFactory.cs" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipMessageEncoderFactory.cs">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipMessageEncodingBindingElement.cs" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipMessageEncodingBindingElement.cs">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="Configuration\AssemblyInfo.cs" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\Configuration\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipMessageEncodingBindingElementImporter.cs" Description="文件已成功备份为 E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\GZipEncoder\Backup\GZipMessageEncodingBindingElementImporter.cs">
+</Event><Event ErrorLevel="0" Project="GZipEncoder" Source="GZipEncoder.csproj" Description="项目文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="GZipEncoder" Source="GZipEncoder.csproj" Description="无需转换">
+</Event><Event ErrorLevel="0" Project="" Source="GZipEncoder.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="GZipEncoder.sln" Description="Converted">
+</Event></UpgradeLog>

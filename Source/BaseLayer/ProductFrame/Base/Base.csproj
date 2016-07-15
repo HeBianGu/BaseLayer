@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1BA7E18C-518B-4DCF-8493-76EB0616AF77}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Base</RootNamespace>
+    <AssemblyName>Base</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Product\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Product\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Units, Version=6.2.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\Units.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Element And Site\Compound\VersionInfo.cs" />
+    <Compile Include="DefaultUnit\DUCenter.cs" />
+    <Compile Include="DefaultUnit\DUProvider.cs" />
+    <Compile Include="DefaultUnit\DefaultUnit.cs" />
+    <Compile Include="DynamicElement\DCompound.cs" />
+    <Compile Include="Element And Site\CompoundAttribute.cs" />
+    <Compile Include="Element And Site\Compound\CompoundInstanceData.cs" />
+    <Compile Include="Element And Site\ElementEvent.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\float.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\Unit.cs" />
+    <Compile Include="Interface\IPersist.cs" />
+    <Compile Include="Interface\IStorage.cs" />
+    <Compile Include="Interface\CompoundModelEx.cs" />
+    <Compile Include="Element And Site\Compound\CompoundCore.cs" />
+    <Compile Include="Element And Site\Compound\CompoundElement.cs" />
+    <Compile Include="Element And Site\ElementBase\ArrayElement.cs" />
+    <Compile Include="Element And Site\ElementBase\ReferableElementBase.cs" />
+    <Compile Include="Element And Site\ElementBase\ElementT.cs" />
+    <Compile Include="Element And Site\ElementBase\SingleReferableElement.cs" />
+    <Compile Include="Element And Site\Carrier\Carrier.cs" />
+    <Compile Include="Element And Site\ElementSiteBase\TableSite.cs" />
+    <Compile Include="Element And Site\ElementSiteBase\ElementReferT.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\Color.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\double.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\Int32.cs" />
+    <Compile Include="Element And Site\ElementSiteBase\ElementSiteBase.cs" />
+    <Compile Include="Element And Site\ElementSiteBase\ElementSiteT.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\string.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\UnitValue.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\DateTime.cs" />
+    <Compile Include="Element And Site\SingleElementsImpl\Bool.cs" />
+    <Compile Include="Interface\DefaultData.cs" />
+    <Compile Include="StaticUIConfig\BxStaticUIConfigProvider.cs" />
+    <Compile Include="StaticUIConfig\BxSUICPregnant.cs" />
+    <Compile Include="StaticUIConfig\StaticUIConfig\BxUnitList.cs" />
+    <Compile Include="StaticUIConfig\StaticUIConfig\BxUIItemFlag.cs" />
+    <Compile Include="StaticUIConfig\StaticUIConfig\BxSUICSubColums.cs" />
+    <Compile Include="Storage\SharedValueArea\BxAssembly.cs" />
+    <Compile Include="Storage\SharedValueArea\BxSvaTypeSaver.cs" />
+    <Compile Include="Storage\SharedValueArea\BxSVA.cs" />
+    <Compile Include="Storage\Storage.cs" />
+    <Compile Include="Storage\BxStorageNode.cs" />
+    <Compile Include="Storage\BxStorageElement.cs" />
+    <Compile Include="SystemInfo\PathInfo.cs" />
+    <Compile Include="SystemInfo\SystemInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemInfo\Registries.cs" />
+    <Compile Include="SystemInfo\SystemPath.cs" />
+    <Compile Include="SystemInfo\ModulesInfo.cs" />
+    <Compile Include="SystemInfo\UnitsManager.cs" />
+    <Compile Include="TDPackage.cs" />
+    <Compile Include="UIConfig\UIItemFlag.cs" />
+    <Compile Include="UIConfig\UIConfig.cs" />
+    <Compile Include="UIConfig\MutiColumns.cs" />
+    <Compile Include="UIConfig\UIConfigFromSuic.cs" />
+    <Compile Include="UIConfig\Range.cs" />
+    <Compile Include="XmlUIConfig\UIConfig.cs" />
+    <Compile Include="XmlUIConfig\XmlFile.cs" />
+    <Compile Include="StaticUIConfig\StaticUIConfig\StaticUIConfig.cs" />
+    <Compile Include="UIConfig\BxSubColumns.cs" />
+    <Compile Include="DefaultData\DefaultData.cs" />
+    <Compile Include="DefaultData\DDCenter.cs" />
+    <Compile Include="DefaultData\DDProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseInterface\BaseInterface.csproj">
+      <Project>{17DFF98D-70FF-4224-BDA3-5617B816DCBC}</Project>
+      <Name>BaseInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConvenientHelp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

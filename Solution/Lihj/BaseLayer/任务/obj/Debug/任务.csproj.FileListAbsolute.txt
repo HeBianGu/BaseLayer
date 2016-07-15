@@ -1,0 +1,5 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.pdb

@@ -1,0 +1,18 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.TaskProxy.dll
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.TaskProxy.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.SimulationSettingForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.Properties.Resources.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.PublishTaskForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csproj.GenerateResource.Cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll.licenses
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.SimulationSettingForm.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.Properties.Resources.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.PublishTaskForm.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll.licenses
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.pdb

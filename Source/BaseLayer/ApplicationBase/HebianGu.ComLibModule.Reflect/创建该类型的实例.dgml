@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1635a434-cfeb-4774-9dd4-5d5439271c471" Bounds="-44.1450042724609,111.249999720256,304.606666666667,41.6733333333333" Label="Type type = Type.GetType(&quot;类的完全限定名&quot;); &#xD;&#xA;object obj = type.Assembly.CreateInstance(type); " UseManualLocation="True" />
+    <Node Id="Activator" Bounds="64.5,2.50000000000002,340.606666666667,25.8366666666667" Label="object o = System.Activator.CreateInstance(t);//创建实例" UseManualLocation="True" />
+    <Node Id="VarInstance=Asm.CreateInstance(&quot;DllDemo.ClassGreenerycn&quot;);" Bounds="-27.5,-91.5,448.223333333333,25.8366666666667" Label="object obj = assembly.CreateInstance(&quot;类的完全限定名（即包括命名空间）&quot;);" UseManualLocation="True" />
+    <Node Id="创建该类型的实例" Category="Category1" Bounds="-179,7,116,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="创建该类型的实例" Target="1635a434-cfeb-4774-9dd4-5d5439271c471" Bounds="-94.608026499594,32.8366663869222,152.113764205527,74.4565884989556" />
+    <Link Source="创建该类型的实例" Target="Activator" Bounds="-63,17.6860515796147,118.500719722972,1.49873021314243" />
+    <Link Source="创建该类型的实例" Target="VarInstance=Asm.CreateInstance(&quot;DllDemo.ClassGreenerycn&quot;);" Bounds="-79.345041703469,-62.9974472753821,225.70564330798,69.9974469956376" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

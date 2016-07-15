@@ -1,0 +1,4 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Web.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Web.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Web\obj\Debug\HebianGu.ComLibModule.Web.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Web\obj\Debug\HebianGu.ComLibModule.Web.pdb

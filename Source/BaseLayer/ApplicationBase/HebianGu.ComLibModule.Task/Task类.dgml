@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="PublicTask(ActionAction)" Category="Category2" Bounds="-169,-84,168.32,25.8366666666667" Label="public Task(Action action)" UseManualLocation="True" />
+    <Node Id="SynchronizationContextTaskScheduler（同步上下文任务调度器）" Bounds="-312.750003153483,351.618342481989,386.863333333333,25.8366666666666" Label="synchronization context task scheduler（同步上下文任务调度器）" UseManualLocation="True" />
+    <Node Id="Task" Category="Category1" Bounds="0,0,50,25.8366666666667" />
+    <Node Id="TaskCreationOptions这个类型是一个枚举类型，传递一些标志来控制Task的执行方式" Category="Category2" Bounds="33.8824221772003,141.571945892767,477.623333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="TaskScheduler对象负责执行调度的任务" Category="Category2" Bounds="-291.5,122.5,234.4,25.8366666666667" UseManualLocation="True" />
+    <Node Id="同步上下文任务调度器通常用于桌面应用程序，Winfrom，WPF及Silverlight。这个任务调度器将多有任务都调度给应用程序的GUI线程，使所有任务代码都能成功更新UI组建，比如按钮、菜单项等" Category="Comment" Bounds="-640.75,436.965209148656,249.27,89.1833333333334" Label="同步上下文任务调度器通常用于桌面应用程序，Winfrom，WPF及Silverlight。这个任务调度器将多有任务都调度给应用程序的 GUI线程，使所有任务代码都能成功更新UI组建，比如按钮、菜单项等" UseManualLocation="True" />
+    <Node Id="在任务中执行的代码委托" Bounds="-125,-181,152,25.8366666666667" UseManualLocation="True" />
+    <Node Id="新建//同步上下文任务调度2TaskSchedulerM_syncContextTaskScheduler=3TaskScheduler.FromCurrentSynchronizationContext();节点" Bounds="-806.886004791292,349.455109148656,399.9,57.51" Label="新建//同步上下文任务调度&#xD;&#xA;2 TaskScheduler m_syncContextTaskScheduler =&#xD;&#xA;3            TaskScheduler.FromCurrentSynchronizationContext();节点" UseManualLocation="True" />
+    <Node Id="有两个派生类：threadPoolTaskScheduler(线程池任务调度)" Bounds="-576.5,205.5,348.96,25.8366666666667" Label="有两个派生类：thread pool task scheduler(线程池任务调度)" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="PublicTask(ActionAction)" Target="在任务中执行的代码委托" Bounds="-80.0668756013746,-146.721161393156,23.1744992199042,62.7211613931559" />
+    <Link Source="SynchronizationContextTaskScheduler（同步上下文任务调度器）" Target="新建//同步上下文任务调度2TaskSchedulerM_syncContextTaskScheduler=3TaskScheduler.FromCurrentSynchronizationContext();节点" Bounds="-397.989525709022,369.96075693092,85.2395225555392,2.39022676274567" />
+    <Link Source="Task" Target="PublicTask(ActionAction)" Bounds="-60.798668569743,-52.6960890980069,68.9064098395843,52.6960890980069" />
+    <Link Source="Task" Target="TaskCreationOptions这个类型是一个枚举类型，传递一些标志来控制Task的执行方式" Bounds="47.5218709007778,25.7909264323138,194.756564527556,111.314997744347" />
+    <Link Source="Task" Target="TaskScheduler对象负责执行调度的任务" Bounds="-145.615232075052,25.8366666666667,149.597894617509,91.950537147618" />
+    <Link Source="TaskScheduler对象负责执行调度的任务" Target="SynchronizationContextTaskScheduler（同步上下文任务调度器）" Bounds="-171.199982888871,148.336668294271,46.6815129744484,194.53013639324" />
+    <Link Source="TaskScheduler对象负责执行调度的任务" Target="有两个派生类：threadPoolTaskScheduler(线程池任务调度)" Bounds="-358.121233647486,148.336668294271,148.378304271269,54.0813243371564" />
+    <Link Source="同步上下文任务调度器通常用于桌面应用程序，Winfrom，WPF及Silverlight。这个任务调度器将多有任务都调度给应用程序的GUI线程，使所有任务代码都能成功更新UI组建，比如按钮、菜单项等" Target="SynchronizationContextTaskScheduler（同步上下文任务调度器）" Bounds="-391.480005493164,380.000825010745,219.725249941164,64.799670160808" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

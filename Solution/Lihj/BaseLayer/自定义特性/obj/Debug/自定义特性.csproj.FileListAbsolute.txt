@@ -1,0 +1,5 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.pdb

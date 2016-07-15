@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="System.Diagnostics.Process.Start(&quot;notepad.exe&quot;,Save.FileName);" Bounds="-134.000003051758,-115.799999542236,387.916666666667,25.24" Label="System.Diagnostics.Process.Start(&quot;notepad.exe&quot;, save.FileName);" UseManualLocation="True" />
+    <Node Id="打开记事本" Bounds="50.8,-42.2,80,25.24" UseManualLocation="True" />
+    <Node Id="运行" Category="Category1" Bounds="0,14.6400999998,50,25.24" />
+  </Nodes>
+  <Links>
+    <Link Source="打开记事本" Target="System.Diagnostics.Process.Start(&quot;notepad.exe&quot;,Save.FileName);" Bounds="68.7250236798065,-82.2593320034625,16.7866366513736,40.0593320034625" />
+    <Link Source="运行" Target="打开记事本" Bounds="39.6093339321793,-11.0766607227639,29.770581887032,25.7167606106118" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

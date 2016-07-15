@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HebianGu.ComLibModule.Task</name>
+    </assembly>
+    <members>
+        <member name="M:HebianGu.ComLibModule.TaskEx.IWorkInterface.RunWork(System.Threading.CancellationToken)">
+            <summary> 工作函数 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskEx.CreateTask">
+            <summary> 创建任务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskEx.CreateContinueTask">
+            <summary> 创建连续的任务 </summary>
+        </member>
+        <member name="T:HebianGu.ComLibModule.TaskEx.TaskManager`1">
+            <summary> 这是一个连续的任务，依次执行各个任务 </summary>
+        </member>
+        <member name="F:HebianGu.ComLibModule.TaskEx.TaskManager`1.m_obj">
+            <summary> 线程互斥 </summary>
+        </member>
+        <member name="F:HebianGu.ComLibModule.TaskEx.TaskManager`1._act">
+            <summary> 当切换进程时外部调用 </summary>
+        </member>
+        <member name="F:HebianGu.ComLibModule.TaskEx.TaskManager`1._allOver">
+            <summary> 当切换进程时外部调用 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.#ctor(System.Action{System.Threading.Tasks.Task{System.Int32},System.Threading.Tasks.Task{System.Int32}})">
+            <summary> act:上一任务完成下一任务开始要处理的方法 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.#ctor(System.Action{System.Threading.Tasks.Task{System.Int32},System.Threading.Tasks.Task{System.Int32}},System.Func{System.Threading.Tasks.Task{System.Int32},System.Int32})">
+            <summary> act:上一任务完成下一任务开始要处理的方法 allOver所有任务都处理完的处理的方法  </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.ContinueLast(`0)">
+            <summary> 在末尾创建任务 p1=当前任务对应的接口 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.ContinueWith(System.Threading.Tasks.Task{System.Int32},`0)">
+            <summary> 运行结束 p1 = 上一任务 p2 = 调用的接口 r = 任务的结果</summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.Start">
+            <summary> 执行任务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.Wait(System.Int32)">
+            <summary> 等待所有任务结束 p1 = 单位秒 超时限制</summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.TaskManager`1.Stop">
+            <summary> 停止所有任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.RunTask">
+            <summary> 用于记录当前正在执行的任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.TotalCount">
+            <summary> 任务总数 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.CompleteTask">
+            <summary> 完成的任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.CancelTask">
+            <summary> 取消的任务</summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.FaultTask">
+            <summary> 异常的任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskManager`1.IsComplete">
+            <summary> 是否全部运行完 </summary>
+        </member>
+        <member name="T:HebianGu.ComLibModule.TaskEx.TaskResultID">
+            <summary> 任务的执行结果 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskResultID.CompleteParam">
+            <summary> 运行结束 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskResultID.CacelParam">
+            <summary> 运行取消 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.TaskResultID.FaultParam">
+            <summary> 运行报错 </summary>
+        </member>
+    </members>
+</doc>

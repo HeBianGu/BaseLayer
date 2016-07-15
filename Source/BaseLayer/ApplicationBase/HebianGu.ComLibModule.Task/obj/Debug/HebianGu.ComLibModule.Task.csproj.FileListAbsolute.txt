@@ -1,0 +1,14 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\bin\Debug\HebianGu.ComLibModule.Task.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\bin\Debug\HebianGu.ComLibModule.Task.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.XML
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.XML
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb

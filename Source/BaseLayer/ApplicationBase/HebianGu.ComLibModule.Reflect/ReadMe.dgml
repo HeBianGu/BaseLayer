@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1b237b0a-9bc1-4cc9-b3c7-1d05534219131" Bounds="-448.709329223835,170.510375346034,278.466666666667,120.856666666667" Label="   ●使用 C# typeof 运算符。&#xD;&#xA;        Type t = typeof(string);&#xD;&#xA;    ●使用对象GetType()方法。&#xD;&#xA;        string s = &quot;grayworm&quot;;&#xD;&#xA;        Type t = s.GetType(); &#xD;&#xA;    ●还可以调用Type类的静态方法GetType()。&#xD;&#xA;        Type t = Type.GetType(&quot;System.String&quot;);" UseManualLocation="True" />
+    <Node Id="1d3071c2-7bb0-4283-bfc8-01914afb0ede1" Bounds="-586.052713970527,-143.313943017654,518.52,263.386666666667" Label="   //通过程序集的名称反射&#xD;&#xA;    Assembly ass = Assembly.Load(&quot;ClassLibrary831&quot;);&#xD;&#xA;    Type t = ass.GetType(&quot;ClassLibrary831.NewClass&quot;);&#xD;&#xA;    object o = Activator.CreateInstance(t, &quot;grayworm&quot;, &quot;http://hi.baidu.com/grayworm&quot;);&#xD;&#xA;    MethodInfo mi = t.GetMethod(&quot;show&quot;);&#xD;&#xA;    mi.Invoke(o, null);&#xD;&#xA;   //通过DLL文件全名反射其中的所有类型&#xD;&#xA;    Assembly assembly = Assembly.LoadFrom(&quot;xxx.dll的路径&quot;);&#xD;&#xA;    Type[] aa = a.GetTypes();&#xD;&#xA;    foreach(Type t in aa)&#xD;&#xA;    {&#xD;&#xA;        if(t.FullName == &quot;a.b.c&quot;)&#xD;&#xA;        {&#xD;&#xA;            object o = Activator.CreateInstance(t);&#xD;&#xA;        }&#xD;&#xA;    }" UseManualLocation="True" />
+    <Node Id="20374b94-9929-4267-b5cf-c50f65ca80011" Bounds="351.003192875064,-83.3881099987894,492.033333333333,105.02" Label="    Type t = typeof(NewClassw);&#xD;&#xA;        //构造函数的参数 &#xD;&#xA;        object[] obj = new object[2] { &quot;grayworm&quot;, &quot;hi.baidu.com/grayworm&quot; };   &#xD;&#xA;        //用Activator的CreateInstance静态方法，生成新对象 &#xD;&#xA;        object o = Activator.CreateInstance(t,&quot;grayworm&quot;,&quot;hi.baidu.com/grayworm&quot;); &#xD;&#xA;        //((NewClassw)o).show();" UseManualLocation="True" />
+    <Node Id="483ef0b7-768c-4a9b-a94a-4b841e42e9441" Bounds="-367.30172648112,-418.613807584506,466.043333333333,136.693333333333" Label="    通过程序集名称返回Assembly对象&#xD;&#xA;        Assembly ass = Assembly.Load(&quot;ClassLibrary831&quot;);&#xD;&#xA;    通过DLL文件名称返回Assembly对象&#xD;&#xA;        Assembly ass = Assembly.LoadFrom(&quot;ClassLibrary831.dll&quot;);&#xD;&#xA;    通过Assembly获取程序集中类 &#xD;&#xA;        Type t = ass.GetType(&quot;ClassLibrary831.NewClass&quot;);   //参数必须是类的全名&#xD;&#xA;    通过Assembly获取程序集中所有的类&#xD;&#xA;        Type[] t = ass.GetTypes();" UseManualLocation="True" />
+    <Node Id="Activator" Category="Category2" Bounds="199.762116354838,-31.374273148676,71.7400000000001,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Assembly" Category="Category2" Bounds="47.6872019279841,-135.347317474833,74.81,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Reflect" Category="Category1" Bounds="40.7116972568487,-8.06480361942368,59.2933333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Type" Category="Category2" Bounds="17.1472580219346,132.044058276574,50,25.8366666666666" UseManualLocation="True" />
+    <Node Id="a3d91600-06d6-45da-b8a4-74f65e8138001" Bounds="16.3440994400402,290.998996957864,766.1,120.856666666667" Label="（2）使用Module了解包含模块的程序集以及模块中的类等，还可以获取在模块上定义的所有全局方法或其他特定的非全局方法。 &#xD;&#xA;    （3）使用ConstructorInfo了解构造函数的名称、参数、访问修饰符（如pulic 或private）和实现详细信息（如abstract或virtual）等。 &#xD;&#xA;    （4）使用MethodInfo了解方法的名称、返回类型、参数、访问修饰符（如pulic 或private）和实现详细信息（如abstract或virtual）等。&#xD;&#xA;    （5）使用FiedInfo了解字段的名称、访问修饰符（如public或private）和实现详细信息（如static）等，并获取或设置字段值。&#xD;&#xA;    （6）使用EventInfo了解事件的名称、事件处理程序数据类型、自定义属性、声明类型和反射类型等，添加或移除事件处理程序。 &#xD;&#xA;    （7）使用PropertyInfo了解属性的名称、数据类型、声明类型、反射类型和只读或可写状态等，获取或设置属性值。 &#xD;&#xA;    （8）使用ParameterInfo了解参数的名称、数据类型、是输入参数还是输出参数，以及参数在方法签名中的位置等。" UseManualLocation="True" />
+    <Node Id="使用Assembly定义和加载程序集，加载在程序集清单中列出模块，以及从此程序集中查找类型并创建该类型的实例。" Bounds="86.4436061096191,-251.920374251173,638.81,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Activator" Target="20374b94-9929-4267-b5cf-c50f65ca80011" Bounds="271.502125854492,-22.1124658335353,70.506379246135,2.4235541715646" />
+    <Link Source="Assembly" Target="1d3071c2-7bb0-4283-bfc8-01914afb0ede1" Bounds="-58.8417288509745,-112.36693803046,106.532378172495,28.660140884526" />
+    <Link Source="Assembly" Target="483ef0b7-768c-4a9b-a94a-4b841e42e9441" Bounds="-62.230612646276,-275.437202205673,134.884497002735,140.089883276636" />
+    <Link Source="Assembly" Target="使用Assembly定义和加载程序集，加载在程序集清单中列出模块，以及从此程序集中查找类型并创建该类型的实例。" Bounds="120.320611337464,-223.009552451265,241.523876885455,87.7774454742387" />
+    <Link Source="Reflect" Target="Activator" Bounds="100.005034586589,-12.1401144872698,90.8452777857469,12.8124116348509" />
+    <Link Source="Reflect" Target="Assembly" Bounds="71.8537546167466,-100.570350019435,10.7081587799337,92.5055470930537" />
+    <Link Source="Reflect" Target="Type" Bounds="46.5248901309054,17.7718637402852,21.2323537898885,105.449268778035" />
+    <Link Source="Type" Target="1b237b0a-9bc1-4cc9-b3c7-1d05534219131" Bounds="-161.500226212022,151.075206152846,178.647484233956,43.6815575873871" />
+    <Link Source="Type" Target="a3d91600-06d6-45da-b8a4-74f65e8138001" Bounds="64.4697975048925,157.86333592725,222.572727437454,128.632244795528" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

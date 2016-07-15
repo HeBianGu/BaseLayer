@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="0fe0629f-9317-437d-9f14-c211059afae61" Bounds="-411.79501739502,535.275228678385,548,215.876666666667" Label="约束  说明&#xD;&#xA;T：struct&#xD;&#xA;类型参数必须是值类型。可以指定除 Nullable 以外的任何值类型。&#xD;&#xA;T：class&#xD;&#xA;类型参数必须是引用类型，包括任何类、接口、委托或数组类型。&#xD;&#xA;T：new()&#xD;&#xA;类型参数必须具有无参数的公共构造函数。当与其他约束一起使用时，new() 约束必须最后指定。&#xD;&#xA;T：&lt;基类名&gt;&#xD;&#xA;类型参数必须是指定的基类或派生自指定的基类。&#xD;&#xA;T：&lt;接口名称&gt;&#xD;&#xA;类型参数必须是指定的接口或实现指定的接口。可以指定多个接口约束。约束接口也可以是泛型的。&#xD;&#xA;T：U&#xD;&#xA;为 T 提供的类型参数必须是为 U 提供的参数或派生自为 U 提供的参数。这称为裸类型约束." UseManualLocation="True" />
+    <Node Id="Http://blog.csdn.net/haukwong/article/details/7840158" Category="Category8" Bounds="-185.927631835938,169.453111474609,336.71,25.8366666666667" Label="http://blog.csdn.net/haukwong/article/details/7840158" UseManualLocation="True" />
+    <Node Id="一.派生约束" Bounds="166.20498260498,630.228761393229,82.89,25.8366666666666" UseManualLocation="True" />
+    <Node Id="七.泛型方法" Bounds="538.1352962124,362.603726979083,82.89,25.8366666666667" UseManualLocation="True" />
+    <Node Id="三.值约束" Bounds="353.26590443929,545.801088053385,70.89,25.8366666666667" UseManualLocation="True" />
+    <Node Id="九.编译器只允许将泛型参数隐式强制转换到Object或约束指定的类型" Bounds="532.20590555002,204.454580395137,391.936666666667,25.8366666666666" Label="九.编译器只允许将泛型参数隐式强制转换到 Object 或约束指定的类型" UseManualLocation="True" />
+    <Node Id="二.构造函数约束" Bounds="216.37590443929,570.676637369792,106.89,25.8366666666667" UseManualLocation="True" />
+    <Node Id="五.多个泛型参数" Bounds="505.06166809082,489.138655647786,106.89,25.8366666666666" UseManualLocation="True" />
+    <Node Id="八.虚拟方法" Bounds="639.291097762631,281.997970278035,82.89,25.8366666666666" UseManualLocation="True" />
+    <Node Id="六.继承和泛型" Bounds="496.200314727588,423.394291652103,94.89,25.8366666666669" UseManualLocation="True" />
+    <Node Id="十.编译器允许您将泛型参数显式强制转换到其他任何接口，但不能将其转换到类" Bounds="406.414832763672,113.077942303467,442.89,25.8366666666667" UseManualLocation="True" />
+    <Node Id="十一.使用临时的Object变量，将泛型参数强制转换到其他任何类型" Bounds="226.116673380534,57.2411756368001,379.936666666667,25.8366666666667" Label="十一.使用临时的 Object 变量，将泛型参数强制转换到其他任何类型" UseManualLocation="True" />
+    <Node Id="十二.使用is和as运算符" Bounds="133.159973347982,113.616344807943,139.823333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="四.引用约束" Bounds="454.15590443929,544.975404459635,82.89,25.8366666666667" UseManualLocation="True" />
+    <Node Id="泛型" Category="Category1" Bounds="-191.959672766456,336,50,25.8366666666666" UseManualLocation="True" />
+    <Node Id="泛型约束" Category="Category2" Bounds="153.068520601425,364.484338539539,68,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="泛型" Target="泛型约束" Bounds="-141.959672766456,350.929778966276,286.057183272235,23.015538882595" />
+    <Link Source="泛型约束" Target="0fe0629f-9317-437d-9f14-c211059afae61" Bounds="1.08841123775952,390.321005206206,170.191834212516,139.254910616921" />
+    <Link Source="泛型约束" Target="Http://blog.csdn.net/haukwong/article/details/7840158" Bounds="2.49733288099065,201.498926251786,171.016319299168,162.985412287753" />
+    <Link Source="泛型约束" Target="一.派生约束" Bounds="188.069023956469,390.321005206206,17.8855014503358,230.934627459767" />
+    <Link Source="泛型约束" Target="七.泛型方法" Bounds="221.068520601425,375.763753076292,308.066878910389,1.4760172047595" />
+    <Link Source="泛型约束" Target="三.值约束" Bounds="201.435001003979,390.321005206206,166.217112882941,149.462360283064" />
+    <Link Source="泛型约束" Target="九.编译器只允许将泛型参数隐式强制转换到Object或约束指定的类型" Bounds="221.065431303836,232.84367430937,454.797805466138,134.504553092581" />
+    <Link Source="泛型约束" Target="二.构造函数约束" Bounds="192.253112288943,390.321005206206,69.0310671876298,172.003195243424" />
+    <Link Source="泛型约束" Target="五.多个泛型参数" Bounds="220.732632985038,388.700318516327,290.748356550446,97.5748939119821" />
+    <Link Source="泛型约束" Target="八.虚拟方法" Bounds="221.068520601425,303.324540247092,409.34564038983,68.3971093131172" />
+    <Link Source="泛型约束" Target="六.继承和泛型" Bounds="221.068520601425,383.019802428818,266.252159821997,43.9874453683129" />
+    <Link Source="泛型约束" Target="十.编译器允许您将泛型参数显式强制转换到其他任何接口，但不能将其转换到类" Bounds="209.718258978019,143.373515787904,387.674025614082,221.110822751635" />
+    <Link Source="泛型约束" Target="十一.使用临时的Object变量，将泛型参数强制转换到其他任何类型" Bounds="196.697738314451,90.2937725679267,204.37935656807,274.190565971612" />
+    <Link Source="泛型约束" Target="十二.使用is和as运算符" Bounds="187.892593963188,148.434755362043,13.7820182931179,216.049583177496" />
+    <Link Source="泛型约束" Target="四.引用约束" Bounds="209.151188007855,390.321005206206,256.598675850229,150.109910479385" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category8" Label="类别 8" Background="#FF44CCCC" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 9" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 8" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category8')" />
+      <Setter Property="Background" Value="#FF44CCCC" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

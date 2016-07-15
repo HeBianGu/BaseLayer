@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Sockets" Bounds="169.401179978041,392.145808098166,63.94,25.8366666666667" UseManualLocation="True" />
+    <Node Id="WM_COPYDATA" Bounds="171.612995808919,171.870993906657,114.613333333333,25.8366666666667" Label="WM_COPYDATA" UseManualLocation="True" />
+    <Node Id="共享内存" Bounds="168.306671142578,228.20776270345,68,25.8366666666667" UseManualLocation="True" />
+    <Node Id="剪贴板" Bounds="168.306671142578,310.044529370117,56,25.8366666666667" UseManualLocation="True" />
+    <Node Id="匿名管道" Bounds="166.306671142578,109.03422723999,68,25.8366666666666" UseManualLocation="True" />
+    <Node Id="文件映射" Bounds="164.306671142578,50.1974605733236,68,25.8366666666667" UseManualLocation="True" />
+    <Node Id="进程通信" Category="Category1" Bounds="0,168,68,25.8366666666667" />
+    <Node Id="邮件槽" Bounds="163.306666666667,-22,56,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="进程通信" Target="Sockets" Bounds="43.6462062426915,193.836666666667,142.693978976942,191.09775788595" />
+    <Link Source="进程通信" Target="WM_COPYDATA" Bounds="68,181.593554043008,94.614770070905,1.87899565273506" />
+    <Link Source="进程通信" Target="共享内存" Bounds="67.2555120548865,192.814712513017,93.3215376241457,33.3835905270559" />
+    <Link Source="进程通信" Target="剪贴板" Bounds="48.7610871699269,193.836666666667,126.011848208276,110.280702252094" />
+    <Link Source="进程通信" Target="匿名管道" Bounds="67.3240439067227,136.775541817548,91.1759900673925,32.3274025903242" />
+    <Link Source="进程通信" Target="文件映射" Bounds="52.0180190813228,81.2782542757534,120.956320672824,86.7217457242466" />
+    <Link Source="进程通信" Target="邮件槽" Bounds="44.6954737388678,10.7690450264204,130.176200479191,157.23095497358" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

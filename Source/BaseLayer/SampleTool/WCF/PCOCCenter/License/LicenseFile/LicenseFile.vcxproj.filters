@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="加密算法库">
+      <UniqueIdentifier>{4c081a19-fe93-4c79-bf17-7e87a120e70a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="LicenseFile.def">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="res\LicenseFile.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LicenseFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Encryption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Decryption.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LicenseInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MD5.cpp">
+      <Filter>加密算法库</Filter>
+    </ClCompile>
+    <ClCompile Include="RSA.cpp">
+      <Filter>加密算法库</Filter>
+    </ClCompile>
+    <ClCompile Include="DES.cpp">
+      <Filter>加密算法库</Filter>
+    </ClCompile>
+    <ClCompile Include="EncDec.cpp">
+      <Filter>加密算法库</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LicenseFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Encryption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Decryption.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LicenseInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MD5.h">
+      <Filter>加密算法库</Filter>
+    </ClInclude>
+    <ClInclude Include="RSA.h">
+      <Filter>加密算法库</Filter>
+    </ClInclude>
+    <ClInclude Include="DES.h">
+      <Filter>加密算法库</Filter>
+    </ClInclude>
+    <ClInclude Include="EncDec.h">
+      <Filter>加密算法库</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="LicenseFile.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

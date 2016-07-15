@@ -1,0 +1,3396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Chart.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Chart.IChartMemberNameProvider">
+			<summary>
+            Provides name for chart member name provider.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.IChartMemberNameProvider.GetName(System.Int32)">
+			<summary>
+            Gets the name for the field to find.
+            </summary>
+			<returns>
+            The name of the field or the empty string (""), if there is no value to return.
+            </returns>
+			<param name="i">The index of the field to find. </param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DataProvider.Count">
+			<summary>
+            Gets the number of data values
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DataProvider.Item(System.Int32)">
+			<summary>
+            if index is more then maximum allowed value provider should try not to throw exception, but return default (0) value.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ReferenceDataProvider">
+			<summary>
+            it is just marker, reference data providers are calculated last in the series
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SeriesSelfReferenceXDataProvider.Count">
+			<summary>
+            CR#23200, By default count assigned to 1 
+            Exception occurs in design time if _partiallyCalculatedPointData is null
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.XmlDataProvider.Count">
+			<summary>
+            Gets the number of data values
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.XmlDataProvider.Item(System.Int32)">
+			<summary>
+            if index is more then maximum allowed value provider should try not to throw exception, but return default (0) value.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Exchange.Persistence">
+			<summary>
+            Manages saving and restoring of chart state
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Exchange.Persistence.ToXml(GrapeCity.ActiveReports.Chart.SharpGraph,System.Xml.XmlElement,System.Boolean)">
+			<summary>
+            Creates an XML encoding of the SharpGraph object and its current state.
+            </summary>
+			<param name="sharpChartControl"></param>
+			<param name="rootElement"></param>
+			<param name="includeData">Specifies whether to store data to XML</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Exchange.Persistence.ToXml(GrapeCity.ActiveReports.Chart.SharpGraph,System.String)">
+			<summary>
+            Creates an XML encoding of the SharpGraph object and its current state (without data).
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Exchange.Persistence.ToXml(GrapeCity.ActiveReports.Chart.SharpGraph,System.String,System.Boolean)">
+			<summary>
+            Creates an XML encoding of the SharpGraph object and its current state.
+            </summary>
+			<param name="sharpChartControl"></param>
+			<param name="fileName"></param>
+			<param name="includeData"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Exchange.Persistence.FromXml(GrapeCity.ActiveReports.Chart.SharpGraph,System.Xml.XmlElement)">
+			<summary>
+            Reconstructs a SharpGraph object with a specified state from an XML encoding.
+            
+            Use "strict" attribute of root element "SharpGraph" in xml files
+            to control error handling behaviour. This attribute is false by default. If true xml import process will stop once it finds first error and throw an exception.
+            If false it will mutually continue. 
+            </summary>
+			<param name="sharpChartControl"></param>
+			<param name="rootElement">The XML encoding to use to reconstruct the SharpGraph object.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Exchange.Persistence.FromXml(GrapeCity.ActiveReports.Chart.SharpGraph,System.String)">
+			<summary>
+            Reconstructs a SharpGraph object with a specified state from an XML encoding.
+            </summary>
+			<param name="sharpChartControl"></param>
+			<param name="fileName">The XML file name to use to reconstruct the SharpGraph object.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.AxisType">
+			<summary>
+            Specifies axis type
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.AxisType.Categorical">
+			<summary>
+            Tha axis is used to place categories
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.AxisType.Numerical">
+			<summary>
+            Numeric axis
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.AxisType.Logarithmic">
+			<summary>
+            Logarithmic axis
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.AxisBase">
+			<summary>
+            Axes base class
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.MouseEnabledComponent">
+			<summary>
+            Class of the components user may interact with
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.MouseEnabledItem">
+			<summary>
+            Class of the items user may interact with
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.DrawCustomizableItem">
+			<summary>
+            Class of items with overridable drawing code
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Item">
+			<summary>
+            This class supports hierarchy of items
+            that allows to handle isDirty flag and to automatically refresh drawing
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.IGraphXmlSerializable">
+			<summary>
+            IChartXmlSerializable interface
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.IGraphXmlSerializable.ToXml(System.String,GrapeCity.ActiveReports.Chart.GraphXmlSerializationContext)">
+			<summary>
+            Stores object's state to XML node
+            </summary>
+			<param name="nodeName">Node name</param>
+			<param name="context"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.IGraphXmlSerializable.FromXml(System.Xml.XmlNode,GrapeCity.ActiveReports.Chart.GraphXmlSerializationContext)">
+			<summary>
+            Reads object's state from XML node
+            </summary>
+			<param name="node"></param>
+			<param name="context"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Item.InternalGetParents">
+			<summary>
+            Returns internal array
+            </summary>
+			<returns>array of some objects</returns>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.Item.Change">
+			<summary>
+            This event is fire when this object changes, including changes in any inner properties.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ICustomDrawer">
+			<summary>
+            ICustomDrawer interface
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.ICustomDrawer.PreDraw">
+			<summary>
+            Occurs before any drawings on this object by graph core.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.ICustomDrawer.PostDraw">
+			<summary>
+            Occurs after all drawings on this object by graph core is finished.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DrawCustomizableItem.AntiAliasMode">
+			<summary>
+            Specifies antialiasing mode to draw current object
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.DrawCustomizableItem.PreDraw">
+			<summary>
+            PreDraw event is fired before any drawings on this object by chart core.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.DrawCustomizableItem.PostDraw">
+			<summary>
+            PostDraw event is fired after all drawings on this object by chart core is finished.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.IMouseEnabled">
+			<summary>
+            IMouseEnabled interface
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.IMouseEnabled.NeedMouseHandling">
+			<summary>
+            Indicates whether mouse events should be handled for this control (i.e. control implemets at least one of mouse event handler).
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseMove">
+			<summary>
+            Occurs when the mouse pointer is moved over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseDown">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is pressed.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseEnter">
+			<summary>
+            Occurs when the mouse pointer enters the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseHover">
+			<summary>
+            Occurs when the mouse pointer hovers over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseLeave">
+			<summary>
+            Occurs when the mouse pointer leaves the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseUp">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is released.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.IMouseEnabled.MouseWheel">
+			<summary>
+            Occurs when the mouse wheel moves while the control has focus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.IMouseEnabled.ContextMenu">
+			<summary>
+            Gets or sets the shortcut menu associated with the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseMove">
+			<summary>
+            Occurs when the mouse pointer is moved over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseDown">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is pressed.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseEnter">
+			<summary>
+            Occurs when the mouse pointer enters the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseHover">
+			<summary>
+            Occurs when the mouse pointer hovers over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseLeave">
+			<summary>
+            Occurs when the mouse pointer leaves the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseUp">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is released.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.MouseEnabledItem.MouseWheel">
+			<summary>
+            Occurs when the mouse wheel moves while the control has focus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.MouseEnabledItem.ContextMenu">
+			<summary>
+            Gets or sets the shortcut menu associated with the control.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.TickOffset">
+			<summary>
+            Offset of the first tick from Axis.Min
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Position">
+			<summary>
+            Position along adjacent axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.AxisType">
+			<summary>
+            Gets or sets axis type, i.e. numerical or categorical
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Min">
+			<summary>
+            Min value for the axis or starting data point index for categories axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Max">
+			<summary>
+            Max value for the axis. Last data point index for categories axis.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Title">
+			<summary>
+            Text to draw on axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.TitleFont">
+			<summary>
+            Font to use to draw title
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.MajorTick">
+			<summary>
+            Major axis tick
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.MinorTick">
+			<summary>
+            Minor axis tick
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Line">
+			<summary>
+            Line used to draw axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.LabelFont">
+			<summary>
+            Font used to draw axis' labels
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.LabelsGap">
+			<summary>
+            How many labels to skip (for example 3 means: show label, skip, skip, ...)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.LabelFormat">
+			<summary>
+            Format used to ouput labels values
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Labels">
+			<summary>
+            Labels contents, used for categorical axes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.LabelsInside">
+			<summary>
+            Controls position of labels against axis line
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.LabelsVisible">
+			<summary>
+            If false, axis labels will not be drawn.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Scale">
+			<summary>
+            Gets or sets scale value used to draw labels. Label values are divided by scale.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.DisplayScale">
+			<summary>
+            Specifies whether to display scale value on axis's title
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisBase.Visible">
+			<summary>
+            Specifies whether to draw axis.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Axis">
+			<summary>
+            Chart's axis
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Axis.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.CustomAxis">
+			<summary>
+            Custom axis
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.CustomAxis.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomAxis.Parent">
+			<summary>
+            Main axis (i.e. X, Y or Z) on which to draw this custom axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomAxis.MinDerived">
+			<summary>
+            if true, axis automatically calculates it's min value based on position against parent axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomAxis.MaxDerived">
+			<summary>
+            if true, axis automatically calculates it's max value based on position against parent axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomAxis.PlacementLength">
+			<summary>
+            Legnth of custom axis in terms of parent axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomAxis.PlacementLocation">
+			<summary>
+            Position of custom axis' origin in terms of parent axis
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.AxesCollection">
+			<summary>
+            Axes collection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.Clone">
+			<summary>
+            Clones current object
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.Add(GrapeCity.ActiveReports.Chart.AxisBase)">
+			<summary>
+            Adds axis to the collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.AddRange(GrapeCity.ActiveReports.Chart.AxisBase[])">
+			<summary>
+            Adds a set of axes to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.ToArray">
+			<summary>
+            TBW
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.Contains(GrapeCity.ActiveReports.Chart.AxisBase)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.AxisBase" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.AxisBase" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.Remove(GrapeCity.ActiveReports.Chart.AxisBase)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.AxisBase" /> to remove from the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.AxisBase)">
+			<summary>
+            Inserts an <code>AxisBase</code> to the collection at the specified position
+            </summary>
+			<param name="index"></param>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.AxesCollection.IndexOf(GrapeCity.ActiveReports.Chart.AxisBase)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxesCollection.Item(System.Int32)">
+			<summary>
+            TBW
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LabelsCollection">
+			<summary>
+            Labels collection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Clone">
+			<summary>
+            Clones current object
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Add(System.String)">
+			<summary>
+            Adds label to the collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.AddRange(System.String[])">
+			<summary>
+            Adds a set of labels to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Contains(System.String)">
+			<summary>
+            Determines whether the Collection contains the given element
+            </summary>
+			<param name="value">The string to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.CopyTo(GrapeCity.ActiveReports.Chart.CustomAxis[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.IndexOf(System.String)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Insert(System.Int32,System.String)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:System.String" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Remove(System.String)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:System.String" /> to remove from the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.Clear">
+			<summary>
+            Removes all labels from collection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelsCollection.RemoveAt(System.Int32)">
+			<summary>
+            Removes the element at the specified index
+            </summary>
+			<param name="index"></param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelsCollection.Item(System.Int32)">
+			<summary>
+            TBW
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelsCollection.Count">
+			<summary>
+            Gets the number of items in collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.ScrollPosition">
+			<summary>
+            Scrolling position within parent axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.ScrollLength">
+			<summary>
+            Scrolling area length
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.ScrollStepSize">
+			<summary>
+            Step scrolling size. Step scrolling is occured when user clicks scroll buttons.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.Visible">
+			<summary>
+            Specifies whether scroll is available
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.BackColor">
+			<summary>
+            scrollbar background color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.ButtonColor">
+			<summary>
+            buttons face color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.OutlineColor">
+			<summary>
+            scrollbar outline color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.AxisScroll.Width">
+			<summary>
+            scrollbar width in pixels
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.BackdropItem">
+			<summary>
+            Represents backdrop that acts as separate item, i.e. may handle mouse events
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.Backdrop">
+			<summary>
+            Specifies the settings used to draw object's background.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.CopyFrom(GrapeCity.ActiveReports.Chart.Graphics.Backdrop)">
+			<summary>
+            Initializes current object with the settings of another one
+            </summary>
+			<param name="backdrop"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Serialize(System.Runtime.Serialization.SerializationInfo,System.Boolean)">
+			<summary>
+            Creates an XML encoding or reconstructs object state from XML encoding
+            </summary>
+			<param name="info"></param>
+			<param name="isLoading">Specifies whether to reconstruct object(true) or create XML encoding(false)</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.FitToRectangle(System.Drawing.RectangleF)">
+			<summary>
+            Sets backdrop's bounding rectangle
+            </summary>
+			<param name="rectangle"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.FitToRectangle(System.Drawing.PointF[])">
+            Indices of points:
+            0 - top left
+            1 - top right
+            2 - bottom right
+            3 - bottom left
+        </member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Style">
+			<summary>
+            Designates type of backdrop (i.e. solid, gradient, etc)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Color">
+			<summary>
+            Primary color to fill
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Color2">
+			<summary>
+            Second color used for gradient effects and patterns
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Gradient">
+			<summary>
+            Used only for gradient backdrops
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Pattern">
+			<summary>
+            Used only for pattern backdrops
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Picture">
+			<summary>
+            Used only for picture style backdrops
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.PictureAlignment">
+			<summary>
+            Used only for picture style backdrops
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Backdrop.Alpha">
+			<summary>
+            Alpha level (transparency)
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseMove">
+			<summary>
+            Occurs when the mouse pointer is moved over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseDown">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is pressed.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseEnter">
+			<summary>
+            Occurs when the mouse pointer enters the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseHover">
+			<summary>
+            Occurs when the mouse pointer hovers over the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseLeave">
+			<summary>
+            Occurs when the mouse pointer leaves the control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseUp">
+			<summary>
+            Occurs when the mouse pointer is over the control and a mouse button is released.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.BackdropItem.MouseWheel">
+			<summary>
+            Occurs when the mouse wheel moves while the control has focus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.BackdropItem.ContextMenu">
+			<summary>
+            Gets or sets the shortcut menu associated with the control.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Border">
+			<summary>
+            Represents information required to draw borders
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Border.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Border.Line">
+			<summary>
+            Line style to draw border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Border.ShadowWeight">
+			<summary>
+            Width of shadow outlining border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Border.ShadowColor">
+			<summary>
+            Color of shadow outlining border
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ChartArea">
+			<summary>
+            Chart area object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartArea.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Backdrop">
+			<summary>
+            Gets or sets backdrop info to draw chart area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Border">
+			<summary>
+            Gets or sets chart area's border info
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Padding">
+			<summary>
+            Gets or sets chart area's padding info
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.ZDepthRatio">
+			<summary>
+            Gets or sets area depth, specified as z/x ratio.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.WallXZ">
+			<summary>
+            Gets or sets XZ wall properties
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.WallXY">
+			<summary>
+            Gets or sets XY wall settings
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.WallYZ">
+			<summary>
+            Gets or sets YZ wall properties
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Projection">
+			<summary>
+            geometric projection details
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Light">
+			<summary>
+            Lighting details
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.ViewPoint">
+			<summary>
+            Determines point from which chart is seen
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.Axes">
+			<summary>
+            User defined custom axes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.WallRanges">
+			<summary>
+            Wall ranges (strip lines)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartArea.SwapAxesDirection">
+			<summary>
+            Specifies whether to swap X and Y axis direction. Used to get horizontally oriented chart.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ChartAreasCollection">
+			<summary>
+            Chart areas collection class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Clone">
+			<summary>
+            Creates clone of the current object
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Add(GrapeCity.ActiveReports.Chart.ChartArea)">
+			<summary>
+            Adds area object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.AddRange(GrapeCity.ActiveReports.Chart.ChartArea[])">
+			<summary>
+            Adds a set of area objects to the current collection
+            </summary>
+			<param name="areas"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Contains(GrapeCity.ActiveReports.Chart.ChartArea)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.ChartArea" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.ChartArea" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.CopyTo(GrapeCity.ActiveReports.Chart.ChartArea[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.IndexOf(GrapeCity.ActiveReports.Chart.ChartArea)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.ChartArea)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.ChartArea" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Remove(GrapeCity.ActiveReports.Chart.ChartArea)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.ChartArea" /> to remove from the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Clear">
+			<summary>
+            Removes all chart areas from the collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.ChartAreasCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets area object at the given index
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ColorPalette.None">
+			<summary>
+            Graph will not generate any Backdrop values automatically
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ColorPalette.Default">
+			<summary>
+            SharpGraph's default color palette
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.CustomProperties">
+			<summary>
+            Represents collection of series properties (series type specific)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.CustomProperties.Item(System.String)">
+			<summary>
+            Gets property by its name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.KeyValuePair.IsPointOverridable">
+			<summary>
+            Gets true if the custom property is applicable to series's points
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ICustomPropertyValueValidator.Validate(System.Object)">
+			<summary>
+            Method should throw ArgumentException if value is not valid
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.DoubleArray">
+			<summary>
+            Array of double values
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DoubleArray.Clone">
+			<summary>
+            Creates a clone of the current object
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DoubleArray.Item(System.Int32)">
+			<summary>
+            Gets value at the index specified
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DoubleArray.Length">
+			<summary>
+            Gets array length
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.DataPointsCollection">
+			<summary>
+            DataPoints collection class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.Clone">
+			<summary>
+            Creates a clone of the current collection
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.Add(GrapeCity.ActiveReports.Chart.DataPoint)">
+			<summary>
+            Adds layer object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.AddRange(GrapeCity.ActiveReports.Chart.DataPoint[])">
+			<summary>
+            Adds a set of layers to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.Contains(GrapeCity.ActiveReports.Chart.DataPoint)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.DataPoint" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.DataPoint" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.CopyTo(GrapeCity.ActiveReports.Chart.DataPoint[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.IndexOf(GrapeCity.ActiveReports.Chart.DataPoint)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.DataPoint)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.DataPoint" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.DataPointsCollection.Remove(GrapeCity.ActiveReports.Chart.DataPoint)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.DataPoint" /> to remove from the collection.</param>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.DataPointsCollection.Change">
+			<summary>
+            Occurs when the collection's content is changed
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.DataPointsCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets collection item by given index
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.FontInfo">
+			<summary>
+            Summary description for FontInfo.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.FontInfo.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.FontInfo.Color">
+			<summary>
+            Specifies the text color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.FontInfo.Angle">
+			<summary>
+            Rotation angle, clockwise, degrees
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.FontInfo.Font">
+			<summary>
+            GDI font
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.GridLayout.IncreaseSize">
+			<summary>
+            Increases rows or columns whichever is less by 1.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.GridLayout.DecreaseSize">
+			<summary>
+            Decreases rows or columns whichever is more by 1.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GridLayout.Size">
+			<summary>
+            Gets number of chart area cells
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphXmlSerializationContext.StrictImport">
+			<summary>
+            False by default. If true xml import process will stop once it finds an error and throw an exception.
+            If false it will mutually continue. Use "strict" attribute of root element "SharpGraph" in xml files
+            to control this behaviour.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LabelInfo">
+			<summary>
+            Label object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LabelInfo.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelInfo.Border">
+			<summary>
+            Gets or sets line info to outline label bar
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelInfo.Backdrop">
+			<summary>
+            Gets or sets background info to fill label bar
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelInfo.Font">
+			<summary>
+            Gets or sets font info to draw labels
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelInfo.Format">
+			<summary>
+            Gets or sets label format string
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LabelInfo.Alignment">
+			<summary>
+            Gets or sets label's position around anchor point
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Legend">
+			<summary>
+            Legend class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Legend.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Backdrop">
+			<summary>
+            Gets or sets backdrop info to fill legend box
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Border">
+			<summary>
+            Gets or sets border info to outline legend box
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Visible">
+			<summary>
+            Gets or sets legend visibility
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Header">
+			<summary>
+            Gets or sets legend title
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Footer">
+			<summary>
+            Gets or sets legend footer
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.LabelsFont">
+			<summary>
+            Gets or sets font to draw labels
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.LegendItems">
+			<summary>
+            Gets custom legend items collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.Alignment">
+			<summary>
+            Gets or sets floating legend alignment within chart area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.MarginX">
+			<summary>
+            Gets or sets floating legend horizontal margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.MarginY">
+			<summary>
+            Gets or sets floating legend vertical margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.CustomBorderDrawer">
+			<summary>
+            Gets or sets custom-draw object
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Legend.DockInsideArea">
+			<summary>
+            Specifies whether legend will be docked inside containing area
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LegendsCollection">
+			<summary>
+            Legends collection class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Clone">
+			<summary>
+            Creates a clone of the current collection
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Add(GrapeCity.ActiveReports.Chart.Legend)">
+			<summary>
+            Adds layer object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.AddRange(GrapeCity.ActiveReports.Chart.Legend[])">
+			<summary>
+            Adds a set of layers to the current collection
+            </summary>
+			<param name="range"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Contains(GrapeCity.ActiveReports.Chart.Legend)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.Legend" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Legend" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.CopyTo(GrapeCity.ActiveReports.Chart.Legend[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.IndexOf(GrapeCity.ActiveReports.Chart.Legend)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.Legend)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Legend" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Remove(GrapeCity.ActiveReports.Chart.Legend)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Legend" /> to remove from the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendsCollection.Clear">
+			<summary>
+            Removes all legend objects from the collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendsCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets collection item by given index
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.StdLegendMarker">
+			<summary>
+            Specifies standard legend marker shapes
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.StdLegendMarker.None">
+			<summary>
+            No shape
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.StdLegendMarker.Line">
+			<summary>
+            Line
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.StdLegendMarker.Bar">
+			<summary>
+            Filled rectangle
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.StdLegendMarker.Area">
+			<summary>
+            Filled area
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LegendItem">
+			<summary>
+            Custom legend item
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItem.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Text">
+			<summary>
+            Gets or sets text string to display on legend
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Style">
+			<summary>
+            Gets or sets Marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Line">
+			<summary>
+            Gets or sets Line style to display on marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Backdrop">
+			<summary>
+            Backdrop to draw under the legend marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Border">
+			<summary>
+            Gets or sets border to draw around legend marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItem.Marker">
+			<summary>
+            Gets or sets series marker info to draw inside legend marker
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.Add(GrapeCity.ActiveReports.Chart.LegendItem)">
+			<summary>
+            Adds new legend item to the current collection
+            </summary>
+			<param name="item">Legend item to add</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.AddRange(GrapeCity.ActiveReports.Chart.LegendItem[])">
+			<summary>
+            Adds array of legend items to collection
+            </summary>
+			<param name="items">legent items</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.Contains(GrapeCity.ActiveReports.Chart.LegendItem)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.LegendItem" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.LegendItem" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.CopyTo(GrapeCity.ActiveReports.Chart.LegendItem[],System.Int32)">
+			<summary>
+            Copies the entire collection to a compatible one-dimensional Array, starting at the specified index of the target array.
+            </summary>
+			<param name="array">The one-dimensional Array that is the destination of the legend items copied from collection. The Array must have zero-based indexing. </param>
+			<param name="index">The zero-based index in array at which copying begins</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.IndexOf(GrapeCity.ActiveReports.Chart.LegendItem)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.LegendItem)">
+			<summary>
+            Inserts a legend item into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted. </param>
+			<param name="item">The <see cref="T:GrapeCity.ActiveReports.Chart.LegendItem" /> to insert</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.LegendItemsCollection.Remove(GrapeCity.ActiveReports.Chart.LegendItem)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="item">The <see cref="T:GrapeCity.ActiveReports.Chart.LegendItem" /> to remove from the collection</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.LegendItemsCollection.Item(System.Int32)">
+			<summary>
+            Get or sets custom legend item by given index
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LightType">
+			<summary>
+            Specifies type of the light source
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LightType.Ambient">
+			<summary>
+            Ambient light source. Is equal to DirectionalLightRatio == 0
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LightType.InfiniteDirectional">
+			<summary>
+            Infinite directional light source (like the Sun)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LightType.FiniteDirectional">
+			<summary>
+            Point light source
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Light">
+			<summary>
+            Represents lighting options and positioning
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Light.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Light.Type">
+			<summary>
+            Gets or sets type of the light source
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Light.Source">
+			<summary>
+            Gets or sets light source position (direction for infinite source)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Light.DirectionalRatio">
+			<summary>
+            Gets os sets directional/ambient intencity ratio
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.MarkerStyle">
+			<summary>
+            Specifies marker shapes
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.None">
+			<summary>
+            No shape
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Point">
+			<summary>
+            Displays dot shape
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Square">
+			<summary>
+            Displays rectangle in 2D, cube in 3D
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Circle">
+			<summary>
+            Displays circle in 2D, sphere in 3D mode
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Triangle">
+			<summary>
+            Displays triangle in 2D mode, cone in 3D
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.InvTriangle">
+			<summary>
+            Displays inverted triangle (inverted cone)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Diamond">
+			<summary>
+            Displays diamond
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Pyramid">
+			<summary>
+            Displays pyramid shape
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.MarkerStyle.Cross">
+			<summary>
+            Displays x-like cross shape
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Marker">
+			<summary>
+            Marker object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Marker.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.Size">
+			<summary>
+            Gets or sets marker size
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.Style">
+			<summary>
+            Gets or sets marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.Backdrop">
+			<summary>
+            Gets or sets background info to fill marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.Line">
+			<summary>
+            Gets or sets line info to stroke marker shape
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.Label">
+			<summary>
+            Gets or sets label info to draw on marker
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Marker.LabelDistanceFactor">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="..\SourceDocs\Chart\Marker.ardocs" path="/Libraries/Types/Type[@name=&quot;Marker&quot;]/Members/Property[@name=&quot;LabelDistanceFactor&quot;]/Docs/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.NullableBoolean">
+			<summary>
+            Boolean type accepted null value.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.NullableBoolean.op_Implicit(System.Boolean)~GrapeCity.ActiveReports.Chart.NullableBoolean">
+			<summary>
+            Implicit type conversion operator from <see cref="T:System.Boolean" /> to <see cref="T:GrapeCity.ActiveReports.Chart.NullableBoolean" />.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.NullableBoolean.op_Explicit(GrapeCity.ActiveReports.Chart.NullableBoolean)~System.Boolean">
+			<summary>
+            Explicit type conversion operator from <see cref="T:GrapeCity.ActiveReports.Chart.NullableBoolean" /> to <see cref="T:System.Boolean" />.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.NullableBoolean.op_Equality(GrapeCity.ActiveReports.Chart.NullableBoolean,GrapeCity.ActiveReports.Chart.NullableBoolean)">
+			<summary>
+            Oveloading the equality operator.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.NullableBoolean.op_Inequality(GrapeCity.ActiveReports.Chart.NullableBoolean,GrapeCity.ActiveReports.Chart.NullableBoolean)">
+			<summary>
+            Overloading the inequality operator.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.NullableBoolean.HasValue">
+			<summary>
+            Returns the false if there is null value otherwise returns true.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.NullableBoolean.Value">
+			<summary>
+            Gets the value of <see cref="T:System.Boolean" />.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Padding">
+			<summary>
+            Padding class
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Padding.Empty">
+			<summary>
+            Padding Empty Structure
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.All">
+			<summary>
+            Gets or sets padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Bottom">
+			<summary>
+            Gets or sets bottom padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Left">
+			<summary>
+            Gets or sets left padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Right">
+			<summary>
+            Gets or sets right padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Top">
+			<summary>
+            Gets or sets top padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Horizontal">
+			<summary>
+            Gets horizontal padding property
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Vertical">
+			<summary>
+            Gets versical padding property
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Padding.Size">
+			<summary>
+            Gets size
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.PlaneItem">
+			<summary>
+            Wall object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.PlaneItem.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.PlaneItem.Width">
+			<summary>
+            Gets or sets the wall width (thickness)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.PlaneItem.Backdrop">
+			<summary>
+            Gets or sets backdrop info to fill the wall
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.PlaneItem.Visible">
+			<summary>
+            Gets or sets the wall visibility
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Projection">
+			<summary>
+            Geometric projection settings class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Projection.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.ProjectionType">
+			<summary>
+            Gets or sets projection type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.ProjectionDX">
+			<summary>
+            Gets or sets world origin offset by x axis. For use for orthogonal projection only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.ProjectionDY">
+			<summary>
+            Gets or sets world origin offset by y axis. For use for orthogonal projection only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.HorizontalRotation">
+			<summary>
+            Determines horizontal rotation of chart box (in degrees)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.VerticalRotation">
+			<summary>
+            Determines horizontal rotation of chart box (in degrees)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Projection.PerspectiveRatioPct">
+			<summary>
+            Determines perspective ratio (0-100%).
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ChartType">
+			<summary>
+            Specifies chart types
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Area">
+			<summary>
+            Area chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Area3D">
+			<summary>
+            Area chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Bar2D">
+			<summary>
+            2D bar (vertical) chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Bar3D">
+			<summary>
+            3D bar (vertical) chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Bezier">
+			<summary>
+            Bezier line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.BezierXY">
+			<summary>
+            Bezier XY line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.BezierXY3D">
+			<summary>
+            3D Bezier XY line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Bezier3D">
+			<summary>
+            Bezier 3D line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Bubble">
+			<summary>
+            Bubble (requires two data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.BubbleXY">
+			<summary>
+            XY bubble (requires 3 series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Candle">
+			<summary>
+            Candlestick chart (requires 4 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.ClusteredBar">
+			<summary>
+            Clustered Bar
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Doughnut">
+			<summary>
+            Pie/doughnut chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Doughnut3D">
+			<summary>
+            3D Pie/doughnut chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Funnel">
+			<summary>
+            Funnel chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Funnel3D">
+			<summary>
+            Funnel 3D chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Gantt">
+			<summary>
+            Gantt chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Gantt3D">
+			<summary>
+            3D Gantt chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.HiLo">
+			<summary>
+            HiLo chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.HiLoOpenClose">
+			<summary>
+            HLOC chart (requires 4 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.HorizontalBar">
+			<summary>
+            Horizontal Bar chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.HorizontalBar3D">
+			<summary>
+            3D Horizontal Bar chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Kagi">
+			<summary>
+            Kagi chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Kagi3D">
+			<summary>
+            3D Kagi chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Line">
+			<summary>
+            Line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Line3D">
+			<summary>
+            3D line chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.LineXY">
+			<summary>
+            XY Line chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.LineXY3D">
+			<summary>
+            3D XY Line chart (requires 2 sorted data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.PlotXY">
+			<summary>
+            XY plot chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.PointAndFigure">
+			<summary>
+            Point and Figure chart (requires 2 data series)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Pyramid">
+			<summary>
+            Pyramid chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Pyramid3D">
+			<summary>
+            Pyramid 3D chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Renko">
+			<summary>
+            Renko chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Renko3D">
+			<summary>
+            3D Renko chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.Scatter">
+			<summary>
+            Scatter chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedArea">
+			<summary>
+            Stacked area chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedArea3D">
+			<summary>
+            3D Stacked area chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedBar">
+			<summary>
+            Stacked bar chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedBar3D">
+			<summary>
+            Stacked 3d bar chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedArea100Pct">
+			<summary>
+            Stacked area chart scaled to 100 percents
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedArea3D100Pct">
+			<summary>
+            3D Stacked area chart scaled to 100 percents
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedBar100Pct">
+			<summary>
+            Stacked bar chart scaled to 100 percents
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.StackedBar3D100Pct">
+			<summary>
+            Stacked 3d bar chart scaled to 100 percents
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.ThreeLineBreak">
+			<summary>
+            Three Line Break chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.ChartType.ThreeLineBreak3D">
+			<summary>
+            3D Three Line Break chart
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LegendMode">
+			<summary>
+            Specifies the mode to build legend items.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LegendMode.Auto">
+			<summary>
+            Auto mode
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LegendMode.Series">
+			<summary>
+            Legend items are determined by series.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LegendMode.Points">
+			<summary>
+            Legend items are determined by data points.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Series.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Series.ShouldSerializePoints">
+			<summary>
+            This method is called by serializer using reflection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.ChartConfig">
+			<summary>
+            gets config data for current chart type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.Type">
+			<summary>
+            Specifies the series's chart type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.AxisX">
+			<summary>
+            Specified X axis
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.AxisY">
+			<summary>
+            On which axis layer will be based vertically
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.ZOrder">
+			<summary>
+            z position of layer's plane on chart space
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.Visible">
+			<summary>
+            Get or sets layer's visibility.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Series.Annotations">
+			<summary>
+            Series' annotations
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.SeriesCollection">
+			<summary>
+            Series collection class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.Clone">
+			<summary>
+            Creates a clone of the current collection
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.Add(GrapeCity.ActiveReports.Chart.Series)">
+			<summary>
+            Adds layer object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.AddRange(GrapeCity.ActiveReports.Chart.Series[])">
+			<summary>
+            Adds a set of layers to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.Contains(GrapeCity.ActiveReports.Chart.Series)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.Series" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Series" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.CopyTo(GrapeCity.ActiveReports.Chart.Series[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.IndexOf(GrapeCity.ActiveReports.Chart.Series)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.Series)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Series" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SeriesCollection.Remove(GrapeCity.ActiveReports.Chart.Series)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Series" /> to remove from the collection.</param>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.SeriesCollection.SeriesCollectionChangedHandler">
+			<summary>
+            For handling ValueMemberx and ValueMemberY changes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SeriesCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets collection item by given index
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Tick">
+			<summary>
+            Tick attributes. Ticks are drawn on axes.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Tick.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Tick.Line">
+			<summary>
+            Line used to draw tick
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Tick.GridLine">
+			<summary>
+            Line used to draw grid on walls
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Tick.Step">
+			<summary>
+            Step in units of measure of the axis between two subsequent ticks
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Tick.Length">
+			<summary>
+            length of line to draw tick
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Tick.Visible">
+			<summary>
+            Controls if tick will be drawn
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Title">
+			<summary>
+            Properties for text objects
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Title.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Text">
+			<summary>
+            Text string to display
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Backdrop">
+			<summary>
+            Backdrop to draw under the text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Visible">
+			<summary>
+            If false, nothing will be drawn
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Border">
+			<summary>
+            Border to draw around text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Font">
+			<summary>
+            Font to draw text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.Alignment">
+			<summary>
+            position of text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Title.CustomBorderDrawer">
+			<summary>
+            Gets or sets custom border draw implementation class
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.TitlesCollection">
+			<summary>
+            Titles collection class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.Clone">
+			<summary>
+            Creates a clone of the current collection
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.Add(GrapeCity.ActiveReports.Chart.Title)">
+			<summary>
+            Adds layer object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.AddRange(GrapeCity.ActiveReports.Chart.Title[])">
+			<summary>
+            Adds a set of layers to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.Contains(GrapeCity.ActiveReports.Chart.Title)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.Title" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Title" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.CopyTo(GrapeCity.ActiveReports.Chart.Title[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.IndexOf(GrapeCity.ActiveReports.Chart.Title)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.Title)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Title" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.TitlesCollection.Remove(GrapeCity.ActiveReports.Chart.Title)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Title" /> to remove from the collection.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.TitlesCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets collection item by given index
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.WallRange">
+			<summary>
+            Wall range object class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRange.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.AdjacentAxes">
+			<summary>
+            Gets or sets adjacent axes collection. Wall range is displayed on the visible walls based on primary and adjacent axes.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.PrimaryAxis">
+			<summary>
+            Gets or sets primary axis. Wall range is displayed on the visible walls based on primary and adjacent axes.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.DrawOnTopOfGridLines">
+			<summary>
+            Gets or sets DrawOnTopOfGridLines property. DrawOnTopOfGridLines specifies whether to draw current range after grid lines are drawn.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.StartValue">
+			<summary>
+            Gets or sets range's start value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.EndValue">
+			<summary>
+            Gets or sets range's end value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.Backdrop">
+			<summary>
+            Gets or sets backdrop into to fill range with
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.Visible">
+			<summary>
+            Gets or sets range visibility
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRange.Border">
+			<summary>
+            Gets or sets border info to outline wall range
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.WallRangesCollection">
+			<summary>
+            Collection of wall ranges
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.Clone">
+			<summary>
+            Creates a clone of the current object
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.Add(GrapeCity.ActiveReports.Chart.WallRange)">
+			<summary>
+            Adds wall range object to the current collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.AddRange(GrapeCity.ActiveReports.Chart.WallRange[])">
+			<summary>
+            Adds a set of wall ranges to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.Contains(GrapeCity.ActiveReports.Chart.WallRange)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.WallRange" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.WallRange" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.CopyTo(GrapeCity.ActiveReports.Chart.WallRange[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.IndexOf(GrapeCity.ActiveReports.Chart.WallRange)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.WallRange)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.WallRange" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.WallRangesCollection.Remove(GrapeCity.ActiveReports.Chart.WallRange)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.WallRange" /> to remove from the collection.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.WallRangesCollection.Item(System.Int32)">
+			<summary>
+            TBW
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Annotations.Annotation">
+			<summary>
+            Base class for all the annotation classes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.Annotation.AnnotationClass">
+			<summary>
+            Name of this annotation type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection">
+			<summary>
+            Collection of the annotation objects
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Add(GrapeCity.ActiveReports.Chart.Annotations.Annotation)">
+			<summary>
+            Adds annotation object to the collection
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.AddRange(GrapeCity.ActiveReports.Chart.Annotations.Annotation[])">
+			<summary>
+            Adds a set of objects to the current collection
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Contains(GrapeCity.ActiveReports.Chart.Annotations.Annotation)">
+			<summary>
+            Determines whether the Collection contains the given <see cref="T:GrapeCity.ActiveReports.Chart.Annotations.Annotation" /></summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Annotations.Annotation" /> to find within the collection</param>
+			<returns>
+				<code>true</code> if the collection contains the <code>value</code>parameter given; otherwise, <code>false</code>.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.CopyTo(GrapeCity.ActiveReports.Chart.Annotations.Annotation[],System.Int32)">
+			<summary>
+            TBW
+            </summary>
+			<param name="array"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.IndexOf(GrapeCity.ActiveReports.Chart.Annotations.Annotation)">
+			<summary>
+            Returns the index of the first occurrence of a value in the collection.
+            </summary>
+			<param name="value">The object to locate in array.</param>
+			<returns>The index of the first occurrence of value within the entire array, if found; otherwise, the lower bound of the array - 1.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Insert(System.Int32,GrapeCity.ActiveReports.Chart.Annotations.Annotation)">
+			<summary>
+            Inserts an element into the collection at the specified index.
+            </summary>
+			<param name="index">The zero-based index at which <code>value</code> should be inserted.</param>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Annotations.Annotation" /> to insert.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Remove(GrapeCity.ActiveReports.Chart.Annotations.Annotation)">
+			<summary>
+            Removes the first occurrence of a specific object from the collection.
+            </summary>
+			<param name="value">The <see cref="T:GrapeCity.ActiveReports.Chart.Annotations.Annotation" /> to remove from the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.ToArray">
+			<summary>
+            TBW
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Clear">
+			<summary>
+            Clears the collection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.RemoveAt(System.Int32)">
+			<summary>
+            Removes objects at the index specified
+            </summary>
+			<param name="index">A zero-based index of object to delete</param>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Change">
+			<summary>
+            Occurs when collection contents is changed
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Item(System.Int32)">
+			<summary>
+            Gets or sets item by given index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationsCollection.Item(System.String)">
+			<summary>
+            Gets or sets item by given name
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine">
+			<summary>
+            Line annotation object, may connect to other annotations
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.StartPoint">
+			<summary>
+            Get or sets start point of line.
+            Is not used if start of line is connected to another annotation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.EndPoint">
+			<summary>
+            Gets or sets end point of line.
+            Is not used if end of line is connected to another annotation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.Line">
+			<summary>
+            Get or sets line info used to draw this annotation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.StartConnection">
+			<summary>
+            Gets or sets <code>AnnotationTextBar</code> object to connect start point to.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.EndConnection">
+			<summary>
+            Gets or sets <code>AnnotationTextBar</code> object to connect end point to.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.StartConnectionIndex">
+			<summary>
+            Gets or sets index of anchor point of destination annotation to connect start point to.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.EndConnectionIndex">
+			<summary>
+            Gets or sets index of anchor point of destination annotation to connect end point to.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationLine.AnnotationClass">
+			<summary>
+            Gets annotation type name.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType">
+			<summary>
+            Specifies how an annotation's bar anchors to annotation's position.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.TopLeft">
+			<summary>
+            The bar is anchored by its top left corner.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.Top">
+			<summary>
+            The bar is anchored by its top side.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.TopRight">
+			<summary>
+            The bar is anchored by its top right corner.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.Left">
+			<summary>
+            The bar is anchored by its left side.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.Center">
+			<summary>
+            The bar is anchored by its center.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.Right">
+			<summary>
+            The bar is anchored by its top right side.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.BottomLeft">
+			<summary>
+            The bar is anchored by its bottom left corner.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.Bottom">
+			<summary>
+            The bar is anchored by its bottom side.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Annotations.AnchorPlacementType.BottomRight">
+			<summary>
+            The bar is anchored by its bottom right corner.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar">
+			<summary>
+            Text bar annotation object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Clone">
+			<summary>
+            This member overrides <code>Item.Clone</code></summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.AnchorPlacement">
+			<summary>
+            Gets or sets position of anchor point to stick to layer surface.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Backdrop">
+			<summary>
+            Gets or sets background used to fill interior of the text bar.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Line">
+			<summary>
+            Get or sets line info used to stroke text bar
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.AnchorPoint">
+			<summary>
+            Gets or sets anchor point in coordinate system of the corresponding layer
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Width">
+			<summary>
+            Gets or sets the width of the bar.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Height">
+			<summary>
+            Gets or sets the height of the bar.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.RotationAngle">
+			<summary>
+            Gets or sets rotation angle (in degrees) of bar around anchor point.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Font">
+			<summary>
+            Gets or sets font used to display text on bar.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.Text">
+			<summary>
+            Gets or sets text string to display on bar.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Annotations.AnnotationTextBar.AnnotationClass">
+			<summary>
+            Gets annotation type name.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ChartTypeConfig">
+			<summary>
+            Holds data about particular chart type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.BorderSizes">
+			<summary>
+            Describes sizes of border around rectangular area.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.BorderSizes.Left">
+			<summary>
+            Gets or sets margin between inner and outer edges on the left side of a border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.BorderSizes.Right">
+			<summary>
+            Gets or sets margin between inner and outer edges on the right side of a border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.BorderSizes.Top">
+			<summary>
+            Gets or sets margin between inner and outer edges on the top side of a border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.BorderSizes.Bottom">
+			<summary>
+            Gets or sets margin between inner and outer edges on the bottom side of a border
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.CustomDrawEventHandler">
+			<summary>
+            Specifies custom drawing event
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ICustomBorderDrawer">
+			<summary>
+            Specifies custom border drawing interface
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ICustomBorderDrawer.MeasureBorder">
+			<summary>
+            Returns border margins
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.ICustomBorderDrawer.DrawBorder(System.Drawing.RectangleF,System.Object)">
+			<summary>
+            Draws border
+            </summary>
+			<param name="drawSpace">Rectangle to draw border within</param>
+			<param name="drawer">Drawing device interface</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.UIOptions">
+			<summary>
+            Specifies user interface settings for SharpGraph control
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UIOptions.None">
+			<summary>
+            No UI
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UIOptions.ContextCustomize">
+			<summary>
+            Adds "Customize" menu under items context menu
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UIOptions.UseCustomTooltips">
+			<summary>
+            Use controls drawn tooltips instead on System.Windows.Forms.Tooltip
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UIOptions.ForceHitTesting">
+			<summary>
+            Switch this option on if you wish to use HitTest function, by default control applies
+            optimization so only objects that has mouse event handlers (or context menus or tooltips) 
+            attached will be visible thru hit testing.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.UICommand">
+			<summary>
+            Commands for control's DoCmd method
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.New">
+			<summary>
+            creates new chart
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.OpenXml">
+			<summary>
+            performs "open" command
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.SaveXml">
+			<summary>
+            performs "save as" command
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.PrintPreview">
+			<summary>
+            displays print preview
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.Copy">
+			<summary>
+            copies chart to clipboard
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.Designer">
+			<summary>
+            displays Chart Designer
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.Customize">
+			<summary>
+            displays Chart Designer, obsolete
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.Wizard">
+			<summary>
+            displays "Chart Wizard"
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.Clear">
+			<summary>
+            Reverts graph to empty state
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.UICommand.RefreshData">
+			<summary>
+            Refreshes chart data
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.DeviceModes">
+			<summary>
+            Specifies device drawing mode
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.DeviceModes.None">
+			<summary>
+            Standard mode, no specific options
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.DeviceModes.BlackWhite">
+			<summary>
+            Hatch patterns and line dashing are used to designate colors
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Alignment">
+			<summary>
+            Specifies how text item anchors to its position
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.Center">
+			<summary>
+            Center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.Top">
+			<summary>
+            Top
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.Bottom">
+			<summary>
+            Bottom
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.Left">
+			<summary>
+            Left
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.Right">
+			<summary>
+            Right
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.TopLeft">
+			<summary>
+            Top left
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.TopRight">
+			<summary>
+            Top right
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.BottomLeft">
+			<summary>
+            Bottom left
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Alignment.BottomRight">
+			<summary>
+            Bottom right
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.BarType">
+			<summary>
+            Specifies bar shapes
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BarType.Bar">
+			<summary>
+            Bar
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BarType.Cone">
+			<summary>
+            Cone
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BarType.Custom">
+			<summary>
+            Custom bar type.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BarType.Cylinder">
+			<summary>
+            Cylinder
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BarType.Pyramid">
+			<summary>
+            Pyramid shape
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.BaseStyle">
+			<summary>
+            Funnel/Pyramid chart 3D drawing style 
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BaseStyle.CircularBase">
+			<summary>
+            (Default) Renders the Funnel chart with a Circular base shape. 
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.BaseStyle.SquareBase">
+			<summary>
+            Renders the Funnel chart with a Square base shape.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.LabelsPlacement">
+			<summary>
+            Point label placement
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LabelsPlacement.Left">
+			<summary>
+            Data point labels are drawn to the left of the funnel segment
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.LabelsPlacement.Right">
+			<summary>
+            (Default) Data point labels are drawn to the right of the funnel segment
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.FunnelStyle">
+			<summary>
+            Funnel chart style
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.FunnelStyle.YIsWidth">
+			<summary>
+            Data point Y-value controls the radius of the funnel segment.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.FunnelStyle.YIsHeight">
+			<summary>
+            (Default) Data point Y-value controls the height of the funnel segment
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.GraphMouseEventHandler">
+			<summary>
+            Specifies mouse events
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs">
+			<summary>
+            Mouse event arguments
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs.ItemCount">
+			<summary>
+            TBW
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs.PointIndex">
+			<summary>
+            Gets the point index if the mouse event occured on the data series
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs.UserX">
+			<summary>
+            Gets or sets mouse pointer x coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs.UserY">
+			<summary>
+            Gets or sets mouse pointer y coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.GraphMouseEventArgs.Control">
+			<summary>
+            Gets or sets control which mouse event occured on
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.SharpGraph">
+			<summary>
+            Datadynamics SharpGraph control for WinForms
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.RefreshData">
+			<summary>
+            Clears internal caches, so that chart will load all that data when it will be drawn next time
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.DrawContent(System.Drawing.Graphics,System.Drawing.Rectangle)">
+			<summary>
+            DrawContent is provided primararily for usage with ARNet2. However, by providing this function, it also
+            allows some other usages to non-display canvases. OnPaint now calls this.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.SharpGraph.ParentHost">
+			<summary>
+            is set to DataDyanmics.ActiveReports.ChartControl from ChartControl : CHART_WIZARD_DATASOURCE
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.DoCommand(GrapeCity.ActiveReports.Chart.UICommand,System.Object[])">
+			<summary>
+            Executes command
+            </summary>
+			<param name="command">command to execute</param>
+			<param name="parameters">optional parameters</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.HitTest(System.Int32,System.Int32)">
+			<summary>
+            Returns info about graph item that is placed in specified coordinates.
+            Please consider using UIOptions.ForceHitTesting before calling HitTest function.
+            </summary>
+			<param name="x"></param>
+			<param name="y"></param>
+			<returns>reference to HitTestInfo or null if item is not found</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.BeginInit">
+			<summary>
+             Signals the object that initialization is starting.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.SharpGraph.EndInit">
+			<summary>
+            Signals the object that initialization is complete.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Backdrop">
+			<summary>
+            Main chart's backdrop, spans all chart control area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Border">
+			<summary>
+            Main chart's border, spans all chart control area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Titles">
+			<summary>
+            Gets control's Titles collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Series">
+			<summary>
+            Where chart gets it's data to display
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.DataSource">
+			<summary>
+            Global graph's data source
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.ChartAreas">
+			<summary>
+            Chart Areas
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.GridLayout">
+			<summary>
+            Chart Areas Columns
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Legends">
+			<summary>
+            Gets or sets control's Legend object
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.AutoRefresh">
+			<summary>
+            If true chart will be automatically refreshed(redrawn) on each property change
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.UIOptions">
+			<summary>
+            Enables specific UI features
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.DeviceMode">
+			<summary>
+            Gets or sets graphics device specific options
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.ChartCustomBorderDrawer">
+			<summary>
+            Gets or sets custom border drawer object for entire control
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.AreaCustomBorderDrawer">
+			<summary>
+            Gets or sets custom border drawer object for chart areas
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.ColorPalette">
+			<summary>
+            Global color palette. May be overrided on series level
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.SharpGraph.Cursor">
+			<summary>
+            This member overrides <code>Control.Cursor</code></summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.XYValueChangedEventHandler">
+			<summary>
+            delegate for handling ValueMebersX and ValueMembersY
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.XYVAlueChangedEventArgs">
+			<summary>
+            Holds on to ValueMembersX and ValuemembersY changes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.HitTest.Item">
+			<summary>
+            Graph item that was under specified coordinates
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.HitTest.ItemCount">
+			<summary>
+            Ordinal number of item, applicable only for series views, and denotes column(sector etc) number
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ISGDesigner">
+			<summary>
+            Specifies internal interface for design-time purposes
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.ConverterUtil">
+			<summary>
+            Provides methods for type convertions
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.DoubleConverter">
+			<summary>
+            this class is created to fix error of visualization in vs.net property grid values like 0.2 of double
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Core.Objects.LineJoin">
+			<summary>
+            Specifies how to join consecutive line or curve segments in a figure (subpath) contained in a path (PolyLine)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Core.Objects.LineJoin.Miter">
+			<summary>
+            Specifies a mitered join. This produces a sharp corner or a clipped corner, depending on whether the length of the miter exceeds the miter limit.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Core.Objects.LineJoin.Bevel">
+			<summary>
+            Specifies a beveled join. This produces a diagonal corner.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Core.Objects.LineJoin.Round">
+			<summary>
+            Specifies a circular join. This produces a smooth, circular arc between the lines.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Core.Objects.LineJoin.MiterClipped">
+			<summary>
+            Specifies a mitered join. This produces a sharp corner or a beveled corner, depending on whether the length of the miter exceeds the miter limit. 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Designer.ChartDesignerForm">
+			<summary>
+            Summary description for CustomizeForm.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Designer.ChartDesignerForm.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.ProjectionType">
+			<summary>
+            Specifies projection type
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.ProjectionType.Identical">
+			<summary>
+            Flat projection (z coordinate is ignored)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.ProjectionType.Orthogonal">
+			<summary>
+            Orthogonal projection
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.ProjectionType.Perspective">
+			<summary>
+            Projection with perspective
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.LineStyle">
+			<summary>
+            Specifies line drawing styles
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.None">
+			<summary>
+            Nothing to draw
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.Solid">
+			<summary>
+            Solid line
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.Dash">
+			<summary>
+            Dahsed line
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.Dot">
+			<summary>
+            Dot line
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.DashDot">
+			<summary>
+            Dash-dot line
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.LineStyle.DashDotDot">
+			<summary>
+            Dash-dot-dot line
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle">
+			<summary>
+            Specifies styles to fill item's backdrop
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle.Transparent">
+			<summary>
+            Transparent
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle.Solid">
+			<summary>
+            Solid fill
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle.Gradient">
+			<summary>
+            Grafient fill
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle.Pattern">
+			<summary>
+            Pattern fill
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.BackdropStyle.Picture">
+			<summary>
+            Picture
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.GradientType">
+			<summary>
+            Specifies gradient type
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.Horizontal">
+			<summary>
+            Horizontal
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.Vertical">
+			<summary>
+            Vertical
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.DiagonalUp">
+			<summary>
+            From bottom left to top right
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.DiagonalDown">
+			<summary>
+            From top left to bottom right
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.FromCenter">
+			<summary>
+            Radial gradient from center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.GradientType.FromCorner">
+			<summary>
+            Radial gradient to center
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor">
+			<summary>
+            Specifies how text shape anchors to its position
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.TopLeft">
+			<summary>
+            Anchors by the top left corner
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.TopMiddle">
+			<summary>
+            Anchors by the center of the top
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.TopRight">
+			<summary>
+            Anchors by the top right corner
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.MiddleLeft">
+			<summary>
+            Anchors by the center of the left side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.Center">
+			<summary>
+            Anchors text by shape center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.MiddleRight">
+			<summary>
+            Anchors by the center of the right side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.BottomLeft">
+			<summary>
+            Anchors by the bottom left corner
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.BottomMiddle">
+			<summary>
+            Anchors by the center of shape's bottom side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAnchor.BottomRight">
+			<summary>
+            Anchors by the bottom right corner
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.TextAlign">
+			<summary>
+            Specifies how text aligns within its rectangle
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAlign.Left">
+			<summary>
+            Aligns text to the left
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAlign.Center">
+			<summary>
+            Aligns text to center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.TextAlign.Right">
+			<summary>
+            Aligns text to the right
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle">
+			<summary>
+            Specifies how picture is aligned within backdrop
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Stretched">
+			<summary>
+            Stretches picture to entire backdrop
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Tiled">
+			<summary>
+            Tiles picture
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Centered">
+			<summary>
+            Puts picture at center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Top">
+			<summary>
+            Puts picture at the top center
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Left">
+			<summary>
+            Puts picture at the left
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Bottom">
+			<summary>
+            Puts picture at the bottom
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.PicturePutStyle.Right">
+			<summary>
+            Puts picture at the right
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode">
+			<summary>
+            Specifies antialiasing settings
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode.Auto">
+			<summary>
+            Uses AA settings of the parent object
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode.None">
+			<summary>
+            Turns AA off
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode.Graphics">
+			<summary>
+            Turns AA on for graphics only
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode.Text">
+			<summary>
+            Turns AA on for texts only
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Chart.Graphics.AntiAliasMode.Both">
+			<summary>
+            Turns AA on for graphics and text
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.Bar">
+			<summary>
+            Stores a set of three integers that represent the size of a 3D bar area.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Bar.IsEmpty">
+			<summary>
+            Gets true if bar is empty
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.Line">
+			<summary>
+            Holds all visual attibutes of line.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Line.Color">
+			<summary>
+            Color used to draw line
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Line.Weight">
+			<summary>
+            Line thickness
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Line.Style">
+			<summary>
+            Style used to draw line
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.Point2d">
+			<summary>
+            Represents an ordered pair of integer x- and y-coordinates that defines a point in a 2D plane.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Point2d.Clone">
+			<summary>
+            Overridden <code>Item.Clone</code>.
+            </summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Point2d.op_Implicit(GrapeCity.ActiveReports.Chart.Graphics.Point2d)~System.Drawing.PointF">
+			<summary>
+            Implicit conversion to <code>PointF</code>.
+            </summary>
+			<param name="p">A Point2d that specifies the coordinates for the new PointF.</param>
+			<returns>The new PointF structure with the specified coordinates of the Point2d.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Point2d.op_Implicit(System.Drawing.PointF)~GrapeCity.ActiveReports.Chart.Graphics.Point2d">
+			<summary>
+            Implicit conversion to <code>PointF</code>.
+            </summary>
+			<param name="p">A Point2d that specifies the coordinates for the new PointF.</param>
+			<returns>The new PointF structure with the specified coordinates of the Point2d.</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point2d.X">
+			<summary>
+            Gets or sets point's x coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point2d.Y">
+			<summary>
+            Gets or sets point's y coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point2d.Length">
+			<summary>
+            Gets vector length
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Graphics.Point3d">
+			<summary>
+            Represents a point in 3D geometrical space.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Graphics.Point3d.Clone">
+			<summary>
+            Overridden <code>Item.Clone</code>.
+            </summary>
+			<returns>Object's clone</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point3d.X">
+			<summary>
+            Gets or sets point's x coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point3d.Y">
+			<summary>
+            Gets or sets point's y coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Graphics.Point3d.Z">
+			<summary>
+            Gets or sets point's z coordinate
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Chart.Styling.StyleEditorControl.DialogsOwner">
+			<summary>
+            Gets or sets window that owns dialogs called
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Styling.StyleManager">
+			<summary>
+            Summary description for StyleManager.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Chart.Wizard.WizardForm">
+			<summary>
+            Main Wizard's Form.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Chart.Wizard.WizardForm.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+		</member>
+	</members>
+</doc>

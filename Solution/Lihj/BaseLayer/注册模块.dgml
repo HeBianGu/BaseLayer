@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="8f17ca2e-d2d0-4743-a431-89a09fdf7b3a1" Bounds="51.21408554633,150.001571184202,649.593333333333,57.51" Label="    &lt;ModuleGroup id=&quot;SimON&quot;&gt;&#xD;&#xA;      &lt;Module id=&quot;SimONModule&quot; name=&quot;数值模拟&quot; relativePath=&quot;SimONModule&quot; dll=&quot;SimONModule.dll&quot; /&gt;&#xD;&#xA;    &lt;/ModuleGroup&gt;" />
+    <Node Id="BxSystemInfo.Instance.Regisries.GetModulePath(&quot;HMModule&quot;)" Bounds="519.381608543673,46.3580720011393,379.713333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Product\Config\zh-CN\Registries\ModulesInfo.xml" Bounds="178.174941877006,46.3580643717448,311.206666666667,25.8366666666667" />
+    <Node Id="e527b27c-6a58-4215-8d2a-fd291a8689101" Category="Comment" Bounds="929.094941877006,-174.383398641959,234.46,437.59" Label=" RegistryKey fileTypeKey = Registry.ClassesRoot.CreateSubKey(regInfo.ExtendName);&#xD;&#xA;            fileTypeKey.SetValue(&quot;&quot;, relationName);&#xD;&#xA;            fileTypeKey.Close();&#xD;&#xA;&#xD;&#xA;            RegistryKey relationKey = Registry.ClassesRoot.CreateSubKey(relationName);&#xD;&#xA;            relationKey.SetValue(&quot;&quot;, regInfo.Description);&#xD;&#xA;&#xD;&#xA;            RegistryKey iconKey = relationKey.CreateSubKey(&quot;DefaultIcon&quot;);&#xD;&#xA;            iconKey.SetValue(&quot;&quot;, regInfo.IcoPath);&#xD;&#xA;&#xD;&#xA;            RegistryKey shellKey = relationKey.CreateSubKey(&quot;Shell&quot;);&#xD;&#xA;            RegistryKey openKey = shellKey.CreateSubKey(&quot;Open&quot;);&#xD;&#xA;            RegistryKey commandKey = openKey.CreateSubKey(&quot;Command&quot;);&#xD;&#xA;            commandKey.SetValue(&quot;&quot;, regInfo.ExePath + &quot; %1&quot;);" UseManualLocation="True" />
+    <Node Id="注册模块" Category="Category1" Bounds="613.967778600763,-65.3442501197657,68,25.8366666666667" UseManualLocation="True" />
+    <Node Id="注册表操作" Category="Category1" Bounds="661.965664406811,-9.50758345309896,100,25" Group="Collapsed" UseManualLocation="True" />
+    <Node Id="配置文件" Category="Category1" Bounds="539.965564406811,-9.50758345309898,92,25.8366666666667" Label="配置文件路径" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Product\Config\zh-CN\Registries\ModulesInfo.xml" Target="8f17ca2e-d2d0-4743-a431-89a09fdf7b3a1" Bounds="338.344500106083,72.1947310384115,24.5029119665164,69.3213303435552" />
+    <Link Source="e527b27c-6a58-4215-8d2a-fd291a8689101" Target="注册表操作" Bounds="770.897395119139,10.2926603567407,158.197546757867,19.5969242289597" />
+    <Link Source="注册模块" Target="注册表操作" Bounds="662.886037409754,-39.5076345718384,27.8408145635558,24.1084970390957" />
+    <Link Source="注册模块" Target="配置文件" Bounds="606.998117913153,-39.5076345718384,26.6248949034822,23.9773445105707" />
+    <Link Source="配置文件" Target="BxSystemInfo.Instance.Regisries.GetModulePath(&quot;HMModule&quot;)" Bounds="614.471089935487,16.3291320948283,58.0641839233815,26.3139436415883" Label="读取" LabelBounds="615.048615676473,29.6631463464363,24,15.8366666666666" />
+    <Link Source="配置文件" Target="Product\Config\zh-CN\Registries\ModulesInfo.xml" Bounds="400.880921735058,13.5982345213176,139.096748165855,30.8133007402124" Label="写入" LabelBounds="455.243962568825,9.16707063414187,24,15.8366666666666" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

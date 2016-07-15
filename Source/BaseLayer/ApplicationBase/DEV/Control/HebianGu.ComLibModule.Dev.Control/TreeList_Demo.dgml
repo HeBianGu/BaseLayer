@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="TreeList" Category="Category1" Bounds="-8.13802088828197E-07,21.2700494903565,64.4566666666667,25.24" />
+    <Node Id="c28d2f74-7601-4ca7-9de8-5f68c5acd4bc1" Category="Comment" Bounds="-185.6,-673.704328844041,248.506666666667,360.52" Label="        private void treeList1_FocusedNodeChanged(object sender, DevExpress.XtraTreeList.FocusedNodeChangedEventArgs e)&#xD;&#xA;        {&#xD;&#xA;            if (this.treeList1.FocusedNode != null)&#xD;&#xA;            {&#xD;&#xA;&#xD;&#xA;                BaseKey select = treeList1.GetDataRecordByNode(this.treeList1.FocusedNode) as BaseKey;&#xD;&#xA;&#xD;&#xA;                if (select != null)&#xD;&#xA;                {&#xD;&#xA;                    BindLines(select);&#xD;&#xA;                }&#xD;&#xA;            }&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;        }" UseManualLocation="True" />
+    <Node Id="da5c0005-af00-468b-92e8-505cf2dd48651" Bounds="-571.324986187239,-62.724294845935,433.53,101.44" Label="            List&lt;BaseKey&gt; keys = _eclData.Key.FindAll&lt;BaseKey&gt;(l =&gt; true);&#xD;&#xA;            this.treeList1.DataSource = keys;&#xD;&#xA;            this.treeList1.KeyFieldName = &quot;ID&quot;;&#xD;&#xA;            this.treeList1.ParentFieldName = &quot;Pid&quot;;&#xD;&#xA;&#xD;&#xA;            List&lt;testModel&gt; ts = new List&lt;testModel&gt;();" UseManualLocation="True" />
+    <Node Id="绑定数据源" Bounds="-251.6,-149.58,80,25.24" UseManualLocation="True" />
+    <Node Id="获取数据源选择项" Bounds="-270,-236.78,116,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="TreeList" Target="绑定数据源" Bounds="-186.218721144589,-119.175386136354,200.436443546427,140.445435117066" />
+    <Link Source="c28d2f74-7601-4ca7-9de8-5f68c5acd4bc1" Target="获取数据源选择项" Bounds="-200.545446777782,-313.184328844041,38.3508414911806,68.549965242757" />
+    <Link Source="绑定数据源" Target="da5c0005-af00-468b-92e8-505cf2dd48651" Bounds="-289.755635809522,-124.34,63.7172792458219,55.6927695014765" />
+    <Link Source="绑定数据源" Target="获取数据源选择项" Bounds="-211.900826117908,-202.540090720228,0.242936207017067,52.9600907202284" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

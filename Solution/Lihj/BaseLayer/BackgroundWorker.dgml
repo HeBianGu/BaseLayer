@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="2、注册执行事件" Bounds="23.9216666666667,72.7961440047642,111.036666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="3、注册完成事件" Bounds="175.02166788737,143.796144205729,111.036666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="4、调用执行方法" Bounds="296.921666666667,51.7961440047642,111.036666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="6cb2d722-51b0-4c5a-a5b1-22e459a72ffa1" Bounds="24.746207010789,192.846955973307,68,25.8366666666667" Label="新建节点" UseManualLocation="True" />
+    <Node Id="BackgroundWorkerBw=NewBackgroundWorker();" Bounds="-393.376836772056,199.796144004764,321.2,25.8366666666667" Label=" BackgroundWorker bw = new BackgroundWorker();" UseManualLocation="True" />
+    <Node Id="System.ComponentModel.BackgroundWorker" Bounds="-4.99999613444012,-64.4032825195312,287.393333333333,25.8366666666667" Label="System.ComponentModel.BackgroundWorker " UseManualLocation="True" />
+    <Node Id="创建实例" Bounds="-93.1149999996964,21.7961442057292,87.0366666666667,25.8366666666667" Label="1、创建实例" UseManualLocation="True" />
+    <Node Id="若要为后台操作做好准备，请添加DoWork事件的事件处理程序。在此事件处理程序中调用耗时的操作。若要开始此操作，请调用RunWorkerAsync。若要收到进度更新的通知，请处理ProgressChanged事件。若要在操作完成时收到通知，请处理RunWorkerCompleted事件。" Category="Comment" Bounds="27.9216666666667,-269.102241339838,248,136.693333333333" Label="若要为后台操作做好准备，请添加 DoWork 事件的事件处理程序。在此事件处理程序中调用耗时的操作。若要开始此操作，请调用 RunWorkerAsync。若要收到进度更新的通知，请处理 ProgressChanged 事件。若要在操作完成时收到通知，请处理 RunWorkerCompleted 事件。" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="2、注册执行事件" Target="6cb2d722-51b0-4c5a-a5b1-22e459a72ffa1" Bounds="62.5018387428939,98.6328108723958,14.7113586311709,85.3449468640316" />
+    <Link Source="System.ComponentModel.BackgroundWorker" Target="2、注册执行事件" Bounds="88.5879554034194,-38.5666158528646,44.5292644111862,103.100450181432" />
+    <Link Source="System.ComponentModel.BackgroundWorker" Target="3、注册完成事件" Bounds="144.39535462055,-38.5666158528646,76.8135104539419,174.128363174356" />
+    <Link Source="System.ComponentModel.BackgroundWorker" Target="4、调用执行方法" Bounds="162.459331505978,-38.5666158528646,158.310923603077,86.064152649885" />
+    <Link Source="System.ComponentModel.BackgroundWorker" Target="创建实例" Bounds="-13.1947063508161,-38.5666158528646,123.672673037947,56.6165201385123" />
+    <Link Source="创建实例" Target="BackgroundWorkerBw=NewBackgroundWorker();" Bounds="-213.027978085322,47.6328108723958,150.137026566845,145.891291372084" />
+    <Link Source="若要为后台操作做好准备，请添加DoWork事件的事件处理程序。在此事件处理程序中调用耗时的操作。若要开始此操作，请调用RunWorkerAsync。若要收到进度更新的通知，请处理ProgressChanged事件。若要在操作完成时收到通知，请处理RunWorkerCompleted事件。" Target="System.ComponentModel.BackgroundWorker" Bounds="140.63546752704,-132.408902791341,5.23085804044217,59.0407364508234" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

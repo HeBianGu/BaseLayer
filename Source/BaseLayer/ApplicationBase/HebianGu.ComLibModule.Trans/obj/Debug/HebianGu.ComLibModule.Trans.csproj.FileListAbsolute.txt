@@ -1,0 +1,14 @@
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Trans\bin\Debug\HebianGu.ComLibModule.Trans.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Trans\bin\Debug\HebianGu.ComLibModule.Trans.pdb
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb

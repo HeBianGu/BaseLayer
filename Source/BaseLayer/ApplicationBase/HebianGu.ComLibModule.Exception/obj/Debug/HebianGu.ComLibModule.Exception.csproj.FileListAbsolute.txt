@@ -1,0 +1,15 @@
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Exception\bin\Debug\HebianGu.ComLibModule.Exception.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Exception\bin\Debug\HebianGu.ComLibModule.Exception.pdb
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.csprojResolveAssemblyReference.cache

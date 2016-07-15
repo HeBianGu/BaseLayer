@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1．指定类库文件必须使用绝对路径，不能使用相对路径（其实感觉有点不合理，不太方便）" Bounds="-60.5,-126.499998372396,507.036666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="C#反射学习时几点注意内容" Bounds="-266,-4,167.683333333333,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="C#反射学习时几点注意内容" Target="1．指定类库文件必须使用绝对路径，不能使用相对路径（其实感觉有点不合理，不太方便）" Bounds="-142.593783373428,-97.8698530850208,287.492073278181,93.8698528052763" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="[DllImport(&quot;KeyObtain.dll&quot;)]PublicStaticExternIntPtrGetKeyString([In]char[]SzDesKey);" Bounds="-348,-364.244900002576,390.976666666667,41.6733333333334" Label="        [DllImport(&quot;KeyObtain.dll&quot;)]&#xD;&#xA;        public static extern IntPtr GetKeyString([In]char[] szDesKey);" UseManualLocation="True" />
+    <Node Id="反射" Bounds="-312.511666666667,-551.081666666667,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="引用" Bounds="-140.511666666667,-561.244900001884,50,25.8366666666666" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="[DllImport(&quot;KeyObtain.dll&quot;)]PublicStaticExternIntPtrGetKeyString([In]char[]SzDesKey);" Target="引用" Bounds="-148.749403899769,-526.551420500584,29.3060249245051,162.306520191339" />
+    <Link Source="引用" Target="反射" Bounds="-253.527337120134,-546.849328071422,113.015667961198,6.67791506037861" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

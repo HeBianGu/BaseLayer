@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="IEngine" Bounds="104.7,-82.1999999999999,62.5899999999999,25.24" UseManualLocation="True" />
+    <Node Id="IEntity" Bounds="-77.6,45.6,56,25.24" UseManualLocation="True" />
+    <Node Id="思想：将创建的实体对象提供给引擎，引擎会根据对象做相关操作" Category="Comment" Bounds="73.9,105,248,40.48" UseManualLocation="True" />
+    <Node Id="自定义实体" Category="Comment" Bounds="-161.3,-33.3999999999999,80,25.24" UseManualLocation="True" />
+    <Node Id="自定义引擎" Category="Comment" Bounds="19.5,-165.4,80,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="IEntity" Target="IEngine" Bounds="-31.2728545046353,-51.8557227884953,141.528131113672,97.4557201945011" />
+    <Link Source="思想：将创建的实体对象提供给引擎，引擎会根据对象做相关操作" Target="IEngine" Bounds="142.730575695709,-48.3826084527266,48.7380642258213,153.382606316496" />
+    <Link Source="思想：将创建的实体对象提供给引擎，引擎会根据对象做相关操作" Target="IEntity" Bounds="-12.9128615122501,68.1544296236846,136.068008603094,36.8455682400849" />
+    <Link Source="自定义实体" Target="IEntity" Bounds="-109.846150806514,-8.16000116348267,42.7437092667559,47.0955778939648" />
+    <Link Source="自定义引擎" Target="IEngine" Bounds="71.1029692213569,-140.160006408691,47.1976723008455,51.3346851088799" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

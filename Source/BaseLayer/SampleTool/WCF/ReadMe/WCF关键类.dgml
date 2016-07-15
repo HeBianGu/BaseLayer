@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="612b51a3-9bf6-44f1-ae7e-e4265491d6091" Category="Comment" Bounds="198.804991861979,235.732535563042,249.456666666667,690.976666666667" Label="1: //契约接口&#xD;&#xA;   2: [ServiceContract(Namespace = &quot;http://www.artech.com/&quot;)]&#xD;&#xA;   3: public interface ICalculator&#xD;&#xA;   4: {&#xD;&#xA;   5:     [OperationContract]&#xD;&#xA;   6:     double Add(double x, double y);&#xD;&#xA;   7:     [OperationContract]&#xD;&#xA;   8:     double Subtract(double x, double y);&#xD;&#xA;   9:     [OperationContract]&#xD;&#xA;  10:     double Multiply(double x, double y);&#xD;&#xA;  11:     [OperationContract]&#xD;&#xA;  12:     double Divide(double x, double y);&#xD;&#xA;  13: }&#xD;&#xA;  14:  &#xD;&#xA;  15: //服务类型&#xD;&#xA;  16: public  class CalculatorService: ICalculator&#xD;&#xA;  17: {&#xD;&#xA;  18:     public double Add(double x, double y)&#xD;&#xA;  19:     {&#xD;&#xA;  20:         return x + y;&#xD;&#xA;  21:     }&#xD;&#xA;  22:     public double Subtract(double x, double y)&#xD;&#xA;  23:     {&#xD;&#xA;  24:         return x - y;&#xD;&#xA;  25:     }&#xD;&#xA;  26:     public double Multiply(double x, double y)&#xD;&#xA;  27:     {&#xD;&#xA;  28:         return x * y;&#xD;&#xA;  29:     }&#xD;&#xA;  30:     public double Divide(double x, double y)&#xD;&#xA;  31:     {&#xD;&#xA;  32:         return x / y;&#xD;&#xA;  33:     }&#xD;&#xA;  34: }" UseManualLocation="True" />
+    <Node Id="ChannelFactory&lt;TChannel&gt;创建的服务代理仅仅是一个透明代理" Bounds="134.805002848307,-75.7019597498068,372.416666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Http://www.codesocang.com/jiaocheng/WCFjishu/6775.html" Bounds="-441.078948974609,17.1888398257981,367.273333333333,25.8366666666667" Label="http://www.codesocang.com/jiaocheng/WCFjishu/6775.html" UseManualLocation="True" />
+    <Node Id="ServiceContract" Bounds="42.805,124.059002229709,109.863333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="ServiceEndpoint类型具有地址（Address）、绑定（Binding）和契约（Contract）早已了然于胸了。" Bounds="-397.948454194333,-290.722259749807,564.233333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="ServiceProxyFactory&lt;TChannel&gt;类，泛型参数依然表示契约接口类型。" Bounds="86.8049956766764,68.222235563042,410.206666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="WCF类" Bounds="-3.80499976158143,-36.8191103427884,58.61,25.8366666666667" />
+    <Node Id="地址筛选器（AddressFilter）" Bounds="-912.58141585253,-72.2588770879471,178.925179306667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="契约筛选器（ContractFilter）" Bounds="-986.578826199196,24.7411229120529,181.846666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="对于一个基于某种类型的服务进行寄宿只需要使用到一个唯一的对象，那就是ServiceHost。" Bounds="-314.964904581706,-131.538726416474,507.573333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="对于一个服务来说，它的核心包括：一组终结点列表和一组服务行为列表。这可以通过如下所示的ServiceDescription的定义看出来" Category="Comment" Bounds="11.1204169132297,-234.88549308314,248,73.3466666666667" UseManualLocation="True" />
+    <Node Id="当ServiceHost在被实例化的过程中，用于描述整个服务的ServiceDescription对象被创建出来" Bounds="-599.37958114624,-75.7019597498069,517.86,25.8366666666667" UseManualLocation="True" />
+    <Node Id="步骤" Bounds="-224.154937744141,124.059002229709,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="每个终结点分发器分发器都具有各自的运行时，被称为分发运行时（DispatchRuntime）。" Bounds="-822.578826199197,338.741122912053,502.396666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="消息筛选器（MessageFilter）的对象" Bounds="-743.578826199197,17.7411229120529,219.383333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="而针对在配置中定义的三个终结点，它们则分别对应着一个终结点分发器（EndpointDispatcher）。" Bounds="-1257.57887207031,394.577889578486,553.47,25.8366666666666" UseManualLocation="True" />
+    <Node Id="针对这两个信道监听器，WCF会创建相应的信道分发器（ChannelDispatcher）对象。" Bounds="-1151.57883341471,280.57102101237,478.903333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="首先通过调用绑定的BuildChannelListener方法创建信道监听器（实际上是多个信道监听器构成的信道监听器栈，最终返回的是最上层的信道监听器。" Bounds="-1137.5788261992,133.895768896375,812.796666666667,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="612b51a3-9bf6-44f1-ae7e-e4265491d6091" Target="ServiceContract" Bounds="108.380627164718,157.918790813651,90.4243646972615,177.905375280109" />
+    <Link Source="WCF类" Target="ChannelFactory&lt;TChannel&gt;创建的服务代理仅仅是一个透明代理" Bounds="54.8050002384186,-48.6912168437771,159.104689275959,20.9345668049857" />
+    <Link Source="WCF类" Target="Http://www.codesocang.com/jiaocheng/WCFjishu/6775.html" Bounds="-180.924027372996,-18.3070461416372,177.119027611415,33.8084344660589" />
+    <Link Source="WCF类" Target="ServiceContract" Bounds="31.3005241312408,-10.9824436761217,56.949063896797,126.831128365919" />
+    <Link Source="WCF类" Target="ServiceProxyFactory&lt;TChannel&gt;类，泛型参数依然表示契约接口类型。" Bounds="54.4134605181838,-12.5005749339966,196.358405451778,77.4215704279323" />
+    <Link Source="WCF类" Target="对于一个基于某种类型的服务进行寄宿只需要使用到一个唯一的对象，那就是ServiceHost。" Bounds="-43.2807486207017,-99.0625046124352,56.9591387256782,62.2433942696469" />
+    <Link Source="WCF类" Target="当ServiceHost在被实例化的过程中，用于描述整个服务的ServiceDescription对象被创建出来" Bounds="-209.917852726705,-48.9143783092057,206.112852965124,21.8998884829161" />
+    <Link Source="WCF类" Target="步骤" Bounds="-173.798121222962,-10.9824436761217,181.258580050611,129.801456883076" />
+    <Link Source="对于一个基于某种类型的服务进行寄宿只需要使用到一个唯一的对象，那就是ServiceHost。" Target="ServiceEndpoint类型具有地址（Address）、绑定（Binding）和契约（Contract）早已了然于胸了。" Bounds="-108.473878133172,-256.373332728346,42.8603022346033,124.834606311872" />
+    <Link Source="对于一个服务来说，它的核心包括：一组终结点列表和一组服务行为列表。这可以通过如下所示的ServiceDescription的定义看出来" Target="对于一个基于某种类型的服务进行寄宿只需要使用到一个唯一的对象，那就是ServiceHost。" Bounds="-20.9770248304908,-161.538826416474,65.6493174854487,26.6183441944569" />
+    <Link Source="步骤" Target="首先通过调用绑定的BuildChannelListener方法创建信道监听器（实际上是多个信道监听器构成的信道监听器栈，最终返回的是最上层的信道监听器。" Bounds="-315.783697477992,137.43956743198,91.6287597338515,1.69414931440983" />
+    <Link Source="消息筛选器（MessageFilter）的对象" Target="地址筛选器（AddressFilter）" Bounds="-787.829496504301,-42.5566656237343,126.780581167925,60.2977885357872" />
+    <Link Source="消息筛选器（MessageFilter）的对象" Target="契约筛选器（ContractFilter）" Bounds="-795.735375721321,33.5927433121947,52.1565495221241,1.39472885052891" />
+    <Link Source="针对这两个信道监听器，WCF会创建相应的信道分发器（ChannelDispatcher）对象。" Target="每个终结点分发器分发器都具有各自的运行时，被称为分发运行时（DispatchRuntime）。" Bounds="-836.45463100063,306.407687679036,180.529947954699,30.8189228931412" />
+    <Link Source="针对这两个信道监听器，WCF会创建相应的信道分发器（ChannelDispatcher）对象。" Target="而针对在配置中定义的三个终结点，它们则分别对应着一个终结点分发器（EndpointDispatcher）。" Bounds="-968.41146039792,306.407687679036,48.497874146502,80.4621050678454" />
+    <Link Source="首先通过调用绑定的BuildChannelListener方法创建信道监听器（实际上是多个信道监听器构成的信道监听器栈，最终返回的是最上层的信道监听器。" Target="消息筛选器（MessageFilter）的对象" Bounds="-720.359851982667,50.4772172646584,69.8729601499019,83.418551631717" />
+    <Link Source="首先通过调用绑定的BuildChannelListener方法创建信道监听器（实际上是多个信道监听器构成的信道监听器栈，最终返回的是最上层的信道监听器。" Target="针对这两个信道监听器，WCF会创建相应的信道分发器（ChannelDispatcher）对象。" Bounds="-889.198873841573,159.732435563042,142.081613081699,115.171259977812" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

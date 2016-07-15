@@ -1,0 +1,4 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Register.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Register.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Register\obj\Debug\HebianGu.ComLibModule.Register.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Register\obj\Debug\HebianGu.ComLibModule.Register.pdb

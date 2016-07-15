@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1、ReferenceEquals（）判断引用相等，需要两个是引用同一个对象时方可返回true；2、静态的Equals（）方法先进性引用判断再进行值类型判断的；3、对于引用类型的判断可以在使用“值语义”时使用重写Equals（）方法；4、重写Equals（）方法时也应当重写GetHashCode（）方法，同时提供operater==（）操作。" Bounds="327.085476989746,-19.4817236562093,534.27,73.3466666666667" Label="1、ReferenceEquals（）判断引用相等，需要两个是引用同一个对象时方可返回true；&#xD;&#xA;2、静态的Equals（）方法先进性引用判断再进行值类型判断的；&#xD;&#xA;3、对于引用类型的判断可以在使用“值语义”时使用重写Equals（）方法；&#xD;&#xA;4、重写Equals（）方法时也应当重写GetHashCode（）方法，同时提供operater==（）操作。" UseManualLocation="True" />
+    <Node Id="1、const只可用于基元类型、枚举、字符串，而readonly则可以是任何的类型；2、const在编译时将替换成具体的常量，这样如果在引用中同时使用了const和readonly两种值，则对readonly的再次改变将会改变设计的初衷，这是需要重新编译所更改的程序集，以重新引用新的常量值。3、const比readonly效率高，但失去了应用的灵活性。" Bounds="-397.815427042643,314.535947115072,1113.70333333333,57.51" Label="1、const只可用于基元类型、枚举、字符串，而readonly则可以是任何的类型；&#xD;&#xA;2、const在编译时将替换成具体的常量，这样如果在引用中同时使用了const和readonly两种值，则对readonly的再次改变将会改变设计的初衷，这是需要重新编译所更改的程序集，以重新引用新的常量值。&#xD;&#xA;3、const比readonly效率高，但失去了应用的灵活性。" UseManualLocation="True" />
+    <Node Id="1、两者都是在运行时进行类型的转换，as操作符只能使用在引用类型，而is可以使用值和引用类型；2、通常的做法是用is判断类型，然后选择使用as或强类型转换操作符（用operater定义的转换）有选择地进行。" Bounds="275.61439163208,214.055087483724,613.153333333333,41.6733333333333" Label="1、两者都是在运行时进行类型的转换，as操作符只能使用在引用类型，而is可以使用值和引用类型；&#xD;&#xA;2、通常的做法是用is判断类型，然后选择使用as或强类型转换操作符（用operater定义的转换）有选择地进行。" UseManualLocation="True" />
+    <Node Id="1、值类型不支持多态，适合存储应用程序操作的数据，而引用则支持多态，适用于定义应用程序的行为；2、对于数组定义为值类型可以显著提高程序的性能；3、值类型具有较少的堆内存碎片、内存垃圾和间接访问时间，其在方法中的返回是以复制的方式进行，避免暴露内部结构到外界；4、值类型应用在如下的场景中：类型的职责主要是用于数据存储；公共接口完全由一些数据成员存取属性定义；永远没有子类；永远没有多态行为。" Bounds="330.793370408819,104.597653799288,807.036666666667,73.3466666666667" Label="1、值类型不支持多态，适合存储应用程序操作的数据，而引用则支持多态，适用于定义应用程序的行为；&#xD;&#xA;2、对于数组定义为值类型可以显著提高程序的性能；&#xD;&#xA;3、值类型具有较少的堆内存碎片、内存垃圾和间接访问时间，其在方法中的返回是以复制的方式进行，避免暴露内部结构到外界；&#xD;&#xA;4、值类型应用在如下的场景中：类型的职责主要是用于数据存储；公共接口完全由一些数据成员存取属性定义；永远没有子类；永远没有多态行为。" UseManualLocation="True" />
+    <Node Id="Http://www.51csharp.com/kaifajiqiao/267.html" Category="Comment" Bounds="-202.122144521077,43.2617792256673,173.266666666667,41.6733333333333" Label="http://www.51csharp.com/kaifajiqiao/267.html" UseManualLocation="True" />
+    <Node Id="Http://www.51csharp.com/kaifajiqiao/268.html" Category="Comment" Bounds="-249.288791775114,202.767045115796,173.266666666667,41.6733333333333" Label="http://www.51csharp.com/kaifajiqiao/268.html" UseManualLocation="True" />
+    <Node Id="Is与as" Bounds="192.681058298747,183.755006510417,52.9333333333333,25.8366666666667" Label="is与as" />
+    <Node Id="Readonly（运行时常量）和const（编译时常量）" Bounds="-40.4674108565138,240.627952252583,281.333333333333,25.8366666666666" Label="readonly（运行时常量）和const（编译时常量）" UseManualLocation="True" />
+    <Node Id="、GetHashCode（）仅应用在基于散列的集合定义键的散列值，如HashTable或Dictionary；2、GetHashCode（）应当遵循相应的三条规则：两个相等对象应当返回相同的散列码；应当是一个实例不变式；散列函数应该在所有的整数中产生一个随机的分布；" Bounds="-310.317280883789,-91.1551569895427,898.24,41.6733333333333" Label="、GetHashCode（）仅应用在基于散列的集合定义键的散列值，如HashTable或Dictionary；&#xD;&#xA;2、GetHashCode（）应当遵循相应的三条规则：两个相等对象应当返回相同的散列码；应当是一个实例不变式；散列函数应该在所有的整数中产生一个随机的分布；" UseManualLocation="True" />
+    <Node Id="值和引用类型的区别" Bounds="156.666666666667,127.755,128,25.8366666666667" />
+    <Node Id="理解GetHashCode（）方法的缺陷" Bounds="1.14453389485675,-0.667859464754383,207.203333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="相等判断的多种表示关系" Bounds="145.085476989746,55.168916422526,152,25.8366666666667" UseManualLocation="True" />
+    <Node Id="题目" Bounds="0,127.755,50,25.8366666666667" />
+  </Nodes>
+  <Links>
+    <Link Source="Http://www.51csharp.com/kaifajiqiao/267.html" Target="题目" Bounds="-77.2606325553705,84.9351125590007,71.1354786852459,38.7731366400535" />
+    <Link Source="Http://www.51csharp.com/kaifajiqiao/268.html" Target="题目" Bounds="-115.506094967602,155.27621393615,107.462604776172,47.4908333864416" />
+    <Link Source="Is与as" Target="1、两者都是在运行时进行类型的转换，as操作符只能使用在引用类型，而is可以使用值和引用类型；2、通常的做法是用is判断类型，然后选择使用as或强类型转换操作符（用operater定义的转换）有选择地进行。" Bounds="245.61439163208,199.459547271649,129.695022511772,13.6532960359112" />
+    <Link Source="Readonly（运行时常量）和const（编译时常量）" Target="1、const只可用于基元类型、枚举、字符串，而readonly则可以是任何的类型；2、const在编译时将替换成具体的常量，这样如果在引用中同时使用了const和readonly两种值，则对readonly的再次改变将会改变设计的初衷，这是需要重新编译所更改的程序集，以重新引用新的常量值。3、const比readonly效率高，但失去了应用的灵活性。" Bounds="108.668574950416,266.464605611165,26.5812592729759,40.5446811112451" />
+    <Link Source="值和引用类型的区别" Target="1、值类型不支持多态，适合存储应用程序操作的数据，而引用则支持多态，适用于定义应用程序的行为；2、对于数组定义为值类型可以显著提高程序的性能；3、值类型具有较少的堆内存碎片、内存垃圾和间接访问时间，其在方法中的返回是以复制的方式进行，避免暴露内部结构到外界；4、值类型应用在如下的场景中：类型的职责主要是用于数据存储；公共接口完全由一些数据成员存取属性定义；永远没有子类；永远没有多态行为。" Bounds="284.666656494141,140.747803155395,37.1267200069787,0.0431987523347743" />
+    <Link Source="理解GetHashCode（）方法的缺陷" Target="、GetHashCode（）仅应用在基于散列的集合定义键的散列值，如HashTable或Dictionary；2、GetHashCode（）应当遵循相应的三条规则：两个相等对象应当返回相同的散列码；应当是一个实例不变式；散列函数应该在所有的整数中产生一个随机的分布；" Bounds="110.074515718179,-41.1617633345945,16.702176021167,40.4939030237221" />
+    <Link Source="相等判断的多种表示关系" Target="1、ReferenceEquals（）判断引用相等，需要两个是引用同一个对象时方可返回true；2、静态的Equals（）方法先进性引用判断再进行值类型判断的；3、对于引用类型的判断可以在使用“值语义”时使用重写Equals（）方法；4、重写Equals（）方法时也应当重写GetHashCode（）方法，同时提供operater==（）操作。" Bounds="297.052502747927,54.6478494842685,22.5622512600929,3.07749264877236" />
+    <Link Source="题目" Target="Is与as" Bounds="50,147.884343733955,134.033596738501,38.6606714999788" />
+    <Link Source="题目" Target="Readonly（运行时常量）和const（编译时常量）" Bounds="33.6065730727842,153.591673177083,52.9960824789474,79.5463017665869" />
+    <Link Source="题目" Target="值和引用类型的区别" Bounds="50,140.673337452253,97.6666564941406,1.90409917877332E-06" />
+    <Link Source="题目" Target="理解GetHashCode（）方法的缺陷" Bounds="33.0218424212115,32.8146218735529,58.954726226252,94.9403846368638" />
+    <Link Source="题目" Target="相等判断的多种表示关系" Bounds="50,84.1299678046771,127.747366106443,47.2889780877445" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

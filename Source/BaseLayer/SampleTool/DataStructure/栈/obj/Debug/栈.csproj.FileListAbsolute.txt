@@ -1,0 +1,5 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\栈\bin\Debug\栈.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\栈\bin\Debug\栈.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\栈\bin\Debug\栈.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\栈\obj\Debug\栈.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\栈\obj\Debug\栈.pdb

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="System.TypeT=Ass.GetType(&quot;WebApplication1.MainPage&quot;);//获得类型" Bounds="84.5000169881184,129.836766791789,269.403333333333,25.24" Label="ass.GetType(&quot;WebApplication1.MainPage&quot;);" UseManualLocation="True" />
+    <Node Id="Type" Category="Category1" Bounds="-41,24,50,25.24" UseManualLocation="True" />
+    <Node Id="Type.GetType(name);" Bounds="107.459109532859,237.5,141.483333333333,25.24" UseManualLocation="True" />
+    <Node Id="TypeType=Typeof(MyClass);" Bounds="105.5,-73.5,187.566666666667,25.24" Label="Type type = typeof(MyClass);" UseManualLocation="True" />
+    <Node Id="Type[]Types=Assem.GetTypes();" Bounds="108.5,27.5,209.16,25.24" Label="Type[] types = assem.GetTypes();" UseManualLocation="True" />
+    <Node Id="已知程序集" Category="Comment" Bounds="354.5,-20.5,80,25.24" UseManualLocation="True" />
+    <Node Id="已知类型" Category="Comment" Bounds="302.5,-162.5,68,25.24" UseManualLocation="True" />
+    <Node Id="已知类型名称和命名空间" Category="Comment" Bounds="417.459109532859,238.000000125122,152,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Type" Target="System.TypeT=Ass.GetType(&quot;WebApplication1.MainPage&quot;);//获得类型" Bounds="8.62124162392121,47.6991409626979,174.327594437208,78.4444595426644" />
+    <Link Source="Type" Target="Type.GetType(name);" Bounds="-5.54073572158813,49.2400016784668,161.116938114166,182.604648590088" />
+    <Link Source="Type" Target="TypeType=Typeof(MyClass);" Bounds="8.58875088880597,-44.5470146429025,154.630792383394,70.0309774284165" />
+    <Link Source="Type" Target="Type[]Types=Assem.GetTypes();" Bounds="9,37.0019626331413,90.5010502633916,1.38272077842618" />
+    <Link Source="已知程序集" Target="Type[]Types=Assem.GetTypes();" Bounds="269.478960821751,2.70317715797597,85.0210391782492,22.4948179944657" />
+    <Link Source="已知类型" Target="TypeType=Typeof(MyClass);" Bounds="226.291135697216,-137.26,90.7518493215101,58.8624894178142" />
+    <Link Source="已知类型名称和命名空间" Target="System.TypeT=Ass.GetType(&quot;WebApplication1.MainPage&quot;);//获得类型" Bounds="259.573208015637,158.378722580167,201.886777527327,79.6212775449546" />
+    <Link Source="已知类型名称和命名空间" Target="Type.GetType(name);" Bounds="257.942431546913,250.246470368696,159.516677985946,0.252993657958854" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1&gt;.网络服务的协议，即用什么网络协议开放客户端接入。" Bounds="-349.870120442709,-335.322256982422,326.826666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="2&gt;.业务服务的协议，即声明服务提供哪些业务。" Bounds="-458.83778525826,-264.773588083998,278.826666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="3&gt;.数据类型声明，即对客户端与服务器端通信的数据部分进行一致化。" Bounds="-478.789157307943,-88.6408949574788,398.826666666667,25.8366666666666" Label="3&gt;.数据类型声明，即对客户端与服务器端通信的数据部分进行一致化。" UseManualLocation="True" />
+    <Node Id="4&gt;.传输安全性相关的定义。" Bounds="-468.057598293168,-180.804027835459,170.826666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="51ec0b1f-415d-425f-8ec8-e21db093a8ec1" Bounds="107.344902764034,355.806117983818,184.166666666667,25.8366666666667" Label="Windows Activation Services" UseManualLocation="True" />
+    <Node Id="5627b65d-046a-4966-83bd-732bbe2234021" Category="Comment" Bounds="-432.056437988281,133.603480125936,247.54,136.693333333333" Label="对于 WCF 的客户端来说，WCF 服务就像是一个 Web Service 一样，在 Visual Studio 2008 中，所有 WCF 服务的连接都是由客户端的 服务代理（WCF Service Proxy） 来运行，开发人员不用花费太多心思在通信上，而 WCF Service Proxy 在 Visual Studio 中被称为服务引用(Service Reference)。" UseManualLocation="True" />
+    <Node Id="8340602e-13fb-4343-a3c4-a8a6154b77e01" Category="Comment" Bounds="975.263737748521,-223.986608533995,248.91,342.57" Label="ServiceContractAttribute 可用于接口与类&#xD;&#xA;我们最好用服务契约(ServiceContractAttribute)来定义接口(Interface)。&#xD;&#xA;ServiceContract 属性：&#xD;&#xA;Name  自定义接口或方法的名称&#xD;&#xA;Namespace 自定义命名空间&#xD;&#xA;SessionMode 设置服务契约的 Session 方式，包括 Allowe、NotAllowed、Required。SessionMode 需要相应的 Binding 支持，默认情况下会自动启用，另外我们还会和 ServiceBehaviorAttribute.InstanceContextMode 配合使用来管理服务对象的生命周期。&#xD;&#xA;CallbackContract：设置 duplex 模式时的回调类型。&#xD;&#xA;ProtectionLevel：指定消息保护方式，可以对消息进行加密和签名处理。&#xD;&#xA;ConfigurationName： 其设置信息在配置文件中的名称。" UseManualLocation="True" />
+    <Node Id="84fb9d4b-916a-4ba0-aab4-ebfa67dda5921" Category="Comment" Bounds="-518.136725526707,414.178822876812,249.38,833.506666666667" Label="1、统一性&#xD;&#xA;前面已经叙述，WCF是对于ASMX，.Net Remoting，Enterprise Service，WSE，MSMQ等技术的整合。由于WCF完全是由托管代码编写，因此开发WCF的应用程序与开发其它的.Net应用程序没&#xD;&#xA;有太大的区别，我们仍然可以像创建面向对象的应用程序那样，利用WCF来创建面向服务的应用程序。&#xD;&#xA;&#xD;&#xA;2、互操作性&#xD;&#xA;由于WCF最基本的通信机制是SOAP（Simple Object Access Protocol 简易对象访问协议），这就保证了系统之间的互操作性，即使是运行不同的上下文中。这种通信可以是基于.Net到.Net间的通信，如下图所示：&#xD;&#xA;可以跨进程、跨机器甚至于跨平台的通信，只要支持标准的Web Service，例如J2EE应用服务器（如WebSphere，WebLogic）。应用程序可以运行在Windows操作系统下，也可以运行在其他的操作系统，如Sun Solaris，HP Unix，Linux等等。如下图所示：&#xD;&#xA;3、安全与可信赖&#xD;&#xA;WS-Security，WS-Trust和WS-SecureConversation均被添加到SOAP消息中，以用于用户认证，数据完整性验证，数据隐私等多种安全因素&#xD;&#xA;。&#xD;&#xA;在SOAP 的header中增加了WS-ReliableMessaging允许可信赖的端对端通信。而建立在WS-Coordination和WS- AtomicTransaction之上的基于SOAP格式交换的信息，则支持两阶段的事务提交（two-phase commit transactions）。&#xD;&#xA;上述的多种WS-Policy在WCF中都给与了支持。对于Messaging而言，SOAP是Web Service的基本协议，它包含了消息头（header）和消息体(body)。在消息头中，定义了WS-Addressing用于定位SOAP消息的地址信息，同时还包含了MTOM（消息传输优化机制，Message Transmission Optimization Mechanism）。&#xD;&#xA;4、兼容性&#xD;&#xA;WCF充分的考虑到了与旧有系统的兼容性。安装WCF并不会影响原有的技术如ASMX和.Net Remoting。即使对于WCF和ASMX而言，虽然两者都使用了SOAP，但基于WCF开发的应用程序，仍然可以直接与ASMX进行交互。" UseManualLocation="True" />
+    <Node Id="ConsoleApplication" Bounds="-224.756725526707,388.691743570964,135.28,25.8366666666666" Label="Console Application" UseManualLocation="True" />
+    <Node Id="HTTP" Category="Category2" Bounds="127.331980641683,68.3169308808851,50.3833333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="IIS(ASP.NET)Application" Bounds="-18.6550972359663,518.806117983818,166.973333333333,25.8366666666666" Label="IIS (ASP. NET) Application" UseManualLocation="True" />
+    <Node Id="MSMQ" Bounds="304.138634847005,6.480167787679,60.1533333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="NamedPipe" Bounds="152.375297648112,-75.8463042195638,90.6800000000001,25.8366666666666" Label="Named Pipe" UseManualLocation="True" />
+    <Node Id="NetPeerTcpBinding" Bounds="353.715307284062,72.1536975472844,131.2,25.8366666666667" UseManualLocation="True" />
+    <Node Id="NetTcpBinding" Bounds="252.715310262044,127.990464212638,105.653333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Peer-To-PeerTCP" Bounds="273.055297648112,-61.9285786144116,121.783333333333,25.8366666666667" Label="Peer-To-Peer TCP" UseManualLocation="True" />
+    <Node Id="TCP" Category="Category2" Bounds="268.291961669922,62.3169344543457,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="WCF" Category="Category1" Bounds="43.6962085907193,-85.8020644208199,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="WS-HTTP支持(WsHttpBinding)" Bounds="204.88357828776,185.724822029622,201.526666666667,25.8366666666667" Label="WS-HTTP 支持 (WsHttpBinding)" UseManualLocation="True" />
+    <Node Id="WindowsApplication" Bounds="-151.794350623617,453.649664870055,142.173333333333,25.8366666666666" Label="Windows Application" UseManualLocation="True" />
+    <Node Id="WindowsService" Category="Category3" Bounds="100.344902764034,460.806117983818,192.87,25.8366666666667" Label="大多都会挂在 Windows Service" UseManualLocation="True" />
+    <Node Id="fe7fc064-afbd-4249-b5d9-adcb317789621" Category="Comment" Bounds="988.476617431641,247.744954718922,242.55,136.693333333333" Label="OperationContract 属性：&#xD;&#xA;AsyncPattern：用于定义异步服务方法。&#xD;&#xA;IsInitiating：指示服务方法能否启动一个 Session。&#xD;&#xA;IsTerminating：指示服务方法调用完成是否结束 Session。&#xD;&#xA;Action: Web调用地址&#xD;&#xA;ReplyAction :调用后回传的地址" UseManualLocation="True" />
+    <Node Id="代码实现步骤" Category="Category1" Bounds="79.9505251823867,-422.458792599669,92,25.8366666666667" UseManualLocation="True">
+      <Category Ref="Category10" />
+    </Node>
+    <Node Id="传输层次安全性(Transport-levelSecurity)" Bounds="-380.070944998295,-453.610896600026,250.37,25.8366666666667" Label="传输层次安全性 (Transport-level security)" UseManualLocation="True" />
+    <Node Id="协议绑定" Category="Category10" Bounds="192.998002945459,0.725674675724044,68,25.8366666666667" UseManualLocation="True" />
+    <Node Id="合约必须要以接口的方式来体现，而实际的服务代码必须要由这些合约接口派生并实现" Category="Comment" Bounds="528.846358642578,-590.47781163737,249.03,342.57" Label="合约必须要以接口的方式来体现，而实际的服务代码必须要由这些合约接口派生并实现using System;&#xD;&#xA;using System.ServiceModel;&#xD;&#xA;namespace Microsoft.ServiceModel.Samples{&#xD;&#xA;[ServiceContract(Namespace = &quot;http://Microsoft.ServiceModel.Samples&quot;)] // 服务契约&#xD;&#xA;public interface ICalculator&#xD;&#xA;{&#xD;&#xA;[OperationContract] // 操作契约&#xD;&#xA;double Add(double n1, double n2);&#xD;&#xA;[OperationContract] //操作契约&#xD;&#xA;double Subtract(double n1, double n2);&#xD;&#xA;[OperationContract] // 操作契约&#xD;&#xA;double Multiply(double n1, double n2);&#xD;&#xA;[OperationContract] //操作契约&#xD;&#xA;double Divide(double n1, double n2);&#xD;&#xA;}&#xD;&#xA;}" UseManualLocation="True" />
+    <Node Id="在数据传输时期加密，例如SSL。" Category="Comment" Bounds="-556.404035406149,-553.648871390612,199.56,25.8366666666666" Label="在数据传输时期加密，例如 SSL。" UseManualLocation="True" />
+    <Node Id="在数据处理时就加密，例如使用数字签名，散列或是使用密钥加密法等。" Category="Comment" Bounds="-371.015680123868,-643.749233670565,248,41.6733333333332" UseManualLocation="True" />
+    <Node Id="基本HTTP支持(BasicHttpBinding)" Bounds="79.1846770222982,262.529698332007,219.463333333333,25.8366666666667" Label="基本 HTTP 支持 (BasicHttpBinding) " UseManualLocation="True" />
+    <Node Id="契约" Category="Category10" Bounds="256.824635824781,-153.89263406134,93.2233333333334,25.8366666666667" Label="契约Contract" UseManualLocation="True" />
+    <Node Id="安全性层次" Category="Category10" Bounds="-64.4332504272461,-403.46558739683,80,25.8366666666667" UseManualLocation="True" />
+    <Node Id="客户端" Category="Category10" Bounds="-145.106590270996,133.603480125936,56,25.8366666666667" UseManualLocation="True" />
+    <Node Id="客户端1" Category="Category1" Bounds="-7.00544564699864,-941.916178668029,56,25.8366666666666" Label="客户端" UseManualLocation="True">
+      <Category Ref="Category10" />
+    </Node>
+    <Node Id="挂载" Category="Category10" Bounds="20.3789827097161,408.469545084635,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="操作契约(OperationContract)，订定服务提供的方法。" Bounds="513.087514528625,-83.345286905284,337.98,25.8366666666667" Label="3、操作契约(Operation Contract)，订定服务提供的方法。" UseManualLocation="True" />
+    <Node Id="数据契约(DataContract)" Bounds="390.623159790039,-210.887168550298,342.7,25.8366666666667" Label="1、数据契约(Data Contract)，订定双方沟通时的数据格式。" UseManualLocation="True" />
+    <Node Id="整合了原有的windows通讯的.netRemoting，WebService，Socket的机制，并融合有HTTP和FTP的相关技术。" Bounds="-750.468393500275,-11.5704797936155,623.996666666667,25.8366666666667" Label="整合了原有的windows通讯的 .net Remoting，WebService，Socket的机制，并融合有HTTP和FTP的相关技术。" UseManualLocation="True" />
+    <Node Id="是Windows平台上开发分布式应用最佳的实践方式" Bounds="-405.960164489746,77.7667134592693,289.13,25.8366666666666" UseManualLocation="True" />
+    <Node Id="服务契约(ServiceContract)，订定服务的定义。" Bounds="396.800404415187,-155.050401883632,548.463333333333,25.8366666666667" Label="2、服务契约(Service Contract)，订定服务的定义。可以用以接口和类，用以接口需要自定义类实现" UseManualLocation="True" />
+    <Node Id="服务端" Category="Category1" Bounds="233.434232472757,-936.591016177019,56,25.8366666666666" UseManualLocation="True">
+      <Category Ref="Category10" />
+    </Node>
+    <Node Id="概念：" Category="Category10" Bounds="205.523612642053,-260.668192195515,50,25.8366666666667" Label="概念" UseManualLocation="True" />
+    <Node Id="消息契约(MessageContract)，订定在通信期间改写消息内容的规范。" Bounds="398.087514241537,-6.09181194774488,414.583333333333,25.8366666666667" Label="4、消息契约(Message Contract)，订定在通信期间改写消息内容的规范。" UseManualLocation="True" />
+    <Node Id="消息层次安全性(Message-levelSecurity)" Bounds="-301.232006780831,-531.946360952256,245.74,25.8366666666666" Label="消息层次安全性 (Message-level security)" UseManualLocation="True" />
+    <Node Id="简单的归结为四大部分" Category="Category10" Bounds="-187.588923734029,-167.81194905599,140,25.8366666666667" UseManualLocation="True" />
+    <Node Id="通信双方的沟通方式，由合约来订定。通信双方所遵循的通信方法，由协议绑定来订定。通信期间的安全性，由双方约定的安全性层次来订定。" Category="Comment" Bounds="193.48469543457,-366.622025933002,248,73.3466666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="5627b65d-046a-4966-83bd-732bbe2234021" Target="客户端" Bounds="-184.516437988281,157.145932586703,30.7658183054978,8.91986290747377" />
+    <Link Source="8340602e-13fb-4343-a3c4-a8a6154b77e01" Target="服务契约(ServiceContract)，订定服务的定义。" Bounds="741.766688730242,-127.375765154972,233.497049018279,48.7109803023831" />
+    <Link Source="84fb9d4b-916a-4ba0-aab4-ebfa67dda5921" Target="WCF" Bounds="-268.756725526707,-51.9521765512945,326.750126565633,639.027305054314" />
+    <Link Source="HTTP" Target="WS-HTTP支持(WsHttpBinding)" Bounds="169.371725832937,94.1535975475517,112.284951557411,86.0949472914059" />
+    <Link Source="HTTP" Target="基本HTTP支持(BasicHttpBinding)" Bounds="154.944358309556,94.1535975475517,29.8936542909826,159.530068021321" />
+    <Link Source="TCP" Target="NetPeerTcpBinding" Bounds="318.291961669922,77.1866449402618,26.4506376518352,2.06460679940142" />
+    <Link Source="TCP" Target="NetTcpBinding" Bounds="295.701604962035,88.1536011210124,5.78043198736134,30.9894611653982" />
+    <Link Source="WCF" Target="代码实现步骤" Bounds="70.8931974434758,-387.749522050234,51.3514010188341,301.947458782208" />
+    <Link Source="WCF" Target="协议绑定" Bounds="91.8827048323832,-60.2099960757802,103.584062293971,56.61903171608" />
+    <Link Source="WCF" Target="契约" Bounds="93.6962108612061,-125.623543833309,156.818838614007,45.4881156834246" />
+    <Link Source="WCF" Target="安全性层次" Bounds="-18.1140164121969,-368.992419328679,83.0229576226697,283.190356060654" />
+    <Link Source="WCF" Target="客户端" Bounds="-100.350494498009,-59.965396601359,158.106861224646,186.700752813557" />
+    <Link Source="WCF" Target="挂载" Bounds="46.4016488230632,-59.965396601359,21.6848436402918,459.444949363231" />
+    <Link Source="WCF" Target="整合了原有的windows通讯的.netRemoting，WebService，Socket的机制，并融合有HTTP和FTP的相关技术。" Bounds="-341.304087194918,-69.224595459724,385.000298056124,56.3507145396107" />
+    <Link Source="WCF" Target="是Windows平台上开发分布式应用最佳的实践方式" Bounds="-227.260977822599,-60.9027180011978,271.778804651446,134.673396594329" />
+    <Link Source="WCF" Target="概念：" Bounds="80.6513011587771,-228.226054820435,131.804284315537,142.42399155241" />
+    <Link Source="WCF" Target="简单的归结为四大部分" Bounds="-80.0078649413291,-138.34898903733,123.879368165622,54.5364670784311" />
+    <Link Source="fe7fc064-afbd-4249-b5d9-adcb317789621" Target="操作契约(OperationContract)，订定服务提供的方法。" Bounds="724.528930664063,-54.3150672912598,326.426391601563,302.060031890869" />
+    <Link Source="代码实现步骤" Target="客户端1" Bounds="25.3871186177325,-907.257797970853,97.9532672222735,484.799005371184" />
+    <Link Source="代码实现步骤" Target="服务端" Bounds="129.354753880558,-902.051438638781,126.381864204242,479.592646039112" />
+    <Link Source="协议绑定" Target="HTTP" Bounds="173.421987814818,26.5623405392965,39.3421588992354,35.7060594106045" />
+    <Link Source="协议绑定" Target="MSMQ" Bounds="260.998008728027,15.4688321761555,34.1535609294982,1.83306678838635" />
+    <Link Source="协议绑定" Target="NamedPipe" Bounds="205.870270291482,-41.603361122934,16.1875000874906,42.3290349955638" />
+    <Link Source="协议绑定" Target="Peer-To-PeerTCP" Bounds="249.049221583967,-31.5425962079352,55.0809824827358,32.268270080565" />
+    <Link Source="协议绑定" Target="TCP" Bounds="240.902698679152,26.5623405392965,31.8910480872055,29.6287936651583" />
+    <Link Source="合约必须要以接口的方式来体现，而实际的服务代码必须要由这些合约接口派生并实现" Target="契约" Bounds="326.166564941406,-323.948852539063,202.679809570313,164.352584838867" />
+    <Link Source="在数据传输时期加密，例如SSL。" Target="传输层次安全性(Transport-levelSecurity)" Bounds="-430.572738719982,-527.812226969401,141.572395924071,70.2029995819443" />
+    <Link Source="在数据处理时就加密，例如使用数字签名，散列或是使用密钥加密法等。" Target="消息层次安全性(Message-levelSecurity)" Bounds="-233.245457892864,-602.075900472005,41.3840770568417,62.621055368915" />
+    <Link Source="契约" Target="操作契约(OperationContract)，订定服务提供的方法。" Bounds="350.04797648112,-132.289751248525,253.846617903254,47.2959787149567" />
+    <Link Source="契约" Target="数据契约(DataContract)" Bounds="350.027178597503,-183.112977025649,144.557269978445,31.8676998048314" />
+    <Link Source="契约" Target="服务契约(ServiceContract)，订定服务的定义。" Bounds="350.04797648112,-141.240013990278,37.7524725724696,0.118903620539101" />
+    <Link Source="契约" Target="消息契约(MessageContract)，订定在通信期间改写消息内容的规范。" Bounds="329.827222321059,-128.055970865885,241.077534789276,118.007285758178" />
+    <Link Source="安全性层次" Target="传输层次安全性(Transport-levelSecurity)" Bounds="-186.722997887119,-425.860656470966,122.289747459873,26.6096207658604" />
+    <Link Source="安全性层次" Target="消息层次安全性(Message-levelSecurity)" Bounds="-155.975529443994,-500.342545288658,116.06523268914,96.8769707443869" />
+    <Link Source="挂载" Target="51ec0b1f-415d-425f-8ec8-e21db093a8ec1" Bounds="70.3789827097161,384.554111234001,82.7448743182302,28.2872429485836" />
+    <Link Source="挂载" Target="ConsoleApplication" Bounds="-80.5193484462285,409.091360006835,100.898331155945,9.85476277024634" />
+    <Link Source="挂载" Target="IIS(ASP.NET)Application" Bounds="47.65651402009,434.306211751302,13.3349030364454,75.6365989823414" />
+    <Link Source="挂载" Target="WindowsApplication" Bounds="-36.1832767735538,430.346026210245,56.5622594832699,20.2677231966487" />
+    <Link Source="挂载" Target="WindowsService" Bounds="70.3789827097161,430.027983561955,80.5496992758185,27.838314842382" />
+    <Link Source="简单的归结为四大部分" Target="1&gt;.网络服务的协议，即用什么网络协议开放客户端接入。" Bounds="-177.723519775163,-301.161624271973,54.8235366299563,133.349675215983" />
+    <Link Source="简单的归结为四大部分" Target="2&gt;.业务服务的协议，即声明服务提供哪些业务。" Bounds="-284.421169567942,-235.039709768982,139.941425405261,67.2277607129925" />
+    <Link Source="简单的归结为四大部分" Target="3&gt;.数据类型声明，即对客户端与服务器端通信的数据部分进行一致化。" Bounds="-244.893094715814,-141.975282389323,100.905422150898,49.378462500945" />
+    <Link Source="简单的归结为四大部分" Target="4&gt;.传输安全性相关的定义。" Bounds="-288.241730843139,-163.258416051306,100.652812157226,4.93364665702981" />
+    <Link Source="通信双方的沟通方式，由合约来订定。通信双方所遵循的通信方法，由协议绑定来订定。通信期间的安全性，由双方约定的安全性层次来订定。" Target="概念：" Bounds="250.73090089733,-293.275359266336,27.9557671860493,26.4248272037878" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category10" Label="类别 10" Background="#FF672878" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category3" Label="类别 3" Background="#FF3EBCED" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 3" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 5" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 10" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category10')" />
+      <Setter Property="Background" Value="#FF672878" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

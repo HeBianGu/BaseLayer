@@ -1,0 +1,14 @@
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\GZipEncoder.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\GZipEncoder.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.pdb

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D498555-3056-4E15-8376-EAEBEED3BF17}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>MathLib</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>cdrnet.Lib.MathLib</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>doc.xml</DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\ComplexLinalgOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\FunctionalOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\MatrixOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\MixedOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\VariableMatrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\VariableVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComplexLinAlg\VectorOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\Complex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\ComplexOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\Hyperbolic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\Logarithm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\Trigonometry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Complex\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Context.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConversionMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime\TimeConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime\TimeOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime\TimeOps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime\TimeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\BitLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\BusLogic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\DigitalConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\DigitalOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\DigitalTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\StateMachine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Digital\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Elementary\MinMax.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Elementary\Natural.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exceptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Expression.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Geometry\Geometry3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Geometry\GeometryOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Geometry\Vector3D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\Differential.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\FunctionalOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\LinalgOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\Matrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\MatrixList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\MatrixOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\MixedOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\VariableMatrix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\VariableVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LinAlg\VectorOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="List.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Literal\BiLiteralOps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Literal\LiteralConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Literal\LiteralOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Literal\LiteralType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Literal\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Branch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Logic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\LogicConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MathHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Operators.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\InfixProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\MathML2Provider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\Parser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\PostfixProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\PrefixProvider.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\TreeToken.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parsing\TypeAnalyzer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Relations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Analyser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\BiScalarOps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Differential.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\FunctionalOperations.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Hyperbolic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\IntegrationMaps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Logarithm.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\ScalarConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\ScalarConversion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\ScalarOpBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\ScalarType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\SignleScalarOps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Trigonometry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scalar\Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tensor\Tensor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Events.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ExpressionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ExpressionConverter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\ExpressionFormatter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tools\Stack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Variable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentation\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

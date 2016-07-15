@@ -1,0 +1,27 @@
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\OPT.PCOCCenter.Utils.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\System.Data.SQLite.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\OPT.PCOCCenter.Utils.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\Base.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\BaseInterface.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\Units.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\bin\Debug\Units.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Service.Interface.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Service.Interface.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service.Interface\obj\Debug\OPT.PCOCCenter.Service.Interface.pdb

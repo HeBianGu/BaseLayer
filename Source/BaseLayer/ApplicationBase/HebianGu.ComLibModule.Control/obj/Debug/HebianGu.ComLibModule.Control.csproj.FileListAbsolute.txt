@@ -1,0 +1,12 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\bin\Debug\HebianGu.ComLibModule.Control.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\bin\Debug\HebianGu.ComLibModule.Control.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\bin\Debug\HebianGu.ComLibModule.Control.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\bin\Debug\HebianGu.ComLibModule.Control.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Control.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Control.pdb

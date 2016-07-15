@@ -1,0 +1,109 @@
+﻿【总结】DateTime日期类型格式化显示(转)以及判断输入文本框是否符合日期格式 (2012-09-28 12:35:29)转载▼
+标签： 杂谈	分类： 技术贴
+DateTime日期类型格式化显示：
+DateTime.ToString的方法(String, IFormatProvider)
+示例：
+using System;
+using System.Globalization;
+String format="D";
+DateTime date=DataTime.Now;
+Response.Write(date.ToString(format, DateTimeFormatInfo.InvariantInfo));
+结果输出
+Thursday, June 16, 2006
+在这里列出了参数format格式详细用法
+=======================
+格式字符 关联属性/说明
+d ShortDatePattern
+D LongDatePattern
+f 完整日期和时间（长日期和短时间）
+F FullDateTimePattern（长日期和长时间）
+g 常规（短日期和短时间）
+G 常规（短日期和长时间）
+m、M MonthDayPattern
+r、R RFC1123Pattern
+s 使用当地时间的 SortableDateTimePattern（基于 ISO 8601）
+t ShortTimePattern
+T LongTimePattern
+u UniversalSortableDateTimePattern 用于显示通用时间的格式
+U 使用通用时间的完整日期和时间（长日期和长时间）
+y、Y YearMonthPattern
+下表列出了可被合并以构造自定义模式的模式
+========================================
+这些模式是区分大小写的；例如，识别“MM”，但不识别“mm”。如果自定义模式包含空白字符或用单引号括起来的字符，则输出字符串页也将包含这些字符。未定义为格式模式的一部分或未定义为格式字符的字符按其原义复制。
+格式模式 说明 ：
+d 月中的某一天。一位数的日期没有前导零。
+dd 月中的某一天。一位数的日期有一个前导零。
+ddd 周中某天的缩写名称，在 AbbreviatedDayNames 中定义。
+dddd 周中某天的完整名称，在 DayNames 中定义。
+M 月份数字。一位数的月份没有前导零。
+MM 月份数字。一位数的月份有一个前导零。
+MMM 月份的缩写名称，在 AbbreviatedMonthNames 中定义。
+MMMM 月份的完整名称，在 MonthNames 中定义。
+y 不包含纪元的年份。如果不包含纪元的年份小于 10，则显示不具有前导零的年份。
+yy 不包含纪元的年份。如果不包含纪元的年份小于 10，则显示具有前导零的年份。
+yyyy 包括纪元的四位数的年份。
+gg 时期或纪元。如果要设置格式的日期不具有关联的时期或纪元字符串，则忽略该模式。
+h 12 小时制的小时。一位数的小时数没有前导零。
+hh 12 小时制的小时。一位数的小时数有前导零。
+H 24 小时制的小时。一位数的小时数没有前导零。
+HH 24 小时制的小时。一位数的小时数有前导零。
+m 分钟。一位数的分钟数没有前导零。
+mm 分钟。一位数的分钟数有一个前导零。
+s 秒。一位数的秒数没有前导零。
+ss 秒。一位数的秒数有一个前导零。
+f 秒的小数精度为一位。其余数字被截断。
+ff 秒的小数精度为两位。其余数字被截断。
+fff 秒的小数精度为三位。其余数字被截断。
+ffff 秒的小数精度为四位。其余数字被截断。
+fffff 秒的小数精度为五位。其余数字被截断。
+ffffff 秒的小数精度为六位。其余数字被截断。
+fffffff 秒的小数精度为七位。其余数字被截断。
+t 在 AMDesignator 或 PMDesignator 中定义的 AM/PM 指示项的第一个字符（如果存在）。
+tt 在 AMDesignator 或 PMDesignator 中定义的 AM/PM 指示项（如果存在）。
+z 时区偏移量（“+”或“-”后面仅跟小时）。一位数的小时数没有前导零。例如，太平洋标准时间是“-8”。
+zz 时区偏移量（“+”或“-”后面仅跟小时）。一位数的小时数有前导零。例如，太平洋标准时间是“-08”。
+zzz 完整时区偏移量（“+”或“-”后面跟有小时和分钟）。一位数的小时数和分钟数有前导零。例如，太平洋标准时间是“-08:00”。
+: 在 TimeSeparator 中定义的默认时间分隔符。
+/ 在 DateSeparator 中定义的默认日期分隔符。
+% c 其中 c 是格式模式（如果单独使用）。如果格式模式与原义字符或其他格式模式合并，则可以省略“%”字符。
+\ c 其中 c 是任意字符。照原义显示字符。若要显示反斜杠字符，请使用“\\”。
+只有上面第二个表中列出的格式模式才能用于创建自定义模式；在第一个表中列出的标准格式字符不能用于创建自定义模式。自定义模式的长度至少为两个字符；例如，
+DateTime.ToString( "d") 返回 DateTime 值；“d”是标准短日期模式。
+DateTime.ToString( "%d") 返回月中的某天；“%d”是自定义模式。
+DateTime.ToString( "d ") 返回后面跟有一个空白字符的月中的某天；“d”是自定义模式。
+比较方便的是,上面的参数可以随意组合,并且不会出错,多试试,肯定会找到你要的时间格式
+如要得到2005年06月 这样格式的时间
+可以这样写:
+date.ToString("yyyy年MM月", DateTimeFormatInfo.InvariantInfo)
+或者
+date.ToString("yyyy年MM月")
+如此类推.
+下面列出一些Asp.net中具体的日期格式化用法：
+============================================
+1.绑定时格式化日期方法:
+
+
+2.数据控件如DataGrid/DataList等的件格式化日期方法:
+e.Item.Cell[0].Text = Convert.ToDateTime(e.Item.Cell[0].Text).ToShortDateString();
+3.用String类转换日期显示格式:
+String.Format( "yyyy-MM-dd ",yourDateTime);
+4.用Convert方法转换日期显示格式:
+Convert.ToDateTime("2005-8-23").ToString
+("yyMMdd",System.Globalization.DateTimeFormatInfo.InvariantInfo); //支持繁体数据库
+5.直接用ToString方法转换日期显示格式:
+DateTime.Now.ToString("yyyyMMddhhmmss");
+DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss")
+6.只显示年月
+DataBinder.eval_r(Container.DataItem,"starttime","{0:yyyy-M}")
+7.显示时间所有部分，包括：年月日时分秒
+
+DataFormatString="{0:yyyy-MM-dd HH24:mm:ss}">
+------------------------------------------------------------------------------------------------------------------------------------
+判断输入的文本框是否属于日期格式：
+1、DateTime result = DateTime.MinValue;
+if (DateTime.TryParse(textBox1.Text, out result) == false)
+{//不属于日期格式
+}
+2、“年月日”形式扩展 的正则表达
+使用反向引用进行简化，年份0001-9999，格式yyyy-MM-dd或yyyy-M-d，连字符可以没有或是“-”、“/”、“.”之一。
+^(?:(?!0000)[0-9]{4}([-/.]?)(?:(?:0?[1-9]|1[0-2])\1(?:0?[1-9]|1[0-9]|2[0-8])|(?:0?[13-9]|1[0-2])\1(?:29|30)|(?:0?[13578]|1[02])\1(?:31))|(?:[0-9]{2}(?:0[48]|[2468][048]|[13579][26])|(?:0[48]|[2468][048]|[13579][26])00)([-/.]?)0?2\2(?:29))$

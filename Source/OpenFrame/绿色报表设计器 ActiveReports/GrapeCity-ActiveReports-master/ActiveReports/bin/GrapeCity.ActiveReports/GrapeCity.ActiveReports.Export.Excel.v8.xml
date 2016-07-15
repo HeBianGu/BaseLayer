@@ -1,0 +1,3865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Excel.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues">
+			<summary>
+            Possible values for the BiffCellBoolErr.ValueBoolErr property.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Null">
+			<summary>
+            "#NULL!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.False">
+			<summary>
+            False value when IsError is false.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.True">
+			<summary>
+            True value when IsError is false.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Div0">
+			<summary>
+            "#DIV/0!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Value">
+			<summary>
+            "#VALUE!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Ref">
+			<summary>
+            "#REF!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Name">
+			<summary>
+            "#NAME!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.Num">
+			<summary>
+            "#NUM!" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues.NA">
+			<summary>
+            "#N/A" error value (when IsError is true).
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Cells.DDCell">
+			<summary>
+            DDCell represents a single cell in a spreadsheet.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.SetValue(System.Double)">
+			<summary>
+            Sets the cell's type to DDCellType.Number, and stores the cell's current value becomes the specified numeric value.
+            </summary>
+			<param name="dblValue">The numeric value to store as this cell's current value.</param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.SetValue(System.String)">
+			<summary>
+            Sets the cell's type to DDCellType.Label, and stores the cell's current value becomes the specified string value.
+            </summary>
+			<param name="sValue">The string value to store as this cell's current value.</param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.SetValue(GrapeCity.SpreadBuilder.Cells.BiffCellBoolErrValues)">
+			<summary>
+            Sets the cell's type to DDCellType.Boolean, and stores the cell's current value becomes the specified string value.
+            </summary>
+			<param name="bValue">The boolean value to store as this cell's current value.</param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.SetValueBlank">
+			<summary>
+            Sets the cell's type to DDCellType.Blank and clears any other current value.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.GetValue">
+			<summary>
+            Returns the cell's current value.
+            </summary>
+			<returns>
+            Return type can be one of the following:
+            A null reference (for a CellTypes.Blank cell type), System.String (for a CellTypes.Label cell type), 
+            System.Double (for a CellTypes.Number cell type), or  one of the values in the BiffCellBoolErrValues enumeration (for CellTypes.BoolErr cell type). 
+            Use the DDCell's Type property to determine the type of the cell before returning the value, 
+            or check the type of the returned value.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.Merge(System.UInt16,System.UInt16)">
+			<summary>
+            Merges this cell with adjacent cells.
+            </summary>
+			<param name="numberOfColumnsToMerge">
+            The number of columns accross to be merged. 1 means only the next cell will be merged.
+            </param>
+			<param name="numberOfRowsToMerge">
+            The number of rows down to be merged. 1 means only the next cell (in the specified direction) will be merged.
+            </param>
+			<remarks>Do not merge a cell more than once.</remarks>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Cells.DDCell.UnMerge">
+			<summary>
+            Will cause this cell and all cell's that are currently merged with this cell to be un-merged, and behave as independent cells with their own value and style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.Type">
+			<summary>
+            The type of cell this DDCell object represents.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.Alignment">
+			<summary>
+            Sets/gets the horizontal alignment value for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.VertAlignment">
+			<summary>
+            Sets/gets vertical alignment value for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.TextAngle">
+			<summary>
+            Gets/sets the text rotation for the cell, in degrees: 
+            Values 0-90 is up 0-90 degrees, values 91-180 is down 1-90 degrees, and the value 255 
+            is vertical.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderBottomStyle">
+			<summary>
+            Sets/gets the line style for the bottom portion of the cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderDiagonalStyle">
+			<summary>
+            Sets/gets the line style for the diagonal portion of the cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderDiagonalEnum">
+			<summary>
+            Sets/returns whether a diagonal border goes up or down, or both (which forms an "X" accross the cell).
+            </summary>
+			<remarks>
+            If you do not set this property the DiagonalEnum=0, and will not show up.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderLeftStyle">
+			<summary>
+            Sets/gets the line style for the left portion of the cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderRightStyle">
+			<summary>
+            Sets/gets the line style for the right portion of the cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderTopStyle">
+			<summary>
+            Sets/gets the line style for the top portion of the cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderBottomColor">
+			<summary>
+            Sets/gets the color of the bottom border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderDiagonalColor">
+			<summary>
+            Sets/gets the color of the diagonal border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderLeftColor">
+			<summary>
+            Sets/gets the color of the left border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderRightColor">
+			<summary>
+            Sets/gets the color of the right border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.BorderTopColor">
+			<summary>
+            Sets/gets the color of the top border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FillColor">
+			<summary>
+            Sets/gets the "fill color" ("background color") for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.ForeColor">
+			<summary>
+            Sets/gets the "fore color" ("text color") for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontName">
+			<summary>
+            Sets/gets the name of the font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontBold">
+			<summary>
+            Sets/gets the bold property of the cell's font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontItalic">
+			<summary>
+            Sets/gets the italic property of the cell's font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontSize">
+			<summary>
+            Sets/gets the size of the font in points.  It will round the number size specified to 
+            the nearest half of a point.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontUnderlineStyle">
+			<summary>
+            Sets/gets the underline style for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.NumberFormat">
+			<summary>
+            Gets/sets an Excel style number format string.
+            </summary>
+			<remarks>
+            For foreign currency symbols such as the Japanese Yen you can use a format such as: "[$�-0]#,##0.00".  Replace the Yen sign (�) with whatever currency symbol you want used there.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.WrapText">
+			<summary>
+            Gets/sets whether the cell's text can be wrapped or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.Hyperlink">
+			<summary>
+            Sets/gets a hyperlink for the cell that will automatically be launched by Excel when the cell is clicked.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.IsMerged">
+			<summary>
+            Returns true if this cell is in a merged group of cells.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.MergeArea">
+			<summary>
+            Returns a MergeArea object that represents the merged range containing this cell. 
+            If this cell is not in a merged area, this property returns MergeArea.Empty. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCell.FontStrikeOut">
+			<summary>
+            Sets/gets the bold property of the cell's font.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Cells.CellTypes">
+			<summary>
+            The different types of spreadsheet cells that SpreadBuilder supports.  This value is used with the DDCell class's Type property.
+            </summary>
+			<remarks>
+            At this time Excel's file format supports more types of cells than DDCell.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.Alignment">
+			<summary>
+            Sets the horizontal alignment value for all cells.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.VertAlignment">
+			<summary>
+            Sets vertical alignment value for all cells.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.TextAngle">
+			<summary>
+            Sets the text rotation for each cell, in degrees: 
+            Values 0-90 is up 0-90 degrees, values 91-180 is down 1-90 degrees, and the value 255 
+            is vertical.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderBottomStyle">
+			<summary>
+            Sets the line style for the bottom portion of each cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderDiagonalStyle">
+			<summary>
+            Sets/gets the line style for the diagonal portion of each cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderDiagonalEnum">
+			<summary>
+            Sets whether a diagonal border goes up or down, or both (which forms an "X" accross the cell).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderLeftStyle">
+			<summary>
+            Sets the line style for the left portion of each cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderRightStyle">
+			<summary>
+            Sets the line style for the right portion of each cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderTopStyle">
+			<summary>
+            Sets the line style for the top portion of each cell's border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderBottomColor">
+			<summary>
+            Sets the color of the bottom border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderDiagonalColor">
+			<summary>
+            Sets the color of the diagonal border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderLeftColor">
+			<summary>
+            Sets the color of the left border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderRightColor">
+			<summary>
+            Sets the color of the right border.
+            </summary>
+			<remarks>See BorderTopColor property for more comments in the implementation of these BorderColor props.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.BorderTopColor">
+			<summary>
+            Sets the color of the top border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FillColor">
+			<summary>
+            Sets the "fill color" ("background color") for each cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.ForeColor">
+			<summary>
+            Sets the "fore color" ("text color") for each cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontName">
+			<summary>
+            Sets the name of the font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontBold">
+			<summary>
+            Sets the bold property of the cell's font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontItalic">
+			<summary>
+            Sets the italic property of the cell's font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontStrikeOut">
+			<summary>
+            Sets/gets the bold property of the cell's font.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontSize">
+			<summary>
+            Sets the size of the font in points.  It will round the number size specified to 
+            the nearest half of a point.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.FontUnderlineStyle">
+			<summary>
+            Sets the underline style for the cell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.NumberFormat">
+			<summary>
+            Sets an Excel style number format string.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.WrapText">
+			<summary>
+            Gets/sets whether the cell's text can be wrapped or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.DDCells.Count">
+			<summary>
+            Gets the number of cells contained in this collection
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Cells.MergeArea">
+			<summary>
+            Rpresents a merged rectangular region of cells.  
+            </summary>
+			<remarks>
+            This class is immutable, you cannot change the values once an instance has been initialized.  If you want to extend or truncate an existing MergeArea, you need to remove the existing one, and create and add a new one representing the extended or truncated region.
+            </remarks>
+			<internal>
+            The MergeAreasRecord is actually a collection of these MergeArea records represent each rectangular area on the sheet that is merged.
+            </internal>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.MergeArea.SizeOf">
+			<summary>
+            Returns the size of this data when written to BIFF.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Cells.MergeArea.Empty">
+			<summary>
+            Represents an empty merge area.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.MergeArea.RowFrom">
+			<summary>
+            The upper row of the rectangular merged region.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.MergeArea.RowTo">
+			<summary>
+            The lower row of the rectangular merged region.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.MergeArea.ColumnFrom">
+			<summary>
+            The leftmost column of the rectangular merged region.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Cells.MergeArea.ColumnTo">
+			<summary>
+            The rightmost column of the rectangular merged region.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.Biff7PictureRecord">
+			<summary>
+            This class represents the binary representation of an OBJ record for BIFF7 Pictures.  
+            The picture data will be saved as WMF or BMP depending on what is programmatically determined to be more appropriate.
+            Essentially it will be stored as an OBJ record with some additional "subrecord" fields specific to pictures in BIFF7.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.ImageInfo">
+			<summary>
+            Used by DDSheet.AddImage to specify various options about the image.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.MoveWithCells">
+			<summary>
+            True if the object moves with the cells (Format Object dialog box, Properties tab).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.AutoSize">
+			<summary>
+            True if the object moves and sizes with the cells.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.LineStyle">
+			<summary>
+            Sets or returns the style of the line bounding an image.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.LineWeight">
+			<summary>
+            Indicates the weight of the line surouding an image.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.AutoFill">
+			<summary>
+            True if the Automatic Fill option is turned on (Format Object dialog box, Patterns tab). 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.QuadrantIndex">
+			<summary>
+            Defines what direction the image begins and ends in.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.ImageInfo.FillPattern">
+			<summary>
+            Sets or returns whether the background of the image is filled or not.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.LineInfo">
+			<summary>
+            Used with the Sheet.AddLine method to specify information about the line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.dxL">
+			<summary>
+            X (horizontal) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the left side of the underlying cell (specified in colL), expressed as 1/1024th of the cell's 
+            width.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.dyT">
+			<summary>
+            Y (vertical) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.dxR">
+			<summary>
+            X (horizontal) position of the lower-right corner of the object's bounding rectangle, relative to the left side of the underlying cell, expressed as 1/1024th of the cell's width.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.dyB">
+			<summary>
+            Y (vertical) position of the lower-right corner of the object's bounding rectangle, relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.iQu">
+			<summary>
+            Use GrapeCity.SpreadBuilder.Escher.LineDirections constants to define "quadrant index" (direction of line).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.Weight">
+			<summary>
+            Set to one of the Excel enumerated line weight values. 
+            <c>
+            Effect for Microsoft Excel 97 file format. (BIFF8) 
+            Parameter will generate line with weight parameter as points.
+            Effect for versions 3, 4, 5, and 7.  Version 2 does not support lines.
+            0 Hairline		0 points
+            1 Single 		.75 points
+            2 Double 		1.35 points
+            3 Thick 		1.95 points
+            </c></summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.Style">
+			<summary>
+				<c>
+            Set to one of the Excel enumerated line style values.
+            Effect for Microsoft Excel 97 file format. (BIFF8) 
+            
+            0 Solid
+            1 Small Dash (No Equivalent Menu for Excel 2000)
+            2 Square Dot
+            3 Small Dash, Square Dot (No Equivalent Menu for Excel 2000)
+            4 Small Dash, Square Dot, Square Dot (No Equivalent Menu for Excel 2000)
+            5 Loosely spaced Square Dot (No Equivalent Menu for Excel 2000)
+            6 Dash
+            7 Long Dash
+            8 Dash Dot
+            9 Long Dash Dot
+            10 Long Dash Dot Dot
+            11 Round Dot		
+            
+            Effect for versions 3, 4, 5, and 7.  Version 2 does not support lines.
+            0 Solid
+            1 Long Dash 
+            2 Dash
+            3 Long Dash Dot
+            4 Long Dash Dot Dot
+            5 Pattern 50% Solid (No Equivalent Menu for Excel 2000)
+            6 Pattern 75% Solid (No Equivalent Menu for Excel 2000)
+            7 Pattern 25% Solid (No Equivalent Menu for Excel 2000)
+            15 Transparent (No Line)
+            </c>
+			</summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.Color">
+			<summary>
+            The color the line should be as System.Drawing.Color.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.fAuto">
+			<summary>
+            Set fAuto to 1 if you want the Excel automatic border option turned on.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.MoveType">
+			<summary>
+            Set to one of the SBFloatingMoveType constants.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.StartAHStyle">
+			<summary>
+            Use the LineArrowHeadStyles enumeration to specify the style for the arrow head at the start of the line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.StartAHWidth">
+			<summary>
+            The starting arrowhead width.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.StartAHLength">
+			<summary>
+            The starting arrowhead length.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.EndAHStyle">
+			<summary>
+            Use the LineArrowHeadStyles enumeration to specify the style for the arrow head at the end of the line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.EndAHWidth">
+			<summary>
+            The ending arrowhead width.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineInfo.EndAHLength">
+			<summary>
+            The ending arrowhead length.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.ColumnLeft">
+			<summary>
+            Column containing the upper-left corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.colL">
+			<summary>
+            Column containing the upper-left corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.RowTop">
+			<summary>
+            Row containing the upper-left corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.rwT">
+			<summary>
+            Row containing the upper-left corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.ColumnRight">
+			<summary>
+            Column containing the lower-right corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.colR">
+			<summary>
+            Column containing the lower-right corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.RowBottom">
+			<summary>
+            Row containing the lower-right corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Imaging.LineInfo.rwB">
+			<summary>
+            Row containing the lower-right corner of the object's bounding rectangle.
+            </summary>
+			<remarks>Cannot be negative.</remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.ObjectDirection">
+			<summary>
+            Used by DDSheet.AddLine and DDSheet.AddImage to define line or image directions.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.ObjectDirection.UpperLeftToLowerRight">
+			<summary>
+            Upper left to lower right.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.ObjectDirection.UpperRightToLowerLeft">
+			<summary>
+            Upper right to lower left.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.ObjectDirection.LowerRightToUpperLeft">
+			<summary>
+            Lower right to upper left.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.ObjectDirection.LowerLeftToUpperRight">
+			<summary>
+            Lower left to upper right.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.SBFloatingMoveType">
+			<summary>
+            Used by DDSheet.AddLine(..) 
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.SBFloatingMoveType.MoveNoSize">
+			<summary>
+            Lines and Pictures move but do not size with cells.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.SBFloatingMoveType.MoveSize">
+			<summary>
+            Lines and Pictures move and size with cells.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.SBFloatingMoveType.NoMoveNoSize">
+			<summary>
+            Lines and Pictures do not move or size with cells.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.ImageLineWeight">
+			<summary>
+            Used with ImageInfo.LineWeight to specify the weight of a line bounding an image.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.ImageLineStyle">
+			<summary>
+            Used with ImageInfo.LineStyle to specify the style of the line bounding an image.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.LineStyles">
+			<summary>
+            Contains the various line styles for several versions of BIFF.  Note that some values are not valid in some versions of the Excel BIFF file format.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.Solid">
+			<summary>
+            Sold.  
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Solid.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.SmallDash">
+			<summary>
+            Small Dash (No Equivalent Menu for Excel 2000).
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Long Dash.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.SquareDot">
+			<summary>
+            Square Dot.
+            </summary>
+			<remarks>Effect for versions 3, 4, 5, and 7: Dash.</remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.SmallDashSquareDot">
+			<summary>
+            Small Dash, Square Dot.
+            </summary>
+			<remarks>
+            No Equivalent Menu for Excel 2000.
+            Effect for versions 3, 4, 5, and 7: Long Dash Dot.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.SmallDashSquareDotSquareDot">
+			<summary>
+            Small Dash, Square Dot, Square Dot.
+            </summary>
+			<remarks>
+            No Equivalent Menu for Excel 2000.
+            Effect for versions 3, 4, 5, and 7: Long Dash Dot Dot.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.LooselySpacedSquareDot">
+			<summary>
+            Loosely spaced Square Dot.
+            </summary>
+			<remarks>
+            No Equivalent Menu for Excel 2000.
+            Effect for versions 3, 4, 5, and 7: Pattern 50% Solid (No Equivalent Menu for Excel 2000)
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.Dash">
+			<summary>
+            Dash.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Pattern 75% Solid (No Equivalent Menu for Excel 2000).
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.LongDash">
+			<summary>
+            Long Dash.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Pattern 25% Solid (No Equivalent Menu for Excel 2000).
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.DashDot">
+			<summary>
+            Dash Dot.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Not Applicable.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.LongDashDot">
+			<summary>
+            Long Dash Dot.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Not Applicable.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.LongDashDotDot">
+			<summary>
+            Long Dash Dot Dot.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Not Applicable.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.RoundDot">
+			<summary>
+            Round Dot.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Not Applicable.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Imaging.LineStyles.OldTransparent">
+			<summary>
+            Transparent (No Line), only effective in BIFF versions 3, 4, 5, and 7.
+            </summary>
+			<remarks>
+            Effect for versions 3, 4, 5, and 7: Transparent (No Line).
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.LineArrowHeadStyles">
+			<summary>
+            Excel enumerated type for arrowhead styles.
+            </summary>
+			<remarks>Used with DDSheet.AddLine(..).</remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.LineArrowHeadWidths">
+			<summary>
+            Enumerated type for Excel arrowhead width. 
+            </summary>
+			<remarks>Used with DDSheet.AddLine(..).</remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Imaging.LineArrowHeadLengths">
+			<summary>
+            Enumerated type for Excel arrowhead length.   
+            </summary>
+			<remarks>Used with DDSheet.AddLine(..).</remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Printing.PageSetup">
+			<summary>
+            Represents page setup information for a worksheet such as a margins, paper size, etc...
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Printing.PageSetup.FirstPageNumberAuto">
+			<summary>
+            Use this value with PageSetup.FirstPageNumber to specify that the first page number used should be determined automatically.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.LeftMargin">
+			<summary>
+            Sets or returns the left margin value in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.RightMargin">
+			<summary>
+            Sets or returns the right margin value in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.TopMargin">
+			<summary>
+            Sets or returns the top margin value in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.BottomMargin">
+			<summary>
+            Sets or returns the bottom margin value in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.BlackAndWhite">
+			<summary>
+            True if elements of the document will be printed in black and white. Read/write Boolean.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.Draft">
+			<summary>
+            True if the sheet will be printed without graphics.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.FirstPageNumber">
+			<summary>
+            Returns or sets the first page number that will be used when this sheet is printed.
+            If PageSetup.FirstPageNumberAuto is the value (default) then the first page number will be chosen automatically.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.FitToPagesTall">
+			<summary>
+            Returns or sets the number of pages tall the worksheet will be scaled to when it's printed.
+            </summary>
+			<remarks>If the Zoom property is True, the FitToPagesTall property is ignored.</remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.FitToPagesWide">
+			<summary>
+            Returns or sets the number of pages wide the worksheet will be scaled to when it's printed.
+            If the Zoom property is True, the FitToPagesWide property is ignored.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.FitToPage">
+			<summary>
+            Returns whether the FitToPage option should be selected.
+            </summary>
+			<remarks>
+            If FitToPagesWide or FitToPagesTall was set since the last Zoom this property will return true, to indicate the FitToPage option in the Page Setup dialog should be selected.
+            If Zoom was set since FitToPagesWide or FitToPagesTall (or none of these properties were set at all) this property returns false indicating the zoom/percentage scaling option should be selected.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.FooterMargin">
+			<summary>
+            Returns or sets the distance from the bottom of the page to the footer, in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.HeaderMargin">
+			<summary>
+            Returns or sets the distance from the top of the page to the header, in points.
+            </summary>
+			<remarks>
+            The value MUST be greater than or equal to 0 and less than 3528.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.Order">
+			<summary>
+            Returns or sets the order used to number pages when printing a large worksheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.Orientation">
+			<summary>
+            Sets or returns whether pages are printed in landscape or portrait.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.PaperSize">
+			<summary>
+            Sets or returns the size of the paper to be printed on.
+            </summary>
+			<remarks>Custom paper size is not fully implemented at this time.</remarks>
+			<devDocs>To fully implement Custom Paper size we need to write the PLS record which is basically a dump of a DEVMODE record. But karl had to comment it out in c++ because it crashed the excel viewer.  So that will take some additional research.</devDocs>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Printing.PageSetup.PrintNotes">
+			<summary>
+            True if cell notes are printed as end notes with the sheet.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Printing.PagePrintOrder">
+			<summary>
+            Used with the PageSetup.Order property.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Printing.PagePrintOrientation">
+			<summary>
+            Used with PageSetup.Orientation.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Style.HorzAlignments">
+			<summary>
+            Different types of horizontal alignments.  Used by DDCell.Alignment.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Style.VertAlignments">
+			<summary>
+            Difference types of vertical alignments.  Used by DDCell.VertAlignment.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Style.BorderLineStyle">
+			<summary>
+            Border line styles.  Used for DDCell.BorderTopStyle, .BorderBottomStyle, etc...
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.MediumDashed">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.DashDot">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.MediumDashDot">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.DashDotDot">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.MediumDashDotDot">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderLineStyle.SlantedDashDot">
+			<remarks>
+            Not supported in BIFF7 and earlier.
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Style.BorderDiagonalStyles">
+			<summary>
+            For DDCell's BorderDiagonalEnum property.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderDiagonalStyles.None">
+			<summary>
+            No diagonal border will be drawn.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderDiagonalStyles.Down">
+			<summary>
+            Starts in the upper left corner, and goes down to the lower right corner.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.BorderDiagonalStyles.Up">
+			<summary>
+            Starts in the bottom left corner, and goes up to the upper right corner.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles">
+			<summary>
+            Underline styles for DDCell.FontUnderlineStyle
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles.None">
+			<summary>
+            No underline.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles.Single">
+			<summary>
+            Single underline.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles.Double">
+			<summary>
+            Double underline.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles.SingleAcc">
+			<summary>
+            Single accounting underline.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Style.FontUnderlineStyles.DoubleAcc">
+			<summary>
+            Double accounting underline.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDColumn">
+			<summary>
+            Represents a column in a spreadsheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDColumn.Column">
+			<summary>
+            Returns the column number (zero based) that this object represents.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDColumn.OwnerSheet">
+			<summary>
+            Returns the sheet that this column is on.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDColumn.Width">
+			<summary>
+            Sets/gets the width of the column in Twips.  
+            </summary>
+			<remarks>
+            The value will be converted to excel's "1/256 character width" unit system.
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDRow">
+			<summary>
+            Represents a single row in a sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDRow.Height">
+			<summary>
+            Sets/gets the height for the row in 1/20th of point.
+            SpreadBuilder will default rows to 12.75 points (or 255 in twips).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDRow.AutoSize">
+			<summary>
+            Sets or returns whether excel will will automatically determine the row's height based it's contents.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDSecurity">
+			<summary>
+            Encapsulates the information necessary to provide spreadsheet document security and encryption.
+            </summary>
+			<remarks>
+            If a WritePassword or a Password is supplied the spreadsheet application will prompt for a write or open access password.
+            If a WritePassword or a Password is not supplied no password will be requested to open the document.
+            By correctly supplying the Password, the user will be able to open the document.
+            By correctly supplying the WritePassword, the user will be able to write the document.
+            If the read only recommended is set to true, the Excel application will prompt user whether to open document as read-only.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSecurity.ProtectedBy">
+			<summary>
+            Gets or sets the User Name responsible to password protect the spreadsheet document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSecurity.WritePassword">
+			<summary>
+            Gets or sets the write password of the spreadsheet document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSecurity.Password">
+			<summary>
+            Gets or sets the password which can be entered to permit to open spreadsheet document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSecurity.ReadOnlyRecommended">
+			<summary>
+            Gets or sets the value to indicate if the spreadsheet document was saved as read only recommended.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDSheet">
+			<summary>
+            Represents a WorkSheet.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.Cell(System.Int32,System.Int32)">
+			<summary>
+            Returns the DDCell object for the specified row and column.
+            </summary>
+			<param name="iRow">The zero based row number of the cell.</param>
+			<param name="iColumn">The zero based column number of the cell.</param>
+			<returns>The DDCell object for the specified row and column.</returns>
+			<remarks>
+            This function could throw an ArgumentOutOfRangeException if the specified iRow or iColumn is not in the valid range.
+            The minimum value for both the iRow and iColumn argument is 0.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.Columns(System.Int16)">
+			<summary>
+            Returns the DDColumn object representing the specified column.
+            </summary>
+			<param name="column">The zero based non-negative column index.</param>
+			<returns>
+            The DDColumn object representing the specified column.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.AddHorizontalPageBreak(System.UInt16,System.UInt16,System.UInt16)">
+			<summary>
+            Adds a horizontal / row page break.
+            </summary>
+			<param name="row">The row of the break (1 based).</param>
+			<param name="columnstart">The starting column for the break (1 based).</param>
+			<param name="columnend">The ending column for the break (1 based).</param>
+			<remarks>
+            No two pagebreaks may overlap.  
+            The break occurs after the row or column.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.AddVerticalPageBreak(System.UInt16,System.UInt16,System.UInt16)">
+			<summary>
+            Adds a vertical / column page break.
+            </summary>
+			<param name="col">The column of the break (1 based).</param>
+			<param name="rowstart">The starting row for the break (1 based).</param>
+			<param name="rowend">The ending row for the break (1 based).</param>
+			<remarks>
+            No two pagebreaks may overlap.  
+            The break occurs after the row or column.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.Clear">
+			<summary>
+            Deletes all properties and content, effectively creating a blank sheet."
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.Rows(System.Int32)">
+			<summary>
+            Returns a DDRow instance for the specified row number.
+            </summary>
+			<param name="iRow">The row number the returned DDRow will represent (zero based).</param>
+			<returns>A DDRow instance that represents the specified row number.</returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.AddImage(System.Drawing.Image,GrapeCity.SpreadBuilder.Imaging.ImageInfo,System.Drawing.Color,System.Drawing.Color,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.String)">
+			<summary>
+            Adds the specified image (currently stored as PNG format) to this sheet with the specified location, and settings.
+            
+            </summary>
+			<param name="img">
+            This is an image object that represents the image to be placed on the sheet.
+            </param>
+			<param name="imageOptions"></param>
+			<param name="lineColor"></param>
+			<param name="backColor"></param>
+			<param name="colL">
+            Column containing the upper-left corner of the object's bounding rectangle.
+            </param>
+			<param name="dxL">
+            X (horizontal) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the left side of the underlying cell (specified in colL), expressed as 1/1024th of the cell's 
+            width.
+            </param>
+			<param name="rwT">
+            Row containing the upper-left corner of the object's bounding rectangle.
+            </param>
+			<param name="dyT">
+            Y (vertical) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </param>
+			<param name="colR">
+            Column containing the lower-right corner of the object's bounding rectangle.
+            </param>
+			<param name="dxR">
+            X (horizontal) position of the lower-right corner of the object's bounding rectangle, relative to the left side of the underlying cell, expressed as 1/1024th of the cell's width.
+            </param>
+			<param name="rwB">
+            Row containing the lower-right corner of the object's bounding rectangle.
+            </param>
+			<param name="dyB">
+            Y (vertical) position of the lower-right corner of the object's bounding rectangle, relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </param>
+			<param name="hyperlink">
+            If you want the image to have a clickable hyperlink specify the URL here.  Otherwide use an empty string.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.AddImage(System.Drawing.Image,GrapeCity.SpreadBuilder.Imaging.ImageInfo,System.Drawing.Color,System.Drawing.Color,System.Int32,System.Int16,System.Int32,System.Int16,System.Int32,System.Int16,System.Int32,System.Int16,System.String)">
+			<summary>
+            Adds the specified image (currently stored as PNG format) to this sheet with the specified location, and settings.
+            
+            </summary>
+			<param name="img">
+            This is an image object that represents the image to be placed on the sheet.
+            </param>
+			<param name="imageOptions"></param>
+			<param name="lineColor"></param>
+			<param name="backColor"></param>
+			<param name="columnLeft">
+            Column containing the upper-left corner of the object's bounding rectangle.
+            </param>
+			<param name="dxL">
+            X (horizontal) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the left side of the underlying cell (specified in colL), expressed as 1/1024th of the cell's 
+            width.
+            </param>
+			<param name="rowTop">
+            Row containing the upper-left corner of the object's bounding rectangle.
+            </param>
+			<param name="dyT">
+            Y (vertical) position of the upper-left corner of the object's bounding rectangle, 
+            relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </param>
+			<param name="columnRight">
+            Column containing the lower-right corner of the object's bounding rectangle.
+            </param>
+			<param name="dxR">
+            X (horizontal) position of the lower-right corner of the object's bounding rectangle, relative to the left side of the underlying cell, expressed as 1/1024th of the cell's width.
+            </param>
+			<param name="rowBottom">
+            Row containing the lower-right corner of the object's bounding rectangle.
+            </param>
+			<param name="dyB">
+            Y (vertical) position of the lower-right corner of the object's bounding rectangle, relative to the top of the underlying cell, expressed as 1/1024th of the cell's height.
+            </param>
+			<param name="hyperlink">
+            If you want the image to have a clickable hyperlink specify the URL here.  Otherwide use an empty string.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.AddLine(GrapeCity.SpreadBuilder.Imaging.LineInfo)">
+			<summary>
+            Adds one line with specified coordinates and properties.
+            </summary>
+			<param name="li">A LineInfo object with it's members set to the proper line configuration values.  See the LineInfo class for more information.</param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.IsMerged(System.Int32,System.Int32)">
+			<summary>
+            Returns true if the specified cell's XFRecord has it's fMergeCell member is true.
+            </summary>
+			<param name="row"></param>
+			<param name="column"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheet.UnMergeCells(System.Int32,System.Int32)">
+			<summary>
+            Removes the MergeArea from the MergedAreas record for this sheet.
+            </summary>
+			<param name="row"></param>
+			<param name="column"></param>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheet.ParentSheets">
+			<summary>
+            Returns the DDSheets collection that this DDSheet is a member of.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheet.Name">
+			<summary>
+            Sets/returns the name of this DDSheet.
+            </summary>
+			<remarks>
+            May throw an ArgumentException if the specified name is already in use, or invalid (e.g. empty).
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheet.DisplayGridLines">
+			<summary>
+            Sets or returns the flag indicating if grid lines are displayed in the sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheet.PageSetup">
+			<summary>
+            Returns a PageSetup class representing current information about this sheet when printed.  This information is displayed in Excel in the page setup dialog.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDSheets">
+			<summary>
+            A collection of DDSheet objects.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.GetEnumerator">
+			<summary>
+            Returns an IEnumerator object for this collection allowing you to enumerate the DDSheet objects 
+            contained in this collection.  
+            Allows use of foreach statements with the collection.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.AddNew">
+			<summary>
+            Adds a new blank DDSheet object to the collection and returns a reference to it.
+            </summary>
+			<returns>
+            The newly added DDSheet object.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.RemoveAt(System.Int32)">
+			<summary>
+            Removes the DDSheet at the specified index from this collection.
+            </summary>
+			<param name="iIndex">
+            The zero based index of the DDSheet to be removed.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.Move(System.String,System.Int16)">
+			<summary>
+            Moves the sheet with the specfied name to the specified position.
+            </summary>
+			<param name="sName">The value of the DDSheet's Name property that you want to move.</param>
+			<param name="newPosition">
+            The new position you want to move the sheet to.
+            If the new position is less than zero, the sheet will be moved to the begining of the collection (0).
+            If the new position is greater than the upper bound of this collection, the sheet will be moved to the end of the collection.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.Move(System.Int16,System.Int16)">
+			<summary>
+            Moves the sheet at the specified position to the specified newposition.
+            </summary>
+			<param name="oldPosition">The current position (index) of the sheet you want to move.</param>
+			<param name="newPosition">
+            The new position you want to move the sheet to.
+            If the new position is less than zero, the sheet will be moved to the begining of the collection (0).
+            If the new position is greater than the upper bound of this collection, the sheet will be moved to the end of the collection.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.Clear">
+			<summary>
+            Removes all the DDSheet objects contained in this collection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.Select(System.String)">
+			<summary>
+            Selects the sheet with the specified name, and unselects all other sheets.
+            </summary>
+			<param name="sheetName">
+            The value of the Name property of the DDSheet object you want to be selected.
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.DDSheets.Select(System.Int32)">
+			<summary>
+            Selects the sheet at the specified index, and unselects all other sheets.
+            </summary>
+			<param name="sheetIndex">
+            The index to the sheet of which you want the tab to be selected.
+            </param>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheets.Count">
+			<summary>
+            Gets the number of elements contained in this DDSheets collection.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheets.Item(System.Int32)">
+			<summary>
+            Gets the DDSheet at the specified index. 
+            In C#, this property is an indexer for the DDSheets class.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.DDSheets.Item(System.String)">
+			<summary>
+            Gets the DDSheet with the specified name
+            In C#, this property is an indexer for the DDSheets class.
+            If a DDSheet with the specified name does not exist in the collection, null will be returned.
+            </summary>
+			<remarks>
+            The sheetName argument is compared case insensitively.
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDSheets.DDSheetsEnumerator">
+			<summary>
+            An Enumerator for the DDSheets collection.  Allows use of foreach statements.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.SpreadBuilderException">
+			<summary>
+            A general exception thrown for application errors in the GrapeCity.SpreadBuilder assembly.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.InvalidPasswordException">
+			<summary>
+            Thrown when the password is invalid in a specific excel format.(For example: the length of password is out of range.)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.ColumnCountOutOfRangeException">
+			<summary>
+            Thrown when the columns' count is out of range in a specific excel format.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.RowCountOutOfRangeException">
+			<summary>
+            Thrown when the rows' count is out of range in a specific excel format.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.NoDDSheetsException">
+			<summary>
+            Thrown when an operation is requested that requires at least one sheet in the Sheets collection (for example Saving the workbook).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.NoDDSheetsException.Message">
+			<summary>
+            Returns a message that describes the error.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.VersionNotImplementedException">
+			<summary>
+            Indicates that a feature or features were not implemented for a particular version of the Exce./BIFF file format.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.VersionNotImplementedException.Message">
+			<summary>
+            Returns a message that describes the error.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.CompressionException">
+			<summary>
+            Indicates that an error occured in the compression library most likely related to images.  
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.DDSheetNameAlreadyExistsException">
+			<exception cref="T:System.ArgumentException">
+            Thrown when an attempt is made to add a sheet, or change a sheet's name, when another sheet in the DDSheets 
+            collection with that name already exists.
+            </exception>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.InvalidDDSheetNameException">
+			<summary>
+             Thrown when change a sheet's name to an invalid value. The name cannot be empty, cannot exceed 31 characters and cannot contain any of following characters: : \ / ? * [ or ]
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.BiffVersion">
+			<summary>
+            Different versions of BIFF.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.BiffVersion.V7">
+			<summary>
+            Version 7 of the Excel File format is used to support Excel 95.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.BiffVersion.V8">
+			<summary>
+            Version 8 of the Excel File format supports Excel 97-Excel 2002.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.FileFormat">
+			<summary>
+            Specifies the file format that the outputted file should support.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.FileFormat.Xls97Plus">
+			<summary>
+            Optimized for Microsoft Excel 97 and newer versions.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.FileFormat.Xls95">
+			<summary>
+            Microsoft Excel 95 format.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.FileFormat.Xlsx">
+			<summary>
+            Microsoft Excel OpenXml format.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.SpreadBuilder.Workbook">
+			<summary>
+            Represents a spreadsheet workbook  that contains spreadsheets.  This object will represent information that is relevant to all spreadsheets in the workbook (e.g. Author, BIFF/file version, etc...).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Workbook.DefaultFontName">
+			<summary>
+            Returns the name of the default font.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.SpreadBuilder.Workbook.DefaultFontSizeInPoints">
+			<summary>
+            Returns the size of the default font in points.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Workbook.Clear">
+			<summary>
+            Removes all sheets, creates a fresh instance of all member class variables and 
+            initializes all member data variables to their default value.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Workbook.Save(System.IO.Stream)">
+			<summary>
+            Saves the current spreadsheet workbook to the specified Stream.
+            </summary>
+			<param name="outputStream">
+            The output stream to save the workbook data to. The stream might be a MemoryStream, or HttpResponse.OutputStream (for example).
+            </param>
+		</member>
+		<member name="M:GrapeCity.SpreadBuilder.Workbook.Save(System.String)">
+			<summary>
+            Saves the current spreadsheet data to the specified stream.
+            </summary>
+			<param name="sFileName">A valid filename.</param>
+			<remarks>
+            Permissions to write to the specified file are Demanded.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.UseDefaultPalette">
+			<summary>
+            Sets or returns whether export document with Excel default palette.
+            </summary>
+			<remarks>
+            Setting this value to true, application will use the color which is in default palette and is closest to pre-defined custom color of control's forecolor and backcolor.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.Sheets">
+			<summary>
+            Returns the collection of shsets as a DDSheets collection object.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.Author">
+			<summary>
+            Sets/returns the Author that will be written to the workbook.  
+            </summary>
+			<remarks>
+            When MS Excel writes a workbook this is the user name, which is the name you entered
+            when you installed MS Excel.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.FileVersion">
+			<summary>
+            Sets/gets the file version that the spreadsheet will be saved in.
+            </summary>
+			<remarks>
+            After set FileFormat property to Xlsx, this property will keep original value.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.FileFormat">
+			<summary>
+            Sets/gets the file format that the spreadsheet will be saved in.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.OpenXmlStandard">
+			<summary>
+            Gets or sets the level of Open XML document conformance on exporting with Xlsx file format.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.ProtectWorkBookStructure">
+			<summary>
+             Sets/gets the protection state for a sheet or workbook.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.ProtectWorkbookWindows">
+			<summary>
+            Sets/gets an option from the Protect Workbook dialog box.  If this property is set to 
+            true, Excel will not let the user add, delete, reorder, or rename sheets in the workbook.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.ProtectWorkbookPassword">
+			<summary>
+            Sets/gets the password for protecting the elements in workbook.
+            </summary>
+			<remarks>
+            The password will take effect when one of ProtectWorkbookWindows and ProtectWorkBookStructure
+            property is true.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.SpreadBuilder.Workbook.Security">
+			<summary>
+            Returns a <see cref="T:GrapeCity.SpreadBuilder.DDSecurity" /> object for initializing document security.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.FileFormat">
+			<summary>
+            Specifies the file format that the outputted file should support.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Excel.Section.FileFormat.Xls97Plus">
+			<summary>
+            Optimized for Microsoft Excel 97 and newer versions.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Excel.Section.FileFormat.Xls95">
+			<summary>
+            Microsoft Excel 95 format.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Excel.Section.FileFormat.Xlsx">
+			<summary>
+            Microsoft Excel OpenXml format.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.OpenXmlStandard">
+			<summary>
+            Specifies the level of Open XML document conformance on exporting with Xlsx file format.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Excel.Section.OpenXmlStandard.Strict">
+			<summary>
+            ISO/IEC 29500 Strict.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Excel.Section.OpenXmlStandard.Transitional">
+			<summary>
+            ISO/IEC 29500 Transitional.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.AR.Resources">
+			<summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ResourceManager">
+			<summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Culture">
+			<summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A2">
+			<summary>
+              Looks up a localized string similar to A2.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A3">
+			<summary>
+              Looks up a localized string similar to A3.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A3Extra">
+			<summary>
+              Looks up a localized string similar to A3 Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A3ExtraTransverse">
+			<summary>
+              Looks up a localized string similar to A3 Extra Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A3Transverse">
+			<summary>
+              Looks up a localized string similar to A3 Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A4">
+			<summary>
+              Looks up a localized string similar to A4.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A4Extra">
+			<summary>
+              Looks up a localized string similar to A4 Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A4Plus">
+			<summary>
+              Looks up a localized string similar to A4 Plus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A4Small">
+			<summary>
+              Looks up a localized string similar to A4 Small.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A4Transverse">
+			<summary>
+              Looks up a localized string similar to A4 Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A5">
+			<summary>
+              Looks up a localized string similar to A5.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A5Extra">
+			<summary>
+              Looks up a localized string similar to A5 Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A5Rotated">
+			<summary>
+              Looks up a localized string similar to A5 Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A5Transverse">
+			<summary>
+              Looks up a localized string similar to A5 Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A6">
+			<summary>
+              Looks up a localized string similar to A6.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.A6Rotated">
+			<summary>
+              Looks up a localized string similar to A6 Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ALIGNMENT">
+			<summary>
+              Looks up a localized string similar to Alignment.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.APlus">
+			<summary>
+              Looks up a localized string similar to A Plus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTCANNOTBEEMPTY">
+			<summary>
+              Looks up a localized string similar to Argument cannot be empty..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTCANNOTBELESSTHANZERO">
+			<summary>
+              Looks up a localized string similar to argument cannot be less than zero..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTCANNOTBENULL">
+			<summary>
+              Looks up a localized string similar to [GetBiff8UnicodeStringByteCount:] Argument cannot be null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTNULLIMAGE">
+			<summary>
+              Looks up a localized string similar to Image.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTNULLTEXT">
+			<summary>
+              Looks up a localized string similar to Text.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTOUTOFRANGECANNOTBENEGATIVE">
+			<summary>
+              Looks up a localized string similar to The argument cannot be negative..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTOUTSIDEOFBOUNDS">
+			<summary>
+              Looks up a localized string similar to Argument is outside the bounds of the collection..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMENTPAGEITEM">
+			<summary>
+              Looks up a localized string similar to Argument must be of type PageItem..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMNETLAYOUTCOLUMN">
+			<summary>
+              Looks up a localized string similar to Argument must be of type LayoutColumn..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ARGUMNETLAYOUTROW">
+			<summary>
+              Looks up a localized string similar to Argument must be of type LayoutRow..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.AUTHORCANNOTBEEMPTY">
+			<summary>
+              Looks up a localized string similar to Author value cannot be empty..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B4">
+			<summary>
+              Looks up a localized string similar to B4.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B4Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope B4.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B4JisRotated">
+			<summary>
+              Looks up a localized string similar to B4 Jis Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B5">
+			<summary>
+              Looks up a localized string similar to B5.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B5Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope B5.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B5Extra">
+			<summary>
+              Looks up a localized string similar to B5 Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B5JisRotated">
+			<summary>
+              Looks up a localized string similar to B5 Jis Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B5Transverse">
+			<summary>
+              Looks up a localized string similar to B5 Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B6Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope B6.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B6Jis">
+			<summary>
+              Looks up a localized string similar to B6 Jis.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.B6JisRotated">
+			<summary>
+              Looks up a localized string similar to B6 Jis Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BEGINNINGOFFILENOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to The 'beginning of file record' does not support the specified ({0}) file version..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BEGINREADISNOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to BeginRead isn't supported on this stream.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BEGINWRITEISNOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to BeginWrite isn't supported on this stream.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BHIDDENINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to bHidden member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BIFFCELLTABLECANNOTBENULL">
+			<summary>
+              Looks up a localized string similar to BiffCellTable argument in BiffCellTableEnumerator constructor cannot be null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BIFFCELLTABLECOULDNOTGETENUMERATOR">
+			<summary>
+              Looks up a localized string similar to BiffCellTableEnumerator constructor: Couldn't get table enumerator from specified BiffCellTable argument..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BIFFVERSIONNOTYETIMPL">
+			<summary>
+              Looks up a localized string similar to Specified BIFF Version not yet implemented..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BLOCKEDINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to bLocked member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BOFTYPENOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to Specified BofTypes value '{0}' not supported..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERBOTTOMSTYLE">
+			<summary>
+              Looks up a localized string similar to BorderBottomStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERBOTTOMSTYLERANGE">
+			<summary>
+              Looks up a localized string similar to Border style must be between 0 and 13..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERDIAGONALSTYLE">
+			<summary>
+              Looks up a localized string similar to BorderDiagonalStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERDIAGONALSTYLERANGE">
+			<summary>
+              Looks up a localized string similar to Border style must be between 0 and 13..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERDIAGONALVALUE">
+			<summary>
+              Looks up a localized string similar to val.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERDIAGONALVALUERANGE">
+			<summary>
+              Looks up a localized string similar to BorderDiagonalStyle must be 0-3..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERLEFTSTYLE">
+			<summary>
+              Looks up a localized string similar to BorderLeftStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERRIGHTSTYLE">
+			<summary>
+              Looks up a localized string similar to BorderRightStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERSTYLERANGE">
+			<summary>
+              Looks up a localized string similar to Border style must be between 0 and 13..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BORDERTOPSTYLE">
+			<summary>
+              Looks up a localized string similar to BorderTopStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BOTTOMBLSTYLEINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to bottomblStyle member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BOTTOMBORDERCOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to bottomBorderColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BPlus">
+			<summary>
+              Looks up a localized string similar to B Plus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.BWRAPINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to bWrap member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.C3Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope C3.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.C4Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope C4.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.C5Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope C5.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.C65Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope C65.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.C6Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope C6.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.canceling">
+			<summary>
+              Looks up a localized string similar to Canceling.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.CINDENTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to cIndent member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COLUMN">
+			<summary>
+              Looks up a localized string similar to Column.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COLUMNFROM">
+			<summary>
+              Looks up a localized string similar to Column from.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COLUMNFROMRANGE">
+			<summary>
+              Looks up a localized string similar to The columnFrom argument must be less than the columnTo argument..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COLUMNNOTNEGATIVE">
+			<summary>
+              Looks up a localized string similar to value must be non-negative..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COULDNOTCLONEXFRECORD8">
+			<summary>
+              Looks up a localized string similar to Could not clone the specified XFRecord8 object..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COULDNOTCREATEFILE">
+			<summary>
+              Looks up a localized string similar to Could not create file '{0}'.  Please ensure that the folder exists..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COULDNOTCREATEWORKBOOKSTREAM">
+			<summary>
+              Looks up a localized string similar to Workbook stream could not be created..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.COULDNOTFINDAFPARENTREC">
+			<summary>
+              Looks up a localized string similar to Could not find the xfParent indicated by the rec parameter..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.CREATEILOCKBYTESONHGLOBALSFAILED">
+			<summary>
+              Looks up a localized string similar to CreateILockBytesOnHGlobal caused a failure in unmanaged code..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.CREATEWAITHANDLEISNOTSUPPORTEDONSTREAM">
+			<summary>
+              Looks up a localized string similar to CreateWaitHandle isn't supported on this stream.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.CSheet">
+			<summary>
+              Looks up a localized string similar to C Sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DDFormatException1">
+			<summary>
+              Looks up a localized string similar to Argument_RankEQOne1.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DDFormatException2">
+			<summary>
+              Looks up a localized string similar to Argument_Range0to99_1.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DDFormatException3">
+			<summary>
+              Looks up a localized string similar to NumDigitsAfterDecimal.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DDFormatException4">
+			<summary>
+              Looks up a localized string similar to InvalidCast_FromTo {0} Currency.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DDFormatException5">
+			<summary>
+              Looks up a localized string similar to "VbMakeException(5).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_OpenPassword">
+			<summary>
+              Looks up a localized string similar to Gets or sets the password which can be entered to permit to open Excel document..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_Orientation">
+			<summary>
+              Looks up a localized string similar to Gets or sets the print orientation of Excel sheet..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_PaperKind">
+			<summary>
+              Looks up a localized string similar to Gets or sets the print paper size of Excel sheet..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_ProtectedBy">
+			<summary>
+              Looks up a localized string similar to Gets or sets the User Name responsible to password protect the excel spreadsheet..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_ReadOnlyRecommended">
+			<summary>
+              Looks up a localized string similar to Gets or sets the value to indicate if the Excel file was saved as read only recommended..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_WritePassword">
+			<summary>
+              Looks up a localized string similar to Gets or sets the write password of the Excel file..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_AutoRowHeight">
+			<summary>
+              Looks up a localized string similar to True if excel should set the height of the row based on the contents of that row.  Otherwise the XlsExport will calculate the height of the rows.  In some cases this may make the output look better inside excel.  However, a value of true may adversely effect pagination when printing from excel, as it will often cause excel to stretch the height of the page..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_DisplayGridLines">
+			<summary>
+              Looks up a localized string similar to Sets or returns whether grid lines in workbook are displayed..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_FileFormat">
+			<summary>
+              Looks up a localized string similar to Sets or returns which file format version the outputted file should support..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_MinColumnWidth">
+			<summary>
+              Looks up a localized string similar to Sets or returns the minimum width (in inches) of an empty column that will be permitted in the output..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_MinRowHeight">
+			<summary>
+              Looks up a localized string similar to Sets or returns the minimum height (in inches) of an empty row that will be permitted in the output..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_MultiSheet">
+			<summary>
+              Looks up a localized string similar to Sets or returns whether each page is to be exported to it's own sheet or not.  True indicates that each page in the ActiveReport Document will be exported to a separate sheet..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_OpenXmlStandard">
+			<summary>
+              Looks up a localized string similar to Gets or sets the level of Open XML document conformance on exporting with Xlsx file format..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_PageSettings">
+			<summary>
+              Looks up a localized string similar to Returns an XlsPageSetting object for initializing page size and orientation..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_RemoveVerticalSpace">
+			<summary>
+              Looks up a localized string similar to Sets or returns a value that indicates whether completely empty vertical spacing will be removed from the output..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_Security">
+			<summary>
+              Looks up a localized string similar to Returns a XlsSecurity object for initializing document encryption and security..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_Tweaks">
+			<summary>
+              Looks up a localized string similar to For internal use only..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_UseCellMerging">
+			<summary>
+              Looks up a localized string similar to Sets or returns whether cells should be merged together..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Desc_XlsExport_UseDefaultPalette">
+			<summary>
+              Looks up a localized string similar to Sets or returns whether export document with Excel default palette..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Description_XlsExport">
+			<summary>
+              Looks up a localized string similar to ActiveReports Excel (.xls) Export Component.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DGDIAGINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to dgDiag member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DLEnvelope">
+			<summary>
+              Looks up a localized string similar to Envelope DL.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DocumentMessageBoxCaption">
+			<summary>
+              Looks up a localized string similar to Report Viewer.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.DSheet">
+			<summary>
+              Looks up a localized string similar to D Sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENDLENGTH">
+			<summary>
+              Looks up a localized string similar to endlength.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENDREADISNOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to EndRead isn't supported on this stream.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENDSTYLE">
+			<summary>
+              Looks up a localized string similar to endstyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENDWIDTH">
+			<summary>
+              Looks up a localized string similar to endwidth.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENDWRITEISNOTSUPPORTED">
+			<summary>
+              Looks up a localized string similar to EndWrite isn't supported on this stream.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ENTRY">
+			<summary>
+              Looks up a localized string similar to Entry.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCOMPACTINGPATCHINGXFRECORDS">
+			<summary>
+              Looks up a localized string similar to Error Compacting &amp; Patching XFRecords..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCOMPRESSINGMETAFILE">
+			<summary>
+              Looks up a localized string similar to Error compressing metafile. Return code:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCONVERTIMAGETOMETAFILE">
+			<summary>
+              Looks up a localized string similar to Error converting image to specialized metafile..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCREATINGBINARYWRITER">
+			<summary>
+              Looks up a localized string similar to Error creating BinaryWriter..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCREATINGCOLORTRANSLATIONTABLE">
+			<summary>
+              Looks up a localized string similar to Error Creating Color Translation Table..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCREATINGFILE">
+			<summary>
+              Looks up a localized string similar to Unexpected Error creating file '{0}'..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORCREATINGFILE2">
+			<summary>
+              Looks up a localized string similar to Error creating File..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ErrorInvalidFileFormat">
+			<summary>
+              Looks up a localized string similar to Invalid file format.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ErrorInvalidPrinterSettings">
+			<summary>
+              Looks up a localized string similar to The printer settings are not valid.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ErrorInvalidVersionNumber">
+			<summary>
+              Looks up a localized string similar to Invalid version number.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORPREPARINGDOCUMENT">
+			<summary>
+              Looks up a localized string similar to An unexpected error occured preparing document: {0}.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORSERIALIZINGMARGINS">
+			<summary>
+              Looks up a localized string similar to An error occured serializing margins..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORUNMANAGEDBYTEMARSHALING">
+			<summary>
+              Looks up a localized string similar to An error occured performing unmanaged byte marshaling..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWHILEFLUSHINGCLOSINGBINARYWRITER">
+			<summary>
+              Looks up a localized string similar to Exception occured while Flushing &amp; Closing binWriter..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKFILEPASS">
+			<summary>
+              Looks up a localized string similar to Error writing Workbook FILEPASS records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKFILESHARING">
+			<summary>
+              Looks up a localized string similar to Error writing Workbook FILESHARING records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALBOUNDSHEET">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals BOUNDSHEET records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALEOF">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals EOF record.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALFONTRECORDS">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals FONT records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALFORMAT">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals FORMAT records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALPASSWORD">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals Password.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALPROTECT">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals PROTECT.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSACCESSRECORD">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals Access record.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSBOF">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals BOF.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSCODEPAGE">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals CodePage.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSDSF">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals DSF.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSTABID">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals TABID.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALSTYLE">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals STYLE records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALWINDOW1">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals WINDOW1.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALWINDOWPROTECT">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals WindowProtect.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWORKBOOKGLOBALXF">
+			<summary>
+              Looks up a localized string similar to Error writing WorkbookGlobals XF records.  ExtendedInfo:[{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWRITEACCESS">
+			<summary>
+              Looks up a localized string similar to Unexpected error while writing WRITEACCESS record..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWRITINGSERUPRECORD">
+			<summary>
+              Looks up a localized string similar to Error writing SETUP record..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWRITINGSHAREDSTRINGTABLE">
+			<summary>
+              Looks up a localized string similar to Error writing shared string table..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRORWRITINGWORKBOOKGLOBALS">
+			<summary>
+              Looks up a localized string similar to Error Writing Workbook Globals. Extended Info:[{0}]..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ERRRORWRITINGSHEETSCOLLECTION">
+			<summary>
+               Looks up a localized string similar to Error writing Sheets collection: Extended Info Follows: {0}
+            .
+             </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ESheet">
+			<summary>
+              Looks up a localized string similar to E Sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.EXCEEDEDARRAYLENGTH">
+			<summary>
+              Looks up a localized string similar to offset + count is greater than array length..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_ColumnCountLimit">
+			<summary>
+              Looks up a localized string similar to Column count on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_Default_InvalidPassword">
+			<summary>
+              Looks up a localized string similar to The password is invalid..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_Default_WorksheetSizeLimit">
+			<summary>
+              Looks up a localized string similar to This workbook contains data in cells outside of the row and column limit of selected file format..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_HorizontalPageBreaksCount">
+			<summary>
+              Looks up a localized string similar to The count of HorizontalPageBreaks on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_InvalidMargin">
+			<summary>
+              Looks up a localized string similar to Value is invalid. The value MUST be greater than or equal to 0 and less than 3528..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_InvalidSheetName">
+			<summary>
+              Looks up a localized string similar to Value is invalid. The name of worksheet cannot be empty, cannot exceed 31 characters and cannot contain any of following characters: : \ / ? * [ or ].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_LessThanAndEqual">
+			<summary>
+              Looks up a localized string similar to The length of property '{0}' must be less than or equal to {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_LineColumn">
+			<summary>
+              Looks up a localized string similar to Line: Value of ColumnLeft property should be less than or equal to the value of ColumnRight property..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_LineRow">
+			<summary>
+              Looks up a localized string similar to Line: Value of RowTop property should be less than or equal to value of RowBottom property..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_NumberNotLessThan">
+			<summary>
+              Looks up a localized string similar to The parameter '{0}' cannot be less than {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_OneNotLessThanOther">
+			<summary>
+              Looks up a localized string similar to {0} cannot be less than {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_PasswordLength">
+			<summary>
+              Looks up a localized string similar to The length of password on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_ProtectWorkbookPasswordLength">
+			<summary>
+              Looks up a localized string similar to The length of ProtectWorkbookPassword on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_RowCountLimit">
+			<summary>
+              Looks up a localized string similar to Row count on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Exception_VerticalPageBreaksCount">
+			<summary>
+              Looks up a localized string similar to The count of VerticalPageBreaks on {0} file format cannot exceed {1}..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Executive">
+			<summary>
+              Looks up a localized string similar to Executive.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.F123PREFIXINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to f123Prefix member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILEDTOCREATEWORKBOOKSTREAM">
+			<summary>
+              Looks up a localized string similar to Workbook stream could not be created..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2BOTTOMBLSTYLE">
+			<summary>
+              Looks up a localized string similar to Failure2: bottomblStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2CINDENT">
+			<summary>
+              Looks up a localized string similar to Failure2: cIndent.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRALIGN">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrAlign.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRBORDER">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrBorder.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRFNT">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrFnt.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRLOCKEDHIDDEN">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrLockedHidden.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRNUM">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrNum.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FATRPATTERN">
+			<summary>
+              Looks up a localized string similar to Failure2: fAtrPattern.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FMERGECELL">
+			<summary>
+              Looks up a localized string similar to Failure2: fMergeCell.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2FSHRINKTOFIT">
+			<summary>
+              Looks up a localized string similar to Failure2: fShrinkToFit.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2GRBITDIAG">
+			<summary>
+              Looks up a localized string similar to Failure2: grbitDiag.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2IREADINGORDER">
+			<summary>
+              Looks up a localized string similar to Failure2: iReadingOrder.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2LEFTBLSTYLE">
+			<summary>
+              Looks up a localized string similar to Failure2: leftblStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2LEFTBORDERCOLOR">
+			<summary>
+              Looks up a localized string similar to Failure2: leftBorderColor.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2RESERVEDOFF">
+			<summary>
+              Looks up a localized string similar to Failure2: reservedoff.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2RIGHTBLSTYLE">
+			<summary>
+              Looks up a localized string similar to Failure2: rightblStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2RIGHTBORDERCOLOR">
+			<summary>
+              Looks up a localized string similar to Failure2: rightBorderColor.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FAILURE2TOPBLSTYLE">
+			<summary>
+              Looks up a localized string similar to Failure2: topblStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRALIGNINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrAlign member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRBORDERINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrBorder member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRFNTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrFnt member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRLOCKEDHIDDENINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrLockedHidden member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRNUMINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrNum member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FATRPATTERNINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fAtrPattern member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FILLBACKCOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fillBackColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FILLFORECOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fillForeColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FILLPATTERNINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fillPattern member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FJUSTLASTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fJustLast member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FMERGECELLINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fMergeCell member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Folio">
+			<summary>
+              Looks up a localized string similar to Folio.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTINDEXINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fontIndex member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTNAME">
+			<summary>
+              Looks up a localized string similar to FontName.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTNAMELENGTH">
+			<summary>
+              Looks up a localized string similar to The font name cannot exceed 240 characters..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTNAMENOTNULL">
+			<summary>
+              Looks up a localized string similar to The FontName value cannot be set to null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTSIZE">
+			<summary>
+              Looks up a localized string similar to FontSize.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTSIZECANNOTBELESSOREQUALTOZERO">
+			<summary>
+              Looks up a localized string similar to FontSize cannot be less then or equal to zero..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTSIZERANGE">
+			<summary>
+              Looks up a localized string similar to FontSize cannot be zero or less than zero..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTSIZETOOLARGE">
+			<summary>
+              Looks up a localized string similar to FontSize is too large..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTUNDERLINESTYLE">
+			<summary>
+              Looks up a localized string similar to FontUnderineStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FONTUNDERLINESTYLERANGE">
+			<summary>
+              Looks up a localized string similar to FontUnderlineStyle must be one of the GrapeCity.SpreadBuilder.FontUnderlineStyles enumeration values..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FORMATINDEXINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to formatIndex member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FORMATRECORDDONOTSUPPORTTHISVERSION">
+			<summary>
+              Looks up a localized string similar to Format records don't support this version..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FSHRINKTOFITINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fShrinkToFit member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.FSXBUTTONINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to fsxButton member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.GermanLegalFanfold">
+			<summary>
+              Looks up a localized string similar to Fanfold Legal German.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.GermanStandardFanfold">
+			<summary>
+              Looks up a localized string similar to Fanfold Std German.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.GLOBALSIZEFAILED">
+			<summary>
+              Looks up a localized string similar to Couldn't obtain size of the memory stream..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.GRBITDIAGINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to grbitDiag member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.HALIGNMENTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to hAlignment member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.HORIZONTALALIGNMENTRANGE">
+			<summary>
+              Looks up a localized string similar to Horizontal Alignment value must be between 0 and 6..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ICOLUMN">
+			<summary>
+              Looks up a localized string similar to iColumn.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ICOLUMNRANGE">
+			<summary>
+              Looks up a localized string similar to The specified iColumn argument is either less than zero or greater than the maximum number of rows that the Excel file format supports..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ICVDIAGINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to icvDiag member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IMAGE1">
+			<summary>
+              Looks up a localized string similar to Image: Right column specified is either the same as or to the left of the left column specified!.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IMAGE2">
+			<summary>
+              Looks up a localized string similar to Image: Top row specified is either the same as or above the top row specified!.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IMAGETYPE">
+			<summary>
+              Looks up a localized string similar to imageType.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IMAGETYPEERROR">
+			<summary>
+              Looks up a localized string similar to imageType must either be MSOBLIPTYPE.msoblipEMF or MSOBLIPTYPE.msoblipPNG..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IMPLWRITETOBIFF">
+			<summary>
+              Looks up a localized string similar to TODO: Implement WriteToBiff method for Ahendstyles..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INDEX">
+			<summary>
+              Looks up a localized string similar to iIndex.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INDEXERROR">
+			<summary>
+              Looks up a localized string similar to The specified zero based collection index is either less than zero or greater than Count-1..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INDEXOUTSIDEOFBOUNDS">
+			<summary>
+              Looks up a localized string similar to Argument is outside the bounds of the collection..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INST">
+			<summary>
+              Looks up a localized string similar to inst.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INVALIDMARGINRECORD">
+			<summary>
+              Looks up a localized string similar to Invalid margin record identifier..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INVALIDMSOBLIPTYPE">
+			<summary>
+              Looks up a localized string similar to Invalid MSOBLIPTYPE specified in OBJImage.OBJImage(..) !.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INVALIDPAGERANGE">
+			<summary>
+              Looks up a localized string similar to Invalid pageRange specified..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.INVALIDSEEKORIGINVALUE">
+			<summary>
+              Looks up a localized string similar to Not an expected SeekOrigin Value!.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.InvalidURIError">
+			<summary>
+              Looks up a localized string similar to Invalid hyperlink URI.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.InviteEnvelope">
+			<summary>
+              Looks up a localized string similar to Envelope Invite.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IREADINGORDERINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to iReadingOrder member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IROW">
+			<summary>
+              Looks up a localized string similar to iRow.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IROWRANGE">
+			<summary>
+              Looks up a localized string similar to The specified iRow argument is either less than zero or greater than the maximum number of columns that the Excel file format supports..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.IsoB4">
+			<summary>
+              Looks up a localized string similar to ISO B4.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ItalyEnvelope">
+			<summary>
+              Looks up a localized string similar to Envelope Italy.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.JapanesePostcard">
+			<summary>
+              Looks up a localized string similar to Japanese Postcard.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.JapanesePostcardRotated">
+			<summary>
+              Looks up a localized string similar to Japanese Postcard Rotated.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Ledger">
+			<summary>
+              Looks up a localized string similar to Ledger.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LEFTBLSTYLEINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to leftblStyle member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LEFTBORDERCOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to leftBorderColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Legal">
+			<summary>
+              Looks up a localized string similar to Legal.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LegalExtra">
+			<summary>
+              Looks up a localized string similar to Legal Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Letter">
+			<summary>
+              Looks up a localized string similar to Letter.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LetterExtra">
+			<summary>
+              Looks up a localized string similar to Letter Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LetterExtraTransverse">
+			<summary>
+              Looks up a localized string similar to Letter Extra Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LetterPlus">
+			<summary>
+              Looks up a localized string similar to Letter Plus.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LetterSmall">
+			<summary>
+              Looks up a localized string similar to Letters Small.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.LetterTransverse">
+			<summary>
+              Looks up a localized string similar to Letter Transverse.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.MonarchEnvelope">
+			<summary>
+              Looks up a localized string similar to Envelope Monarch.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.MSOFBTOPT">
+			<summary>
+              Looks up a localized string similar to You must call make_msofbtOPT() before calling get_msofbtOPT()..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.MSOFBTOPTDATA">
+			<summary>
+              Looks up a localized string similar to Exception encountered writing out msofbtOPT data for a metafile on sheet [{0}]..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NAME">
+			<summary>
+              Looks up a localized string similar to Name.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NAMECANNOTBENULL">
+			<summary>
+              Looks up a localized string similar to Name value cannot be null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Note">
+			<summary>
+              Looks up a localized string similar to Note.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NOTIMPLEMENTEDBIFFCOLINFO">
+			<summary>
+              Looks up a localized string similar to COLINFO support for BIFF2 not yet implemented..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NULLDOCFILE">
+			<summary>
+              Looks up a localized string similar to The unmanaged doc file creation call returned a null pointer..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NULLILOCKBYTES">
+			<summary>
+              Looks up a localized string similar to The unmanaged lock bytes call returned a null ILockBytes..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Number10Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope 10.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Number11Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope 11.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Number12Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope 12.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Number14Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope 14.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Number9Envelope">
+			<summary>
+              Looks up a localized string similar to Envelope 9.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NUMBEROFCOLUMNSTOMERGE">
+			<summary>
+              Looks up a localized string similar to numberOfColumnsToMerge.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.NUMBEROFROWSTOMERGE">
+			<summary>
+              Looks up a localized string similar to numberOfRowsToMerge.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OBJECTISDISPOSED">
+			<summary>
+              Looks up a localized string similar to The object has been disposed..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OBJMETAFILE">
+			<summary>
+              Looks up a localized string similar to The specified OBJ_metafile in pm cannot be null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OLDPOSITION">
+			<summary>
+              Looks up a localized string similar to oldPosition.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OUTLINELEVEL">
+			<summary>
+              Looks up a localized string similar to outlineLevel.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OUTPUTSTREAMNOTWRITABLE">
+			<summary>
+              Looks up a localized string similar to The specified output stream must be writable..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.OWNERTABLE">
+			<summary>
+              Looks up a localized string similar to ownerTable.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.pagesPrompt">
+			<summary>
+              Looks up a localized string similar to {0} of {1}.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PARENTSHEET">
+			<summary>
+              Looks up a localized string similar to ParentSheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PARENTSHEETCANNOTBENULL">
+			<summary>
+              Looks up a localized string similar to The ParentSheet value cannot be specified as null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PARMMUSTBESAVETYPE">
+			<summary>
+              Looks up a localized string similar to The parameter must be the same type as the class or value type that implements this interface.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PersonalEnvelope">
+			<summary>
+              Looks up a localized string similar to Envelope Personal.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PID">
+			<summary>
+              Looks up a localized string similar to pid.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.PM">
+			<summary>
+              Looks up a localized string similar to pm.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ProtectedBy_Default">
+			<summary>
+              Looks up a localized string similar to ActiveReports.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Quarto">
+			<summary>
+              Looks up a localized string similar to Quarto.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVED">
+			<summary>
+              Looks up a localized string similar to reserved.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVED1">
+			<summary>
+              Looks up a localized string similar to reserved1.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVED3">
+			<summary>
+              Looks up a localized string similar to reserved3.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVEDDOESNOTFIX">
+			<summary>
+              Looks up a localized string similar to current reserved value does not fit into 5 bits..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVEDINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to reserved member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVEDOFFINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to reservedoff member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVEDVALUE">
+			<summary>
+              Looks up a localized string similar to reserved value must fit into 5 bits (0-31)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RESERVEDXINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to reservedx member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RIGHTBLSTYLEINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to rightblStyle member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.RIGHTBORDERCOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to rightBorderColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ROW">
+			<summary>
+              Looks up a localized string similar to row.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ROWFROM">
+			<summary>
+              Looks up a localized string similar to Row from.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ROWFROMRANGE">
+			<summary>
+              Looks up a localized string similar to The rowFrom argument must be less than the rowTo argument..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.ROWRANGE">
+			<summary>
+              Looks up a localized string similar to Row must be greater than or equal to zero..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SFORMAT">
+			<summary>
+              Looks up a localized string similar to sFormat.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SFORMATCANNOTBENULL">
+			<summary>
+              Looks up a localized string similar to Argument sFormat cannot be null..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SFORMATRANGE">
+			<summary>
+              Looks up a localized string similar to Format string too long. Must be less than 255 characters..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETCOLINFOERROR">
+			<summary>
+              Looks up a localized string similar to Error writing ColInfos records for sheet [{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETDRAWINGLINEERROR">
+			<summary>
+              Looks up a localized string similar to Error writing Master Header for drawings or lines for Sheet [{0}]..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETINDEX">
+			<summary>
+              Looks up a localized string similar to sheetIndex.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETINDEXERROR">
+			<summary>
+              Looks up a localized string similar to Error writing INDEX record for sheet [{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETLINEERROR">
+			<summary>
+              Looks up a localized string similar to Error writing a line for sheet [{0}] to stream..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETNAME">
+			<summary>
+              Looks up a localized string similar to sheetName.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETNAMENOTFOUND">
+			<summary>
+              Looks up a localized string similar to Sheet name not found..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETNOTFOUND">
+			<summary>
+              Looks up a localized string similar to Sheet name not found..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SHEETPAGEBREAKERROR">
+			<summary>
+              Looks up a localized string similar to Error writing page break records for sheet [{0}].
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SNAME">
+			<summary>
+              Looks up a localized string similar to sName.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.SPECIFYPAGEBREAKS">
+			<summary>
+              Looks up a localized string similar to Specify either BiffRecordID.VERTICALPAGEBREAKS or BiffRecordID.HORIZONTALPAGEBREAKS..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard10x11">
+			<summary>
+              Looks up a localized string similar to 10X11.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard10x14">
+			<summary>
+              Looks up a localized string similar to 10X14.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard11x17">
+			<summary>
+              Looks up a localized string similar to 11X17.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard12x11">
+			<summary>
+              Looks up a localized string similar to 12x11.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard15x11">
+			<summary>
+              Looks up a localized string similar to 15X11.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Standard9x11">
+			<summary>
+              Looks up a localized string similar to 9X11.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STARTLENGTH">
+			<summary>
+              Looks up a localized string similar to startlength.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STARTSTYLE">
+			<summary>
+              Looks up a localized string similar to startStyle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STARTWIDTH">
+			<summary>
+              Looks up a localized string similar to startwidth.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Statement">
+			<summary>
+              Looks up a localized string similar to Statement.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STGCREATEDOCFILEONILOCKBYTESFAILED">
+			<summary>
+              Looks up a localized string similar to StgCreateDocfileOnILockBytes caused a failure in unmanaged code..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STREAMNAMECANNOTBEEMPTY">
+			<summary>
+              Looks up a localized string similar to streamName cannot be empty..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STYLECONTENT">
+			<summary>
+              Looks up a localized string similar to styleContext.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.STYLEINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to style member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.Tabloid">
+			<summary>
+              Looks up a localized string similar to Tabloid.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TabloidExtra">
+			<summary>
+              Looks up a localized string similar to Tabloid Extra.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TEXTANGLE">
+			<summary>
+              Looks up a localized string similar to TextAngle.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TEXTANGLERANGE">
+			<summary>
+              Looks up a localized string similar to TextAngle value must be between 0 and 255..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TEXTROTATIONINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to textRotation member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.THESTRING">
+			<summary>
+              Looks up a localized string similar to theString.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TOOMANYMERGEAREAS">
+			<summary>
+              Looks up a localized string similar to Too many MergeAreas..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TOPBLSTYLEINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to topblStyle member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.TOPBORDERCOLORINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to topBorderColor member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.UNEXCEPTEDIMAGETYPE">
+			<summary>
+              Looks up a localized string similar to Unexpected ImageType encountered..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.UNEXPECTEDERROR">
+			<summary>
+              Looks up a localized string similar to Unexpected error creating Workbook Stream..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.UNEXPECTEDERRORBOFRECORD">
+			<summary>
+              Looks up a localized string similar to Unexpected error writing BOF record..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.UNEXPECTEDERRORWORKBOOKSTREAM">
+			<summary>
+              Looks up a localized string similar to Unexpected error creating Workbook Stream..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.UNKNOWNPROPERTYID">
+			<summary>
+              Looks up a localized string similar to Unknown property ID indicated..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.USStandardFanfold">
+			<summary>
+              Looks up a localized string similar to Fanfold US.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALIGNMENTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to vAlignment member returned incorrect value..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT12">
+			<summary>
+              Looks up a localized string similar to Value must fit into 12 bits (0-4095)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT14">
+			<summary>
+              Looks up a localized string similar to Value must fit into 14 bits (0-16383)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT1BYTE">
+			<summary>
+              Looks up a localized string similar to Value must fit into 1 byte..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT2">
+			<summary>
+              Looks up a localized string similar to Value must fit into 2 bits..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT3">
+			<summary>
+              Looks up a localized string similar to Value must fit into 3 bits (7dec or less)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT4">
+			<summary>
+              Looks up a localized string similar to Value must fit into 4 bits..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT6">
+			<summary>
+              Looks up a localized string similar to Value must fit into 6 bits..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIT7">
+			<summary>
+              Looks up a localized string similar to Value must fit into 7 bits (127dec or less)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VALUEMUSTFIX3">
+			<summary>
+              Looks up a localized string similar to Value must fit into 3 bits..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VER">
+			<summary>
+              Looks up a localized string similar to ver.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VERSIONNOTIMPLBIFFCELLBLANK">
+			<summary>
+              Looks up a localized string similar to BiffCellBlank does not support the specified version..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VERSIONNOTIMPLBIFFCELLLABEL">
+			<summary>
+              Looks up a localized string similar to BiffCellLabel.WriteToBiff(..)..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VERTALIGNMENT">
+			<summary>
+              Looks up a localized string similar to VertAlignment.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.VERTTICALALIGNMENTRANGE">
+			<summary>
+              Looks up a localized string similar to Vertical Alignment value must be between 0 and 3..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.WIDTH">
+			<summary>
+              Looks up a localized string similar to Width.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.WIDTHTOOLARGE">
+			<summary>
+              Looks up a localized string similar to Specified value too large..
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.AR.Resources.XFPARENTINCORRECTVALUE">
+			<summary>
+              Looks up a localized string similar to xfParent member returned incorrect value..
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport">
+			<summary>
+            Provides Excel Export functionality for ActiveReports for .NET.
+            </summary>
+			<remarks>
+            Any public static (Shared in Visual Basic) members of this type are safe for multithreaded operations. Any instance members are not guaranteed to be thread safe.
+            For example changing a property value in one thread while an Export method is running in a separate thread could yield unexpected results.
+            
+            <p><em>Optimizing your report for exporting to Excel:</em><br />
+            Since Excel is basically a table of rows and columns, and ActiveReports is a free form type output it may be necessary to “optimize?your ActiveReport for Excel exporting. 
+            When you want two controls to be in the same column when outputted to excel it is imperative that the two controls have *exactly* the same left value.  And it may also help to ensure that the font of the two controls is the same.  Attempting to make the height of the two controls similar will often times lead to a cleaner looking output in excel.  Similarly if you want two controls to be in the same row when outputted to Excel, you should make sure the two controls have exactly the same Top value, that their font is the same, and that their width is similar if not the same. 
+            Using RichText controls on your ActiveReports will often will not have good output in Excel.
+            Using the Page object's drawing methods to draw anything in the margin areas of the export will cause pagination problems.  If you draw items on the page, do not draw them in the margin area to keep the pagination accurate when printing excel exported output.
+            </p></remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String)">
+			<summary>
+            Exports the specified document to a .xls file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main .xls file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String,System.String)">
+			<summary>
+            Exports the specified page document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main .xls file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified page document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="stream">The Stream to write the Excel workbook to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="stream">The Stream to write the Excel workbook to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String)">
+			<summary>
+            Exports the specified document to a .xls file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String,System.String)">
+			<summary>
+            Exports the specified document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the Excel workbook to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to Excel.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the Excel workbook to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.AutoRowHeight">
+			<summary>
+            True if excel should set the height of the row based on the contents of that row.  Otherwise the XlsExport will calculate the height of the rows.  In some cases this may make the output look better inside excel.  However, a value of true may adversely effect pagination when printing from excel, as it will often cause excel to stretch the height of the page.
+            </summary>
+			<remarks>Normally this property would not be true when UseCellMerging is true.</remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.MinRowHeight">
+			<summary>
+            Sets or returns the minimum height (in inches) of an empty row that will be permitted in the output.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.MinColumnWidth">
+			<summary>
+            Sets or returns the minimum width (in inches) of an empty column that will be permitted in the output.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.FileFormat">
+			<summary>
+            Sets or returns which file format version the outputted file should support.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Pagination">
+			<summary>
+            Gets or sets the value indicates should pagination be used for resulted xls document or not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.OpenXmlStandard">
+			<summary>
+            Gets or sets the level of Open XML document conformance on exporting with Xlsx file format.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.RemoveVerticalSpace">
+			<summary>
+            Sets or returns a value that indicates whether completely empty vertical spacing will be removed from the output.  
+            </summary>
+			<remarks>
+            This may improve pagination if you wish to print the output from excel.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.UseCellMerging">
+			<summary>
+            Sets or returns whether cells should be merged together where applicable.
+            </summary>
+			<remarks>Since Excel95 does not support cell merging this property is not applicable when Version is set to Excel 95.</remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.MultiSheet">
+			<summary>
+            Sets or returns whether each page is to be exported to it's own sheet or not.  True indicates that each page in the ActiveReport Document will be exported to a separate sheet.
+            </summary>
+			<remarks>
+            Setting this value to true can often increase performance and output quality at the cost of memory consumption up to a certain number of pages.  The more complex the pages, and the more deviation between the page's layouts in a single document will lower the number of pages that should be exported to a single sheet. As mentioned, the complicity and deviation of layout between the pages drastically effects this number, but a guess would be greater than 30 pages would be suitable for MultiSheet=false.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.DisplayGridLines">
+			<summary>
+            Sets or returns whether grid lines in workbook are displayed.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.Security">
+			<summary>
+            Returns a <see cref="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity" /> object for initializing document security.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.PageSettings">
+			<summary>
+            Returns a <see cref="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsPageSettings" /> object for initializing Excel file print setting.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsExport.UseDefaultPalette">
+			<summary>
+            Sets or returns whether export document with Excel default palette.
+            </summary>
+			<remarks>
+            Setting this value to true, application will use the color which is in default palette and is closest to pre-defined custom color of control's forecolor and backcolor.
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsExportException">
+			<summary>
+            The exception that is thrown for general exceptions that occur in the ActiveReports.XlsExport assembly.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsPageSettings">
+			<summary>
+            Encapsulates the information necessary to provide Xls document print settings.
+            </summary>
+			<remarks>
+            If you want to use default AR document print settings, you should Reset the properties on ProperGrid or invoke Reset() method.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Section.XlsPageSettings.Reset">
+			<summary>
+            Reset the properties of XlsPageSettings class.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsPageSettings.Orientation">
+			<summary>
+            Gets or sets the print orientation of Excel sheet.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsPageSettings.PaperSize">
+			<summary>
+            Gets or sets the print paper size of Excel sheet.
+            </summary>
+			<remarks>
+            Reset this property to use default AR document print paper size.
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity">
+			<summary>
+            Encapsulates the information necessary to provide excel document security and encryption.
+            </summary>
+			<remarks>
+            If a WritePassword or a Password is supplied the Excel application will prompt for a write or open access password.
+            If a WritePassword or a Password is not supplied no password will be requested to open the document.
+            By correctly supplying the Password, the user will be able to open the document.
+            By correctly supplying the WritePassword, the user will be able to write the document.
+            If the read only recommended is set to true, the Excel application will prompt user whether to open document as read-only.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity.ProtectedBy">
+			<summary>
+            Gets or sets the User Name responsible to password protect the excel spreadsheet.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity.WritePassword">
+			<summary>
+            Gets or sets the write password of the Excel file.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity.Password">
+			<summary>
+            Gets or sets the password which can be entered to permit to open Excel document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Section.XlsSecurity.ReadOnlyRecommended">
+			<summary>
+            Gets or sets the value to indicate if the Excel file was saved as read only recommended.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTemplateGenerator.ExcelTemplateGenerator">
+			<summary>
+Allows to generate Excel templates from the data dynamics reports definition.
+</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTemplateGenerator.ExcelTemplateGenerator.GenerateTemplate(GrapeCity.ActiveReports.PageReport,System.IO.FileInfo)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Excel\ExcelTemplateGenerator.slashdoc" path="/Libraries/Types/Type[@name=&quot;ExcelTemplateGenerator&quot;]/Members/Member[@name=&quot;GenerateTemplate(GrapeCity.ActiveReports.ReportDefinition,System.IO.FileInfo)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTemplateGenerator.ExcelTemplateGenerator.GenerateTemplate(GrapeCity.ActiveReports.PageReport,System.IO.Stream)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Excel\ExcelTemplateGenerator.slashdoc" path="/Libraries/Types/Type[@name=&quot;ExcelTemplateGenerator&quot;]/Members/Member[@name=&quot;GenerateTemplate(GrapeCity.ActiveReports.ReportDefinition,System.IO.Stream)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTemplateGenerator.ExcelTemplateGenerator.GenerateTemplate(GrapeCity.ActiveReports.PageReport,System.IO.Stream,System.Uri,System.Boolean,System.Boolean)">
+			<summary>
+            Generates and saves the excel template from the specified report definition.
+            </summary>
+			<param name="definition">ReportDefinition to generate the template from.</param>
+			<param name="streamToSave">The Stream to save the template.</param>
+			<param name="saveUri">The Uri of the output stream</param>
+			<param name="useDefaultPalette"></param>
+			<param name="forceJpTemplate"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice">
+			<summary>
+Allows for the creation of an excel spreadsheet containing rendered data from a report.
+</summary>
+			<summary>
+            Render FPL through RDF.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Excel\ExcelTransformationDevice.slashdoc" path="/Libraries/Types/Type[@name=&quot;ExcelTransformationDevice&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Excel\ExcelTransformationDevice.slashdoc" path="/Libraries/Types/Type[@name=&quot;ExcelTransformationDevice&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice.GetSupportedSettings">
+			<summary>
+Gets the settings that are supported for rendering a report to Excel.
+</summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice.GetSupportedSettings(System.Boolean)">
+			<summary>
+Gets the settings that are supported for rendering a report to Excel.
+</summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.ExcelTransformationDevice.TemplateStream">
+			<summary>
+Gets or sets the template as a <see cref="T:System.IO.Stream" /> to use for rendering.
+</summary>
+			<remarks>The value of this property will override the Template setting if not null.</remarks>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Excel.Page.Settings">
+			<summary>
+            Contains the settings used for rendering reports to Excel.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Excel.Page.Settings.ApplySettings(System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Applies any settings passed in the NameValueCollection settings parameters.
+            </summary>
+			<param name="settings">A <see cref="T:System.Collections.Specialized.NameValueCollection" /> containing new settings.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.TemplatePropertyName">
+			<summary>
+            Specifies the full path and filename of a Template to use during the rendering process.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.ReadOnlyRecommendedPropertyName">
+			<summary>
+            Specifies the value of ReadOnlyRecommended file sharing flag for the saved Excel file.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.UseDefaultPalettePropertyName">
+			<summary>
+            Specifies the value of UseDefaultPalette
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.ProtectWorkbookPasswordPropertyName">
+			<summary>
+            Specifies the value of write-protection passwordfor the saved Excel file.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.Template">
+			<summary>
+            Gets or sets the path of the Template used during the rendering process.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.ReadOnlyRecommended">
+			<summary>
+            Gets or sets the value ReadOnlyRecommended file sharing flag for the saved Excel file.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.UseDefaultPalette">
+			<summary>
+            Sets or returns whether export document with Excel default palette.
+            </summary>
+			<remarks>
+            Setting this value to true, application will use the color which is in default palette and is closest to pre-defined custom color of control's forecolor and backcolor.
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.ProtectWorkbookPassword">
+			<summary>
+            Gets or sets the path of the ProtectWorkbookPassword used during the rendering process.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.PaperWidth">
+			<summary>
+            Gets or sets the width of the paper size that will be set for the output document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Excel.Page.Settings.PaperHeight">
+			<summary>
+            Gets or sets the height of the paper size that will be set for the output document.
+            </summary>
+		</member>
+	</members>
+</doc>

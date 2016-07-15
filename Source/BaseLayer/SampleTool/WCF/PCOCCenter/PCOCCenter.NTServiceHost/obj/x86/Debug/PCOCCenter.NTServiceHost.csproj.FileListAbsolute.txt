@@ -1,0 +1,24 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe.config
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.ProjectInstaller.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.exe
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe.config
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.ProjectInstaller.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.ProjectInstaller.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.pdb

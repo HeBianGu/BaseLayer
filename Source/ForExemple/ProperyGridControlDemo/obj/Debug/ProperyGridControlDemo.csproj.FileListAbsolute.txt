@@ -1,0 +1,11 @@
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\bin\Debug\ProperyGridControlDemo.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\bin\Debug\ProperyGridControlDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\bin\Debug\ProperyGridControlDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.exe.licenses
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.Form2.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\ProperyGridControlDemo\obj\Debug\ProperyGridControlDemo.csprojResolveAssemblyReference.cache

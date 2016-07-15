@@ -1,0 +1,2788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Document.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationArrow">
+			<summary>
+            Summary description for AnnotationArrow.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation">
+			<summary>
+            Summary description for Annotation.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Attach(System.Single,System.Single)">
+			<summary>
+            The method set the top left most coordinates for the annotation object.</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Refresh">
+			<summary>
+            The method refreshes the display of the annotation object.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Border">
+			<summary>
+            The Border property allows you to access the border object for the annotation object.
+            </summary>
+			<value>
+            The Border property allows you to access the border object for the annotation object.
+            </value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Width">
+			<summary>The Width is the width of the annotation object.</summary>
+			<value>The Width is the width of the annotation object.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Height">
+			<summary>The Height is the height of the annotation object.</summary>
+			<value>The Height is the height of the annotation object.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Color">
+			<summary>The color is used to fill the annotation object.</summary>
+			<value>The color is used to fill the annotation object.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Alpha">
+			<summary>
+            Controls the alpha channel of the background color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.X">
+			<summary>The X is the left most coordinate for the annotation object.</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Y">
+			<summary>The Y is the top most coordinate for the annotation object.</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Annotation.Bounds">
+			<summary>
+            The Bounds property is a rectangle that defines the bounds of the annotation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBaseText.Text">
+			<summary>The text of the AnnotationText Object.</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBaseText.Font">
+			<summary> Font of the text </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBaseText.TextColor">
+			<summary>Text color</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBaseText.Alignment">
+			<summary>The Horizontal alignment of the text in the annotation's bounds.</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBaseText.LineAligment">
+			<summary>The vertical alignment of the text in the annotation's bounds.</summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBalloon">
+			<summary>
+            Summary description for AnnotationBalloon.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationBalloon.Quadrant">
+			<summary>
+            Quadrant
+            Where does the tail go?
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCircle">
+			<summary>
+            Summary description for AnnotationCircle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationImage">
+			<summary>
+            Summary description for AnnotationImage.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationLine">
+			<summary>
+            Summary description for AnnotationLine
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationLine.Text">
+			<summary>The text of the AnnotationText Object.</summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationLine.TextAlignment">
+			<summary>The Horizontal alignment of the text in the annotation's bounds.</summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationRectangle">
+			<summary>
+            Summary description for AnnotationRectangle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.Border">
+			<summary>
+            Draws a border around a Annotations object.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.Border.Render(System.Drawing.Graphics,System.Drawing.PointF,System.Boolean)">
+			<summary>
+            This method draws the border around an Annotation's object.
+            </summary>
+			<param name="graphics" cref="T:System.Drawing.Graphics">The Graphics object used to paint.</param>
+			<param name="location">The left top most point that the border will be displayed.</param>
+			<param name="printing"></param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.Border.Color">
+			<summary>
+            The color is used to display the border.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.BorderCircle">
+			<summary>
+            Draws a border around an AnnotationCircle.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.BorderCircle.Render(System.Drawing.Graphics,System.Drawing.PointF,System.Boolean)">
+			<summary>
+            This method draws the border around an AnnotationCircle object.
+            </summary>
+			<param name="graphics">Indicates the cref="System.Drawing.Graphics" object used to paint.</param>
+			<param name="location">The left top most point that the border will be displayed.</param>
+			<param name="printing"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.BorderRectangle">
+			<summary>
+            Draws a border around an AnnotationRectangle.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.BorderRectangle.Render(System.Drawing.Graphics,System.Drawing.PointF,System.Boolean)">
+			<summary>
+            This method draws the border around an AnnotationRectangle object.
+            </summary>
+			<param name="graphics">Indicates the cref="System.Drawing.Graphics" object used to paint.</param>
+			<param name="location">The left top most point that the border will be displayed.</param>
+			<param name="printing"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.BorderConverter">
+			<summary>
+            BorderConverter
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection">
+			<summary>
+            This collection contains a collection of annotations.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.Add(GrapeCity.ActiveReports.Document.Section.Annotations.Annotation)">
+			<summary>
+            The Add method adds an annotation to the end of the collection.
+            </summary>
+			<param name="annotation">The annotation that is added to the end of the collection.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.Refresh(GrapeCity.ActiveReports.Document.Section.Annotations.Annotation)">
+			<summary>
+            This method forces an annotation to refresh its display.
+            </summary>
+			<param name="annotation">Is the annotation that will be refreshed.</param>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.AnnotationAdded">
+			<summary>
+            Fired, when annotation was just added.
+            For internal use. Subject of change without notice.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.AnnotationRemoved">
+			<summary>
+            Fired, when annotation was just removed.
+            For internal use. Subject of change without notice.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.CollectionCleared">
+			<summary>
+            Fired, when collection was cleared.
+            For internal use. Subject of change without notice.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Annotations.AnnotationCollection.Item(System.Int32)">
+			<value>gets or sets the element at the specified index.</value>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Annotations.ArrowDirection">
+			<summary>
+            ArrowDirection
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.CanvasItem">
+			<summary>
+            Summary description for CanvasItem.
+            
+            All canvas items coordinates are in inches
+            
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.LineItem">
+			<summary>
+            Summary description for Line.
+            
+            Line was changed to LineItem because we have a Line class in the DataDynamics.ActiveReports3 namespace 
+            which is also included in every single report's codebehind by default. 
+            
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.FillRect">
+			<summary>
+            Summary description for FillRect.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Rect">
+			<summary>
+            Summary description for Rect.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.IntersectClip">
+			<summary>
+            Summary description for IntersectClip.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Ellipse">
+			<summary>
+            Summary description for Ellipse.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RoundRect">
+			<summary>
+            Summary description for RoundRect.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ForeColor">
+			<summary>
+            Summary description for ForeColor.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.BackColor">
+			<summary>
+            Summary description for BackColor.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TextAngle">
+			<summary>
+            Summary description for TextAngle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ClipRect">
+			<summary>
+            Summary description for ClipRect.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ClipRect.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ClipRect.Read(System.IO.BinaryReader,GrapeCity.ActiveReports.Document.Section.CanvasType,System.Int16)">
+			<summary>
+            Read
+            </summary>
+			<param name="reader"></param>
+			<param name="type"></param>
+			<param name="fileVersion"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Align">
+			<summary>
+            Summary description for Align.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Align.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Align.Read(System.IO.BinaryReader,GrapeCity.ActiveReports.Document.Section.CanvasType,System.Int16)">
+			<summary>
+            Read
+            </summary>
+			<param name="reader"></param>
+			<param name="type"></param>
+			<param name="fileVersion"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RTL">
+			<summary>
+            Summary description for Right To Left.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.BackStyle">
+			<summary>
+            Summary description for BackStyle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.WordWrap">
+			<summary>
+            Summary description for WordWrap.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SelectFont">
+			<summary>
+            Summary description for SelectFont.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.VerticalText">
+			<summary>
+            Summary description for PenStyle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PenStyle">
+			<summary>
+            Summary description for PenStyle.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PenWidth">
+			<summary>
+            Summary description for PenWidth.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.BorderItem">
+			<summary>
+            Summary description for Border.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ResetContext">
+			<summary>
+            Summary description for ResetContext.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.AlignmentTypes">
+			<summary>
+            This AlignmentTypes Enum specifies how text will be aligned in a table cell.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.EvaluationStart">
+			<summary>
+            Summary description for EvaluationStart.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.EvaluationStart.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.EvaluationEnd">
+			<summary>
+            Summary description for EvaluationStart.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.EvaluationEnd.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SetCharacterSpacing">
+			<summary>
+            RS: CR 23121 - SetCharacterSpacing canvas item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SetLineSpacing">
+			<summary>
+            RS: CR 23121 - SetLineHeight canvas item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SetPadding">
+			<summary>
+            RS: CR 23121 - SetLineHeight canvas item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TextRenderHintItem">
+			<summary>
+            Summary description for Align.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TextRenderHintItem.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TextRenderHintItem.ReadContents(System.IO.BinaryReader)">
+			<summary>
+            Reads the item contents from stream
+            </summary>
+			<param name="reader"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TextRenderHintItem.Hint">
+			<summary>
+            Gets the hint.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.WrapModeItem">
+			<summary>
+            Represents text wrap mode
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.WrapModeItem.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.WrapModeItem.ReadContents(System.IO.BinaryReader)">
+			<summary>
+            Reads the item contents from stream
+            </summary>
+			<param name="reader"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.WrapModeItem.Mode">
+			<summary>
+            Gets the hint.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.WrapModeItem.Kinsoku">
+			<summary>
+            Gets true if Kinsoky word breaking rules are enabled
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TextInfoItem">
+			<summary>
+            Used for TextBox control while exporting report to Excel.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TextInfoItem.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TextInfoItem.Create(System.String,System.Object,System.Globalization.CultureInfo,System.Globalization.CultureInfo)">
+			<summary>
+            This method is for internal use only.
+            Generate the TextInfo when exporting.
+            </summary>
+			<param name="outputFormat"></param>
+			<param name="value"></param>
+			<param name="culture"></param>
+			<param name="currencyCulture"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TextInfoItem.ReadSafe(GrapeCity.ActiveReports.Document.Section.DrawTextLink,System.Int16)">
+			<summary>
+            Reads the TextInfo item saved in AR6
+            </summary>
+			<param name="textOut"></param>
+			<param name="ver"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TextInfoItem.OutputFormat">
+			<summary>
+            OutputFormat
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TextInfoItem.Value">
+			<summary>
+            Value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TextInfoItem.CultureId">
+			<summary>
+            CultureName
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TextInfoItem.CurrencyCultureId">
+			<summary>
+            CurrencyCultureName
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ControlInfo">
+			<summary>
+            Summary description for ControlInfo.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ControlInfo.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ControlInfo.ControlType">
+			<summary>
+            ControlType
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ControlInfo.Name">
+			<summary>
+            Name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ControlInfo.Bounds">
+			<summary>
+            Bounds
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ControlInfoEnd.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SectionInfoEnd">
+			<summary>
+            Summary description for SectionInfoEnd.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.SectionInfoEnd.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SectionInfo">
+			<summary>
+            Summary description for SectionInfo.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.SectionInfo.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.SectionInfo.SectionType">
+			<summary>
+            SectionType
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.SectionInfo.Name">
+			<summary>
+            SectionName
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RawImageResourceData">
+			<summary>
+            Container for RDF document images
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.Data">
+			<summary>
+            Either byte[], String or null. Used to instantiate actual Image object.
+            null - invalid value, which will be set if persistenceType is -1.
+            which, in turn means of an broken RDF.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.ToBytes">
+			<summary>
+            Returns content of the object in the RDF format.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.CreateImage">
+			<summary>
+            Creates new image based on resource data
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.Write(System.IO.BinaryWriter)">
+			<summary>
+            Writes content in the RDF format.
+            </summary>
+			<param name="writer"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.FromStream(System.IO.BinaryReader)">
+			<summary>
+            Reads data in RDF format, creates new instance of RIRD with it.
+            </summary>
+			<param name="reader"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.FromImage(System.Drawing.Image)">
+			<summary>
+            Creates raw view from an image.
+            </summary>
+			<param name="image"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RawImageResourceData.IsMetafile">
+			<summary>
+            Gets true if underlying image is metafile
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ResourcedCanvasItem">
+			<summary>
+            Summary description for ResourcedCanvasItem.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ResourcedCanvasItem.GetImage">
+			<summary>
+            Gets image from resource pool. Call Dispose after using the image!
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ResourcedCanvasItem.GetBinaryData(GrapeCity.ActiveReports.Document.Section.RawImageResourceData@,System.Int32@)">
+			<summary>
+            Gets the image binary stream
+            </summary>
+			<param name="data">Image data</param>
+			<param name="innerKey">Inner unique resource key</param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ILinkItem">
+			<summary>
+            Common interface of link items
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.LinkItem">
+			<summary>
+            Summary description for LinkItem.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.EnhMeta">
+			<summary>
+            Summary description for EnhMeta.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.EnhMetaLink">
+			<summary>
+            Summary description for EnhMetaLink.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.JPEGImage">
+			<summary>
+            Summary description for JPEGImage.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.JPEGLink">
+			<summary>
+            Summary description for JPEGLink.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PngImage">
+			<summary>
+            Summary description for PINGImage.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PngLink">
+			<summary>
+            Summary description for JPEGLink.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Table">
+			<summary>
+            The Table CanvasItems contains an arrayList of TableRow Object which 
+            contain an array list of TableCell Objects which contains an array list 
+            of canvasItems.
+            
+            This class saves, load, and renders a table 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Table.ToString">
+			<summary>
+            Summary description for ToString.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Table.Rows">
+			<summary>
+            The Rows Property give you access to the rows of a the table control.
+            </summary>
+			<returns>TableRow</returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Table.Attributes">
+			<summary>
+            Attributes
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.DrawTextLink">
+			<summary>
+            Summary description for DrawTextLink.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.DrawText">
+			<summary>
+            Summary description for DrawText.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.DrawText.PageOffset">
+			<summary>
+            PageOffset
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.DrawText.Text">
+			<summary>
+            Text
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.DrawText2">
+			<summary>
+            Summary description for DrawText2.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.DrawText2.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.DrawText2.PageOffset">
+			<summary>
+            PageOffset
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.DrawText2.Text">
+			<summary>
+            Text
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TextOut">
+			<summary>
+            Summary description for TextOut.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredDocument">
+			<summary>
+             Provides SectionDocument filtering 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredDocument.Pages">
+			<summary>
+            Get pages.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredDocument.PagesCount">
+			<summary>
+            Get pages count.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage">
+			<summary>
+            Provides Page surrogate for exports 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.PutCopyright(System.Boolean)">
+			<summary>
+            Copyright - sets copyright flags for the evaluation message
+            </summary>
+			<param name="pro">Professional edition flag</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.PageIdentifier">
+			<summary>
+            The owner page.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.CanvasItems">
+			<summary>
+            CanvasItems
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Fonts">
+			<summary>
+            Fonts
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.EvaluationBounds">
+			<summary>
+            EvaluationBounds
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.EvaluationMessage">
+			<summary>
+            EvaluationMessage
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.IsEval">
+			<summary>
+            IsEval
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Bookmarks">
+			<summary>
+            Bookmarks
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Margins">
+			<summary>
+            Margins
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Width">
+			<summary>
+            Width
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Height">
+			<summary>
+            Height
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Units">
+			<summary>
+            Units
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Orientation">
+			<summary>
+            Orientation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Font">
+			<summary>
+            Font
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredPage.Size">
+			<summary>
+            Returns the size of the page in *inches*.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Document.Filters.FilteredDocumentFactory">
+			<summary>
+            Factory for ISectionDocumentExportSurrogate and IPageExportSurrogate
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Document.Filters.FilteredDocumentFactory.FilterByPageRange(GrapeCity.ActiveReports.Document.Section.Document.Filters.IFilteredDocument,System.String,System.Collections.Generic.IDictionary{System.Int32,System.Int32})">
+			<summary>
+            Get filtered document.
+            </summary>
+			<param name="document"></param>
+			<param name="range"></param>
+			<param name="pagesMap">The map to fill with the pages map which point the source page number to the page index in the filtered collection.</param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Filters.IdentityFilter">
+			<summary>
+            Identity transform SectionDocument filter. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Filters.ISectionDocumentFilter">
+			<summary>
+            An interface representing a filter for SectionDocument. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Filters.MetafileReplaceFilterFactory">
+			<summary>
+            Metafile replacing filter. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Filters.PageFilter">
+			<summary>
+            Delegate per-page filter. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Bookmark">
+			<summary>
+            Represents a Bookmark.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Bookmark.Label">
+			<summary>
+            Represents the name of the Bokmark.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Bookmark.PageNumber">
+			<summary>
+            Page number in the Document's pages collection in which this bookmark is contained.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Bookmark.Offset">
+			<summary>
+            OffSet from the top of Page where the bookmark resides on the Page object.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.BookmarksCollection">
+			<summary>
+            BookMark Coillection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Dispose">
+			<summary>
+            Release resources used by BookMarksCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.GenerateBookmarks">
+			<summary>
+            Summary description for GenerateBookmarks.
+            </summary>
+			<remarks>
+            For internal use only
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Contains(GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Determines whether a Page element is in the BookMarksCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.CopyTo(GrapeCity.ActiveReports.Document.Section.Bookmark[],System.Int32)">
+			<summary>
+            Copies an array of BookMark objects to BookMarksCollection from the specified index.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.IndexOf(GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Returns the zero-based index of the first occurrence of the BookMark object in the BookMarksCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Add(GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Adds a BookMark object to the end of the BookMarksCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Insert(System.Int32,GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Inserts a BookMark object into the BookMarksCollection at the specified index.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Remove(GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Removes the first occurrence of BookMark object from the BookMarksCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Clear">
+			<summary>
+            Removes all the BookMark objects from the BookMarksCollection.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.CurrentBookmark">
+			<summary>
+            Return the index of currently active or selected BookMark from the BookMarksCollection.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.BookmarksCollection.Item(System.Int32)">
+			<summary>
+            Returns a Page object at specified index in the BookMarksCollection.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Units">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;146&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.Units.Centimeters">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;146&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.Units.Inches">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;149&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.Units.Pixels">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;150&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.Units.Document">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;148&quot;]/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.BackgroundStyle">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;123&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.BackgroundStyle.Transparent">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;124&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.BackgroundStyle.Opaque">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;125&quot;]/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PageOrientation">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;132&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PageOrientation.Default">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;133&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PageOrientation.Portrait">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;135&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PageOrientation.Landscape">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;134&quot;]/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PenStyles">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;136&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.Transparent">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;142&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.Solid">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;141&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.Dash">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;137&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.Dot">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;140&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.DashDot">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;138&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.PenStyles.DashDotDot">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;139&quot;]/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ControlType">
+			<summary>
+            Specifies control type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SectionType">
+			<summary>
+            Specifies report section type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.FontsCollection">
+			<summary>
+            Summary description for Font Collection.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Margins.Left">
+			<summary>
+            Left
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Margins.Top">
+			<summary>
+            Top
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Margins.Right">
+			<summary>
+            Right
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Margins.Bottom">
+			<summary>
+            Bottom
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.PaddingEx">
+			<summary>
+            Padding class
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.PaddingEx.Empty">
+			<summary>
+            DDPadding Empty Structure
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.All">
+			<summary>
+            Gets or sets padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Bottom">
+			<summary>
+            Gets or sets bottom padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Left">
+			<summary>
+            Gets or sets left padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Right">
+			<summary>
+            Gets or sets right padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Top">
+			<summary>
+            Gets or sets top padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Horizontal">
+			<summary>
+            Gets horizontal padding property
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Vertical">
+			<summary>
+            Gets versical padding property
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.PaddingEx.Size">
+			<summary>
+            Gets size
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Page">
+			<summary>
+            Summary description for Page.
+            
+            Internally all page dimension are kept in inches.
+            
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.AddBookmark(GrapeCity.ActiveReports.Document.Section.Bookmark)">
+			<summary>
+            Summary description for AddBookmark.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Save(System.IO.BinaryWriter,System.Int16,System.Collections.Hashtable)">
+			<summary>
+            Save Method
+            </summary>
+			<param name="writer"></param>
+			<param name="fileVersion"></param>
+			<param name="savedResources"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Load(System.IO.BinaryReader,System.Int16)">
+			<summary>
+            Summary description for Load Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(GrapeCity.ActiveReports.Document.Section.RenderContext)">
+			<summary>
+            Summary description for Draw Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.AddBookmark(System.String,System.Single)">
+			<summary>
+            Summary description for AddBookmark.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.ToString">
+			<summary>
+            ToString
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Overlay(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Summary description for Overlay Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.MeasureText(System.String)">
+			<summary>
+            Measures the text string with the currently selected font.
+            </summary>
+			<param name="strText">The text string to measure.</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.MeasureText(System.String,System.Drawing.Font)">
+			<summary>
+            Measures the text string.
+            </summary>
+			<param name="strText">The text to measure.</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.MeasureParagraphHeight(System.String,System.Single)">
+			<summary>
+             Measures the height of the specified text if rendered using the current page settings with the specified width.
+            </summary>
+			<param name="strText"></param>
+			<param name="width"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.MeasureParagraphHeight(System.String,System.Single,System.Drawing.Font,System.Drawing.StringFormat)">
+			<summary>
+             Measures the height of the specified text if rendered using the current page settings with the specified width.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.WriteTextInfo(GrapeCity.ActiveReports.Document.Section.TextInfoItem)">
+			<summary>
+            For Internal use only
+            
+            Used in engine for putting in TextInfo
+            </summary>
+			<param name="textInfo"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.ControlInfoBegin(GrapeCity.ActiveReports.Document.Section.ControlType,System.String,System.Drawing.RectangleF)">
+			<summary>
+            For Internal use only
+            
+            Used in engine for putting in control information
+            </summary>
+			<param name="controlType"></param>
+			<param name="controlName"></param>
+			<param name="bounds"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.ControlInfoEnd">
+			<summary>
+            For Internal use only
+            
+            Used in engine for putting in control information
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.SectionInfoBegin(GrapeCity.ActiveReports.Document.Section.SectionType,System.String)">
+			<summary>
+            For Internal use only
+            
+            Used in engine for putting in control information
+            </summary>
+			<param name="sectionType"></param>
+			<param name="name"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.SectionInfoEnd">
+			<summary>
+            For Internal use only
+            
+            Used in engine for putting in control information
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.PutCopyright(System.Boolean)">
+			<summary>
+            Copyright - sets copyright flags for the evaluation message
+            </summary>
+			<param name="pro">Professional edition flag</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.ClearCanvasItems">
+			<summary>
+            Clear
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Clear">
+			<summary>
+            Clear
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Save(System.String)">
+			<summary>
+            Summary description for Save Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Save(System.IO.Stream)">
+			<summary>
+            Summary description for Save Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Load(System.String)">
+			<summary>
+            Load
+            </summary>
+			<param name="strFileName"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Load(System.IO.Stream)">
+			<summary>
+            Load
+            </summary>
+			<param name="stm"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Text.TextRenderingHint,System.Drawing.SizeF,System.Boolean,GrapeCity.ActiveReports.Document.Section.Page.DrawOptions)">
+			<summary>
+            Summary description for Draw Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.ConvertImageToPng(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            For internal use only 
+            Converts meta/tiff canvas items to png items
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(System.Drawing.Graphics,System.Drawing.RectangleF)">
+			<summary>
+            Summary description for Draw Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.Single,System.Single)">
+			<summary>
+            Summary description for Draw Method.  This method is used by the TiffExport; for internal use only.
+            </summary>
+			<param name="graphics"></param>
+			<param name="bounds"></param>
+			<param name="scaleFactorX"></param>
+			<param name="scaleFactorY"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.Single,System.Single,System.Boolean)">
+			<summary>
+            This draw method is used by the printing sample that prints multiple pages on one printed page.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.Draw(System.Drawing.Graphics,System.Drawing.RectangleF,System.Drawing.Text.TextRenderingHint,System.Single,System.Single,GrapeCity.ActiveReports.Document.Section.Page.DrawOptions)">
+			<summary>
+            Summary description for Draw Method.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Page.DrawEvaluationTextLink(System.String,System.String,System.Drawing.RectangleF)">
+			<summary>
+            Draws evaluation text
+            </summary>
+			<remarks>
+            For internal use only
+            </remarks>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Annotations">
+			<summary>
+            Annotations. 
+            Setter is obsolete and does nothing.
+            Please, use AnnotationCollection's methods to modify it.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Orientation">
+			<summary>
+            Orientation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Size">
+			<summary>
+            Returns the size of the page in *inches*.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Margins">
+			<summary>
+            Margins
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Compress">
+			<summary>
+            Compress
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Width">
+			<summary>
+            Summary description for Width Property.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Height">
+			<summary>
+            Summary description for Height Property.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.CanvasItems">
+			<summary>
+            Gets readonly collection of canvas items
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Bookmarks">
+			<summary>
+            This is necessary to be public for HtmlExport's use.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.WrapMode">
+			<summary>
+            Gets or sets the wrap mode for rendering text.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Page.Identifier">
+			<summary>
+            Gets unique page identifier (used in PagesCollection to track swapped out pages)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PageCell">
+			<summary>
+            Summary description for PageCell.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ITableCell.Clone">
+			<summary>
+            Clone - make a deep copy
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ITableCell.Visible">
+			<summary>
+            This cell will be ignored in the layout calculations
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PageCell.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PageCell.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PageCell.SplitHorizontally(System.Int32)">
+			<summary>
+            SplitHorizontally
+            </summary>
+			<param name="splitColumnIntoColumns"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PageCell.SplitVertically(System.Int32)">
+			<summary>
+            SplitVertically
+            </summary>
+			<param name="splitRowIntoRows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PageCell.Delete">
+			<summary>
+            Delete
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Page">
+			<summary>
+            Text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Bounds">
+			<summary>
+            Bounds
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Align">
+			<summary>
+            Align
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.VAlign">
+			<summary>
+            VAlign
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.ColSpan">
+			<summary>
+            ColSpan
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.RowSpan">
+			<summary>
+            RowSpan
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Padding">
+			<summary>
+            Padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Width">
+			<summary>
+            Width
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Height">
+			<summary>
+            Height
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.Attributes">
+			<summary>
+            Attributes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PageCell.TagName">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PagesCollection">
+			<summary>
+            Contains a collection of Page objects.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Dispose">
+			<summary>
+            Disposes Page objects from PagesCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Dispose(System.Boolean)">
+			<summary>
+            Disposing
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.GetIdentifierByIndexInternal(System.Int32)">
+			<summary>
+            For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.GetPageByIdentifierInternal(System.Guid)">
+			<summary>
+            For internal use only.
+            </summary>
+			<param name="guid"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Clear">
+			<summary>
+            Removes all the Page objects from the PagesCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Contains(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Determines whether a Page element is in the PagesCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.IndexOf(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Returns the zero-based index of the first occurrence of the Page object in the PagesCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Add(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Adds a Page object to the end of the PagesCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.AddRange(GrapeCity.ActiveReports.Document.Section.Page[])">
+			<summary>
+            Overloaded: Adds the elements of an array of Pages to the end of the PagesCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.AddRange(GrapeCity.ActiveReports.Document.Section.PagesCollection)">
+			<summary>
+            Overloaded: Adds the elements of PagesCollection to the end of the PagesCollection.
+            </summary>
+			<param name="pages"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Insert(System.Int32,GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Inserts a Page element into the PagesCollection at the specified index. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.PagesCollection)">
+			<summary>
+            Overloaded: Inserts the elements from PageCollections objects into the PagesCollection at the specified index. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.Page[])">
+			<summary>
+            Overloaded: Inserts the elements from an array of Page objects into the PagesCollection at the specified index. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.InsertNew(System.Int32)">
+			<summary>
+            Inserts a new Page element into the PagesCollection at the specified index. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Remove(GrapeCity.ActiveReports.Document.Section.Page)">
+			<summary>
+            Removes the first occurrence of Page object from the PagesCollection. 
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.GetRange(System.Int32,System.Int32)">
+			<summary>
+            Returns the count of Page objects in a Pagescollection starting at the specified index.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.Clone">
+			<summary>
+            Creates a shallow copy of the PagesCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.CopyTo(GrapeCity.ActiveReports.Document.Section.Page[],System.Int32)">
+			<summary>
+            Copies an array of Page objects to PagesCollection from the specified index.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.PagesCollection.InternalPurgeImageResources">
+			<summary>
+            For internal use only.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.Section.PagesCollection.Changed">
+			<summary>
+            For Internal Use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PagesCollection.Fonts">
+			<summary>
+            Summary description for Fonts Property.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.PagesCollection.Item(System.Int32)">
+			<summary>
+            Returns a Page object at specified index in the PagesCollection.
+            </summary>
+			<param name="index"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ChangedEventHandler">
+			<summary>
+            For Internal Use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.PageTable">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RenderContext">
+			<summary>
+            Summary description for RenderContext.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RenderContext.WordWrap">
+			<summary>
+            Backward compatible implementation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RenderContext.WrapMode">
+			<summary>
+            Gets a value indicating whether [word wrap] is on.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RenderContext.EnableKinsoku">
+			<summary>
+            Gets or sets a value indicating whether kinsoku word breaking is enabled.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.CompareInfo">
+			<summary>
+            CompareInfo is for internal use only
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.StateChangedHandler">
+			<summary>
+            Summary description for Document Events.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.SectionDocument">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;1&quot;]/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.Dispose">
+			<summary>
+            If you call dispose on this level that means that you are
+            not suppose to use anything that is contained below this 
+            level.  That means no pages, no fonts, etc.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.Dispose(System.Boolean)">
+			<summary>
+            Dispose implementation
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.ResetPrinter">
+			<summary>
+            Resets the printer properties
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.ClearFindTextSelection">
+			<summary>
+            ClearFindTextSelection
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.Find(System.String,GrapeCity.ActiveReports.Document.FindOptions,System.Int32@,System.Single@)">
+			<summary>
+            Summary description for SearchText.
+            </summary>
+			<param name="searchString">The string you are searching for</param>
+			<param name="currentIndex">The page's collection zero based index</param>
+			<param name="options">which direction you are searching</param>
+			<param name="currentOffset">The current offset into the text string</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.CreatePage">
+			<summary>
+            For internal use only. Creates the document page which will require less efforts to merge into document.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.CopyToClipboard(System.Int32,System.Int32)">
+			<summary>
+            Export the page(s) to Text and Rtf data, and copy it to clipboard.
+            </summary>
+			<param name="firstPageIndex">The zero-based starting page index.</param>
+			<param name="count">The number of pages copy to clipboard.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.Load(System.String)">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;6&quot;]/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.SectionDocument.RaiseInProgressChanged(GrapeCity.ActiveReports.Document.Section.State)">
+			<summary>
+            For internal use only
+            </summary>
+			<param name="state"></param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.CacheToDiskLocation">
+			<summary>
+            CacheToDiskLocation
+            
+            Specifies location of CacheToDisk files - can be physical path or "IsolatedStorage" to use IsolatedStorage.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.CacheToDisk">
+			<summary>
+            CacheToDisk
+            
+            This make the pages collection use a temp file for the canvas item streams
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.Bookmarks">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;2&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.Pages">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;11&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.Name">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;10&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.Password">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;12&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.Printer">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;122&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.LoadUrl">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;9&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.InProgress">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;5&quot;]/*" />
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.SectionDocument.SearchResultChanged">
+			<summary>
+            For internal use only - way to change in future versions
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.SectionDocument.DownloadError">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;120&quot;]/*" />
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Document.SectionDocument.LoadCompleted">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;8&quot;]/*" />
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.SectionDocument.PrintOptions">
+			<summary>
+            Print options
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.StateChangedArgs">
+			<summary>
+            Document.StateChanged event arguments
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.IDocumentExport">
+			<summary>	
+            Provides a common interface for all the export filters.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Html.IOutputHtml">
+			<summary>
+            Summary description for IHandleHtmlOutput.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Html.IOutputHtml.OutputHtmlData(GrapeCity.ActiveReports.Export.Html.HtmlOutputInfoArgs)">
+			<summary>
+            OutputHtmlData will be called by the HtmlExport class to output data.
+            </summary>
+			<param name="info">
+            Information about the output
+            </param>
+			<returns>
+            The implementation of OutputHtmlData should use the data passed in the info argument and store it as the implentator requires.  
+            The return value should be a "file name" that the calling HtmlExport class can use to place links in the main HTML page to the data.
+            For example, as an HTML page is being created and an image is encountered that will be outputed as an HTML <em>img</em> the HtmlExport object will call this method to provide the data to the implentor, and the return value from OutputHtmlData (i.e. the filename) will be used as the <em>src</em> attribute's value.
+            When the HTML page is ready, OutputHtmlData will be called again to pass the actual HTML page's data, in this case the filename returned by the OutputHtmlData implementation will not be used.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Html.IOutputHtml.Finish">
+			<summary>
+            Called by the HtmlExport to indicate that the export of the current document is complete.  This can be used by an implementor to flush any remaining output, or to write out a frame set page for the previously exported document.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Html.HtmlOutputInfoArgs">
+			<summary>
+            Used as an argument to the IOutputHtml interface's OutputHtmlData function.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Html.HtmlOutputInfoArgs.OutputKind">
+			<summary>
+            Returns the kind of output data contained in the OutputStream property.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Html.HtmlOutputInfoArgs.OutputStream">
+			<summary>
+            The actual data that is being outputted.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind">
+			<summary>
+            The different possible kinds of output from HTML.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind.ImagePng">
+			<summary>
+            The output is a PNG image.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind.ImageJpg">
+			<summary>
+            The output is a JPG image.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind.HtmlPage">
+			<summary>
+            The output is the HTML page.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind.BookmarksHtml">
+			<summary>
+            The output is an HTML page containing a list of bookmarks for the main HTML page(s).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Html.HtmlOutputKind.FramesetHtml">
+			<summary>
+            The output is an html page containing a Frameset declaration for a TOC page or navigation page if TOC not availalbe, and the "target" document pages on the right.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ActiveReportPrintControllerWithStatusDialog">
+			<summary>
+            Summary description for ActiveReportPrintControllerWithStatusDialog.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ActiveReportPrintControllerWithStatusDialog.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)">
+			<summary>
+            OnStartPrint
+            </summary>
+			<param name="prnDoc"></param>
+			<param name="ppea"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ActiveReportPrintControllerWithStatusDialog.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)">
+			<summary>
+            OnStartPage
+            </summary>
+			<param name="prnDoc"></param>
+			<param name="ppea"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ActiveReportPrintControllerWithStatusDialog.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)">
+			<summary>
+            OnEndPage
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ActiveReportPrintControllerWithStatusDialog.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)">
+			<summary>
+            OnEndPrint
+            </summary>
+			<param name="prnDoc"></param>
+			<param name="ppea"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.FindResult">
+			<summary>
+            FindResult
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RdfFormat">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;143&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.RdfFormat.AR20">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;144&quot;]/*" />
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.RdfFormat.ARNet">
+			<!-- Failed to insert some or all of included XML -->
+			<include file="XMLDocumentation/Viewer.xml" path="doc/members/member[@value=&quot;145&quot;]/*" />
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TextRenderHint">
+			<summary>
+            Hint options for TextRenderHint canvas item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.WrapMode">
+			<summary>
+            Specifies whether the text is written from left to right or right to left.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.WrapMode.NoWrap">
+			<summary>
+            No text wrap.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.WrapMode.WordWrap">
+			<summary>
+            Wrap by word boundaries 
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.WrapMode.CharWrap">
+			<summary>
+            Per-character wrapping mode.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.BorderLineStyle">
+			<summary>
+            Possible border styles.
+             </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RText">
+			<summary>
+            Summary description for RText.
+            
+            Limitations: 
+            - Right to left word ordering for BIDI not supported, but right to left text is
+            - Tab characters are ignored unless alignment=left
+            </summary>
+			<summary>
+            ShrinkToFit algorithm part
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.SetSelectionColors(System.Drawing.Color,System.Drawing.Color)">
+			<summary>
+            Sets selection painting colors
+            </summary>
+			<param name="backColor"></param>
+			<param name="foreColor"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.GetLastLinesIndexes">
+			<summary>		
+            Returns an array of indexes of last paragraphs lines. 
+            Used to define lines which should not be justified.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.GetLogicalLines(System.Int32)">
+			<summary>		
+            Returns an array of lines that are "logically" together.
+            GetLines() splits the entire text based on width.
+            GetLines() &gt;= GetLogicalLines()
+            </summary>
+			<param name="clipLineCutoff">line number cut off(iteration starts from this line)</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.FormatTextShrinkToFit(GrapeCity.ActiveReports.Document.Section.GraphicsCache,System.Drawing.Font,System.Single,System.Single)">
+			<summary>
+            FormatText and returns updated font.
+            
+            Uses textruns to go through m_text and creates LineDesc with ShrinkToFit algorithm
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.FormatText(GrapeCity.ActiveReports.Document.Section.GraphicsCache,System.Single)">
+			<summary>
+            FormatText
+            
+            Uses textruns to go through m_text and creates LineDesc
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.RenderWithGraphics(System.Drawing.Graphics,System.Drawing.RectangleF)">
+			<summary>
+            Renders text 
+            </summary>
+			<param name="g"></param>
+			<param name="rect">rectangle that the text has to be rendered on the canvas or design surface.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.Render(GrapeCity.ActiveReports.Document.Section.GraphicsCache,System.Drawing.RectangleF)">
+			<summary>
+            Renders Lines and pieces that contains text only.
+            This method is used to render
+            	Label, Textbox, CheckBox, RichtextBox at run time.
+            	Label, Textbox, CheckBox, at design time.
+            </summary>
+			<param name="cache">Cache that contains the graphics object used to render.</param>
+			<param name="outRect">rectangle that the text has to be rendered on the canvas or design surface.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.NormalizeLineFeeds(System.String)">
+			<summary>
+            Normalizes line-feed characters to unified presentation with \n as line delimiter
+            </summary>
+			<param name="inputString"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RText.IsLastLineInParagraph(System.Int32)">
+			<summary>
+            Returns true is the line at index "line" is the lasst line in the paragraph.
+            Done only for justified alignment and lineCount &gt; 1
+            </summary>
+			<param name="line">CurrentLine index that is being processed</param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RText.CharacterSpacing">
+			<summary>
+            Determines the distance beetween two characters in the string. Applied only when UseCharacterSpacing is true.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RText.LineSpacing">
+			<summary>
+             Determines the spacing in inches between text lines		
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RText.SelectionRange">
+			<summary>
+            Represents text selection range
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RText.TextPiece">
+			<summary>
+            Describes text chunk within a single line
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.SyncImage">
+			<summary>
+            Image wrapped to provide synchronize concurrent access to Image class
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.SyncImage.Image">
+			<summary>
+            Gets the image
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.UserPreferences">
+			<summary>
+            UserPreference.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.UserPreferences.UseHyperLinkSettings">
+			<summary>
+            If True, these settings will be applied to links. Otherwise, each link will be displayed according to their own settings.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Border">
+			<summary>
+            Summary description for Border.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.GetBorderThickness(GrapeCity.ActiveReports.BorderLineStyle)">
+			<summary>
+            For internal use only
+            </summary>
+			<param name="borderLineStyle"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Read(System.IO.BinaryReader,System.Int16)">
+			<summary>
+            Read
+            </summary>
+			<param name="reader"></param>
+			<param name="fileVersion"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Write(System.IO.BinaryWriter,System.Int16)">
+			<summary>
+            Write
+            </summary>
+			<param name="writer"></param>
+			<param name="fileVersion"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.ReadXml(System.Xml.XmlNode)">
+			<summary>
+            ReadXml
+            </summary>
+			<param name="controlNode"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.WriteXml(System.Xml.XmlElement)">
+			<summary>
+            WriteXml
+            </summary>
+			<param name="controlNode"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.PenStyle(System.Int32)">
+			<summary>
+            Style
+            
+            Internal use only
+            </summary>
+			<param name="edge"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Render(System.Drawing.Graphics,System.Drawing.RectangleF)">
+			<summary>
+            Renders the border around the specified rectangle.
+            </summary>
+			<param name="graphics">The Graphics go render the border on.</param>
+			<param name="border">The Border's rectangle in inches.</param>
+			<remarks>
+            This method must be public as the FormatBorderDialog in ARDesigner requires 
+            this method.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Render(System.Drawing.Graphics,System.Drawing.RectangleF,System.Boolean)">
+			<summary>
+            Renders the border around the specified rectangle.
+            </summary>
+			<param name="graphics">The Graphics go render the border on.</param>
+			<param name="border">The Border's rectangle in inches.</param>
+			<remarks>
+            This method must be public as the FormatBorderDialog in ARDesigner requires 
+            this method.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Render(System.Drawing.Graphics,System.Drawing.RectangleF,System.Single,System.Single,System.Single,System.Single,System.Boolean)">
+			<summary>
+            Renders the border around the specified rectangle.
+            Overlaoded the Render to render table borders in rtf tables with border widths.
+            the widths value less than or equaL to 0f does the default rendering
+            
+            Internal use only
+            </summary>
+			<param name="graphics">The Graphics go render the border on.</param>
+			<param name="border">The Border's rectangle in inches.</param>
+			<param name="penWidthT">Pen Width Top</param>
+			<param name="penWidthL">Pen Width Left</param>
+			<param name="penWidthB">Pen Width Bottom</param>
+			<param name="penWidthR">Pen Width Right</param>
+			<param name="printing"></param>
+			<remarks>
+            This method must be public as the FormatBorderDialog in ARDesigner requires 
+            this method.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Render(System.Collections.ArrayList,System.Drawing.RectangleF,System.Single,System.Single,System.Single)">
+			<summary>
+            Renders the border around the specified rectangle.
+            Internal use only
+            </summary>
+			<param name="borderLines"></param>
+			<param name="border">The Border's rectangle in inches.</param>
+			<param name="dpiX"></param>
+			<param name="dpiY"></param>
+			<param name="pageScale">Graphics' page scale.</param>
+			<remarks>
+            This method must be public as the FormatBorderDialog in ARDesigner requires 
+            this method.
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.MarginsInPoints(System.Single,System.Single)">
+			<summary>
+            Returns a BorderMargin object containing the thickness of the top, left, right, and bottom edges of the border that will be drawn.
+            
+            Internal use only
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Inflate(System.Drawing.RectangleF)">
+			<summary>
+            Inflate
+            
+            Internal use only
+            </summary>
+			<param name="bounds"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.Inflate(System.Drawing.RectangleF,System.Single)">
+			<summary>
+            Inflate
+            
+            Internal use only
+            </summary>
+			<param name="bounds"></param>
+			<param name="percentage"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.InflateInches(System.Drawing.Graphics,System.Drawing.RectangleF)">
+			<summary>
+            InflateInches
+            
+            Internal use only
+            </summary>
+			<param name="graphics"></param>
+			<param name="inchBounds"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Border.IsEmpty">
+			<summary>
+            IsEmpty
+            
+            Internal use Only
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Border.TopColor">
+			<summary>
+            Summary description for Border Colors. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Border.TopStyle">
+			<summary>
+            Summary description for Border Styles.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Border.Margins">
+			<summary>
+            Returns a BorderMargin object containing the thickness of the top, left, right, and bottom edges of the border that will be drawn.
+            
+            Internal use only
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Border.BorderMargins">
+			<summary>
+            Used only for Border.GetMargins().  
+            Contains the thickness of the top, left, right, and bottom border that will be drawn 
+            around the outside of the control.
+            This is used for FormatBorderDialog's preview, and in AREngine to prevent 
+            growing/shrinking sections from clipping borders.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.BorderLine">
+			<summary>
+            BorderLine
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.BorderLine.StartPoint">
+			<summary>
+            StartPoint
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.BorderLine.EndPoint">
+			<summary>
+            EndPoint
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.BorderLine.Thickness">
+			<summary>
+            Thickness
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.BorderLine.Color">
+			<summary>
+            Color
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.TableLayoutType.AutoLayout">
+			<summary>
+            Think of it as the auto width layout
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Document.Section.TableLayoutType.FixedLayout">
+			<summary>
+            Think of it as the fixed width layout
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.CellCollection">
+			<summary>
+            CellCollection.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.Contains(GrapeCity.ActiveReports.Document.Section.ITableCell)">
+			<summary>
+            Contains Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.CopyTo(GrapeCity.ActiveReports.Document.Section.ITableCell[],System.Int32)">
+			<summary>
+            CopyTo Method
+            </summary>
+			<param name="values"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.IndexOf(GrapeCity.ActiveReports.Document.Section.ITableCell)">
+			<summary>
+            IndexOf Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.Add(GrapeCity.ActiveReports.Document.Section.ITableCell)">
+			<summary>
+            Add Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.AddRange(GrapeCity.ActiveReports.Document.Section.ITableCell[])">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="cells"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.AddRange(GrapeCity.ActiveReports.Document.Section.CellCollection)">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="cells"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.Insert(System.Int32,GrapeCity.ActiveReports.Document.Section.ITableCell)">
+			<summary>
+            Insert Method
+            </summary>
+			<param name="index"></param>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.CellCollection)">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="cells"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.ITableCell[])">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="cells"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.Remove(System.Object)">
+			<summary>
+            Remove Method
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.CellCollection.ToString">
+			<summary>
+            ToString Method
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.CellCollection.Item(System.Int32)">
+			<summary>
+            Item Property
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ColumnCollection">
+			<summary>
+            ColumnCollection Class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Save(System.IO.BinaryWriter,System.Int16)">
+			<summary>
+            Save Method
+            </summary>
+			<param name="writer"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Load(System.IO.BinaryReader,System.Int16)">
+			<summary>
+            Load Method
+            </summary>
+			<param name="reader"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Contains(GrapeCity.ActiveReports.Document.Section.Column)">
+			<summary>
+            Contains Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.CopyTo(GrapeCity.ActiveReports.Document.Section.Column[],System.Int32)">
+			<summary>
+            CopyTo Method
+            </summary>
+			<param name="values"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.IndexOf(GrapeCity.ActiveReports.Document.Section.Column)">
+			<summary>
+            IndexOf Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Add(GrapeCity.ActiveReports.Document.Section.Column)">
+			<summary>
+            Add Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.AddRange(GrapeCity.ActiveReports.Document.Section.Column[])">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.AddRange(GrapeCity.ActiveReports.Document.Section.ColumnCollection)">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Insert(System.Int32,GrapeCity.ActiveReports.Document.Section.Column)">
+			<summary>
+            Insert Method
+            </summary>
+			<param name="index"></param>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.ColumnCollection)">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.Column[])">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Remove(GrapeCity.ActiveReports.Document.Section.Column)">
+			<summary>
+            Remove Method
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.ColumnCollection.ToString">
+			<summary>
+            ToString Method
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ColumnCollection.Item(System.Int32)">
+			<summary>
+            Item Property 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RowCollection">
+			<summary>
+            RowCollection Class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.Contains(GrapeCity.ActiveReports.Document.Section.Row)">
+			<summary>
+            Contains Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.CopyTo(GrapeCity.ActiveReports.Document.Section.Row[],System.Int32)">
+			<summary>
+            CopyTo Method
+            </summary>
+			<param name="values"></param>
+			<param name="index"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.IndexOf(GrapeCity.ActiveReports.Document.Section.Row)">
+			<summary>
+            IndexOf Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.Add(GrapeCity.ActiveReports.Document.Section.Row)">
+			<summary>
+            Add Method
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.AddRange(GrapeCity.ActiveReports.Document.Section.Row[])">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.AddRange(GrapeCity.ActiveReports.Document.Section.RowCollection)">
+			<summary>
+            AddRange Method
+            </summary>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.Insert(System.Int32,GrapeCity.ActiveReports.Document.Section.Row)">
+			<summary>
+            Insert Method
+            </summary>
+			<param name="index"></param>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.RowCollection)">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.InsertRange(System.Int32,GrapeCity.ActiveReports.Document.Section.Row[])">
+			<summary>
+            InsertRange Method
+            </summary>
+			<param name="index"></param>
+			<param name="rows"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.Remove(GrapeCity.ActiveReports.Document.Section.Row)">
+			<summary>
+            Remove Method
+            </summary>
+			<param name="value"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowCollection.ToString">
+			<summary>
+            ToString Method
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RowCollection.Item(System.Int32)">
+			<summary>
+            Item Property 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.CellAlignmentTypes">
+			<summary>
+            Specifies how text will be aligned in a table cell
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Edges.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Edges.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Edges.Left">
+			<summary>
+            Left
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Edges.Top">
+			<summary>
+            Top
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Edges.Right">
+			<summary>
+            Right
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Edges.Bottom">
+			<summary>
+            Bottom
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Edges.Value">
+			<summary>
+            Value
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Padding">
+			<summary>
+            Padding
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.CellPadding">
+			<summary>
+            CellPadding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.CellPadding.SameAsWholeTable">
+			<summary>
+            SameAsWholeTable
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Spacing">
+			<summary>
+            Spacing
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.TableAttributes">
+			<summary>
+            TableAttributes are attributes that control how a table will display it's 
+            information.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TableAttributes.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.UnitType">
+			<summary>
+            UnitType Enum.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.NumericUnit">
+			<summary>
+            UnitValue class.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.NumericUnit.Clone">
+			<summary>
+            Clone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.TableCellAttributes.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TableCellAttributes.Padding">
+			<summary>
+            Padding
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.TableCellAttributes.Border">
+			<summary>
+            Border
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.ColumnAttributes">
+			<summary>
+            ColumnAttributes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.ColumnAttributes.Border">
+			<summary>
+            Border
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.Column">
+			<summary>
+            Column Class
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Column.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Column.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.Font">
+			<summary>
+            Font
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.BackColor">
+			<summary>
+            BackColor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.ForeColor">
+			<summary>
+            ForeColor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.Width">
+			<summary>
+            Width
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.Border">
+			<summary>
+            Border
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Column.Attributes">
+			<summary>
+            Attributes
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.RowAttributes">
+			<summary>
+            RowAttributes
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowAttributes.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowAttributes.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowAttributes.ShallowClone">
+			<summary>
+            ShallowClone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.RowAttributes.Clone">
+			<summary>
+            Clone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.RowAttributes.Border">
+			<summary>
+            Border
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Row.Dispose">
+			<summary>
+            Dispose
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Row.Dispose(System.Boolean)">
+			<summary>
+            Dispose
+            </summary>
+			<param name="disposing"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Row.ShallowClone">
+			<summary>
+            ShallowClone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.Row.Clone">
+			<summary>
+            Clone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.Type">
+			<summary>
+            Type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.Visible">
+			<summary>
+            Visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.Height">
+			<summary>
+            Height
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.Font">
+			<summary>
+            Font
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.BackColor">
+			<summary>
+            BackColor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.ForeColor">
+			<summary>
+            ForeColor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Document.Section.Row.Border">
+			<summary>
+            Border
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.HeaderRow">
+			<summary>
+            HeaderRow
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.HeaderRow.ShallowClone">
+			<summary>
+            ShallowClone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.HeaderRow.Clone">
+			<summary>
+            Clone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Document.Section.FooterRow">
+			<summary>
+            FooterRow
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.FooterRow.ShallowClone">
+			<summary>
+            ShallowClone
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Document.Section.FooterRow.Clone">
+			<summary>
+            Clone
+            </summary>
+			<returns></returns>
+		</member>
+	</members>
+</doc>

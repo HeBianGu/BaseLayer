@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="7584f92d-b147-446d-a7ca-728617bfdfa71" Category="Category2" Bounds="240.500731197095,-23.1032059026089,1179.74,25.8366666666666" Label="使用 MethodInfo 发现以下信息：方法的名称、返回类型、参数、访问修饰符（如 public 或 private）和实现详细信息（如 abstract 或 virtual）等。使用 Type 的 GetMethods 或 GetMethod 方法来调用特定的方法。" UseManualLocation="True" />
+    <Node Id="System.Reflection.Emit命名空间的类提供了一种特殊形式的反射，使您能够在运行时生成类型。" Category="Comment" Bounds="-326.499914073883,91.3213177643363,249.696666666667,57.51" Label="System.Reflection.Emit 命名空间的类提供了一种特殊形式的反射，使您能够在运行时生成类型。" UseManualLocation="True" />
+    <Node Id="f7589acc-c48a-460f-afe9-fc0ff2062e3c1" Category="Category2" Bounds="244.422908060359,72.8136179446476,1233.89,25.8366666666666" Label="使用 ConstructorInfo 发现以下信息：构造函数的名称、参数、访问修饰符（如 public 或 private）和实现详细信息（如 abstract 或 virtual）等。使用 Type 的 GetConstructors 或 GetConstructor 方法来调用特定的构造函数。" UseManualLocation="True" />
+    <Node Id="主要用途：动态加载DLL，实现插件机制。实例化DLL中的类型。执行后期绑定，访问在运行时创建的类型的方法。" Category="Category1" Bounds="-149.677561634778,323.851014129655,284,89.1833333333333" Label="主要用途：&#xD;&#xA;&#xD;&#xA;动态加载DLL，实现插件机制。&#xD;&#xA;实例化DLL中的类型。&#xD;&#xA;执行后期绑定，访问在运行时创建的类型的方法。" UseManualLocation="True" />
+    <Node Id="使用Assembly定义和加载程序集，加载在程序集清单中列出的模块，以及从此程序集中查找类型并创建该类型的实例。" Category="Category10" Bounds="253.011115318443,362.434488323472,657.91,25.8366666666667" Label="使用 Assembly 定义和加载程序集，加载在程序集清单中列出的模块，以及从此程序集中查找类型并创建该类型的实例。" UseManualLocation="True" />
+    <Node Id="使用EventInfo发现以下信息：事件的名称、事件处理程序数据类型、自定义属性、声明类型和反射类型等；并添加或移除事件处理程序。" Category="Category2" Bounds="236.915212142196,-110.17971938393,753.38,25.8366666666667" Label="使用 EventInfo 发现以下信息：事件的名称、事件处理程序数据类型、自定义属性、声明类型和反射类型等；并添加或移除事件处理程序。" UseManualLocation="True" />
+    <Node Id="使用FieldInfo发现以下信息：字段的名称、访问修饰符（如Public或Private）和实现详细信息（如Static）等；并获取或设置字段值。" Category="Category2" Bounds="240.126931793176,-183.719447319507,748.37,25.8366666666666" Label="使用 FieldInfo 发现以下信息：字段的名称、访问修饰符（如 public 或 private）和实现详细信息（如 static）等；并获取或设置字段值。" UseManualLocation="True" />
+    <Node Id="使用Module发现以下信息：包含模块的程序集以及模块中的类等。您还可以获取在模块上定义的所有全局方法或其他特定的非全局方法。" Category="Category5" Bounds="250.904576642647,165.831280656748,755.526666666667,25.8366666666667" Label="使用 Module 发现以下信息：包含模块的程序集以及模块中的类等。您还可以获取在模块上定义的所有全局方法或其他特定的非全局方法。" UseManualLocation="True">
+      <Category Ref="Category10" />
+    </Node>
+    <Node Id="使用ParameterInfo发现以下信息：参数的名称、数据类型、参数是输入参数还是输出参数，以及参数在方法签名中的位置等。" Category="Category2" Bounds="236.093310194851,-252.167378555367,696.92,25.8366666666667" Label="使用 ParameterInfo 发现以下信息：参数的名称、数据类型、参数是输入参数还是输出参数，以及参数在方法签名中的位置等。" UseManualLocation="True" />
+    <Node Id="使用PropertyInfo发现以下信息：属性的名称、数据类型、声明类型、反射类型和只读或可写状态等；并获取或设置属性值。" Category="Category2" Bounds="259.482027674219,271.093508056413,687.243333333333,25.8366666666666" Label="使用 PropertyInfo 发现以下信息：属性的名称、数据类型、声明类型、反射类型和只读或可写状态等；并获取或设置属性值。" UseManualLocation="True" />
+    <Node Id="反射也可用于创建称作类型浏览器的应用程序，它使用户能够选择类型，然后查看有关选定类型的信息。" Category="Category2" Bounds="238.646820921921,-328.937423400722,572,25.8366666666666" UseManualLocation="True" />
+    <Node Id="当您在一个应用程序域的仅反射上下文中工作时，请使用CustomAttributeData来了解有关自定义属性的信息。使用CustomAttributeData，您不必创建属性的实例就可以检查它们。" Category="Category10" Bounds="253.816002950816,467.438636890539,996.03,25.8366666666666" Label="当您在一个应用程序域的仅反射上下文中工作时，请使用 CustomAttributeData 来了解有关自定义属性的信息。使用 CustomAttributeData，您不必创建属性的实例就可以检查它们。" UseManualLocation="True" />
+    <Node Id="用途：" Category="Category1" Bounds="0,112,50,25.8366666666666" Label="用途" />
+  </Nodes>
+  <Links>
+    <Link Source="System.Reflection.Emit命名空间的类提供了一种特殊形式的反射，使您能够在运行时生成类型。" Target="用途：" Bounds="-76.803247407216,122.743484575122,67.8053004535367,1.4485419399407" />
+    <Link Source="用途：" Target="7584f92d-b147-446d-a7ca-728617bfdfa71" Bounds="50,4.2224308792905,694.486607016397,116.502082121704" />
+    <Link Source="用途：" Target="f7589acc-c48a-460f-afe9-fc0ff2062e3c1" Bounds="50,99.0714999295372,526.657510851141,24.6755073139946" />
+    <Link Source="用途：" Target="主要用途：动态加载DLL，实现插件机制。实例化DLL中的类型。执行后期绑定，访问在运行时创建的类型的方法。" Bounds="-0.497037433326505,137.836666666667,23.763577768548,177.094295900973" />
+    <Link Source="用途：" Target="使用Assembly定义和加载程序集，加载在程序集清单中列出的模块，以及从此程序集中查找类型并创建该类型的实例。" Bounds="49.7458611826103,136.045073206633,495.281492771364,222.69858759247" />
+    <Link Source="用途：" Target="使用EventInfo发现以下信息：事件的名称、事件处理程序数据类型、自定义属性、声明类型和反射类型等；并添加或移除事件处理程序。" Bounds="50,-81.164729223885,520.961463502409,196.646358854947" />
+    <Link Source="用途：" Target="使用FieldInfo发现以下信息：字段的名称、访问修饰符（如Public或Private）和实现详细信息（如Static）等；并获取或设置字段值。" Bounds="49.077764276237,-153.846249377337,531.446386204301,266.682249466895" />
+    <Link Source="用途：" Target="使用Module发现以下信息：包含模块的程序集以及模块中的类等。您还可以获取在模块上定义的所有全局方法或其他特定的非全局方法。" Bounds="50,127.147674986548,424.836348909794,37.8842147369755" />
+    <Link Source="用途：" Target="使用ParameterInfo发现以下信息：参数的名称、数据类型、参数是输入参数还是输出参数，以及参数在方法签名中的位置等。" Bounds="44.8493786223857,-221.421479771803,512.311381201907,333.421479771803" />
+    <Link Source="用途：" Target="使用PropertyInfo发现以下信息：属性的名称、数据类型、声明类型、反射类型和只读或可写状态等；并获取或设置属性值。" Bounds="50,131.798306148496,497.484483546544,136.907188910616" />
+    <Link Source="用途：" Target="反射也可用于创建称作类型浏览器的应用程序，它使用户能够选择类型，然后查看有关选定类型的信息。" Bounds="39.638367802462,-297.145610862821,463.622030956493,409.145610862821" />
+    <Link Source="用途：" Target="当您在一个应用程序域的仅反射上下文中工作时，请使用CustomAttributeData来了解有关自定义属性的信息。使用CustomAttributeData，您不必创建属性的实例就可以检查它们。" Bounds="49.2767230434186,136.790261349186,668.052754205033,326.69459525198" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category10" Label="类别 10" Background="#FF672878" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category5" Label="类别 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 10" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category10')" />
+      <Setter Property="Background" Value="#FF672878" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 5" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

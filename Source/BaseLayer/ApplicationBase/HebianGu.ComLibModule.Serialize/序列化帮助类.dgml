@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="fa66f49f-7cc5-4ae9-8ddb-258afa549bfc1" Bounds="34.85,-73.1799503433228,297.653333333333,634.84" Label="[Serializable]&#xD;&#xA;&#xD;&#xA;02.public class MyClass&#xD;&#xA;&#xD;&#xA;03.{&#xD;&#xA;&#xD;&#xA;04.[NonSerialized]&#xD;&#xA;&#xD;&#xA;05.public int ID;&#xD;&#xA;&#xD;&#xA;06. &#xD;&#xA;&#xD;&#xA;07.public string Address;&#xD;&#xA;&#xD;&#xA;08. &#xD;&#xA;&#xD;&#xA;09.[NonSerialized]&#xD;&#xA;&#xD;&#xA;10.private int _age;&#xD;&#xA;&#xD;&#xA;11. &#xD;&#xA;&#xD;&#xA;12.public string Name { get; set; }&#xD;&#xA;&#xD;&#xA;13. &#xD;&#xA;&#xD;&#xA;14.[System.Xml.Serialization.XmlIgnore]&#xD;&#xA;&#xD;&#xA;15.[System.Web.Script.Serialization.ScriptIgnore]&#xD;&#xA;&#xD;&#xA;16.public int Age&#xD;&#xA;&#xD;&#xA;17.{&#xD;&#xA;&#xD;&#xA;18.get { return _age; }&#xD;&#xA;&#xD;&#xA;19.set { _age = value; }&#xD;&#xA;&#xD;&#xA;20.}&#xD;&#xA;&#xD;&#xA;21.}" UseManualLocation="True" />
+    <Node Id="序列化" Category="Category1" Bounds="-129.55,-81.6,56,25.24" UseManualLocation="True" />
+    <Node Id="指定不序列化字段" Bounds="-1.10000610351563,-128.420050343323,116,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="序列化" Target="指定不序列化字段" Bounds="-73.5500030517578,-100.629669166408,79.1098841596988,23.3760097614135" />
+    <Link Source="指定不序列化字段" Target="fa66f49f-7cc5-4ae9-8ddb-258afa549bfc1" Bounds="61.343725628291,-103.180048828125,7.57441296788489,21.5109951328779" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

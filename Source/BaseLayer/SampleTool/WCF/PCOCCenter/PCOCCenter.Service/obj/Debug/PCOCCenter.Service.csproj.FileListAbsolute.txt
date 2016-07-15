@@ -1,0 +1,20 @@
+E:\PCOCPlatform\Product\Debug\OPT.PCOCCenter.Service.dll
+E:\PCOCPlatform\Product\Debug\OPT.PCOCCenter.Service.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service\obj\Debug\PCOCCenter.Service.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Service.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Service.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service\obj\Debug\PCOCCenter.Service.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\PCOCCenter.Service.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\PCOCCenter.Service.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Service\obj\Debug\OPT.PCOCCenter.Service.pdb

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph DataVirtualized="True" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @2)" Category="CodeSchema_ProjectItem" Bounds="16.0036116503796,304.006595589993,116.284666743746,25.998000077079" FilePath="$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.NTServiceHost/NTService .cs" Label="NTService .cs" UseManualLocation="True" />
+    <Node Id="(@3 @4)" Category="CodeSchema_ProjectItem" Bounds="-140.383806149118,114.346668754185,134.191333410412,25.998000077079" FilePath="$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.Service/CenterService.cs" Label="CenterService.cs" UseManualLocation="True" />
+    <Node Id="(@5 @6)" Category="CodeSchema_ProjectItem" Bounds="-131.894000038539,179.344666743745,113.048000077079,25.998000077079" FilePath="$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.TaskProxy/TaskProxy.cs" Label="TaskProxy.cs" UseManualLocation="True" />
+    <Node Id="(@7 Namespace=OPT.PCOCCenter.Service.Interface Type=ICenterService)" Category="CodeSchema_Interface" Bounds="-142,54.9283333333331,143.26,25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="ICenterService" DelayedChildNodesState="NotFetched" DelayedCrossGroupLinksState="Fetched" Group="Collapsed" Icon="Microsoft.VisualStudio.Interface.Public" Label="ICenterService" Language="{B5E9BD34-6D3E-4B5D-925E-8A43B79820B4}" SourceLocation="(Assembly=file:///C:/Users/Navylee/Desktop/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.Service.Interface/ICenterService.cs StartLineNumber=9 StartCharacterOffset=4 EndLineNumber=9 EndCharacterOffset=4)" UseManualLocation="True" />
+    <Node Id="70ad9fc4-c47e-470e-8f98-66fd90238a191" Category="Comment" Bounds="541.425046861767,49.3057619222007,249.7,516.773333333333" Label="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; ?&gt;&#xD;&#xA;&lt;configuration&gt;&#xD;&#xA;    &lt;startup&gt; &#xD;&#xA;        &lt;supportedRuntime version=&quot;v4.0&quot; sku=&quot;.NETFramework,Version=v4.5&quot; /&gt;&#xD;&#xA;    &lt;/startup&gt;&#xD;&#xA;    &lt;system.serviceModel&gt;&#xD;&#xA;        &lt;bindings&gt;&#xD;&#xA;            &lt;wsHttpBinding&gt;&#xD;&#xA;                &lt;binding name=&quot;WSHttpBinding_IFileTransferService&quot;&gt;&#xD;&#xA;                    &lt;security mode=&quot;None&quot; /&gt;&#xD;&#xA;                &lt;/binding&gt;&#xD;&#xA;            &lt;/wsHttpBinding&gt;&#xD;&#xA;        &lt;/bindings&gt;&#xD;&#xA;        &lt;client&gt;&#xD;&#xA;            &lt;endpoint address=&quot;http://localhost:22888/FileTransferService&quot;&#xD;&#xA;                binding=&quot;wsHttpBinding&quot; bindingConfiguration=&quot;WSHttpBinding_IFileTransferService&quot;&#xD;&#xA;                contract=&quot;PCOCCenterService.IFileTransferService&quot; name=&quot;WSHttpBinding_IFileTransferService&quot; /&gt;&#xD;&#xA;        &lt;/client&gt;&#xD;&#xA;    &lt;/system.serviceModel&gt;&#xD;&#xA;&lt;/configuration&gt;" UseManualLocation="True" />
+    <Node Id="Client" Bounds="64.0866666666668,238.425333448952,53.0866666666666,25.8366666666667" UseManualLocation="True" />
+    <Node Id="PCOCCenter.Service" Bounds="23.8075272612944,116.509999949137,134.8,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Service.Interface" Bounds="36.663338216146,54.3357131448221,113.933333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="TaskProxy" Bounds="55.8350000000001,180.427333371873,77.59,25.8366666666666" UseManualLocation="True" />
+    <Node Id="WCF搭建" Category="Category1" Bounds="206.325004882812,-3.00005437418615,70.61,25.8366666666666" />
+    <Node Id="创建Windows服务" Bounds="182.474378194049,303.75299235026,121.13,25.8366666666666" UseManualLocation="True" />
+    <Node Id="创建代理代理接口TaskProxy" Bounds="184.63,180.51,116,25.8366666666667" Label="创建代理代理接口" UseManualLocation="True" />
+    <Node Id="安装服务器Windows服务" Bounds="154.171713528434,394.562608439128,181.13,25.8366666666666" Label="部署安装服务器Windows服务" UseManualLocation="True" />
+    <Node Id="定义契约接口" Bounds="196.629989624023,52.8367122924804,92,25.8366666666667" Label="定义契约接口" UseManualLocation="True" />
+    <Node Id="实现契约接口PCOCCenter.Service" Bounds="195.63,111.673333333333,92,25.8366666666667" Label="实现契约接口" />
+    <Node Id="客户端调用接口" Bounds="190.63,239.427333371873,104,25.8366666666667" UseManualLocation="True" />
+    <Node Id="添加服务引用" Bounds="198.799312775845,466.149401089099,92,25.8366666666666" UseManualLocation="True" />
+    <Node Id="配置文件App.configer" Bounds="365.301713528434,431.305854202862,142.123333333333,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="PCOCCenter.Service" Target="(@3 @4)" Bounds="2.80681373426208,128.309099980932,21.0007057969879,0.265888027385131" />
+    <Link Source="Service.Interface" Target="(@7 Namespace=OPT.PCOCCenter.Service.Interface Type=ICenterService)" Bounds="10.2599949176083,67.3145844695718,26.4033432985377,0.0280599516913469" />
+    <Link Source="TaskProxy" Target="(@5 @6)" Bounds="-9.84615521936547,192.72986797344,65.6811486580862,0.387129062600593" />
+    <Link Source="WCF搭建" Target="定义契约接口" Bounds="241.861360218327,22.8366072591145,0.376118282546685,21.0015530261774" />
+    <Link Source="创建Windows服务" Target="(@1 @2)" Bounds="141.288264155977,316.791190610951,41.186111149199,0.0815119329816412" />
+    <Link Source="创建Windows服务" Target="安装服务器Windows服务" Bounds="243.280834105376,329.589659016927,1.04622944501534,55.9745211301212" />
+    <Link Source="创建代理代理接口TaskProxy" Target="TaskProxy" Bounds="142.424992034073,193.372360340568,42.2050128487394,0.0235798755277301" />
+    <Link Source="创建代理代理接口TaskProxy" Target="客户端调用接口" Bounds="242.630004882813,206.346678059896,2.8421709430404E-14,24.0806612141927" />
+    <Link Source="安装服务器Windows服务" Target="添加服务引用" Bounds="244.748010652117,420.399275105794,0.0321381047663181,36.7501287669202" />
+    <Link Source="安装服务器Windows服务" Target="配置文件App.configer" Bounds="312.109560166785,420.399275105794,48.0419885860986,9.21175840537768" />
+    <Link Source="定义契约接口" Target="Service.Interface" Bounds="159.596216135598,66.2178270442657,37.0337734884259,0.372572952631913" />
+    <Link Source="定义契约接口" Target="实现契约接口PCOCCenter.Service" Bounds="242.002505848398,78.673383992513,0.407924336197993,24.0012570788069" />
+    <Link Source="实现契约接口PCOCCenter.Service" Target="PCOCCenter.Service" Bounds="167.60287072715,126.070750818211,28.0271341556629,0.901179605596411" />
+    <Link Source="实现契约接口PCOCCenter.Service" Target="创建代理代理接口TaskProxy" Bounds="241.817671330768,137.510008138021,0.493936630195947,34.000952775119" />
+    <Link Source="客户端调用接口" Target="Client" Bounds="126.173142668637,251.577971709457,64.4568622141756,0.424909190072469" />
+    <Link Source="客户端调用接口" Target="创建Windows服务" Bounds="242.712217551009,265.264005940755,0.187669970709067,29.4891686579521" />
+    <Link Source="添加服务引用" Target="配置文件App.configer" Bounds="290.79931640625,458.452551163667,67.3388699560174,12.2482525264786" />
+    <Link Source="配置文件App.configer" Target="70ad9fc4-c47e-470e-8f98-66fd90238a191" Bounds="458.117114816049,386.42928989934,75.5695680989886,44.8765643035219" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="CodeSchema_Interface" Label="接口" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" NavigationActionLabel="接口" />
+    <Category Id="CodeSchema_ProjectItem" Label="项目项" BasedOn="File" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="File" NavigationActionLabel="项目项" />
+    <Category Id="CodeSchema_Type" Label="类型" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="类型" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+    <Category Id="File" Label="文件" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" NavigationActionLabel="文件" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsAbstract" Label="是抽象的" Description="一个标志，用于指示该成员是“抽象”成员且不提供完整实现" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="是公共的" Description="一个标志，用于指示该范围是“公共”范围" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DataVirtualized" Label="已虚拟化数据" Description="如果为 true，则图中可以包含表示虚拟化节点/链接(即，不在图中实际创建)的数据的节点和链接。" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="DelayedChildNodesState" Label="延迟的子节点状态" Description="如果未指定延迟的子节点状态，则为 Unspecified。如果尚未将组包含的子节点提取到关系图中，则为 NotFetched。如果已提取组内的所有延迟的子节点，则为 Fetched。" DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="DelayedCrossGroupLinksState" Label="延迟的跨组链接状态" Description="如果未指定延迟的跨组链接状态，则为 Unspecified。如果尚未将此节点上延迟的跨组链接提取到关系图中，则为 NotFetched。如果已提取所有延迟的跨组链接，则为 Fetched。" DataType="Microsoft.VisualStudio.GraphModel.DelayedDataState" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="FilePath" Label="文件路径" Description="文件路径" DataType="System.String" />
+    <Property Id="Group" Label="组" Description="将节点显示为组" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="Icon" Label="图标" Description="图标" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Language" Label="语言" Description="语言" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="起始行号" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="程序集" ValueType="Uri" />
+    <Name Id="File" Label="文件" ValueType="Uri" />
+    <Name Id="Namespace" Label="命名空间" ValueType="System.String" />
+    <Name Id="Type" Label="类型" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.NTServiceHost/PCOCCenter.NTServiceHost.csproj" />
+    <Alias n="2" Uri="File=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.NTServiceHost/NTService .cs" />
+    <Alias n="3" Uri="Assembly=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.Service/PCOCCenter.Service.csproj" />
+    <Alias n="4" Uri="File=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.Service/CenterService.cs" />
+    <Alias n="5" Uri="Assembly=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.TaskProxy/PCOCCenter.TaskProxy.csproj" />
+    <Alias n="6" Uri="File=$(DesktopUri)/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/PCOCCenter/PCOCCenter.TaskProxy/TaskProxy.cs" />
+    <Alias n="7" Uri="Assembly=$(7095c755-316c-4e88-8a30-51a58389c6f6.OutputPathUri)" />
+  </IdentifierAliases>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+  <Paths>
+    <Path Id="7095c755-316c-4e88-8a30-51a58389c6f6.OutputPath" Value="C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Service.Interface.dll" />
+    <Path Id="7095c755-316c-4e88-8a30-51a58389c6f6.OutputPathUri" Value="file:///C:/Users/Navylee/Desktop/DevTest/HebianGu/Source/BaseLayer/SampleTool/WCF/Product/Debug/OPT.PCOCCenter.Service.Interface.dll" />
+    <Path Id="Desktop" Value="C:\Users\Navylee\Desktop" />
+    <Path Id="DesktopUri" Value="file:///C:/Users/Navylee/Desktop" />
+  </Paths>
+</DirectedGraph>

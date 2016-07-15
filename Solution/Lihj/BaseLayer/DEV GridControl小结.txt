@@ -1,0 +1,306 @@
+1、 如何解决单击记录整行选中的问题
+View->OptionsBehavior->EditorShowMode 设置为：Click
+ 
+2、 如何新增一条记录
+(1)、gridView.AddNewRow()
+(2)、实现 gridView_InitNewRow 事件
+ 
+3、如何解决 GridControl 记录能获取而没有显示出来的问题
+gridView.populateColumns();
+ 
+4、如何让行只能选择而不能编辑（或编辑某一单元格）
+(1)、View->OptionsBehavior->EditorShowMode 设置为：Click
+(2)、View->OptionsBehavior->Editable 设置为：false
+ 
+5、如何禁用 GridControl 中单击列弹出右键菜单
+设置 Run Design->OptionsMenu->EnableColumnMenu 设置为：false
+ 
+6、如何隐藏 GridControl 的 GroupPanel 表头
+设置 Run Design->OptionsView->ShowGroupPanel 设置为：false 
+ 
+7、如何禁用 GridControl 中列头的过滤器 过滤器如下图所示：                               
+
+设置 Run Design->OptionsCustomization->AllowFilter 设置为：false
+ 
+8、如何在查询得到 0 条记录时显示自定义的字符提示/显示 如图所示：
+
+
+方法如下：
+//When no Records Are Being Displayed
+private void gridView1_CustomDrawEmptyForeground(object sender, CustomDrawEventArgs e)
+{
+ //方法一（此方法为GridView设置了数据源绑定时，可用）
+ ColumnView columnView = sender as ColumnView;
+BindingSource bindingSource = this.gridView1.DataSource as BindingSource;
+if(bindingSource.Count == 0)
+{
+string str = "没有查询到你所想要的数据!";
+Font f = new Font("宋体", 10, FontStyle.Bold);
+Rectangle r = new Rectangle(e.Bounds.Top + 5, e.Bounds.Left + 5, e.Bounds.Right - 5, e.Bounds.Height - 5);
+e.Graphics.DrawString(str, f, Brushes.Black, r); }
+//方法二（此方法为GridView没有设置数据源绑定时，使用，一般使用此种方 法）
+if (this._flag)
+ { if (this.gridView1.RowCount == 0)
+ { string str = "没有查询到你所想要的数据!"; Font f = new Font("宋体", 10, FontStyle.Bold);
+Rectangle r = new Rectangle(e.Bounds.Left + 5, e.Bounds.Top + 5, e.Bounds.Width - 5, e.Bounds.Height - 5);
+e.Graphics.DrawString(str, f, Brushes.Black, r); } } }
+ 
+9、如何显示水平滚动条？或
+设置 this.gridView.OptionsView.ColumnAutoWidth = false;
+
+.....列表宽度自适应内容
+gridview1.BestFitColumns();
+ 
+10、如何定位到第一条数据/记录？
+设置 this.gridView.MoveFirst()
+ 
+11、如何定位到下一条数据/记录？
+设置 this.gridView.MoveNext()
+ 
+12、如何定位到最后一条数据/记录？
+设置 this.gridView.MoveLast()
+ 
+13、设置成一次选择一行，并且不能被编辑
+this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+ this.gridView1.OptionsBehavior.Editable = false;
+this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+ 
+ 14、如何显示行号？
+  private void gvPayList_CustomDrawRowIndicator(object sender, DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+        {
+            e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            if (e.Info.IsRowIndicator)
+            {
+                if (e.RowHandle >= 0)
+                {
+                    e.Info.DisplayText = (e.RowHandle + 1).ToString();
+                }
+                else if (e.RowHandle < 0 && e.RowHandle > -1000)
+                {
+                    e.Info.Appearance.BackColor = System.Drawing.Color.AntiqueWhite;
+                    e.Info.DisplayText = "G" + e.RowHandle.ToString();
+                }
+            }
+        }
+ 
+15、如何让各列头禁止移动？
+设置 gridView1.OptionsCustomization.AllowColumnMoving = false;
+16、如何让各列头禁止排序？
+设置 gridView1.OptionsCustomization.AllowSort = false;
+17、如何禁止各列头改变列宽？
+设置 gridView1.OptionsCustomization.AllowColumnResizing = false;
+ 
+18.拖动滚动条时固定某一列
+设置Columns，选择要固定的列。设置Fixed属性，可以选择：固定在左边、固定在右边、不固定。
+19.获取选定行,指定列单元格的内容
+      return gridView1.GetRowCellValue(pRows[0], ColumName).ToString ();
+
+20.分组显示
+
+OptionsView>OptionsBehavior>AutoExpandAllGroups = True
+选择要分组的列，将GroupIndex属性设置为0
+
+21.格式化数据
+
+       private void gvList_ValidatingEditor(object sender, DevExpress.XtraEditors.Controls.BaseContainerValidateEditorEventArgs e)
+        {
+            if (this.gvList.FocusedColumn.FieldName == "passQty")
+            {
+                string passQty = e.Value.ToString().Trim();
+                int receiveQty = orderDetailList[this.gvList.FocusedRowHandle].qty;
+                if (!JXType.IsIntBigThanZero(passQty))
+                {
+                    e.Valid = false;
+                    e.ErrorText = "合格数量必须为大于等于0小于等于接货数量的整数！";
+                }
+                else
+                {
+                    if (int.Parse(passQty) > receiveQty)
+                    {
+                        e.Valid = false;
+                        e.ErrorText = "合格数量必须为大于0小于等于接货数量的整数！";
+                    }
+                }
+            }
+
+}
+
+
+
+22.合并表头
+
+   ///初始化表格
+
+using DevExpress.XtraGrid.Columns;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraGrid.Views.BandedGrid;
+using DevExpress.XtraEditors.Repository;
+        private void InitGrid()
+        {
+            // advBandedGridView1是表格上的默认视图，注意这里声明的是：BandedGridView
+            BandedGridView view = advBandedGridView1 as BandedGridView;
+            view.BeginUpdate(); //开始视图的编辑，防止触发其他事件
+            view.BeginDataUpdate(); //开始数据的编辑
+            view.Bands.Clear();
+
+
+            view.OptionsView.ShowColumnHeaders = false;                         //因为有Band列了，所以把ColumnHeader隐藏
+            //添加列标题
+      //添加列标题
+            GridBand bandID = view.Bands.AddBand("ID");
+            bandID.Visible = false; //隐藏ID列
+            GridBand bandName = view.Bands.AddBand("姓名");
+            GridBand bandSex = view.Bands.AddBand("性别");
+            GridBand bandBirth = view.Bands.AddBand("出生日期");
+            GridBand bandScore = view.Bands.AddBand("分数");
+            GridBand bandMath = bandScore.Children.AddBand("数学");
+            GridBand bandChinese = bandScore.Children.AddBand("语文");
+            GridBand bandEnglish = bandScore.Children.AddBand("英语");
+            GridBand bandSubTotal = bandScore.Children.AddBand("小计");
+            GridBand bandRemark = view.Bands.AddBand("备注");
+
+            bandFile.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;//这是合并表头居中显示
+            view.EndDataUpdate();//结束数据的编辑
+            view.EndUpdate();   //结束视图的编辑
+        }
+
+
+
+点击打开链接
+
+
+
+
+
+23.   //动态添加列
+            DevExpress.XtraGrid.Columns.GridColumn Col1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            Col1.FieldName = "name";
+            Col1.Caption = "名字";
+            Col1.Visible = false;
+            Col1.VisibleIndex = gvCountry.Columns.Count;
+            gvCountry.Columns.Add(Col1);
+
+
+
+24。设置自动增加的行号
+
+  private void gridview_CustomDrawRowIndicator(object sender,                            DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventArgs e)
+    {
+
+e.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            if (e.Info.IsRowIndicator)
+            {
+                if (e.RowHandle >= 0)
+                {
+                    e.Info.DisplayText = (e.RowHandle + 1).ToString();
+                }
+                else if (e.RowHandle < 0 && e.RowHandle > -1000)
+                {
+                    e.Info.Appearance.BackColor = System.Drawing.Color.AntiqueWhite;
+                    e.Info.DisplayText = "G" + e.RowHandle.ToString();
+                }
+            }
+
+｝
+
+25.特效：gridcontrol中有5种view 型式，普通的是gridview，然后分别为cardview、BandedView、Advanced BandedView、LayoutView；共5种。
+
+  1）、view组中把OptionView下的viewmode 设置成“Carousel”就达到这种“旋转木马”式的gridcontrol view 特效了
+  2）、layoutView1.OptionsCarouselMode.PitchAngle 这个属性决定“旋转木马”的pitch angle 螺距角; 螺旋角; 螺旋升角; 俯仰角; 倾角; 节锥半角 
+  3）、Roll Angle 属性决定着 倾侧角度
+  4）、指定数据源，显示数据：
+  //显示数据
+        private void showData(List<Employee > list)
+        {
+            DataTable dt = new DataTable("OneEmployee");
+            dt.Columns.Add("Caption", System.Type.GetType("System.String"));
+            dt.Columns.Add("Department", System.Type.GetType("System.String"));
+            dt.Columns.Add("PhotoName", System.Type.GetType("System.Byte[]"));
+            for (int i = 0; i < list.Count; i++)
+            {
+                DataRow dr = dt.NewRow();
+                dr["Caption"] = list[i].Name;
+                dr["Department"] = list[i].Department;
+                string imagePath = @"D:\C#\photos\" + list[i].PhotoPath;
+                dr["PhotoName"] = getImageByte(imagePath);
+                dt.Rows.Add(dr);
+            }
+            gridControl1.DataSource = dt;
+        }
+        //返回图片的字节流byte[]
+        private byte[] getImageByte(string imagePath)
+        {
+            FileStream files = new FileStream(imagePath, FileMode.Open);
+            byte[] imgByte = new byte [files.Length ];
+            files.Read(imgByte, 0, imgByte.Length);
+            files.Close();
+            return imgByte;
+        }
+
+26.检查数据的有效性
+  在gridview的ValidateRow事件中加入检查代码：
+  #region 检查数据
+  private void gridView1_ValidateRow(object sender, ValidateRowEventArgs e)
+  {
+  GridView view = sender as GridView;
+  view.ClearColumnErrors();
+  if (view.GetRowCellValue(e.RowHandle, "ReceiveDate") == DBNull.Value)
+  {
+  e.Valid = false;
+  view.SetColumnError(view.Columns["ReceiveDate"], "必须指定日期");
+  }
+  }
+
+27.设某一列文字和标题局中显示                  
+   gridView1.Columns[0].AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+   gridView1.Columns[0].AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+
+28.列表过滤条件多选
+列名.OptionsFilter.FilterPopupMode=
+ DevExpress.XtraGrid.Columns.FilterPopupMode.CheckedList
+
+
+29.隔行换色的方法
+
+
+ this.gridView1.Appearance.OddRow.BackColor = Color.White;  // 设置奇数行颜色 // 默认也是白色 可以省略 
+this.gridView1.OptionsView.EnableAppearanceOddRow = true;   // 使能 // 和和上面绑定 同时使用有效 
+this.gridView1.Appearance.EvenRow.BackColor = Color.WhiteSmoke; // 设置偶数行颜色 
+this.gridView1.OptionsView.EnableAppearanceEvenRow = true;   // 使能 // 和和上面绑定 同时使用有效
+
+30.合并单元格
+  设置Gridview的AllowCellMerge属性为ture,然后设置要合并列的AllowCellMerge为True，这样某列相同行内容就会合并了
+
+31.如果要改变单元格样式，如字体颜色，背景什么，像html页面样式。。。。
+将ColumnEdit改成repositoryItemRichTextEdit然后ColumnEdit=>DocumentFormat改成html，这样单元格就可以显示跟html一样的样式，很方便
+
+32.动态绑定列的下拉框值
+        private DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox repositoryItemImageComboBox_Test = new DevExpress.XtraEditors.Repository.RepositoryItemImageComboBox();
+        private void gvList_CustomRowCellEdit(object sender, DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventArgs e)
+        {
+            string fieldName = e.Column.FieldName;
+            DataRow selectRow = gvList.GetDataRow(e.RowHandle);
+            if (fieldName == "test")
+            {
+                if (Convert.ToInt32(selectRow["aaa"]) == 0)
+                {
+          repositoryItemImageComboBox_Test.Items.AddRange(new DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("A", "A", -1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("B", "B", -1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("C", "C", -1),
+                          new DevExpress.XtraEditors.Controls.ImageComboBoxItem("D", "D", -1)});
+                    e.RepositoryItem = repositoryItemImageComboBox_Test;
+                }
+                else
+                {
+        repositoryItemImageComboBox_Test.Items.AddRange(new              
+     DevExpress.XtraEditors.Controls.ImageComboBoxItem[] {
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("A", "A", -1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("B", "B", -1),
+            new DevExpress.XtraEditors.Controls.ImageComboBoxItem("C", "C", -1),
+                    e.RepositoryItem = repositoryItemImageComboBox_Test;
+                }
+            }
+        }
+
+日后慢慢补充。。。

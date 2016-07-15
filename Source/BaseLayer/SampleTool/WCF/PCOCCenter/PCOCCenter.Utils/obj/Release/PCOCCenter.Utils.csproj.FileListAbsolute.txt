@@ -1,0 +1,5 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.Utils.dll
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.Utils.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Utils\obj\Release\PCOCCenter.Utils.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Utils\obj\Release\OPT.PCOCCenter.Utils.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Utils\obj\Release\OPT.PCOCCenter.Utils.pdb

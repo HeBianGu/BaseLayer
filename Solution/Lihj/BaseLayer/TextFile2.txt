@@ -1,0 +1,1 @@
+BxSystemInfo.Instance.Regisries.GetModulePath("HMModule").ConfigPath

@@ -1,0 +1,4551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Viewer.Win.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior">
+			<summary>
+            Represents designer behavior (strategy pattern)
+            </summary>
+			<remarks>Made public for test purpose only</remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnMouseMove(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs)">
+			<summary>
+            Occurs when mouse moves inside control
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnMouseUp(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs)">
+			<summary>
+            Occurs when mouse button is released within control
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnMouseDown(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs)">
+			<summary>
+            Occurs when mouse button is pressed within control
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnMouseWheel(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs)">
+			<summary>
+            Occurs when mouse wheel is moved
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnDoubleClick(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs)">
+			<summary>
+            Occured on mouse double click
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.ProcessCmdKey(GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorKeyboardEventArgs)">
+			<summary>
+            Should be invoked on keyboard command
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnGesture(GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs)">
+			<summary>
+            Occured when touch on screen
+            </summary>
+			<param name="e"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior.OnGestureNotify(System.EventArgs)">
+			<summary>
+            Occured when touch gesture notify message was sent.
+            </summary>
+			<param name="e"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorsExtensions">
+			<summary>
+            Behaviors extensions
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorsExtensions.ActiveWhen(GrapeCity.ActiveReports.Viewer.Win.Behaviors.IBehavior,System.Func{System.Boolean})">
+			<summary>
+            Makes behavior conditional
+            </summary>
+			<param name="behavior"></param>
+			<param name="isActive"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorKeyboardEventArgs">
+			<summary>
+            Contains information about keyboard events
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs">
+			<summary>
+            Wraps MouseEventArgs for IBehavior purposes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs.Handled">
+			<summary>
+            Gets or sets Handled flag specifying whether event was handled by one of the grid items.
+            Value cannot set back to false.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs.CursorUpdated">
+			<summary>
+            Gets or sets whether this or previous behavior updated mouse pointer
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.BehaviorMouseEventArgs.ModifierKeys">
+			<summary>
+            Gets additionaly pressed keyboard keys
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Interactivity.IActionHandler">
+			<summary>
+            Custom report actions handler
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Interactivity.IActionHandler.ProcessAction(GrapeCity.Viewer.Common.Model.Interactivity.IAction)">
+			<summary>
+            Provides custom handler for report actions
+            </summary>
+			<param name="action"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Interactivity.IActionHandler.Drillthrough(GrapeCity.Viewer.Common.Model.Interactivity.DrillthroughAction)">
+			<summary>
+            Custom handler for Drillthrough action
+            </summary>
+			<param name="action"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs">
+			<summary>
+            Wraps gesture info for IBehavior purposes.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.GestureId">
+			<summary>
+            The windows gesture id
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.GestureArguments">
+			<summary>
+            the raw Gesture arguments
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.IsBegin">
+			<summary>
+            Indicate whether this gesture args is for the first event of a gesture event sequence.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.IsEnd">
+			<summary>
+            Indicate whether this gesture args is for the last event of a gesture event sequence.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.Location">
+			<summary>
+            The gesture location translated into client area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.Center">
+			<summary>
+            The calculated gesture center
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.RotateAngle">
+			<summary>
+            The relative rotation angle, used by the Rotate event
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.ZoomFactor">
+			<summary>
+            The zoom factor, used by the Zoom event
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.PanTranslation">
+			<summary>
+            The relative panning translation, used by the Pan event
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.PanVelocity">
+			<summary>
+            The velocity vector of the pan gesture, can be used for custom inertia
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.Handled">
+			<summary>
+            Gets or sets Handled flag specifying whether event was handled by one of the grid items.
+            Value cannot set back to false.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.GestureType">
+			<summary>
+            Indicate the gesture type.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureEventArgs.IsSkipDefWndProc">
+			<summary>
+            Indicate whether skip default WndProc or not.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType">
+			<summary>
+            Defined gesture type.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.Begin">
+			<summary>
+            Begin while gesture occur.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.End">
+			<summary>
+            End while gesture over.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.Pan">
+			<summary>
+            Drag 1 or 2 fingers with direction.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.Zoom">
+			<summary>
+            Move two fingers apart/toward each other.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.Rotate">
+			<summary>
+            Move two fingers in opposing directions.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.TwoFingerTap">
+			<summary>
+            Tap two fingers at the same time(where the target is the midpoint between fingers).
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.PressAndTap">
+			<summary>
+            Press on target and tap using a second finger.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Viewer.Win.Behaviors.GestureType.Tap">
+			<summary>
+            Click.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.AddUpdateImageForm">
+			<summary>
+            The form which allows to add or update the theme image.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.AddUpdateImageForm.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.AddUpdateImageForm.ThemeImage">
+			<summary>
+            Provides access to added/updated image.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.ThemeEditor.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.ThemeEditor.Theme">
+			<summary>
+            Currently shown Theme.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThemeEditor.ThemeEditor.IsDirty">
+			<summary>
+            True if user changed something in the theme, false if Theme is intact.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog">
+			<summary>
+            CustomPrintDialog is a direct (=PInvoke) implementation 
+            for a print dialog customized with additional controls. Unfortunately
+            this cannot be done by inheriting from the PrintDialog (is sealed) and
+            has to be done by hand.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.AllowSomePages">
+			<summary>
+            Whether to enable the "Print range" control in the dialog or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.AllowSelection">
+			<summary>
+            Whether to enable the "Selection" control in the dialog or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.ShrinkOutputToFitOnOnePage">
+			<summary>
+            Whether to shrink the output to fit one one page (our custom functionality)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.AllowPrintToFile">
+			<summary>
+            Gets or sets a value indicating whether the Print to file check box is enabled
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.ShowNetwork">
+			<summary>
+            Gets or sets a value indicating whether the Network button is displayed
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.PrintToFile">
+			<summary>
+            Gets or sets a value indicating whether the Print to file check box is selected.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.PrinterSettings">
+			<summary>
+            Gets or sets the printer settings the dialog box modifies
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.CustomPrintDialog.Document">
+			<summary>
+            Gets or sets a value indicating the PrintDocument used to obtain PrinterSettings
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.ErrorPanel.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.HorizontalToolStrip">
+			<summary>
+            Horizontal layout tool strip.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.MouseModeContextMenu">
+			<summary>
+            MouseModeToolstrip
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.MouseModeContextMenu.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer">
+			<summary>
+            Thumbnails preview control
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer.PageGetter">
+			<summary>
+            Gets or sets the page getter, which provides thumbnails images
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer.PageCount">
+			<summary>
+            Gets or sets number of pages within a view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer.ThumbSize">
+			<summary>
+            Gets or sets thumbnail size
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Controls.ThumbnailViewer.SelectedIndex">
+			<summary>
+            Gets or sets currently selected page
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.ToolStripAnnotationDropDown">
+			<summary>
+            Toolstrip of annotation related controls
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.ToolStripAnnotationDropDown.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Controls.TouchModeContextMenu">
+			<summary>
+            Touch mode context menu.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Controls.TouchModeContextMenu.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentModel">
+			<summary>
+            Represents base structure and behaviour for document models
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ActiveModel">
+			<summary>
+            Base class for all active (notifies subscriber on state change) models
+            </summary>
+		</member>
+		<member name="E:GrapeCity.Viewer.Common.Model.ActiveModel.PropertyChanged">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ISearchableDocument">
+			<summary>
+            Allows document to support text search facility
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ISearchableDocument.Find(GrapeCity.Viewer.Common.Model.FindOptions,GrapeCity.Viewer.Common.Model.SearchResult)">
+			<summary>
+            Performs text string lookup
+            </summary>
+			<param name="options"></param>
+			<param name="startFrom"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ISearchableDocument.GetItemText(GrapeCity.Viewer.Common.Model.SearchResult)">
+			<summary>
+            Gets text element text to display/highlight range within a list of results
+            </summary>
+			<param name="result"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ISearchableDocument.HighlightSearchResult">
+			<summary>
+            Gets or sets currently highlighted search result
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ISearchableDocument.NotifySearchResult">
+			<summary>
+            Gets or sets currently notification search result
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ISelectableDocument">
+			<summary>
+            Allows document to expose items that could be selected/highlighted/copied
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ISelectableDocument.SelectItems(System.Int32,GrapeCity.Viewer.Common.Rect)">
+			<summary>
+            Adds items within specific frame on particular page to current selection
+            </summary>
+			<param name="pageIndex"></param>
+			<param name="frame"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ISelectableDocument.ClearSelection">
+			<summary>
+            Clears selection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ISelectableDocument.CurrentSelection">
+			<summary>
+            Gets current selection
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.DocumentModel.NullInstance">
+			<summary>
+            Gets null document instance
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.TotalPageCount">
+			<summary>
+            Returns number of total pages in document. This number can be higher then
+            number of pages currently available.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.PageCount">
+			<summary>
+            Gets loaded pages count
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.Bookmarks">
+			<summary>
+            Gets/sets document's bookmarks collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.MaxPageSize">
+			<summary>
+            Gets maximum page size
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.PaperSize">
+			<summary>
+            Gets the default paper size of the document. In fact SectionReport allows variable pages while it's not implemented in model.
+            PaperSize is then considered immutable. You can read it at any time and assume it's not changed anymore.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentModel.AnnotationsDocument">
+			<summary>
+            Gets the document to store annortations to
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentModel.IPage">
+			<summary>
+            Defines interface for document page
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentModel.IPageItem">
+			<summary>
+            Minimal part of report page
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentModel.TextItem">
+			<summary>
+            Base implementation for text item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentModel.IImageItem">
+			<summary>
+            Base implementation for image item
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IPageDocument">
+			<summary>
+            Provides access to document structures
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IPageDocument.GetPage(System.Int32)">
+			<summary>
+            Gets page document
+            </summary>
+			<param name="pageIndex"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Interactivity.IInteractiveDocument">
+			<summary>
+            Document with interactive features
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IDocumentRenderer">
+			<summary>
+            Base interface for Document renderers
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IDocumentRenderer.RenderPage(System.Int32)">
+			<summary>
+            Renders page from current document
+            </summary>
+			<param name="index">Index of the page to render</param>
+			<returns>Rendered page view</returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.PageView">
+			<summary>
+            Base abstract class for concrete page renderers.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.PrintExtension.Print(GrapeCity.ActiveReports.Document.SectionDocument)">
+			<summary>
+            Print the section-based document.
+            </summary>
+			<param name="sectionDocument">Document to be printed.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.PrintExtension.Print(GrapeCity.ActiveReports.Document.SectionDocument,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>
+            Print the section-based document.
+            </summary>
+			<param name="sectionDocument">Document to be printed.</param>
+			<param name="showPrintDialog">If True the Print-dialog will be shown.</param>
+			<param name="showPrintProgressDialog">If True the dialog with printing state information will be shown.</param>
+			<param name="usePrintingThread">If True the printing will be run in new thread.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.PrintExtension.Print(GrapeCity.ActiveReports.Document.PageDocument)">
+			<summary>
+            Prints Page-based document
+            </summary>
+			<param name="pageDocument"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.PrintExtension.Print(GrapeCity.ActiveReports.Document.PageDocument,System.Boolean,System.Boolean,System.Boolean)">
+			<summary>
+            Print the page based document.
+            </summary>
+			<param name="pageDocument">Document to be printed.</param>
+			<param name="showPrintDialog">If True the Print-dialog will be shown.</param>
+			<param name="showPrintProgressDialog">If True the dialog with printing state information will be shown.</param>
+			<param name="usePrintingThread">If True the printing will be run in new thread.</param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook">
+			<summary>
+            Defines collection of annotation items for whole document
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.NullInstance">
+			<summary>
+             Gets the empty non-editable annotations book.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.GetPageSafe(System.Int32)">
+			<summary>
+            Gets the page silently ignoring incorrect page index passed
+            </summary>
+			<param name="pageIndex"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.Create(GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind,GrapeCity.Viewer.Common.Rect)">
+			<summary>
+            When overridden creates annotation item.
+            </summary>
+			<param name="type"></param>
+			<param name="bounds"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.CanCreate(GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind)">
+			<summary>
+            Gets true if specific annotation could be created
+            </summary>
+			<param name="type"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.ReplaceSelection(System.Int32,GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem)">
+			<summary>
+            Adds specific item to page selection
+            </summary>
+			<param name="pageIndex"></param>
+			<param name="item"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.ReplaceSelection(System.Int32,System.Collections.Generic.IEnumerable{GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem})">
+			<summary>
+            Adds specified items to page selection
+            </summary>
+			<param name="pageIndex"></param>
+			<param name="items"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.ClearSelection">
+			<summary>
+            Clears selection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.Pages">
+			<summary>
+            Gets the annotation page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationBook.Selection">
+			<summary>
+            Gets currently selected annotation items
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Annotations.AnnotationsPage">
+			<summary>
+            Defined page with annotations
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationsPage.NullInstance">
+			<summary>
+            Gets
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ObservableCollection`1">
+			<summary>
+            Wrapped System.Collections.ObjectModel observable collection
+            </summary>
+			<typeparam name="T"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.INotificationCollection`1">
+			<summary>
+            Defines interface to collection with notifications and indexer.
+            </summary>
+			<typeparam name="T"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.IItemCollection`1">
+			<summary>
+            Defines interface to readonly collection.
+            </summary>
+			<typeparam name="T"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.INotifyCollectionChanged">
+			<summary>
+            Notifies listeners of dynamic changes to a collection, such as when items are added and removed, or the entire collection object is reset.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.Viewer.Common.INotifyCollectionChanged.CollectionChanged">
+			<summary>
+            Occurs when the items list of the collection has changed, or the collection is reset.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem">
+			<summary>
+            Defined interface to AnnotationItem item
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem.NativeItem">
+			<summary>
+            Gets inner implementaion
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem.Bounds">
+			<summary>
+            Gets or sets annotation boundaries
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem.PaintBounds">
+			<summary>
+            Gets the area the annotation paints to.
+            Override if annotation renders outside its boundaries to fix invalidation issues
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.AnnotationItem.UiEditCaps">
+			<summary>
+            Specifies which properties could be updated using mouse/keyboard
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.CachedPageView">
+			<summary>
+            Base class for page views with caching
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IReportParameter">
+			<summary>
+            Defines interface to report parameters
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.Name">
+			<summary>
+            Gets parameter's name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.ParameterType">
+			<summary>
+            Gets parameter type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.Prompt">
+			<summary>
+            Gets parameter caption
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.Nullable">
+			<summary>
+            Gets true if nullable checkbox should be displayed
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.MultiLine">
+			<summary>
+            Gets true if text field is multiline
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.MultiValue">
+			<summary>
+            Specifies whether parameter allows entering multiple values
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.AllowEmpty">
+			<summary>
+            True if parameter is String and it accepts String.Empty.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.DateOnly">
+			<summary>
+            If parameter is DateTime specifies whether user should be prompted for both date and time or only the date.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.Value">
+			<summary>
+            Gets or sets parameter value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.AvailableValues">
+			<summary>
+            List of available values for multivalue parameter
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.Values">
+			<summary>
+            Gets the parameter value in case of multivalue parameter
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.State">
+			<summary>
+            Parameter state
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.DependantParameters">
+			<summary>
+            Dependant parameters
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameter.ExtendedInfo">
+			<summary>
+            Gets extended error parameter
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.BaseDocumentModelImpl">
+			<summary>
+            Base implementation of DocumentModel with ISearchableDocument and ISelectableDocument interfaces for page-based documents
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IExportableDocument">
+			<summary>
+            Allows document to support exports facility
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IExportableDocument.Export(GrapeCity.Viewer.Common.Model.ExportOptions,System.IO.Stream)">
+			<summary>
+            Performs export
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ExportOptions">
+			<summary>
+            Represents export settings
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ReportModelBase">
+			<summary>
+            Represents report instance
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ReportModelBase.GracefulShutdownTimeoutMs">
+			<summary>
+            Time span given to reports to stop loading report, after which they will be forced to comply
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ReportModelBase.Load(GrapeCity.Viewer.Common.IDocumentLoader)">
+			<summary>
+            Loads data into report. Must be implemented in descedants.
+            </summary>
+			<param name="input">Loader that defines loading strategy</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ReportModelBase.SetupExecutionContext(System.Threading.SynchronizationContext,GrapeCity.Viewer.Common.Model.IDocumentConsumer)">
+			<summary>
+            HACK Temporary stub method to pass execution context back to report
+            </summary>
+			<param name="context"></param>
+			<param name="consumer"></param>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.HasParameters">
+			<summary>
+            Indicates, that report has parameters. Non-volatile.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.DisableRefreshCancel">
+			<summary>
+            Disables Refresh/Cancel button as non-applicable (e.g. .Document is assigned in runtime).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.AllParametersValid">
+			<summary>
+            Gets true if all parameters got valid values and report could be executed
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.GalleyMode">
+			<summary>
+            Gets true if report should be rendered in GalleyMode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.ReportCulture">
+			<summary>
+            Culture of the report. Null if report don't have such information.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.AllowGalleyMode">
+			<summary>
+            Gets true if report has the GalleyMode option
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.AllowBackToParent">
+			<summary>
+            Gets true if report has the BackToParent capability
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.Run">
+			<summary>
+            Gets "Execute" command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.Cancel">
+			<summary>
+            Returns "Cancel loading" command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.LoadState">
+			<summary>
+            Gets current report execution/loading state
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.Error">
+			<summary>
+            Non-null if LoadState is LoadState.Error, null otherwise.
+            Second class property: you will not be notified on this property change.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportModelBase.AutoRun">
+			<summary>
+            Gets true is report should be executed after loading
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IOrientedPageView">
+			<summary>
+            Interface to access orientation of the report page.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Rdlx.IDataSourceEvents">
+			<summary>
+            Exposes data source resolution events.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IParameterizedReport">
+			<summary>
+            Report with parameters
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IParameterizedReport.Refresh">
+			<summary>
+            Resets parameters to default state
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IParameterizedReport.Parameters">
+			<summary>
+            Collection of report parameters
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IReportParameterValue">
+			<summary>
+            Interface for report parameter value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameterValue.Index">
+			<summary>
+            Parameter uniqual index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameterValue.Label">
+			<summary>
+            Parameter Label
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IReportParameterValue.Value">
+			<summary>
+            Parameter Value
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.LayoutControls.PageHandlingControl">
+			<summary>
+            Control for Page Handling
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.LayoutControls.PageHandlingControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.MarginsControl">
+			<summary>
+            MarginsControl
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.MarginsControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.OrientationControl">
+			<summary>
+            OrientationControl
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.OrientationControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.PaperControl">
+			<summary>
+            PaperControl
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageControls.PaperControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageSetupControl">
+			<summary>
+            PageSetupControl
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PageSetupControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PreviewControl">
+			<summary>
+            Displays preview of the report page
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PreviewControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.PreviewNavigationToolStrip.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.WatermarkControl">
+			<summary>
+            Control for watermarks
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupViews.WatermarkControl.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Add(`0,`1)">
+			<summary>
+            Add a new item into the cache.
+            </summary>
+			<param name="k">Identifier or key for item to add.</param>
+			<param name="v">Actual item to store.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Purge(`0)">
+			<summary>
+            Swaps the specified item out of the cache
+            </summary>
+			<param name="k">Identifier for the item to remove.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Remove(`0)">
+			<summary>
+            Removes item from cache
+            </summary>
+			<param name="k">Identifier for the item to remove.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Clear">
+			<summary>
+            Clears cache entirely. Does not dispose items contained within the cache
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Touch(`0)">
+			<summary>
+            Touch or refresh a specified item.  This allows the specified
+            item to be moved to the end of the dispose queue.  E.g. when it
+            is known that this item would benefit from not being purged.
+            </summary>
+			<param name="k">Identifier of item to touch.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.GetValue(`0)">
+			<summary>
+            Returns the item associated with the supplied identifier.
+            </summary>
+			<param name="k">Identifier for the value to be returned.</param>
+			<returns>Item value corresponding to Key supplied.</returns>
+			<remarks>Accessing a stored item in this way automatically
+            forces the item to the end of the purge queue.</remarks>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.ContainsKey(`0)">
+			<summary>
+            Gets true if item is currently in cache
+            </summary>
+			<param name="k"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.GetKeys">
+			<summary>
+            Gets keys of the items currently stored in cache
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.GenericCache`3.PurgeAll">
+			<summary>
+            Empties the cache of all items.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.Viewer.Common.Implementation.GenericCache`3.PurgeItem">
+			<summary>
+            Raised before item is purged out of the cache
+            </summary>
+		</member>
+		<member name="E:GrapeCity.Viewer.Common.Implementation.GenericCache`3.FetchItem">
+			<summary>
+            Called when item is requested but not found in cache
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.GenericCache`3.FillFactor">
+			<summary>
+            Gets fill factor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Capacity">
+			<summary>
+            Gets cache capacity
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.GenericCache`3.SpaceUsed">
+			<summary>
+            Gets the space currently occupied
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.GenericCache`3.Count">
+			<summary>
+            Gets cache items count
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.GenericCache`3.FetchItemEventArgs">
+			<summary>
+            Represents arguments for FetchItem event
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.GenericCache`3.PurgeItemEventArgs">
+			<summary>
+            Represents arguments for PurgeItem event
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.CacheNode`2">
+			<summary>
+            Represents cache item
+            </summary>
+			<typeparam name="TKey"></typeparam>
+			<typeparam name="TValue"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.CacheNodeFactory`2">
+			<summary>
+            Provides generics bounds way of creating cache nodes
+            </summary>
+			<typeparam name="TKey"></typeparam>
+			<typeparam name="TValue"></typeparam>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.CacheNodeFactory`2.CreateNew(`0,`1)">
+			<summary>
+            Creates new cache node
+            </summary>
+			<param name="key"></param>
+			<param name="node"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.MainToolstrip">
+			<summary>
+            MainToolstrip
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.MainToolstrip.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.PageSetupForm.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.ParametersPaneView.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.SearchPaneView.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.ThumbnailsView">
+			<summary>
+            Thumbnail pane view implementation
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.ThumbnailsView.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.TocView">
+			<summary>
+            View for Table of Contents (bookmarks)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Views.TouchModeToolstrip">
+			<summary>
+            TouchMode Toolstrip
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Views.TouchModeToolstrip.Dispose(System.Boolean)">
+			<summary>
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IApplicationContext">
+			<summary>
+            Provides access to different services and factories
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IApplicationContext.CreateReport(GrapeCity.Viewer.Common.DocumentFormat)">
+			<summary>
+            Creates loader for documents with specific formats
+            </summary>
+			<param name="format">Format of the document</param>
+			<param name="loadParam"></param>
+			<returns>Created loader</returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IApplicationContext.CreateRenderer(GrapeCity.Viewer.Common.Model.DocumentModel)">
+			<summary>
+            Creates page renderer for specific document
+            </summary>
+			<param name="document">Document for rendering</param>
+			<returns>Newly created renderer</returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.IApplicationContext.ServiceContainer">
+			<summary>
+            Gets service container
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.BaseApplicationContext.CreateRenderer(GrapeCity.Viewer.Common.Model.DocumentModel)">
+			<summary>
+            Returns implementation of GraphicsDocumentRenderer
+            </summary>
+			<param name="document"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ICopySelectionService">
+			<summary>
+            Base interface for copy operations
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ICopySelectionService.CopySelection(GrapeCity.Viewer.Common.Model.DocumentSelection)">
+			<summary>
+            Copies given selection into platform specific storage
+            </summary>
+			<param name="selection"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ICopySelectionService.CopyToClipBoard(System.String)">
+			<summary>
+            Copies given text into clipboard
+            </summary>
+			<param name="text"></param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Extensions">
+			<summary>
+            Extension methods for common types
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.FindEventArgs">
+			<summary>
+            Provides data for the Find event. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.FindEventArgs.Found">
+			<summary>
+            Gets the value that determines whether the text was found.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.FindEventArgs.PageIndex">
+			<summary>
+            Gets the page number where the text was found.  
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.FindEventHandler">
+			<summary>
+            Represents the method that will handle the Find click event. 
+            </summary>
+			<param name="sender">A FindEventArgs that contains the event data.</param>
+			<param name="e">The source of the event.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventArgs">
+			<summary>
+            Provides data for the HyperLink event. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventArgs.Button">
+			<summary>
+            Gets the mouse button that the user clicked to raise the event.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventArgs.HyperLink">
+			<summary>
+            Gets the hyperlink target.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventArgs.Handled">
+			<summary>
+            Sets or returns a value indicating whether the HyperLinkEvent is handled.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventArgs.CreateNewTab">
+			<summary>
+            Gets or sets a value indicating whether a new tab has been created.  
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.HyperLinkEventHandler">
+			<summary>
+            Represents the method that will handle the HyperLink click event. 
+            </summary>
+			<param name="sender">A HyperLinkEventArgs that contains the event data.</param>
+			<param name="e">The source of the event.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.GenericActionEventArgs">
+			<summary>
+            Internal HyperLinkEventArgs representation, generalized to accomodate IAction. For internal use only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.GenericActionEventArgs.Button">
+			<summary>
+            Gets the mouse button that the user clicked to raise the event.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.GenericActionEventArgs.Action">
+			<summary>
+            Gets the hyperlink target.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.GenericActionEventArgs.Handled">
+			<summary>
+            Sets or returns a value indicating whether the HyperLinkEvent is handled.  
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.SidebarPanel">
+			<summary>
+            Exposes public properties of the sidebar panels.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.SidebarPanel.Width">
+			<summary>
+            Gets or sets the width of entire sidebar.
+            </summary>
+			<remarks>
+            Note: this property was added for backward compatibility reasons only.
+            Use Viewer.Sidebar.Width instead (if possible).
+            </remarks>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.ReportParameter">
+			<summary>
+            Represents a report parameter.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IParameter">
+			<summary>
+            Defines an object that can be used as a report parameter.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.IParameter.Name">
+			<summary>
+            Gets the name of the report parameter.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.IParameter.Values">
+			<summary>
+            Gets the collection of zero or more values for the report parameter.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.ReportParameter.Name">
+			<summary>
+            Gets the name of the report parameter.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.ReportParameter.Values">
+			<summary>
+            Gets the collection of zero or more values for the report parameter.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Sidebar">
+			<summary>
+            Exposes Viewer public API.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Viewer">
+			<summary>
+            Viewer
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.HandleError(System.Exception)">
+			<summary>
+            Reports about runtime error
+            </summary>
+			<param name="ex">error</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Dispose(System.Boolean)">
+			<summary> 
+            Clean up any resources being used.
+            </summary>
+			<param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.ShowFindDialog">
+			<summary>
+            Displays Find Dialog
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Print(System.Boolean)">
+			<summary>
+            Prints the currently opened document(section or page)
+            </summary>
+			<param name="showPrintDialog"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Print(System.Boolean,System.Boolean)">
+			<summary>
+            Prints the currently opened document(section or page)
+            </summary>
+			<param name="showPrintDialog"></param>
+			<param name="showPrintProgressDialog"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Print(System.Boolean,System.Boolean,System.Boolean)">
+			<summary>
+            Prints the currently opened document(section or page)
+            </summary>
+			<param name="showPrintDialog"></param>
+			<param name="showPrintProgressDialog"></param>
+			<param name="usePrintingThread"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.LoadDocument(System.IO.Stream,GrapeCity.Viewer.Common.DocumentFormat)">
+			<summary>
+            Loads the document from stream.
+            </summary>
+			<param name="stream">Stream with report. Note: Page report with master file should contains full path to master file.</param>
+			<param name="format"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.SetParametersValues(System.Collections.Generic.IEnumerable{GrapeCity.Viewer.Common.IParameter})">
+			<summary>
+            Sets values of parameters for the report that is shown.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Export(GrapeCity.ActiveReports.Export.IDocumentExportEx,System.IO.FileInfo)">
+			<summary>
+            Exports the specified page range of the currently loaded report to the specified file by using the specified export filter.
+            </summary>
+			<param name="filter"></param>
+			<param name="file"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Export(GrapeCity.ActiveReports.Export.IDocumentExportEx,System.IO.FileInfo,System.String)">
+			<summary>
+            Exports the specified page range of the currently loaded report to the specified file by using the specified export filter.
+            </summary>
+			<param name="filter"></param>
+			<param name="file"></param>
+			<param name="pageRange"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Export(GrapeCity.ActiveReports.Export.IDocumentExportEx,System.IO.Stream)">
+			<summary>
+            Exports the specified page range of the currently loaded report to the specified stream by using the specified export filter.
+            </summary>
+			<param name="filter"></param>
+			<param name="stream"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Export(GrapeCity.ActiveReports.Export.IDocumentExportEx,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified page range of the currently loaded report to the specified stream by using the specified export filter.
+            </summary>
+			<param name="filter"></param>
+			<param name="stream"></param>
+			<param name="pageRange"></param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Viewer.Render(GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Exports the specified loaded report to the specified file (or group of files) by using the specified export extension.
+            Note: for page report only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.PreviewPages">
+			<summary>
+            Pages to load.  Pass value less or equal to 0 to load all
+            Applicable only for loading from SectionReport or PageDocument instances
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.MouseModeButtonsVisible">
+			<summary>
+            Controls visibility of MouseMode buttons.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.CanExport">
+			<summary>
+            Returns "false" if export is not permitted.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.LocateDataSource">
+			<summary>
+            Fires when the PageReport to view generates LocateDataSource event.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.LocateCredentials">
+			<summary>
+            Fires when the PageReport to view generates LocateCredentials event.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.Action">
+			<summary>
+            This event fires when report item with specified action was clicked
+            in the report preview control.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.Find">
+			<summary>
+            Occurs when the Find dialog finds the requested text in the document.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.HyperLink">
+			<summary>
+            Occurs when the user clicks on text or an image that has a hyperlink assigned to it.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.ZoomChanged">
+			<summary>
+            Occurs when the zoom has changed in the viewer.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.LoadCompleted">
+			<summary>
+            Occurs after all the viewer pages have been fully loaded.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.TableOfContentsAfterSelect">
+			<summary>
+            Occurs after an item is selected in the table of contents treeview.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.TableOfContentsClick">
+			<summary>
+            Occurs when the user clicks an item in the table of contents treeview.  
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Viewer.Win.Viewer.TableOfContentsSelectedIndexChanged">
+			<summary>
+            Occurs when the index of the currently selected item in the table of contents changes.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.TouchModeToolbar">
+			<summary>
+            Pubilc API for touch mode Toolbar manipulation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.TouchModeButtonVisibility">
+			<summary>
+            Display Touch mode button on viewer's toolbar or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.TouchMode">
+			<summary>
+            Enable touch mode or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.History">
+			<summary>
+            Public API for history manipulation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.Sidebar">
+			<summary>
+            Sidebar Panels public API
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.Toolbar">
+			<summary>
+            Pubilc API for Toolbar manipulation.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.AllowSplitter">
+			<summary>
+            Gets or sets a value that determines whether the user is allowed to split the view.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.CurrentPage">
+			<summary>
+            Gets or sets the number of the current document page displayed in the viewer.  
+            1 based.
+            Returns 0 if no report is loaded.
+            Affects History.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.GalleyMode">
+			<summary>
+            Gets or sets GalleyMode of report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.SplitView">
+			<summary>
+            Gets or sets a value that determines whether the viewer is split into two views.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.Zoom">
+			<summary>
+            Gets or sets the viewer's zoom level. 
+            -1 for FitWidth mode
+            -2 for Fit Whole Page mode.
+            Throws ArgumentOutOfRangeException on invalid value.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.ViewType">
+			<summary>
+            Gets or sets a value that determines how the viewer shows pages(single/multi/continous).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.PagesBackColor">
+			<summary>
+            Public API for background color of report pane.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.ScrollbarEnabled">
+			<summary>
+            Public API. show or hide scrolls within report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.HyperlinkForeColor">
+			<summary>
+            Gets or sets the color of the text within a control that hosts a hyperlink. The default is Blue. For SectionReports only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.HyperlinkBackColor">
+			<summary>
+            Gets or sets the background color of the controls that hosts a hyperlink. The default is transparent.  For SectionReports only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.HyperlinkUnderline">
+			<summary>
+            Gets or sets a value determining whether the text in a control that hosts a hyperlink is underlined. The default value is true. For SectionReports only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.UseHyperlinkSettings">
+			<summary>
+            Gets or sets whether to apply the hyperlink settings when hyperlinks are displayed in the Viewer. For SectionReports only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.MultiplePageRows">
+			<summary>
+            Gets or sets the number of pages displayed vertically when the viewer is in MultiPageMode.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.MultiplePageCols">
+			<summary>
+            Gets or sets the number of horizontal pages to display when the viewer is in MultiPageMode.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.RepositionPage">
+			<summary>
+            Determines whether the viewer will reposition the view to the top of the page when a user goes to another page after scrolling downward in a page. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.SearchResultsForeColor">
+			<summary>
+            Gets or sets the color of the highlighted text when using the Viewer control's Find functionality.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.SearchResultsBackColor">
+			<summary>
+            Gets or sets the background color of the highlighted text when using the Viewer control's Find functionality. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.TargetView">
+			<summary>
+            Gets or sets a value that specifies the current target view when SplitView is true. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.PageOffset">
+			<summary>
+            Public Api. offsets are in pixels. zoom ignored.
+            different values per pane. for single page only.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.ReportViewer">
+			<summary>
+            Public API. Exposed for backward compatibility reasons.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.Document">
+			<summary>
+            Public API. Exposed for backward compatibility reasons.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.MouseMode">
+			<summary>
+            Public API. Mouse mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.TabTitleLength">
+			<summary>
+            Not used anymore.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.Viewer.DisplayUnits">
+			<summary>
+            Not used anymore.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.TargetView">
+			<summary>
+            Determines the current active view in the viewer.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.DisplayUnits">
+			<summary>
+            Not used anymore.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.Internal.ViewerApi">
+			<summary>
+            Special class to keep comlicated Viewer API calls. For internal use only.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Viewer.Win.Internal.ViewerApi.OnLoadCompleted(GrapeCity.Viewer.Common.Model.ReportModelBase,System.Action)">
+			<summary>
+            Performs specific action after document is loaded
+            </summary>
+			<param name="report"></param>
+			<param name="loadCompletedAction"></param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PrinterSettings">
+			<summary>
+            Abstract printer settings implementation
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PrinterSettings.GetPaperSize(System.String)">
+			<summary>
+            Gets paper size by its name. Return empty PaperSize instance if printer does not support specified paper size
+            </summary>
+			<param name="sizeName"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PrinterSettings.PaperSizes">
+			<summary>
+            Gets supported paper sizes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PrinterSettings.PrinterName">
+			<summary>
+            Gets printer name
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.WindowsPrintService">
+			<summary>
+            Printing implementation for windows viewer.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IServiceContainer">
+			<summary>
+            Provides a container for services.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.ZoomChangedEventArgs">
+			<summary>
+            Provides data for the ZoomChanged event. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Viewer.Win.ZoomChangedEventArgs.Zoom">
+			<summary>
+            Returns the viewer's new Zoom value. 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Viewer.Win.ZoomChangedEventHandler">
+			<summary>
+            Represents the method that will handle the zoom click event. 
+            </summary>
+			<param name="sender">A ZoomChangedEventArgs that contains the event data.</param>
+			<param name="e">The source of the event.</param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.CachedMap`2">
+			<summary>
+            Maps collection to collection with caching mapped data
+            </summary>
+			<typeparam name="TSource">Source collection type</typeparam>
+			<typeparam name="TValue">Values stored in collection</typeparam>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Implementation.CachedMap`2.RaiseItemChanged(System.Int32)">
+			<summary>
+            Notifies subscribed about cache item change
+            </summary>
+			<param name="index"></param>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.CachedMap`2.Item(System.Int32)">
+			<summary>
+            Gets value from cache by index
+            </summary>
+			<param name="index"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Implementation.CachedMap`2.Count">
+			<summary>
+            Gets supposed items count
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.CacheFormat">
+			<summary>
+            Possible cache formats
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Implementation.CacheFormat.Bitmap">
+			<summary>
+            Cache to bitmap
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Implementation.CacheFormat.Metafile">
+			<summary>
+            Cache to metafile
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IHistoryApi">
+			<summary>
+            This is public interface for user to work with HistoryService
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IHistoryApi.MoveNext">
+			<summary>
+            Navigates to the next page in the history.  
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IHistoryApi.MovePrev">
+			<summary>
+            Navigates to the previous page in the view history.  
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IHistoryApi.Clear">
+			<summary>
+            Clears the page views from the history.  
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.IHistoryApi.Count">
+			<summary>
+            Returns the number of page views in the history.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.IHistoryApi.Position">
+			<summary>
+            Gets the current page's position in the navigation history.  
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.HistoryService">
+			<summary>
+            Holds history
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.IDisposableNotificationCollection`1">
+			<summary>
+            Defines interface to disposable observable collection.
+            </summary>
+			<typeparam name="T"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.ItemCollectionExtensions">
+			<summary>
+            Utility methods for IItemCollection interfaces.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Implementation.SequenceCollection">
+			<summary>
+            Integer values sequence with notifications
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind">
+			<summary>
+            Kinds of annotation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.None">
+			<summary>
+            Artifical kind.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Text">
+			<summary>
+            Text annotation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Circle">
+			<summary>
+            Circular annotation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Square">
+			<summary>
+            Square annotation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Arrow">
+			<summary>
+            Arrow annotation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Balloon">
+			<summary>
+            Balloon annotpation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Line">
+			<summary>
+            Line annotpation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.AnnotationKind.Image">
+			<summary>
+            Image annotpation
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Annotations.Selection">
+			<summary>
+            Defined selected annotation items
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Annotations.Selection.Empty">
+			<summary>
+            Gets empty selection instance
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.Selection.PageIndex">
+			<summary>
+            Gets the page the annotations belong to
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.Selection.IsEmpty">
+			<summary>
+            Gets true if selection is empty
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Annotations.Selection.Items">
+			<summary>
+            Gets selected items
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Interactivity.HandlerExtensions.Chain(GrapeCity.Viewer.Common.Model.Interactivity.IActionHandler,GrapeCity.Viewer.Common.Model.Interactivity.IActionHandler)">
+			<summary>
+            Chains another handler to existing one
+            </summary>
+			<param name="h1"></param>
+			<param name="h2"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Interactivity.ChangeResult">
+			<summary>
+            Defined result of IInteractiveDocument.ProcessOnclick method
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Interactivity.ChangeResult.Empty">
+			<summary>
+            Gets empty result instance
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Interactivity.ChangeResult.ChangeType">
+			<summary>
+            Gets the type of change
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Interactivity.ChangeResult.Action">
+			<summary>
+            Gets the action associated with result
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Interactivity.ChangeType">
+			<summary>
+            Described type of change occured to report document
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Interactivity.DefaultActionHandler">
+			<summary>
+            Default document actions handler
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel">
+			<summary>
+            Report pages layout/scaling options
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.SupportedPagesPerSheet">
+			<summary>
+            Supported pages per sheet
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.CreateDefault">
+			<summary>
+            Creates default instance
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.Clone">
+			<summary>
+            Returns deep copy
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.PageScaling">
+			<summary>
+            Gets or sets scaling mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.PagesPerSheet">
+			<summary>
+            Number of pages to print on sheet (valid values are 2, 4, 8)
+            Is only available in "Multiple pages per sheet" mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.PagesOrder">
+			<summary>
+            Specifies the 
+            Is only available in "Multiple pages per sheet" mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.IsPrintPageBorder">
+			<summary>
+            Draws the crop box (the page boundary of report pages) during N-up printing
+            Is only available in "Multiple pages per sheet" mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.LayoutSettingsModel.IsAutoRotatePages">
+			<summary>
+            Adjusts the page orientation to match the orientation specified in the printer properties
+            Is only available in "Multiple pages per sheet" mode
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.Orientation">
+			<summary>
+            Specifies the paper orientation
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PageScalingMode">
+			<summary>
+            Specifies page scaling
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel">
+			<summary>
+            Physical paper settings model
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel.CreateDefault">
+			<summary>
+            Creates a new instance with user-friendly defaults initialized
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel.Clone">
+			<summary>
+            Returns deep copy
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel.PaperOrientation">
+			<summary>
+            Gets or sets paper orientation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel.PaperSize">
+			<summary>
+            Gets or sets paper size
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSettingsModel.Margins">
+			<summary>
+            Gets or sets page margins
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel">
+			<summary>
+            Specifies all page/scaling settings related to "Advanced Page Setup" facility
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.CreateDefault">
+			<summary>
+            Creates a new instance of the PageSetupModel with all defaults initialized
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.Document">
+			<summary>
+            Get/sets currently shown document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.CurrentPageIndex">
+			<summary>
+            Gets/sets current page index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.LayoutSettings">
+			<summary>
+            Specifies layout/scaling options
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.Watermark">
+			<summary>
+            Specifies watermark settings
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.PageSettings">
+			<summary>
+            Specified physical page settings
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PageSetupModel.PrinterSettings">
+			<summary>
+            Specifies current printer settings
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PagesOrder">
+			<summary>
+            Specifies pages printing order
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PaperSize">
+			<summary>
+            Specifies named paper size
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PaperSize.GetSizeIn">
+			<summary>
+            Gets paper size in inches
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.PaperSize.CompareTo(GrapeCity.Viewer.Common.Model.PageSetup.PaperSize)">
+			<summary>
+            Returns negative value is any of dimensions of current size is less than the same dimension of another instance
+            </summary>
+			<param name="other"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.PaperSize.IsEmpty">
+			<summary>
+            Gets true is size represents empty size (not set)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.PaperSizeUnit">
+			<summary>
+            Specify native paper size units
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.PageSetup.PaperSizeUnit.US">
+			<summary>
+            Size is specified in inches
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.PageSetup.PaperSizeUnit.Metric">
+			<summary>
+            Paper size is specified in Metric units (cm)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel">
+			<summary>
+            Watermark settings
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.CreateDefault">
+			<summary>
+            Creates the new instance with all user-friendly defaults initialized
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.Clone">
+			<summary>
+            Returns deep copy
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.Text">
+			<summary>
+            Watermark text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.FontFamily">
+			<summary>
+            Font family name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.FontSize">
+			<summary>
+            Watermark font size (in points)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.TextColor">
+			<summary>
+            Fore color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.Angle">
+			<summary>
+            Test rotation angle, degrees, counter-clockwise
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.PageSetup.WatermarkSettingsModel.DrawOver">
+			<summary>
+            If property is true watermark sign will be painted on the pages over report content,
+            else watermark will be painted on the pages before all other report content
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ActiveModelListenExtensions">
+			<summary>
+            Implements notification propagation helpers
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.BitmapCachedDocumentModel">
+			<summary>
+            Aggresively caches pages in bitmaps
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Bookmark">
+			<summary>
+            Represents bookmark
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Bookmark.Empty">
+			<summary>
+            Gets empty bookmark instance (null-object)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Bookmark.PageIndex">
+			<summary>
+            Index of bookmarked page
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Bookmark.Area">
+			<summary>
+            "Hot area" within a page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Bookmark.Name">
+			<summary>
+            Name of the bookmark
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Dock">
+			<summary>
+            Specifies item alignment
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Dock.Bottom">
+			<summary>
+            Control will be aligned to the bottom side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Dock.Left">
+			<summary>
+            Control will be aligned to the left side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Dock.Right">
+			<summary>
+            Control will be aligned to the right side
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Dock.Top">
+			<summary>
+            Control will be aligned to the top side
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.DocumentSelection">
+			<summary>
+            Represents selected document items. Immutable object!
+            This implementation is somewhat implementation bound since it treats selection as a collection of "page items"
+             on particular page
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.DocumentSelection.Empty">
+			<summary>
+            Gets empty instance
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.DocumentSelection.Append(System.Collections.Generic.IEnumerable{GrapeCity.Viewer.Common.Model.DocumentModel.IPageItem})">
+			<summary>
+            Returns new selection as a current
+            </summary>
+			<param name="items"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentSelection.IsEmpty">
+			<summary>
+            Gets true if selection is empty
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentSelection.PageIndex">
+			<summary>
+            Gets the page the selection items belongs to
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.DocumentSelection.Items">
+			<summary>
+            Gets currently selected items
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ErrorInfo">
+			<summary>
+            Represents information about errors/exceptions
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ExportType">
+			<summary>
+            Export types enum
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.FindOptions">
+			<summary>
+            Represents text-based search settings
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Frame">
+			<summary>
+            Represents selection area
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Frame.PageIndex">
+			<summary>
+            Gets or sets the page containing selection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Frame.Bounds">
+			<summary>
+            Gets or sets the frame within page coordinates
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Frame.IsEmpty">
+			<summary>
+            Gets true is selection is empty
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.HighlightArea">
+			<summary>
+            Identifies highlight area within a report page
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.HighlightArea.Bounds">
+			<summary>
+            Gets area bounds
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.HighlightArea.AreaType">
+			<summary>
+            Gets area type (it might be rendered with a different color)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.HighlightArea.Type">
+			<summary>
+            Area type. Areas are rendered a bit differently depending on type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.HighlightDocumentViewModel">
+			<summary>
+            Implement document-wise highlighting model.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.HighlightPage">
+			<summary>
+            Immutable page highlight view model
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.HighlightPage.Empty">
+			<summary>
+            Gets highlight layer with no items
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.HighlightPage.IsEmpty">
+			<summary>
+            Gets true if there's nothing on layer
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.HighlightPage.Areas">
+			<summary>
+            Gets all highlight areas withing layer
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.IExportableReport">
+			<summary>
+            Report which supports the export
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IExportableReport.ExportToStream(GrapeCity.Viewer.Common.Model.ExportType,System.IO.Stream)">
+			<summary>
+            Export report to stream
+            </summary>
+			<param name="type">export type</param>
+			<param name="toStream">write stream</param>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IExportableReport.ExportFormats">
+			<summary>
+            Supported export formats
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ExportFormatInfo">
+			<summary>
+            Export format info
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ExportFormatInfo.ExportType">
+			<summary>
+            Export type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ExportFormatInfo.DisplayName">
+			<summary>
+            Display Name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ExportFormatInfo.Extension">
+			<summary>
+            Extension
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ExportFormatInfo.FilterString">
+			<summary>
+            Gets filter string
+            </summary>
+			<returns>filter string</returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ReportParameterType">
+			<summary>
+            Gets the parameter's value data type
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ErrorState">
+			<summary>
+            Defines current parameter state
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.MouseMode">
+			<summary>
+            Specifies possible mouse modes
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.MouseMode.Default">
+			<summary>
+            Default mode
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.MouseMode.Pan">
+			<summary>
+            Pan mode, allows to move page
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.MouseMode.Snapshot">
+			<summary>
+            In this mode snapshot of selected area is created
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.MouseMode.CopySelect">
+			<summary>
+            In this mode it is allowed to copy selected area
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Observable`1">
+			<summary>
+            Observable value.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ParameterizedReportExtensions">
+			<summary>
+            Helpers for reports with parameters.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ParameterizedReportExtensions.SetParameter(GrapeCity.Viewer.Common.Model.IParameterizedReport,System.String,System.Collections.Generic.IEnumerable{System.Object})">
+			<summary>
+            Updates the value of a parameter in the report.
+            </summary>
+			<param name="parameterizedReport">The report with the parameters to update.</param>
+			<param name="name">The name of the parameter to update.</param>
+			<param name="values">The new value of the parameter.</param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.Range">
+			<summary>
+            Arbitrary range implementation
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.Range.Empty">
+			<summary>
+            Gets empty range
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Range.Contains(System.Int32)">
+			<summary>
+            Gets true if range contains specific item 
+            </summary>
+			<param name="value"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Range.Parse(System.String,System.Boolean)">
+			<summary>
+            Parses string input to Range
+            </summary>
+			<param name="input"></param>
+			<param name="isZeroBased">true, if starts with zero</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Range.Translate(GrapeCity.Viewer.Common.Model.Range,System.Int32)">
+			<summary>
+            Translates range by shift value, OpenEnd wise.
+            </summary>
+			<param name="original"></param>
+			<param name="shift"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.Range.For(System.Int32,System.Int32)">
+			<summary>
+            Initializes a new range from start and end points.
+            </summary>
+			<param name="start"></param>
+			<param name="end"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Range.End">
+			<summary>
+            Gets the first position past the end of range
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.Range.IsEmpty">
+			<summary>
+            Gets true if range represents empty one
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.RunOptions">
+			<summary>
+            "Run" command options
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.RunOptions.ForceDataRefresh">
+			<summary></summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ReportPaneModel">
+			<summary>
+            Model for report pane
+            </summary>
+			<summary>
+            Model for report pane.
+            This is a partial class contains only _zooms fild which has different definition in WPF project.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.History">
+			<summary>
+            Provides history for current report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.CurrentPageIndex">
+			<summary>
+            Gets/sets current page index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.ZoomMode">
+			<summary>
+            Gets/sets current zoom mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.ViewType">
+			<summary>
+            Gets/sets view type for current document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.ZoomValue">
+			<summary>
+            Gets/sets explicit zoom value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.ScrollArea">
+			<summary>
+            Notification property specifying the area within a current page that should be visible at the time of property assigned
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.RowsCount">
+			<summary>
+            Gets rows count for multipage view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.ColumnsCount">
+			<summary>
+            Gets columns count for multipage view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.IsActive">
+			<summary>
+            Gets/sets value, indicating that current report pane is active
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.MouseMode">
+			<summary>
+            Gets/sets current mouse mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.SelectionFrame">
+			<summary>
+            Gets or sets selection frame
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ReportPaneModel.PageOffset">
+			<summary>
+            ar6 public api legacy
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.SearchResult">
+			<summary>
+            Represents text search result.
+            The instances of the class are immutable and do not implement INotifyPropertyChanged then
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.DisplayText">
+			<summary>
+            Text to display
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.ItemArea">
+			<summary>
+            Whole text item area coordinates
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.ItemIndex">
+			<summary>
+            Logical page item number (for subsequent searches, ordered)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.Range">
+			<summary>
+            Selection text range
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.PastEnd">
+			<summary>
+            Result indicating search is finished
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SearchResult.BeforeBegin">
+			<summary>
+            Special result value for Find method to begin searching from the beginning of the document/page
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.SearchResult.Create(System.Int32,System.Int32,GrapeCity.Viewer.Common.Model.Range,System.String,GrapeCity.Viewer.Common.Rect)">
+			<summary>
+            Creates new SearchResult instance
+            </summary>
+			<param name="pageNumber"></param>
+			<param name="itemIndex"></param>
+			<param name="range"></param>
+			<param name="displayText"></param>
+			<param name="itemArea"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.SearchResult.Create(System.Int32,System.Int32,GrapeCity.Viewer.Common.Model.Range)">
+			<summary>
+            Creates new SearchResult instance
+            </summary>
+			<param name="pageNumber"></param>
+			<param name="itemIndex"></param>
+			<param name="range"></param>
+			<param name="displayText"></param>
+			<param name="itemArea"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.SearchResult.IsValid">
+			<summary>
+            Ensures that SearchResult is not PastEnd or BeforeBegin (auxiliary values)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.SidebarTabs">
+			<summary>
+            For reference only. Defined position of sidebar panel within sidebar (either tab index or accordion pane index)
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SidebarTabs.Toc">
+			<summary>
+            Table of Content pane
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SidebarTabs.Thumbs">
+			<summary>
+            Thumbnails pane
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SidebarTabs.Search">
+			<summary>
+            Search pane
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.SidebarTabs.Parameters">
+			<summary>
+            Parameters pane
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.TocTreeNode">
+			<summary>
+            Represents bookmarks tree node
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.TocTreeNode.Add(GrapeCity.Viewer.Common.Model.Bookmark)">
+			<summary>
+            Adds new node into collection
+            </summary>
+			<param name="bookmark"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.TocTreeNode.Bookmark">
+			<summary>
+            Gets bookmark instance the node contains
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.TocTreeNode.Nodes">
+			<summary>
+            Gets the nested toc nodes or empty list for leaf node
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.TocTreeNode.IsLeaf">
+			<summary>
+            Gets true if node is leaf
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.TouchMode">
+			<summary>
+            Enable touch mode or not.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.TouchMode.True">
+			<summary>
+            Enable touch mode.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.TouchMode.False">
+			<summary>
+            Disable touch mode.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.TouchMode.Auto">
+			<summary>
+            Detects end-user environment automatically. If end-user environment supports 
+            touch, TouchMode works as True. Otherwise, TouchMode works as False.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.TouchModeButtonVisibility">
+			<summary>
+            Display Touch mode button on viewer's toolbar or not.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.TouchModeButtonVisibility.Hidden">
+			<summary>
+            Hide Touch mode button.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.TouchModeButtonVisibility.Auto">
+			<summary>
+            Detects end-user environment automatically. When application is in touch-supported 
+            environment, the touch mode button is displayed. Otherwize, it is not displayed.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ViewerModel">
+			<summary>
+            Represents model for current view
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IErrorHandler.HandleError(System.Exception)">
+			<summary>
+            Report about runtime error
+            </summary>
+			<param name="exception"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.IErrorHandler.HandleError(GrapeCity.Viewer.Common.Model.ErrorInfo)">
+			<summary>
+            Reports error, warning or information message
+            </summary>
+			<param name="error"></param>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IDocumentConsumer.Document">
+			<summary>
+            Get/sets source document. Unlike the Document it's loaded document without any processing applied
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.IDocumentConsumer.ShowWaitMessage">
+			<summary>
+            Sets whether to show the please wait message
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.PushCurrentReport">
+			<summary>
+            Pushes currently loaded report to stack
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.SetParameters(System.Collections.Generic.IEnumerable{GrapeCity.Viewer.Common.IParameter})">
+			<summary>
+            Sets parameter values for the loaded model
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.HandleError(System.Exception)">
+			<summary>
+            Report about runtime error
+            </summary>
+			<param name="exception"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.HandleError(GrapeCity.Viewer.Common.Model.ErrorInfo)">
+			<summary>
+            Reports error, warning or information message
+            </summary>
+			<param name="error"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.ClearErrors">
+			<summary>
+            Clears error list
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Model.ViewerModel.RaiseDocumentChanged">
+			<summary>
+            Raises property changed event in case document is changed.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.Report">
+			<summary>
+            Gets or sets report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.ShowWaitMessage">
+			<summary>
+            Need show a wait message while first report page is not ready
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.Document">
+			<summary>
+            Get/sets currently shown document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.Annotations">
+			<summary>
+            Get/sets currently shown document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.PaperColor">
+			<summary>
+            Gets/sets page color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.GrayedAreaColor">
+			<summary>
+            Gets/sets partially transparent color which is used to cover inactive report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.SearchResultForeColor">
+			<summary>
+            Forecolor of the search result
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.SearchResultBackColor">
+			<summary>
+            Backcolor of the search result
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.PagesBackColor">
+			<summary>
+            background color of report pane.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.ScrollbarEnabled">
+			<summary>
+            Public API. show or hide scrolls within report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.Margin">
+			<summary>
+            Gets/sets margin for each page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsSidebarVisible">
+			<summary>
+            Gets/sets visibility of sidebar (where TOC and Thumbnail views reside)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsTocVisible">
+			<summary>
+            Gets/sets visibility of TOC panel (using in SLV 2.0 only)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsTocEnabled">
+			<summary>
+            Gets/sets enabled property of TOC panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsSearchPanelVisible">
+			<summary>
+            Gets/sets visibility of Search panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsSearchPanelEnabled">
+			<summary>
+            Gets/sets enabled property of Search panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsParamsPanelVisible">
+			<summary>
+            Gets/sets visibility of Params panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsParamsPanelEnabled">
+			<summary>
+            Gets/sets enabled property of Params panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsThumbnailPanelVisible">
+			<summary>
+            Gets/sets visibility of Thumbnail panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsThumbnailPanelEnabled">
+			<summary>
+            Gets/sets enabled property of Thumbnail panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.ActiveSidebarPane">
+			<summary>
+            Gets or sets currently visible sidebar tab
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.CurrentPane">
+			<summary>
+            Gets currently selected report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.PrimaryPane">
+			<summary>
+            Gets primary report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.SecondaryPane">
+			<summary>
+            Gets secondary report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsPrimaryPaneSelected">
+			<summary>
+            Gets/sets if primary repot pane is selected
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.ThumbZoomValue">
+			<summary>
+            Gets/sets if primary repot pane is selected
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.IsFindDialogVisible">
+			<summary>
+            Indicates if find dialog visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.AnnotationKind">
+			<summary>
+            Show annotations or not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.AnnotationDropDownVisible">
+			<summary>
+            Gets or sets whether annotations drop-down should be visible or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.MouseModeButtonsVisible">
+			<summary>
+            Gets or sets whether mouse mode buttons are visible or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.TouchModeButtonVisibility">
+			<summary>
+            Gets or sets visibility of TouchMode button.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.TouchMode">
+			<summary>
+            Gets or sets whether viewer under TouchMode or not.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.BackToParent">
+			<summary>
+            Gets the command to navigate back to parent report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.OnAction">
+			<summary>
+            Gets the command to react to actions
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Model.ViewerModel.Errors">
+			<summary>
+            Gets the error list
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ViewType">
+			<summary>
+            Possible view modes of the viewer control
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ViewType.SinglePage">
+			<summary>
+            Only one page will be shown
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ViewType.MultiPage">
+			<summary>
+            Multiple pages will be shown
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ViewType.Continuous">
+			<summary>
+            Multiple pages in one row will be shown
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Model.ZoomMode">
+			<summary>
+            Defined Zoom mode
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ZoomMode.Free">
+			<summary>
+            Zoom value is specified explicitly
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ZoomMode.FitWidth">
+			<summary>
+            Sets zoom value automatically to fit control horizontally
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ZoomMode.FitPage">
+			<summary>
+            Sets zoom value to fit control both vertically and horizontally
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.Model.ZoomMode.FitGrid">
+			<summary>
+            Sets zoom value according to columns and rows count
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.AnnotationBookViewModel">
+			<summary>
+            Implement document-wise highlighting model.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationBookViewModel.PageCount">
+			<summary>
+            Gets number of page views
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.AnnotationItemViewModel">
+			<summary>
+            ViewModel for annotation item
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationItemViewModel.Bounds">
+			<summary>
+            Gets annotation item bounds
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationItemViewModel.PaintBounds">
+			<summary>
+            Gets annotation item bounds
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationItemViewModel.InternalsUpdate">
+			<summary>
+            Dummy property intended to invalidate 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationItemViewModel.Annotation">
+			<summary>
+            Annotation
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel">
+			<summary>
+            Represents annotations within one page
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel.EmptyPage">
+			<summary>
+            Gets null-object
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel.HitTest(System.Double,System.Double)">
+			<summary>
+            Gets the information about particular view point
+            </summary>
+			<param name="x"></param>
+			<param name="y"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel.Adorners">
+			<summary>
+            Gets page adorners
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel.Items">
+			<summary>
+            Gets page items
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.AnnotationLayerViewModel.HitTestInfo">
+			<summary>
+            Identifies annotation item and adorner handle clicked
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel">
+			<summary>
+            Selected annotation (not limited to) item adorner
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel.HitTest(System.Double,System.Double)">
+			<summary>
+            Gets the handle under the point
+            </summary>
+			<param name="x"></param>
+			<param name="y"></param>
+			<returns></returns>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel.HostItem">
+			<summary>
+            Gets the annotation item which current adorner is bound to
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel.Handles">
+			<summary>
+            Gets handles
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel.InnerBounds">
+			<summary>
+            Gets or sets inner adorner area bounds
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerViewModel.HighlightHandle">
+			<summary>
+            Gets or sets the handle that is currently "hovered"
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.BorderedAdornerHandle">
+			<summary>
+            Describes adorner point
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.AdornerHandleType">
+			<summary>
+            Defines adorner "hot" point
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel">
+			<summary>
+            ViewModel implementation for error pane/dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.HidePanel">
+			<summary>
+            Hides error panel off the screen
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.ShowDialog">
+			<summary>
+            Show detail errors
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.HideDialog">
+			<summary>
+            Hide detail errors
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.ClearErrors">
+			<summary>
+            Clears errors
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.Copy">
+			<summary>
+            Copy error to the clipboard
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.IsPanelVisible">
+			<summary>
+            Gets or sets whether thumbnails tab is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.IsDialogVisible">
+			<summary>
+            Gets or sets whether thumbnails tab is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.IsDialogVisibleInvert">
+			<summary>
+             Binding visibility property for the ShowDetails button.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.MessageText">
+			<summary>
+            Gets error message
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.Errors">
+			<summary>
+             Gets collection of errors
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ErrorPaneViewModel.LastError">
+			<summary>
+             Gets last error
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel">
+			<summary>
+            View model for find dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.FindNext">
+			<summary>
+            Performs next occurence lookup
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.FindPrevious">
+			<summary>
+            Performs previous occurence lookup
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.Show">
+			<summary>
+            Shows the dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.Close">
+			<summary>
+            Closes the dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.IsVisible">
+			<summary>
+            Gets or sets whether find dialog is visible or not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.SearchString">
+			<summary>
+            Gets or sets string to search within document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.MatchWholeWord">
+			<summary>
+            Gets or sets whether search string must match whole words
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.MatchCase">
+			<summary>
+            Gets or sets whether found text should match the search string case
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.Status">
+			<summary>
+            Gets or sets string to display to user. Usually represents such events as reaching document end/beginning
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.UserMessage">
+			<summary>
+            Gets or sets string to display to user. Usually represents such events as reaching document end/beginning
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.FindDialogViewModel.SearchHistory">
+			<summary>
+            Gets the history of the strings searched
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.FindStatus">
+			<summary>
+            Find operation status
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.ViewModel.FindStatus.None">
+			<summary>
+            Operation completed successfully
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.ViewModel.FindStatus.EndOfPages">
+			<summary>
+            Reached end of document
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.ViewModel.FindStatus.BeginningOfPages">
+			<summary>
+            Reached beginning of the document
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.ViewModel.FindStatus.NotFound">
+			<summary>
+            No single occurence found
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel">
+			<summary>
+            View model for multi page view
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel">
+			<summary>
+            Base model for single page and multipage views.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.PickModels(System.Action{GrapeCity.Viewer.Common.Model.ViewerModel,GrapeCity.Viewer.Common.Model.ReportPaneModel})">
+			<summary>
+            For internal use only
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.IsUIEnabled">
+			<summary>
+            True if current document has any viewable pages.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.IsPanMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.Pan
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.IsCopySelectMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.CopySelect
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.IsSnapshotMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.Snapshot
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.PaperColor">
+			<summary>
+            Color of the page in document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.AnnotationLayer">
+			<summary>
+            Provides annotations view model
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.GrayedAreaColor">
+			<summary>
+            Color of inactive view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.Margin">
+			<summary>
+            Gets page's margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.ViewType">
+			<summary>
+            Gets viewer's view mode. In case if ViewType equal to SinglePage, view should switch from multipage mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.Zoom">
+			<summary>
+            Zoom value of the view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.CurrentPageIndex">
+			<summary>
+            Gets current page index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.ZoomMode">
+			<summary>
+            Gets viewer's current zoom mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.IsActive">
+			<summary>
+            Gets true, if parent report pane is active
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.MouseMode">
+			<summary>
+            Gets current report pane's mouse mode
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.AnnotationKind">
+			<summary>
+            Returns current annotation kind
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.Annotations">
+			<summary>
+            Returns current annotations
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.Document">
+			<summary>
+            Gets the document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.AreBehaviorsEnabled">
+			<summary>
+            True if behaviors are allowed to be executed.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.SearchResultForeColor">
+			<summary>
+            Forecolor of the search result
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.SearchResultBackColor">
+			<summary>
+            Backcolor of the search result
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.PagesBackColor">
+			<summary>
+            Color of the area, where page(s) is(are) displayed.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.ScrollbarEnabled">
+			<summary>
+            Public API. show or hide scrolls within report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.PaperSize">
+			<summary>
+            Gets or sets currently the paper size of currently active printer.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewTypeViewModel.ShowWaitMessage">
+			<summary>
+            True if 'please wait' message is visible.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.Pages">
+			<summary>
+            Gets pages collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.AnnotationPages">
+			<summary>
+            Gets pages collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.MaxPageSize">
+			<summary>
+            Gets maximum page size
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.Rows">
+			<summary>
+            Gets rows count for multipage view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.Columns">
+			<summary>
+            Gets columns count for multipage view 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.MultiPageViewModel.ScrollArea">
+			<summary>
+            Instructs view to scroll to a particular area within current page
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel">
+			<summary>
+            View Model for PageSetup dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperSizes">
+			<summary>
+            Available paper sizes
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperSourceNames">
+			<summary>
+            Names of paper sources
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPaperSourceName">
+			<summary>
+            Currently active paper source
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPaperSizeName">
+			<summary>
+            Current paper name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.UnitsName">
+			<summary>
+            Name of measure units
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperSizeIn">
+			<summary>
+            Size of target paper in inches
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperOrientation">
+			<summary>
+            Paper orientation
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperWidth">
+			<summary>
+            Width of paper
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PaperHeight">
+			<summary>
+            Height of paper
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.IsPortrait">
+			<summary>
+            Is portrait?
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.IsLandscape">
+			<summary>
+            Is landscape?
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.LeftMargin">
+			<summary>
+            Left page margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.RightMargin">
+			<summary>
+            Right page margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.TopMargin">
+			<summary>
+            Top page margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.BottomMargin">
+			<summary>
+            Bottom page margin
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.MaxLeftMargin">
+			<summary>
+            Max left margin, that user can set
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.MaxRightMargin">
+			<summary>
+            Max right margin, that user can set
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.MaxTopMargin">
+			<summary>
+            Max top margin, that user can set
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.MaxBottomMargin">
+			<summary>
+            Max bottom margin, that user can set
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PageScalings">
+			<summary>
+            All possible page scalings
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPageScale">
+			<summary>
+            Current value of page scaling
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PagesPerSheet">
+			<summary>
+            Possible values of Pages per Sheet
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPagesPerSheet">
+			<summary>
+            Current value of Pages per Sheet
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.AdvancedLayoutControlsEnabled">
+			<summary>
+            True if page scaling is not MultiplePages.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.MarginControlsEnabled">
+			<summary>
+            True if page scaling in not None.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.IsCurrentPageScaleIsNotNone">
+			<summary>
+            True if page scale in not None
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PageOrders">
+			<summary>
+            All possible page order names
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPageOrder">
+			<summary>
+            Current value of page ordering
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.PrintPageBorders">
+			<summary>
+            Print page borders, or not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.AutoRotatePages">
+			<summary>
+            Autorotate pages, or not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.WatermarkText">
+			<summary>
+            Text of watermark
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.WatermarkFontFamily">
+			<summary>
+            Font of watermark
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.WatermarkFontSizeInPoints">
+			<summary>
+            Font size in points
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.WatermarkColorARGB">
+			<summary>
+            Color in ARGB format
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.WatermarkRotationAngle">
+			<summary>
+            Rotation angle in degrees
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.GoPreviousPage">
+			<summary>
+            Goes previous page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.GoNextPage">
+			<summary>
+            Goes next page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.GoFirstPage">
+			<summary>
+            Goes first page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.GoLastPage">
+			<summary>
+            Goes last page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPageIndex">
+			<summary>
+            Get current page index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.CurrentPageAndCount">
+			<summary>
+            Gets user-friendly representation of current page, number of pages
+            and loading progress
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.LastError">
+			<summary>
+            Last error. String.Empty for no error
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.PageSetupViewModel.OriginalDocument">
+			<summary>
+            Original (un modified document)
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ParametersViewModel">
+			<summary>
+            View model for ParametersPaneView
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParametersViewModel.RefreshReport">
+			<summary>
+            Binded to 'View report' button
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel">
+			<summary>
+            View model of the IReportParameter
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.Options">
+			<summary>
+            List of options for multivalued parameters
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.IsValueNull">
+			<summary>
+            True if value is null
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.Prompt">
+			<summary>
+            Gets the label
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.Nullable">
+			<summary>
+            True if parameter can be null
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.MultiLine">
+			<summary>
+            True if parameter is multiline
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.DateOnly">
+			<summary>
+            True if parameter allows only date to be entered.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.ValueEnabled">
+			<summary>
+            True if user can change actual value. False if not
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.Enabled">
+			<summary>
+            True if user can change the parameter (parameter doesn't have no unfulfilled dependencies)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.ErrorText">
+			<summary>
+            Text of the last error. Empty if everything is OK.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.ParameterType">
+			<summary>
+            Gets the parameter type
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.ParameterName">
+			<summary>
+            Gets the parameter name
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.RepresentedWith">
+			<summary>
+            Returns type of control to hold the value(s)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.StringValue">
+			<summary>
+            String representation of parameter value.
+            String.Empty converted to null unless parameter is String and it's AllowEmpty is true
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterViewModel.Value">
+			<summary>
+            Gets typed parameter value, ie DateTime or Bool
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ParameterOptionViewModel">
+			<summary>
+            Single option viewmodel for Multivalue parameter
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterOptionViewModel.Index">
+			<summary>
+            Option uniqual index
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterOptionViewModel.Label">
+			<summary>
+            Text to show to user
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterOptionViewModel.Value">
+			<summary>
+            Actual value of the option
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ParameterOptionViewModel.Selected">
+			<summary>
+            True if option selected.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.VisualRepresentation">
+			<summary>
+            Enum of possible visualization of the parameter
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ReportPaneViewModel">
+			<summary>
+            View model for report pane. Handles single page and multipage views
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ReportPaneViewModel.IsActive">
+			<summary>
+            Gets/sets value indicating if current report pane is active
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ReportPaneViewModel.GrayedAreaColor">
+			<summary>
+            Color of inactive view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ReportPaneViewModel.MultiPageViewModel">
+			<summary>
+            View model for current multipage view
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ReportPaneViewModel.SinglePageViewModel">
+			<summary>
+            View model for current sinlg page view
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel">
+			<summary>
+            View model for find dialog
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.FindAll">
+			<summary>
+            Performs text lookup
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.SearchString">
+			<summary>
+            Gets or sets string to search within document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.MatchWholeWord">
+			<summary>
+            Gets or sets whether search string must match whole words
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.MatchCase">
+			<summary>
+            Gets or sets whether found text should match the search string case
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.SearchResults">
+			<summary>
+            Gets the found results table
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.CurrentSearchResultIndex">
+			<summary>
+            Gets or sets currently selected item within SearchResults list.
+            -1 means no entry selected
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchPanelViewModel.Status">
+			<summary>
+            Gets or sets string to display to user. Usually represents such events as reaching document end/beginning
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.SearchResultViewModel">
+			<summary>
+            Represents the entry in results list within a SearchPanel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchResultViewModel.Result">
+			<summary>
+            Gets the found string occurence within a document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SearchResultViewModel.Text">
+			<summary>
+            Gets the text from control where string was found
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel">
+			<summary>
+            View model for sidebar panel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.Toc">
+			<summary>
+            Gets VM for TOC pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ThumbnailsPane">
+			<summary>
+            Gets VM for thumbnails pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.SearchPane">
+			<summary>
+            Gets VM for search pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ParamsViewModel">
+			<summary>
+            Gets VM for parameters pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.TocPanelVisible">
+			<summary>
+            Is toc panel and it's button is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ThumbnailPanelVisible">
+			<summary>
+            Is Thumbnail panel and it's button is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ThumbnailPanelEnabled">
+			<summary>
+            Is Thumbnail panel and it's button is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.SearchPanelVisible">
+			<summary>
+            Is Search panel and it's button is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.SearchPanelEnabled">
+			<summary>
+            Is Search panel enabled
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ParamsPanelVisible">
+			<summary>
+            Is Parameters panel and it's button is visible
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ParamsPanelEnabled">
+			<summary>
+            Is Parameters panel enabled
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SidebarViewModel.ActiveTab">
+			<summary>
+            Returns currently active (visible) tab
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.SinglePageViewModel">
+			<summary>
+            Active Model of View capable to display single page of a document. It aggregates both ViewerModel and ReportPaneModel
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SinglePageViewModel.VerticallyCentered">
+			<summary>
+            Gets or sets whether page should be centered vertically
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SinglePageViewModel.PageView">
+			<summary>
+            Provides thing, that responsible for actual displaying of the page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SinglePageViewModel.ScrollArea">
+			<summary>
+            Inastructs view to scroll to a particular area within current page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.SinglePageViewModel.PageOffset">
+			<summary>
+            ar6 public api legacy 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ThumbnailItemViewModel">
+			<summary>
+            Presentation model for single thumbnail item
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailItemViewModel.View">
+			<summary>
+            Get thumbnail image
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailItemViewModel.PaperColor">
+			<summary>
+            Gets paper color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailItemViewModel.Caption">
+			<summary>
+            Gets thunbnail caption
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailItemViewModel.IsSelected">
+			<summary>
+            Gets or sets whether current thumbnail is currently selected
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel">
+			<summary>
+            Implements presentation model (ViewModel) for thumbnails pane
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.PickModels(System.Action{GrapeCity.Viewer.Common.Model.ViewerModel})">
+			<summary>
+            For internal use only
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.Pages">
+			<summary>
+            Gets pages collection
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.ZoomValue">
+			<summary>
+            Gets or sets Thumbnails zoom factor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.CurrentPageIndex">
+			<summary>
+            Gets or sets currently selectted thimbnail item
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.MaxPageSize">
+			<summary>
+            Gets maximal known page width and height
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.PaperColor">
+			<summary>
+            Gets paper color
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.ZoomIn">
+			<summary>
+            Increases zoom factor
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ThumbnailsViewModel.ZoomOut">
+			<summary>
+            Decreases zoom factor
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.TocViewModel">
+			<summary>
+            Active View Model for TocView
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.TocViewModel.Bookmarks">
+			<summary>
+            Bookmarks tree, might be null if document have no bookmarks
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.TocViewModel.SelectedBookmark">
+			<summary>
+            Sets currently selected bookmark to navigate to bookmarked position
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.TocViewModel.SelectedNode">
+			<summary>
+             Sets currently selected node in TOC tree (SLV2.0) 
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel">
+			<summary>
+            View-model for toolbar
+            </summary>
+			<summary>
+            View-model for toolbar
+            This is a partial code which has different definitions in WPF project.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ZoomOut">
+			<summary>
+            Zoom out command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ZoomIn">
+			<summary>
+            Zoom in command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ZoomReset">
+			<summary>
+            Resets zoom to 100%
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SetViewType">
+			<summary>
+            Sets view type command (parameterized)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SetGalleyMode">
+			<summary>
+            Sets GalleyMode command 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SetZoomMode">
+			<summary>
+            Set zoom mode command (parameterized)
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoPreviousPage">
+			<summary>
+            Goes previous page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoNextPage">
+			<summary>
+            Goes next page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoFirstPage">
+			<summary>
+            Goes first page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoLastPage">
+			<summary>
+            Goes last page
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.Print">
+			<summary>
+            Prints the report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoHistoryBack">
+			<summary>
+            Sets current page to previous.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GoHistoryNext">
+			<summary>
+            Sets current page to next.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.DisplayFindDialog">
+			<summary>
+            Searches desired text
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ToggleTOC">
+			<summary>
+            Toggles TOC panel visibility
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.OpenReport">
+			<summary>
+            Shows "Open report dialog"
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ToggleFindPanel">
+			<summary>
+            Toggles Find panel visibility
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.RefreshReport">
+			<summary>
+            Refreshes report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.FocusOnPageNumber">
+			<summary>
+            Focuses on page number text box, check case 149865
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SetMouseMode">
+			<summary>
+            Sets mouse mode for current report pane
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.CopySelection">
+			<summary>
+            Copies selection into clipboard
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.BackToParentReport">
+			<summary>
+            Gets "Back to parent report" command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.CancelLoading">
+			<summary>
+            Gets "Cancel Loading report" command
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SetTouchMode">
+			<summary>
+            Switch TouchMode on or off.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.CurrentPageAndCount">
+			<summary>
+            Gets user-friendly representation of current page, number of pages
+            and loading progress
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsUIEnabled">
+			<summary>
+            True if current document has any viewable pages.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.ZoomValue">
+			<summary>
+            Gets/sets formatted zoom value
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsFitWidth">
+			<summary>
+            Returns true, if current ZoomMode is ZoomMode.FitWidth
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsFitPage">
+			<summary>
+             Returns true, if current ZoomMode is ZoomMode.FitPage
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsSinglePage">
+			<summary>
+            Returns true, if current ViewType is ViewType.SinglePage
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsContinuous">
+			<summary>
+            Returns true, if current ViewType is ViewType.Continuous
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.GalleyMode">
+			<summary>
+            Returns GalleyMode of report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.AllowGalleyMode">
+			<summary>
+            Returns true if GalleyMode is allowed for report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.AllowBackToParent">
+			<summary>
+            Returns true if BackToParent is allowed for report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.AllowCancel">
+			<summary>
+            Returns true if Cancel is allowed for report
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.SidebarSearchPaneActive">
+			<summary>
+            True if Sidebar is open and sidebar's search pane is active.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsPanMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.Pan
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsCopySelectMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.CopySelect
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsSnapshotMode">
+			<summary>
+            Returns true, if current MouseMode is MouseMode.Snapshot
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.AvailableAnnotationKinds">
+			<summary>
+            Available annotation kinds for drop down selector.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ToolbarViewModel.IsMultiPage">
+			<summary>
+            Returns true, if current ViewType is ViewType.MultiPage
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel">
+			<summary>
+            Model for entire viewer
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.MouseModeButtonsVisible">
+			<summary>
+            Controls visibility of MouseMode buttons.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.TouchModeButtonVisibility">
+			<summary>
+            Controls visibility of TouchMode button.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.Load">
+			<summary>
+            Loads document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.SetReport">
+			<summary>
+            Sets an already loaded report into model
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.CancelLoad">
+			<summary>
+            Cancels loading document
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.ViewModel.ViewerViewModel.ShowWaitMessage">
+			<summary>
+            Binding property, show please wait message if a first report page is not ready
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Color">
+			<summary>
+            Platform independent color implementation
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.op_Inequality(GrapeCity.Viewer.Common.Color,GrapeCity.Viewer.Common.Color)">
+			<summary>
+            Implements the operator !=.
+            </summary>
+			<param name="color1">The color1.</param>
+			<param name="color2">The color2.</param>
+			<returns>
+            The result of the operator.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.op_Equality(GrapeCity.Viewer.Common.Color,GrapeCity.Viewer.Common.Color)">
+			<summary>
+            Implements the operator ==.
+            </summary>
+			<param name="color1">The color1.</param>
+			<param name="color2">The color2.</param>
+			<returns>
+            The result of the operator.
+            </returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.FromArgb(System.Int32)">
+			<summary>
+            Creates new color from color components.
+            </summary>
+			<param name="value">The value.</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.ToArgb">
+			<summary>
+            Gets ARGB value of the color.
+            </summary>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.FromArgb(System.Int32,GrapeCity.Viewer.Common.Color)">
+			<summary>
+            Creates new color from color components.
+            </summary>
+			<param name="a">A.</param>
+			<param name="c">The c.</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.FromArgb(System.Byte,System.Byte,System.Byte,System.Byte)">
+			<summary>
+            Creates new color from color components.
+            </summary>
+			<param name="a">A.</param>
+			<param name="r">The r.</param>
+			<param name="g">The g.</param>
+			<param name="b">The b.</param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.FromArgb(System.Int32,System.Int32,System.Int32)">
+			<summary>
+            Creates new color from color components.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.Color.FromArgb(System.Int32,System.Int32,System.Int32,System.Int32)">
+			<summary>
+            Creates new color from color components.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.Value">
+			<summary>
+            Gets the value.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.R">
+			<summary>
+            Gets the R color component.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.G">
+			<summary>
+            Gets the G color component.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.B">
+			<summary>
+            Gets the B color component.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.A">
+			<summary>
+            Gets the A color component.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.Viewer.Common.Color.IsEmpty">
+			<summary>
+            Gets a value indicating whether this instance is empty.
+            </summary>
+			<value>
+				<c>true</c> if this instance is empty; otherwise, <c>false</c>.
+            </value>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DelegateCommand">
+			<summary>
+            Parameterless command delegate
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DelegateCommand`1">
+			<summary>
+            DelegateCommand implementation
+            </summary>
+			<typeparam name="TParm"></typeparam>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.IDelegateCommand">
+			<summary>
+            Delegated command interface
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ICommand">
+			<summary>
+            Defines the contract for commanding, using the same contract as used in WPF.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ICommand.Execute(System.Object)">
+			<summary>
+            Defines the method to be called when the command is invoked.
+            </summary>
+			<param name="parameter">Data used by the command. If the command does not require data to be passed, this object can be set to null.</param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ICommand.CanExecute(System.Object)">
+			<summary>
+            Defines the method that determines whether the command can execute in its current state.
+            </summary>
+			<param name="parameter">Data used by the command. If the command does not require data to be passed, this object can be set to null.</param>
+			<returns></returns>
+		</member>
+		<member name="E:GrapeCity.Viewer.Common.ICommand.CanExecuteChanged">
+			<summary>
+            Occurs when changes occur that affect whether the command should execute.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.IDelegateCommand.RaiseCanExecuteChanged">
+			<summary>
+            Raises CanExecuteChanged event
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.DelegateCommand.NullCommand">
+			<summary>
+            Gets "Null" command instance which does nothing and is always disabled
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DisposablesCollection">
+			<summary>
+            Utility class to redirect Dispose call to its inner items
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.DisposablesCollection.Add(System.IDisposable[])">
+			<summary>
+            Registers object to be disposed on this collection disposal
+            </summary>
+			<param name="disposables"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.DisposablesCollection.Add(System.IDisposable)">
+			<summary>
+            Registers action to be invoked on object dispose
+            </summary>
+			<param name="disposable"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.DisposablesCollection.Add(System.Action[])">
+			<summary>
+            Registers action to be invoked on object dispose
+            </summary>
+			<param name="disposables"></param>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.DisposablesCollection.From(System.IDisposable[])">
+			<summary>
+            Initialized new collection for another list of disposables
+            </summary>
+			<param name="disposables"></param>
+			<returns></returns>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.DisposablesCollection.From(System.Action[])">
+			<summary>
+            Initialized new collection for another list of actions
+            </summary>
+			<param name="actions"></param>
+			<returns></returns>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DocumentFormat">
+			<summary>
+            Specifies possible document formats
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.DocumentFormat.Rpx">
+			<summary>
+            AR document, xml format
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.DocumentFormat.Rdf">
+			<summary>
+            AR document, binary format
+            </summary>
+		</member>
+		<member name="F:GrapeCity.Viewer.Common.DocumentFormat.Rdlx">
+			<summary>
+            DDR document, xml format
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DocumentSearchService">
+			<summary>
+            Search service implementation for ISearchableDocument
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.ISearchService">
+			<summary>
+            Base interface for search
+            </summary>
+		</member>
+		<member name="M:GrapeCity.Viewer.Common.ISearchService.Find(GrapeCity.Viewer.Common.Model.DocumentModel,GrapeCity.Viewer.Common.Model.FindOptions,GrapeCity.Viewer.Common.Model.SearchResult,System.Int32,System.Action{GrapeCity.Viewer.Common.Model.DocumentModel,System.Collections.Generic.IEnumerable{GrapeCity.Viewer.Common.Model.SearchResult}})">
+			<summary>
+            Searches the document according to find options.
+            </summary>
+			<param name="document"></param>
+			<param name="findOptions"></param>
+			<param name="startFrom"></param>
+			<param name="maxCount"></param>
+			<param name="handler"></param>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.DoubleDelegateCommand">
+			<summary>
+            Command that delegates implementation to another delegate command
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.NullRenderer">
+			<summary>
+            Null-object implementation for IDocumentRenderer interface
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.LoadState">
+			<summary>
+            Possible loading states
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Margin">
+			<summary>
+            Stores page margins
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Point">
+			<summary>
+            Platform independent point
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Rect">
+			<summary>
+            Platform aware rectangle structure
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.Size">
+			<summary>
+            Platform aware Size structure
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.WinformsSpecific.FileDocumentLoader">
+			<summary>
+            FileDocumentLoader
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.NotifyCollectionChangedAction">
+			<summary>
+            Describes the action that caused a System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.Viewer.Common.NotifyCollectionChangedEventHandler">
+			<summary>
+            Represents the method that handles events that implement the System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged event.
+            </summary>
+			<param name="sender"></param>
+			<param name="e"></param>
+		</member>
+	</members>
+</doc>

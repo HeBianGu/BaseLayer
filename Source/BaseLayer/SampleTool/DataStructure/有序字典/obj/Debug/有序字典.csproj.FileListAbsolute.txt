@@ -1,0 +1,12 @@
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\bin\Debug\有序字典.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\bin\Debug\有序字典.exe
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\bin\Debug\有序字典.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\obj\Debug\有序字典.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\obj\Debug\有序字典.exe
+C:\Users\Navylee\Desktop\DevTest\HebianguGL\有序字典\obj\Debug\有序字典.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\bin\Debug\有序字典.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\bin\Debug\有序字典.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\bin\Debug\有序字典.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\obj\Debug\有序字典.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\obj\Debug\有序字典.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\有序字典\obj\Debug\有序字典.pdb

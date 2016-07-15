@@ -1,0 +1,7 @@
+E:\PCOCPlatform\Product\Bin\OPT.PCOCCenter.Service.Interface.dll
+E:\PCOCPlatform\Product\Bin\OPT.PCOCCenter.Service.Interface.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Release\OPT.PCOCCenter.Service.Interface.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Release\OPT.PCOCCenter.Service.Interface.pdb
+E:\PCOCPlatform\Product\Bin1\OPT.PCOCCenter.Service.Interface.dll
+E:\PCOCPlatform\Product\Bin1\OPT.PCOCCenter.Service.Interface.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Service.Interface\obj\Release\PCOCCenter.Service.Interface.csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.NetWork\bin\Debug\HebianGu.ComLibModule.NetWork.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.NetWork\bin\Debug\HebianGu.ComLibModule.NetWork.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.NetWork.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.NetWork.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.pdb

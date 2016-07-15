@@ -1,0 +1,18 @@
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\bin\Debug\TaskControlDemo.exe.config
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\bin\Debug\TaskControlDemo.exe
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\bin\Debug\TaskControlDemo.pdb
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.Form1.resources
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.Properties.Resources.resources
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.TaskControlModel.resources
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.csproj.GenerateResource.Cache
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.exe
+d:\用户目录\documents\visual studio 2013\Projects\TaskControlDemo\TaskControlDemo\obj\Debug\TaskControlDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\bin\Debug\TaskControlDemo.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\bin\Debug\TaskControlDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\bin\Debug\TaskControlDemo.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.TaskControlModel.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.exe
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.pdb

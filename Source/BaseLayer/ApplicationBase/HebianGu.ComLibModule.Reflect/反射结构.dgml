@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="事件" Bounds="46.0916666666668,167.51,50,25.8366666666667" />
+    <Node Id="可以是类、委托、枚举或结构" Category="Comment" Bounds="327.091674804688,112.254958138021,176,25.8366666666666" UseManualLocation="True" />
+    <Node Id="属性" Bounds="127.091666666667,167.51,50,25.8366666666666" Label="字段" />
+    <Node Id="方法" Bounds="289.091674804688,168.091724804687,50,25.8366666666667" />
+    <Node Id="模块GetModules" Bounds="177,45.8366666666666,114.183333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="特性" Bounds="208.091666666667,167.51,50,25.8366666666666" />
+    <Node Id="程序集" Bounds="207.091666666667,-21,56,25.8366666666667" UseManualLocation="True" />
+    <Node Id="类型GetTypes" Bounds="184.361666666667,111.673333333333,97.46,25.8366666666667" />
+  </Nodes>
+  <Links>
+    <Link Source="可以是类、委托、枚举或结构" Target="类型GetTypes" Bounds="290.821613580979,124.776122630215,36.2700612237083,0.115919619274464" />
+    <Link Source="模块GetModules" Target="类型GetTypes" Bounds="233.424568977535,71.6733363087972,0.470884762881099,31.0009852971573" />
+    <Link Source="程序集" Target="模块GetModules" Bounds="234.419595973885,4.8366663869222,0.478790554880334,32.0010104265827" />
+    <Link Source="类型GetTypes" Target="事件" Bounds="104.600433349609,137.509994506836,91.0110168457031,31.3688507080078" />
+    <Link Source="类型GetTypes" Target="属性" Bounds="178.241775512695,137.509994506836,36.1097869873047,24.8919830322266" />
+    <Link Source="类型GetTypes" Target="方法" Bounds="251.638524260239,137.509950228882,36.5211580407157,25.4378570478552" />
+    <Link Source="类型GetTypes" Target="特性" Bounds="233.091659545898,137.509994506836,0,21" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

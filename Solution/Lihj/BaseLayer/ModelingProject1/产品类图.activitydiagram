@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="f8f691b5-5e13-4274-90bc-68aea78ab469" name="产品类图" linkedPackageId="fee81ae9-0cb9-471d-b4d3-31c6c2e4cad8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="343c1804-e2ca-40a6-9f70-f7df2aef0b12">
+      <profileInstance Id="b5892099-0115-438e-92ab-ddfcaa5f170c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="eb3f31e9-c3d3-4bde-be08-c52aa8e8ce2d">
+      <profileInstance Id="f7958d22-b74e-40f1-a9d7-d903e3ce0a12" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="e03b5c02-b850-4f55-bf0b-628ba55f393b" name="产品类图" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="37f12417-7047-48dd-b27d-65553c9363a4" />
+        <nodes>
+          <initialNode Id="e89484c2-f257-400f-8ce8-7cfb91d6dbc5" name="Initial1" isLeaf="false">
+            <elementDefinition Id="5c499bb1-ed89-4067-8041-89f3b1122f2d" />
+          </initialNode>
+          <objectNode Id="f87e7935-f733-4bb6-a6af-6f1a9cb2a6d6" name="IBxFunctionModule" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4512ae76-65fb-4f25-ae1f-1a8ab49b1afd" />
+            <upperBound>
+              <literalInteger Id="c88eb180-6a0c-4d83-a78c-4484e82bd763" name="2147483647" value="2147483647">
+                <elementDefinition Id="4e9ac40b-9a42-4de9-8011-f82c8432b6c0" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="fee81ae9-0cb9-471d-b4d3-31c6c2e4cad8" name="ModelingProject1">
+    <elementDefinition Id="c658d0d1-1370-40c9-8b02-510bb8770de4" />
+  </package>
+</activityRootModel>

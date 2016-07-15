@@ -1,0 +1,9 @@
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.dll.config
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.dll
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.dll
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.MainFormToButton.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+E:\WorkArea\LiHJ\Faker.Net-master\Faker.Net-master\bin\Debug\Faker.dll
+E:\WorkArea\LiHJ\Faker.Net-master\Faker.Net-master\bin\Debug\Faker.pdb
+E:\WorkArea\LiHJ\Faker.Net-master\Faker.Net-master\Faker.Net\obj\Debug\Faker.Net.csprojResolveAssemblyReference.cache
+E:\WorkArea\LiHJ\Faker.Net-master\Faker.Net-master\Faker.Net\obj\Debug\Faker.dll
+E:\WorkArea\LiHJ\Faker.Net-master\Faker.Net-master\Faker.Net\obj\Debug\Faker.pdb

@@ -1,0 +1,10 @@
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Debug\Base.csprojResolveAssemblyReference.cache
+E:\6.x\6.2\DEV\Product\Debug\Base.dll
+E:\6.x\6.2\DEV\Product\Debug\Base.pdb
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Debug\Base.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\Base\obj\Debug\Base.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\Base.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\Base.pdb

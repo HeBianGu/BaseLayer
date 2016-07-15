@@ -1,0 +1,14 @@
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Dictionory\bin\Debug\HebianGu.ComLibModule.Dictionory.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Dictionory\bin\Debug\HebianGu.ComLibModule.Dictionory.pdb
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Dictionory.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Dictionory.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Dictionory.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Dictionory.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Dictionory\obj\Debug\HebianGu.ComLibModule.Dictionory.pdb

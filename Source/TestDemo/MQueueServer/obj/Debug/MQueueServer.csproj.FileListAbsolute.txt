@@ -1,0 +1,17 @@
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\bin\Debug\MQueueServer.exe.config
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\bin\Debug\MQueueServer.exe
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\bin\Debug\MQueueServer.pdb
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\obj\Debug\MQueueServer.Form1.resources
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\obj\Debug\MQueueServer.Properties.Resources.resources
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\obj\Debug\MQueueServer.csproj.GenerateResource.Cache
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\obj\Debug\MQueueServer.exe
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueServer\obj\Debug\MQueueServer.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\bin\Debug\MQueueServer.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\bin\Debug\MQueueServer.exe
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\bin\Debug\MQueueServer.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.exe
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\MQueueServer\obj\Debug\MQueueServer.pdb

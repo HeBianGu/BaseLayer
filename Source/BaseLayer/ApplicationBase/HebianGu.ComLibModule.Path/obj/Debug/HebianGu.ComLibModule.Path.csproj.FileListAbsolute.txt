@@ -1,0 +1,12 @@
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Path\bin\Debug\HebianGu.ComLibModule.Path.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Path\bin\Debug\HebianGu.ComLibModule.Path.pdb
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
+C:\Users\Navylee\Desktop\DevTest\图书控制权限客户端\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Path.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Path.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb

@@ -1,0 +1,29 @@
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.FileTransferForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.LoginForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.Properties.Resources.resources
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.Client.dll
+E:\PCOCPlatform\6.0 Working Area\Product\Debug\OPT.PCOCCenter.Client.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.FileTransferForm.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.LoginForm.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.Properties.Resources.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll.licenses
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Client.dll
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.Client.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Client.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Client.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.FileTransferForm.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.LoginForm.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.Properties.Resources.resources
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll.licenses
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.pdb

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id=".动态加载Dll" Category="Category1" Bounds="-293,-55,83.5266666666667,25.8366666666667" Label="动态加载Dll" UseManualLocation="True" />
+    <Node Id="PublicStaticAssemblyLoad(stringAssemblyString);" Bounds="-181.5,-154.826617226156,313.583333333333,25.8366666666667" Label="public static Assembly Load(string assemblyString);" UseManualLocation="True" />
+    <Node Id="PublicStaticAssemblyLoadFile(stringPath);" Bounds="-89.5,-49.5,272.066666666667,25.8366666666667" Label="public static Assembly LoadFile(string path);" UseManualLocation="True" />
+    <Node Id="PublicStaticAssemblyLoadFrom(stringAssemblyFile);" Bounds="-167.5,79.5,433.633333333333,25.8366666666667" Label="Assembly assembly = Assembly.LoadFile(&quot;程序集路径，不能是相对路径&quot;); " UseManualLocation="True" />
+    <Node Id="该方法传入的是Dll的名字，该Dll必须位于全局缓存GAC中才行，不然会报“System.IO.FileLoadException:未能加载文件或程序集”的异常。" Category="Comment" Bounds="31.5000056966146,-285.173383892822,243.053333333333,73.3466666666667" Label="该方法传入的是Dll的名字，该Dll必须位于全局缓存GAC中才行，不然会报“System.IO.FileLoadException: 未能加载文件或程序集”的异常。" UseManualLocation="True" />
+    <Node Id="这个LoadFile最方便，参数就是dll的路径。" Category="Comment" Bounds="240.087877803147,-77.5,249.73,41.6733333333333" Label="这个LoadFile最方便，参数就是dll的路径，不能是相对路径" UseManualLocation="True" />
+    <Node Id="这个方法也可以，参数同样是dll路径。" Category="Comment" Bounds="80.5,183.5,238.063333333333,41.6733333333333" Label="这个方法也可以，参数同样是dll路径，不能是相对路径" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source=".动态加载Dll" Target="PublicStaticAssemblyLoad(stringAssemblyString);" Bounds="-221.922155427461,-125.360611398648,159.663547953275,70.3606113986478" />
+    <Link Source=".动态加载Dll" Target="PublicStaticAssemblyLoadFile(stringPath);" Bounds="-209.473333333333,-41.3102715182859,110.974868179677,2.04977591761502" />
+    <Link Source=".动态加载Dll" Target="PublicStaticAssemblyLoadFrom(stringAssemblyFile);" Bounds="-222.369394664297,-29.1633333333333,234.603851329319,104.987085461595" />
+    <Link Source="PublicStaticAssemblyLoad(stringAssemblyString);" Target="该方法传入的是Dll的名字，该Dll必须位于全局缓存GAC中才行，不然会报“System.IO.FileLoadException:未能加载文件或程序集”的异常。" Bounds="-3.16782895443034,-207.197837925863,87.3256747102548,52.3712175441896" />
+    <Link Source="这个LoadFile最方便，参数就是dll的路径。" Target="PublicStaticAssemblyLoadFile(stringPath);" Bounds="191.548821040981,-48.7885118265888,48.5390674477884,3.06119824940727" />
+    <Link Source="这个方法也可以，参数同样是dll路径。" Target="PublicStaticAssemblyLoadFrom(stringAssemblyFile);" Bounds="73.8725440478527,110.713795637631,97.6924813178654,72.7862043623692" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

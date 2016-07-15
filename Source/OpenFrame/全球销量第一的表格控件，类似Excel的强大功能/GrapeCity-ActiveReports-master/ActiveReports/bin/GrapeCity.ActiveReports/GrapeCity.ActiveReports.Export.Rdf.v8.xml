@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Rdf.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Export.Rdf.RdfRenderingExtension">
+			<summary>
+            Rdf RE provide the functionality that user can transfer the Page-based report to Section-based report.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Rdf.RdfRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+			<summary>
+            Implement the render method of IRenderingExtension interface
+            </summary>
+			<param name="report">rendered report.</param>
+			<param name="streams">stream of output file.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Rdf.RdfRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Implement the render method of IRenderingExtension interface
+            </summary>
+			<param name="report">rendered report.</param>
+			<param name="streams">stream of output file.</param>
+			<param name="settings">export settings</param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Rdf.Settings.Pagination">
+			<summary>
+            Gets or sets the value indicates should pagination be used for resulted rdf document or not.
+            </summary>
+		</member>
+	</members>
+</doc>

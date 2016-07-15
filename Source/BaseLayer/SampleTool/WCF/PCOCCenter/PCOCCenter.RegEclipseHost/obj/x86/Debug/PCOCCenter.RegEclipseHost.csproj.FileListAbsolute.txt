@@ -1,0 +1,9 @@
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.RegEclipseHost.exe.config
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.RegEclipseHost.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\Product\Debug\OPT.PCOCCenter.RegEclipseHost.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\PCOCCenter.RegEclipseHost.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\OPT.PCOCCenter.RegEclipseHost.MainForm.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\OPT.PCOCCenter.RegEclipseHost.Properties.Resources.resources
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\PCOCCenter.RegEclipseHost.csproj.GenerateResource.Cache
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\OPT.PCOCCenter.RegEclipseHost.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\PCOCCenter.RegEclipseHost\obj\x86\Debug\OPT.PCOCCenter.RegEclipseHost.pdb

@@ -1,0 +1,8 @@
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\bin\Debug\HebianGu.ComLibModule.DateTime.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\bin\Debug\HebianGu.ComLibModule.DateTime.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\bin\Debug\HebianGu.ComLibModule.Object.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\bin\Debug\HebianGu.ComLibModule.Object.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DateTime.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.DateTime.pdb

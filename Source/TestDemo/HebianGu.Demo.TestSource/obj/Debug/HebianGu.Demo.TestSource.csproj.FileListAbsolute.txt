@@ -1,0 +1,13 @@
+F:\资源\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.dll
+F:\资源\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.pdb
+F:\资源\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.dll
+F:\资源\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.pdb
+F:\资料\TestDemo\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.dll
+F:\资料\TestDemo\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.pdb
+F:\资料\TestDemo\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.dll
+F:\资料\TestDemo\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.dll
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.dll
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.pdb
+E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.csprojResolveAssemblyReference.cache

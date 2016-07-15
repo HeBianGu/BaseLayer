@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCNS.Calendar", "FCNS.Calendar.csproj", "{8730FED4-E00F-43DA-AAFD-D0BD9C5C5D73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCNS", "..\..\FCNS\FCNS.csproj", "{CBFC1736-6383-4111-84A1-B07D2144A5E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCNS.Script", "..\..\FCNS.Script\FCNS.Script.csproj", "{278C3A50-CC69-4129-8339-54D06F566BA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8730FED4-E00F-43DA-AAFD-D0BD9C5C5D73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8730FED4-E00F-43DA-AAFD-D0BD9C5C5D73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8730FED4-E00F-43DA-AAFD-D0BD9C5C5D73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8730FED4-E00F-43DA-AAFD-D0BD9C5C5D73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBFC1736-6383-4111-84A1-B07D2144A5E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBFC1736-6383-4111-84A1-B07D2144A5E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBFC1736-6383-4111-84A1-B07D2144A5E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBFC1736-6383-4111-84A1-B07D2144A5E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278C3A50-CC69-4129-8339-54D06F566BA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278C3A50-CC69-4129-8339-54D06F566BA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278C3A50-CC69-4129-8339-54D06F566BA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278C3A50-CC69-4129-8339-54D06F566BA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

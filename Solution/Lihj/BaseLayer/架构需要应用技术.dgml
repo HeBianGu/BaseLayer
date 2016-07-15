@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="C#架构" Bounds="-38,-87,59.6833333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Linq语句" Bounds="61,-119.5,68.42,25.8366666666667" UseManualLocation="True" />
+    <Node Id="反射" Bounds="-31,39.5,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="泛型" Bounds="-131,1.50000000000001,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="预定义" Bounds="70,-4.49999999999999,80,25.8366666666667" Label="参数预定义" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="C#架构" Target="Linq语句" Bounds="21.6833338419596,-93.1607387059906,30.8405443058316,9.69656425640333" />
+    <Link Source="C#架构" Target="反射" Bounds="-7.93792126097437,-61.1633336130778,1.56397476759644,91.664643318075" />
+    <Link Source="C#架构" Target="泛型" Bounds="-85.0434482181016,-61.1633336130778,62.6031801791098,56.6259920064319" />
+    <Link Source="C#架构" Target="预定义" Bounds="10.3435911697234,-61.1633336130778,73.77521699904,51.5110128665265" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

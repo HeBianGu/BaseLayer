@@ -1,0 +1,9 @@
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.Form1.resources
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.Properties.Resources.resources
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.csproj.GenerateResource.Cache
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.exe.licenses
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\bin\Debug\Dev.Demo.SplitControl.exe.config
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\bin\Debug\Dev.Demo.SplitControl.exe
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\bin\Debug\Dev.Demo.SplitControl.pdb
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.exe
+F:\资源\TestDemo\dev.demo.treelist\Dev.Demo.SplitControl\obj\Debug\Dev.Demo.SplitControl.pdb

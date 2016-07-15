@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="cc6e5442-34a9-40a8-9307-1ff2ad5324721" Bounds="-247,6,760.473333333333,41.6733333333333" Label="Assembly assembly = Assembly.GetExecutingAssembly(); // 获取当前程序集 &#xD;&#xA;object obj = assembly.CreateInstance(&quot;类的完全限定名（即包括命名空间）&quot;); // 创建类的实例，返回为 object 类型，需要强制类型转换" UseManualLocation="True" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="产品类图">
+  <activityRootModelMoniker Id="f8f691b5-5e13-4274-90bc-68aea78ab469" />
+  <nestedChildShapes>
+    <initialNodeShape Id="6c284158-4aa7-4d3c-958b-8e4241772ef2" absoluteBounds="1.375, 0.625, 0.875, 0.875" customColor="89, 89, 89">
+      <initialNodeMoniker Id="e89484c2-f257-400f-8ce8-7cfb91d6dbc5" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <objectNodeShape Id="024d4414-5675-4ea3-b3b8-e944e31152b3" absoluteBounds="1.25, 1.875, 1.75, 0.375" customColor="White">
+      <objectNodeMoniker Id="f87e7935-f733-4bb6-a6af-6f1a9cb2a6d6" LastKnownName="IBxFunctionModule" />
+    </objectNodeShape>
+  </nestedChildShapes>
+</activityDiagram>

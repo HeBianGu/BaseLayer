@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Word.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Export.Word.Section.RtfExport">
+			<summary>
+            The Rich Text Format (RTF) export component for ActiveReports for .NET.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String)">
+			<summary>
+            Exports the specified document to a Rich Text Format (RTF) file.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.String,System.String)">
+			<summary>
+            Exports the specified document to a Rich Text Format (RTF) file.
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format (RTF).
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="stream">The Stream to write the RTF to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.PageDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format (RTF).
+            </summary>
+			<param name="document">
+            The ActiveReports PageDocument object to export.
+            </param>
+			<param name="stream">The Stream to write the RTF to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String,System.String)">
+			<summary>
+            Exports the specified document to a Rich Text Format (RTF) file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.String)">
+			<summary>
+            Exports the specified document to a Rich Text Format (RTF) file.
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="filePath">
+            The file name and path to save the main html file to.
+            </param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format (RTF).
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the RTF to.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Export(GrapeCity.ActiveReports.Document.SectionDocument,System.IO.Stream,System.String)">
+			<summary>
+            Exports the specified document to the specified stream in Rich Text Format (RTF).
+            </summary>
+			<param name="document">
+            The ActiveReports Document object to export.
+            </param>
+			<param name="outputStream">The Stream to write the RTF to.</param>
+			<param name="pageRange">
+            A range of page numbers to export seperated by a comma.  Between each comma can have a single page number, or range of pages with a hyphen between the starting and ending page numbers in the range.
+            </param>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.EnableShapes">
+			<summary>
+            Setting this value to true will export the Shapes and Lines to RTF Format.
+            You will require Microsoft Word to view it correctly.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Section.RtfExport.Pagination">
+			<summary>
+            Gets or sets the value indicates should pagination be used for resulted RTF document or not
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Word.Section.RtfExportException">
+			<summary>
+            Thrown when a general RTF export specific error occurs.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Word.Page.Settings">
+			<summary>
+				<see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.ISettings" /> implementation for Word Rendering Extension. 
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.Author">
+			<summary>
+            Gets or sets the name of the author of document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.Generator">
+			<summary>
+            Gets or sets identity of the generator of the document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.Title">
+			<summary>
+            Gets or sets the title of the document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.PageWidth">
+			<summary>
+            Gets or sets the width of the page of rendered document. 
+            Value corresponds to values passed in <see cref="T:GrapeCity.ActiveReports.Extensibility.Definition.Components.Length" /> class("8.5in", "11cm", etc.).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.PageHeight">
+			<summary>
+            Gets or sets the height of the page of rendered document. 
+            Value corresponds to values passed in <see cref="T:GrapeCity.ActiveReports.Extensibility.Definition.Components.Length" /> class("8.5in", "11cm", etc.).
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.BaseUrl">
+			<summary>
+            Gets or sets the base Url used for hyperlinks on the document.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Word.Page.Settings.UseMhtOutput">
+			<summary>
+            Gets or sets the value indicates should Mht output be used for resulted word document or not.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension">
+			<summary>
+Implementes <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension" />. Allows to render <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport" /> to Word Html document.
+</summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Word\WordRenderingExtension.slashdoc" path="/Libraries/Types/Type[@name=&quot;WordRenderingExtension&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension.Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)">
+			<!-- No matching elements were found for the following include tag -->
+			<include file="..\Source XML Docs\Rendering\Word\WordRenderingExtension.slashdoc" path="/Libraries/Types/Type[@name=&quot;WordRenderingExtension&quot;]/Members/Member[@name=&quot;Render(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReport,GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,System.Collections.Specialized.NameValueCollection)&quot;]/Docs/*" />
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension.GetSupportedSettings">
+			<summary>
+Gets specific settings of <see cref="T:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension" />.
+</summary>
+			<returns>
+				<see cref="T:System.Collections.Specialized.NameValueCollection" /> of the settings.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension.GetSupportedSettings(System.Boolean)">
+			<summary>
+Gets specific settings of <see cref="T:GrapeCity.ActiveReports.Export.Word.Page.WordRenderingExtension" />.
+</summary>
+			<returns>
+				<see cref="T:System.Collections.Specialized.NameValueCollection" /> of the settings.</returns>
+		</member>
+	</members>
+</doc>

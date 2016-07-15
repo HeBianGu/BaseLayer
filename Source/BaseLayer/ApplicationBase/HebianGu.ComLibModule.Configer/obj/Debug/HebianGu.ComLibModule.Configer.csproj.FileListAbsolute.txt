@@ -1,0 +1,7 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Configer.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Configer.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.pdb

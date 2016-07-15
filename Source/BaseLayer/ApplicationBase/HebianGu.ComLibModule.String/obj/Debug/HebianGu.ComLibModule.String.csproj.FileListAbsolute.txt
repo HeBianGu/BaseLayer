@@ -1,0 +1,10 @@
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\bin\Debug\HebianGu.ComLibModule.String.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\bin\Debug\HebianGu.ComLibModule.String.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\bin\Debug\HebianGu.ComLibModule.Object.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\bin\Debug\HebianGu.ComLibModule.Object.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\obj\Debug\HebianGu.ComLibModule.String.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\obj\Debug\HebianGu.ComLibModule.String.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\obj\Debug\HebianGu.ComLibModule.String.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.String\obj\Debug\HebianGu.ComLibModule.String.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.String.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.String.pdb

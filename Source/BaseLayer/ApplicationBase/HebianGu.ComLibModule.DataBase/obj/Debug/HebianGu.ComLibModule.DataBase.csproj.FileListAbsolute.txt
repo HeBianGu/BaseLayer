@@ -1,0 +1,3 @@
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DataBase\obj\Debug\HebianGu.ComLibModule.DataBase.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DataBase\obj\Debug\HebianGu.ComLibModule.DataBase.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DataBase\obj\Debug\HebianGu.ComLibModule.DataBase.csproj.GenerateResource.Cache

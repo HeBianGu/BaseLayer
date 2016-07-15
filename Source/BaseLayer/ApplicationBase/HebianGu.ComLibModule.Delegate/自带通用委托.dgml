@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Action&lt;&gt;" Bounds="-157,-29,74.9466666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Func&lt;&gt;" Bounds="7,-104.999998372396,64.9766666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="MethodInvoker()" Bounds="109.5,8.50000081380206,116.49,25.8366666666667" UseManualLocation="True" />
+    <Node Id="Privite" Bounds="-136,141,274.156666666667,25.8366666666667" Label="public delegate bool Predicate&lt;in T&gt;(T obj);" UseManualLocation="True" />
+    <Node Id="自带通用委托" Category="Category1" Bounds="-14.4999999998,-2.79744465814247E-07,92,25.8366666666667" />
+  </Nodes>
+  <Links>
+    <Link Source="自带通用委托" Target="Action&lt;&gt;" Bounds="-73.2148025682071,-7.18890570239062,58.7148025684071,11.2743616451161" />
+    <Link Source="自带通用委托" Target="Func&lt;&gt;" Bounds="32.4828186159121,-70.1892654949377,5.33995482982685,70.1892652151933" />
+    <Link Source="自带通用委托" Target="MethodInvoker()" Bounds="77.5,15.7881634156599,23.0174640041195,1.43600478861747" />
+    <Link Source="自带通用委托" Target="Privite" Bounds="5.76368336758094,25.8366663869222,22.9491027538413,106.365773122887" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

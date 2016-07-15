@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="AppDomain" Category="Category2" Bounds="374.3,105,89.0033333333333,25.24" UseManualLocation="True" />
+    <Node Id="AppDomain.Unload(_appDomain)卸载程序集" Bounds="418.3,299.659894233509,277.516666666667,25.24" Label="AppDomain.Unload(_appDomain) 卸载程序集" UseManualLocation="True" />
+    <Node Id="Assembly.Load()" Bounds="297.5,-171,161.81,25.24" Label="Assembly.Load()动态加载" UseManualLocation="True" />
+    <Node Id="CSharpCodeProvider" Bounds="319.1,-69.4,187.486666666667,25.24" Label="CSharpCodeProvider动态创建" UseManualLocation="True" />
+    <Node Id="Gacuti/iShaerdDemo.dll/f" Bounds="-525.499262898763,72.7668984710693,175.436666666667,25.24" Label="gacuti /i ShaerdDemo.dll /f" UseManualLocation="True" />
+    <Node Id="MarshalByRefObject只有派生这个基类的类才能通过另一个应用程序域访问" Bounds="442.300016479492,3.23984082336425,424.34,25.24" UseManualLocation="True" />
+    <Node Id="_appDomain.CreateInstance(...)" Bounds="181.5,390.039894233509,197.276666666667,25.24" UseManualLocation="True" />
+    <Node Id="_appDomain.ExecuteAssembley(&quot;text.exe&quot;);" Bounds="-19.3000056966146,271.109902304743,267.046666666667,25.24" UseManualLocation="True" />
+    <Node Id="从配置文件中设置要连接的版本" Bounds="-200.78090907823,368.287034484709,188,25.24" UseManualLocation="True" />
+    <Node Id="使用：添加引用，不拷贝到安装路径下（如:.net4.5等版本）" Bounds="-476.78090907823,438.177142555943,340.966666666667,25.24" Label="使用：添加引用，不拷贝到安装路径下（如:.net 4.5等版本）" UseManualLocation="True" />
+    <Node Id="全局唯一的" Bounds="-603.062788655107,270.059894233509,80,25.24" UseManualLocation="True" />
+    <Node Id="共享程序域" Category="Category2" Bounds="-224.9,199.659894233509,80,25.24" UseManualLocation="True" />
+    <Node Id="共享程序集" Bounds="-209.7,74.6,80,25.24" UseManualLocation="True" />
+    <Node Id="分类" Category="Category2" Bounds="-128.899993896484,-19.8000012588501,50,25.24" UseManualLocation="True" />
+    <Node Id="动态调用程序集，放到同一个程序集域里面" Bounds="258.899994277954,184.199995117187,248,25.24" UseManualLocation="True" />
+    <Node Id="安装" Bounds="-320.062583648816,136.459894233509,50,25.24" UseManualLocation="True" />
+    <Node Id="对应私有内存其他程序集不可以访问" Bounds="-65.5000057220459,157.000002746582,212,25.24" UseManualLocation="True" />
+    <Node Id="应用程序集域" Category="Category2" Bounds="246.3,45.8,92,25.24" UseManualLocation="True" />
+    <Node Id="延迟签名连接许可" Bounds="-614.380920410156,128.006998471069,164,25.24" Label="延迟签名连接许可注册版本" UseManualLocation="True" />
+    <Node Id="强名" Bounds="-429.7,258.859894233509,50,25.24" UseManualLocation="True" />
+    <Node Id="强命创建工具" Bounds="-606.38090907823,201.259894233509,92,25.24" UseManualLocation="True" />
+    <Node Id="放置在GAC全局程序集缓存中" Bounds="-481.462788655107,351.659894233509,177.393333333333,25.24" UseManualLocation="True" />
+    <Node Id="添加引用" Bounds="175.50000000092,-187,68,25.24" UseManualLocation="True" />
+    <Node Id="私有程序集" Bounds="-206.5,-100.6,80,25.24" UseManualLocation="True" />
+    <Node Id="程序集" Category="Category1" Bounds="6.39999999999998,-24,56,25.24" UseManualLocation="True" />
+    <Node Id="程序集动态加载" Category="Category2" Bounds="107.9,-96.6,104,25.24" UseManualLocation="True" />
+    <Node Id="程序集的特性" Bounds="-57.7,-162.2,92,25.24" UseManualLocation="True" />
+    <Node Id="签名" Bounds="-425.580902099609,184.847097585708,50,25.24" UseManualLocation="True" />
+    <Node Id="跨域访问" Bounds="501.5,58.4799408233643,68,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="AppDomain" Target="动态调用程序集，放到同一个程序集域里面" Bounds="392.336480911079,130.24,20.7444896258074,45.7628675144682" />
+    <Link Source="AppDomain" Target="跨域访问" Bounds="450.459686727964,87.0042310927525,45.1434558703731,17.9957689072475" />
+    <Link Source="共享程序域" Target="从配置文件中设置要连接的版本" Bounds="-179.053593284973,224.899894233509,62.6431306772306,135.220888261957" />
+    <Link Source="共享程序域" Target="使用：添加引用，不拷贝到安装路径下（如:.net4.5等版本）" Bounds="-295.792042178275,224.899894233509,104.46886991007,205.256387843005" />
+    <Link Source="共享程序域" Target="安装" Bounds="-265.258387548911,166.178491222337,58.360730544383,33.4814030111712" />
+    <Link Source="共享程序域" Target="强名" Bounds="-371.009669096118,222.997323996637,146.317600344279,39.4085719588734" />
+    <Link Source="共享程序域" Target="放置在GAC全局程序集缓存中" Bounds="-368.242872801297,224.899894233509,166.084514515151,121.447621982898" />
+    <Link Source="共享程序域" Target="签名" Bounds="-366.602053064899,199.800738516258,141.702053064899,9.73198682031079" />
+    <Link Source="分类" Target="共享程序集" Bounds="-155.756978237493,5.4399987411499,43.060415845746,61.7766403190021" />
+    <Link Source="分类" Target="私有程序集" Bounds="-151.210577562391,-68.2454122482214,37.5332063226565,48.4454109893713" />
+    <Link Source="动态调用程序集，放到同一个程序集域里面" Target="AppDomain.Unload(_appDomain)卸载程序集" Bounds="401.935851388322,209.43999206543,128.585361425834,85.2468695928126" />
+    <Link Source="动态调用程序集，放到同一个程序集域里面" Target="_appDomain.CreateInstance(...)" Bounds="290.458599566142,209.43999206543,86.1410988757281,172.547569497786" />
+    <Link Source="动态调用程序集，放到同一个程序集域里面" Target="_appDomain.ExecuteAssembley(&quot;text.exe&quot;);" Bounds="161.800424627963,209.43999206543,182.085611955003,58.8999573769443" />
+    <Link Source="安装" Target="Gacuti/iShaerdDemo.dll/f" Bounds="-401.284328782657,101.674769392611,81.5609553646569,36.3993984295714" />
+    <Link Source="应用程序集域" Target="AppDomain" Bounds="319.267067826886,71.0399981689453,64.4159715499375,30.1452571037644" />
+    <Link Source="强名" Target="全局唯一的" Bounds="-514.085229345465,273.247995432222,84.3852476560122,5.96803274542265" />
+    <Link Source="强名" Target="强命创建工具" Bounds="-517.830876613462,229.622878165154,88.1308949240088,32.6073365155107" />
+    <Link Source="程序集" Target="共享程序域" Bounds="-166.224989141784,1.23999988555908,188.250996759312,191.993606431598" />
+    <Link Source="程序集" Target="分类" Bounds="-69.9041412041845,-10.5296749339838,76.3041420148077,2.3172619045846" />
+    <Link Source="程序集" Target="对应私有内存其他程序集不可以访问" Bounds="34.8253148665826,1.23999988555908,4.94621743554565,146.765109598293" />
+    <Link Source="程序集" Target="应用程序集域" Bounds="62.4000008106232,-3.80186885975186,176.518923959044,47.7744133820755" />
+    <Link Source="程序集" Target="程序集动态加载" Bounds="56.2155654423935,-66.8533654454626,74.0784755204256,42.8533653310217" />
+    <Link Source="程序集" Target="程序集的特性" Bounds="-4.64238817844167,-128.422462587874,34.83267792669,104.422462473433" />
+    <Link Source="程序集动态加载" Target="Assembly.Load()" Bounds="196.963616935484,-142.859090553311,135.85809921171,46.2590905533111" />
+    <Link Source="程序集动态加载" Target="CSharpCodeProvider" Bounds="211.9,-78.3882337282395,98.2865753310126,10.5691453250539" />
+    <Link Source="程序集动态加载" Target="添加引用" Bounds="166.824247787739,-153.869638148466,31.4222793386792,57.269638148466" />
+    <Link Source="签名" Target="延迟签名连接许可" Bounds="-494.853602476861,156.81103531286,69.4721131297591,29.9605540787001" />
+    <Link Source="跨域访问" Target="MarshalByRefObject只有派生这个基类的类才能通过另一个应用程序域访问" Bounds="562.679559920623,32.2700695453526,56.4479213084411,26.2098712780117" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
+</DirectedGraph>

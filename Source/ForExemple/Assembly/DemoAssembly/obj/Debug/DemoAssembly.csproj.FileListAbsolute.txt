@@ -1,0 +1,9 @@
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\bin\Debug\DemoAssembly.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\bin\Debug\DemoAssembly.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\bin\Debug\DemoAssembly.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.Form1.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.exe
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.pdb
+E:\WorkArea\DevTest\HebianGu\Source\ForExemple\Assembly\DemoAssembly\obj\Debug\DemoAssembly.csprojResolveAssemblyReference.cache

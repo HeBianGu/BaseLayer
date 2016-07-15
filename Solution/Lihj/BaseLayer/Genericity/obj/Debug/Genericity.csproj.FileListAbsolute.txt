@@ -1,0 +1,5 @@
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\Genericity\bin\Debug\Genericity.exe.config
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\Genericity\bin\Debug\Genericity.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\Genericity\bin\Debug\Genericity.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\Genericity\obj\Debug\Genericity.exe
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\Genericity\obj\Debug\Genericity.pdb

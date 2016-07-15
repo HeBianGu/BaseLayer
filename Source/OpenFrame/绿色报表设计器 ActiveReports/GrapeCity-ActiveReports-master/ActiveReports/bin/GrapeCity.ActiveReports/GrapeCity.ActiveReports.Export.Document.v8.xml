@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Document.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.IFontMap">
+			<summary>
+            Represents the font map containing GDI+ font metrics.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.IFontMap.Get(System.String)">
+			<summary>
+            Gets font metrics for the specified font family.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.IFontMap.Update(System.String)">
+			<summary>
+            Updates the font map for the specified font family.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.IFontMetrics">
+			<summary>
+            Represents GDI+ font metrics.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IFontMetrics.Ascent">
+			<summary>
+            Gets the ascent.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IFontMetrics.Descent">
+			<summary>
+            Gets the descent.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IFontMetrics.LineSpacing">
+			<summary>
+            Gets the line spacing.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IFontMetrics.EmHeight">
+			<summary>
+            Gets the height of the font in em units.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IFontMetrics.ExternalLeading">
+			<summary>
+            Gets the external leading.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.IO.ILoadState">
+			<summary>
+            Represents document loader state
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IO.ILoadState.BytesRequired">
+			<summary>
+            Gets number of bytes expected from data stream
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.IO.ILoadState.DiagInfo">
+			<summary>
+            Gets execution context info for diagnostics/debugging
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutPage">
+			<summary>
+            Represents a layout page with asynchronous content resolving.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutPage.GetHeader(System.Action)">
+			<summary>
+            Asyncronously resolves the header section of the page and invokes the specified action when it is resolved.
+            </summary>
+			<param name="resolved">The action to invoke when header is resolved.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutPage.GetBody(System.Action)">
+			<summary>
+            Asyncronously resolves the body section of the page and invokes the specified action when it is resolved.
+            </summary>
+			<param name="resolved">The action to invoke when body is resolved.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutPage.GetFooter(System.Action)">
+			<summary>
+            Asyncronously resolves the footer section of the page and invokes the specified action when it is resolved.
+            </summary>
+			<param name="resolved">The action to invoke when footer is resolved.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutTree">
+			<summary>
+            Represents a layout tree with asynchronous content resolving.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutTree.GetMasterReport(System.Action)">
+			<summary>
+            Asyncronously resolves the master report and invokes the specified action when it is resolved.
+            </summary>
+			<param name="masterReportResolved">The action to invoke when master report is resolved.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Layout.IAsyncLayoutTree.GetMetadataDictionary(System.Action)">
+			<summary>
+            Asyncronously resolves metadata dictionary of the page and invokes the specified action when it is resolved.
+            </summary>
+			<param name="metadataDictionaryResolved">The action to invoke when metadata dictionary is resolved.</param>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders">
+			<summary>
+            Defines border properties for drawing.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.LeftBorderStyle">
+			<summary>
+            Gets the left border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.TopBorderStyle">
+			<summary>
+            Gets the top border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.RightBorderStyle">
+			<summary>
+            Gets the right border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.BottomBorderStyle">
+			<summary>
+            Gets the bottom border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.LeftBorderColor">
+			<summary>
+            Gets the left border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.TopBorderColor">
+			<summary>
+            Gets the top border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.RightBorderColor">
+			<summary>
+            Gets the right border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.BottomBorderColor">
+			<summary>
+            Gets the bottom border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.LeftBorderWidth">
+			<summary>
+            Gets or sets the width of the left border.
+            </summary>
+			<value>The width of the left border.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.TopBorderWidth">
+			<summary>
+            Gets or sets the width of the top border.
+            </summary>
+			<value>The width of the top border.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.RightBorderWidth">
+			<summary>
+            Gets or sets the width of the right border.
+            </summary>
+			<value>The width of the right border.</value>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Layout.IDrawingBorders.BottomBorderWidth">
+			<summary>
+            Gets or sets the width of the bottom border.
+            </summary>
+			<value>The width of the bottom border.</value>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle">
+			<summary>
+            Specifies the style for the border.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.None">
+			<summary>
+            Indicates no border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Hidden">
+			<summary>
+            Indicates hidden line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Dotted">
+			<summary>
+            Indicates a dotted border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Dashed">
+			<summary>
+            Indicates a dashed border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Solid">
+			<summary>
+            Indicates a solid border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Double">
+			<summary>
+            Indicates a double border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Groove">
+			<summary>
+            Indicates a grooved border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Ridge">
+			<summary>
+            Indicates a ridged border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Inset">
+			<summary>
+            Indicates an inset border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.Outset">
+			<summary>
+            Indicates an outset border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.WindowInset">
+			<summary>
+            Indicates a Windows-style inset border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.DashDot">
+			<summary>
+            Indicates a DashDot border line.
+            </summary>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Layout.BorderStyle.DashDotDot">
+			<summary>
+            Indicates a DashDotDot border line.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.IDrawingReportItem">
+			<summary>
+            Defines the drawing report item.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.IDrawingReportItem.Top">
+			<summary>
+            The distance of the item from the top of the containing object.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.IDrawingReportItem.Left">
+			<summary>
+            The distance of the item from the left of the containing object.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.IDrawingReportItem.Width">
+			<summary>
+            Width of the item.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.IDrawingReportItem.Height">
+			<summary>
+            Height of the item.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.Interactivity.IDocumentToggleController">
+			<summary>
+            Internal extension of <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IToggleController" /> interface
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Interactivity.IDocumentToggleController.ToggleControllerId">
+			<summary>
+            Gets identifier of toggle controller
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.Interactivity.IMetadataDictionaryEntryEx">
+			<summary>
+            Defines <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IMetadataDictionaryEntry" /> extension.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength">
+			<summary>
+            Represents a length for drawing.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.ToLength">
+			<summary>
+            Converts this instance to the equivalent length instance.
+            </summary>
+			<returns>The Length instance equivalent to this instance.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.FromLength(GrapeCity.ActiveReports.Extensibility.Definition.Components.Length)">
+			<summary>
+            Converts this instance to the equivalent length instance.
+            </summary>
+			<returns>The Length instance equivalent to this instance.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.Equals(GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength)">
+			<summary>
+            Indicates whether the current object is equal to another object of the same type.
+            </summary>
+			<param name="other">An object to compare with this object.</param>
+			<returns>true if the current object is equal to the <paramref name="other" /> parameter; otherwise, false.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.Equals(System.Object)">
+			<summary>
+            Indicates whether this instance and a specified object are equal.
+            </summary>
+			<param name="obj">Another object to compare to.</param>
+			<returns>true if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, false.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.GetHashCode">
+			<summary>
+            Returns the hash code for this instance.
+            </summary>
+			<returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.op_Equality(GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength,GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength)">
+			<summary>
+            Implements the operator ==.
+            </summary>
+			<param name="left">The left.</param>
+			<param name="right">The right.</param>
+			<returns>The result of the operator.</returns>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.op_Inequality(GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength,GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength)">
+			<summary>
+            Implements the operator !=.
+            </summary>
+			<param name="left">The left.</param>
+			<param name="right">The right.</param>
+			<returns>The result of the operator.</returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.DrawingLength.DrawingUnit">
+			<summary>
+            Specifies the length units.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle">
+			<summary>
+            Defines style properties for drawing.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.DefaultBorderStyle">
+			<summary>
+            Gets the default border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.LeftBorderStyle">
+			<summary>
+            Gets the left border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.TopBorderStyle">
+			<summary>
+            Gets the top border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.RightBorderStyle">
+			<summary>
+            Gets the right border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.BottomBorderStyle">
+			<summary>
+            Gets the bottom border style.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.DefaultBorderColor">
+			<summary>
+            Gets the default border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.LeftBorderColor">
+			<summary>
+            Gets the left border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.TopBorderColor">
+			<summary>
+            Gets the top border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.RightBorderColor">
+			<summary>
+            Gets the right border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.BottomBorderColor">
+			<summary>
+            Gets the bottom border color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.DefaultBorderWidth">
+			<summary>
+            Gets the default width of the border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.LeftBorderWidth">
+			<summary>
+            Gets or sets the width of the left border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.TopBorderWidth">
+			<summary>
+            Gets or sets the width of the top border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.RightBorderWidth">
+			<summary>
+            Gets or sets the width of the right border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.BottomBorderWidth">
+			<summary>
+            Gets or sets the width of the bottom border.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.Color">
+			<summary>
+            Gets the foreground color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.BackgroundColor">
+			<summary>
+            Gets the background color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.BackgroundGradientEndColor">
+			<summary>
+            Gets the background gradient end color.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.PaddingLeft">
+			<summary>
+            Gets the padding left.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.PaddingTop">
+			<summary>
+            Gets the padding top.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.PaddingRight">
+			<summary>
+            Gets the padding right.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.PaddingBottom">
+			<summary>
+            Gets the padding bottom.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.LineHeight">
+			<summary>
+            Gets the height of the line.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.LineSpacing">
+			<summary>
+            Gets the line spacing of the line.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Rendering.Components.IDrawingStyle.CharacterSpacing">
+			<summary>
+            Gets the character spacing of the line.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Serialization.BookmarkMapData">
+			<summary>
+            Represents the bookmark map data.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.ICancelAccessor">
+			<summary>
+            Defines an accessor for cancelling a long running operation.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.ICancelAccessor.Cancel">
+			<summary>
+            Cancels the associated long running operation.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.Document">
+			<summary>
+            Represents document that provides facility to save/load rendering and layout info.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Toggle(System.UInt32[])">
+			<summary>
+            Toggles all specified toggle items.
+            </summary>
+			<param name="controllerIds">An array of toggle controller ids to toggle.</param>
+		</member>
+		<member name="F:GrapeCity.ActiveReports.Export.Document.Document.OnLayoutComplete">
+			<summary>
+            Called when layout build has been completed.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Save(System.IO.Stream)">
+			<summary>
+            Saves document to specified stream.
+            </summary>
+			<param name="output">output stream where you want to write the document</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Save(System.String)">
+			<summary>
+            Saves document content to specified file.
+            </summary>
+			<param name="path">path to file</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Relayout(System.String)">
+			<summary>
+            Saves document content to specified file with relayout of rendering tree.
+            </summary>
+			<param name="path">path to file.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Relayout(System.IO.Stream)">
+			<summary>
+            Saves document to specified stream with relayout of rendering tree.
+            </summary>
+			<param name="output">Output stream where you want to write the document.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Relayout(GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider)">
+			<summary>
+            Saves document to specified provider with relayout of rendering tree.
+            </summary>
+			<param name="provider">Output stream provider where you want to write the document.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Export(GrapeCity.ActiveReports.Extensibility.Rendering.IO.StreamProvider,GrapeCity.ActiveReports.Extensibility.Rendering.IRenderingExtension,System.Collections.Specialized.NameValueCollection)">
+			<summary>
+            Exports document report to specified rendering extension.
+            </summary>
+			<param name="streamProvider">Stream for output.</param>
+			<param name="renderingExtension">The rendering extension to use for document export.</param>
+			<param name="settings">The rendering extension settings to use for document export.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Load(System.String)">
+			<summary>
+            Loads document content from given file.
+            </summary>
+			<param name="path">path to file</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.Load(System.IO.Stream)">
+			<summary>
+            Loads document content from specified stream.
+            </summary>
+			<param name="input">The input stream with document.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.Document.GetService(System.Type)">
+			<summary>
+            Gets the service object of the specified type.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Document.Report">
+			<summary>
+            Returns root of rendering tree.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Document.Layout">
+			<summary>
+            Returns layout tree.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Document.Id">
+			<summary>
+            Gets or sets document id
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Document.ToggleHistory">
+			<summary>
+            Gets documents toggle history.
+            </summary>
+		</member>
+		<member name="P:GrapeCity.ActiveReports.Export.Document.Document.PageCount">
+			<summary>
+            Gets the number of pages.
+            </summary>
+		</member>
+		<member name="E:GrapeCity.ActiveReports.Export.Document.DocumentRenderingExtension.OnLayoutComplete">
+			<summary>
+            Raised when layout build has been completed.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.ITimerFactory">
+			<summary>
+            Defines a timer.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.ITimerFactory.Create">
+			<summary>
+            Creates a timer instance.
+            </summary>
+			<returns>The timer instance.</returns>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.ITimer">
+			<summary>
+            Defines a timer.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.ITimer.Start(System.Int32,System.Action)">
+			<summary>
+            Starts the timer with the specified interval and operation.
+            </summary>
+			<param name="interval">The interval in milliseconds when to invoke the operation.</param>
+			<param name="operation">The operation to invoke when interval is reached.</param>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.ITimer.Stop">
+			<summary>
+            Stops the timer.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Document.ILogService">
+			<summary>
+            Defines a log service.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Document.ILogService.Write(System.String,System.Object[])">
+			<summary>
+            Writes the specified message to the log.
+            </summary>
+			<param name="message">The message.</param>
+			<param name="parameters">The parameters.</param>
+		</member>
+	</members>
+</doc>

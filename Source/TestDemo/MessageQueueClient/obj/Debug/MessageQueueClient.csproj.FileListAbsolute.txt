@@ -1,0 +1,2 @@
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MessageQueueClient\bin\Debug\MessageQueueClient.exe.config
+F:\资料\需要整理的DEMO\MessageQueueClient\MessageQueueClient\bin\Debug\MessageQueueClient.exe.config

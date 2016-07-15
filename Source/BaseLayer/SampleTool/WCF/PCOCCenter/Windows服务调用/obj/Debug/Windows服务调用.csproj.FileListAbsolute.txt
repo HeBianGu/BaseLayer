@@ -1,0 +1,5 @@
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\Windows服务调用\bin\Debug\Windows服务调用.exe.config
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\Windows服务调用\bin\Debug\Windows服务调用.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\Windows服务调用\bin\Debug\Windows服务调用.pdb
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\Windows服务调用\obj\Debug\Windows服务调用.exe
+C:\Users\Navylee\Desktop\DevTest\上传运行程序\PCOCCenter\Windows服务调用\obj\Debug\Windows服务调用.pdb

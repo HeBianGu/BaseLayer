@@ -1,0 +1,10 @@
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\bin\Debug\HebianGu.ComLibModule.UIFactory.exe.config
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\bin\Debug\HebianGu.ComLibModule.UIFactory.exe
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\bin\Debug\HebianGu.ComLibModule.UIFactory.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.Properties.Resources.resources
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.exe
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.pdb
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.exe.config
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.exe
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.pdb

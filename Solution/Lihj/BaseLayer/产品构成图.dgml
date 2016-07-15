@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Applications" Bounds="317.916666666667,0,127.046666666667,25.8366666666667" Label="Applications主程序" />
+    <Node Id="Base" Bounds="509.820007324219,163.753368097941,50.0000000000001,25.8366666666667" />
+    <Node Id="BaseInterface" Bounds="486.35499206543,52.0798347646078,96.9300000000001,25.8366666666666" />
+    <Node Id="BaseLayer" Bounds="330.91,112,101.06,25.8366666666667" Label="BaseLayer底层" />
+    <Node Id="Bin" Bounds="338.381666666667,392,86.1166666666667,25.8366666666666" Label="Bin发布版本" />
+    <Node Id="Configer" Bounds="334.703333333333,280,93.4733333333334,25.8366666666667" Label="Configer配置" />
+    <Node Id="Debug" Bounds="328.098333333334,448,106.683333333333,25.8366666666666" Label="Debug调试版本" />
+    <Node Id="En-us" Bounds="509.663648681641,388.243289004898,52.3400000000001,25.8366666666666" Label="en-us" UseManualLocation="True" />
+    <Node Id="GeneralLayer中间层" Bounds="316,56,130.88,25.8366666666667" />
+    <Node Id="Gloabal" Bounds="499.1636328125,275.426901431274,63.8699999999999,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Lihj" Bounds="350.948333333333,504,60.9833333333333,25.8366666666666" Label="例：lihj" />
+    <Node Id="Log" Bounds="348.708333333333,224,65.4633333333334,25.8366666666667" Label="Log日志" />
+    <Node Id="ModuleManager" Bounds="476.880007324219,107.916601431274,115.88,25.8366666666666" />
+    <Node Id="Modules" Bounds="334.45,168,93.98,25.8366666666667" Label="Modules模块" />
+    <Node Id="Product" Bounds="141.443333333333,336,101.113333333333,25.8366666666667" Label="Product产品包" />
+    <Node Id="Soulution" Bounds="130.388333333334,448,123.223333333333,25.8366666666667" Label="Soulution解决方案" />
+    <Node Id="Source" Bounds="151.006666666667,112,81.9866666666667,25.8366666666666" Label="source资源" />
+    <Node Id="Update更新" Bounds="338.333333333333,336,86.2133333333334,25.8366666666666" />
+    <Node Id="Zh-cn" Bounds="511.663642578125,331.263668097941,51.89,25.8366666666666" Label="zh-cn" UseManualLocation="True" />
+    <Node Id="例：HMModule" Bounds="480.10499206543,219.590134764608,109.43,25.8366666666667" />
+    <Node Id="例：TestAPP1" Bounds="485.880007324219,-3.75693190205874,97.8800000000001,25.8366666666666" />
+    <Node Id="所有日志文件放置在这个文件中" Category="Comment" Bounds="98.0000000000001,224,188,25.8366666666666" />
+    <Node Id="所有资源生成到这个目录中" Category="Comment" Bounds="110,392,164,25.8366666666666" />
+    <Node Id="所有配置文件放置在这个文件中" Category="Comment" Bounds="98.0000000000001,280,188,25.8366666666666" />
+    <Node Id="通用全局可修改" Category="Comment" Bounds="662.663632128344,286.86138715611,104,25.8366666666666" UseManualLocation="True" />
+    <Node Id="项目名称" Bounds="0,336,68,25.8366666666667" />
+  </Nodes>
+  <Links>
+    <Link Source="Applications" Target="例：TestAPP1" Bounds="444.96333577474,10.5805341938777,31.9193702001637,0.781842145867326" />
+    <Link Source="BaseLayer" Target="Base" Bounds="419.725705669623,137.836668294271,81.5666625309851,27.5221622332951" />
+    <Link Source="BaseLayer" Target="BaseInterface" Bounds="414.507564438634,81.1914458315513,78.8618626368998,30.8085557960529" />
+    <Link Source="BaseLayer" Target="ModuleManager" Bounds="431.970002441406,122.616977947982,35.9131926612092,0.9561085754017" />
+    <Link Source="Configer" Target="En-us" Bounds="399.866168673564,305.836668294271,110.172004703163,77.240086886504" />
+    <Link Source="Configer" Target="Gloabal" Bounds="428.176669108073,289.595952177198,61.9911625162542,1.89425626020267" />
+    <Link Source="Configer" Target="Zh-cn" Bounds="420.794162773791,305.836668294271,82.3184005806902,27.021705689732" />
+    <Link Source="Modules" Target="例：HMModule" Bounds="419.84683941088,193.836668294271,68.0359304253864,22.8842283621842" />
+    <Link Source="Product" Target="Bin" Bounds="235.700881958008,361.836669921875,95.3037872314453,28.1725769042969" />
+    <Link Source="Product" Target="Configer" Bounds="235.700881958008,308.388000488281,93.4074554443359,27.6119995117188" />
+    <Link Source="Product" Target="Debug" Bounds="221.662826538086,361.836669921875,134.497787475586,80.9102478027344" />
+    <Link Source="Product" Target="Log" Bounds="232.668655395508,255.801788330078,127.43733215332,80.1982116699219" />
+    <Link Source="Product" Target="Update更新" Bounds="242.556671142578,348.918334960938,86.7766723632813,0" />
+    <Link Source="Soulution" Target="Lihj" Bounds="235.700881958008,473.836669921875,106.616653442383,31.5167541503906" />
+    <Link Source="Source" Target="Applications" Bounds="213.850433349609,30.4169940948486,137.991821289063,81.5830059051514" />
+    <Link Source="Source" Target="BaseLayer" Bounds="232.99333190918,124.918334960938,88.9166717529297,0" />
+    <Link Source="Source" Target="GeneralLayer中间层" Bounds="232.247802734375,84.3880004882813,96.8605346679688,28.6327590942383" />
+    <Link Source="Source" Target="Modules" Bounds="232.247802734375,136.815902709961,96.8605346679688,28.6327667236328" />
+    <Link Source="所有日志文件放置在这个文件中" Target="Log" Bounds="286,236.918334960938,53.7083435058594,0" />
+    <Link Source="所有资源生成到这个目录中" Target="Bin" Bounds="274,404.918334960938,55.3816528320313,0" />
+    <Link Source="所有资源生成到这个目录中" Target="Debug" Bounds="235.700881958008,417.836669921875,93.4074554443359,27.6119995117188" />
+    <Link Source="所有配置文件放置在这个文件中" Target="Configer" Bounds="286,292.918334960938,39.7033386230469,0" />
+    <Link Source="通用全局可修改" Target="Gloabal" Bounds="572.016222575818,290.89404166363,90.647412678088,5.64653861942691" />
+    <Link Source="项目名称" Target="Product" Bounds="68,348.918334960938,64.4433288574219,0" />
+    <Link Source="项目名称" Target="Soulution" Bounds="44.8532447814941,361.836669921875,101.336376190186,83.2166442871094" />
+    <Link Source="项目名称" Target="Source" Bounds="39.488842010498,143.897659301758,131.677600860596,192.102340698242" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

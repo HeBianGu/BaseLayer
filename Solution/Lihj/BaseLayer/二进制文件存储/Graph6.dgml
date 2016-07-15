@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CreateFromFile" Bounds="-143.557138185252,108.5,106.733333333333,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Marshal" Bounds="-4.00000000000001,-81,65.71,25.8366666666667" UseManualLocation="True" />
+    <Node Id="MemoryMappedFile" Bounds="-158.5,2.50000000000001,136.08,25.8366666666667" UseManualLocation="True" />
+    <Node Id="MemoryMappedFileAccess" Bounds="-128.557138185252,175.5,174.473333333333,25.8366666666667" UseManualLocation="True" />
+    <Node Id="MemoryMappedViewAccessor" Bounds="24.4428618147479,104.5,194.71,25.8366666666666" UseManualLocation="True" />
+    <Node Id="Path" Bounds="-244.557138185252,182.5,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="指定内存映射文件或视图的访问功能和限制。" Category="Comment" Bounds="-44.5571381852521,241.5,236,41.6733333333334" UseManualLocation="True" />
+    <Node Id="提供了一个方法集，这些方法用于分配非托管内存、复制非托管内存块、将托管类型转换为非托管类型，此外还提供了在与非托管代码交互时使用的其他杂项方法。" Category="Comment" Bounds="4.49999999999999,-242.5,248,73.3466666666667" UseManualLocation="True" />
+    <Node Id="表示内存映射文件。" Category="Comment" Bounds="-372.557138185252,11.5,128,25.8366666666667" UseManualLocation="True" />
+    <Node Id="表示随机访问的内存映射文件视图。" Category="Comment" Bounds="161.797866454249,178.918333333333,212,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="CreateFromFile" Target="MemoryMappedFileAccess" Bounds="-80.7678006230631,134.336666666667,24.7209869982062,33.8920836685045" />
+    <Link Source="CreateFromFile" Target="Path" Bounds="-189.236879571479,134.336666666667,76.4626009958362,43.7379474905324" />
+    <Link Source="Marshal" Target="MemoryMappedFile" Bounds="-64.6270248606202,-55.1633333333333,75.0227321460493,52.5030225386172" />
+    <Link Source="MemoryMappedFile" Target="CreateFromFile" Bounds="-90.4271522757949,28.3366666666667,0.180948613278062,71.1633624276396" />
+    <Link Source="指定内存映射文件或视图的访问功能和限制。" Target="MemoryMappedFileAccess" Bounds="-13.6975163912314,206.210103103778,54.7900097062085,35.289896896222" />
+    <Link Source="提供了一个方法集，这些方法用于分配非托管内存、复制非托管内存块、将托管类型转换为非托管类型，此外还提供了在与非托管代码交互时使用的其他杂项方法。" Target="Marshal" Bounds="43.4752143613744,-169.153333333333,58.4952252190096,80.8613056128504" />
+    <Link Source="表示内存映射文件。" Target="MemoryMappedFile" Bounds="-244.557138185252,18.5971513908311,77.0647913906016,3.18015691671426" />
+    <Link Source="表示随机访问的内存映射文件视图。" Target="MemoryMappedViewAccessor" Bounds="155.160555355502,134.423785182079,87.2930626841367,44.4945481512544" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

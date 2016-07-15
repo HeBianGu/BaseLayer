@@ -1,0 +1,4 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.MessageQueue.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.MessageQueue.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MessageQueue\obj\Debug\HebianGu.ComLibModule.MessageQueue.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MessageQueue\obj\Debug\HebianGu.ComLibModule.MessageQueue.pdb

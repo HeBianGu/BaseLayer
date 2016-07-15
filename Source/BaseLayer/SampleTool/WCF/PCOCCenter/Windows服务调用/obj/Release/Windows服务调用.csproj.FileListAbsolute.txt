@@ -1,0 +1,6 @@
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\bin\Release\Windows服务调用.exe.config
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\bin\Release\Windows服务调用.exe
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\bin\Release\Windows服务调用.pdb
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\obj\Release\Windows服务调用.csprojResolveAssemblyReference.cache
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\obj\Release\Windows服务调用.exe
+C:\Users\Navylee\Desktop\DevTest\DevTestPro\Windows服务调用\obj\Release\Windows服务调用.pdb

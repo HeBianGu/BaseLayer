@@ -1,0 +1,9 @@
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\bin\Debug\MQueueClient.exe.config
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\bin\Debug\MQueueClient.exe
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\bin\Debug\MQueueClient.pdb
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.csprojResolveAssemblyReference.cache
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.Form1.resources
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.Properties.Resources.resources
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.csproj.GenerateResource.Cache
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.exe
+d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.pdb

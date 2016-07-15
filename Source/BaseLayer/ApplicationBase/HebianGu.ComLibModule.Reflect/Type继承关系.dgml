@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="639a6ca9-92f7-474c-854b-e2d31e6bbab41" Bounds="0,0,423.476666666667,924.4" Label="&#xD;&#xA;//Type类的函数&#xD;&#xA;&#xD;&#xA;class Type&#xD;&#xA;&#xD;&#xA;    bool IsInstanceOfType(object);&#xD;&#xA;&#xD;&#xA;    //判断对象是否是指定类型&#xD;&#xA;&#xD;&#xA;    //类型可以是父类，接口&#xD;&#xA;&#xD;&#xA;    //用法：父类.IsInstanceOfType(子类对象)&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;    bool IsAssignableFrom(Type)&#xD;&#xA;&#xD;&#xA;    //判断两个类型的关系&#xD;&#xA;&#xD;&#xA;    //类型可以是父类，接口&#xD;&#xA;&#xD;&#xA;    //用法：父类.IsAssignableFrom(子类)&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;    bool IsSubClassOf(Type)&#xD;&#xA;&#xD;&#xA;    //判断两个类型的关系&#xD;&#xA;&#xD;&#xA;    //类型不可以是接口&#xD;&#xA;&#xD;&#xA;    //用法：子类.IsSubClassOf(父类)&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;代码永远是最好的解释方式：&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;int i = 23;&#xD;&#xA;&#xD;&#xA; &#xD;&#xA;&#xD;&#xA;Console.WriteLine(typeof(IConvertible).IsInstanceOfType(i));&#xD;&#xA;&#xD;&#xA;//True&#xD;&#xA;&#xD;&#xA;Console.WriteLine(typeof(IConvertible).IsAssignableFrom(i.GetType()));&#xD;&#xA;&#xD;&#xA;//True&#xD;&#xA;&#xD;&#xA;Console.WriteLine(i.GetType().IsSubclassOf(typeof(IConvertible)));&#xD;&#xA;&#xD;&#xA;//False&#xD;&#xA;&#xD;&#xA;Console.WriteLine(i.GetType().IsSubclassOf(typeof(object)));&#xD;&#xA;&#xD;&#xA;//True&#xD;&#xA;" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

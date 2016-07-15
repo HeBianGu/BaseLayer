@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+	<assembly>
+		<name>GrapeCity.ActiveReports.Export.Xaml.v8</name>
+	</assembly>
+	<members>
+		<member name="T:GrapeCity.ActiveReports.Rendering.Text.IFormattingService">
+			<summary>
+            Providers functionality for values converting and formatting according to the current language.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Rendering.Text.IFormattingService.Format(System.Object,GrapeCity.ActiveReports.Extensibility.Rendering.Components.IStyle)">
+			<summary>
+            Returns a string representation of the specified value using <see cref="T:GrapeCity.ActiveReports.Extensibility.Rendering.Components.IStyle" /> 
+            and according to the language settings defined in the report or current server language.
+            </summary>
+			<remarks>
+            According to RDL specs. report item language takes precedence over report language
+            and everything fallbacks on a default (server -- whatever it is) language. 
+            </remarks>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Rendering.Text.IFormattingService.Format(System.Object)">
+			<summary>
+            Returns a string representation of the specified value consistent with the current report language settings.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Rendering.Text.IFormattingService.Format(System.Object,System.String)">
+			<summary>
+            Returns a string representation of the specified value consistent with the current report language settings
+            and using the specified format string.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Rendering.Text.IFormattingService.GetFormattingService(System.String)">
+			<summary>
+            Returns a <see cref="T:GrapeCity.ActiveReports.Rendering.Text.IFormattingService" /> for the specified language.
+            In the case of same language returns itself, otherwise it will be created a new instance.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Rendering.Text.IFormattingService.GetFormattingService(GrapeCity.ActiveReports.Extensibility.Rendering.Components.IReportItem)">
+			<summary>
+            Returns a <see cref="T:GrapeCity.ActiveReports.Rendering.Text.IFormattingService" /> for the language which is used for given report item.
+            In the case of same language returns itself, otherwise it will be created a new instance.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xaml.DDR.IDelayedImages">
+			<summary>
+            Interface for delayed rendering of image items. For internal use only.
+            </summary>
+		</member>
+		<member name="T:GrapeCity.ActiveReports.Export.Xaml.DDR.XamlRenderingExtension">
+			<summary>
+            XAML export is for internal use and it is not designed to use in any other products. Can be changed without notification.
+            </summary>
+		</member>
+		<member name="M:GrapeCity.ActiveReports.Export.Xaml.DDR.XamlRenderingExtension.Dispose">
+			<summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+			<filterpriority>2</filterpriority>
+		</member>
+	</members>
+</doc>

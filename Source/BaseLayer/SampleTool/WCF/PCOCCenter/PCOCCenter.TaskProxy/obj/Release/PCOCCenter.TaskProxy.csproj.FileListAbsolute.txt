@@ -1,0 +1,10 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.TaskProxy.dll
+E:\PCOCPlatform\6.0 Working Area\Product\Bin\OPT.PCOCCenter.TaskProxy.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\PCOCCenter.TaskProxy.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.SimulationSettingForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.Properties.Resources.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.PublishTaskForm.resources
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\PCOCCenter.TaskProxy.csproj.GenerateResource.Cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.dll.licenses
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.dll
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.TaskProxy\obj\Release\OPT.PCOCCenter.TaskProxy.pdb

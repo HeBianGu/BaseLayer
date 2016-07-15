@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="0454dc5e-23c4-4dfe-93c4-1f6181203c151" Bounds="-374.672590839339,-208.55200054047,365.616666666667,893.92" Label="Imports System.ComponentModel&#xD;&#xA;'''&#xD;&#xA;&lt;DefaultPropertyAttribute(&quot;Title&quot;)&gt; _&#xD;&#xA;Public Class SimpleProperties&#xD;&#xA;    '''&#xD;&#xA;    Private _Title As String&#xD;&#xA;    Private _Show As Boolean&#xD;&#xA;    Private _Number As Short&#xD;&#xA;    '''&#xD;&#xA;    &lt;CategoryAttribute(&quot;Application&quot;), _&#xD;&#xA;       Browsable(True), _&#xD;&#xA;       [ReadOnly](False), _&#xD;&#xA;       BindableAttribute(False), _&#xD;&#xA;       DefaultValueAttribute(&quot;&quot;), _&#xD;&#xA;       DesignOnly(False), _&#xD;&#xA;       DescriptionAttribute(&quot;Enter Title for the application&quot;)&gt; _&#xD;&#xA;       Public Property Title() As String&#xD;&#xA;           Get&#xD;&#xA;               Return _Title&#xD;&#xA;           End Get&#xD;&#xA;           Set(ByVal Value As String)&#xD;&#xA;               _Title = Value&#xD;&#xA;           End Set&#xD;&#xA;       End Property&#xD;&#xA;    '''&#xD;&#xA;    &lt;CategoryAttribute(&quot;Application&quot;), _&#xD;&#xA;       Browsable(True), _&#xD;&#xA;       [ReadOnly](False), _&#xD;&#xA;       BindableAttribute(False), _&#xD;&#xA;       DefaultValueAttribute(&quot;True&quot;), _&#xD;&#xA;       DesignOnly(False), _&#xD;&#xA;       DescriptionAttribute(&quot;Show option&quot;)&gt; _&#xD;&#xA;       Public Property Show() As Boolean&#xD;&#xA;           Get&#xD;&#xA;               Return _Show&#xD;&#xA;           End Get&#xD;&#xA;           Set(ByVal Value As Boolean)&#xD;&#xA;               _Show = Value&#xD;&#xA;            End Set&#xD;&#xA;       End Property&#xD;&#xA;    '''&#xD;&#xA;    &lt;CategoryAttribute(&quot;Application&quot;), _&#xD;&#xA;       Browsable(True), _&#xD;&#xA;       [ReadOnly](False), _&#xD;&#xA;       BindableAttribute(False), _&#xD;&#xA;       DefaultValueAttribute(&quot;0&quot;), _&#xD;&#xA;       DesignOnly(False), _&#xD;&#xA;       DescriptionAttribute(&quot;Enter a number&quot;)&gt; _&#xD;&#xA;       Public Property Number() As Short&#xD;&#xA;           Get&#xD;&#xA;               Return _Number&#xD;&#xA;           End Get&#xD;&#xA;           Set(ByVal Value As Short)&#xD;&#xA;               _Number = Value&#xD;&#xA;           End Set&#xD;&#xA;       End Property&#xD;&#xA;    '''&#xD;&#xA;End Class" UseManualLocation="True" />
+    <Node Id="17002baf-2a14-419b-a0ee-63ff3714bfad1" Bounds="-863.29466887696,-177.040053310394,408.473333333333,192.88" Label="[TypeConverterAttribute(ExpandableObjectConverter::typeid)]  &#xD;&#xA;ref struct Vector3  &#xD;&#xA;{  &#xD;&#xA;    property float X;  &#xD;&#xA;    property float Y;  &#xD;&#xA;    property float Z;  &#xD;&#xA;  &#xD;&#xA;    virtual String^ ToString() override  &#xD;&#xA;    {  &#xD;&#xA;        return String::Format(&quot;({0}, {1}, {2})&quot;, this-&gt;X, this-&gt;Y, this-&gt;Z);  &#xD;&#xA;    }  &#xD;&#xA;};  " UseManualLocation="True" />
+    <Node Id="331e0a56-f236-4b17-be96-1f37ff8de6c81" Category="Comment" Bounds="470.187409143937,-387.162020874024,249.836666666667,543.4" Label="&#xD;&#xA;Imports System.ComponentModel Required for the Attributes&#xD;&#xA;DefaultPropertyAttribute(&quot;Title&quot;) Indicates the default property for the PropertyGrid (i.e. where cursor is located when loaded)&#xD;&#xA;CategoryAttribute(&quot;Application&quot;) Category attribute indicating the Category to which the property belongs to. Properties belonging to one category are grouped together.&#xD;&#xA;Browsable(True) Indicates whether the property is shown in the grid&#xD;&#xA;[ReadOnly](False) Indicates that the property is read-only or not&#xD;&#xA;BindableAttribute(False) Indicates whether the property can be bound to a data source or not&#xD;&#xA;DefaultValueAttribute(&quot;&quot;) Default value for the property&#xD;&#xA;DesignOnly(False) If true, it indicates that the property is Read-only at run time&#xD;&#xA;DescriptionAttribute(&quot;Enter Title for the application&quot;) Property Description. This description appears in the bottom when you click the property.&#xD;&#xA;Then add the properties that you want to see in the PropertyGrid with right data types. Finally, assign the Class to the PropertyGrid's SelectedObject property. That's all we have to do. Rest is taken care by the PropertyGrid and you see the following output." UseManualLocation="True" />
+    <Node Id="76cd04e6-1f71-46fe-afe2-f9d2f1850fe81" Bounds="23.6880958048503,186.238078096881,361.506666666667,314.8" Label="ref class Human  &#xD;&#xA;{  &#xD;&#xA;public:  &#xD;&#xA;    Human()  &#xD;&#xA;    {  &#xD;&#xA;        this-&gt;Name = &quot;(None)&quot;;  &#xD;&#xA;        this-&gt;Age = 0;  &#xD;&#xA;        this-&gt;IsMale = false;  &#xD;&#xA;        this-&gt;SkinColor = Color::Yellow;  &#xD;&#xA;    }  &#xD;&#xA;  &#xD;&#xA;    [CategoryAttribute(&quot;常规&quot;), DescriptionAttribute(&quot;名字&quot;)]  &#xD;&#xA;    property String^ Name;  &#xD;&#xA;    [CategoryAttribute(&quot;常规&quot;), DescriptionAttribute(&quot;年龄&quot;)]  &#xD;&#xA;    property int Age;  &#xD;&#xA;    [CategoryAttribute(&quot;外观&quot;), DescriptionAttribute(&quot;性别&quot;)]  &#xD;&#xA;    property bool IsMale;  &#xD;&#xA;    [CategoryAttribute(&quot;外观&quot;), DescriptionAttribute(&quot;肤色&quot;)]  &#xD;&#xA;    property Color SkinColor;  &#xD;&#xA;};  " UseManualLocation="True" />
+    <Node Id="EnumStructSexType{Male,Female};" Bounds="180.944075810604,-148,147.05,86.2" Label="enum struct SexType  &#xD;&#xA;{  &#xD;&#xA;    Male,  &#xD;&#xA;    Female  &#xD;&#xA;};  " UseManualLocation="True" />
+    <Node Id="Http://www.codeproject.com/Articles/2764/Using-PropertyGrid-Part-I" Category="Category1" Bounds="20.9440758106036,46.7137709505398,419.243333333333,25.24" Label="http://www.codeproject.com/Articles/2764/Using-PropertyGrid-Part-I" UseManualLocation="True" />
+    <Node Id="PropertyGrid中显示对象属性值的方式的特殊设置是可以通过简单的在属性上添加相应的特性标签，比如EditorAttribute（数据编辑控件）、TypeConverter（数据输入和显示控制）、Category（属性分类）、DescriptionAttribute（属性描述信息）。为了完成枚举类型的数据显示，这里主要使用的是EditorAttribute和TypeConverter来实现的。首先要创建用于在PropertyGrid中显示枚举类型数据并允许用户进行选择的控件，然后从UITypeEditor派生一个EnumTypeEditor类，并重写UITypeEditorEditStyle方法以及EditValue方法用于使得列表中的数据显示为中文，另外还要从TypeConverter派生一个EnumConverter类，并重写CanConvertTo方法、ConvertTo方法用于属性显示为中文。下面将给出具体的实现方法。" Bounds="-202.082934274386,-544.804426962522,3885.03,25.24" Label="PropertyGrid 中显示对象属性值的方式的特殊设置是可以通过简单的在属性上添加相应的特性标签，比如EditorAttribute（数据编辑控件）、 TypeConverter（数据输入和显示控制）、Category（属性分类）、DescriptionAttribute（属性描述信息）。为了完成枚举类型的数据显示，这里主要使用的是EditorAttribute和TypeConverter来实现的。首先要创建用于在 PropertyGrid中显示枚举类型数据并允许用户进行选择的控件，然后从UITypeEditor派生一个EnumTypeEditor类，并重写 UITypeEditorEditStyle方法以及EditValue方法用于使得列表中的数据显示为中文，另外还要从TypeConverter派生一个EnumConverter类，并重写CanConvertTo方法、ConvertTo方法用于属性显示为中文。下面将给出具体的实现方法。" UseManualLocation="True" />
+    <Node Id="[CategoryAttribute(&quot;对象&quot;),DescriptionAttribute(&quot;当前选中对象的编号&quot;),DisplayName(&quot;编号&quot;)][Browsable(true),ReadOnly(true)][DefaultValue(1)]" Bounds="111.730610402425,-472.882121903119,577.683333333333,55.72" Label="        [CategoryAttribute(&quot;对象&quot;), DescriptionAttribute(&quot;当前选中对象的编号&quot;), DisplayName(&quot;编号&quot;)]&#xD;&#xA;        [Browsable(true), ReadOnly(true)]&#xD;&#xA;        [DefaultValue(1)]" UseManualLocation="True" />
+    <Node Id="[TypeConverter(typeof(ExpandableObjectConverter))]" Bounds="-529.146048938103,-325.19872556189,344.083333333333,25.24" Label="    [TypeConverter(typeof(ExpandableObjectConverter))] " UseManualLocation="True" />
+    <Node Id="f11a4a90-23f5-4851-82e1-d0efc00d535c1" Bounds="62.9306152343748,-28,80,25.24" Label="分组和命名" UseManualLocation="True" />
+    <Node Id="下拉属性" Bounds="-155.062713623047,-325.19872556189,68,25.24" UseManualLocation="True" />
+    <Node Id="枚举" Bounds="100.944075810604,-131.159905548096,50,25.24" UseManualLocation="True" />
+    <Node Id="用法" Category="Category1" Bounds="20.9440758106036,-160.559949035645,50,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="331e0a56-f236-4b17-be96-1f37ff8de6c81" Target="用法" Bounds="79.938606262207,-156.11051940918,390.248802185059,19.9053039550781" />
+    <Link Source="f11a4a90-23f5-4851-82e1-d0efc00d535c1" Target="76cd04e6-1f71-46fe-afe2-f9d2f1850fe81" Bounds="10.8098936080933,-2.75999999046326,81.3646593093872,181.559453725815" />
+    <Link Source="下拉属性" Target="17002baf-2a14-419b-a0ee-63ff3714bfad1" Bounds="-447.677642822266,-299.959106445313,295.566955566406,120.134765625" />
+    <Link Source="下拉属性" Target="[TypeConverter(typeof(ExpandableObjectConverter))]" Bounds="-176.06271560477,-312.57872556189,21.0000019817227,0" />
+    <Link Source="枚举" Target="EnumStructSexType{Male,Female};" Bounds="150.944075810604,-115.886743605265,21.0502585875374,2.23398979884851" />
+    <Link Source="用法" Target="0454dc5e-23c4-4dfe-93c4-1f6181203c151" Bounds="-4.33824518338911,-135.319949035645,42.5143460943069,69.0696165524245" />
+    <Link Source="用法" Target="Http://www.codeproject.com/Articles/2764/Using-PropertyGrid-Part-I" Bounds="57.1848902924811,-135.319949035645,156.153913183974,175.313131228957" />
+    <Link Source="用法" Target="PropertyGrid中显示对象属性值的方式的特殊设置是可以通过简单的在属性上添加相应的特性标签，比如EditorAttribute（数据编辑控件）、TypeConverter（数据输入和显示控制）、Category（属性分类）、DescriptionAttribute（属性描述信息）。为了完成枚举类型的数据显示，这里主要使用的是EditorAttribute和TypeConverter来实现的。首先要创建用于在PropertyGrid中显示枚举类型数据并允许用户进行选择的控件，然后从UITypeEditor派生一个EnumTypeEditor类，并重写UITypeEditorEditStyle方法以及EditValue方法用于使得列表中的数据显示为中文，另外还要从TypeConverter派生一个EnumConverter类，并重写CanConvertTo方法、ConvertTo方法用于属性显示为中文。下面将给出具体的实现方法。" Bounds="61.7209548950195,-518.489990234375,1564.81920623779,357.930038452148" />
+    <Link Source="用法" Target="[CategoryAttribute(&quot;对象&quot;),DescriptionAttribute(&quot;当前选中对象的编号&quot;),DisplayName(&quot;编号&quot;)][Browsable(true),ReadOnly(true)][DefaultValue(1)]" Bounds="61.0086212751965,-411.382586110759,299.408004735907,250.822637075114" />
+    <Link Source="用法" Target="f11a4a90-23f5-4851-82e1-d0efc00d535c1" Bounds="51.3693202585673,-135.319949035645,42.5815503246404,99.0516040800068" />
+    <Link Source="用法" Target="下拉属性" Bounds="-97.5105056762695,-294.473602294922,132.095180511475,133.913650512695" />
+    <Link Source="用法" Target="枚举" Bounds="70.9440758106036,-138.752435445786,21.5523922333678,7.92051586152155" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

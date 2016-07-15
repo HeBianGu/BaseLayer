@@ -1,0 +1,387 @@
+From:http://blog.csdn.net/aerchi/article/details/19125477
+
+
+最近要实现访问远程主机的共享目录中的一个文件。遇到了权限问题。google了一下，找到了几种解决方法，记录如下：
+
+一、调用Net use命令
+
+        // 使用方法：
+        //if (Connect("192.168.1.48", "用户名", "密码"))   
+        //{
+        //    File.Copy(@"//192.168.1.48/共享目录/test.txt",   @"e://test.txt",   true);   
+        //}
+        public bool Connect(string remoteHost, string userName, string passWord)
+        {
+            bool Flag = true;
+            Process proc = new Process();
+            proc.StartInfo.FileName = "cmd.exe";
+            proc.StartInfo.UseShellExecute = false;
+            proc.StartInfo.RedirectStandardInput = true;
+            proc.StartInfo.RedirectStandardOutput = true;
+            proc.StartInfo.RedirectStandardError = true;
+            proc.StartInfo.CreateNoWindow = true;
+            try
+            {
+                proc.Start();
+                string command = @"net  use  //" + remoteHost + "  " + passWord + "  " + "  /user:" + userName + ">NUL";
+                proc.StandardInput.WriteLine(command);
+                command = "exit";
+                proc.StandardInput.WriteLine(command);
+                while (proc.HasExited == false)
+                {
+                    proc.WaitForExit(1000);
+                }
+                string errormsg = proc.StandardError.ReadToEnd();
+                if (errormsg != "")
+                    Flag = false;
+                proc.StandardError.Close();
+            }
+            catch (Exception ex)
+            {
+                Flag = false;
+            }
+            finally
+            {
+                proc.Close();
+                proc.Dispose();
+            }
+            return Flag;
+        }
+
+
+
+二、调用WNetAddConnection2、WNetAddConnection3或者NetUseAdd函数，进行磁盘映射。
+
+using System;
+using System.Collections.Generic;
+using System.Text;       
+using System.Runtime.InteropServices;
+ 
+ 
+ 
+ 
+ 
+ 
+ example used webrequest
+[c-sharp] view plaincopy 
+调用   string   htmpstr=getPage("http://aaa.bbb.ccc/ccc.txt");     
+      
+  public   static   string   getPage(String   url)       
+  {     
+  WebResponse   result   =   null;     
+  string   txthtml="";     
+  try       
+  {     
+  WebRequest   req   =   WebRequest.Create(url);     
+  result   =   req.GetResponse();     
+  Stream   ReceiveStream   =   result.GetResponseStream();     
+  Encoding   encode   =   System.Text.Encoding.GetEncoding("gb2312");     
+  StreamReader   sr   =   new   StreamReader(ReceiveStream,encode);     
+  //this.Message.Text+="/r/n已接收到响应流";     
+  if   (true)       
+  {     
+  Char[]   read   =   new   Char[256];     
+  int   count   =   sr.Read(   read,   0,   256   );     
+      
+  // this.Message.Text+="HTML.../r/n";     
+  while   (count   >   0)       
+  {     
+  String   str   =   new   String(read,   0,   count);     
+  txthtml+=str;     
+  count   =   sr.Read(read,   0,   256);     
+  }     
+  // this.Message.Text="":     
+  }     
+  }       
+  catch(Exception)       
+  {     
+  txthtml="err";     
+  //this.is_id.Value=url;     
+  }       
+  finally       
+  {     
+  if   (result   !=   null)       
+  {     
+  result.Close();     
+  }     
+      
+  }     
+  //this.is_id.Value=url;     
+  return   txthtml;     
+  }  
+namespace WindowsApplication1
+{
+    public class MyMap
+    {
+        [DllImport("mpr.dll", EntryPoint = "WNetAddConnection2")]
+        public static extern uint WNetAddConnection2(
+            [In] NETRESOURCE lpNetResource,
+            string lpPassword,
+            string lpUsername,
+            uint dwFlags);
+        
+        [DllImport("Mpr.dll")]
+        public static extern uint WNetCancelConnection2(
+            string lpName,
+            uint dwFlags,
+            bool fForce);
+        
+        [StructLayout(LayoutKind.Sequential)]
+        public class NETRESOURCE
+        {
+            public int dwScope;
+            public int dwType;
+            public int dwDisplayType;
+            public int dwUsage;
+            public string LocalName;
+            public string RemoteName;
+            public string Comment;
+            public string Provider;
+        }
+        // remoteNetworkPath format:  @"//192.168.1.48/sharefolder"
+        // localDriveName format:     @"E:"
+        public static bool CreateMap(string userName, string password, string remoteNetworkPath, string localDriveName)
+        {            
+            NETRESOURCE myNetResource = new NETRESOURCE();
+            myNetResource.dwScope = 2;       //2:RESOURCE_GLOBALNET
+            myNetResource.dwType = 1;        //1:RESOURCETYPE_ANY
+            myNetResource.dwDisplayType = 3; //3:RESOURCEDISPLAYTYPE_GENERIC
+            myNetResource.dwUsage = 1;       //1: RESOURCEUSAGE_CONNECTABLE
+            myNetResource.LocalName = localDriveName;
+            myNetResource.RemoteName = remoteNetworkPath;
+            myNetResource.Provider = null;
+            uint nret = WNetAddConnection2(myNetResource, password, userName, 0);
+            if (nret == 0)
+                return true;
+            else
+                return false;
+        }
+        // localDriveName format:     @"E:"
+        public static bool DeleteMap(string localDriveName)
+        {
+            uint nret = WNetCancelConnection2(localDriveName, 1, true);
+            if (nret == 0)
+                return true;
+            else
+                return false;
+        }
+        public void test()
+        {
+            // 注意：
+            // remote、local、username的格式一定要正确，否则可能出现错误
+            string remote = @"//192.168.1.48/generals";
+            string local = @"P:";
+            string username = @"Domain/UserName";
+            string password = @"Password";
+            bool ret = MyMap.CreateMap(username, password, remote, local);
+            if (ret)
+            {
+                //do what you want:
+                // ...
+                //File.Copy("q://test.htm", "c://test.htm");
+                MyMap.DeleteMap(local);
+            }
+        }
+    }
+}
+
+三、使用WebClient类
+
+由于WebClient类可以上传下载文件，并且支持以http:、https:和file:开头的URI，所以可以用WebClient类来传输文件。
+添加System.Net命名空间后使用如下代码下载文件：
+ 
+        private void Test1()
+        {
+            try
+            {
+                WebClient client = new WebClient();
+                NetworkCredential cred = new NetworkCredential("username", "password", "172.16.0.222");
+                client.Credentials = cred;
+                client.DownloadFile("file://172.16.0.222/test/111.txt", "111.txt");
+            }
+            catch (Exception ex)
+            {
+                // 如果网络很慢，而文件又很大，这时可能有超时异常（Time out）。
+            }
+        }
+        public void Test2()
+        {
+            try
+            {
+                WebClient client = new WebClient();
+                NetworkCredential cred = new NetworkCredential("username", "password", "domain");
+                client.Credentials = cred;
+                client.DownloadFile("file://172.16.0.222/test/111.txt", "111.txt");
+            }
+            catch (Exception ex)
+            {
+                // 如果网络很慢，而文件又很大，这时可能有超时异常（Time out）。
+            }
+        }
+
+类似的还可以试试WebRequest、FileWebRequest等：
+
+                WebRequest req = WebRequest.Create("file://138.12.12.14/generals/test.htm");
+                NetworkCredential cred = new NetworkCredential("username", "password", "IP");
+                req.Credentials = cred;
+                WebResponse response = req.GetResponse();
+                Stream strm = response.GetResponseStream();
+                StreamReader r = new StreamReader(strm);
+                ... ...
+
+
+
+四、角色模拟
+
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
+using System.IO;
+namespace Test
+{
+    public class Test
+    {
+        // logon types
+        const int LOGON32_LOGON_INTERACTIVE = 2;
+        const int LOGON32_LOGON_NETWORK = 3;
+        const int LOGON32_LOGON_NEW_CREDENTIALS = 9;
+        // logon providers
+        const int LOGON32_PROVIDER_DEFAULT = 0;
+        const int LOGON32_PROVIDER_WINNT50 = 3;
+        const int LOGON32_PROVIDER_WINNT40 = 2;
+        const int LOGON32_PROVIDER_WINNT35 = 1;
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int LogonUser(String lpszUserName,
+            String lpszDomain,
+            String lpszPassword,
+            int dwLogonType,
+            int dwLogonProvider,
+            ref IntPtr phToken);
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern int DuplicateToken(IntPtr hToken,
+            int impersonationLevel,
+            ref IntPtr hNewToken);
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        public static extern bool RevertToSelf();
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
+        public static extern bool CloseHandle(IntPtr handle);
+        private WindowsImpersonationContext impersonationContext;
+        public bool impersonateValidUser(String userName, String domain, String password)
+        {
+            WindowsIdentity tempWindowsIdentity;
+            IntPtr token = IntPtr.Zero;
+            IntPtr tokenDuplicate = IntPtr.Zero;
+            if (RevertToSelf())
+            {
+                // 这里使用LOGON32_LOGON_NEW_CREDENTIALS来访问远程资源。
+                // 如果要（通过模拟用户获得权限）实现服务器程序，访问本地授权数据库可
+                // 以用LOGON32_LOGON_INTERACTIVE
+                if (LogonUser(userName, domain, password, LOGON32_LOGON_NEW_CREDENTIALS,
+                    LOGON32_PROVIDER_DEFAULT, ref token) != 0)
+                {
+                    if (DuplicateToken(token, 2, ref tokenDuplicate) != 0)
+                    {
+                        tempWindowsIdentity = new WindowsIdentity(tokenDuplicate);
+                        impersonationContext = tempWindowsIdentity.Impersonate();
+                        if (impersonationContext != null)
+                        {
+                            System.AppDomain.CurrentDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal);
+                            IPrincipal pr = System.Threading.Thread.CurrentPrincipal;
+                            IIdentity id = pr.Identity;
+                            CloseHandle(token);
+                            CloseHandle(tokenDuplicate);
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (token != IntPtr.Zero)
+                CloseHandle(token);
+            if (tokenDuplicate != IntPtr.Zero)
+                CloseHandle(tokenDuplicate);
+            return false;
+        }
+        public void undoImpersonation()
+        {
+            impersonationContext.Undo();
+        }
+        public void TestFunc()
+        {
+            bool isImpersonated = false;
+            try
+            {
+                if (impersonateValidUser("UserName", "Domain", "Password"))
+                {
+                    isImpersonated = true;
+                    //do what you want now, as the special user
+                    // ...
+                    File.Copy(@"//192.168.1.48/generals/now.htm", "c://now.htm", true);
+                }
+            }
+            finally
+            {
+                if (isImpersonated)
+                    undoImpersonation();
+            }
+        }
+    }
+}
+
+
+五、比较
+
+方法一通过调用Shell命令Net Use实现，有点笨拙。
+方法二和方法一有些相似之处。映射远程资源，然后访问。
+方法三由于会有超时异常出现，所以在网络速度快、传输小文件时是可以的。
+方法四通过身份模拟实现远程资源访问。一些服务器进程就是通过这种方式运行的。这种方法也是我的最爱。
+
+六、要注意的地方
+
+关于这几种方法，google后都可以找到一些文章。但是等到自己实际测试时，有时会出现各种小错误，
+这些错误基本来源于两方面：
+
+1、函数的参数选择有问题，和自己的环境不相符。
+比如        
+public static extern int LogonUser(String lpszUserName,
+            String lpszDomain,
+            String lpszPassword,
+            int dwLogonType,
+            int dwLogonProvider,
+            ref IntPtr phToken);
+中的dwLogonType，要访问远程资源就要用LOGON32_LOGON_NEW_CREDENTIALS，
+要模拟本机用户就要用LOGON32_LOGON_INTERACTIVE。
+
+2、函数的参数格式有问题。
+
+    a、比如
+    public static extern int LogonUser(String lpszUserName,
+            String lpszDomain,
+            String lpszPassword,
+            int dwLogonType,
+            int dwLogonProvider,
+            ref IntPtr phToken);
+    中的lpszUserName、lpszDomain、lpszPassword就要写清楚。
+
+    我就在这遇到过问题，第一次测试时，远程服务器就是一台独立的文件服务器，这是我的调用方式：
+        LogonUser("myname", "192.168.1.48", "password", LOGON32_LOGON_NEW_CREDENTIALS,
+                    LOGON32_PROVIDER_DEFAULT, ref token);
+
+    第二次测试时，远程服务器是域MyDomain中的一个成员服务器，提供文件服务。这时代码就应该是：
+        LogonUser("myname", "MyDomain", "password", LOGON32_LOGON_NEW_CREDENTIALS,
+                    LOGON32_PROVIDER_DEFAULT, ref token);
+
+    注意，代码中是MyDomain而不是IP地址。
+
+
+    b、再如：
+
+    参考上面代码
+            string remote = @"//192.168.1.48/generals";
+            string local = @"P:";
+            string username = @"Domain/UserName";
+            string password = @"Password";
+
+    如果@"//192.168.1.48/generals"变成@"//192.168.1.48/generals/”就会出错；
+    如果是域中的用户，那么把@"Domain/UserName"变成@"UserName"就会出错。

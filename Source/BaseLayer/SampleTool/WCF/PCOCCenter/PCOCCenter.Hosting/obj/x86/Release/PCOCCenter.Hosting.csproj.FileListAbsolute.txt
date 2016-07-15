@@ -1,0 +1,6 @@
+E:\PCOCPlatform\6.0 Working Area\Product\Bin1\OPT.PCOCCenter.Hosting.exe.config
+E:\PCOCPlatform\6.0 Working Area\Product\Bin1\OPT.PCOCCenter.Hosting.exe
+E:\PCOCPlatform\6.0 Working Area\Product\Bin1\OPT.PCOCCenter.Hosting.pdb
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Release\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Release\OPT.PCOCCenter.Hosting.exe
+E:\PCOCPlatform\6.0 Working Area\Source\PCOCCenter\PCOCCenter.Hosting\obj\x86\Release\OPT.PCOCCenter.Hosting.pdb

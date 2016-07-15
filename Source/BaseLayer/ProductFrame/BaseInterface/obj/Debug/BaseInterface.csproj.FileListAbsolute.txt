@@ -1,0 +1,14 @@
+E:\6.x\6.2\DEV\Product\Debug\BaseInterface.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\BaseInterface\obj\Debug\BaseInterface.dll
+E:\6.x\6.2\DEV\Source\BaseLayer\BaseInterface\obj\Debug\BaseInterface.pdb
+E:\6.x\6.2\DEV\Product\Debug\BaseInterface.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\BaseInterface.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\BaseInterface.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.dll
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.pdb
+C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Product\Debug\BaseInterface.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\BaseInterface.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.pdb

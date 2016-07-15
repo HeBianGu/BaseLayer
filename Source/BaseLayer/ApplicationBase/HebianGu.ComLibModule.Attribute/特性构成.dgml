@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Attribute" Category="Comment" Bounds="130.280546216682,-122.41484056638,71.4966666666667,25.8366666666666" UseManualLocation="True" />
+    <Node Id="[DllImport(&quot;user32.dll&quot;)][DllImport(&quot;user32.dll&quot;,SetLastError=false,ExactSpelling=false)][DllImport(&quot;user32.dll&quot;,ExactSpelling=false,SetLastError=false)]" Bounds="69.2385985310872,335.814244384766,384.716666666667,57.51" Label="[DllImport(&quot;user32.dll&quot;)]&#xD;&#xA;[DllImport(&quot;user32.dll&quot;, SetLastError=false, ExactSpelling=false)]&#xD;&#xA;[DllImport(&quot;user32.dll&quot;, ExactSpelling=false, SetLastError=false)]" UseManualLocation="True" />
+    <Node Id="[Obsolete(&quot;该类已经过时&quot;,true)]" Bounds="-379.327094822544,284.749544468304,196.536666666667,25.8366666666667" UseManualLocation="True" />
+    <Node Id="[SomeAttr]IntMethod1(){Return0;}" Bounds="777.774183807508,54.2340173001534,166.73,41.6733333333333" Label="[SomeAttr]&#xD;&#xA;int Method1() { return 0; }" UseManualLocation="True" />
+    <Node Id="[System.Serializable]" Bounds="-97.7514014689128,306.790651041667,136.99,25.8366666666666" UseManualLocation="True" />
+    <Node Id="[method:SomeAttr]IntMethod2(){Return0;}" Bounds="748.962265361255,231.90559774883,166.73,41.6733333333333" Label="[method: SomeAttr]&#xD;&#xA;int Method2() { return 0; }" UseManualLocation="True" />
+    <Node Id="[return:SomeAttr]IntMethod3(){Return0;}" Bounds="622.513797829301,321.142845770742,166.73,41.6733333333334" Label="[return: SomeAttr]&#xD;&#xA;int Method3() { return 0; }" UseManualLocation="True" />
+    <Node Id="[target:Attribute-list]" Bounds="407.964975766757,59.9042327526218,143.933333333333,25.8366666666666" Label="[target : attribute-list]" UseManualLocation="True" />
+    <Node Id="d5ff1906-13b0-4c35-85be-d765ec27a9e31" Category="Comment" Bounds="321.958689955169,-793.219420596526,238.056666666667,690.976666666667" Label="下表显示了可能的 target 值的列表。&#xD;&#xA;&#xD;&#xA;C#&#xD;&#xA;&#xD;&#xA;适用对象&#xD;&#xA;&#xD;&#xA;assembly&#xD;&#xA;&#xD;&#xA;整个程序集&#xD;&#xA;&#xD;&#xA;module&#xD;&#xA;&#xD;&#xA;当前程序集模块（不同于 Visual Basic 模块）&#xD;&#xA;&#xD;&#xA;field&#xD;&#xA;&#xD;&#xA;在类或结构中的字段&#xD;&#xA;&#xD;&#xA;event&#xD;&#xA;&#xD;&#xA;Event&#xD;&#xA;&#xD;&#xA;method&#xD;&#xA;&#xD;&#xA;方法或 get 和 set 属性访问器&#xD;&#xA;&#xD;&#xA;param&#xD;&#xA;&#xD;&#xA;方法参数或 set 属性访问器参数&#xD;&#xA;&#xD;&#xA;property&#xD;&#xA;&#xD;&#xA;Property&#xD;&#xA;&#xD;&#xA;return&#xD;&#xA;&#xD;&#xA;方法、属性索引器或 get 属性访问器的返回值&#xD;&#xA;&#xD;&#xA;type&#xD;&#xA;&#xD;&#xA;结构、类、接口、枚举或委托" UseManualLocation="True" Visibility="Hidden" />
+    <Node Id="dd6c81ec-a4fd-4060-863b-1481f335846b1" Bounds="494.940595458978,-208.289014657799,367.24,73.3466666666667" Label="using System;&#xD;&#xA;using System.Reflection;&#xD;&#xA;[assembly: AssemblyTitleAttribute(&quot;Production assembly 4&quot;)]&#xD;&#xA;[module: CLSCompliant(true)]" UseManualLocation="True" />
+    <Node Id="否决的" Bounds="-103.082397662755,209.675576883952,56,25.8366666666666" UseManualLocation="True" />
+    <Node Id="将特性应用于程序集和模块" Bounds="462.933372158219,-23.3238281947615,164,25.8366666666667" UseManualLocation="True" />
+    <Node Id="序列化" Bounds="-9.0805918375651,213.753526407878,56,25.8366666666666" UseManualLocation="True" />
+    <Node Id="特性" Category="Category1" Bounds="140.439191209553,-30.1334219689781,50,25.8366666666667" UseManualLocation="True" />
+    <Node Id="特性应用于方法" Bounds="595.763348856369,55.302065762394,104,25.8366666666667" UseManualLocation="True" />
+    <Node Id="特性应用于方法、方法参数和方法返回值" Bounds="365.311341090903,164.347604499251,236,25.8366666666666" UseManualLocation="True" />
+    <Node Id="特性应用于方法参数" Bounds="632.571655652243,156.314314966474,128,25.8366666666667" UseManualLocation="True" />
+    <Node Id="特性的参数" Category="Category2" Bounds="141.559911261664,123.142091471354,80,25.8366666666667" UseManualLocation="True" />
+    <Node Id="特性的应用范围" Category="Category2" Bounds="267.563531106605,59.1276490275065,104,25.8366666666667" UseManualLocation="True" />
+    <Node Id="特性的种类" Category="Category2" Bounds="26.2253566218357,111.673330027262,80,25.8366666666667" />
+    <Node Id="自定义特性" Bounds="76.9194081624349,263.029969889323,80,25.8366666666667" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Attribute" Target="特性" Bounds="165.579253765868,-96.5781724039714,0.36708116568613,57.4449349268764" />
+    <Link Source="[target:Attribute-list]" Target="将特性应用于程序集和模块" Bounds="490.020973105614,9.60589187041527,39.2833914502065,50.298343689684" />
+    <Link Source="[target:Attribute-list]" Target="特性应用于方法" Bounds="551.898322550456,69.89300715228,34.8684259270231,0.956139074625142" />
+    <Link Source="[target:Attribute-list]" Target="特性应用于方法、方法参数和方法返回值" Bounds="480.349680383856,85.7409022267659,2.25255669762714,69.6114181526303" />
+    <Link Source="[target:Attribute-list]" Target="特性应用于方法参数" Bounds="508.960032525473,85.7409022267659,150.360712691106,66.9141726648264" />
+    <Link Source="d5ff1906-13b0-4c35-85be-d765ec27a9e31" Target="[target:Attribute-list]" Bounds="448.075064010679,-102.242745768229,3.6673437887535,178.754650655706" />
+    <Link Source="否决的" Target="[Obsolete(&quot;该类已经过时&quot;,true)]" Bounds="-237.159581238207,232.79446076977,134.090487702806,48.873107235686" />
+    <Link Source="将特性应用于程序集和模块" Target="dd6c81ec-a4fd-4060-863b-1481f335846b1" Bounds="555.641423334713,-128.013269773612,86.7771284317382,104.689441750337" />
+    <Link Source="序列化" Target="[System.Serializable]" Bounds="-18.4287151827873,239.590193074544,30.6588445601085,59.2083633606441" />
+    <Link Source="特性" Target="特性的参数" Bounds="166.797876082247,-4.29675455729165,12.4619672281844,118.488214595178" Label="2" LabelBounds="177.028920207411,46.819823776127,7.03666666666666,15.8366666666667" />
+    <Link Source="特性" Target="特性的应用范围" Bounds="187.721842688984,-4.31009931044947,101.74786589137,58.9272419783755" Label="3" LabelBounds="239.598110381242,7.58615427080767,7.03666666666666,15.8366666666667" />
+    <Link Source="特性" Target="特性的种类" Bounds="80.4229393353003,-4.29675455729165,75.9780569696962,108.595754250467" Label="1" LabelBounds="120.05070789439,51.1476525366188,7.03666666666668,15.8366666666667" />
+    <Link Source="特性应用于方法" Target="[SomeAttr]IntMethod1(){Return0;}" Bounds="699.763366699219,69.8898216037333,69.0154889976109,2.2156940357788" />
+    <Link Source="特性应用于方法、方法参数和方法返回值" Target="[return:SomeAttr]IntMethod3(){Return0;}" Bounds="500.767102079939,190.184278767904,169.721990782018,125.604673263936" />
+    <Link Source="特性应用于方法参数" Target="[method:SomeAttr]IntMethod2(){Return0;}" Bounds="717.572063552773,182.15096883138,73.2167933553684,45.0390739828212" />
+    <Link Source="特性的参数" Target="[DllImport(&quot;user32.dll&quot;)][DllImport(&quot;user32.dll&quot;,SetLastError=false,ExactSpelling=false)][DllImport(&quot;user32.dll&quot;,ExactSpelling=false,SetLastError=false)]" Bounds="186.084654659732,148.978758138021,62.4655046091428,178.341444377267" />
+    <Link Source="特性的应用范围" Target="[target:Attribute-list]" Bounds="371.563552856445,72.2977936558075,27.4015418840345,0.132692648960187" />
+    <Link Source="特性的种类" Target="否决的" Bounds="-49.0602045527227,137.509996693929,96.6588389160009,67.0365432154255" />
+    <Link Source="特性的种类" Target="序列化" Bounds="28.6901956346527,137.509996693929,31.5485542773467,68.0777493092769" />
+    <Link Source="特性的种类" Target="自定义特性" Bounds="70.5521086610452,137.509996693929,39.1822239693659,116.985922960791" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="Layout" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+    <Property Id="Visibility" Label="可见性" Description="定义关系图中的节点是否可见" DataType="System.Windows.Visibility" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>
