@@ -29,13 +29,13 @@ namespace HebianGu.FrameWorkMode.PassvationMode
 
             Order order = BuildOrder();
 
-            Console.WriteLine("-- 按任意反钝化执行 --");
+            Console.WriteLine("-- 按任意键钝化 --");
 
             Console.Read();
 
             RunPassvation(order);
 
-            Console.WriteLine("-- 按任意反钝化执行 --");
+            Console.WriteLine("-- 按任意键反钝化 --");
 
             Console.Read();
 

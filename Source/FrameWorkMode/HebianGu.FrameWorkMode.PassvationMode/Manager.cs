@@ -57,6 +57,11 @@ namespace HebianGu.FrameWorkMode.PassvationMode
         /// <summary> 检查价格 </summary>
         public bool CheckPrices(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.CheckPrices;
+            }
             return false;
 
         }
@@ -64,6 +69,11 @@ namespace HebianGu.FrameWorkMode.PassvationMode
         /// <summary> 检查数量 </summary>
         public bool CheckNumber(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.CheckPrices;
+            }
             return false;
         }
     }
@@ -75,12 +85,24 @@ namespace HebianGu.FrameWorkMode.PassvationMode
         /// <summary> 电话确认订单 </summary>
         public bool CallPhoneConfirm(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.CallPhoneConfirm;
+            }
+
             return false;
         }
 
         /// <summary> 发邮件通知 </summary>
         public bool SendEmailNotice(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.SendEmailNotice;
+            }
+
             return false;
         }
 
@@ -93,6 +115,12 @@ namespace HebianGu.FrameWorkMode.PassvationMode
         /// <summary> 最终确认 </summary>
         public bool FinalConfirm(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.FinalConfirm;
+            }
+
             return false;
         }
 
@@ -100,6 +128,12 @@ namespace HebianGu.FrameWorkMode.PassvationMode
         /// <summary> 签名并且记录备案 </summary>
         public bool SignAndRecord(Order order, ref OrderExamineApproveManagerHandler Mananger)
         {
+
+            if (true)
+            {
+                Mananger -= this.SignAndRecord;
+            }
+
             return false;
         }
     }

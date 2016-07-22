@@ -1,0 +1,4 @@
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\bin\Debug\HebianGu.ComLibModule.MEF.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\bin\Debug\HebianGu.ComLibModule.MEF.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.dll
