@@ -277,7 +277,7 @@ namespace HebianGu.ComLibModule.FileEx
 
 
 
-        /// <summary> 复制文件夹 要复制的文件夹 复制到的文件夹 </summary>
+        /// <summary> 删除当前文件夹下所有文件 </summary>
         public static bool DeleteAllFile(this DirectoryInfo dir)
         {
 
@@ -286,15 +286,17 @@ namespace HebianGu.ComLibModule.FileEx
             return true;
         }
 
-        /// <summary> 复制文件夹 要复制的文件夹 复制到的文件夹 </summary>
-        public static bool DeleteAllFile(this DirectoryInfo dir, Predicate< FileInfo> match)
+        /// <summary> 删除当前文件夹下所有匹配的文件 </summary>
+        public static bool DeleteAllFile(this DirectoryInfo dir, Predicate<FileInfo> match)
         {
             List<int> ss = null;
 
             foreach (var d in dir.GetDirectories())
             {
+                //  递归删除文件
                 d.DeleteAllFile(match);
 
+                //  文件夹是空则删除
                 if (d.GetFileSystemInfos().Length == 0)
                 {
                     d.Delete();
@@ -304,6 +306,7 @@ namespace HebianGu.ComLibModule.FileEx
 
             foreach (var f in dir.GetFiles())
             {
+                //  删除匹配文件
                 if (match(f))
                 {
                     f.Delete();
@@ -311,6 +314,19 @@ namespace HebianGu.ComLibModule.FileEx
             }
 
             return true;
+        }
+
+
+        /// <summary> 删除当前文件夹下匹配的文件夹 </summary>
+        public static void DeleteCurrentDir(this DirectoryInfo dir, Predicate<DirectoryInfo> match)
+        {
+            foreach (var d in dir.GetDirectories())
+            {
+                if (match(d))
+                {
+                    d.Delete(true);
+                }
+            }
         }
 
     }

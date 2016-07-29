@@ -12,11 +12,14 @@ namespace HebianGu.ComLibModule.Factory
         //  单例
         private static BLLFactory _instance = null;
 
+        /// <summary> 多线程锁 </summary>
+        private static object localLock = new object();
+
         public static BLLFactory  GetInstance()
         {
             if (_instance == null)
             {
-                lock (typeof(BLLFactory))
+                lock (localLock)
                 {
                     if (_instance == null)
                     {

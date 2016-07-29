@@ -21,6 +21,13 @@ namespace HebianGu.ComLibModule.MEF
             provider.DoList.ForEach(l => Console.WriteLine(l.ToString()));
 
             Console.Read();
+
+            MefEntityProvider<IDisposable> provider1 = MefEntityProvider<IDisposable>.CreateInstance(ass);
+
+            provider1.DoList.ForEach(l => Console.WriteLine(l.ToString()));
+
+            Console.Read();
+
         }
     }
 }

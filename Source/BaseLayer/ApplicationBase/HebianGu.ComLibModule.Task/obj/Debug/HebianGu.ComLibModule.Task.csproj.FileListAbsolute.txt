@@ -12,3 +12,11 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Task.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.XML
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.dll
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.dll.CodeAnalysisLog.xml
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.dll.lastcodeanalysissucceeded
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb

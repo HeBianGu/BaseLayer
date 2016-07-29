@@ -9,13 +9,13 @@ namespace HebianGu.ComLibModule.DictionoryEx
     public static class DectionoryEx
     {
         /// <summary> 遍历字典对值执行Func操作 </summary>
-        public static Dictionary<string, double> ForeachEx(this Dictionary<string, double> dic, Func<double, double> func)
+        public static Dictionary<TKey, TValue> ForeachEx<TKey, TValue>(this Dictionary<TKey, TValue> dic, Func<TValue, TValue> func)
         {
-            Dictionary<string, double> dicNew = new Dictionary<string, double>();
+            Dictionary<TKey, TValue> dicNew = new Dictionary<TKey, TValue>();
 
-            foreach (string d in dic.Keys)
+            foreach (TKey d in dic.Keys)
             {
-                double v;
+                TValue v;
 
                 if (dic.TryGetValue(d, out v))
                 {
@@ -26,8 +26,8 @@ namespace HebianGu.ComLibModule.DictionoryEx
             return dicNew;
         }
 
-        /// <summary> 遍历字典对值执行Func操作 </summary>
-        public static List<string[]> ForeachEx(this List<string[]> list, Func<double, double> func)
+        /// <summary> 对二维表的指定列进行fuc操作 </summary>
+        public static List<string[]> ForeachEx(this List<string[]> list, Func<double, double> func, int col)
         {
             List<string[]> listNew = new List<string[]>();
 
@@ -37,13 +37,24 @@ namespace HebianGu.ComLibModule.DictionoryEx
 
                     string[] strs = l.Clone() as string[];
 
-                    strs[5] = func(Double.Parse(strs[5])).ToString();
+                    strs[col] = func(Double.Parse(strs[col])).ToString();
 
                     listNew.Add(strs);
                 }
                 );
 
             return listNew;
+        }
+
+        public static void RemoveAll<TKey, TValue>(this Dictionary<TKey, TValue> dic, Predicate<KeyValuePair<TKey, TValue>> macth)
+        {
+            foreach (KeyValuePair<TKey, TValue> v in dic)
+            {
+                if (macth(v))
+                {
+                    dic.Remove(v.Key);
+                }
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FBDED580-6D43-4CAA-9F70-BF5E94DD9C1D}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ComLibModule.MEF</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.MEF</AssemblyName>

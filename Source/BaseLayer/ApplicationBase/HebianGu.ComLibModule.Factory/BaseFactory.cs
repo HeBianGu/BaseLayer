@@ -18,6 +18,7 @@
 #endregion
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 
@@ -25,6 +26,7 @@ namespace HebianGu.ComLibModule.Factory
 {
 
     /// <summary> 单例工厂父类</summary>
+    [Export(typeof(IDisposable))]
     public class BaseFactory<T> : IDisposable where T : class,new()
     {
 
@@ -93,18 +95,43 @@ namespace HebianGu.ComLibModule.Factory
         {
             //  调用带参数的Dispose方法，释放托管和非托管资源
             Dispose(true);
+
             //  手动调用了Dispose释放资源，那么析构函数就是不必要的了，这里阻止GC调用析构函数
             System.GC.SuppressFinalize(this);
         }
 
-        
+
         protected void Dispose(bool disposing)
         {
             if (disposing)
             {
                 ///TODO:在这里加入清理"托管资源"的代码，应该是xxx.Dispose();
+                t = null;
             }
             ///TODO:在这里加入清理"非托管资源"的代码
+        }
+
+        /// <summary> 清理指定名称的缓存和单例 </summary>
+        public void Dispose(string name)
+        {
+            Dispose(true);
+
+            if (cache.ContainsKey(name))
+            {
+                cache.Remove(name);
+            }
+        }
+
+        /// <summary> 清理指定名称的缓存和单例 </summary>
+        public static void Dispose(Predicate<KeyValuePair<string, T>> macth)
+        {
+            foreach (KeyValuePair<string, T> v in cache)
+            {
+                if (macth(v))
+                {
+                    cache.Remove(v.Key);
+                }
+            }
         }
 
         /// <summary> 供GC调用的析构函数 </summary>
