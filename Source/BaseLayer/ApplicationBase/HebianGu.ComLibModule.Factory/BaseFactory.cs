@@ -26,8 +26,7 @@ namespace HebianGu.ComLibModule.Factory
 {
 
     /// <summary> 单例工厂父类</summary>
-    [Export(typeof(IDisposable))]
-    public class BaseFactory<T> : IDisposable where T : class,new()
+    public class BaseFactory<T> : IDisposableBF where T : class,new()
     {
 
         #region - Start 单例模式 -
@@ -116,7 +115,7 @@ namespace HebianGu.ComLibModule.Factory
         {
             Dispose(true);
 
-            if (cache.ContainsKey(name))
+            if (cache != null && cache.ContainsKey(name))
             {
                 cache.Remove(name);
             }
@@ -143,5 +142,10 @@ namespace HebianGu.ComLibModule.Factory
 
         #endregion
 
+    }
+
+    public interface IDisposableBF : IDisposable
+    {
+        void Dispose(string name);
     }
 }
