@@ -30,21 +30,27 @@ namespace HebianGu.ComLibModule.CMD
     public static class CmdAPI
     {
         /// <summary> 运行DOS命令  DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID   </summary>   
-        public static string RunCmd(this string command)
+        public static string RunCmd(this string command, EventHandler endEvent = null)
         {
             //  啟動一個獨立進程   
-            System.Diagnostics.Process p = new System.Diagnostics.Process();   
-            p.StartInfo.FileName = "cmd.exe"; 
-            p.StartInfo.Arguments = "/c " + command; 
-            p.StartInfo.UseShellExecute = false;  
-            p.StartInfo.RedirectStandardInput = true;  
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.Arguments = "/c " + command;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardInput = true;
             p.StartInfo.RedirectStandardOutput = true;
             p.StartInfo.RedirectStandardError = true;
             p.StartInfo.CreateNoWindow = true;
 
+            if (endEvent != null)
+            {
+                p.EnableRaisingEvents = true;
+                p.Exited += endEvent;
+            }
+
             p.Start();
             //  從輸出流取得命令執行結果 
-            return p.StandardOutput.ReadToEnd();          
+            return p.StandardOutput.ReadToEnd();
 
         }
 
@@ -52,7 +58,7 @@ namespace HebianGu.ComLibModule.CMD
         [Obsolete("未测试")]
         public static string CloseProcessByPid(this string pid)
         {
-           return CmdStr.CloseProcessByPid.FormatEx(pid).RunCmd();
+            return CmdStr.CloseProcessByPid.FormatEx(pid).RunCmd();
         }
 
         /// <summary> 执行eclipse程序 </summary> 

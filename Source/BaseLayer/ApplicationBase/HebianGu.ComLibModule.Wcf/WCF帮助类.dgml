@@ -1,8 +1,86 @@
-﻿<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
+    <Node Id="Client" Category="Category2" Bounds="-188.323334401449,164.89195213047,53.0866666666667,25.24" UseManualLocation="True" />
+    <Node Id="Entity" Category="Category9" Bounds="-139.123893912744,7.9999577331543,52.4733333333334,25.24" UseManualLocation="True" />
+    <Node Id="IService" Category="Category2" Bounds="-87.199998219808,-149.458819934082,64.1666666666667,25.24" UseManualLocation="True" />
+    <Node Id="Service" Category="Category2" Bounds="137.599996643066,-148.779949160767,60.64,25.24" UseManualLocation="True" />
+    <Node Id="ServiceHost" Category="Category5" Bounds="8.94944020589192,6.82005160217285,87.5733333333333,25.24" UseManualLocation="True">
+      <Category Ref="Category10" />
+    </Node>
+    <Node Id="WCF" Category="Category1" Bounds="25.6000000000001,92.0000000000001,50,25.24" UseManualLocation="True" />
+    <Node Id="WCF宿主：控制台程序、windows服务都都可以" Category="Comment" Bounds="168.4,-24,241.003333333333,40.48" UseManualLocation="True" />
+    <Node Id="定义服务接口" Category="Comment" Bounds="-156.399993896484,-204.698919934082,92,25.24" UseManualLocation="True" />
+    <Node Id="实例服务接口" Category="Comment" Bounds="201.999996948242,-215.220049160767,92,25.24" UseManualLocation="True" />
+    <Node Id="客户端调用" Category="Comment" Bounds="-305.873331960042,244.13205213047,79.9999999999999,25.24" UseManualLocation="True" />
+    <Node Id="服务端和客户端要传递的参数：需要特性约束" Category="Comment" Bounds="-389.923895263672,-74.6679475128173,248,40.48" UseManualLocation="True" />
+    <Node Id="注册" Bounds="27.1999988555908,-48.4200483978272,50,25.24" UseManualLocation="True" />
   </Nodes>
   <Links>
+    <Link Source="Entity" Target="Client" Bounds="-155.169498243215,33.2399569702148,38.3494492479807,123.059560852254" />
+    <Link Source="Entity" Target="IService" Bounds="-108.257043911277,-115.769552216235,45.4102055434202,123.76950918645" />
+    <Link Source="IService" Target="注册" Bounds="-41.7125390099469,-124.218817596436,73.9556751600067,69.6293585661843" />
+    <Link Source="Service" Target="注册" Bounds="73.5506810098353,-123.539942626953,79.8178232326576,69.2231968956134" />
+    <Link Source="WCF" Target="Client" Bounds="-126.724086398417,113.20036866358,152.324085826213,52.2798790172558" />
+    <Link Source="WCF" Target="ServiceHost" Bounds="50.9164785616526,41.0572229523632,1.27752183980045,50.9427759795215" />
+    <Link Source="WCF宿主：控制台程序、windows服务都都可以" Target="ServiceHost" Bounds="105.479658601792,8.07764810306758,62.9203470948225,6.18106755231079" />
+    <Link Source="定义服务接口" Target="IService" Bounds="-97.7701179167826,-179.458919934082,23.6571273719085,23.6386285909147" />
+    <Link Source="实例服务接口" Target="Service" Bounds="190.057283002452,-189.980051879883,42.7318807350632,35.4534310652296" />
+    <Link Source="客户端调用" Target="Client" Bounds="-249.295125536358,195.583335555621,63.7757539794128,48.5487091221131" />
+    <Link Source="服务端和客户端要传递的参数：需要特性约束" Target="Entity" Bounds="-224.650760356394,-34.1879518127441,78.865909140614,38.6751876407422" />
+    <Link Source="注册" Target="ServiceHost" Bounds="52.3224766058869,-23.1800483978272,0.203811165772215,21.0005238161747" />
   </Links>
   <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category10" Label="类别 10" Background="#FF672878" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category5" Label="类别 5" Background="#FF9B4F96" IsTag="True" />
+    <Category Id="Category9" Label="类别 9" Background="#FF00539C" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
   </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 9" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 10" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category10')" />
+      <Setter Property="Background" Value="#FF672878" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 5" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category5')" />
+      <Setter Property="Background" Value="#FF9B4F96" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
 </DirectedGraph>
