@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.ProcessHelper
 {
+    /// <summary> 执行cmd的命令 </summary>
     class CmdProcessEngine : ProcessEngine
     {
         public CmdProcessEngine(string cmdstr)
@@ -26,33 +27,21 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
         public override Process CreateProcess()
         {
-            //  啟動一個獨立進程   
             Process p = new System.Diagnostics.Process();
-            //p.StartInfo.FileName = "cmd.exe";
-            //p.StartInfo.Arguments = "/c " + _commandString;
-            //p.StartInfo.UseShellExecute = false;
-            //p.StartInfo.RedirectStandardInput = true;
-            //p.StartInfo.RedirectStandardOutput = true;
-            //p.StartInfo.RedirectStandardError = true;
-            //p.StartInfo.CreateNoWindow = true;
-
             p.StartInfo.FileName = "cmd.exe";
             p.StartInfo.Arguments = "/c " + _commandString;
             p.StartInfo.UseShellExecute = true;
             p.StartInfo.CreateNoWindow = false;
-            //p.EnableRaisingEvents = true;
-
-
             return p;
         }
 
-        [Description("引擎正常退出时的事件")]
+        [Description("引擎正常退出")]
         public override void DoEndOfEngine()
         {
             base.DoEndOfEngine();
         }
 
-        [Description("引擎正常退出时的事件")]
+        [Description("引擎停止退出")]
         public override void DoStopOfEngine()
         {
             base.DoStopOfEngine();

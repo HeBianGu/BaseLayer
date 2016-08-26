@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Management;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.ProcessEx
+namespace HebianGu.ComLibModule.ProcessHelper
 {
     /// <summary> 进程扩展 </summary>
     public static class ProcEx
@@ -18,7 +20,7 @@ namespace HebianGu.ComLibModule.ProcessEx
         {
             //string args = "\"" + eclPath + "\" \"" + LicPaht
             //                    + "\" \"" + dataPath + "\" \"" + dataName + "\"";
-          
+
             //  批处理文件
             ProcessStartInfo psI = new ProcessStartInfo(batFileName, args);
             psI.WorkingDirectory = AppDomain.CurrentDomain.BaseDirectory;
@@ -39,7 +41,7 @@ namespace HebianGu.ComLibModule.ProcessEx
             //p.BeginOutputReadLine();
             //p.BeginErrorReadLine();
             //  等待进程结束
-            process.WaitForExit();  
+            process.WaitForExit();
         }
 
         /// <summary> 调用批处理执行 </summary>
@@ -73,5 +75,75 @@ namespace HebianGu.ComLibModule.ProcessEx
             process.WaitForExit();
         }
 
+
+        /// <summary> 杀掉所有子进程 </summary>
+        public static void KillProcessAndChildren(int pid)
+        {
+            ManagementObjectSearcher searcher = new ManagementObjectSearcher("Select * From Win32_Process Where ParentProcessID=" + pid);
+
+            ManagementObjectCollection moc = searcher.Get();
+
+            foreach (ManagementObject mo in moc)
+            {
+                KillProcessAndChildren(Convert.ToInt32(mo["ProcessID"]));
+            }
+
+            Process proc = Process.GetProcessById(pid);
+            Console.WriteLine(pid);
+            proc.Kill();
+
+        }
+
+        /// <summary> 删除所有进程包括子进程 64x </summary>
+        public static void KillAll(this Process process)
+        {
+            KillProcessAndChildren(process.Id);
+        }
+
     }
+
+    static class ProcessExtend
+    {
+        private struct ProcessBasicInformation
+        {
+            public int ExitStatus;
+            public int PebBaseAddress;
+            public int AffinityMask;
+            public int BasePriority;
+            public uint UniqueProcessId;
+            public uint InheritedFromUniqueProcessId;
+        }
+
+
+        [DllImport("ntdll.dll")]
+        static extern int NtQueryInformationProcess(
+           IntPtr hProcess,
+           int processInformationClass,
+           ref ProcessBasicInformation processBasicInformation,
+           uint processInformationLength,
+           out uint returnLength
+        );
+
+
+        public static void KillProcessTree(this Process parent)
+        {
+            var processes = Process.GetProcesses();
+
+            foreach (var p in processes)
+            {
+                var pbi = new ProcessBasicInformation();
+                try
+                {
+                    uint bytesWritten;
+                    if (NtQueryInformationProcess(p.Handle, 0, ref pbi, (uint)Marshal.SizeOf(pbi), out bytesWritten) == 0)
+                        if (pbi.InheritedFromUniqueProcessId == parent.Id)
+                            using (var newParent = Process.GetProcessById((int)pbi.UniqueProcessId))
+                                newParent.KillProcessTree();
+                }
+                catch { }
+            }
+            parent.Kill();
+        }
+    }
+
 }

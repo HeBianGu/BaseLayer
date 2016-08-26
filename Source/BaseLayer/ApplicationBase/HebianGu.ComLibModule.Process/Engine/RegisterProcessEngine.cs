@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.ProcessHelper
 {
+    /// <summary> 调用注册表引擎 </summary>
     class RegisterProcessEngine : ProcessEngine
     {
         public RegisterProcessEngine(string exeName)

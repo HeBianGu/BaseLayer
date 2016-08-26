@@ -12,6 +12,7 @@ using HebianGu.ComLibModule.EnumEx;
 
 namespace HebianGu.ComLibModule.ProcessHelper
 {
+    /// <summary> 外部引擎抽象基类 </summary>
     abstract class ProcessEngine
     {
 
@@ -51,6 +52,8 @@ namespace HebianGu.ComLibModule.ProcessHelper
             get { return _log; }
         }
 
+        /// <summary> 是否杀掉子进程 </summary>
+        bool isKillChild = true;
 
         #endregion
 
@@ -86,7 +89,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
             //  根据子类检验运行结果输出结果
             this.Result = this.CheckResult() ? ProcessResult.Success : ProcessResult.Error;
-        } 
+        }
 
         void StopOfEngine()
         {
@@ -107,7 +110,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
             this.Result = ProcessResult.Running;
 
-            _process.WaitForExit();
+            //_process.WaitForExit();
 
 
         }
@@ -122,10 +125,22 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
             this.StopOfEngine();
 
-            _process.Kill();
-
-            _process.Dispose();
-
+            try
+            {
+                if (isKillChild)
+                {
+                    _process.KillAll();
+                }
+                else
+                {
+                    _process.Kill();
+                }
+            }
+            catch (Exception ex)
+            {
+                this._log.ErrLog("杀掉进程" + this._process.ProcessName + "失败！");
+                this._log.ErrLog(ex);
+            }
         }
 
 
@@ -133,7 +148,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
         public abstract Process CreateProcess();
 
         /// <summary> 进程结束触发的方法 </summary>
-        [Description("引擎正常退出时的事件")]
+        [Description("引擎完成退出")]
         public virtual void DoEndOfEngine()
         {
             if (this.Log == null) return;
@@ -144,7 +159,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
         }
 
         /// <summary> 进程停止触发的方法 </summary>
-        [Description("引擎正常退出时的事件")]
+        [Description("引擎停止退出")]
         public virtual void DoStopOfEngine()
         {
             if (this.Log == null) return;

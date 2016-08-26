@@ -21,14 +21,24 @@ namespace HebianGu.ComLibModule.ProcessHelper
         {
             string cmdStr = @"eclrun eclipse D:\TestCase\3T1.DATA";
 
-            //string cmdStr = "notepad";
-
-
             CmdProcessEngine cmdProcess = new CmdProcessEngine(cmdStr);
 
             ProcessLogger log = new ProcessLogger();
+
             cmdProcess.SetLog(log);
+
             cmdProcess.Start();
+
+            while(true)
+            {
+                string exit = Console.ReadLine();
+
+                if (exit == "exit")
+                {
+                    cmdProcess.Stop();
+                }
+            }
+            
         }
 
         public static void TestRegister()

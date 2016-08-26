@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.ProcessHelper
 {
+    /// <summary> 执行外部exe </summary>
     class ExeProcessEngine : ProcessEngine
     {
 
