@@ -30,6 +30,7 @@ namespace HebianGu.ComLibModule.Wcf
 
                 WcfProviderEngine.Instance.AddService(dic);
 
+
                 LogProvider.Instance.RunLog("启动成功，按任意键退出！");
             }
             catch (Exception ex)

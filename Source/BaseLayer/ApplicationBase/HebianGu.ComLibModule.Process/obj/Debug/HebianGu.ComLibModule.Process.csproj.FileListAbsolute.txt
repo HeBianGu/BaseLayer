@@ -8,3 +8,7 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Process.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Process.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Process.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Process.exe
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.exe

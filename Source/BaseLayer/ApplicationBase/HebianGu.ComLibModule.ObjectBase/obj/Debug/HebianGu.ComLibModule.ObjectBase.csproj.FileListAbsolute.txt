@@ -4,3 +4,10 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.csproj.GenerateResource.Cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ObjectBase.dll
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ObjectBase.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.Properties.Resources.resources
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.csproj.GenerateResource.Cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectBase\obj\Debug\HebianGu.ComLibModule.ObjectBase.pdb

@@ -13,3 +13,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Enum.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Enum.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Enum\obj\Debug\HebianGu.ComLibModule.Enum.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Enum\obj\Debug\HebianGu.ComLibModule.Enum.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Enum.dll
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Enum.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Enum\obj\Debug\HebianGu.ComLibModule.Enum.dll
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Enum\obj\Debug\HebianGu.ComLibModule.Enum.pdb

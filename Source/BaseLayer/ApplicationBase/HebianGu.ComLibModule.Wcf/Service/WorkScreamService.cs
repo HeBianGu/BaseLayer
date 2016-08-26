@@ -15,7 +15,8 @@ namespace HebianGu.ComLibModule.Wcf.Service
     public class WorkScreamService : IWorkScreamService
     {
 
-        #region - Start 成员变量 -
+        #region - 成员变量 -
+
         static string _preHMName = "PREHM.exe";
 
         static string _EsmDaName = "ESMDA.exe";
@@ -45,7 +46,7 @@ namespace HebianGu.ComLibModule.Wcf.Service
         List<Process> esmdas = new List<Process>();
 
         
-        #endregion - 成员变量 End -
+        #endregion 
 
 
         /// <summary> 构造函数 </summary>
