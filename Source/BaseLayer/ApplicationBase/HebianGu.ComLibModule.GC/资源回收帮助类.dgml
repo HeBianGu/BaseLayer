@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Finalizer非常有用，但它们也有一些限制：Finalizer减缓内存分配和收集（因为GC需要追踪那些Finalizer在运行）Finalizer延长对象及其所引用对象的生命周期（这些对象只有在下一次垃圾回收运行过程中被真正地删除）对于一组对象，Finalizer的调用顺序是不可预测的你不能控制一个对象的finalizer何时被调用如果一个对象的finalizer被阻塞，那么其他对象不能处置（Finalized）如果程序没有卸载(unload)干净，那么finalizer会被忽略" Bounds="-492.799996744792,250.360066345893,583.273333333333,131.92" Label="Finalizer非常有用，但它们也有一些限制：&#xD;&#xA;&#xD;&#xA;Finalizer减缓内存分配和收集（因为GC需要追踪那些Finalizer在运行）&#xD;&#xA;Finalizer延长对象及其所引用对象的生命周期（这些对象只有在下一次垃圾回收运行过程中被真正地删除）&#xD;&#xA;对于一组对象，Finalizer的调用顺序是不可预测的&#xD;&#xA;你不能控制一个对象的finalizer何时被调用&#xD;&#xA;如果一个对象的finalizer被阻塞，那么其他对象不能处置（Finalized）&#xD;&#xA;如果程序没有卸载(unload)干净，那么finalizer会被忽略" UseManualLocation="True" />
+    <Node Id="GC" Bounds="53.6914284212873,-6.40000259399415,68,25.24" Label="资源回收" UseManualLocation="True" />
+    <Node Id="GC1" Bounds="376.6,-85.22005,50,25.24" Label="GC" UseManualLocation="True" />
+    <Node Id="IDispose" Bounds="-102.600003051758,-229.600001068115,69.07,25.24" UseManualLocation="True" />
+    <Node Id="“如果你结束对我的使用，那么请让我知道。如果只是简单地抛弃我，我可能会影响其他实例对象、应用程序域、计算机、网络、或者数据库”" Category="Comment" Bounds="-443.883425072692,-106,248,70.96" UseManualLocation="True" />
+    <Node Id="一旦销毁，对象不可恢复。对象不能被再次激活，调用对象的方法或者属性抛出ObjectDisposedException异常重复地调用对象的Disposal方法会导致错误如果一个可销毁对象x包含，或包装，或处理另外一个可销毁对象y，那么x的Dispose方法自动调用x的Dispose方法，除非另有指令（不销毁y）" Bounds="-451.4,-342.8,797.34,55.72" Label="1、一旦销毁，对象不可恢复。对象不能被再次激活，调用对象的方法或者属性抛出ObjectDisposedException异常&#xD;&#xA;2、重复地调用对象的Disposal方法会导致错误&#xD;&#xA;3、如果一个可销毁对象x包含，或包装，或处理另外一个可销毁对象y，那么x的Dispose方法自动调用y的Dispose方法，除非另有指令（不销毁y）" UseManualLocation="True" />
+    <Node Id="在一个对象从内存释放之前，如果对象包含finalizer，那么finalizer开始运行。" Category="Comment" Bounds="-464.399996948242,145.4,248,40.48" UseManualLocation="True" />
+    <Node Id="实施finalizer的一些准则：确保finalizer快速执行绝对不要在finalier中使用阻塞不要引用其他可finalizable对象不要抛出异常" Bounds="-70.399996948242,118.919966345893,185.966666666667,101.44" Label="实施finalizer的一些准则：&#xD;&#xA;&#xD;&#xA;确保finalizer快速执行&#xD;&#xA;绝对不要在finalier中使用阻塞&#xD;&#xA;不要引用其他可finalizable对象&#xD;&#xA;不要抛出异常" UseManualLocation="True" />
+    <Node Id="托管资源" Bounds="222.091428420892,-83.5999999999995,68,25.24" UseManualLocation="True" />
+    <Node Id="析构函数" Bounds="-153,63.679866345893,68,25.24" UseManualLocation="True" />
+    <Node Id="根就是指保持对象依然处于活着的事物。如果一个对象不再直接或间接地被一个根引用，那么该对象就适合于垃圾回收。" Category="Comment" Bounds="218.000003051758,23.8000000000002,248,55.72" UseManualLocation="True" />
+    <Node Id="非托管资源" Bounds="-109.108571579108,-78.7999999999997,80,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="GC" Target="托管资源" Bounds="115.220032362284,-54.6094363585975,105.161518275566,48.2094332877662" />
+    <Link Source="GC" Target="非托管资源" Bounds="-33.6058329184871,-49.7871568432978,93.9655491584566,43.3871537724665" />
+    <Link Source="IDispose" Target="一旦销毁，对象不可恢复。对象不能被再次激活，调用对象的方法或者属性抛出ObjectDisposedException异常重复地调用对象的Disposal方法会导致错误如果一个可销毁对象x包含，或包装，或处理另外一个可销毁对象y，那么x的Dispose方法自动调用x的Dispose方法，除非另有指令（不销毁y）" Bounds="-66.089426574765,-278.188290187979,7.60618321826139,48.5882868310451" />
+    <Link Source="“如果你结束对我的使用，那么请让我知道。如果只是简单地抛弃我，我可能会影响其他实例对象、应用程序域、计算机、网络、或者数据库”" Target="非托管资源" Bounds="-195.883438110352,-68.3740089001068,77.7762154983097,1.34602022951972" />
+    <Link Source="在一个对象从内存释放之前，如果对象包含finalizer，那么finalizer开始运行。" Target="析构函数" Bounds="-290.241837971697,92.2773794154266,131.646851438926,53.1226123448273" />
+    <Link Source="托管资源" Target="GC1" Bounds="290.091430664063,-72.221508100412,77.5091332054434,0.862964290745481" Label="完全自动" LabelBounds="304.82373122474,-91.0300259627213,48,15.24" />
+    <Link Source="析构函数" Target="Finalizer非常有用，但它们也有一些限制：Finalizer减缓内存分配和收集（因为GC需要追踪那些Finalizer在运行）Finalizer延长对象及其所引用对象的生命周期（这些对象只有在下一次垃圾回收运行过程中被真正地删除）对于一组对象，Finalizer的调用顺序是不可预测的你不能控制一个对象的finalizer何时被调用如果一个对象的finalizer被阻塞，那么其他对象不能处置（Finalized）如果程序没有卸载(unload)干净，那么finalizer会被忽略" Bounds="-175.669194167205,88.9198676300049,52.3491358746343,152.925273224677" />
+    <Link Source="析构函数" Target="实施finalizer的一些准则：确保finalizer快速执行绝对不要在finalier中使用阻塞不要引用其他可finalizable对象不要抛出异常" Bounds="-99.8572979552628,88.9198676300049,37.9917412355697,25.0464000992327" />
+    <Link Source="根就是指保持对象依然处于活着的事物。如果一个对象不再直接或间接地被一个根引用，那么该对象就适合于垃圾回收。" Target="GC1" Bounds="355.362740096087,-51.8651995201914,36.2920144486644,75.6651974602549" />
+    <Link Source="非托管资源" Target="IDispose" Bounds="-69.0212373694615,-195.36021884949,0.806618213959382,116.560216636965" Label="完全手动" LabelBounds="-120.617928263628,-144.713950568781,48,15.24" />
+    <Link Source="非托管资源" Target="析构函数" Bounds="-111.606520083734,-53.5600022125244,38.0788706717717,108.745581111164" Label="半自动" LabelBounds="-88.5603941376348,-4.5778731849322,36,15.24" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

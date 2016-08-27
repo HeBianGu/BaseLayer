@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.Mvvm
 {
-    //public abstract class BindableBase : INotifyPropertyChanged
-    //{
-    //    public event PropertyChangedEventHandler PropertyChanged;
-    //    protected virtual bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
-    //    {
-    //        return false;
-    //    }
-    //    protected void OnPropertyChanged<T>(Expression<Func<T>> propertyExpression) { }
+    public abstract class BindableBase : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected virtual bool SetProperty<T>(ref T storage, T value, [CallerMemberName] string propertyName = null)
+        {
+            return false;
+        }
+        protected void OnPropertyChanged<T>(Expression<Func<T>> propertyExpression) { }
 
-    //    protected void OnPropertyChanged(string propertyName)
-    //    {
-            
-    //    }
-    //}
+        protected void OnPropertyChanged(string propertyName)
+        {
+
+        }
+    }
 }

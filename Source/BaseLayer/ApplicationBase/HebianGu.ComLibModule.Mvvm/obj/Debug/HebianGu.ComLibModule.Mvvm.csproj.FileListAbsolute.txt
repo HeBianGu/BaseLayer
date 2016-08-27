@@ -10,3 +10,4 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.csproj.GenerateResource.Cache
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.csprojResolveAssemblyReference.cache
