@@ -20,14 +20,18 @@ namespace HebianGu.ComLibModule.GCHelper
         {
             try
             {
+
                 File.Delete(FilePath);
+
             }
             catch
             {
+
                 if (_deleteAttempt++ < 3)
 
                     //  一个复活对象的finalizer不会再次运行--除非你调用GC.ReRegisterForFinalize
                     GC.ReRegisterForFinalize(this);
+
             }
         }
     }

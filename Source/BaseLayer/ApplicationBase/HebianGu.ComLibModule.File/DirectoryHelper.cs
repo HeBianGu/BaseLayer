@@ -22,9 +22,19 @@ namespace HebianGu.ComLibModule.FileEx
             }
         }
 
-        /// <summary> 复制文件夹 要复制的文件夹 复制到的文件夹 </summary>
-        public static bool CopyDir(string strFromDirectory, string strToDirectory)
+        /// <summary> 复制文件夹 要复制的文件夹 复制到的文件夹 p2 = 是否清空文件夹内容 </summary>
+        public static bool CopyDir(string strFromDirectory, string strToDirectory, bool recursive = true)
         {
+            //  是否清空文件夹内容
+            if (recursive)
+            {
+                if (Directory.Exists(strToDirectory))
+                {
+                    Directory.Delete(strToDirectory, true);
+                }
+            }
+
+
             Directory.CreateDirectory(strToDirectory);
 
             if (!Directory.Exists(strFromDirectory)) return false;

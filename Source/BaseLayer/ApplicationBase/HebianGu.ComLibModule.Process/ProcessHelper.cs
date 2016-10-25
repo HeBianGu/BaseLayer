@@ -100,6 +100,44 @@ namespace HebianGu.ComLibModule.ProcessHelper
             KillProcessAndChildren(process.Id);
         }
 
+
+
+        /// <summary> 设置进程单例 (删除原有更新)</summary>
+        public static Process SetSingleRecover(this Process sender)
+        {
+            //Process current = Process.GetCurrentProcess();
+            Process[] processes = Process.GetProcessesByName(sender.ProcessName);
+            foreach (Process process in processes)
+            {
+                //Ignore   the   current   process   
+                if (process.Id != sender.Id)
+                {
+                    //  去掉重复进程
+                    process.Kill();
+                }
+            }
+
+            return sender;
+        }
+
+        /// <summary> 设置进程单例 (如果有返回当前)</summary>
+        public static Process SetSingle(this Process sender)
+        {
+            Process[] processes = Process.GetProcessesByName(sender.ProcessName);
+
+            foreach (Process process in processes)
+            {
+                //Ignore   the   current   process   
+                if (process.Id != sender.Id)
+                {
+                    return process;
+                }
+            }
+
+            return sender;
+        }
+
+
     }
 
     static class ProcessExtend

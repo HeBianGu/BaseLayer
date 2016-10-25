@@ -28,10 +28,12 @@ namespace HebianGu.ComLibModule.GCHelper
             }
             catch (Exception ex)
             {
+
                 DeletionError = ex;
 
                 //  复活对象
                 _failedDeletions.Enqueue(this);
+
             }
         }
     }

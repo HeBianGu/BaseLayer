@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CreateFromFile" Bounds="1.1400032043457,72.4000019836426,106.733333333333,25.24" UseManualLocation="True" />
+    <Node Id="CreateNew" Bounds="141.939999593099,24.8300746238708,83.3733333333333,25.24" UseManualLocation="True" />
+    <Node Id="CreateOrOpen" Bounds="125.139975026449,-75.6924482070923,103.343333333333,25.24" UseManualLocation="True" />
+    <Node Id="CreateViewAccessor" Category="Category1" Bounds="-425.084163754781,-13.2100247955321,194.71,25.24" Label="MemoryMappedViewAccessor" UseManualLocation="True" />
+    <Node Id="Https://msdn.microsoft.com/zh-cn/library/dd997372(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-1" Bounds="-381.200421142577,247.805760616241,697.303333333333,25.24" Label="https://msdn.microsoft.com/zh-cn/library/dd997372(v=vs.110).aspx?cs-save-lang=1&amp;cs-lang=csharp#code-snippet-1" UseManualLocation="True" />
+    <Node Id="MemoryMappedFile" Category="Category1" Bounds="-89.974163754781,-13.6000007283687,136.08,25.24" UseManualLocation="True" />
+    <Node Id="MemoryMappedViewStream" Category="Category1" Bounds="-190.800421142578,-140.405010528564,184.77,25.24" UseManualLocation="True" />
+    <Node Id="OpenExisting" Bounds="41.1400035349528,-130.932548207092,95.8066666666667,25.24" UseManualLocation="True" />
+    <Node Id="从磁盘上的文件中获取表示持久内存映射文件的MemoryMappedFile对象" Category="Comment" Bounds="-44.8004188537598,164.525660616241,248,40.48" Label="从磁盘上的文件中获取表示持久内存映射文件的 MemoryMappedFile 对象" UseManualLocation="True" />
+    <Node Id="具有指定偏移和大小的内存流" Category="Comment" Bounds="-222.400421142578,-217.782169439057,179.55,25.24" Label=" 具有指定偏移和大小的内存流" UseManualLocation="True" />
+    <Node Id="可随机访问的内存块" Category="Comment" Bounds="-399.60041809082,-93.2100247955321,128,25.24" UseManualLocation="True" />
+    <Node Id="获取现有内存映射文件（持久文件或非持久文件）的MemoryMappedFile对象" Category="Comment" Bounds="58.3995819091797,-213.528571571654,248,40.48" Label="获取现有内存映射文件（持久文件或非持久文件）的 MemoryMappedFile 对象" UseManualLocation="True" />
+    <Node Id="获取表示非持久内存映射文件（与磁盘上的文件不关联）的MemoryMappedFile对象" Category="Comment" Bounds="295.199578857422,-38.9726434832747,248,55.72" Label="获取表示非持久内存映射文件（与磁盘上的文件不关联）的 MemoryMappedFile 对象" UseManualLocation="True" />
+    <Node Id="表示内存映射文件" Category="Comment" Bounds="-159.200421142578,84.2273565167253,119.55,25.24" Label=" 表示内存映射文件" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="MemoryMappedFile" Target="CreateFromFile" Bounds="-10.7169180440627,11.6399995040894,48.0272232304965,54.0331783698967" />
+    <Link Source="MemoryMappedFile" Target="CreateNew" Bounds="44.2829112331212,11.399435912882,88.8103623042572,16.6033035476749" />
+    <Link Source="MemoryMappedFile" Target="CreateOrOpen" Bounds="18.45999122505,-47.7685882505143,109.366981328508,34.1685877546036" />
+    <Link Source="MemoryMappedFile" Target="CreateViewAccessor" Bounds="-221.374179071531,-0.893229944866504,131.400013116941,0.167572774035335" Label="CreateViewAccessor" LabelBounds="-213.438288607109,3.19055644215249,115.533333333333,15.24" />
+    <Link Source="MemoryMappedFile" Target="MemoryMappedViewStream" Bounds="-86.1555375266178,-107.458273682752,56.6097369635588,93.8582731868418" Label="CreateViewStream" LabelBounds="-165.156610735672,-59.4961934249335,105.593333333333,15.24" />
+    <Link Source="MemoryMappedFile" Target="OpenExisting" Bounds="-9.99769946774238,-99.1539829551951,80.920146152265,85.5539824592844" />
+    <Link Source="从磁盘上的文件中获取表示持久内存映射文件的MemoryMappedFile对象" Target="CreateFromFile" Bounds="59.7936033086099,106.376278114997,14.3953888239084,58.1493850319761" />
+    <Link Source="具有指定偏移和大小的内存流" Target="MemoryMappedViewStream" Bounds="-127.045863272518,-192.542162780762,19.411622809715,43.9057632447944" />
+    <Link Source="可随机访问的内存块" Target="CreateViewAccessor" Bounds="-334.358728966216,-67.9700230407715,4.50660820033636,45.8032484631514" />
+    <Link Source="获取现有内存映射文件（持久文件或非持久文件）的MemoryMappedFile对象" Target="OpenExisting" Bounds="111.774242892289,-173.048566589355,45.4235402095739,36.4804298641907" />
+    <Link Source="获取表示非持久内存映射文件（与磁盘上的文件不关联）的MemoryMappedFile对象" Target="CreateNew" Bounds="234.127996956785,14.4496218844643,61.0715880041524,12.58974340719" />
+    <Link Source="获取表示非持久内存映射文件（与磁盘上的文件不关联）的MemoryMappedFile对象" Target="CreateOrOpen" Bounds="236.945000337427,-50.1818832409073,58.3791221203367,12.5145157916808" />
+    <Link Source="表示内存映射文件" Target="MemoryMappedFile" Bounds="-89.4288346013911,18.6948464699119,51.9097787594434,65.5325100468134" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

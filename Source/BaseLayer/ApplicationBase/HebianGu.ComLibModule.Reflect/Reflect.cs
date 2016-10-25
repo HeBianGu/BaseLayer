@@ -56,6 +56,7 @@ namespace HebianGu.ComLibModule.Reflect
                 try
                 {
                     Type objType = Type.GetType(typeName, true);
+
                     obj = Activator.CreateInstance(objType);
                 }
                 catch (Exception ex)
