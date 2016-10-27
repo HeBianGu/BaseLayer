@@ -22,3 +22,6 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例�
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\bin\Debug\单例模式.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\bin\Debug\单例模式.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\obj\Debug\单例模式.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\bin\Debug\单例模式.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\obj\Debug\单例模式.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\单例模式\obj\Debug\单例模式.pdb

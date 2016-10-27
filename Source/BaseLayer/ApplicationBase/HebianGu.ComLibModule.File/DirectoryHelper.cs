@@ -172,9 +172,7 @@ namespace HebianGu.ComLibModule.FileEx
             return true;
         }
 
-        /// <summary>
-        /// 检测指定目录中是否存在指定的文件,若要搜索子目录请使用重载方法.
-        /// </summary>
+        /// <summary> 检测指定目录中是否存在指定的文件,若要搜索子目录请使用重载方法. </summary>
         /// <param name="directoryPath">指定目录的绝对路径</param>
         /// <param name="searchPattern">模式字符串，"*"代表0或N个字符，"?"代表1个字符。
         /// 范例："Log*.xml"表示搜索所有以Log开头的Xml文件。</param>
@@ -192,9 +190,7 @@ namespace HebianGu.ComLibModule.FileEx
             return true;
         }
 
-        /// <summary>
-        /// 检测指定目录中是否存在指定的文件
-        /// </summary>
+        /// <summary> 检测指定目录中是否存在指定的文件 </summary>
         /// <param name="directoryPath">指定目录的绝对路径</param>
         /// <param name="searchPattern">模式字符串，"*"代表0或N个字符，"?"代表1个字符。
         /// 范例："Log*.xml"表示搜索所有以Log开头的Xml文件。</param>
@@ -213,36 +209,28 @@ namespace HebianGu.ComLibModule.FileEx
             return true;
         }
 
-        /// <summary>
-        /// 取当前目录
-        /// </summary>
+        /// <summary> 取当前目录 </summary>
         /// <returns>当前目录名</returns>
         public static string GetCurrentDirectory()
         {
             return Directory.GetCurrentDirectory();
         }
 
-        /// <summary>
-        /// 设当前目录
-        /// </summary>
+        /// <summary> 设当前目录 </summary>
         /// <param name="path">目录绝对路径</param>
         public static void SetCurrentDirectory(string path)
         {
             Directory.SetCurrentDirectory(path);
         }
 
-        /// <summary>
-        /// 取路径中不充许存在的字符
-        /// </summary>
+        /// <summary> 取路径中不充许存在的字符 </summary>
         /// <returns>不充许存在的字符</returns>
         public static char[] GetInvalidPathChars()
         {
             return Path.GetInvalidPathChars();
         }
 
-        /// <summary>
-        /// 取系统所有的逻辑驱动器
-        /// </summary>
+        /// <summary> 取系统所有的逻辑驱动器 </summary>
         /// <returns>所有的逻辑驱动器</returns>
         public static DriveInfo[] GetAllDrives()
         {
@@ -262,9 +250,7 @@ namespace HebianGu.ComLibModule.FileEx
             return Directory.GetFiles(directoryPath);
         }
 
-        /// <summary>
-        /// 获取指定目录及子目录中所有文件列表
-        /// </summary>
+        /// <summary> 获取指定目录及子目录中所有文件列表 </summary>
         /// <param name="directoryPath">指定目录的绝对路径</param>
         /// <param name="searchPattern">模式字符串，"*"代表0或N个字符，"?"代表1个字符。
         /// 范例："Log*.xml"表示搜索所有以Log开头的Xml文件。</param>
@@ -284,8 +270,6 @@ namespace HebianGu.ComLibModule.FileEx
             }
             return Directory.GetFiles(directoryPath, searchPattern, SearchOption.TopDirectoryOnly);
         }
-
-
 
         /// <summary> 删除当前文件夹下所有文件 </summary>
         public static bool DeleteAllFile(this DirectoryInfo dir)
@@ -325,7 +309,6 @@ namespace HebianGu.ComLibModule.FileEx
 
             return true;
         }
-
 
         /// <summary> 删除当前文件夹下匹配的文件夹 </summary>
         public static void DeleteCurrentDir(this DirectoryInfo dir, Predicate<DirectoryInfo> match)

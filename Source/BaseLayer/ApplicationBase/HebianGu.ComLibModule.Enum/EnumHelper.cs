@@ -124,4 +124,9 @@ namespace HebianGu.ComLibModule.EnumEx
             return Enum.IsDefined(typeof(T), member);
         }
     }
+
+    public enum TestEnum
+    {
+        ttt = 0, sss, tttrrr, yyy
+    }
 }

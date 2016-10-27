@@ -37,6 +37,20 @@
         <member name="P:HebianGu.ComLibModule.TaskEx.BaseTaskCore.Time">
             <summary> 记录用时 </summary>
         </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.CaseTaskCore.Stop">
+            <summary> 停止任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.CaseTaskCore.FileName">
+            <summary> 文件名称 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.CaseTaskCore.FilePath">
+            <summary> 文件全路径 包含文件名 </summary>
+        </member>
         <member name="M:HebianGu.ComLibModule.TaskEx.TaskEx.CreateTask">
             <summary> 创建任务 </summary>
         </member>

@@ -72,10 +72,6 @@
       <Project>{1069ca34-096d-4604-a6ec-02baad1f967e}</Project>
       <Name>HebianGu.ComLibModule.DateTime</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Factory\HebianGu.ComLibModule.Factory.csproj">
-      <Project>{6380ca59-39ff-4737-a6ee-d259557fb394}</Project>
-      <Name>HebianGu.ComLibModule.Factory</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\HebianGu.ComLibModule.Process.csproj">
       <Project>{29d05648-bead-4f3c-a452-6f332a01e6e6}</Project>
       <Name>HebianGu.ComLibModule.Process</Name>

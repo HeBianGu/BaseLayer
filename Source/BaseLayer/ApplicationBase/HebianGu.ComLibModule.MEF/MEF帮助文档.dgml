@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="4adebf73-8d03-4823-9787-ebbe04d793411" Category="Comment" Bounds="312.148436889648,-70.0087128173828,249.68,406.24" Label="        /// &lt;summary&gt; 通过一组应用程序集创建一个MefEntityProvider &lt;/summary&gt;&#xD;&#xA;        public static MefEntityProvider&lt;T&gt; CreateInstance(List&lt;Assembly&gt; asses)&#xD;&#xA;        {&#xD;&#xA;            //  ③ 必须拥有Export特性  [Export(typeof(IMefDemoBase))]&#xD;&#xA;            MefEntityProvider&lt;T&gt; provider = new MefEntityProvider&lt;T&gt;();&#xD;&#xA;&#xD;&#xA;            var catalog = new AggregateCatalog();&#xD;&#xA;&#xD;&#xA;            asses.ForEach(l =&gt; catalog.Catalogs.Add(new AssemblyCatalog(l)));&#xD;&#xA;&#xD;&#xA;            var _container = new CompositionContainer(catalog);&#xD;&#xA;&#xD;&#xA;            _container.ComposeParts(provider);&#xD;&#xA;&#xD;&#xA;            return provider;&#xD;&#xA;        }" UseManualLocation="True" />
+    <Node Id="IMefDemoBase" Category="Category1" Bounds="-178.399992319743,9.40967257614135,92.6933333333333,25.24" Label="MEF架构组成" UseManualLocation="True" />
+    <Node Id="IMefDemoBase1" Bounds="80.0466666666668,-162.3,107.57,25.24" Label="IMefDemoBase" UseManualLocation="True" />
+    <Node Id="MefDemoBase" Bounds="144.108326365153,-55.849998588562,104.043333333333,25.24" UseManualLocation="True" />
+    <Node Id="MefEntityProvider&lt;T&gt;" Bounds="32.5979120890299,116.594711712646,147.966666666667,25.24" UseManualLocation="True" />
+    <Node Id="[ImportMany]List&lt;T&gt;DoList;" Bounds="-106.602068888346,177.209516040039,133.573333333333,40.48" Label="[ImportMany]&#xD;&#xA;        List&lt;T&gt; doList;" UseManualLocation="True" />
+    <Node Id="①必须拥有Export特性[Export(typeof(IMefDemoBase))]" Category="Comment" Bounds="270.597914276123,-143.688812817383,233.8,40.48" Label="① 必须拥有Export特性  [Export(typeof(IMefDemoBase))]" UseManualLocation="True" />
+    <Node Id="②必须拥有Export特性[Export(typeof(IMefDemoBase))]" Category="Comment" Bounds="-2.05155792236329,249.289616040039,233.8,40.48" Label="② 必须拥有Export特性  [Export(typeof(IMefDemoBase))]" UseManualLocation="True" />
+    <Node Id="定义接口" Category="Category2" Bounds="12.8466666666667,-95.1,68,25.24" UseManualLocation="True" />
+    <Node Id="实现接口" Category="Category2" Bounds="46.108326365153,-6.2499991607666,68,25.24" UseManualLocation="True" />
+    <Node Id="构建集合" Category="Category2" Bounds="-28.6020889282227,61.3546117126465,92,25.24" Label="构建组件集合" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="4adebf73-8d03-4823-9787-ebbe04d793411" Target="MefEntityProvider&lt;T&gt;" Bounds="189.563952957658,130.19334749712,122.584480880233,1.44566938309922" />
+    <Link Source="IMefDemoBase" Target="定义接口" Bounds="-110.45036939966,-65.3202561266641,127.922930315974,74.7299287028054" />
+    <Link Source="IMefDemoBase" Target="实现接口" Bounds="-85.7066589864095,9.5420328945093,122.83940132169,9.06678821100967" />
+    <Link Source="IMefDemoBase" Target="构建集合" Bounds="-95.7442133925996,34.6496730995178,68.3318687898375,23.7501863978767" />
+    <Link Source="MefEntityProvider&lt;T&gt;" Target="[ImportMany]List&lt;T&gt;DoList;" Bounds="11.7666135996654,141.834711712646,67.7386247151118,31.5726554697645" />
+    <Link Source="①必须拥有Export特性[Export(typeof(IMefDemoBase))]" Target="MefDemoBase" Bounds="234.536181809054,-103.20881439209,104.677699773436,43.8794649561436" />
+    <Link Source="②必须拥有Export特性[Export(typeof(IMefDemoBase))]" Target="[ImportMany]List&lt;T&gt;DoList;" Bounds="11.7715895867763,221.491303862476,59.6474471127862,27.7983134470946" />
+    <Link Source="定义接口" Target="IMefDemoBase1" Bounds="63.1822431162928,-131.55777737413,47.1916718341741,36.4577778318938" />
+    <Link Source="实现接口" Target="MefDemoBase" Bounds="109.628355603557,-27.0721726792072,48.7061149818926,20.8221735184406" />
+    <Link Source="构建集合" Target="MefEntityProvider&lt;T&gt;" Bounds="37.7724873646486,86.5946117126465,40.7830002108162,25.2609651981121" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="类别 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 2" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

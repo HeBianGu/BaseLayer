@@ -11,3 +11,8 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.pdb
 E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.dll.CodeAnalysisLog.xml
 E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.dll.lastcodeanalysissucceeded
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.csprojResolveAssemblyReference.cache

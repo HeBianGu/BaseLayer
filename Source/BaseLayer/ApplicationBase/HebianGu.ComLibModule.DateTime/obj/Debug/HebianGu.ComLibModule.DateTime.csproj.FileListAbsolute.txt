@@ -11,3 +11,7 @@ E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.DateTime.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.dll
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.DateTime.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.DateTime.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.DateTime\obj\Debug\HebianGu.ComLibModule.DateTime.pdb

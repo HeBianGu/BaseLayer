@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.MEF
 {
+    /// <summary> 提供构建组件集合 </summary>
     public class MefEntityProvider<T>
     {
        // ② 必须拥有Export特性  [Export(typeof(IMefDemoBase))]

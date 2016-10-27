@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using HebianGu.ComLibModule.ProcessEx;
+using HebianGu.ComLibModule.ProcessHelper;
 using HebianGu.ComLibModule.DateTimeEx;
 
 namespace DemoTaskManager

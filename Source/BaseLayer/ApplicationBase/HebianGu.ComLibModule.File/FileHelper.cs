@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HebianGu.ObjectBase.Logger;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -13,13 +14,29 @@ namespace HebianGu.ComLibModule.FileEx
         /// <summary> 打开文件</summary>
         public static void OpenFileInfo(this string FilePath)
         {
-            System.Diagnostics.Process.Start("explorer.exe", FilePath);
+            if (File.Exists(FilePath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", FilePath);
+            }
+            else
+            {
+                ComLogProvider.Log.RunLog("No Find File " + FilePath);
+            }
         }
 
         /// <summary>  打开文件夹 </summary>
         public static void OpenDirectoryInfo(this string dirctroyPath)
         {
-            System.Diagnostics.Process.Start("explorer.exe", dirctroyPath);
+
+            if (Directory.Exists(dirctroyPath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", dirctroyPath);
+            }
+            else
+            {
+                ComLogProvider.Log.RunLog("No Find File " + dirctroyPath);
+            }
+
         }
 
         /// <summary> 删除文件 </summary>
@@ -37,6 +54,10 @@ namespace HebianGu.ComLibModule.FileEx
                     File.Delete(fileFullPath);
                 }
                 return true;
+            }
+            else
+            {
+                ComLogProvider.Log.RunLog("No Find File " + fileFullPath);
             }
             return false;
         }
@@ -272,6 +293,7 @@ namespace HebianGu.ComLibModule.FileEx
         public static bool IsFileOpen(this string filePath)
         {
             bool result = false;
+
             System.IO.FileStream fs = null;
             try
             {
@@ -283,6 +305,43 @@ namespace HebianGu.ComLibModule.FileEx
                 result = true;
             }
             return result;//true 打开 false 没有打开
+        }
+
+
+        /// <summary> 设置文件特性 </summary>
+        public static void SetAttribute(this string filePath, FileAttributes attr)
+        {
+            filePath.FileSetAction(l => l.Attributes = attr);
+        }
+
+        /// <summary> 去掉指定特性 </summary>
+        public static void RemoveAttribute(this string filePath, FileAttributes attr)
+        {
+            filePath.FileSetAction(l => l.Attributes &= ~attr);
+        }
+
+        /// <summary> 增加指定特性 </summary>
+        public static void AddAttribute(this string filePath, FileAttributes attr)
+        {
+            filePath.FileSetAction(l => l.Attributes |= attr);
+        }
+
+        /// <summary> 对文件执行Func操作</summary>
+        public static void FileSetAction(this string filePath, Action<FileInfo> action)
+        {
+            if (File.Exists(filePath))
+            {
+                FileInfo file = new FileInfo(filePath);
+
+                action(file);
+            }
+            else
+            {
+                ComLogProvider.Log.RunLog("No Find File " + filePath);
+            }
+
+
+
         }
     }
 }

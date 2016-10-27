@@ -33,7 +33,7 @@ namespace HebianGu.ComLibModule.MMF
             set { _y = value; }
         }
 
-        public void Set(int x, int y, T value)
+        public void Set(int x, int y, T value) 
         {
             this.SetIndex(TranFucntion(x, y), value);
         }

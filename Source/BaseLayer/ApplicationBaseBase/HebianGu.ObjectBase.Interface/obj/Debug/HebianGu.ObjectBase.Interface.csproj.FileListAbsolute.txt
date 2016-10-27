@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Interface.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Interface.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Interface\obj\Debug\HebianGu.ObjectBase.Interface.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Interface\obj\Debug\HebianGu.ObjectBase.Interface.pdb

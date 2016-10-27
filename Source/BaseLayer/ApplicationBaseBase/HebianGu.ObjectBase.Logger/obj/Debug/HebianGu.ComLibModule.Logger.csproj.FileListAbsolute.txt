@@ -1,0 +1,14 @@
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Logger.dll
+E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Logger.pdb
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.dll
+E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.pdb
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Logger.exe
+E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Logger.pdb
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.csprojResolveAssemblyReference.cache
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.exe
+E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ComLibModule.Logger\obj\Debug\HebianGu.ComLibModule.Logger.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Logger.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Logger.pdb

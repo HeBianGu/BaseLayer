@@ -15,14 +15,17 @@ namespace HebianGu.ComLibModule.MEF
         {
             throw new NotImplementedException();
         }
-
         public void Dispose()
         {
             throw new NotImplementedException();
         }
+
+
+			
+       
     }
 
-
+ 
     [Export(typeof(IDisposable))]
     public class DisMefModel:IDisposable
     {

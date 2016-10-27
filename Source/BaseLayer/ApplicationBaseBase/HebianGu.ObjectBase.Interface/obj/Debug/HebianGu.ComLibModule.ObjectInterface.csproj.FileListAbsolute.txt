@@ -1,0 +1,5 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.ObjectInterface\obj\Debug\HebianGu.ComLibModule.ObjectInterface.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ObjectInterface.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ObjectInterface.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ComLibModule.ObjectInterface\obj\Debug\HebianGu.ComLibModule.ObjectInterface.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ComLibModule.ObjectInterface\obj\Debug\HebianGu.ComLibModule.ObjectInterface.pdb

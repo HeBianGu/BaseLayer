@@ -20,3 +20,9 @@ E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.dll.lastc
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.XML
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Task.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Task\obj\Debug\HebianGu.ComLibModule.Task.pdb

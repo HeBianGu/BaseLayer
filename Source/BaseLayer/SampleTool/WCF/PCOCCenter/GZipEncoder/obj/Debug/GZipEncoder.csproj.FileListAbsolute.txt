@@ -17,3 +17,8 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZip
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.dll
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\GZipEncoder.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\GZipEncoder\obj\Debug\GZipEncoder.pdb

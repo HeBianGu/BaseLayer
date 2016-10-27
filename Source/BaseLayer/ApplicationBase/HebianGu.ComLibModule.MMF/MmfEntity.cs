@@ -82,14 +82,6 @@ namespace HebianGu.ComLibModule.MMF
         /// <summary> 创建文件 </summary>
         void BuildFile()
         {
-
-            //if (File.Exists(this.FileInf))
-            //{
-            //    var temp = MemoryMappedFile.OpenExisting(_name);
-            //    temp.Dispose();
-            //    File.Delete(this.FileInf);
-            //}
-
             if (File.Exists(this.FileInf))
             {
                 this.Dispose();
@@ -258,7 +250,6 @@ namespace HebianGu.ComLibModule.MMF
         }
 
         #endregion
-
 
         #region - 资源释放 -
 

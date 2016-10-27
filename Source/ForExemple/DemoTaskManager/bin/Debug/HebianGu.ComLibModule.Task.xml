@@ -13,6 +13,15 @@
         <member name="T:HebianGu.ComLibModule.TaskEx.ITaskList">
             <summary> 任务管理器 </summary>
         </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.ITaskList.TaskCore">
+            <summary> 当前任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.ITaskList.ParentTaskCore">
+            <summary> 上级任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.ITaskList.Cts">
+            <summary> 全局任务控制 </summary>
+        </member>
         <member name="T:HebianGu.ComLibModule.TaskEx.BaseTaskCore">
             <summary> 包含：开始时间，结束事件，用时，运行状态，暂停，文件路径，文件名等状态 </summary>
         </member>
@@ -27,6 +36,20 @@
         </member>
         <member name="P:HebianGu.ComLibModule.TaskEx.BaseTaskCore.Time">
             <summary> 记录用时 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.Program.Main">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.TaskEx.CaseTaskCore.Stop">
+            <summary> 停止任务 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.CaseTaskCore.FileName">
+            <summary> 文件名称 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.TaskEx.CaseTaskCore.FilePath">
+            <summary> 文件全路径 包含文件名 </summary>
         </member>
         <member name="M:HebianGu.ComLibModule.TaskEx.TaskEx.CreateTask">
             <summary> 创建任务 </summary>
