@@ -1,4 +1,3 @@
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Logger\obj\Debug\HebianGu.ObjectBase.Logger.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Logger.exe
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Logger.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Logger\obj\Debug\HebianGu.ObjectBase.Logger.exe

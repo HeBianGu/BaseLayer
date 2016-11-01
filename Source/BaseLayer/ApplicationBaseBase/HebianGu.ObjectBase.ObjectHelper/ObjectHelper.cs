@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.ObjectBase
+namespace HebianGu.ObjectBase.ObjectHelper
 {
     public static class ObjectHelper
     {

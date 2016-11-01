@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HebianGu.ObjectBase.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace HebianGu.ObjectBase.Logger
 {
     /// <summary> 提供控制台日志输出 </summary>
-    public class ConsoleLogProvider
+    public class ConsoleLogProvider 
     {
         public static ConsoleLogProvider Instance = new ConsoleLogProvider();
 

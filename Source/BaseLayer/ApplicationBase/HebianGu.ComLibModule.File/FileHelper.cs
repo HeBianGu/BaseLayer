@@ -339,9 +339,6 @@ namespace HebianGu.ComLibModule.FileEx
             {
                 ComLogProvider.Log.RunLog("No Find File " + filePath);
             }
-
-
-
         }
     }
 }

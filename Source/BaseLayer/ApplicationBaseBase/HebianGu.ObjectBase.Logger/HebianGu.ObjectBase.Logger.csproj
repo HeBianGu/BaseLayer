@@ -37,10 +37,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Interface.exe</HintPath>
     </Reference>
-    <Reference Include="HebianGu.ObjectBase.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\..\..\Product\Debug\log4net.dll</HintPath>
     </Reference>
@@ -53,14 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComLogProvider.cs" />
-    <Compile Include="LoggerOutput.cs" />
+    <Compile Include="LogEngine\Log4netEngine.cs" />
+    <Compile Include="LogProvider\ComLogProvider.cs" />
+    <Compile Include="LogEngine\LogConsoleEngine.cs" />
+    <Compile Include="LogEngine\LogFactory.cs" />
+    <Compile Include="LogProvider\Log4netProvider.cs" />
     <Compile Include="ConsoleLogProvider.cs" />
+    <Compile Include="LogHandler\LogProviderHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="log4net.xml" />
+    <Content Include="Log4Base\log4net.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="日志说明.dgml" />

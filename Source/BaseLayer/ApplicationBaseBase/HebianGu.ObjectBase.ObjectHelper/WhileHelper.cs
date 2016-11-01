@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.ObjectBase
+namespace HebianGu.ObjectBase.ObjectHelper
 {
     /// <summary> 循环执行 </summary>
     public static class WhileHelper
