@@ -1,0 +1,12 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ComLibModule.WindowServer.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ComLibModule.WindowServer.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ComLibModule.WindowServer.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\obj\Debug\HebianGu.ComLibModule.WindowServer.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\obj\Debug\HebianGu.ComLibModule.WindowServer.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ObjectBase.Interface.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ObjectBase.Logger.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\log4net.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ObjectBase.Interface.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\HebianGu.ObjectBase.Logger.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\bin\Debug\log4net.xml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WindowServer\obj\Debug\HebianGu.ComLibModule.WindowServer.csprojResolveAssemblyReference.cache
