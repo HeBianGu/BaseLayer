@@ -42,6 +42,10 @@ namespace HebianGu.ObjectBase.Logger
             LogFactory.Instance.GetLogService<LogConsoleEngine>().RunLog(message);
             LogFactory.Instance.GetLogService<LogConsoleEngine>().RunLog(message);
 
+            LogConsoleEngine log=new LogConsoleEngine();
+            ComLogProvider.Init(log);
+            ComLogProvider.Log.RunLog("静态注册日志");
+
             Console.Read();
         }
 

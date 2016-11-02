@@ -7,43 +7,67 @@ namespace HebianGu.ComLibModule.WindowServer
     {
         static void Main(string[] args)
         {
-
-
             // Todo ：注册日志 
-
             LogProviderHandler.Instance.RunLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().RunLog(l);
             LogProviderHandler.Instance.ErrLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
             LogProviderHandler.Instance.ErrExLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
 
-            //ServiceController[] services = ServiceController.GetServices();
+            while (true)
+            {
+                ConsoleKeyInfo ss = Console.ReadKey();
 
-            //services.ToList().ForEach(l=>Console.WriteLine(l.ServiceName));
+                
+                // Todo ：安装服务 
+                if (ss.KeyChar == 'i')
+                {
+                    InstallDemo();
 
-            //Console.Read();
+                }
+                // Todo ：卸载服务 
+                else if (ss.KeyChar == 'u')
+                {
+                    UninstallDemo();
 
-            string sName="BaiduYunUtility";
+                }
+                // Todo ：启动服务 
+                else if (ss.KeyChar == 's')
+                {
+                    StartDemo();
 
-            //if(WindowServerProvider.Instance.IsInstalledOfName(sName))
-            //{
-            //    Console.WriteLine(sName+"已经安装！");
-            //}
-            //else
-            //{
-            //    Console.WriteLine(sName + "未安装！");
-            //}
-
-           if(WindowServerProvider.Instance.StartServiceOfName(sName))
-           {
-               Console.WriteLine(sName+"启动成功！");
-           }
-           else
-           {
-               Console.WriteLine(sName + "启动失败！");
-           }
+                }
+                // Todo ：停止服务 
+                else if (ss.KeyChar == 'e')
+                {
+                    StopDemo();
+                }
+                else
+                {
+                    break;
+                }
+            }
 
             Console.Read();
         }
 
+        static string ss = @"D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe";
+
+        static string nn = "WindowServiceTestDemo";
+        static void InstallDemo()
+        {
+            WindowServerProvider.Instance.InstallService(ss);
+        }
+        static void StartDemo()
+        {
+            WindowServerProvider.Instance.StartServiceOfName(nn);
+        }
+        static void StopDemo()
+        {
+            WindowServerProvider.Instance.StopServiceOfName(nn);
+        }
+        static void UninstallDemo()
+        {
+            WindowServerProvider.Instance.UnInstallService(ss);
+        }
 
     }
 }

@@ -19,8 +19,5 @@ namespace HebianGu.ObjectBase.Interface
         /// <summary> 错误日志 </summary>
         void ErrorLog(Exception ex);
 
-
-
-
     }
 }
