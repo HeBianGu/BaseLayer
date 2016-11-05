@@ -1,59 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph GraphDirection="TopToBottom" Layout="Sugiyama" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="VS2013" Bounds="1206.65,111.673333333333,63.1899999999996,25.8366666666667" />
-    <Node Id="Window服务创建" Category="Category1" Bounds="1283.825,0,112.84,25.8366666666667" Label="window服务创建" />
-    <Node Id="一定要选择你程序所在的.net版本" Bounds="1878.46333333333,167.51,197.563333333333,25.8366666666666" />
-    <Node Id="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Bounds="1410.80833333333,111.673333333333,1132.87333333333,25.8366666666666" Label="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe -u D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" />
-    <Node Id="启动Windows服务" Category="Category2" Bounds="982.161666666666,55.8366666666666,140.166666666667,25.8366666666666" Label="4、启动Windows服务" />
-    <Node Id="命令提示符" Bounds="1300.245,111.673333333333,80,25.8366666666667" />
-    <Node Id="回车后，Windows服务就已经安装好了。在任务管理器的服务中就可以找到当初命名的服务名称的服务了。选中该服务点击右键，启动服务就完成了。程序会在你代码设定的每天八点整做你设定的任务。" Bounds="275.679999999999,335.02,1093.13,25.8366666666666" />
-    <Node Id="在service1中的设计器中点击右键，选择【添加安装程序】" Bounds="2574.09333333333,111.673333333333,330.303333333333,25.8366666666667" />
-    <Node Id="在service1设计器中点击右键，选择查看代码，进入代码页面。" Bounds="1632.09333333333,223.346666666666,354.303333333333,25.8366666666667" />
-    <Node Id="在代码编辑器中添加【OnStart】服务启动方法" Bounds="1675.11666666667,279.183333333333,268.256666666667,25.8366666666667" />
-    <Node Id="在安装程序中选中【serviceInstaller1】，查看其属性，将【ServiceName】值改为你想要的服务名称。" Bounds="2453.87333333333,223.346666666666,570.743333333333,25.8366666666667" />
-    <Node Id="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Bounds="2452.49666666667,167.51,573.496666666667,25.8366666666667" />
-    <Node Id="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Bounds="325.948333333333,223.346666666666,992.593333333333,25.8366666666666" />
-    <Node Id="在项目中找到【windows服务】项目，重新命名后点击确定。" Bounds="1502.04833333333,167.51,346.393333333333,25.8366666666667" />
-    <Node Id="定时任务代码" Category="Category2" Bounds="1152.72666666667,55.8366666666666,111.036666666667,25.8366666666667" Label="2、定时任务代码" />
-    <Node Id="工具/原料" Category="Category2" Bounds="1294.16333333333,55.8366666666665,92.1633333333334,25.8366666666667" Label="1、工具/原料" />
-    <Node Id="打开VS2013，选择文件-&gt;新建-&gt;项目。" Bounds="940.56,111.673333333333,235.37,25.8366666666667" />
-    <Node Id="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Bounds="0,279.183333333333,1644.49,25.8366666666666" Label="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" />
-    <Node Id="注意事项" Category="Category2" Bounds="1416.72666666667,55.8366666666665,87.0366666666664,25.8366666666666" Label="5、注意事项" />
-    <Node Id="添加安装程序" Category="Category2" Bounds="1534.72666666667,55.8366666666665,111.036666666667,25.8366666666667" Label="3、添加安装程序" />
-    <Node Id="然后在debug目录中找到生成的程序。" Bounds="709.635,167.51,225.22,25.8366666666667" />
-    <Node Id="继续在代码编辑器中添加【ChkSrv】方法。" Bounds="1683.365,335.019999999999,251.76,25.8366666666666" />
-    <Node Id="继续在代码编辑器中添加【OnStop】服务停止方法。" Bounds="1657.31333333333,502.529999999999,303.863333333333,25.8366666666666" />
-    <Node Id="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Bounds="1646.88,446.693333333332,324.73,25.8366666666666" />
-    <Node Id="继续在代码编辑器中添加你需要定时执行的任务方法" Bounds="1661.245,390.856666666666,296,25.8366666666665" />
-    <Node Id="选中项目，右键，生成项目。" Bounds="734.245,111.673333333333,176,25.8366666666666" />
+    <Node Id="VS2013" Bounds="1206.65,110.48,63.1900000000001,25.24" />
+    <Node Id="Window服务创建" Category="Category1" Bounds="1283.825,0,112.84,25.24" Label="window服务创建" />
+    <Node Id="一定要选择你程序所在的.net版本" Bounds="1878.46333333333,165.72,197.563333333334,25.24" />
+    <Node Id="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Bounds="1410.80833333333,110.48,1132.87333333333,25.24" Label="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe -u D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" />
+    <Node Id="启动Windows服务" Category="Category2" Bounds="982.161666666666,55.2400000000002,140.166666666667,25.24" Label="4、启动Windows服务" />
+    <Node Id="命令提示符" Bounds="1300.245,110.48,80,25.24" />
+    <Node Id="回车后，Windows服务就已经安装好了。在任务管理器的服务中就可以找到当初命名的服务名称的服务了。选中该服务点击右键，启动服务就完成了。程序会在你代码设定的每天八点整做你设定的任务。" Bounds="275.68,331.44,1093.13,25.24" />
+    <Node Id="在service1中的设计器中点击右键，选择【添加安装程序】" Category="Category1" Bounds="2574.09333333333,110.48,330.303333333333,25.24" />
+    <Node Id="在service1设计器中点击右键，选择查看代码，进入代码页面。" Bounds="1632.09333333333,220.96,354.303333333333,25.24" />
+    <Node Id="在代码编辑器中添加【OnStart】服务启动方法" Bounds="1675.11666666667,276.2,268.256666666667,25.24" />
+    <Node Id="在安装程序中选中【serviceInstaller1】，查看其属性，将【ServiceName】值改为你想要的服务名称。" Bounds="2453.87333333333,220.96,570.743333333334,25.24" />
+    <Node Id="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Bounds="2452.49666666667,165.72,573.496666666666,25.24" />
+    <Node Id="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Bounds="325.948333333333,220.96,992.593333333333,25.24" />
+    <Node Id="在项目中找到【windows服务】项目，重新命名后点击确定。" Bounds="1502.04833333333,165.72,346.393333333333,25.24" />
+    <Node Id="定时任务代码" Category="Category2" Bounds="1152.72666666667,55.2400000000002,111.036666666667,25.24" Label="2、定时任务代码" />
+    <Node Id="工具/原料" Category="Category2" Bounds="1294.16333333333,55.24,92.1633333333334,25.24" Label="1、工具/原料" />
+    <Node Id="打开VS2013，选择文件-&gt;新建-&gt;项目。" Bounds="940.56,110.48,235.37,25.24" />
+    <Node Id="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Bounds="0,276.2,1644.49,25.24" Label="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" />
+    <Node Id="注意事项" Category="Category2" Bounds="1416.72666666667,55.2400000000001,87.0366666666669,25.24" Label="5、注意事项" />
+    <Node Id="添加安装程序" Category="Category2" Bounds="1534.72666666667,55.2400000000001,111.036666666667,25.24" Label="3、添加安装程序" />
+    <Node Id="然后在debug目录中找到生成的程序。" Bounds="709.635,165.72,225.22,25.24" />
+    <Node Id="继续在代码编辑器中添加【ChkSrv】方法。" Bounds="1683.365,331.44,251.76,25.24" />
+    <Node Id="继续在代码编辑器中添加【OnStop】服务停止方法。" Bounds="1657.31333333333,497.16,303.863333333334,25.24" />
+    <Node Id="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Bounds="1646.88,441.92,324.73,25.24" />
+    <Node Id="继续在代码编辑器中添加你需要定时执行的任务方法" Bounds="1661.245,386.68,296,25.24" />
+    <Node Id="选中项目，右键，生成项目。" Bounds="734.245,110.48,176,25.24" />
   </Nodes>
   <Links>
-    <Link Source="Window服务创建" Target="启动Windows服务" Bounds="1127.7119140625,23.8244590759277,156.280395507813,30.2992095947266" />
-    <Link Source="Window服务创建" Target="定时任务代码" Bounds="1247.07336425781,25.8366661071777,62.6322021484375,26.4937477111816" />
-    <Link Source="Window服务创建" Target="工具/原料" Bounds="1340.24499511719,25.8366661071777,0,21" />
-    <Link Source="Window服务创建" Target="注意事项" Bounds="1368.00817871094,25.8366661071777,56.3138427734375,26.2031555175781" />
-    <Link Source="Window服务创建" Target="添加安装程序" Bounds="1395.44958496094,25.2481060028076,131.513427734375,29.3730640411377" />
-    <Link Source="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Target="一定要选择你程序所在的.net版本" Bounds="1977.24499511719,137.509994506836,0,21" />
-    <Link Source="启动Windows服务" Target="选中项目，右键，生成项目。" Bounds="884.20361328125,81.6733322143555,114.828735351563,27.8767623901367" />
-    <Link Source="在service1中的设计器中点击右键，选择【添加安装程序】" Target="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Bounds="2739.2451171875,137.509994506836,0,21" />
-    <Link Source="在service1设计器中点击右键，选择查看代码，进入代码页面。" Target="在代码编辑器中添加【OnStart】服务启动方法" Bounds="1809.24499511719,249.183334350586,0,20.9999847412109" />
-    <Link Source="在代码编辑器中添加【OnStart】服务启动方法" Target="继续在代码编辑器中添加【ChkSrv】方法。" Bounds="1809.24499511719,305.019989013672,0,21" />
-    <Link Source="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Target="在安装程序中选中【serviceInstaller1】，查看其属性，将【ServiceName】值改为你想要的服务名称。" Bounds="2739.2451171875,193.346664428711,0,21" />
-    <Link Source="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Target="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Bounds="822.244995117188,249.183334350586,0,20.9999847412109" />
-    <Link Source="在项目中找到【windows服务】项目，重新命名后点击确定。" Target="在service1设计器中点击右键，选择查看代码，进入代码页面。" Bounds="1706.24719238281,193.346664428711,63.68798828125,26.5382843017578" />
-    <Link Source="定时任务代码" Target="打开VS2013，选择文件-&gt;新建-&gt;项目。" Bounds="1101.38342285156,81.6733322143555,72.15771484375,26.8602752685547" />
-    <Link Source="工具/原料" Target="VS2013" Bounds="1269.73815917969,81.6733322143555,46.908203125,25.6783905029297" />
-    <Link Source="工具/原料" Target="命令提示符" Bounds="1340.24499511719,81.6733322143555,0,21" />
-    <Link Source="打开VS2013，选择文件-&gt;新建-&gt;项目。" Target="在项目中找到【windows服务】项目，重新命名后点击确定。" Bounds="1175.57604980469,135.923675537109,344.330200195313,30.7950897216797" />
-    <Link Source="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Target="回车后，Windows服务就已经安装好了。在任务管理器的服务中就可以找到当初命名的服务名称的服务了。选中该服务点击右键，启动服务就完成了。程序会在你代码设定的每天八点整做你设定的任务。" Bounds="822.244995117188,305.019989013672,0,21" />
-    <Link Source="注意事项" Target="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Bounds="1503.38000488281,80.1407165527344,306.023193359375,30.8032073974609" />
-    <Link Source="添加安装程序" Target="在service1中的设计器中点击右键，选择【添加安装程序】" Bounds="1645.76330566406,70.9368209838867,937.583862304688,40.1615524291992" />
-    <Link Source="然后在debug目录中找到生成的程序。" Target="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Bounds="822.244995117188,193.346664428711,0,21" />
-    <Link Source="继续在代码编辑器中添加【ChkSrv】方法。" Target="继续在代码编辑器中添加你需要定时执行的任务方法" Bounds="1809.24499511719,360.856658935547,0,21" />
-    <Link Source="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Target="继续在代码编辑器中添加【OnStop】服务停止方法。" Bounds="1809.24499511719,472.529998779297,0,21" />
-    <Link Source="继续在代码编辑器中添加你需要定时执行的任务方法" Target="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Bounds="1809.24499511719,416.693328857422,0,21" />
-    <Link Source="选中项目，右键，生成项目。" Target="然后在debug目录中找到生成的程序。" Bounds="822.244995117188,137.509994506836,0,21" />
+    <Link Source="Window服务创建" Target="启动Windows服务" Bounds="1126.87963867188,23.3971424102783,157.177490234375,30.1475124359131" />
+    <Link Source="Window服务创建" Target="定时任务代码" Bounds="1246.70373535156,25.2399997711182,63.3848876953125,26.5256023406982" />
+    <Link Source="Window服务创建" Target="工具/原料" Bounds="1340.24499511719,25.2399997711182,0,21.0000019073486" />
+    <Link Source="Window服务创建" Target="注意事项" Bounds="1367.65991210938,25.2399997711182,56.9947509765625,26.2366008758545" />
+    <Link Source="Window服务创建" Target="添加安装程序" Bounds="1395.265625,24.7773475646973,131.854736328125,29.1346397399902" />
+    <Link Source="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Target="一定要选择你程序所在的.net版本" Bounds="1977.24499511719,135.720001220703,0,21" />
+    <Link Source="启动Windows服务" Target="选中项目，右键，生成项目。" Bounds="883.541381835938,80.4800033569336,116.158386230469,27.8982009887695" />
+    <Link Source="在service1中的设计器中点击右键，选择【添加安装程序】" Target="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Bounds="2739.2451171875,135.720001220703,0,21" />
+    <Link Source="在service1设计器中点击右键，选择查看代码，进入代码页面。" Target="在代码编辑器中添加【OnStart】服务启动方法" Bounds="1809.24499511719,246.199996948242,0,21.0000152587891" />
+    <Link Source="在代码编辑器中添加【OnStart】服务启动方法" Target="继续在代码编辑器中添加【ChkSrv】方法。" Bounds="1809.24499511719,301.440002441406,0,21" />
+    <Link Source="在安装程序中选中【serviceProcessInstaller1】，查看其属性，将【Account】值改为【LocalSystem】" Target="在安装程序中选中【serviceInstaller1】，查看其属性，将【ServiceName】值改为你想要的服务名称。" Bounds="2739.2451171875,190.960006713867,0,21" />
+    <Link Source="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Target="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Bounds="822.244995117188,246.199996948242,0,21.0000152587891" />
+    <Link Source="在项目中找到【windows服务】项目，重新命名后点击确定。" Target="在service1设计器中点击右键，选择查看代码，进入代码页面。" Bounds="1705.85827636719,190.960006713867,64.45263671875,26.5698699951172" />
+    <Link Source="定时任务代码" Target="打开VS2013，选择文件-&gt;新建-&gt;项目。" Bounds="1100.95910644531,80.4800033569336,73.0172119140625,26.8897933959961" />
+    <Link Source="工具/原料" Target="VS2013" Bounds="1269.46166992188,80.4800033569336,47.4805908203125,25.7140502929688" />
+    <Link Source="工具/原料" Target="命令提示符" Bounds="1340.24499511719,80.4800033569336,0,21" />
+    <Link Source="打开VS2013，选择文件-&gt;新建-&gt;项目。" Target="在项目中找到【windows服务】项目，重新命名后点击确定。" Bounds="1175.58911132813,134.108901977539,347.200927734375,30.8225860595703" />
+    <Link Source="找到命令提示符，以管理员身份运行。然后在dos里面输入命令【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exeD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】,当然，这里需要将目录换成你自己程序所在的目录。" Target="回车后，Windows服务就已经安装好了。在任务管理器的服务中就可以找到当初命名的服务名称的服务了。选中该服务点击右键，启动服务就完成了。程序会在你代码设定的每天八点整做你设定的任务。" Bounds="822.244995117188,301.440002441406,0,21" />
+    <Link Source="注意事项" Target="卸载服务命令：【D:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\WindowsServiceTest.exe-uD:\Statistics\WindowsServiceTest\WindowsServiceTest\bin\Debug\InstallUtil.exe】" Bounds="1503.37744140625,78.951904296875,309.319458007813,30.8004302978516" />
+    <Link Source="添加安装程序" Target="在service1中的设计器中点击右键，选择【添加安装程序】" Bounds="1645.76330566406,70.0359115600586,937.038208007813,39.8810272216797" />
+    <Link Source="然后在debug目录中找到生成的程序。" Target="在目录【C:\Windows\Microsoft.NET\Framework】中找到程序对应的.net版本，然后在该版本的目录中找到【InstallUtil.exe】程序，并将该程序拷贝到我们项目中的Debug目录下。" Bounds="822.244995117188,190.960006713867,0,21" />
+    <Link Source="继续在代码编辑器中添加【ChkSrv】方法。" Target="继续在代码编辑器中添加你需要定时执行的任务方法" Bounds="1809.24499511719,356.679992675781,0,21" />
+    <Link Source="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Target="继续在代码编辑器中添加【OnStop】服务停止方法。" Bounds="1809.24499511719,467.160003662109,0,21" />
+    <Link Source="继续在代码编辑器中添加你需要定时执行的任务方法" Target="继续在代码编辑器中添加【WriteLog】书写日志的方法。" Bounds="1809.24499511719,411.920013427734,0,21" />
+    <Link Source="选中项目，右键，生成项目。" Target="然后在debug目录中找到生成的程序。" Bounds="822.244995117188,135.720001220703,0,21" />
   </Links>
   <Categories>
     <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />

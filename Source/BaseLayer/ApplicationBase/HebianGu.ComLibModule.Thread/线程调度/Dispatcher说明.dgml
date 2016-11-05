@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Dispatcher" Bounds="0,0,81.4533333333333,25.24" />
+    <Node Id="可以使用Dispatcher类以及其方法，将非UI线程上的方法调度到UI线程上运行，解决了子线程更新UI线程上的对象的问题" Bounds="-285.000004577637,-66.4000003051758,658.913333333333,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="Dispatcher" Target="可以使用Dispatcher类以及其方法，将非UI线程上的方法调度到UI线程上运行，解决了子线程更新UI线程上的对象的问题" Bounds="41.4355904921769,-32.1741669364756,1.80737191023859,32.1741669364756" />
+  </Links>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+</DirectedGraph>

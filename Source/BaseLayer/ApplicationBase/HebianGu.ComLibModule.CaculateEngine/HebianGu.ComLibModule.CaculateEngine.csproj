@@ -49,6 +49,7 @@
     <Compile Include="集合分组截取计算\CaculateGroupEngineT.cs" />
     <Compile Include="集合分组截取计算\QueueSpaceCaculateProvider.cs" />
     <Compile Include="集合分组截取计算\ModelEntityT.cs" />
+    <Compile Include="集合按调解拆分\SplitDataEngine.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

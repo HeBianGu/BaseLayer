@@ -29,5 +29,24 @@ namespace HebianGu.ObjectBase.ObjectHelper
         {
             return (T)Attribute.GetCustomAttribute(o, typeof(T));
         }
+
+        
+        /// <summary> 深复制 </summary>
+        [Obsolete("未测试过")]
+        public static object DeepCopy(this object o)
+        {
+            Type t = o.GetType();
+            PropertyInfo[] properties = t.GetProperties();
+            Object p = t.InvokeMember("", System.Reflection.BindingFlags.CreateInstance, null, o, null);
+            foreach (PropertyInfo pi in properties)
+            {
+                if (pi.CanWrite)
+                {
+                    object value = pi.GetValue(o, null);
+                    pi.SetValue(p, value, null);
+                }
+            }
+            return p;
+        }
     }
 }

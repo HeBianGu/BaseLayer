@@ -1,0 +1,12 @@
+2016-11-01 17:45:53,216 [10] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:45:53,225 [10] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:45:53,226 [10] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:45:53,228 [10] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:45:53,229 [10] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:45:53,229 [10] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,020 [9] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,029 [9] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,029 [9] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,031 [9] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,032 [9] DEBUG - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine
+2016-11-01 17:50:21,033 [9] ERROR - 测试测试测试 总共三种写日志的方法目前 LogProviderHandler Log4netEngine LogConsoleEngine

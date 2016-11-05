@@ -1,0 +1,7 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Timer\obj\Debug\HebianGu.ComLibModule.TimerHelper.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Timer\obj\Debug\HebianGu.ComLibModule.Timer.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Timer.exe.config
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Timer.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Timer.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Timer\obj\Debug\HebianGu.ComLibModule.Timer.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Timer\obj\Debug\HebianGu.ComLibModule.Timer.pdb

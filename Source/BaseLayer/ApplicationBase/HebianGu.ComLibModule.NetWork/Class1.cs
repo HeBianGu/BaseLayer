@@ -41,25 +41,5 @@ namespace HebianGu.ComLibModule.NetWork
             return tempIP;
         }
 
-        //public string readip()
-        //{
-        //    HtmlDocument hd = webBrowser1.Document;
-        //    string stra = "";
-        //    for (int i = 0; i < hd.All.Count; i++)
-        //    {
-        //        if (hd.All[i].OuterText != null)
-        //        {
-        //            Match m = Regex.Match(hd.All[i].OuterText, @"[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}");
-        //            if (m.Success)
-        //            {
-        //                stra = m.ToString();
-        //                MessageBox.Show(m.ToString());
-        //                break;
-        //            }
-        //        }
-        //    }
-
-
-        //}
     }
 }

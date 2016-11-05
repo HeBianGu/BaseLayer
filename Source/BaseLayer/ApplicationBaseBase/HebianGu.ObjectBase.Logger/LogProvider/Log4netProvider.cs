@@ -33,12 +33,6 @@ namespace HebianGu.ObjectBase.Logger
     /// <summary> 统一日志输出的类 </summary>
     public class Log4netProvider
     {
-        private static bool _isErrorMsg = false;
-        public static bool IsErrorMsg
-        {
-            get { return _isErrorMsg; }
-            set { _isErrorMsg = value; }
-        }
 
         /// <summary> 重置配置 </summary>
         public static void ReplaceFileTag(string logconfig)
@@ -78,14 +72,12 @@ namespace HebianGu.ObjectBase.Logger
 
             Stopwatch st = new Stopwatch();
 
-            //  开始计时
             st.Start();
+
             log4net.GlobalContext.Properties["dynamicName"] = name;
             Logger = LogManager.GetLogger(name);
 
-            //  终止计时
             st.Stop();
-
 
             if (st.ElapsedMilliseconds > 2000)
             {
@@ -174,8 +166,9 @@ namespace HebianGu.ObjectBase.Logger
                 Logger.Info(msg);
             }
         }
-
-        private static string getFileMsg(System.Diagnostics.StackFrame SourceFile)
+        
+        // Todo ：信息格式 
+        static string GetFileMsg(System.Diagnostics.StackFrame SourceFile)
         {
             return string.Format("FILE: [{0}] LINE:[{1}] Method:[{2}]", SourceFile.GetFileName(), SourceFile.GetFileLineNumber(), SourceFile.GetMethod());
         }
@@ -187,7 +180,7 @@ namespace HebianGu.ObjectBase.Logger
 
             if (Logger == null) return;
 
-            Logger.Info(getFileMsg(SourceFile));
+            Logger.Info(GetFileMsg(SourceFile));
 
             Logger.Error(ex.Message);
 
@@ -203,7 +196,7 @@ namespace HebianGu.ObjectBase.Logger
 
             if (Logger == null) return;
 
-            Logger.Info(getFileMsg(SourceFile));
+            Logger.Info(GetFileMsg(SourceFile));
 
             Logger.Info(infomsg);
         }

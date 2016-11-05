@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Category="Category1" Bounds="-78.8880456034341,-201.153418908691,298.363333333333,116.68" Label="  [DllImport(&quot;user32.dll&quot;)]&#xD;&#xA;        public static extern int SetWindowsHookEx(&#xD;&#xA;            HookType idHook,&#xD;&#xA;            HookProc lpfn,&#xD;&#xA;            IntPtr hInstance,&#xD;&#xA;            int threadId&#xD;&#xA;            );" UseManualLocation="True" />
+    <Node Id="4bc9b8b2-52f7-48c2-981b-40858a0b47701" Bounds="-318.000059254964,-379.925663784955,410.516666666667,25.24" Label=" public delegate int HookProc(int nCode, int wParam, IntPtr lParam);" UseManualLocation="True" />
+    <Node Id="HInstance应用程序实例的模块句柄(一般来说是你钩子回调函数所在的应用程序实例模块句柄)" Bounds="54.7999858856201,-324.685563784955,518.75,25.24" Label=" hInstance应用程序实例的模块句柄(一般来说是你钩子回调函数所在的应用程序实例模块句柄)" UseManualLocation="True" />
+    <Node Id="IdHook钩子类型，此处用整形的枚举表示" Bounds="-435.111263490467,-150.584445858312,245.493333333333,25.24" Label=" idHook钩子类型，此处用整形的枚举表示" UseManualLocation="True" />
+    <Node Id="LParam消息参数" Bounds="-71.5999998474121,-493.685975854492,107.63,25.24" Label="lParam消息参数" UseManualLocation="True" />
+    <Node Id="Lpfn钩子发挥作用时的回调函数" Bounds="-203.599993591309,-294.746580027262,186.41,25.24" Label="lpfn钩子发挥作用时的回调函数" UseManualLocation="True" />
+    <Node Id="NCode钩子链传递回来的参数，0表示此消息(被之前的消息钩子)丢弃，非0表示此消息继续有效" Bounds="-461.999998270671,-548.926075854492,523.623333333333,25.24" Label="nCode钩子链传递回来的参数，0表示此消息(被之前的消息钩子)丢弃，非0表示此消息继续有效" UseManualLocation="True" />
+    <Node Id="SetWindowsHookEx" Category="Category1" Bounds="2.07476444912807,-9.22402348138015,135.09,25.24" UseManualLocation="True" />
+    <Node Id="ThreadId与安装的钩子子程相关联的线程的标识符" Bounds="244.181678441366,-256.393518908691,284.766666666667,25.24" Label="threadId与安装的钩子子程相关联的线程的标识符" UseManualLocation="True" />
+    <Node Id="WParam消息参数" Bounds="38.0899981689453,-435.165763784955,113.91,25.24" Label="wParam消息参数" UseManualLocation="True" />
+    <Node Id="值得一提的是wParam和lParam在不同的消息类型中是不一样的类型" Category="Comment" Bounds="149.6,-505.645863784955,249.54,40.48" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Target="HInstance应用程序实例的模块句柄(一般来说是你钩子回调函数所在的应用程序实例模块句柄)" Bounds="154.357777733979,-294.314249886263,134.238715990324,93.1608309775716" />
+    <Link Source="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Target="Lpfn钩子发挥作用时的回调函数" Bounds="-86.8994292649603,-264.011208758151,81.5263028772891,62.8577898494597" />
+    <Link Source="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Target="ThreadId与安装的钩子子程相关联的线程的标识符" Bounds="219.475287729899,-228.416605701084,118.982082538847,37.981440320314" />
+    <Link Source="4bc9b8b2-52f7-48c2-981b-40858a0b47701" Target="LParam消息参数" Bounds="-102.207701697751,-461.536660257547,68.1214115512882,81.6109964725919" />
+    <Link Source="4bc9b8b2-52f7-48c2-981b-40858a0b47701" Target="NCode钩子链传递回来的参数，0表示此消息(被之前的消息钩子)丢弃，非0表示此消息继续有效" Bounds="-189.522288397459,-515.692746349113,70.2505419261892,135.767082564158" />
+    <Link Source="4bc9b8b2-52f7-48c2-981b-40858a0b47701" Target="WParam消息参数" Bounds="-65.2713473737447,-407.613432310314,104.148086612126,27.6877685253589" />
+    <Link Source="IdHook钩子类型，此处用整形的枚举表示" Target="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Bounds="-189.617934468587,-140.808981098863,101.730607552203,1.28911298024767" />
+    <Link Source="Lpfn钩子发挥作用时的回调函数" Target="4bc9b8b2-52f7-48c2-981b-40858a0b47701" Bounds="-112.146176642613,-345.68907749438,1.40349485483415,50.9424974671182" />
+    <Link Source="SetWindowsHookEx" Target="3b7cc236-727e-4761-9503-ae8ff5096d2f1" Bounds="69.677925903613,-75.4735187412873,0.305332915214905,66.2494952847138" />
+    <Link Source="值得一提的是wParam和lParam在不同的消息类型中是不一样的类型" Target="LParam消息参数" Bounds="45.0290073314162,-483.552437290914,104.570992668584,1.55337539729237" />
+    <Link Source="值得一提的是wParam和lParam在不同的消息类型中是不一样的类型" Target="WParam消息参数" Bounds="139.540175491391,-465.165863784955,77.0898903204583,27.0228811657753" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

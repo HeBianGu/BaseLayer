@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="500.510359408034,-245.649903271684,142.97,208.12" Label=" try&#xD;&#xA; {&#xD;&#xA;    Monitor.Enter(obj);&#xD;&#xA;    dosomething();&#xD;&#xA; }&#xD;&#xA; catch(Exception ex)&#xD;&#xA; {&#xD;&#xA; &#xD;&#xA; }&#xD;&#xA; finally&#xD;&#xA; {&#xD;&#xA;    Monitor.Exit(obj);&#xD;&#xA; }" UseManualLocation="True" />
+    <Node Id="Lock(obj){Dosomething();}" Bounds="108.510359408034,-165.979704016913,121.77,70.96" Label="lock(obj)&#xD;&#xA;{&#xD;&#xA;    dosomething();&#xD;&#xA;}" UseManualLocation="True" />
+    <Node Id="两者的区别" Category="Category1" Bounds="324.510359408034,-98.1401691331924,80,25.24" UseManualLocation="True" />
+    <Node Id="相等的" Category="Comment" Bounds="328.110359408034,-206.779704016913,56,25.24" UseManualLocation="True" />
+    <Node Id="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Bounds="1.22070312045253E-05,43.6701967283156,741.4,25.24" />
+  </Nodes>
+  <Links>
+    <Link Source="两者的区别" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="404.289534083483,-119.924248384126,87.5324797997982,23.654350538653" />
+    <Link Source="两者的区别" Target="Lock(obj){Dosomething();}" Bounds="239.050342903059,-114.442259505189,85.4600330735036,19.7009556271866" />
+    <Link Source="相等的" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="384.110359408034,-187.34147014794,107.655526161608,26.2150198091868" />
+    <Link Source="相等的" Target="Lock(obj){Dosomething();}" Bounds="238.798851342562,-184.613175885804,89.3115080654726,30.450529434957" />
+    <Link Source="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Target="两者的区别" Bounds="365.453657360459,-63.908732787461,4.69553178586295,107.578928252549" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

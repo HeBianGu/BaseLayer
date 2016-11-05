@@ -10,8 +10,9 @@ namespace HebianGu.ComLibModule.CaculateEngine
     {
         static void Main(string[] args)
         {
+            TestSplitEngine();
 
-            TestProvider1();
+            //TestProvider1();
 
         }
         static Queue<DayTimeModelEntity<double>> CreateTest()
@@ -30,6 +31,28 @@ namespace HebianGu.ComLibModule.CaculateEngine
             return que;
         }
 
+        static void TestSplitEngine()
+        {
+            string[] ss = { "1", "2", "3", "", "", "4","", "", "5", "6", "7", "", "", "", "" };
+
+
+            SplitDataEngine engine = new SplitDataEngine();
+
+            var result = engine.SpiltSpace<string>(ss.ToList(), l => l, l => string.IsNullOrEmpty(l));
+
+            result.ForEach(l =>
+                {
+
+                    // Todo ：输出索引 
+                    Console.WriteLine("表格：" + result.FindIndex(k => k == l));
+
+                    // Todo ：输出数据信息 
+                    l.ForEach(k => Console.WriteLine(k));
+                });
+
+            Console.Read();
+        }
+
 
         static void TestProvider1()
         {
@@ -41,7 +64,7 @@ namespace HebianGu.ComLibModule.CaculateEngine
 
             int space = 5;
 
-            
+
             QueueSpaceCaculateProvider<double> provider = new QueueSpaceCaculateProvider<double>();
 
             provider.DefautValue = 0;

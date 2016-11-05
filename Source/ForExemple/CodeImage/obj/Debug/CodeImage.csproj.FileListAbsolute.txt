@@ -1,0 +1,11 @@
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.FrmExample.resources
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\CodeImage.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\CodeImage.exe
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\CodeImage.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\zxing.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\zxing.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\zxing.xml
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.exe
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.pdb

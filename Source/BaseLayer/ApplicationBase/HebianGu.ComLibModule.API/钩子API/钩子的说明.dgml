@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="368712c9-671e-4a61-9f5e-668c9b3fcff01" Category="Comment" Bounds="-306.400013936361,80.6733353678385,179.076666666667,131.92" Label=" 3、[DllImport(&quot;user32.dll&quot;)]&#xD;&#xA;        public static extern int SetWindowsHookEx(&#xD;&#xA;            HookType idHook,&#xD;&#xA;            HookProc lpfn,&#xD;&#xA;            IntPtr hInstance,&#xD;&#xA;            int threadId&#xD;&#xA;            );" UseManualLocation="True" />
+    <Node Id="API:SetWindowsHookEx" Category="Category1" Bounds="-3.2000000000001,144.8,157.293333333333,25.24" UseManualLocation="True" />
+    <Node Id="C#是.NETFramework平台的相伴语言，用它本身的类库和编译器提供的方法是无法实现全局钩子的。但实际上对于非托管代码的调用在C#中是成立的，使用DllImport属性可以引用非托管代码类库中的方法" Category="Comment" Bounds="-218.019998168945,-52.3667646321614,248,101.44" Label="1、C#是.NET Framework平台的相伴语言，用它本身的类库和编译器提供的方法是无法实现全局钩子的。但实际上对于非托管代码的调用在C#中是成立的，使用DllImport属性可以引用非托管代码类库中的方法" UseManualLocation="True" />
+    <Node Id="Http://www.cnblogs.com/Johness/archive/2012/12/28/2837977.html" Bounds="-167.599985961914,307.023933209229,412.86,25.24" Label="http://www.cnblogs.com/Johness/archive/2012/12/28/2837977.html" UseManualLocation="True" />
+    <Node Id="　1.钩子对资源占用很多，不用时应及时取消掉，这个需要使用UnhookWindowsHookEx函数　　　　2.处于礼貌，钩子应返回下一个钩子的处理结果，而不是单一地将当前钩子的处理结果返回(使用CallNextHookEx调用下一个钩子，由于钩子是先设置后生效，所以应该如此来保证钩子链的正常传递)　　　　3.钩子函数参数中的hInstance是只当前钩子的回调函数在哪儿，一定要给出正确地址　　　　4.因为使用了委托，应该保证委托的内存地址(对方法的引用)不会垃圾回收，否则在钩子执行时会出现异常" Category="Comment" Bounds="302.842926025391,40.200718334961,248,269.08" Label="　1.钩子对资源占用很多，不用时应及时取消掉，这个需要使用UnhookWindowsHookEx函数&#xD;&#xA;&#xD;&#xA;　　　　2.处于礼貌，钩子应返回下一个钩子的处理结果，而不是单一地将当前钩子的处理结果返回(使用CallNextHookEx调用下一个钩子，由于钩子是先设置后生效，所以应该如此来保证钩子链的正常传递)&#xD;&#xA;&#xD;&#xA;　　　　3.钩子函数参数中的hInstance是只当前钩子的回调函数在哪儿，一定要给出正确地址&#xD;&#xA;&#xD;&#xA;　　　　4.因为使用了委托，应该保证委托的内存地址(对方法的引用)不会垃圾回收，否则在钩子执行时会出现异常" UseManualLocation="True" />
+    <Node Id="使用它可以向操作系统(Windows)注册一个特定类型的消息拦截处理方法" Category="Comment" Bounds="109.200000864665,-30.2793816650391,244.18,40.48" Label="2、使用它可以向操作系统(Windows)注册一个特定类型的消息拦截处理方法" UseManualLocation="True" />
+    <Node Id="注意" Bounds="190.089971313476,195.813337402344,50,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="368712c9-671e-4a61-9f5e-668c9b3fcff01" Target="API:SetWindowsHookEx" Bounds="-127.323347269694,149.93744892604,115.129468816343,4.24846906015654" />
+    <Link Source="API:SetWindowsHookEx" Target="Http://www.cnblogs.com/Johness/archive/2012/12/28/2837977.html" Bounds="43.6601571408374,170.04,28.9379646346342,128.20479495266" />
+    <Link Source="API:SetWindowsHookEx" Target="注意" Bounds="109.992504958787,170.04,71.6438834489023,26.1723511086828" />
+    <Link Source="C#是.NETFramework平台的相伴语言，用它本身的类库和编译器提供的方法是无法实现全局钩子的。但实际上对于非托管代码的调用在C#中是成立的，使用DllImport属性可以引用非托管代码类库中的方法" Target="API:SetWindowsHookEx" Bounds="-39.9838878580402,49.0732353678386,95.4233212347402,89.5673434889947" />
+    <Link Source="　1.钩子对资源占用很多，不用时应及时取消掉，这个需要使用UnhookWindowsHookEx函数　　　　2.处于礼貌，钩子应返回下一个钩子的处理结果，而不是单一地将当前钩子的处理结果返回(使用CallNextHookEx调用下一个钩子，由于钩子是先设置后生效，所以应该如此来保证钩子链的正常传递)　　　　3.钩子函数参数中的hInstance是只当前钩子的回调函数在哪儿，一定要给出正确地址　　　　4.因为使用了委托，应该保证委托的内存地址(对方法的引用)不会垃圾回收，否则在钩子执行时会出现异常" Target="注意" Bounds="248.978163790001,194.470713460835,53.8647622353895,8.57057658355322" />
+    <Link Source="使用它可以向操作系统(Windows)注册一个特定类型的消息拦截处理方法" Target="API:SetWindowsHookEx" Bounds="93.3226151946202,10.2006183349609,119.131360761767,128.011018968153" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

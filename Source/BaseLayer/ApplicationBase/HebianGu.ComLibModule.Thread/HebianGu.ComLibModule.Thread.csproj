@@ -50,6 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaskQueue\TaskManager.cs" />
     <Compile Include="TaskQueue\IWorkInterface.cs" />
+    <Compile Include="原子操作\InterlockedDemo.cs" />
+    <Compile Include="线程调度\DispatcherHelper.cs" />
+    <Compile Include="（信号量）控制多线程\SemaphoreDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ProgressBar\ProgBackWorkForm.resx">
@@ -57,7 +60,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Monitor与Lock的区别\说明区别.dgml" />
+    <None Include="原子操作\Interlocked说明.dgml" />
     <None Include="多线程扩展.dgml" />
+    <None Include="线程调度\Dispatcher说明.dgml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

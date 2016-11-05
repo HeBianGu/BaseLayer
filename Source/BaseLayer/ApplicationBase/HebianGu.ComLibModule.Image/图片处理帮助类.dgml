@@ -1,8 +1,52 @@
-﻿<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
+    <Node Id="1a4290d8-bfaf-459e-a32e-cdf0f3434e071" Bounds="-198.182448071087,-344.78,557.183333333333,25.24" Label="在visual studio C#项目中引用COM组件：Microsoft Office Document Imaging 12.0 Type Library" UseManualLocation="True" />
+    <Node Id="1d83ad1c-cec9-4c64-9096-cf02fbb73f241" Category="Comment" Bounds="-397.589114737754,-63.1800000000001,249.213333333333,375.76" Label="private void button1_Click(object sender, EventArgs e)&#xD;&#xA;{&#xD;&#xA;    MODI.Document doc = new MODI.Document();&#xD;&#xA;    doc.Create(&quot;C:\\OCR\\text.jpg&quot;);&#xD;&#xA;    MODI.Image image;&#xD;&#xA;    MODI.Layout layout;&#xD;&#xA;    doc.OCR(MODI.MiLANGUAGES.miLANG_CHINESE_SIMPLIFIED, true, true);&#xD;&#xA;    StringBuilder sb = new StringBuilder();&#xD;&#xA;    for (int i = 0; i &lt; doc.Images.Count; i++)&#xD;&#xA;    {&#xD;&#xA;        image = (MODI.Image)doc.Images[i];&#xD;&#xA;        layout = image.Layout;&#xD;&#xA;        sb.Append(layout.Text);&#xD;&#xA;    }&#xD;&#xA; &#xD;&#xA;    textBox1.Text = sb.ToString();&#xD;&#xA;}" UseManualLocation="True" />
+    <Node Id="OfficeSP2补丁安装（301MB）：http://download.microsoft.com/download/A/3/9/A39E919E-AFA8-4128-9249-51629206C70F/office2007sp2-kb953195-fullfile-zh-cn.exe" Bounds="-118.37578140442,-3.18000000000006,991.69,25.24" Label="Office SP2 补丁安装（301 MB）：http://download.microsoft.com/download/A/3/9/A39E919E-AFA8-4128-9249-51629206C70F/office2007sp2-kb953195-fullfile-zh-cn.exe" UseManualLocation="True" />
+    <Node Id="使用C#与Office2007OCR组件实现图文转换" Category="Category1" Bounds="-275.31,-136,262.69,25.24" Label="使用C#与Office 2007 OCR组件实现图文转换" UseManualLocation="True" />
+    <Node Id="安装office2007.(安装组件选项时需要手动在工具–&gt;MicrosoftOfficeDocumentImaging安装此项）" Bounds="-29.3824601236979,-284.800051068115,575.763333333333,25.24" Label="安装office 2007.(安装组件选项时需要手动在 工具–&gt; Microsoft Office Document Imaging 安装此项）" UseManualLocation="True" />
+    <Node Id="然后在C盘放入一个text.jpg文件即可开始测试以上代码。" Bounds="-531.15409859213,-263.159951068115,323.296666666667,25.24" UseManualLocation="True" />
   </Nodes>
   <Links>
+    <Link Source="1d83ad1c-cec9-4c64-9096-cf02fbb73f241" Target="使用C#与Office2007OCR组件实现图文转换" Bounds="-175.272843398127,-102.77525869742,20.5920644786485,39.5952586974201" />
+    <Link Source="使用C#与Office2007OCR组件实现图文转换" Target="1a4290d8-bfaf-459e-a32e-cdf0f3434e071" Bounds="-136.349014282227,-316.920867919922,166.659374237061,180.920867919922" />
+    <Link Source="使用C#与Office2007OCR组件实现图文转换" Target="OfficeSP2补丁安装（301MB）：http://download.microsoft.com/download/A/3/9/A39E919E-AFA8-4128-9249-51629206C70F/office2007sp2-kb953195-fullfile-zh-cn.exe" Bounds="-94.4205019880851,-110.760001068115,413.623716812577,105.358453541169" />
+    <Link Source="使用C#与Office2007OCR组件实现图文转换" Target="安装office2007.(安装组件选项时需要手动在工具–&gt;MicrosoftOfficeDocumentImaging安装此项）" Bounds="-109.831284327282,-256.439034605482,325.755252424761,120.439033537366" />
+    <Link Source="使用C#与Office2007OCR组件实现图文转换" Target="然后在C盘放入一个text.jpg文件即可开始测试以上代码。" Bounds="-339.282132443134,-233.499858245669,172.933323404925,97.4998571775541" />
   </Links>
   <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
   </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
 </DirectedGraph>

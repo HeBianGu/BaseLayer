@@ -11,3 +11,8 @@ E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.NetWork.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.NetWork\obj\Debug\HebianGu.ComLibModule.NetWork.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.NetWork.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.NetWork.pdb

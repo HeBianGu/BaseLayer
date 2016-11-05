@@ -1,0 +1,8 @@
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.exe
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\bin\Debug\WindowsServiceDemo.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.exe
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.ProjectInstaller.resources
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.WindowServiceDemo.resources
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.csproj.GenerateResource.Cache

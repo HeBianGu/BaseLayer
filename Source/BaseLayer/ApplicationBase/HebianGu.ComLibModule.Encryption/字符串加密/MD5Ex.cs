@@ -38,5 +38,17 @@ namespace HebianGu.ComLibModule.Encryption.StringFor
             t2 = t2.Replace("-", "");
             return t2;
         }
+
+        /// <summary> 返回一个32位MD5加密字符串 </summary>
+        /// <param name="encryptString">要加密的字符串</param>
+        /// <returns></returns>
+        public static string MD5(string encryptString)
+        {
+            byte[] result = Encoding.Default.GetBytes(encryptString);
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] output = md5.ComputeHash(result);
+            string encryptResult = BitConverter.ToString(output).Replace("-", "");
+            return encryptResult.ToUpper();
+        }
     }
 }

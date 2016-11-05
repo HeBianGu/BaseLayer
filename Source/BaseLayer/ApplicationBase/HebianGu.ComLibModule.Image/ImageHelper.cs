@@ -9,14 +9,10 @@ using System.Drawing.Imaging;
 
 namespace HebianGu.ComLibModule.ImageEx
 {
-    /// <summary>
-    /// 图片工具类
-    /// </summary>
+    /// <summary> 图片工具类 </summary>
     public static class ImageHelper
     {
-        /// <summary>
-        /// 压缩JPG图片
-        /// </summary>
+        /// <summary> 压缩JPG图片 </summary>
         /// <param name="NewfileName">压缩后图片存放的地址</param>
         /// <param name="OldfileName">需要压缩的图片地址</param>
         /// <param name="quality">压缩质量：如果为0则默认调整为80</param>
@@ -35,9 +31,7 @@ namespace HebianGu.ComLibModule.ImageEx
                 bitmp.Dispose();
             }
         }
-        /// <summary>
-        /// 返回高清缩略图
-        /// </summary>
+        /// <summary> 返回高清缩略图 </summary>
         /// <param name="fileName">原文件</param>
         /// <param name="newFile">新文件</param>
         /// <param name="maxHeight">最大高度</param>
@@ -121,9 +115,7 @@ namespace HebianGu.ComLibModule.ImageEx
             }
             return new Size(Convert.ToInt32(w), Convert.ToInt32(h));
         }
-        /// <summary>
-        ///   得到图片类型
-        /// </summary>
+        /// <summary> 得到图片类型 </summary>
         /// <param name="mimeType"></param>
         /// <returns></returns>
         private static ImageCodecInfo GetEncoderInfo(String mimeType)
@@ -138,9 +130,7 @@ namespace HebianGu.ComLibModule.ImageEx
             }
             return null;
         }
-        /// <summary>
-        /// 添加水印效果
-        /// </summary>
+        /// <summary> 添加水印效果 </summary>
         /// <param name="fileName">输入路径</param>
         /// <param name="newfileName">输出路径</param>
         /// <param name="WaterImg">水印文件路径</param>
@@ -160,6 +150,64 @@ namespace HebianGu.ComLibModule.ImageEx
                 wm.OutPath = newfileName;         //生成的文件名
                 wm.DrawImage();
                 image.Dispose();
+            }
+        }
+
+
+        /// <summary> 生成缩略图 </summary>
+        /// <param name="localImagePath">图片地址</param>
+        /// <param name="thumbnailImagePath">缩略图地址</param>
+        /// <param name="width">图片宽度</param>
+        /// <param name="height">图片高度</param>
+        /// <param name="p"></param>
+        public static void GetThumbnail(string localImagePath, string thumbnailImagePath, int width, int height)
+        {
+            System.Drawing.Image serverImage = System.Drawing.Image.FromFile(localImagePath);
+            //画板大小
+            int towidth = width;
+            int toheight = height;
+            //缩略图矩形框的像素点
+            int x = 0;
+            int y = 0;
+            int ow = serverImage.Width;
+            int oh = serverImage.Height;
+
+            if (ow > oh)
+            {
+                toheight = serverImage.Height * width / serverImage.Width;
+            }
+            else
+            {
+                towidth = serverImage.Width * height / serverImage.Height;
+            }
+            //新建一个bmp图片
+            System.Drawing.Image bm = new System.Drawing.Bitmap(width, height);
+            //新建一个画板
+            System.Drawing.Graphics g = System.Drawing.Graphics.FromImage(bm);
+            //设置高质量插值法
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
+            //设置高质量,低速度呈现平滑程度
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            //清空画布并以透明背景色填充
+            g.Clear(System.Drawing.Color.White);
+            //在指定位置并且按指定大小绘制原图片的指定部分
+            g.DrawImage(serverImage, new System.Drawing.Rectangle((width - towidth) / 2, (height - toheight) / 2, towidth, toheight),
+                0, 0, ow, oh,
+                System.Drawing.GraphicsUnit.Pixel);
+            try
+            {
+                //以jpg格式保存缩略图
+                bm.Save(thumbnailImagePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+            catch (System.Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                serverImage.Dispose();
+                bm.Dispose();
+                g.Dispose();
             }
         }
     }
