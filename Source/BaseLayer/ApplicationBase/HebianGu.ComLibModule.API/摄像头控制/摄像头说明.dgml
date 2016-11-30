@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Http://wenku.baidu.com/link?url=7VEUud-Aul5s3sg8koQnaQMjV9vZHj06RfZi3_CoEquLyCNSThE7SJMwzKUYCZcFW0IPqugENm3cRsdKcjoU6DfKJvTdmpzOSKL0MzF2h7_" Bounds="0,0,983.973333333333,25.24" Label="http://wenku.baidu.com/link?url=7VEUud-Aul5s3sg8koQnaQMjV9vZHj06RfZi3_CoEquLyCNSThE7SJMwzKUYCZcFW0IPqugENm3cRsdKcjoU6DfKJvTdmpzOSKL0MzF2h7_" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

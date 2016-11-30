@@ -57,6 +57,7 @@ namespace HebianGu.ComLibModule.DelegateEx
                     {
                         //  将事件转换成字段
                         FieldInfo fi = ei.DeclaringType.GetField(eventName, BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
+
                         if (fi != null)
                         {
                             //  清空事件字段
@@ -122,6 +123,57 @@ namespace HebianGu.ComLibModule.DelegateEx
                 eventInfo.RemoveEventHandler(control, dx);
 
         }
+
+
+
+        /// <summary> 根据线程选择是否异步执行 </summary>
+        public static void DoThread<T>(this EventHandler handle, EventArgs args)
+        {
+            if (handle == null) return;
+
+            if (handle.Target is System.ComponentModel.ISynchronizeInvoke)
+            {
+                System.ComponentModel.ISynchronizeInvoke aSynch = handle.Target as System.ComponentModel.ISynchronizeInvoke;
+
+                if (aSynch.InvokeRequired)
+                {
+                    object[] a = new object[] { handle, args };
+                    // Todo ：检查是否异步调用 
+                    aSynch.BeginInvoke(handle, a);
+                }
+                else
+                {
+                    // Todo ：检查同步调用 
+                    handle(handle, args);
+                }
+            }
+
+        }
+
+        /// <summary> 此方法的说明 </summary>
+        public static void DoThread<T>(this EventHandler handle, EventArgs args)
+        {
+            if (handle == null) return;
+
+            if (handle.Target is System.ComponentModel.ISynchronizeInvoke)
+            {
+                System.ComponentModel.ISynchronizeInvoke aSynch = handle.Target as System.ComponentModel.ISynchronizeInvoke;
+
+                if (aSynch.InvokeRequired)
+                {
+                    object[] a = new object[] { handle, args };
+                    // Todo ：检查是否异步调用 
+                    aSynch.BeginInvoke(handle, a);
+                }
+                else
+                {
+                    // Todo ：检查同步调用 
+                    handle(handle, args);
+                }
+            }
+
+        }
+
 
     }
 }

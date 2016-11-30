@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="C:\ProgramFiles(x86)\MicrosoftVisualStudio12.0\VC#\Snippets\2052\VisualC#" Bounds="0,0,486.883333333333,25.24" Label="C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC#\Snippets\2052\Visual C#" />
+  </Nodes>
+  <Links />
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+  </Properties>
+</DirectedGraph>

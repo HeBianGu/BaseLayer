@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="1.找到你VS的安装目录：C:\ProgramFiles(x86)\MicrosoftVisualStudio11.0" Bounds="-402.332068425231,-13.7742279180112,448.493333333333,25.24" Label="1. 找到你VS的安装目录：C:\Program Files (x86)\Microsoft Visual Studio 11.0" UseManualLocation="True" />
+    <Node Id="2.在VS安装路径下依次找到这些文件夹：\Common7\IDE\ItemTemplatesCache" Bounds="-641.370800465371,45.0928297024934,455.15,25.24" Label="2. 在VS安装路径下依次找到这些文件夹：\Common7\IDE\ItemTemplatesCache" UseManualLocation="True" />
+    <Node Id="3.如果是C#语言，则找到CSharp\Code\2052\Class文件夹下的Class.cs文件打开" Bounds="-663.770765177409,161.283491564941,448.483333333333,25.24" UseManualLocation="True" />
+    <Node Id="7147d3d5-f3b2-46c4-af58-9d95338765a61" Bounds="-517.939205118815,216.523591564941,276.393333333333,375.76" Label="参数&#xD;&#xA;描述&#xD;&#xA;clrversion&#xD;&#xA;当前系统CLR版本号&#xD;&#xA;GUID [1-10]&#xD;&#xA;生成全局唯一标识符,可以生成10个 (例如:guid1)&#xD;&#xA;itemname&#xD;&#xA;打开添加新建项时输入的文件名称&#xD;&#xA;machinename&#xD;&#xA;当前机器的名称(如:XXXX)&#xD;&#xA;registeredorganization&#xD;&#xA;注册的组织名&#xD;&#xA;rootnamespace&#xD;&#xA;命名空间名&#xD;&#xA;safeitemname&#xD;&#xA;保存的文件名&#xD;&#xA;time&#xD;&#xA;当前系统时间,格式:DD/MM/YYYY 00:00:00.&#xD;&#xA;userdomain&#xD;&#xA;用户所在的域&#xD;&#xA;username&#xD;&#xA;当前系统用户名&#xD;&#xA;year&#xD;&#xA;当前系统时间 YYYY" UseManualLocation="True" />
+    <Node Id="d2b3b7a0-fad9-4318-9150-d80a40aa4ea31" Bounds="98.9152768851974,-18.9322136737887,643.11,375.76" Label="/************************************************************************************&#xD;&#xA; * Copyright (c) $year$$registeredorganization$ All Rights Reserved.&#xD;&#xA; * CLR版本： $clrversion$&#xD;&#xA; *机器名称：$machinename$&#xD;&#xA; *公司名称：$registeredorganization$&#xD;&#xA; *命名空间：$rootnamespace$&#xD;&#xA; *文件名：  $safeitemname$&#xD;&#xA; *版本号：  V1.0.0.0&#xD;&#xA; *唯一标识：$guid10$&#xD;&#xA; *当前的用户域：$userdomain$&#xD;&#xA; *创建人：  $username$&#xD;&#xA; *电子邮箱：XXXX@sina.cn&#xD;&#xA; *创建时间：$time$&#xD;&#xA; *描述：&#xD;&#xA; *&#xD;&#xA; *=====================================================================&#xD;&#xA; *修改标记&#xD;&#xA; *修改时间：$time$&#xD;&#xA; *修改人： $username$&#xD;&#xA; *版本号： V1.0.0.0&#xD;&#xA; *描述：&#xD;&#xA; *&#xD;&#xA;/************************************************************************************/&#xD;&#xA; " UseManualLocation="True" />
+    <Node Id="参数" Bounds="-174.170800465371,265.703545995032,50,25.24" UseManualLocation="True" />
+    <Node Id="设置类头标识" Category="Category1" Bounds="-69.4357833862305,222.732929702493,92,25.24" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="参数" Target="7147d3d5-f3b2-46c4-af58-9d95338765a61" Bounds="-233.649331516789,290.819786739551,61.6257478553069,33.6978727996681" />
+    <Link Source="设置类头标识" Target="1.找到你VS的安装目录：C:\ProgramFiles(x86)\MicrosoftVisualStudio11.0" Bounds="-164.907837881549,18.9983480127757,133.219965199186,203.734581689717" />
+    <Link Source="设置类头标识" Target="2.在VS安装路径下依次找到这些文件夹：\Common7\IDE\ItemTemplatesCache" Bounds="-377.871954932243,74.0605990274334,326.704013010081,148.67233067506" />
+    <Link Source="设置类头标识" Target="3.如果是C#语言，则找到CSharp\Code\2052\Class文件夹下的Class.cs文件打开" Bounds="-345.171709569985,187.838367045459,275.735926183755,40.7211967182385" />
+    <Link Source="设置类头标识" Target="d2b3b7a0-fad9-4318-9150-d80a40aa4ea31" Bounds="22.5642166137695,218.381613091864,67.4501020734831,10.0900485481" />
+    <Link Source="设置类头标识" Target="参数" Bounds="-115.654412391759,247.972929702493,55.2916297571083,18.8962109496225" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

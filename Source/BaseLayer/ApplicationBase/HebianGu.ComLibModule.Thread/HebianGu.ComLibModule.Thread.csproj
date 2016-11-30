@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoResetEvent\AutoResetEvent.cs" />
     <Compile Include="ProgressBar\ProgBackWorkForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +66,7 @@
     <None Include="多线程扩展.dgml" />
     <None Include="线程调度\Dispatcher说明.dgml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

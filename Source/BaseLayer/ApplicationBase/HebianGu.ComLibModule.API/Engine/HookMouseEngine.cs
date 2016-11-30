@@ -474,7 +474,7 @@ namespace HebianGu.ComLibModule.API
     /// Point结构定义X和Y坐标。
     /// </summary>
     [StructLayout(LayoutKind.Sequential)]
-    internal struct Point
+    public struct Point
     {
         /// <summary>
         /// 指定的点的横坐标。

@@ -4,3 +4,8 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Collection\obj\Debug\HebianGu.ComLibModule.Collection.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Collection.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Collection.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Collection\obj\Debug\HebianGu.ComLibModule.Collection.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Collection.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Collection.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Collection\obj\Debug\HebianGu.ComLibModule.Collection.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Collection\obj\Debug\HebianGu.ComLibModule.Collection.csprojResolveAssemblyReference.cache

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>clsingle</Title>
+      <Shortcut>clsingle</Shortcut>
+      <Description>继承BaseFactory类的代码片段</Description>
+      <Author>Microsoft Corporation</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>类名</ToolTip>
+          <Default>MyClass</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+      /// <summary> 此类的说明 </summary>
+      class $name$
+	{
+          #region - Start 单例模式 -
+
+        /// <summary> 单例模式 </summary>
+        private static $name$ t = null;
+
+        /// <summary> 多线程锁 </summary>
+        private static object localLock = new object();
+
+        /// <summary> 创建指定对象的单例实例 </summary>
+        public static $name$ Instance
+        {
+            get
+            {
+                if (t == null)
+                {
+                    lock (localLock)
+                    {
+                        if (t == null)
+                            return t = new $name$();
+                    }
+                }
+                return t;
+            }
+        }
+        /// <summary> 禁止外部实例 </summary>
+        private $name$()
+        {
+
+        }
+        #endregion - 单例模式 End -
+		$selected$$end$
+	}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -11,7 +11,7 @@ namespace HebianGu.ComLibModule.Collection
     {
 
         /// <summary> 循环执行指定次数任务 </summary>
-        public void DoCount(int count, Action act)
+        public static void DoCount(this int count, Action act)
         {
 
             while (count > 0)
@@ -23,7 +23,7 @@ namespace HebianGu.ComLibModule.Collection
         }
 
         /// <summary> 循环执行指定次数任务 </summary>
-        public void DoCount(int start, int end, Action act)
+        public static void DoCount(this int start, int end, Action act)
         {
             while (end > start)
             {

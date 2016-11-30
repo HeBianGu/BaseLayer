@@ -30,7 +30,7 @@ namespace HebianGu.ComLibModule.CMD
     public static class CmdAPI
     {
         /// <summary> 运行DOS命令  DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID   </summary>   
-        public static string RunCmd(this string command, EventHandler endEvent = null)
+        public static string RunCmdOutPut(this string command, EventHandler endEvent = null)
         {
             //  啟動一個獨立進程   
             System.Diagnostics.Process p = new System.Diagnostics.Process();
@@ -48,9 +48,34 @@ namespace HebianGu.ComLibModule.CMD
                 p.Exited += endEvent;
             }
 
+            // Todo 2016-11-19 ：從輸出流取得命令執行結果 
             p.Start();
+
             //  從輸出流取得命令執行結果 
             return p.StandardOutput.ReadToEnd();
+
+        }
+
+        /// <summary> 运行DOS命令  DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID   </summary>   
+        public static void RunCmd(string command, EventHandler endEvent = null)
+        {
+            //  啟動一個獨立進程   
+            System.Diagnostics.Process p = new System.Diagnostics.Process();
+            p.StartInfo.FileName = "cmd.exe";
+            p.StartInfo.Arguments = "/c " + command;
+            p.StartInfo.UseShellExecute = false;
+            p.StartInfo.RedirectStandardInput = false;
+            p.StartInfo.RedirectStandardOutput = false;
+            p.StartInfo.RedirectStandardError = false;
+            p.StartInfo.CreateNoWindow = false;
+
+            if (endEvent != null)
+            {
+                p.EnableRaisingEvents = true;
+                p.Exited += endEvent;
+            }
+
+            p.Start();
 
         }
 

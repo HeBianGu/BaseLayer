@@ -9,3 +9,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\zxing.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\bin\Debug\zxing.xml
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.exe
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CodeImage\obj\Debug\CodeImage.csprojResolveAssemblyReference.cache

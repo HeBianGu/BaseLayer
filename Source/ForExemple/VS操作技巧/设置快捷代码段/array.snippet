@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>array</Title>
+			<Shortcut>array</Shortcut>
+			<Description>数组</Description>
+			<Author>Microsoft Corporation</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>			
+				<Literal>
+					<ID>property</ID>
+					<ToolTip>方法名称</ToolTip>
+					<Default>string</Default>
+				</Literal>
+        <Literal>
+          <ID>count</ID>
+          <ToolTip>数量</ToolTip>
+          <Default>5</Default>
+        </Literal>
+			</Declarations>
+			<Code Language="csharp">
+        <![CDATA[
+   // 说明 ：    
+   property[] pArray=new property[count];
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
