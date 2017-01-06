@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.ThreadEx._信号量_控制多线程
 {
-    class SemaphoreDemo
+   public class SemaphoreDemo
     {
         //Semaphore（初始授予0个请求数，设置最大可授予5个请求数）
-        static Semaphore semaphore = new Semaphore(0, 5);
+        static Semaphore semaphore = new Semaphore(1, 1);
 
-        static void Main(string[] args)
+        public static void Run()
         {
             for (int i = 1; i <= 5; i++)
             {
@@ -23,8 +23,8 @@ namespace HebianGu.ComLibModule.ThreadEx._信号量_控制多线程
             Thread.Sleep(1000);
             Console.WriteLine("Main方法结束");
 
-            //授予5个请求
-            semaphore.Release(5);
+            ////授予5个请求
+            //semaphore.Release(2);
             Console.ReadLine();
         }
 
@@ -32,6 +32,7 @@ namespace HebianGu.ComLibModule.ThreadEx._信号量_控制多线程
         {
             semaphore.WaitOne();
             Console.WriteLine("print: {0}", obj);
+            Thread.Sleep(1000);
             semaphore.Release();
         }
     }

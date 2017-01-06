@@ -6,3 +6,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Remoting.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Remoting.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Remoting\obj\Debug\HebianGu.ComLibModule.Remoting.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Remoting\obj\Debug\HebianGu.ComLibModule.Remoting.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Remoting.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Remoting.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Remoting\obj\Debug\HebianGu.ComLibModule.Remoting.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Remoting\obj\Debug\HebianGu.ComLibModule.Remoting.pdb

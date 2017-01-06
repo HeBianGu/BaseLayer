@@ -1,0 +1,2 @@
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolForeGround\MySchoolForeGround\obj\Debug\MySchoolForeGround.exe
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolForeGround\MySchoolForeGround\obj\Debug\MySchoolForeGround.pdb

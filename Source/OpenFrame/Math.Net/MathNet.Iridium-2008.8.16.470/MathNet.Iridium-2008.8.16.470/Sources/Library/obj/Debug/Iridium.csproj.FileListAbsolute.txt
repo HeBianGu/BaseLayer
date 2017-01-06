@@ -1,0 +1,15 @@
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\MathNet.Iridium.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\es\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\fr\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\de\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.es.resources
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.fr.resources
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Numerics.Properties.Resources.de.resources
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\Iridium.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\es\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\fr\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\de\MathNet.Iridium.resources.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Sources\Library\obj\Debug\MathNet.Iridium.pdb

@@ -42,6 +42,10 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EmailHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="邮件辅助类\MailHelper.cs" />
+    <Compile Include="邮件辅助类\MailPoper.cs" />
+    <Compile Include="邮件辅助类\MailSender.cs" />
+    <Compile Include="邮件辅助类\SmtpServerHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="邮件开发帮助类.dgml" />

@@ -42,7 +42,11 @@
   <ItemGroup>
     <Compile Include="ImageHelper.cs" />
     <Compile Include="ImageModification.cs" />
+    <Compile Include="PicDeal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="图片处理\ImageClass.cs" />
+    <Compile Include="图片处理\ImageDown.cs" />
+    <Compile Include="图片处理\ImageUpload.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="图片处理帮助类.dgml" />

@@ -7,3 +7,12 @@ d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueC
 d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.csproj.GenerateResource.Cache
 d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.exe
 d:\用户目录\documents\visual studio 2013\Projects\MessageQueueClient\MQueueClient\obj\Debug\MQueueClient.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\bin\Debug\MQueueClient.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\bin\Debug\MQueueClient.exe
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\bin\Debug\MQueueClient.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.Form1.resources
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.exe
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\MQueueClient\obj\Debug\MQueueClient.pdb

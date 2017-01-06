@@ -3,3 +3,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPatt
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\bin\Debug\建造者模式.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\obj\Debug\建造者模式.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\obj\Debug\建造者模式.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\bin\Debug\建造者模式.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\bin\Debug\建造者模式.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\bin\Debug\建造者模式.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\obj\Debug\建造者模式.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\建造者模式\obj\Debug\建造者模式.pdb

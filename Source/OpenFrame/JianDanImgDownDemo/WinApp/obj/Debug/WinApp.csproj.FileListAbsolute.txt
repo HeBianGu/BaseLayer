@@ -1,0 +1,16 @@
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\ResolveAssemblyReference.cache
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.Form1.resources
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.csproj.GenerateResource.Cache
+D:\proTest\JianDanImgDownDemo\WinApp\bin\Debug\WinApp.exe
+D:\proTest\JianDanImgDownDemo\WinApp\bin\Debug\WinApp.pdb
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.exe
+D:\proTest\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.pdb
+D:\proTest\JianDanImgDownDemo\WinApp\bin\Debug\LrdComm.Helper.dll
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.exe
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.pdb
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\bin\Debug\WinApp.exe
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\bin\Debug\WinApp.pdb
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.Form1.resources
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\下载\JianDanImgDownDemo\JianDanImgDownDemo\WinApp\obj\Debug\WinApp.csproj.GenerateResource.Cache

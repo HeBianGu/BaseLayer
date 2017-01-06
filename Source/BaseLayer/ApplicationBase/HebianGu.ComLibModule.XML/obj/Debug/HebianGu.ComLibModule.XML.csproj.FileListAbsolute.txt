@@ -6,3 +6,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.XML.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.XML.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.XML\obj\Debug\HebianGu.ComLibModule.XML.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.XML\obj\Debug\HebianGu.ComLibModule.XML.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.XML.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.XML.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.XML\obj\Debug\HebianGu.ComLibModule.XML.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.XML\obj\Debug\HebianGu.ComLibModule.XML.pdb

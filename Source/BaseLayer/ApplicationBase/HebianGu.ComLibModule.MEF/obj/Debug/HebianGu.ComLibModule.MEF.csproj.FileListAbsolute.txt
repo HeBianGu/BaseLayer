@@ -3,3 +3,8 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\bin\Debug\HebianGu.ComLibModule.MEF.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\bin\Debug\HebianGu.ComLibModule.MEF.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\bin\Debug\HebianGu.ComLibModule.MEF.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MEF\obj\Debug\HebianGu.ComLibModule.MEF.pdb

@@ -19,3 +19,8 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Struct\obj\Debug\HebianGu.ComLibModule.Struct.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Struct.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Struct.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Struct.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Struct.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Struct\obj\Debug\HebianGu.ComLibModule.Struct.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Struct\obj\Debug\HebianGu.ComLibModule.Struct.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Struct\obj\Debug\HebianGu.ComLibModule.Struct.pdb

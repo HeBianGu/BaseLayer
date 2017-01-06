@@ -13,3 +13,4 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Exception.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Exception\obj\Debug\HebianGu.ComLibModule.Exception.csprojResolveAssemblyReference.cache

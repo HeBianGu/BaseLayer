@@ -18,3 +18,5 @@ E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\Hebian
 E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.exe
 E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.exe

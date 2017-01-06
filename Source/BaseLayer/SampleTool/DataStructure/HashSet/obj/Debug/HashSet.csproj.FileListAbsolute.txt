@@ -3,3 +3,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStruct
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\HashSet\bin\Debug\HashSet.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\HashSet\obj\Debug\HashSet.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\HashSet\obj\Debug\HashSet.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\HashSet\bin\Debug\HashSet.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\HashSet\bin\Debug\HashSet.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\HashSet\bin\Debug\HashSet.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\HashSet\obj\Debug\HashSet.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\HashSet\obj\Debug\HashSet.pdb

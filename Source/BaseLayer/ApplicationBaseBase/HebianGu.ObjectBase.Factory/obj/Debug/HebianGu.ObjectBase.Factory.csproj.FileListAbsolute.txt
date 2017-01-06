@@ -2,3 +2,4 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Factory.dll
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.Factory.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Factory\obj\Debug\HebianGu.ObjectBase.Factory.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Factory\obj\Debug\HebianGu.ObjectBase.Factory.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.Factory\obj\Debug\HebianGu.ObjectBase.Factory.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CSharp语法\bin\Debug\CSharp语法.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CSharp语法\bin\Debug\CSharp语法.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CSharp语法\obj\Debug\CSharp语法.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CSharp语法\obj\Debug\CSharp语法.pdb

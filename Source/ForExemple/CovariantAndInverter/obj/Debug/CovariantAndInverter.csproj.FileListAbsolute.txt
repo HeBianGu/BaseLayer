@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CovariantAndInverter\bin\Debug\CovariantAndInverter.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CovariantAndInverter\bin\Debug\CovariantAndInverter.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CovariantAndInverter\obj\Debug\CovariantAndInverter.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\CovariantAndInverter\obj\Debug\CovariantAndInverter.pdb

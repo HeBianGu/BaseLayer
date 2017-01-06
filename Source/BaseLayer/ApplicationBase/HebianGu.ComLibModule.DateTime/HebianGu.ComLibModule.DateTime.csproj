@@ -43,6 +43,10 @@
     <Compile Include="DateTimeHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TimeSpanHelper.cs" />
+    <Compile Include="日历\CNDate.cs" />
+    <Compile Include="时间操作类\DateFormat.cs" />
+    <Compile Include="时间操作类\TimeHelper.cs" />
+    <Compile Include="时间操作类\TimeParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="TextFile1.txt" />

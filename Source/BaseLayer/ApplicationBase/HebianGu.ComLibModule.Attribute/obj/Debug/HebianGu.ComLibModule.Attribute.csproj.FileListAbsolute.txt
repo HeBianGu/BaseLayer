@@ -18,3 +18,8 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Attribute.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Attribute.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Attribute.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Attribute\obj\Debug\HebianGu.ComLibModule.Attribute.pdb

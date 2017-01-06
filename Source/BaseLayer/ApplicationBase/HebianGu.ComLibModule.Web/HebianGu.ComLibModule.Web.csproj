@@ -40,14 +40,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chart图形辅助类\Assistant.cs" />
+    <Compile Include="Chart图形辅助类\OWCChart11.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="CookieSessionCache\CacheHelper.cs" />
+    <Compile Include="CookieSessionCache\CookieHelper.cs" />
+    <Compile Include="CookieSessionCache\DataCache.cs" />
+    <Compile Include="CookieSessionCache\SessionHelper.cs" />
+    <Compile Include="CookieSessionCache\SessionHelper2.cs" />
     <Compile Include="FormHelper.cs" />
+    <Compile Include="GridViewHelper.cs" />
     <Compile Include="HtmlUtility.cs" />
     <Compile Include="JsHelper.cs" />
+    <Compile Include="JS\JsHelper.cs" />
+    <Compile Include="PageValidate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryString.cs" />
+    <Compile Include="UrlOper.cs" />
+    <Compile Include="Utility.cs" />
+    <Compile Include="ValidateImg.cs" />
+    <Compile Include="WebSitePathHelper.cs" />
+    <Compile Include="上传下载\DownLoadHelper.cs" />
+    <Compile Include="上传下载\FileDown.cs" />
+    <Compile Include="上传下载\FileUp.cs" />
+    <Compile Include="上传下载\UpLoadFiles.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="分词辅助类\SegList.cs" />
+    <Compile Include="导出Excel\DataToExcel.cs" />
+    <Compile Include="导出Excel\ExcelHelper.cs" />
+    <Compile Include="导出Excel\ExportExcel.cs" />
+    <Compile Include="导出Excel\GridViewExport.cs" />
+    <Compile Include="弹出消息类\MessageBox.cs" />
+    <Compile Include="弹出消息类\ShowMessage.cs" />
+    <Compile Include="页面辅助类\HTMLHelper.cs" />
+    <Compile Include="页面辅助类\HttpProc.cs" />
+    <Compile Include="页面辅助类\JavaScriptPlus.cs" />
+    <Compile Include="页面辅助类\PageHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Web帮助类.dgml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\COM.Excel.dll" />
+    <Content Include="DLL\Excel.dll" />
+    <Content Include="DLL\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="DLL\itextsharp.dll" />
+    <Content Include="DLL\Microsoft.Office.Interop.Owc11.dll" />
+    <Content Include="DLL\Microsoft.Web.UI.WebControls.dll" />
+    <Content Include="DLL\OWC10Chart.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

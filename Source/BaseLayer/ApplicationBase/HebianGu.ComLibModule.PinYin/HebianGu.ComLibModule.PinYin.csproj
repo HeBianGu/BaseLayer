@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="PinYinHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="汉字转拼音\EcanConvertToCh.cs" />
+    <Compile Include="汉字转拼音\PinYin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="拼音处理帮助类.dgml" />

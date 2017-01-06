@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>clbf</Title>
+      <Shortcut>clbf</Shortcut>
+      <Description>继承BaseFactory类的代码片段</Description>
+      <Author>Microsoft Corporation</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+        <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>类名</ToolTip>
+          <Default>MyClass</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp">
+        <![CDATA[
+      /// <summary> 此类的说明 </summary>
+      class $name$:BaseFactory<$name$>
+	{
+		$selected$$end$
+	}]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

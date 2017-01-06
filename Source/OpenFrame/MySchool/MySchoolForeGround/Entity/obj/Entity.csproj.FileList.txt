@@ -1,0 +1,5 @@
+bin\Debug\Entity.dll
+bin\Debug\Entity.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Entity.dll
+obj\Debug\Entity.pdb

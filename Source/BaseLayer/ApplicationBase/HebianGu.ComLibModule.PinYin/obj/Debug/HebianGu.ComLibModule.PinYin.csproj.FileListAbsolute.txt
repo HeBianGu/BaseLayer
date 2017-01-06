@@ -2,3 +2,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.PinYin.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.PinYin.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PinYin\obj\Debug\HebianGu.ComLibModule.PinYin.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PinYin\obj\Debug\HebianGu.ComLibModule.PinYin.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.PinYin.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.PinYin.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PinYin\obj\Debug\HebianGu.ComLibModule.PinYin.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PinYin\obj\Debug\HebianGu.ComLibModule.PinYin.pdb

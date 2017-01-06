@@ -9,3 +9,9 @@ E:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\
 E:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.exe
 E:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.exe.config
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\bin\Debug\自定义特性.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\自定义特性\obj\Debug\自定义特性.pdb

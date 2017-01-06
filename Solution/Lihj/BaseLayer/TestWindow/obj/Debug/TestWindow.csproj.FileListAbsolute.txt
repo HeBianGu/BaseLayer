@@ -9,3 +9,14 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\TestWindow\bin
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.TestThread.resources
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\bin\Debug\TestWindow.exe.config
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\bin\Debug\TestWindow.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\bin\Debug\TestWindow.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\bin\Debug\HebianGu.ComLibModule.Thread.dll
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\bin\Debug\HebianGu.ComLibModule.Thread.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.TestThread.resources
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\TestWindow\obj\Debug\TestWindow.pdb

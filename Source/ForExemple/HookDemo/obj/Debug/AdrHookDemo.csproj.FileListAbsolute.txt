@@ -26,5 +26,5 @@ D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\obj\Debug\AdrHookDemo.p
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\bin\Debug\AdrHookDemo.exe.config
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\bin\Debug\AdrHookDemo.exe
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\bin\Debug\AdrHookDemo.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\bin\Debug\HebianGu.ComLibModule.API.dll
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\bin\Debug\HebianGu.ComLibModule.API.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\HookDemo\obj\Debug\AdrHookDemo.csprojResolveAssemblyReference.cache

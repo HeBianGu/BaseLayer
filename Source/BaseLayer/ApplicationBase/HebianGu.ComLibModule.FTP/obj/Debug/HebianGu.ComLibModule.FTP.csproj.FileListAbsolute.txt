@@ -2,3 +2,7 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\bin\Debug\HebianGu.ComLibModule.FTP.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\obj\Debug\HebianGu.ComLibModule.FTP.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\obj\Debug\HebianGu.ComLibModule.FTP.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\bin\Debug\HebianGu.ComLibModule.FTP.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\bin\Debug\HebianGu.ComLibModule.FTP.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\obj\Debug\HebianGu.ComLibModule.FTP.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.FTP\obj\Debug\HebianGu.ComLibModule.FTP.pdb

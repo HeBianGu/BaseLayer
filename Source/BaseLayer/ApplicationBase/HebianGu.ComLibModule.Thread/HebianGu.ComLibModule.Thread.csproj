@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A66CB999-DDFC-46D2-A440-A1266C733F43}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ComLibModule.ThreadEx</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Thread</AssemblyName>
@@ -29,6 +29,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -42,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoResetEvent\AutoResetEvent.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="ProgressBar\ProgBackWorkForm.cs">
       <SubType>Form</SubType>
     </Compile>

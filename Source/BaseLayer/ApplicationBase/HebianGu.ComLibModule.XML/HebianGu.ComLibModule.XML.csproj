@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="XML操作类\XmlHelper.cs" />
+    <Compile Include="XML操作类\XMLProcess.cs" />
     <Compile Include="封装节点\AttributeParameter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="封装节点\XmlMananger.cs" />

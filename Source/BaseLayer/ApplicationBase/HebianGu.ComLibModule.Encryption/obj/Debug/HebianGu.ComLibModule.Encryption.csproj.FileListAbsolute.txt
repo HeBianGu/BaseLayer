@@ -15,3 +15,8 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Encryption.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Encryption.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Encryption.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Encryption\obj\Debug\HebianGu.ComLibModule.Encryption.pdb

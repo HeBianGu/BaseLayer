@@ -6,3 +6,4 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.API.exe
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.API.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.API\obj\Debug\HebianGu.ComLibModule.API.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.API\obj\Debug\HebianGu.ComLibModule.API.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.API\obj\Debug\HebianGu.ComLibModule.API.csprojResolveAssemblyReference.cache

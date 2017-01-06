@@ -12,3 +12,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Trans.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Trans.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Trans.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Trans\obj\Debug\HebianGu.ComLibModule.Trans.pdb

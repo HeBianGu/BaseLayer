@@ -8,3 +8,7 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Reflect\bin\Debug\HebianGu.ComLibModule.Reflect.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Reflect.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Reflect.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Reflect.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Reflect.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Reflect\obj\Debug\HebianGu.ComLibModule.Reflect.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Reflect\obj\Debug\HebianGu.ComLibModule.Reflect.pdb

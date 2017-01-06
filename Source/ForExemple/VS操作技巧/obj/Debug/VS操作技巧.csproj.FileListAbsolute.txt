@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\VS操作技巧\bin\Debug\VS操作技巧.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\VS操作技巧\bin\Debug\VS操作技巧.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\VS操作技巧\obj\Debug\VS操作技巧.dll
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\VS操作技巧\obj\Debug\VS操作技巧.pdb

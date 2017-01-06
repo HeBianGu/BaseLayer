@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FtpHelper.cs" />
+    <Compile Include="FTP操作类\FTPClient.cs" />
+    <Compile Include="FTP操作类\FTPHelper.cs" />
+    <Compile Include="FTP操作类\FTPOperater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

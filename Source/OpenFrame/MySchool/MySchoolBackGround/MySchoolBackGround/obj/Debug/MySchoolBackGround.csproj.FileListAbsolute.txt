@@ -1,0 +1,17 @@
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.exe
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\MySchoolBackGround.exe
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\MySchoolBackGround.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\DAO.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\Entity.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\Utility.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\DAO.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\Entity.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\bin\Debug\Utility.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.csprojResolveAssemblyReference.cache
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.FrmAboutBG.resources
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.FrmLodingBG.resources
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.FrmLoginBG.resources
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.FrmMainBG.resources
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.Properties.Resources.resources
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\MySchoolBackGround\obj\Debug\MySchoolBackGround.csproj.GenerateResource.Cache

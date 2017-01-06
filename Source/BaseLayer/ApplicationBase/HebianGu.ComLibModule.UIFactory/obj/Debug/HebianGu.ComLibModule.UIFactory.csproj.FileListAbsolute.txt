@@ -8,3 +8,10 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.exe.config
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.exe
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.UIFactory.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.UIFactory.exe.config
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.UIFactory.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.UIFactory.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.UIFactory\obj\Debug\HebianGu.ComLibModule.UIFactory.pdb

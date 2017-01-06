@@ -50,6 +50,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelNet.cs" />
+    <Compile Include="网络帮助类\NetHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="网络信息扩展.dgml" />

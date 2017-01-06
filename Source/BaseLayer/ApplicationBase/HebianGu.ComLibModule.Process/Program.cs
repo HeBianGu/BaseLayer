@@ -14,6 +14,8 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
             TestCmd();
 
+            //TestRegister();
+
             Console.Read();
         }
 
@@ -43,11 +45,35 @@ namespace HebianGu.ComLibModule.ProcessHelper
 
         public static void TestRegister()
         {
-            string cmdStr = "cmd";
+            string cmdStr = "notepad";
 
             RegisterProcessEngine cmdProcess = new RegisterProcessEngine(cmdStr);
 
+            ProcessEngineLog log = new ProcessEngineLog();
+            cmdProcess.SetLog(log);
             cmdProcess.Start();
+
+        }
+
+         
+    }
+
+    class ProcessEngineLog:IProcessEngineLog
+    {
+
+        public void RunLog(string result)
+        {
+            Console.WriteLine(result);
+        }
+
+        public void ErrLog(string errstring)
+        {
+            Console.WriteLine(errstring);
+        }
+
+        public void ErrLog(Exception ex)
+        {
+            Console.WriteLine(ex.Message);
         }
     }
 }

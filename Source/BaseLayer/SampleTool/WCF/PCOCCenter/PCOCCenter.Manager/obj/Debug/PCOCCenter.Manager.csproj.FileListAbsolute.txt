@@ -32,3 +32,15 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.exe.licenses
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\PCOCCenter.Manager.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.AddUserForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.LogoffLicenseForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.OnlineUsersView.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.LicenseManageView.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.ServerInfoView.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.UserGroup.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.Views.UsersManageView.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\PCOCCenter.Manager.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Manager\obj\Debug\OPT.PCOCCenter.Manager.pdb

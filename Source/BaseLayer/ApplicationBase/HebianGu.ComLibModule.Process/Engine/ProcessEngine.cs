@@ -6,9 +6,9 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HebianGu.ComLibModule.ObjectBase;
 using System.Reflection;
 using HebianGu.ComLibModule.EnumEx;
+using HebianGu.ObjectBase.ObjectHelper;
 
 namespace HebianGu.ComLibModule.ProcessHelper
 {

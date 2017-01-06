@@ -6,3 +6,6 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ToolBase\HebianGu.Com
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.csprojResolveAssemblyReference.cache
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.dll
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods\obj\Debug\HebianGu.ComLibMethods.pdb

@@ -12,3 +12,8 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\BaseInterface.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\BaseInterface.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\BaseInterface.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\BaseInterface\obj\Debug\BaseInterface.pdb

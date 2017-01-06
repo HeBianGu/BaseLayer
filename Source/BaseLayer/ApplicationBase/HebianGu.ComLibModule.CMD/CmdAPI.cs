@@ -83,13 +83,15 @@ namespace HebianGu.ComLibModule.CMD
         [Obsolete("Œ¥≤‚ ‘")]
         public static string CloseProcessByPid(this string pid)
         {
-            return CmdStr.CloseProcessByPid.FormatEx(pid).RunCmd();
+            return CmdStr.CloseProcessByPid.FormatEx(pid).RunCmdOutPut();
         }
 
         /// <summary> ÷¥––eclipse≥Ã–Ú </summary> 
         public static string CmdEclipseByData(this string dataFullPath)
         {
-            return CmdStr.CmdEclipseRun.FormatEx(dataFullPath).RunCmd();
+            return CmdStr.CmdEclipseRun.FormatEx(dataFullPath).RunCmdOutPut();
         }
+
+
     }
 }

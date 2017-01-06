@@ -6,3 +6,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\Win
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.ProjectInstaller.resources
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.WindowServiceDemo.resources
 D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\WindowsServiceDemo\obj\Debug\WindowsServiceDemo.csprojResolveAssemblyReference.cache

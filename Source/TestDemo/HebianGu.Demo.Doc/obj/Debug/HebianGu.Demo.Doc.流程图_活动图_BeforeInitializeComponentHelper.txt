@@ -1,0 +1,2 @@
+活动图.g.xaml
+XamlStaticHelperNamespace._XamlStaticHelper

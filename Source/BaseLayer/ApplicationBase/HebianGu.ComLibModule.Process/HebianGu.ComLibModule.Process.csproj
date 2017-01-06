@@ -37,9 +37,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ComLibModule.Enum.dll</HintPath>
     </Reference>
-    <Reference Include="HebianGu.ComLibModule.ObjectBase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="HebianGu.ObjectBase.ObjectHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Product\Debug\HebianGu.ComLibModule.ObjectBase.dll</HintPath>
+      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.ObjectHelper.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

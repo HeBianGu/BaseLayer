@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cmd.cs" />
     <Compile Include="CmdStr.cs" />
     <Compile Include="CmdAPI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

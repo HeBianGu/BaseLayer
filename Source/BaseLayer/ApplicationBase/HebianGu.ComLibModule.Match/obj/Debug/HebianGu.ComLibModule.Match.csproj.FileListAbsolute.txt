@@ -6,3 +6,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Match.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Match.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Match\obj\Debug\HebianGu.ComLibModule.Match.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Match\obj\Debug\HebianGu.ComLibModule.Match.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Match.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Match.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Match\obj\Debug\HebianGu.ComLibModule.Match.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Match\obj\Debug\HebianGu.ComLibModule.Match.pdb

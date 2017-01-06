@@ -10,3 +10,9 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStruct
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.csprojResolveAssemblyReference.cache
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\bin\Debug\双向链表.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\bin\Debug\双向链表.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\bin\Debug\双向链表.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\双向链表\obj\Debug\双向链表.pdb

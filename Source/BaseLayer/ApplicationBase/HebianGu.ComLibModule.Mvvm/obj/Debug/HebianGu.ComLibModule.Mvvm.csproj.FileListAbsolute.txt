@@ -11,3 +11,16 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\bin\Debug\HebianGu.ComLibModule.Mvvm.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\bin\Debug\HebianGu.ComLibModule.Mvvm.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\bin\Debug\HebianGu.ComLibModule.Mvvm.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\MainWindow.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\MainWindow.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\App.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm_MarkupCompile.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.g.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mvvm\obj\Debug\HebianGu.ComLibModule.Mvvm.pdb

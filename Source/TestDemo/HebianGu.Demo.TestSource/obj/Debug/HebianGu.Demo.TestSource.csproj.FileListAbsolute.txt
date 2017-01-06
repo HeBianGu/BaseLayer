@@ -11,3 +11,8 @@ E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\bin\Debug\
 E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.dll
 E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.pdb
 E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.dll
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestSource\bin\Debug\HebianGu.Demo.TestSource.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.dll
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestSource\obj\Debug\HebianGu.Demo.TestSource.pdb

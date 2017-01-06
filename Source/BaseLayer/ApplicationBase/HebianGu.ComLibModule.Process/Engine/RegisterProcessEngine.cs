@@ -28,7 +28,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
             //  啟動一個獨立進程   
             Process p = new System.Diagnostics.Process();
             p.StartInfo.FileName = "cmd.exe";
-            p.StartInfo.Arguments = "/c ";
+            p.StartInfo.Arguments = "/c " + _exeName;
             p.StartInfo.UseShellExecute = false;
             p.StartInfo.RedirectStandardInput = true;
             p.StartInfo.RedirectStandardOutput = true;
@@ -36,6 +36,11 @@ namespace HebianGu.ComLibModule.ProcessHelper
             p.StartInfo.CreateNoWindow = true;
 
             return p;
+        }
+
+        public override void DoEndOfEngine()
+        {
+            base.DoEndOfEngine();
         }
 
 

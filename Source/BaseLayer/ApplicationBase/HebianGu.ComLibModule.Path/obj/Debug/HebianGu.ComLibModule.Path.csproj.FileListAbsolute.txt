@@ -10,3 +10,5 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\Hebia
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Path\obj\Debug\HebianGu.ComLibModule.Path.pdb

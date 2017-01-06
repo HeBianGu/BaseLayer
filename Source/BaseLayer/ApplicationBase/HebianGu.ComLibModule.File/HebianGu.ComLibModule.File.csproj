@@ -50,6 +50,7 @@
     <Compile Include="FileHelper.cs" />
     <Compile Include="DirectoryHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="压缩解压\SharpZip.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="文件帮助类.dgml" />

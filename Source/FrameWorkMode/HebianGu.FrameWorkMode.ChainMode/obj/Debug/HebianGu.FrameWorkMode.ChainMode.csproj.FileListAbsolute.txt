@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChainMode\bin\Debug\HebianGu.FrameWorkMode.ChainMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChainMode\bin\Debug\HebianGu.FrameWorkMode.ChainMode.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChainMode\obj\Debug\HebianGu.FrameWorkMode.ChainMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChainMode\obj\Debug\HebianGu.FrameWorkMode.ChainMode.pdb

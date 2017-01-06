@@ -6,3 +6,9 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PropertyGrid\obj\Debug\HebianGu.ComLibModule.PropertyGrid.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.PropertyGrid.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.PropertyGrid.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.PropertyGrid.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.PropertyGrid.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PropertyGrid\obj\Debug\HebianGu.ComLibModule.PropertyGrid.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PropertyGrid\obj\Debug\HebianGu.ComLibModule.PropertyGrid.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PropertyGrid\obj\Debug\HebianGu.ComLibModule.PropertyGrid.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PropertyGrid\obj\Debug\HebianGu.ComLibModule.PropertyGrid.pdb

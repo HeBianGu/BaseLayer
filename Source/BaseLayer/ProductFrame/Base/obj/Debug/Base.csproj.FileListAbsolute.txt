@@ -8,3 +8,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\Base\obj
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\Base.dll
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Product\Debug\Base.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\Base.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\Base.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\Base\obj\Debug\Base.pdb

@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Font.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Font.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Font\obj\Debug\HebianGu.ComLibModule.Font.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Font\obj\Debug\HebianGu.ComLibModule.Font.pdb

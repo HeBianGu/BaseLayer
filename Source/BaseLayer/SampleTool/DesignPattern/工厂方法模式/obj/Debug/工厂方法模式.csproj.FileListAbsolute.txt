@@ -4,3 +4,9 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPatt
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.csprojResolveAssemblyReference.cache
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\bin\Debug\工厂方法模式.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\bin\Debug\工厂方法模式.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\bin\Debug\工厂方法模式.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DesignPattern\工厂方法模式\obj\Debug\工厂方法模式.pdb

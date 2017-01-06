@@ -1,0 +1,2 @@
+obj\Debug\活动图.g.xaml
+obj\Debug\HebianGu.Demo.Doc.流程图_活动图_BeforeInitializeComponentHelper.txt

@@ -3,3 +3,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\bin\Deb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.exe.config
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\任务\bin\Debug\任务.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\任务\obj\Debug\任务.pdb

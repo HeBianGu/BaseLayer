@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChannalMode\bin\Debug\HebianGu.FrameWorkMode.ChannalMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChannalMode\bin\Debug\HebianGu.FrameWorkMode.ChannalMode.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChannalMode\obj\Debug\HebianGu.FrameWorkMode.ChannalMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ChannalMode\obj\Debug\HebianGu.FrameWorkMode.ChannalMode.pdb

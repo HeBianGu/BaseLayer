@@ -4,3 +4,7 @@ E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMod
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mouse\obj\Debug\HebianGu.ComLibModule.Mouse.pdb
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Mouse.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Mouse.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Mouse.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Mouse.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mouse\obj\Debug\HebianGu.ComLibModule.Mouse.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Mouse\obj\Debug\HebianGu.ComLibModule.Mouse.pdb

@@ -38,6 +38,7 @@ namespace HebianGu.ComLibModule.FTP
                 {
                     return;
                 }
+
             }
             string URI = uploadDir + fileinfo.Name;
 

@@ -3,3 +3,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\二进制文�
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\二进制文件存储\bin\Debug\二进制文件存储.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\二进制文件存储\obj\Debug\二进制文件存储.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Solution\Lihj\BaseLayer\二进制文件存储\obj\Debug\二进制文件存储.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\二进制文件存储\bin\Debug\二进制文件存储.exe.config
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\二进制文件存储\bin\Debug\二进制文件存储.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\二进制文件存储\bin\Debug\二进制文件存储.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\二进制文件存储\obj\Debug\二进制文件存储.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\二进制文件存储\obj\Debug\二进制文件存储.pdb

@@ -21,3 +21,8 @@ E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Serialize.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.csprojResolveAssemblyReference.cache
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.dll
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Serialize.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Serialize.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Serialize\obj\Debug\HebianGu.ComLibModule.Serialize.pdb

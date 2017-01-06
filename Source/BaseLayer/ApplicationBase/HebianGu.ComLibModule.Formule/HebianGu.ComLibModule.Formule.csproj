@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormulaExpress.cs" />
     <Compile Include="公式解析方法一\Formula.cs" />
     <Compile Include="公式解析方法一\ComputeFormula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

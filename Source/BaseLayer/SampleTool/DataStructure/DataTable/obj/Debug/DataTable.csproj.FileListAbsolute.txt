@@ -3,3 +3,8 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStruct
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\DataTable\bin\Debug\DataTable.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\DataTable\obj\Debug\DataTable.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\DataStructure\DataTable\obj\Debug\DataTable.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\DataTable\bin\Debug\DataTable.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\DataTable\bin\Debug\DataTable.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\DataTable\bin\Debug\DataTable.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\DataTable\obj\Debug\DataTable.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\DataStructure\DataTable\obj\Debug\DataTable.pdb

@@ -2,3 +2,7 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\Hebia
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\bin\Debug\HebianGu.ORM.NHibernate.pdb
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\obj\Debug\HebianGu.ORM.NHibernate.dll
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\obj\Debug\HebianGu.ORM.NHibernate.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\bin\Debug\HebianGu.ORM.NHibernate.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\bin\Debug\HebianGu.ORM.NHibernate.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\obj\Debug\HebianGu.ORM.NHibernate.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ORM.NHibernate\obj\Debug\HebianGu.ORM.NHibernate.pdb

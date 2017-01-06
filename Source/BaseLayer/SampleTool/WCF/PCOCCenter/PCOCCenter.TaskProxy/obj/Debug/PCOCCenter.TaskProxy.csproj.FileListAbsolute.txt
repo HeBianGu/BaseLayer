@@ -16,3 +16,11 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll.licenses
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.SimulationSettingForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.PublishTaskForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\PCOCCenter.TaskProxy.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll.licenses
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.TaskProxy\obj\Debug\OPT.PCOCCenter.TaskProxy.pdb

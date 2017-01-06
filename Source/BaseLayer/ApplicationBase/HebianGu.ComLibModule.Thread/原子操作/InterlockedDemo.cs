@@ -12,7 +12,7 @@ namespace HebianGu.ComLibModule.ThreadEx.原子操作
         private static int _result;
 
         //Main方法
-        static void Main(string[] args)
+        static void _Main(string[] args)
         {
             //运行后按住 Enter 键数秒，使用Interlocked.Increment(ref _result); 与 _result++ 的不同
             while (true)

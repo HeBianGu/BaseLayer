@@ -1,0 +1,5 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.GC\bin\Debug\HebianGu.ComLibModule.GC.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.GC\bin\Debug\HebianGu.ComLibModule.GC.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.GC\bin\Debug\HebianGu.ComLibModule.GC.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.GC\obj\Debug\HebianGu.ComLibModule.GC.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.GC\obj\Debug\HebianGu.ComLibModule.GC.pdb

@@ -1,0 +1,9 @@
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\DAO.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\DAO.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\Entity.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\Utility.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\Entity.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\bin\Debug\Utility.pdb
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\obj\Debug\DAO.dll
+D:\下载\学校管理系统(MySchool)\MySchool\MySchoolBackGround\DAO\obj\Debug\DAO.pdb

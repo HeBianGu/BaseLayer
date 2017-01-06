@@ -7,3 +7,5 @@ E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.MMF.exe.config
 E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.MMF.exe
 E:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.MMF.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MMF\obj\Debug\HebianGu.ComLibModule.MMF.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MMF\obj\Debug\HebianGu.ComLibModule.MMF.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.MMF\obj\Debug\HebianGu.ComLibModule.MMF.exe

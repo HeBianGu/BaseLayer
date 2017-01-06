@@ -51,7 +51,11 @@
     <Compile Include="GenericStringFormatter.cs" />
     <Compile Include="IStringFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RMB.cs" />
     <Compile Include="StringHelper.cs" />
+    <Compile Include="字符串处理类\StringHelper.cs" />
+    <Compile Include="条形码\BarCodeToHTML.cs" />
+    <Compile Include="验证码\YZMHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

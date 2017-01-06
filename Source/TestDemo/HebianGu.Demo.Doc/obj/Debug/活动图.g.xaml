@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<hdd流:活动图 xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:hdd流="clr-namespace:HebianGu.Demo.Doc.流程图;assembly=HebianGu.Demo.Doc" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/servicemodel" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Text</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>HebianGu.Demo.Doc</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <hdd流:活动图.Implementation>
+    <Flowchart StartNode="{x:Reference __ReferenceID4}">
+      <FlowDecision x:Name="__ReferenceID4">
+        <FlowDecision.True>
+          <FlowStep x:Name="__ReferenceID1">
+            <ForEach x:TypeArguments="x:Int32">
+              <ActivityAction x:TypeArguments="x:Int32">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+                </ActivityAction.Argument>
+              </ActivityAction>
+            </ForEach>
+            <FlowStep.Next>
+              <FlowStep x:Name="__ReferenceID0">
+                <If>
+                  <If.Condition>
+                    <InArgument x:TypeArguments="x:Boolean">
+                      <mca:CSharpValue x:TypeArguments="x:Boolean">1==1</mca:CSharpValue>
+                    </InArgument>
+                  </If.Condition>
+                  <If.Then>
+                    <WriteLine>
+                      <InArgument x:TypeArguments="x:String">
+                        <mca:CSharpValue x:TypeArguments="x:String">dfdfgdg</mca:CSharpValue>
+                      </InArgument>
+                    </WriteLine>
+                  </If.Then>
+                </If>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID2">
+                    <ParallelForEach x:TypeArguments="x:Int32">
+                      <ActivityAction x:TypeArguments="x:Int32">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
+                        </ActivityAction.Argument>
+                      </ActivityAction>
+                    </ParallelForEach>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.True>
+        <FlowDecision.False>
+          <FlowStep x:Name="__ReferenceID3">
+            <Pick>
+              <PickBranch DisplayName="Branch1" />
+              <PickBranch DisplayName="Branch2" />
+            </Pick>
+          </FlowStep>
+        </FlowDecision.False>
+      </FlowDecision>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID1</x:Reference>
+      <FlowStep>
+        <Parallel />
+      </FlowStep>
+      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
+      <FlowStep>
+        <While>
+          <While.Variables>
+            <Variable x:TypeArguments="x:String" Name="variable1" />
+          </While.Variables>
+          <While.Condition>True</While.Condition>
+          <If />
+        </While>
+      </FlowStep>
+      <FlowStep>
+        <p:Send />
+      </FlowStep>
+      <sads:DebugSymbol.Symbol>9xC1MrG5+umRsEeeICZUJ7PPWEQ6XFdvcmtBcmVhXERldlRlc3RcQmFzZUxheWVyXFNvdXJjZVxUZXN0RGVtb1xIZWJpYW5HdS5EZW1vLkRvY1zmtYHnqIvlm75c5rS75Yqo5Zu+LnhhbWwKKgOAAQ8CAQFdC2ESAgEILgs1FQIBBzgPRxQCAQNKE1ElAgECXg1eMQIBCl8NXzECAQk7FTtYAgEEPxNEHwIBBUEXQVwCAQY=</sads:DebugSymbol.Symbol>
+    </Flowchart>
+  </hdd流:活动图.Implementation>
+</hdd流:活动图>

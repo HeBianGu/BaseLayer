@@ -1,49 +1,14 @@
-﻿生成启动时间为 2016/11/17 14:37:32。
-     1>项目“D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\ConsoleAppDemo\ConsoleAppDemo.vcxproj”在节点 2 上(Rebuild 个目标)。
+﻿生成启动时间为 2016/12/13 17:45:41。
+     1>项目“D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\ConsoleAppDemo\ConsoleAppDemo.vcxproj”在节点 3 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\ConsoleAppDemo.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleAppDemo.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ConsoleAppDemo.cpp test.cpp "共用体.cpp" "内联函数.cpp" "引用.cpp" "指向函数的指针.cpp" "指向指针的指针.cpp" "指针.cpp" "指针数组.cpp" "数组.cpp" "枚举.cpp" "结构体.cpp"
-         结构体.cpp
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\结构体.cpp(46): warning C4101: “people2”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\结构体.cpp(30): warning C4101: “student2”: 未引用的局部变量
-         枚举.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\ConsoleAppDemo.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp "数组.cpp" "继承和派生.cpp"
+         继承和派生.cpp
          数组.cpp
      1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.h(25): warning C4520: “test”: 指定了多个默认构造函数
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\数组.cpp(38): warning C4101: “art”: 未引用的局部变量
-         指针数组.cpp
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针数组.cpp(7): warning C4101: “p”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针数组.cpp(11): warning C4101: “p2”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针数组.cpp(9): warning C4101: “p1”: 未引用的局部变量
-         指针.cpp
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(46): warning C4101: “w”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(38): warning C4101: “p”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(41): warning C4101: “pp”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(41): warning C4101: “arr”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(41): warning C4101: “prt”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指针.cpp(41): warning C4101: “k”: 未引用的局部变量
-         指向指针的指针.cpp
-         指向函数的指针.cpp
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指向函数的指针.cpp(16): warning C4101: “p”: 未引用的局部变量
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\指向函数的指针.cpp(20): warning C4101: “c”: 未引用的局部变量
-         引用.cpp
-         内联函数.cpp
-         共用体.cpp
-         test.cpp
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.h(25): warning C4520: “test”: 指定了多个默认构造函数
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(15): warning C4005: “S”: 宏重定义
-                 d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(13) : 参见“S”的前一个定义
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(46): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(48): warning C4002: “S”宏的实参太多
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(48): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(50): warning C4002: “S”宏的实参太多
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(50): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(52): warning C4552: “*”: 运算符不起任何作用；应输入带副作用的运算符
-     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\test.cpp(54): warning C4552: “+”: 运算符不起任何作用；应输入带副作用的运算符
-         ConsoleAppDemo.cpp
+     1>d:\workarea\devtest\baselayer\source\forexemple\consoleappdemo\数组.cpp(46): warning C4101: “art”: 未引用的局部变量
          正在生成代码...
-       ResourceCompile:
-         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /nologo /fo"Debug\ConsoleAppDemo.res" ConsoleAppDemo.rc 
+         正在跳过...(未检测到相关更改)
+         test.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\Debug\ConsoleAppDemo.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\Debug\ConsoleAppDemo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\Debug\ConsoleAppDemo.lib" /MACHINE:X86 Debug\ConsoleAppDemo.res
          Debug\ConsoleAppDemo.obj
@@ -59,9 +24,10 @@
          "Debug\数组.obj"
          "Debug\枚举.obj"
          "Debug\结构体.obj"
+         "Debug\继承和派生.obj"
          ConsoleAppDemo.vcxproj -> D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\Debug\ConsoleAppDemo.exe
-     1>已完成生成项目“D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\ConsoleAppDemo\ConsoleAppDemo.vcxproj”(Rebuild 个目标)的操作。
+     1>已完成生成项目“D:\WorkArea\DevTest\BaseLayer\Source\ForExemple\ConsoleAppDemo\ConsoleAppDemo.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:02.38
+已用时间 00:00:04.03

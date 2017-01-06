@@ -27,3 +27,11 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll.licenses
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.FileTransferForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.LoginForm.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\PCOCCenter.Client.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll.licenses
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Client\obj\Debug\OPT.PCOCCenter.Client.pdb

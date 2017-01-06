@@ -2,3 +2,7 @@ E:\WorkArea\DevTest\HebianGu\Source\FrameWorkMode\HebianGu.FrameWorkMode.Provide
 E:\WorkArea\DevTest\HebianGu\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\bin\Debug\HebianGu.FrameWorkMode.ProvideMode.pdb
 E:\WorkArea\DevTest\HebianGu\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\obj\Debug\HebianGu.FrameWorkMode.ProvideMode.dll
 E:\WorkArea\DevTest\HebianGu\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\obj\Debug\HebianGu.FrameWorkMode.ProvideMode.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\bin\Debug\HebianGu.FrameWorkMode.ProvideMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\bin\Debug\HebianGu.FrameWorkMode.ProvideMode.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\obj\Debug\HebianGu.FrameWorkMode.ProvideMode.dll
+D:\WorkArea\DevTest\BaseLayer\Source\FrameWorkMode\HebianGu.FrameWorkMode.ProvideMode\obj\Debug\HebianGu.FrameWorkMode.ProvideMode.pdb

@@ -22,3 +22,11 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.NTServiceHost.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.ProjectInstaller.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\PCOCCenter.NTServiceHost.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.NTServiceHost\obj\x86\Debug\OPT.PCOCCenter.NTServiceHost.pdb

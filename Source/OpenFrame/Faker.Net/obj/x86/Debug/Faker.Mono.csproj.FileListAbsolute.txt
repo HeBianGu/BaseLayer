@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\bin\Debug\Faker.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\bin\Debug\Faker.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Faker.Net\obj\x86\Debug\Faker.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Faker.Net\obj\x86\Debug\Faker.pdb

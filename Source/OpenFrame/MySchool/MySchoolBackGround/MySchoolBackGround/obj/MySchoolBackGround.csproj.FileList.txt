@@ -1,0 +1,17 @@
+bin\Debug\MySchoolBackGround.exe
+bin\Debug\MySchoolBackGround.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\MySchoolBackGround.FrmMainBG.resources
+obj\Debug\MySchoolBackGround.Properties.Resources.resources
+obj\Debug\MySchoolBackGround.csproj.GenerateResource.Cache
+obj\Debug\MySchoolBackGround.exe
+obj\Debug\MySchoolBackGround.pdb
+obj\Debug\MySchoolBackGround.FrmLodingBG.resources
+obj\Debug\MySchoolBackGround.FrmLoginBG.resources
+obj\Debug\MySchoolBackGround.FrmAboutBG.resources
+bin\Debug\DAO.dll
+bin\Debug\DAO.pdb
+bin\Debug\Entity.dll
+bin\Debug\Entity.pdb
+bin\Debug\Utility.dll
+bin\Debug\Utility.pdb

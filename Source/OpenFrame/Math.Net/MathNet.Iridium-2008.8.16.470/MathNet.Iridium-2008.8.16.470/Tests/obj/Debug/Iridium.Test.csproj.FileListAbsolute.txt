@@ -1,0 +1,5 @@
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\Iridium.Test.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Build\Debug\Iridium.Test.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Tests\obj\Debug\Iridium.Test.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Tests\obj\Debug\Iridium.Test.dll
+D:\WorkArea\DevTest\BaseLayer\Source\OpenFrame\Math.Net\MathNet.Iridium-2008.8.16.470\MathNet.Iridium-2008.8.16.470\Tests\obj\Debug\Iridium.Test.pdb

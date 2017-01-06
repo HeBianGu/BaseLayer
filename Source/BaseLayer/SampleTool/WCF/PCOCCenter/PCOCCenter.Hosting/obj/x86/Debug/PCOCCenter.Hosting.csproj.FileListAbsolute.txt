@@ -16,3 +16,9 @@ C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\Produc
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.exe
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\Product\Debug\OPT.PCOCCenter.Hosting.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\PCOCCenter.Hosting.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\SampleTool\WCF\PCOCCenter\PCOCCenter.Hosting\obj\x86\Debug\OPT.PCOCCenter.Hosting.pdb
