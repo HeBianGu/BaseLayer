@@ -2,8 +2,7 @@ E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Image.dll
 E:\WorkArea\DevTest\HebianGu\Product\Debug\HebianGu.ComLibModule.Image.pdb
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.Image.dll
 E:\WorkArea\DevTest\HebianGu\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.Image.pdb
-D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Image.dll
-D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Image.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.Image.csprojResolveAssemblyReference.cache
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.Image.dll
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.Image.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ImageHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.ImageHelper.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.ImageHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Image\obj\Debug\HebianGu.ComLibModule.ImageHelper.pdb

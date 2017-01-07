@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ComLibModule.Image</RootNamespace>
-    <AssemblyName>HebianGu.ComLibModule.Image</AssemblyName>
+    <AssemblyName>HebianGu.ComLibModule.ImageHelper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,6 +33,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,7 @@
     <Compile Include="图片处理\ImageClass.cs" />
     <Compile Include="图片处理\ImageDown.cs" />
     <Compile Include="图片处理\ImageUpload.cs" />
+    <Compile Include="图片绘制\ImageDrawHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="图片处理帮助类.dgml" />

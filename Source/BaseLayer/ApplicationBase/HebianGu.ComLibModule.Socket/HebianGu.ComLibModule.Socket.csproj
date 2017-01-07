@@ -7,10 +7,11 @@
     <ProjectGuid>{C79C18C1-4188-495C-BE4C-EFFB9CCE4E96}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.Socket</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.SocketHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Socket</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -39,12 +41,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\FileEntity.cs" />
+    <Compile Include="封装Socket\TCPEngine\IEngineClient.cs" />
+    <Compile Include="封装Socket\TCPEngine\IEngineServer.cs" />
+    <Compile Include="封装Socket\TCPEngine\TcpState.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\FileMustBase.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\FileState.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\FileToBase.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\IFileBase.cs" />
+    <Compile Include="封装Socket\EngineTool\FileBase\IFileMustBase.cs" />
+    <Compile Include="封装Socket\EngineTool\FileReceive\FileReceiveMust.cs" />
+    <Compile Include="封装Socket\EngineTool\FileReceive\IFileReceive.cs" />
+    <Compile Include="封装Socket\EngineTool\FileReceive\IFileReceiveMust.cs" />
+    <Compile Include="封装Socket\EngineTool\FileReceive\ReceiveFile.cs" />
+    <Compile Include="封装Socket\EngineTool\FileSend\FileSendMust.cs" />
+    <Compile Include="封装Socket\EngineTool\FileSend\IFileSend.cs" />
+    <Compile Include="封装Socket\EngineTool\FileSend\IFileSendMust.cs" />
+    <Compile Include="封装Socket\EngineTool\FileSend\SendFile.cs" />
+    <Compile Include="封装Socket\EngineTool\FileStart.cs" />
+    <Compile Include="封装Socket\TCPEngine\TcpEngineBase.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\PasswordCode.cs" />
+    <Compile Include="封装Socket\EngineBase\StateCode.cs" />
+    <Compile Include="封装Socket\EngineBase\StateBase.cs" />
+    <Compile Include="封装Socket\EngineBase\EngineBase.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\EngineTool.cs" />
+    <Compile Include="封装Socket\EngineBase\IEngineBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="外部服务\SocketClientEngine.cs" />
+    <Compile Include="外部服务\SocketEngineService.cs" />
+    <Compile Include="外部服务\SocketServerEngine.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\ByteToDate.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\EncryptionDecrypt.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\EncryptionDecryptFile.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\EncryptionDecryptSeparateDate.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\EncryptionDecryptVerification.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\RandomPublic.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\ReceiveDateDistribution.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\ReceiveDateOne.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\StickPackage.cs" />
+    <Compile Include="封装Socket\EngineTool\Tool\UdpPortSetGet.cs" />
+    <Compile Include="封装Socket\UDPEngine\IUdpEngine.cs" />
+    <Compile Include="封装Socket\UDPEngine\UdpState.cs" />
+    <Compile Include="封装Socket\UDPEngine\UdpEngine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Socket帮助类.dgml" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

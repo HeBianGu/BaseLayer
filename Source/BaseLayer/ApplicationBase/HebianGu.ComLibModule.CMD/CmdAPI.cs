@@ -50,6 +50,9 @@ namespace HebianGu.ComLibModule.CMD
 
             // Todo 2016-11-19 ：從輸出流取得命令執行結果 
             p.Start();
+            
+            // Todo ：不过要记得加上Exit要不然下一行程式执行的时候会当机 
+            p.StandardInput.WriteLine("exit");        
 
             //  從輸出流取得命令執行結果 
             return p.StandardOutput.ReadToEnd();
