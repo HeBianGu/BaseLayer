@@ -20,7 +20,6 @@ namespace HebianGu.ComLibModule.ThreadEx
             Thread th = new Thread(new ThreadStart(MyMethod));
             th.Start();
 
-
             //发送阻塞完成信号，让线程中的代码开始执行
             for (int i = 0; i < 10; i++)
             {

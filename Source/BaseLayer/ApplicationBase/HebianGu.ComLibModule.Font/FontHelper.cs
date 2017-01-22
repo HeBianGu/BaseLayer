@@ -13,7 +13,7 @@ namespace HebianGu.ComLibModule.FontExtend
 
         /// <summary> 设置字体格式 </summary>
         public static void SetFontStyle(this Font sender, FontStyle style)
-        {
+        { 
             sender = new Font(sender.FontFamily, sender.Size, style);
         }
 

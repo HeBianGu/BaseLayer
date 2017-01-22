@@ -44,8 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="多播方法处理\ITaskEntity.cs" />
+    <Compile Include="多播方法处理\TaskListEngine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="委托外包模式\DelegateFace.cs" />
     <Compile Include="集合分组截取计算\CaculateGroupEngineT.cs" />
     <Compile Include="集合分组截取计算\QueueSpaceCaculateProvider.cs" />
     <Compile Include="集合分组截取计算\ModelEntityT.cs" />

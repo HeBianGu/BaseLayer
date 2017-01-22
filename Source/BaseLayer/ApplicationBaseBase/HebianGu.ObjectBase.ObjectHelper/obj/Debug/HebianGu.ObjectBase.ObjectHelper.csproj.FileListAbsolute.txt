@@ -1,7 +1,6 @@
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.csproj.GenerateResource.Cache
-D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.ObjectHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.ObjectHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.Properties.Resources.resources
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.ObjectHelper.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.exe

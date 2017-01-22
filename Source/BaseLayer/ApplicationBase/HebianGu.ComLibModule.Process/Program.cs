@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -11,6 +12,7 @@ namespace HebianGu.ComLibModule.ProcessHelper
     {
         static void Main(string[] args)
         {
+            //Process.Start("notepad");
 
             TestCmd();
 

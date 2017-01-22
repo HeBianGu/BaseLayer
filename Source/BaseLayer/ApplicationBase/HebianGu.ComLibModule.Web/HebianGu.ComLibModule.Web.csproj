@@ -57,15 +57,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueryString.cs" />
     <Compile Include="UrlOper.cs" />
-    <Compile Include="Utility.cs" />
-    <Compile Include="ValidateImg.cs" />
-    <Compile Include="WebSitePathHelper.cs" />
-    <Compile Include="上传下载\DownLoadHelper.cs" />
-    <Compile Include="上传下载\FileDown.cs" />
-    <Compile Include="上传下载\FileUp.cs" />
-    <Compile Include="上传下载\UpLoadFiles.cs">
+    <Compile Include="Utility.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="ValidateImg.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebSitePathHelper.cs" />
     <Compile Include="分词辅助类\SegList.cs" />
     <Compile Include="导出Excel\DataToExcel.cs" />
     <Compile Include="导出Excel\ExcelHelper.cs" />

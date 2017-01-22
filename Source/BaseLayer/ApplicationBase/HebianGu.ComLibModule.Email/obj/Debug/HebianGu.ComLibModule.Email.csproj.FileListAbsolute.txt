@@ -6,3 +6,6 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Email.dll
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Email.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Email\obj\Debug\HebianGu.ComLibModule.Email.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Email\obj\Debug\HebianGu.ComLibModule.Email.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Email\obj\Debug\HebianGu.ComLibModule.Email.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Email\obj\Debug\SendEmail.Form1.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Email\obj\Debug\HebianGu.ComLibModule.Email.csproj.GenerateResource.Cache

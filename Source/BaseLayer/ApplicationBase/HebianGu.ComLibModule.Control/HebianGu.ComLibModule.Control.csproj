@@ -5,9 +5,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{597A9164-2B6E-4542-B512-EF23ED32E78E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.Control</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.ControlHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Control</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -29,9 +29,13 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,12 +46,64 @@
   <ItemGroup>
     <Compile Include="ComboboxEx.cs" />
     <Compile Include="Control.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeViewEx.cs" />
+    <Compile Include="滚动文本控件\Demo\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="滚动文本控件\ScrollingText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\ExtractColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\ExtractColor.designer.cs">
+      <DependentUpon>ExtractColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="颜色拾取控件\ExtractPad.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="颜色拾取控件\ExtractPad.designer.cs">
+      <DependentUpon>ExtractPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\ImportImgColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\ImportImgColor.designer.cs">
+      <DependentUpon>ImportImgColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="颜色拾取控件\Demo\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="WinForm控件扩展.dgml" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="滚动文本控件\Demo\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="滚动文本控件\ScrollingText.resx">
+      <DependentUpon>ScrollingText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="颜色拾取控件\Demo\ExtractColor.resx">
+      <DependentUpon>ExtractColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="颜色拾取控件\Demo\ImportImgColor.resx">
+      <DependentUpon>ImportImgColor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="颜色拾取控件\Demo\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="滚动文本控件\ScrollingText.bmp" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

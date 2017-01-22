@@ -7,9 +7,7 @@ namespace HebianGu.ComLibModule.Email
 {
    public class EmailHelper
     {
-        /// <summary>
-        /// 发送邮件
-        /// </summary>
+        /// <summary> 发送邮件 </summary>
         /// <param name="subject">邮件标题</param>
         /// <param name="body">邮件正文</param>
         /// <param name="to">收件人</param>

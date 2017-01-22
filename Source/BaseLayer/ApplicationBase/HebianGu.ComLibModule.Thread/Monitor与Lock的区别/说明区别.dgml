@@ -3,16 +3,16 @@
   <Nodes>
     <Node Id="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="500.510359408034,-245.649903271684,142.97,208.12" Label=" try&#xD;&#xA; {&#xD;&#xA;    Monitor.Enter(obj);&#xD;&#xA;    dosomething();&#xD;&#xA; }&#xD;&#xA; catch(Exception ex)&#xD;&#xA; {&#xD;&#xA; &#xD;&#xA; }&#xD;&#xA; finally&#xD;&#xA; {&#xD;&#xA;    Monitor.Exit(obj);&#xD;&#xA; }" UseManualLocation="True" />
     <Node Id="Lock(obj){Dosomething();}" Bounds="108.510359408034,-165.979704016913,121.77,70.96" Label="lock(obj)&#xD;&#xA;{&#xD;&#xA;    dosomething();&#xD;&#xA;}" UseManualLocation="True" />
-    <Node Id="两者的区别" Category="Category1" Bounds="324.510359408034,-98.1401691331924,80,25.24" UseManualLocation="True" />
-    <Node Id="相等的" Category="Comment" Bounds="328.110359408034,-206.779704016913,56,25.24" UseManualLocation="True" />
-    <Node Id="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Bounds="1.22070312045253E-05,43.6701967283156,741.4,25.24" />
+    <Node Id="两者的区别" Category="Category1" Bounds="319.710359408034,-98.9401691331924,80,25.24" UseManualLocation="True" />
+    <Node Id="相等的" Category="Comment" Bounds="325.710359408034,-272.379704016913,56,25.24" UseManualLocation="True" />
+    <Node Id="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Bounds="-0.799987792968864,-4.32980327168434,741.4,25.24" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="两者的区别" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="404.289517555591,-119.924248999966,87.5324944014963,23.6543542404072" />
-    <Link Source="两者的区别" Target="Lock(obj){Dosomething();}" Bounds="239.050342836101,-114.442257091112,85.4600165719331,19.700954803888" />
-    <Link Source="相等的" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="384.110359408034,-187.341470138383,107.655524242203,26.2150193785385" />
-    <Link Source="相等的" Target="Lock(obj){Dosomething();}" Bounds="238.798851342562,-184.613175885804,89.3115080654725,30.4505294349569" />
-    <Link Source="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Target="两者的区别" Bounds="365.453642396953,-63.9087298306268,4.69553970785864,107.578926558942" />
+    <Link Source="两者的区别" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="399.610332706335,-120.71072400803,92.1903803239202,24.0023438484912" />
+    <Link Source="两者的区别" Target="Lock(obj){Dosomething();}" Bounds="239.047241666004,-114.3307859849,80.6631160000114,18.7250547800051" />
+    <Link Source="相等的" Target="92de2563-c8cf-4b12-af35-c2057f34b46f1" Bounds="377.022207997111,-247.139704589844,115.573492778142,62.5663539420804" />
+    <Link Source="相等的" Target="Lock(obj){Dosomething();}" Bounds="227.355745956545,-247.139704589844,108.35944485425,75.9924153559019" />
+    <Link Source="至此，我想你应该明白了它们的区别。当我们追求性能的时候，则不会使用lock，而是使用Monitor这样可以避免try语句所消耗的性能。" Target="两者的区别" Bounds="362.033285256365,-64.7519196090992,6.50753722430625,60.4221163374148" />
   </Links>
   <Categories>
     <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />

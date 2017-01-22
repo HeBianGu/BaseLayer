@@ -24,7 +24,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HebianGu.ComLibModule.ControlEx
+namespace HebianGu.ComLibModule.ControlHelper
 {
     /// <summary> Òì²½²Ù×÷Winform¿Ø¼þ </summary>
     public static class InvokeHelper

@@ -10,7 +10,34 @@ namespace HebianGu.ComLibModule.CaculateEngine
     {
         static void Main(string[] args)
         {
-            TestSplitEngine();
+            Action<int> act1 = l =>
+            {
+                Console.WriteLine("第1次");
+            };
+
+            Action<Action<int>> act2 = l =>
+            {
+                Console.WriteLine("第2次");
+                l(1);
+            };
+
+            Action<Action<Action<int>>> act3 = l =>
+            {
+                Console.WriteLine("第3次");
+                l(act1);
+            };
+            Action<Action<Action<Action<int>>>> act4 = l =>
+            {
+                Console.WriteLine("第4次");
+                l(act2);
+            };
+
+           act4(act3);
+
+
+
+            Console.Read();
+            //TestSplitEngine();
 
             //TestProvider1();
 

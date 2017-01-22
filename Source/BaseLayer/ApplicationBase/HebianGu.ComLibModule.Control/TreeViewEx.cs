@@ -20,7 +20,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace HebianGu.ComLibModule.ControlEx
+namespace HebianGu.ComLibModule.ControlHelper
 {
     /// <summary> winform treeview的扩展方法 </summary>
     public static class TreeViewEx

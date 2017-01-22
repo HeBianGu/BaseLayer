@@ -49,6 +49,7 @@
     <Compile Include="图片处理\ImageDown.cs" />
     <Compile Include="图片处理\ImageUpload.cs" />
     <Compile Include="图片绘制\ImageDrawHelper.cs" />
+    <Compile Include="验证码\CheckCodeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="图片处理帮助类.dgml" />

@@ -6,14 +6,10 @@ using System.Text.RegularExpressions;
 
 namespace DotNet.Utilities
 {
-    /// <summary>
-    /// 邮件操作类
-    /// </summary>
+    /// <summary> 邮件操作类 </summary>
     public class MailHelper
     {
-        /// <summary>
-        /// 获取Email登陆地址
-        /// </summary>
+        /// <summary> 获取Email登陆地址 </summary>
         /// <param name="email">email地址</param>
         /// <returns></returns>
         public static string GetEMailLoginUrl(string email)
@@ -26,9 +22,8 @@ namespace DotNet.Utilities
             email = "http://mail." + email.Substring(index + 1);
             return email;
         }
-        /// <summary>
-        /// 发送邮件
-        /// </summary>
+
+        /// <summary> 发送邮件 </summary>
         /// <param name="mailSubjct">邮件主题</param>
         /// <param name="mailBody">邮件正文</param>
         /// <param name="mailFrom">发送者</param>
@@ -59,9 +54,8 @@ namespace DotNet.Utilities
             }
             return str;
         }
-        /// <summary>
-        /// 发送邮件（要求登陆）
-        /// </summary>
+     
+        /// <summary> 发送邮件（要求登陆）</summary>
         /// <param name="mailSubjct">邮件主题</param>
         /// <param name="mailBody">邮件正文</param>
         /// <param name="mailFrom">发送者</param>
@@ -76,9 +70,8 @@ namespace DotNet.Utilities
             string str = sendMail(mailSubjct, mailBody, mailFrom, mailAddress, HostIP, 0x19, username, password, false, string.Empty, out flag);
             return flag;
         }
-        /// <summary>
-        /// 发送邮件
-        /// </summary>
+       
+        /// <summary> 发送邮件 </summary>
         /// <param name="mailSubjct">邮件主题</param>
         /// <param name="mailBody">邮件正文</param>
         /// <param name="mailFrom">发送者</param>
@@ -128,9 +121,8 @@ namespace DotNet.Utilities
             }
             return str;
         }
-        /// <summary>
-        /// 发送邮件
-        /// </summary>
+        
+        /// <summary> 发送邮件 </summary>
         /// <param name="mailSubjct"></param>
         /// <param name="mailBody"></param>
         /// <param name="mailFrom"></param>

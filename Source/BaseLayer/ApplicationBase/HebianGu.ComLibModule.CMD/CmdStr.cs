@@ -53,7 +53,6 @@ namespace HebianGu.ComLibModule.CMD
         /// <summary>  查询本机系统 "/c winver" </summary>
         public const string CmdWinver = "/c winver";
 
-
         /// <summary> IP地址侦测器 "/c  Nslookup" </summary>
         public const string CmdNslookup = "/c  Nslookup";
 

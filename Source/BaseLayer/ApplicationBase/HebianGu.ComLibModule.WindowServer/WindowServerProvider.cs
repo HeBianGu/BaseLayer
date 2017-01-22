@@ -32,11 +32,12 @@ namespace HebianGu.ComLibModule.WindowServer
                     }
                 }
 
-
                 return false;
             }
-            catch
-            { return false; }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
 
         /// <summary> 安装服务 </summary>
@@ -188,7 +189,7 @@ namespace HebianGu.ComLibModule.WindowServer
             }
             catch (Exception ex)
             {
-                LogProviderHandler.Instance.OnErrLog(ex.ToExc());
+                LogProviderHandler.Instance.OnErrLog(ex.ToExc ());
             }
 
 

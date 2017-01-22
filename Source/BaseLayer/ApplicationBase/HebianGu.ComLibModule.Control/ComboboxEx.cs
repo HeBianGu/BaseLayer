@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HebianGu.ComLibModule.ControlEx
+namespace HebianGu.ComLibModule.ControlHelper
 {
     /// <summary> Combobox扩展方法 </summary>
     public static class ComboboxEx

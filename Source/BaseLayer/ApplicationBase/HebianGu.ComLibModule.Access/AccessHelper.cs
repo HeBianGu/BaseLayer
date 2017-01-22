@@ -20,7 +20,8 @@ namespace HebianGu.ComLibModule.Access
             //
             // TODO: 在此处添加构造函数逻辑
             //
-        }
+
+           this        }
 
         /// <summary>
         /// 打开数据库

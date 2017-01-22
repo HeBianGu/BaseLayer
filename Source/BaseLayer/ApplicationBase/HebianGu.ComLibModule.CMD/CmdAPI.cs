@@ -22,7 +22,6 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using HebianGu.ComLibModule.FormatEx;
 
 namespace HebianGu.ComLibModule.CMD
 {
@@ -57,6 +56,8 @@ namespace HebianGu.ComLibModule.CMD
             //  從輸出流取得命令執行結果 
             return p.StandardOutput.ReadToEnd();
 
+            Process.Start("notepad");
+
         }
 
         /// <summary> 运行DOS命令  DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID   </summary>   
@@ -86,13 +87,13 @@ namespace HebianGu.ComLibModule.CMD
         [Obsolete("未测试")]
         public static string CloseProcessByPid(this string pid)
         {
-            return CmdStr.CloseProcessByPid.FormatEx(pid).RunCmdOutPut();
+            return string.Format(CmdStr.CloseProcessByPid, pid).RunCmdOutPut();
         }
 
         /// <summary> 执行eclipse程序 </summary> 
         public static string CmdEclipseByData(this string dataFullPath)
         {
-            return CmdStr.CmdEclipseRun.FormatEx(dataFullPath).RunCmdOutPut();
+            return string.Format(CmdStr.CmdEclipseRun, dataFullPath).RunCmdOutPut();
         }
 
 

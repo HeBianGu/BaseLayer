@@ -11,8 +11,7 @@ namespace DotNet.Utilities
 {
     public class MailSender
     {
-        public static void Send(string server, string sender, string recipient, string subject,
-    string body, bool isBodyHtml, Encoding encoding, bool isAuthentication, params string[] files)
+        public static void Send(string server, string sender, string recipient, string subject, string body, bool isBodyHtml, Encoding encoding, bool isAuthentication, params string[] files)
         {
             SmtpClient smtpClient = new SmtpClient(server);
             MailMessage message = new MailMessage(sender, recipient);
