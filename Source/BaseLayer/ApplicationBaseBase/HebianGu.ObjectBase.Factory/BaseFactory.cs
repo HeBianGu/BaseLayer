@@ -25,7 +25,7 @@ using System.Text;
 namespace HebianGu.ObjectBase.Factory
 {
     /// <summary> 单例工厂父类</summary>
-    public class BaseFactory<T> : IDisposableBF where T : class,new()
+    public abstract class BaseFactory<T> : IDisposableBF where T : class,new()
     {
 
         #region - Start 单例模式 -

@@ -20,3 +20,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.ControlHelper.MainForm.resources
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Control.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Control\obj\Debug\HebianGu.ComLibModule.Control.csprojResolveAssemblyReference.cache

@@ -1,0 +1,15 @@
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\MainPage.baml
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\NotePage.baml
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\View\CalendarEx.baml
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\View\WeatherControl.baml
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\MainPage.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\MainWindow.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\NotePage.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\View\CalendarDayButtonEx.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\View\CalendarEx.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\View\WeatherControl.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\App.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\LifeCalendar_Content.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\LifeCalendar_MarkupCompile.cache
+C:\Users\happy\Desktop\LifeAssistant\LifeAssistant\obj\x64\Debug\LifeCalendar_MarkupCompile.lref

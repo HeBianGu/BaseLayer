@@ -1,0 +1,981 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AcDownInterface</name>
+    </assembly>
+    <members>
+        <member name="T:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration">
+            <summary>
+            AcPlay播放配置
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.PlayerName">
+            <summary>
+            播放器名称
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.PlayerUrl">
+            <summary>
+            播放器地址
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.WebUrl">
+            <summary>
+            原网页地址
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.HttpServerPort">
+            <summary>
+            本地HTTP服务器端口
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.ProxyServerPort">
+            <summary>
+            本地代理服务器端口
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.Videos">
+            <summary>
+            视频列表
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.Subtitles">
+            <summary>
+            弹幕文件列表
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.SpeedLimit">
+            <summary>
+            加载本地文件时的读取速度限制
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.Proxy">
+            <summary>
+            连接互联网资源时使用的代理服务器
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.AcPlayConfiguration.ExtraConfig">
+            <summary>
+            额外信息
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.AcPlay.Video">
+            <summary>
+            播放配置中的视频信息
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.Video.Order">
+            <summary>
+            视频编号
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.Video.FileName">
+            <summary>
+            文件名称（支持相对路径、绝对路径和Internet路径）
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.AcPlay.Video.Length">
+            <summary>
+            视频长度(毫秒为单位)
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.AutoAnswer">
+            <summary>
+            自动应答设置
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AutoAnswer.Prefix">
+            <summary>
+            前缀
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AutoAnswer.Identify">
+            <summary>
+            自动应答标识
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AutoAnswer.Description">
+            <summary>
+            自动应答描述
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.AutoAnswer.#ctor">
+            <summary>
+            创建一个新的自动应答设置
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.AutoAnswer.#ctor(System.String,System.String,System.String)">
+            <summary>
+            创建一个新的自动应答设置
+            </summary>
+            <param name="prefix">前缀</param>
+            <param name="identify">标识</param>
+            <param name="description">描述</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.AutoAnswer.IsInAutoAnswers(System.Collections.Generic.List{Kaedei.AcDown.Interface.AutoAnswer},System.String,System.String)">
+            <summary>
+            检查指定前缀的标识是否存在于自动应答列表中
+            </summary>
+            <param name="autoAnswers">自动应答列表</param>
+            <param name="prefix">需要检查的前缀</param>
+            <param name="identify">需要对比的标识</param>
+            <returns></returns>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.AcTaskDelegate">
+            <summary>
+            Acdown委托
+            </summary>
+            <param name="para"></param>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.DelegateContainer">
+            <summary>
+            委托包装类
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.Downloader.ComicDownloader">
+            <summary>
+            漫画下载器，此类继承自CommonDownloader类并实现了IDownloader接口
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.Downloader.CommonDownloader">
+            <summary>
+            公共下载器，此类实现了IDownloader接口并提供了常用的方法与类成员实现
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.Info">
+            <summary>
+            与此任务相关联的信息
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.Settings">
+            <summary>
+            与此任务相关联的设置
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Downloader.CommonDownloader.currentParameter">
+            <summary>
+            下载参数
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.p">
+            <summary>
+            下载参数(与currentParameter相同)
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.NewPart(System.Int32,System.Int32)">
+            <summary>
+            更换为新Part
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.Refresh">
+            <summary>
+            刷新UI
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.NewTask(System.String)">
+            <summary>
+            创建新任务
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.TipText(System.String)">
+            <summary>
+            更改提示信息
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.TotalLength">
+            <summary>
+            文件总长度
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.DoneBytes">
+            <summary>
+            已完成的长度
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Downloader.CommonDownloader.LastTick">
+            <summary>
+            最后一次Tick时的值
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.DownloadFile">
+            <summary>
+            使用默认参数下载文件
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Downloader.CommonDownloader.StopDownload">
+            <summary>
+            停止下载
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.DownloadType">
+            <summary>
+            下载类型
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Video">
+            <summary>
+            视频
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Audio">
+            <summary>
+            音频/音乐
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Picture">
+            <summary>
+            图像/照片
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Text">
+            <summary>
+            正文/文字
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Subtitle">
+            <summary>
+            字幕/弹幕
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.Comment">
+            <summary>
+            评论
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.DownloadType.All">
+            <summary>
+            所有类型
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Forms.FormLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Forms.FormMultiSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormMultiSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormMultiSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Forms.FormPassword.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormPassword.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormPassword.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Forms.FormSingleSelect.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormSingleSelect.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormSingleSelect.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.Forms.FormWebbrowser.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormWebbrowser.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.FormWebbrowser.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.ToolForm.CreateMultiSelectForm(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{Kaedei.AcDown.Interface.AutoAnswer},System.String)">
+            <summary>
+            创建[选择章节]窗体
+            </summary>
+            <param name="keyValueContent">一个类型为string-string的字典对象，分别对应“关键字”和“提示语”</param>
+            <param name="autoAnswers">自动应答设置</param>
+            <param name="autoAnswerPrefix">自动应答的前缀</param>
+            <returns>返回string集合，指示每一项用户选择的数据所相对应的值</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.ToolForm.CreateSingleSelectForm(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.Collections.Generic.List{Kaedei.AcDown.Interface.AutoAnswer},System.String)">
+            <summary>
+            创建[选择服务器]窗体
+            </summary>
+            <param name="tip">对话框中显示的文字提示</param>
+            <param name="keyValueContent">一个类型为string-string的字典对象，分别对应“关键字”和“提示语”</param>
+            <param name="defaultKey">默认选中的值</param>
+            <param name="autoAnswers">自动应答设置</param>
+            <param name="autoAnswerPrefix">自动应答的前缀</param>
+            <returns>返回string值，指示用户选择项对应的值</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.ToolForm.CreatePasswordForm(System.Boolean,System.String,System.String)">
+            <summary>
+            创建[输入密码]窗体
+            </summary>
+            <returns>返回字符串值，内容为用户输入的密码</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.ToolForm.CreateLoginForm(Kaedei.AcDown.Interface.Forms.UserLoginInfo,System.String,System.String)">
+            <summary>
+            创建[登录]窗体
+            </summary>
+            <param name="registerUrl">注册新用户的链接，传递空字符串可以隐藏界面上的[]注册]按钮</param>
+            <returns>返回一个包含用户登录数据的UserLoginInfo对象</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Forms.ToolForm.CreateWebpageForm(System.String,System.String,System.Boolean)">
+            <summary>
+            创建[显示网页]窗体
+            </summary>
+            <param name="url">需要加载的页面链接</param>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.GlobalSettings">
+            <summary>
+            提供给插件的全局设置
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.GlobalSettings.GetSettings">
+            <summary>
+            取得全局设置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.GlobalSettings.CacheSize">
+            <summary>
+            网络缓存大小，单位为兆字节(MB)，取值范围为1~16
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.GlobalSettings.NetworkTimeout">
+            <summary>
+            网络请求的超时值（以毫秒为单位）
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.GlobalSettings.RetryTimes">
+            <summary>
+            下载失败时的重试次数
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.GlobalSettings.RetryWaitingTime">
+            <summary>
+            下载重试前的等待时间(毫秒)
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.GlobalSettings.ToolFormTimeout">
+            <summary>
+            工具窗口的超时时间(秒)
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.DownloadStatus">
+            <summary>
+            下载状态
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.IDownloader">
+            <summary>
+            下载适配器接口
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IDownloader.delegates">
+            <summary>
+            任务管理器委托
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IDownloader.Info">
+            <summary>
+            获取或设置与此任务相关联的信息
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IDownloader.TotalLength">
+            <summary>
+            此任务总长度
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IDownloader.DoneBytes">
+            <summary>
+            此任务已经完成的长度
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IDownloader.LastTick">
+            <summary>
+            最后一次获取时的Tick值
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.IDownloader.Download">
+            <summary>
+            开始下载
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.IDownloader.StopDownload">
+            <summary>
+            停止下载
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.ParseRequest">
+            <summary>
+            请求解析的相关信息
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.Id">
+            <summary>
+            需要解析的ID
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.Username">
+            <summary>
+            用户名
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.Proxy">
+            <summary>
+            代理服务器
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.AutoAnswers">
+            <summary>
+            自动应答设置
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseRequest.SpecificConfiguration">
+            <summary>
+            指定特殊配置
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.ParseResult">
+            <summary>
+            解析器的解析结果
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.ParseResultItem">
+            <summary>
+            每个解析结果的相关信息
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseResultItem.RealAddress">
+            <summary>
+            真实地址
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.Interface.ParseResultItem.Information">
+            <summary>
+            相关信息字典
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.IPlugin">
+            <summary>
+            AcDown插件
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.IPlugin.CreateDownloader">
+            <summary>
+            创建新的下载器实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.IPlugin.CheckUrl(System.String)">
+            <summary>
+            检查指定的Url是否符合能够被当前插件解析
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.IPlugin.GetHash(System.String)">
+            <summary>
+            取得指定Url的Hash值
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IPlugin.Feature">
+            <summary>
+            插件支持的UI特性
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.IPlugin.Configuration">
+            <summary>
+            插件独立存储
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute">
+            <summary>
+            AcDown插件信息
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.Name">
+            <summary>
+            内部名称
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.FriendlyName">
+            <summary>
+            用户友好的名称
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.Author">
+            <summary>
+            作者
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.Version">
+            <summary>
+            版本（0.0.0.0）
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.Describe">
+            <summary>
+            详细描述
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.SupportUrl">
+            <summary>
+            客户支持网址
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.AcDownPluginInformationAttribute.#ctor(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            创建一个新的AcDownPluginInformationAttribute对象
+            </summary>
+            <param name="name">内部名称</param>
+            <param name="friendlyName">友好名称</param>
+            <param name="author">插件作者</param>
+            <param name="version">版本号</param>
+            <param name="describe">插件描述</param>
+            <param name="supportUrl">插件作者网站</param>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.Network">
+            <summary>
+            网络相关的静态方法
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Network.DownloadFile(Kaedei.AcDown.Interface.DownloadParameter)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="para">传递的下载参数</param>
+            <returns>一个布尔值，指示指定的下载是否已成功完成</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Network.DownloadFile(Kaedei.AcDown.Interface.DownloadParameter,Kaedei.AcDown.Interface.TaskInfo)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="para">传递的下载参数</param>
+            <param name="task">当前下载的任务信息</param>
+            <returns>一个布尔值，指示指定的下载是否已成功完成</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Network.GetHtmlSource(System.String,System.Text.Encoding)">
+            <summary>
+            获取网页源代码
+            </summary>
+            <param name="url"></param>
+            <param name="encode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Network.GetHtmlSource(System.Net.HttpWebRequest,System.Text.Encoding)">
+            <summary>
+            获取网页源代码
+            </summary>
+            <param name="request"></param>
+            <param name="encode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Network.GetHtmlSource(System.String,System.Text.Encoding,System.Net.WebProxy)">
+            <summary>
+            取得网页源代码
+            </summary>
+            <param name="url"></param>
+            <param name="encode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.DownloadParameter">
+            <summary>
+            下载参数
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.Url">
+            <summary>
+            资源的网络位置
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.FilePath">
+            <summary>
+            要创建的本地文件位置
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.TotalLength">
+            <summary>
+            资源长度
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.DoneBytes">
+            <summary>
+            已完成的字节数
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.LastTick">
+            <summary>
+            上次Tick的数值
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.IsStop">
+            <summary>
+            是否停止下载(可以在下载过程中进行设置，用来控制下载过程的停止)
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.CacheSize">
+            <summary>
+            读取或设置下载所使用的缓存大小，范围为1到255，单位为MByte。默认值为1
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.Proxy">
+            <summary>
+            读取或设置使用的代理服务器设置
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.Cookies">
+            <summary>
+            读取或设置发出请求时使用的Cookie
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.ExtractCache">
+            <summary>
+            读取或设置一个值，指示下载时是否直接提取系统缓存
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.ExtractCachePattern">
+            <summary>
+            读取或设置一个值，指示提取缓存时所使用的文件名过滤器
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.Referer">
+            <summary>
+            读取或设置下载请求所使用的Referer值
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.DownloadParameter.UserAgent">
+            <summary>
+            读取或设置下载请求所使用的User-Agent值
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.AcDownProxy">
+            <summary>
+            代理服务器设置
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.SerializableDictionary`2">
+            <summary>
+            可序列化的字典
+            </summary>
+            <typeparam name="TKey"></typeparam>
+            <typeparam name="TValue"></typeparam>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SerializableDictionary`2.ReadXml(System.Xml.XmlReader)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="reader"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SerializableDictionary`2.WriteXml(System.Xml.XmlWriter)">
+            <summary>
+            序列化
+            </summary>
+            <param name="writer"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SerializableDictionary`2.WriteToString(Kaedei.AcDown.Interface.SerializableDictionary{`0,`1})">
+            <summary>
+            将字典中的内容序列化到一个字符串对象中
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SerializableDictionary`2.LoadFromString(System.String)">
+            <summary>
+            将一个字符串对象反序列化为字典
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.TaskId">
+            <summary>
+            任务Id
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.PluginName">
+            <summary>
+            Downloader所属插件名称
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.BasePlugin">
+            <summary>
+            Downloader所属插件
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Downloader">
+            <summary>
+            包装的Downloader对象
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Title">
+            <summary>
+            任务名称
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Status">
+            <summary>
+            下载状态
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.FinishTime">
+            <summary>
+            完成时间
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.SaveDirectory">
+            <summary>
+            保存目录
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.PartCount">
+            <summary>
+            分段总数
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.CurrentPart">
+            <summary>
+            当前分段
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.FilePath">
+            <summary>
+            文件列表
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.SubFilePath">
+            <summary>
+            子文件列表
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Url">
+            <summary>
+            任务URL
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.DownloadTypes">
+            <summary>
+            下载类型
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.ParseRelated">
+            <summary>
+            是否解析关联的任务
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.AutoAnswer">
+            <summary>
+            自动应答设置
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.ExtractCache">
+            是否启用缓存提取
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Proxy">
+            <summary>
+            应用的代理服务器
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.SpeedLimit">
+            <summary>
+            速度限制
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.LastError">
+            <summary>
+            最后一次错误
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.SourceUrl">
+            <summary>
+            引用页
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Comment">
+            <summary>
+            注释
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.IsBeAdded">
+            <summary>
+            读取或设置一个Boolean值，指示此任务是否由其他任务所添加
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.PartialFinished">
+            <summary>
+            读取或设置一个Boolean值，指示此任务是否仅有部分完成
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.PartialFinishedDetail">
+            <summary>
+            读取或设置一个字符串，指示此任务"仅部分完成"的详细信息
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Hash">
+            <summary>
+            任务的散列值
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.UIItem">
+            <summary>
+            关联的UI Item
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.TaskInfo.Settings">
+            <summary>
+            插件存储的设置
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TaskInfo.Start(Kaedei.AcDown.Interface.DelegateContainer)">
+            <summary>
+            开始任务
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TaskInfo.Stop">
+            <summary>
+            停止任务
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TaskInfo.DisposeDownloader">
+            <summary>
+            销毁关联的IDownloader对象
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TaskInfo.GetProgress">
+            <summary>
+            任务下载进度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TaskInfo.GetTickCount">
+            <summary>
+            下载速度之差
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.Tools">
+            <summary>
+            其他工具
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Interface.Tools.IsRunningOnMono">
+            <summary>
+            获取一个值，指示程序当前是否运行在Mono环境中
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.InvalidCharacterFilter(System.String,System.String)">
+            <summary>
+            无效字符过滤
+            </summary>
+            <param name="input">需要过滤的字符串</param>
+            <param name="replace">替换为的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.GetExtension(System.String)">
+            <summary>
+            取得网络文件的后缀名
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.ReplaceUnicode2Str(System.String)">
+            <summary>
+            将Unicode字符转换为String(转换类似于\u1234的字符串)
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.UrlEncode(System.String)">
+            <summary>
+            Url编码(转换为%AF这样的字符)，默认使用UTF8编码
+            </summary>
+            <param name="str">待转换的字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.UrlEncode(System.String,System.Text.Encoding)">
+            <summary>
+            Url编码(转换为%AF这样的字符)
+            </summary>
+            <param name="str">待转换的字符串</param>
+            <param name="encoding">使用的编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.UrlDecode(System.String)">
+            <summary>
+            url解码（从%AF这样的字符转换）
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.FromBase64StringForUrl(System.String)">
+            <summary>
+            从适用于URL的Base64编码字符串转换为普通字符串
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.Tools.ToBase64StringForUrl(System.String)">
+            <summary>
+            从普通字符串转换为适用于URL的Base64编码字符串
+            </summary>
+        </member>
+    </members>
+</doc>

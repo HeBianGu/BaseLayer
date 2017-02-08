@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCFD1289-87EC-49DC-BB85-30274BC1F546}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kaedei.AcDown</RootNamespace>
+    <AssemblyName>AcDown</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Kaedei.AcDown.Program</StartupObject>
+    <ApplicationIcon>Resources\Ac.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Debug\AcDown.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UI\AssociateRegistrar.cs" />
+    <Compile Include="UI\Components\Feedback.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Components\Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Components\MyHelperLib.IE.cs" />
+    <Compile Include="UI\Components\PluginSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Components\PluginSettings.Designer.cs">
+      <DependentUpon>PluginSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DwmApi.cs" />
+    <Compile Include="UI\FirstrunHandler.cs" />
+    <Compile Include="UI\FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAddProxy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAddProxy.Designer.cs">
+      <DependentUpon>FormAddProxy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormAutoAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormAutoAnswer.Designer.cs">
+      <DependentUpon>FormAutoAnswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormPlugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormPlugins.Designer.cs">
+      <DependentUpon>FormPlugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormHelp.Designer.cs">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormInfo.Designer.cs">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormNew.Designer.cs">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormShutdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormShutdown.Designer.cs">
+      <DependentUpon>FormShutdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\ShortUrlParser.cs" />
+    <Compile Include="UI\Updater.cs" />
+    <EmbeddedResource Include="UI\Components\Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Components\PluginSettings.resx">
+      <DependentUpon>PluginSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAddProxy.resx">
+      <DependentUpon>FormAddProxy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormAutoAnswer.resx">
+      <DependentUpon>FormAutoAnswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormHelp.resx">
+      <DependentUpon>FormHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormInfo.resx">
+      <DependentUpon>FormInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormNew.resx">
+      <DependentUpon>FormNew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormPlugins.resx">
+      <DependentUpon>FormPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormShutdown.resx">
+      <DependentUpon>FormShutdown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\FormStart.resx">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UI\FormStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormStart.Designer.cs">
+      <DependentUpon>FormStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Shutdown.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.GIF" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bing.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICONICON_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\About.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripInfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripOpenFolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripOpenWebpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripStart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateNoti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plugin.png" />
+    <None Include="Resources\feedback.png" />
+    <None Include="Resources\remind.wav" />
+    <None Include="Resources\ToolStripControl.png" />
+    <None Include="Resources\Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AcDownCore\AcDownCore.csproj">
+      <Project>{27A7DE57-9B5C-4462-BB1B-F5A6B3249B3B}</Project>
+      <Name>AcDownCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcDownDownloader\AcDownDownloader.csproj">
+      <Project>{43875C56-4142-4E71-8CC6-49BFC2C903C1}</Project>
+      <Name>AcDownDownloader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcDownInterface\AcDownInterface.csproj">
+      <Project>{AAB36442-C5D7-4580-A18A-62B6EB537F62}</Project>
+      <Name>AcDownInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcDownParser\AcDownParser.csproj">
+      <Project>{CDE31CEA-F6BB-4545-BFA8-77A7400D8A6A}</Project>
+      <Name>AcDownParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AcPlay\AcPlay.csproj">
+      <Project>{C0017FE4-9708-46F7-9D56-71340E2C181B}</Project>
+      <Name>AcPlay</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlvCombine\FlvCombine.csproj">
+      <Project>{362A456F-8367-43EF-950D-5A2CDD502B92}</Project>
+      <Name>FlvCombine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ac.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ToolstripAcPlay.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

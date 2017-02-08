@@ -1,0 +1,8 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\DEV\Control\HebianGu.ComLibModule.Dev.Control\bin\Debug\HebianGu.ComLibModule.Dev.Control.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\DEV\Control\HebianGu.ComLibModule.Dev.Control\bin\Debug\HebianGu.ComLibModule.Dev.Control.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\DEV\Control\HebianGu.ComLibModule.Dev.Control\obj\Debug\HebianGu.ComLibModule.Dev.Control.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\DEV\Control\HebianGu.ComLibModule.Dev.Control\obj\Debug\HebianGu.ComLibModule.Dev.Control.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\DEV\Control\HebianGu.ComLibModule.Dev.Control\bin\Debug\HebianGu.ComLibModule.Dev.Control.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\DEV\Control\HebianGu.ComLibModule.Dev.Control\bin\Debug\HebianGu.ComLibModule.Dev.Control.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\DEV\Control\HebianGu.ComLibModule.Dev.Control\obj\Debug\HebianGu.ComLibModule.Dev.Control.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\DEV\Control\HebianGu.ComLibModule.Dev.Control\obj\Debug\HebianGu.ComLibModule.Dev.Control.pdb

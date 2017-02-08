@@ -46,9 +46,9 @@ namespace HebianGu.ObjectBase.Logger
             ComLogProvider.Init(log);
             ComLogProvider.Log.RunLog("静态注册日志");
 
-            Log4netEngine log = new Log4netEngine();
+            Log4netEngine log1 = new Log4netEngine();
 
-            log.RunLog("记录运行日志");
+            log1.RunLog("记录运行日志");
 
             Console.Read();
         }

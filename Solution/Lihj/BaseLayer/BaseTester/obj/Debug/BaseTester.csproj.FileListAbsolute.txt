@@ -20,3 +20,11 @@ E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTe
 E:\WorkArea\DevTest\HebianGu\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.pdb
 D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\BaseTester.exe.config
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\BaseTester.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\BaseTester.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\HebianGu.ComLibModule.DateTime.dll
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\HebianGu.ComLibModule.Thread.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\HebianGu.ComLibModule.DateTime.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\bin\Debug\HebianGu.ComLibModule.Thread.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\BaseTester\obj\Debug\BaseTester.pdb

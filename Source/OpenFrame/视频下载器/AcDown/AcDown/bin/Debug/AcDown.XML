@@ -1,0 +1,525 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AcDown</name>
+    </assembly>
+    <members>
+        <member name="M:Kaedei.AcDown.UI.AssociateRegistrar.CreateAssociate(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            创建文件关联
+            </summary>
+            <param name="programFile">应用程序文件的完整路径("C:\abc\def.exe")</param>
+            <param name="extension">文件扩展名（例如 ".txt"）</param>
+            <param name="typeName">文件类型名称</param>
+            <param name="description">文件类型描述</param>
+            <param name="argument">附加参数（不包括"%1"）</param>
+            <returns></returns>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.Components.Feedback.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Components.Feedback.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Components.Feedback.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Components.PluginSettings.LoadPlugins(System.Collections.ObjectModel.Collection{Kaedei.AcDown.Interface.IPlugin})">
+            <summary>
+            读取并显示插件
+            </summary>
+            <param name="plugins"></param>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.Components.PluginSettings.components">
+            <summary> 
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Components.PluginSettings.Dispose(System.Boolean)">
+            <summary> 
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Components.PluginSettings.InitializeComponent">
+            <summary> 
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.IEProxy">
+            <summary>
+            设置WebBrowser控件的代理服务
+            设置后不会影响IE浏览器
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.IEProxy.InternetSetOption(System.String)">
+            <summary>
+            设置WebBrowser控件代理服务
+            </summary>
+            <param name="strProxy"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.IEProxy.RefreshIESettings">
+            <summary>
+            设置IE代理服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.IEProxy.DisableIEProxy">
+            <summary>
+            取消IE代理服务
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.IsWindows7OrHigher">
+            <summary>
+            判断当前系统是否为Windows 7或更高版本的操作系统
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.IsWindowsVista">
+            <summary>
+            判断当前系统是否为Windows Vista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.IsWindowsVistaOrHigher">
+            <summary>
+            判断当前系统是否为Windows Vista或更高版本的操作系统
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.SetListViewVisualEffect(System.Windows.Forms.ListView)">
+            <summary>
+            设置ListView控件的特殊效果（仅Vista或更高版本的Windows系统）
+            </summary>
+            <param name="lsv"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.SetTextBoxTipText(System.IntPtr,System.String)">
+            <summary>
+            设置文本框的提示文字
+            </summary>
+            <param name="handle">文本框句柄</param>
+            <param name="text">提示文字</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.IsAdmin">
+            <summary>
+            判断当前用户是否为管理员
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.SetShieldIcon(System.Windows.Forms.Button)">
+            <summary>
+            为按钮设置UAC盾牌图标
+            </summary>
+            <param name="btn"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.DwmApi.RefreshNotify">
+            <summary>
+            刷新桌面
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FirstrunHandler.IsFirstRun">
+            <summary>
+            判断此版本的程序是否是第一次运行
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FirstrunHandler.RunFirstRun">
+            <summary>
+            执行首次启动所需要做的操作
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAbout.lnkSupport_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            点击制作者链接
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormAbout.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAbout.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAbout.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormAddProxy.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAddProxy.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAddProxy.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormAutoAnswer.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAutoAnswer.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormAutoAnswer.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.FormPlugins">
+            <summary>
+            "插件"窗体
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormPlugins.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormPlugins.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormPlugins.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormConfig.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormConfig.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormConfig.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormHelp.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormHelp.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormHelp.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormInfo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormInfo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormInfo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.FormMain">
+            <summary>
+            AcDown主窗口
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.DisableThumbButton">
+            <summary>
+            禁用Win7缩略图按钮
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.EnableThumbButton">
+            <summary>
+            启用Win7缩略图按钮
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.WatchClipboard(System.Object)">
+            <summary>
+            监视剪贴板
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.ShowFormToFront">
+            <summary>
+            将程序显示到前台
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.GetTask(System.Guid)">
+            <summary>
+            根据GUID值寻找对应的任务
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.GetColumn(System.String)">
+            <summary>
+            取得列所在位置
+            </summary>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.TipText(System.Object)">
+            <summary>
+            提示下载信息
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.Finish(System.Object)">
+            <summary>
+            下载完成(需要判断下载完成还是用户手动停止)
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.Error(System.Object)">
+            <summary>
+            出现错误下载失败
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.NewTask(System.Object)">
+            <summary>
+            插件新建任务
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.AllFinished(System.Object)">
+            <summary>
+            所有任务执行完毕:执行关机任务
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.CheckUpdate">
+            <summary>
+            检查是否有软件更新
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.SetTaskFilter(System.String[])">
+            <summary>
+            设置任务过滤器
+            </summary>
+            <param name="filter"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.IsMatchCurrentFilter(Kaedei.AcDown.Interface.TaskInfo)">
+            <summary>
+            判断所提供的任务是否符合当前过滤器
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormMain.components">
+            <summary>
+            必需的设计器变量。
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.Dispose(System.Boolean)">
+            <summary>
+            清理所有正在使用的资源。
+            </summary>
+            <param name="disposing">如果应释放托管资源，为 true；否则为 false。</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormMain.InitializeComponent">
+            <summary>
+            设计器支持所需的方法 - 不要
+            使用代码编辑器修改此方法的内容。
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.ShowForm(System.String)">
+            <summary>
+            显示新建窗体
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.CheckUrl(System.String)">
+            <summary>
+            检查是否支持解析指定的URL
+            </summary>
+            <param name="url">需要检查的Url</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.btnAdd_Click(System.Object,System.EventArgs)">
+            <summary>
+            添加任务
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.lnkBrowseDir_LinkClicked(System.Object,System.Windows.Forms.LinkLabelLinkClickedEventArgs)">
+            <summary>
+            选择保存文件夹
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormNew.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormNew.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormShutdown.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormShutdown.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormShutdown.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.ShutdownType">
+            <summary>
+            关闭类型
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.ShortUrlParser">
+            <summary>
+            短网址解析器
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.ShortUrlParser.CanParse(System.String)">
+            <summary>
+            获取指定的网址是否是短网址
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.ShortUrlParser.Parse(System.String)">
+            <summary>
+            解析短网址
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Kaedei.AcDown.UI.Updater">
+            <summary>
+            控制应用程序升级过程的类
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Updater.CheckUpdate">
+            <summary>
+            检查程序是否有最新更新
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Updater.DownloadUpdate(Kaedei.AcDown.UI.UpdateInformation)">
+            <summary>
+            下载最新更新至临时文件夹
+            </summary>
+            <returns>新文件的完整路径</returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Updater.CheckIfUpdating(System.String)">
+            <summary>
+            取得一个值，指示当前程序是否正在更新过程中（运行在StartupPath文件夹中）
+            </summary>
+            <param name="path">程序的映像路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Updater.CopyTempFileToTargetFile(System.String)">
+            <summary>
+            拷贝自身覆盖指定的文件
+            </summary>
+            <param name="filePath">覆盖到的文件完整路径</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.Updater.DeleteTempFile">
+            <summary>
+            删除临时文件
+            </summary>
+        </member>
+        <member name="F:Kaedei.AcDown.UI.FormStart.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormStart.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Kaedei.AcDown.UI.FormStart.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Program.Main(System.String[])">
+            <summary>
+            应用程序的主入口点。
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Properties.Resources">
+            <summary>
+              一个强类型的资源类，用于查找本地化的字符串等。
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Properties.Resources.ResourceManager">
+            <summary>
+              返回此类使用的缓存的 ResourceManager 实例。
+            </summary>
+        </member>
+        <member name="P:Kaedei.AcDown.Properties.Resources.Culture">
+            <summary>
+              使用此强类型资源类，为所有资源查找
+              重写当前线程的 CurrentUICulture 属性。
+            </summary>
+        </member>
+    </members>
+</doc>

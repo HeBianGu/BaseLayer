@@ -1,6 +1,7 @@
 ﻿using HebianGu.ComLibModule.Define;
 using HebianGu.ComLibModule.Struct;
 using HHebianGu.ComLibModule.Delegate;
+using HHebianGu.ComLibModule.DelegateEx;
 using ICSharpCode.SharpZipLib.Zip;
 using Newtonsoft.Json;
 using System;
@@ -686,46 +687,46 @@ namespace HebianGu.ComLibMethods
             get { return _assPath; }
         }
 
-        /// <summary>获得应用程序集的版本发布时间。 </summary>
-        public static GenericContainer<string, DateTime> GetEntryAssemblyV_T()
-        {
-            object[] attrS = System.Reflection.Assembly.GetEntryAssembly().GetCustomAttributes(true);
+        ///// <summary>获得应用程序集的版本发布时间。 </summary>
+        //public static GenericContainer<string, DateTime> GetEntryAssemblyV_T()
+        //{
+        //    object[] attrS = System.Reflection.Assembly.GetEntryAssembly().GetCustomAttributes(true);
 
-            if (attrS != null && attrS.Length > 0)
-            {
-                string title = string.Empty;
-                string version = string.Empty;
+        //    if (attrS != null && attrS.Length > 0)
+        //    {
+        //        string title = string.Empty;
+        //        string version = string.Empty;
 
-                foreach (object oFor in attrS)
-                {
-                    if (oFor is AssemblyTitleAttribute)
-                    {
-                        title = (oFor as AssemblyTitleAttribute).Title;
-                    }
-                    else if (oFor is AssemblyFileVersionAttribute)
-                    {
-                        version = (oFor as AssemblyFileVersionAttribute).Version;
-                    }
-                }
+        //        foreach (object oFor in attrS)
+        //        {
+        //            if (oFor is AssemblyTitleAttribute)
+        //            {
+        //                title = (oFor as AssemblyTitleAttribute).Title;
+        //            }
+        //            else if (oFor is AssemblyFileVersionAttribute)
+        //            {
+        //                version = (oFor as AssemblyFileVersionAttribute).Version;
+        //            }
+        //        }
 
-                Dictionary<string, DateTime> vTimes = new Dictionary<string, DateTime>(3);
-                vTimes.Add("LONGO.LicenceServer V1.0", new DateTime(2011, 11, 11));
-                vTimes.Add("LONGO.LicenceBrowser V1.0", new DateTime(2011, 11, 11));
-                vTimes.Add("LONGO.LicenceBuilder V1.0", new DateTime(2011, 11, 11));
+        //        Dictionary<string, DateTime> vTimes = new Dictionary<string, DateTime>(3);
+        //        vTimes.Add("LONGO.LicenceServer V1.0", new DateTime(2011, 11, 11));
+        //        vTimes.Add("LONGO.LicenceBrowser V1.0", new DateTime(2011, 11, 11));
+        //        vTimes.Add("LONGO.LicenceBuilder V1.0", new DateTime(2011, 11, 11));
 
-                if (!string.IsNullOrEmpty(version))
-                {
-                    double date = double.Parse(version.Substring(version.IndexOf('.', 2) + 1));
-                    string ver = version.Substring(0, version.IndexOf('.', 2));
-                    if (vTimes.ContainsKey(title + " V" + ver))
-                    {
-                        return new GenericContainer<string, DateTime>(version, vTimes[title + " V" + ver].AddDays(date));
-                    }
-                }
-            }
+        //        if (!string.IsNullOrEmpty(version))
+        //        {
+        //            double date = double.Parse(version.Substring(version.IndexOf('.', 2) + 1));
+        //            string ver = version.Substring(0, version.IndexOf('.', 2));
+        //            if (vTimes.ContainsKey(title + " V" + ver))
+        //            {
+        //                return new GenericContainer<string, DateTime>(version, vTimes[title + " V" + ver].AddDays(date));
+        //            }
+        //        }
+        //    }
 
-            return null;
-        }
+        //    return null;
+        //}
     }
 
 

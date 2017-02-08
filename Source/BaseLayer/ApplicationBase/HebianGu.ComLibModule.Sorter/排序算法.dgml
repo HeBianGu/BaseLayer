@@ -1,20 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph Layout="ForceDirected" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="冒泡排序" Bounds="0.00283190521064114,111.673333333333,68,25.8366666666666" />
-    <Node Id="希尔排序" Bounds="101.435946610021,2.8421709430404E-14,68,25.8366666666667" />
-    <Node Id="排序算法" Bounds="50.7193892563972,55.8366666666667,68,25.8366666666667" />
-    <Node Id="插入排序" Bounds="0,-1.4210854715202E-14,68,25.8366666666666" />
-    <Node Id="选择排序" Bounds="101.438778521345,111.673333333333,68,25.8366666666667" />
+    <Node Id="冒泡排序" Bounds="98.9165716863425,2.39999999999998,68,25.24" UseManualLocation="True" />
+    <Node Id="希尔排序" Bounds="207.2002,73.7693261062926,68,25.24" UseManualLocation="True" />
+    <Node Id="排序算法" Category="Category1" Bounds="98.0001,73.2285576122188,68,25.24" />
+    <Node Id="插入排序" Bounds="97.0054762334738,146.470573613179,68,25.24" UseManualLocation="True" />
+    <Node Id="选择排序" Bounds="-7.20000000000005,73.4878798777753,68,25.24" UseManualLocation="True" />
   </Nodes>
   <Links>
-    <Link Source="排序算法" Target="冒泡排序" Bounds="51.7877572934696,81.6733333333334,21.197883648527,23.3379240457041" />
-    <Link Source="排序算法" Target="希尔排序" Bounds="96.4531375713617,32.4987426208179,21.1978836496773,23.3379240458488" />
-    <Link Source="排序算法" Target="插入排序" Bounds="51.7857657100649,32.4985744585568,21.1992200442627,23.3380922081099" />
-    <Link Source="排序算法" Target="选择排序" Bounds="96.4537927604451,81.6733333333334,21.1992200482979,23.3380922086176" />
+    <Link Source="排序算法" Target="冒泡排序" Bounds="132.163398988591,36.6392471541794,0.473434913344136,36.5893131790725" />
+    <Link Source="排序算法" Target="希尔排序" Bounds="166.000106811523,86.0169304852045,32.2002035396357,0.159457445966851" />
+    <Link Source="排序算法" Target="插入排序" Bounds="131.299065757083,98.468560333252,0.529660758721292,39.0028430456986" />
+    <Link Source="排序算法" Target="选择排序" Bounds="69.799975709453,85.9323694396071,28.2001311020704,0.0695125819635649" />
   </Links>
+  <Categories>
+    <Category Id="Category1" Label="类别 1" Background="#FFE51400" IsTag="True" />
+  </Categories>
   <Properties>
+    <Property Id="Background" Label="背景" Description="背景色" DataType="System.Windows.Media.Brush" />
     <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
     <Property Id="Layout" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
   </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="类别 1" ValueLabel="具有类别">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+  </Styles>
 </DirectedGraph>

@@ -16,3 +16,4 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Process.exe
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Process.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Process\obj\Debug\HebianGu.ComLibModule.Process.csprojResolveAssemblyReference.cache

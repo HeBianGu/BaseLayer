@@ -25,3 +25,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\TaskControlDemo\obj\Debug\TaskCont
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.csproj.GenerateResource.Cache
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.exe
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\TaskControlDemo\obj\Debug\TaskControlDemo.csprojResolveAssemblyReference.cache

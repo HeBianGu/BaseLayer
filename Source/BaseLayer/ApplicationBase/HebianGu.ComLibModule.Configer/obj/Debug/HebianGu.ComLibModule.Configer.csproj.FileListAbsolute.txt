@@ -11,3 +11,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.csproj.GenerateResource.Cache
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Configer\obj\Debug\HebianGu.ComLibModule.Configer.csprojResolveAssemblyReference.cache

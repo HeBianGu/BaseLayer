@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AcDownParser</name>
+    </assembly>
+    <members>
+        <member name="M:Kaedei.AcDown.Interface.FlvcdParser.Parse(Kaedei.AcDown.Interface.ParseRequest)">
+            <summary>
+            解析任意视频源地址
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.QQVideoParser.Parse(Kaedei.AcDown.Interface.ParseRequest)">
+            <summary>
+            解析QQ视频源地址
+            </summary>
+        </member>
+        <member name="T:Kaedei.AcDown.Interface.SinaVideoParser">
+            <summary>
+            新浪视频分析器
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SinaVideoParser.Parse(Kaedei.AcDown.Interface.ParseRequest)">
+            <summary>
+            解析新浪视频视频文件源地址
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.SinaVideoParser.GetStringHash(System.String)">
+            <summary>
+            算出一个字符串的MD5
+            </summary>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.TudouParser.Parse(Kaedei.AcDown.Interface.ParseRequest)">
+            <summary>
+            解析土豆视频
+            </summary>
+            <remarks>接受的AutoAnswer对象需要以<i>tudou</i>作为前缀</remarks>
+        </member>
+        <member name="M:Kaedei.AcDown.Interface.YoukuParser.Parse(Kaedei.AcDown.Interface.ParseRequest)">
+             <summary>
+             解析优酷视频源文件地址
+             </summary>
+            <remarks>自动应答会检查前缀为<i>youku</i>的所有设置</remarks>
+        </member>
+    </members>
+</doc>

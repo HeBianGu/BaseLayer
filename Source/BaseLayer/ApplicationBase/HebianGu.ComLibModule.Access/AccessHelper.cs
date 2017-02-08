@@ -21,27 +21,28 @@ namespace HebianGu.ComLibModule.Access
             // TODO: 在此处添加构造函数逻辑
             //
 
-           this        }
+            //this        
+        }
 
         /// <summary>
         /// 打开数据库
         /// </summary>
         private static void openConnection()
-    {
-        if (conn.State == ConnectionState.Closed)
         {
-            conn.ConnectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}", ConfigPath + @"\SimOnProData.mdb");
-            comm.Connection = conn;
-            try
+            if (conn.State == ConnectionState.Closed)
             {
-                conn.Open();
+                conn.ConnectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0}", ConfigPath + @"\SimOnProData.mdb");
+                comm.Connection = conn;
+                try
+                {
+                    conn.Open();
+                }
+                catch (Exception e)
+                { throw new Exception(e.Message); }
+
             }
-            catch (Exception e)
-            { throw new Exception(e.Message); }
 
         }
-
-    }
         /// <summary>
         /// 关闭数据库
         /// </summary>
@@ -85,7 +86,7 @@ namespace HebianGu.ComLibModule.Access
                     comm.CommandText = itemSql;
                     comm.ExecuteNonQuery();
                 }
-                
+
             }
             catch (Exception e)
             {

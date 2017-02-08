@@ -1,0 +1,7 @@
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.DownUpLoad\bin\Debug\HebianGu.ComLibModule.DownUpLoad.dll
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.DownUpLoad\bin\Debug\HebianGu.ComLibModule.DownUpLoad.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.DownUpLoad\obj\Debug\HebianGu.ComLibModule.DownUpLoad.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.DownUpLoad.pdb
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.DownUpLoad.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.DownUpLoad\obj\Debug\HebianGu.ComLibModule.DownUpLoad.exe
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\HebianGu.ComLibModule.DownUpLoad\obj\Debug\HebianGu.ComLibModule.DownUpLoad.csprojResolveAssemblyReference.cache

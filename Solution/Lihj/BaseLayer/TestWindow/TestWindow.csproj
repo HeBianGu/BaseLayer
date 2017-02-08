@@ -44,6 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormTestVerctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestVerctor.Designer.cs">
+      <DependentUpon>FormTestVerctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestThread.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -52,6 +58,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormTestVerctor.resx">
+      <DependentUpon>FormTestVerctor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TestThread.resx">
       <DependentUpon>TestThread.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,6 +87,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\HebianGu.ComLibModule.Math.csproj">
+      <Project>{60a4a01d-8816-4466-a48c-96ddb2741aea}</Project>
+      <Name>HebianGu.ComLibModule.Math</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Thread\HebianGu.ComLibModule.Thread.csproj">
       <Project>{a66cb999-ddfc-46d2-a440-a1266c733f43}</Project>
       <Name>HebianGu.ComLibModule.Thread</Name>

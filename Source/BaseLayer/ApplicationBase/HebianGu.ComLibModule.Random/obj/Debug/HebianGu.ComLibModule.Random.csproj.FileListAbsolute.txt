@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Random\bin\Debug\HebianGu.ComLibModule.Random.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Random\bin\Debug\HebianGu.ComLibModule.Random.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Random\obj\Debug\HebianGu.ComLibModule.Random.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Random\obj\Debug\HebianGu.ComLibModule.Random.pdb

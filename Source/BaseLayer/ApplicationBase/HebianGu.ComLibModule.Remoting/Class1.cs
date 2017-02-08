@@ -8,5 +8,6 @@ namespace HebianGu.ComLibModule.Remoting
 {
     public class Class1
     {
+
     }
 }

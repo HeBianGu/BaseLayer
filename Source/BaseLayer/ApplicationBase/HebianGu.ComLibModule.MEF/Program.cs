@@ -29,5 +29,8 @@ namespace HebianGu.ComLibModule.MEF
             Console.Read();
 
         }
+
+
+
     }
 }

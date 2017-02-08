@@ -1,0 +1,15 @@
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcPlay.XML
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcPlay.dll
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcPlay.pdb
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownCore.dll
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownInterface.dll
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownCore.pdb
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownCore.xml
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownInterface.pdb
+D:\下载\acdown-4.5.3\AcDown\AcPlay\bin\Debug\AcDownInterface.xml
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\AcPlay.csprojResolveAssemblyReference.cache
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\Kaedei.AcDown.UI.Components.AcPlay2.resources
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\Kaedei.AcDown.UI.Components.AcPlayItem.resources
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\AcPlay.csproj.GenerateResource.Cache
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\AcPlay.dll
+D:\下载\acdown-4.5.3\AcDown\AcPlay\obj\Debug\AcPlay.pdb

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace HebianGu.ComLibModule.API
 {
     /// <summary> 计算机控制 </summary>
-    partial class WindowsManager
+    public partial class WindowsManager
     {
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
         private struct TokPriv1Luid

@@ -1,0 +1,8 @@
+﻿
+如何让这个插件被AcDown加载？
+
+编译项目之后，你可以在【项目文件夹\bin\Debug\】文件夹下看到SampleDownloaderVB.dll文件。
+请将这个文件重命名(更改扩展名)为SampleDownloaderVB.acp
+
+如果您之前注册了.acp文件与AcDown的关联，请直接双击这个文件安装
+如果您之前没有注册过文件关联，请在AcDown主界面->插件中手动添加这个插件

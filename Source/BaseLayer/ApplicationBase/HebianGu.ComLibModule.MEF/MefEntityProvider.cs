@@ -36,7 +36,7 @@ namespace HebianGu.ComLibModule.MEF
             var _container = new CompositionContainer(catalog);
 
             _container.ComposeParts(provider);
-
+ 
             return provider;
         }
 

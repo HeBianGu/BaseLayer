@@ -4,19 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianguGL.HebianGu.ComLibModule.MathEx.Point3D
+namespace HebianGu.ComLibModule.MathHelper
 {
-    class Point3D
+    public class Point3D
     {
         #region - start 成员变量-
 
-        public double[] point3D;
+        public double[] point3D = new double[3];
 
         private const double E = 0.0000001f;
 
-        public Point3D(double x, double y, double z)
+        public Point3D(double x, double y, double z = 0)
         {
             point3D = new double[3] { x, y, z };
+        }
+
+        public Point3D()
+        {
+
         }
 
         public Point3D(Point3D vct)

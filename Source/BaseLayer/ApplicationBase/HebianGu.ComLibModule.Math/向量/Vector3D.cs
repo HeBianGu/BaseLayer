@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hebiangu.GL.DAL
+namespace HebianGu.ComLibModule.MathHelper
 {
     /// <summary>  三维向量类   </summary>  
     [Serializable]
@@ -15,7 +15,7 @@ namespace Hebiangu.GL.DAL
 
         private const string NORMALIZE_0 = "Can not normalize a vector when" + "it's magnitude is zero";
 
-        private const string INTERPOLATION_RANGE = "Control parameter must be a" +  "value between 0 & 1";
+        private const string INTERPOLATION_RANGE = "Control parameter must be a" + "value between 0 & 1";
 
         private const string ARGUMENT_VALUE = "Can not normalize a vector when" + "it's magnitude is zero";
 
@@ -23,11 +23,15 @@ namespace Hebiangu.GL.DAL
 
         #region - start 成员变量-
 
-        public double[] vector;
+        public double[] vector = new double[3];
         private const double E = 0.0000001f;
-        public Vector3D(double x, double y, double z)
+        public Vector3D(double x, double y, double z = default(double))
         {
             vector = new double[3] { x, y, z };
+        }
+        public Vector3D()
+        {
+
         }
         public Vector3D(Vector3D vct)
         {
@@ -61,13 +65,13 @@ namespace Hebiangu.GL.DAL
 
         #region  - start 成员方法 -
         /// <summary> 求向量长度 </summary> 
-        public  double Magnitude()
+        public double Magnitude()
         {
 
             return (double)Math.Sqrt(
 
-                  (this.X * this.X) 
-                + (this.Y * this.Y) 
+                  (this.X * this.X)
+                + (this.Y * this.Y)
                 + (this.Z * this.Z)
 
                 );
@@ -165,7 +169,7 @@ namespace Hebiangu.GL.DAL
         public void Roll(double degree)
         {
 
-            Vector3D v= Roll(this, degree);
+            Vector3D v = Roll(this, degree);
 
             this.X = v.X;
 
@@ -196,7 +200,7 @@ namespace Hebiangu.GL.DAL
 
         }
 
-        public  double SumComponents()
+        public double SumComponents()
         {
 
             return (this.X + this.Y + this.Z);
@@ -372,19 +376,7 @@ namespace Hebiangu.GL.DAL
         /// <summary> 点积:求夹角 </summary>
         public static double Dot(Vector3D v1, Vector3D v2)
         {
-
-            return
-
-            (
-
-               v1.X * v2.X +
-
-               v1.Y * v2.Y +
-
-               v1.Z * v2.Z
-
-            );
-
+            return v1.X * v2.X + v1.Y * v2.Y + v1.Z * v2.Z;
         }
 
         /// <summary> 求向量长度 </summary> 
@@ -488,7 +480,6 @@ namespace Hebiangu.GL.DAL
         {
 
             return
-
             (
 
                Math.Sqrt
@@ -531,11 +522,11 @@ namespace Hebiangu.GL.DAL
         public static Vector3D Pitch(Vector3D v1, double degree)
         {
 
-          double x = v1.X;
+            double x = v1.X;
 
-          double y = (v1.Y * Math.Cos(degree)) - (v1.Z * Math.Sin(degree));
+            double y = (v1.Y * Math.Cos(degree)) - (v1.Z * Math.Sin(degree));
 
-          double z = (v1.Y * Math.Sin(degree)) + (v1.Z * Math.Cos(degree));
+            double z = (v1.Y * Math.Sin(degree)) + (v1.Z * Math.Cos(degree));
 
             return new Vector3D(x, y, z);
 
@@ -642,11 +633,11 @@ namespace Hebiangu.GL.DAL
 
         public static readonly Vector3D zAxis = new Vector3D(0, 0, 1);
 
-        public static readonly Vector3D MinValue =  new Vector3D(Double.MinValue, Double.MinValue, Double.MinValue);
+        public static readonly Vector3D MinValue = new Vector3D(Double.MinValue, Double.MinValue, Double.MinValue);
 
-        public static readonly Vector3D MaxValue =  new Vector3D(Double.MaxValue, Double.MaxValue, Double.MaxValue);
+        public static readonly Vector3D MaxValue = new Vector3D(Double.MaxValue, Double.MaxValue, Double.MaxValue);
 
-        public static readonly Vector3D Epsilon =  new Vector3D(Double.Epsilon, Double.Epsilon, Double.Epsilon);
+        public static readonly Vector3D Epsilon = new Vector3D(Double.Epsilon, Double.Epsilon, Double.Epsilon);
 
         #endregion - 静态方法 end-
 

@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PDF\bin\Debug\HebianGu.ComLibModule.PDF.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PDF\bin\Debug\HebianGu.ComLibModule.PDF.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PDF\obj\Debug\HebianGu.ComLibModule.PDF.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.PDF\obj\Debug\HebianGu.ComLibModule.PDF.pdb

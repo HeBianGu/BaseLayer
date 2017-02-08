@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.MathEx
+namespace HebianGu.ComLibModule.MathHelper
 {
    public class ValidateNum
     {

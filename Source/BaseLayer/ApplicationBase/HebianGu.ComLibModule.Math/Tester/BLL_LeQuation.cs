@@ -1,11 +1,10 @@
-﻿using Hebiangu.GL.DAL;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.MathEx
+namespace HebianGu.ComLibModule.MathHelper
 {
     /// <summary> 线性代数业务类 </summary>
     public class BLL_LeQuation

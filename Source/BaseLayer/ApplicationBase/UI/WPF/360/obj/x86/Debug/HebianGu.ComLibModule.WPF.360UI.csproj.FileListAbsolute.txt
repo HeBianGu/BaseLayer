@@ -1,0 +1,17 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\bin\Debug\360UI.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\bin\Debug\360UI.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\HebianGu.ComLibModule.WPF.360UI.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\ButtonResource.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\MainWindow.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\MenuItemStyle.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\SysButtonStyle.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\TabControlStyle.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\App.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\MainWindow.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\App.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\360UI_MarkupCompile.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\360UI.g.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\_360UI.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\HebianGu.ComLibModule.WPF.360UI.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\360UI.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\360\obj\x86\Debug\360UI.pdb

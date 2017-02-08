@@ -1,0 +1,9 @@
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownCore.XML
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownCore.dll
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownCore.pdb
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownInterface.dll
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownInterface.pdb
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\bin\Debug\AcDownInterface.xml
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\obj\Debug\AcDownCore.csprojResolveAssemblyReference.cache
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\obj\Debug\AcDownCore.dll
+D:\下载\acdown-4.5.3\AcDown\AcDownCore\obj\Debug\AcDownCore.pdb

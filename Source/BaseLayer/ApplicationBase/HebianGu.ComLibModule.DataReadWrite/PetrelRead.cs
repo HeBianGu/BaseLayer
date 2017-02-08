@@ -128,13 +128,13 @@ namespace HebianGu.ComLibModule.DataReadWrite
             set { yCount = value; }
         }
 
-        TableKey parent = null;
+        //TableKey parent = null;
 
-        public TableKey Parent
-        {
-            get { return parent; }
-            set { parent = value; }
-        }
+        //public TableKey Parent
+        //{
+        //    get { return parent; }
+        //    set { parent = value; }
+        //}
         public void Build()
         {
             this.TableName = IndexNum.ToString(); ;

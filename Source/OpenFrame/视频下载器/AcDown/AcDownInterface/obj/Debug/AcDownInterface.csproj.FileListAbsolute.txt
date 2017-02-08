@@ -1,0 +1,12 @@
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\bin\Debug\AcDownInterface.XML
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\bin\Debug\AcDownInterface.dll
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\bin\Debug\AcDownInterface.pdb
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\AcDownInterface.csprojResolveAssemblyReference.cache
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\Kaedei.AcDown.Interface.Forms.FormLogin.resources
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\Kaedei.AcDown.Interface.Forms.FormMultiSelect.resources
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\Kaedei.AcDown.Interface.Forms.FormPassword.resources
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\Kaedei.AcDown.Interface.Forms.FormSingleSelect.resources
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\Kaedei.AcDown.Interface.Forms.FormWebbrowser.resources
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\AcDownInterface.csproj.GenerateResource.Cache
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\AcDownInterface.dll
+D:\下载\acdown-4.5.3\AcDown\AcDownInterface\obj\Debug\AcDownInterface.pdb

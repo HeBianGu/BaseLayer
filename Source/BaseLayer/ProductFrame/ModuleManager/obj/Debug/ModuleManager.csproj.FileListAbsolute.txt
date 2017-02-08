@@ -1,2 +1,6 @@
 C:\Users\Navylee\Desktop\DevTest\HebianGu\Source\BaseLayer\ProductFrame\ModuleManager\obj\Debug\ModuleManager.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\ModuleManager\obj\Debug\ModuleManager.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\ModuleManager.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\ModuleManager.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\ModuleManager\obj\Debug\ModuleManager.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ProductFrame\ModuleManager\obj\Debug\ModuleManager.pdb

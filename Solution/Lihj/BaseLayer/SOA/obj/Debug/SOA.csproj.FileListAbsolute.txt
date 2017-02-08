@@ -1,0 +1,4 @@
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\SOA\bin\Debug\SOA.dll
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\SOA\bin\Debug\SOA.pdb
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\SOA\obj\Debug\SOA.dll
+D:\WorkArea\DevTest\BaseLayer\Solution\Lihj\BaseLayer\SOA\obj\Debug\SOA.pdb
