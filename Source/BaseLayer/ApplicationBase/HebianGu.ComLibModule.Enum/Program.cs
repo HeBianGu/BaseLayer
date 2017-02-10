@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.EnumEx
+namespace HebianGu.ComLibModule.EnumHelper
 {
     class Program
     {

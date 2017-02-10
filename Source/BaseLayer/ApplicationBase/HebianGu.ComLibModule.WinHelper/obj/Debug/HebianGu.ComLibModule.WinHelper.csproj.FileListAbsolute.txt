@@ -1,0 +1,5 @@
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.WinHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.WinHelper.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WinHelper\obj\Debug\HebianGu.ComLibModule.WinHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WinHelper\obj\Debug\HebianGu.ComLibModule.WinHelper.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WinHelper\obj\Debug\HebianGu.ComLibModule.WinHelper.csprojResolveAssemblyReference.cache

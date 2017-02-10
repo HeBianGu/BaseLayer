@@ -24,7 +24,7 @@ using System.Threading.Tasks;
 
 namespace HebianGu.ComLibModule.CMD
 {
-    class CmdStr
+   public class CmdStr
     {
         /// <summary> DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID </summary>
         public const string CloseProcessByPid = "ntsd -c q -p {0}";
@@ -39,10 +39,10 @@ namespace HebianGu.ComLibModule.CMD
         public const string CmdShutDown = "/c shutdown -s -t {0}";
 
         /// <summary> 取消定时关机 "/c shutdown -a" </summary>
-        public const string CmdClearShutDown  = "/c shutdown -a";
+        public const string CmdClearShutDown = "/c shutdown -a";
 
         /// <summary>  解析域名ip地址 "/c ping {0}" </summary>
-        public const string CmdPing= "/c ping {0}";
+        public const string CmdPing = "/c ping {0}";
 
         /// <summary> 显示所有连接和侦听端口 "/c  netstat -an" </summary>
         public const string CmdNetStat = "/c  netstat -an";
@@ -61,5 +61,14 @@ namespace HebianGu.ComLibModule.CMD
 
         /// <summary> 打开系统的注册表 "/c  regedit" </summary>
         public const string CmdRegedit = "/c  regedit";
+
+        /// <summary> 我的电脑 "/c  regedit" </summary>
+        public const string CmdMyCompute = "explorer.exe ::{20D04FE0-3AEA-1069-A2D8-08002B30309D}";
+
+        /// <summary> 回收站 "/c  regedit" </summary>
+        public const string CmdDushbin = "explorer.exe ::{645FF040-5081-101B-9F08-00AA002F954E}";
+
+        /// <summary> 控制面板 "/c  regedit" </summary>
+        public const string CmdControl = "control";
     }
 }

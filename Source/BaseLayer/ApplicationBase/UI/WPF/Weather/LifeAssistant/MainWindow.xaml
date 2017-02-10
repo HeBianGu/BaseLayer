@@ -725,7 +725,7 @@
 							<ColumnDefinition Width="Auto" />
 							<ColumnDefinition />
 						</Grid.ColumnDefinitions>
-                        <View:WeatherControl Height="120" VerticalAlignment="Top" Margin="10,0,0,0" HorizontalAlignment="Left"/>
+                        <View:WeatherControl Height="120" VerticalAlignment="Top" Margin="10,0,0,0" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="144"/>
                         <Grid Grid.Column="1">
 							<Grid.RowDefinitions>
 								<RowDefinition Height="Auto" />

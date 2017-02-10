@@ -61,7 +61,7 @@ namespace HebianGu.ComLibModule.CMD
         }
 
         /// <summary> 运行DOS命令  DOS关闭进程命令(ntsd -c q -p PID )PID为进程的ID   </summary>   
-        public static void RunCmd(string command, EventHandler endEvent = null)
+        public static void RunCmd(string command, EventHandler endEvent = null,bool isCreateWindow=false)
         {
             //  啟動一個獨立進程   
             System.Diagnostics.Process p = new System.Diagnostics.Process();
@@ -71,7 +71,7 @@ namespace HebianGu.ComLibModule.CMD
             p.StartInfo.RedirectStandardInput = false;
             p.StartInfo.RedirectStandardOutput = false;
             p.StartInfo.RedirectStandardError = false;
-            p.StartInfo.CreateNoWindow = false;
+            p.StartInfo.CreateNoWindow = isCreateWindow;
 
             if (endEvent != null)
             {

@@ -52,9 +52,11 @@ namespace HebianGu.ObjectBase.ObjectHelper
         /// <summary> 检查指定类型中是否包含无参数构造函数 </summary>
         public static bool IsHaveNoParamConstruct(this object obj, Type[] parameters)
         {
-           return obj.IsHaveParamConstruct(Type.EmptyTypes);
+            return obj.IsHaveParamConstruct(Type.EmptyTypes);
         }
 
+
+        /// <summary> 类型名称 </summary>
         public static string NameOf(this object obj)
         {
             Type t = obj.GetType();
@@ -126,6 +128,36 @@ namespace HebianGu.ObjectBase.ObjectHelper
             }
         }
 
+        /// <summary> 是否包含指定事件 </summary>
+        public static bool IsHaveRegisterEvent(this object obj, string eventName,string registerMethodName)
+        {
+            Type t = obj.GetType();
+
+            var ev = t.GetEvent(eventName);
+
+            Delegate[] ds = ev.GetObjectEventList(eventName);
+
+           return ds.ToList().Exists(l => l.Method.Name == registerMethodName);
+        }
+
+        ///// <summary> 是否包含指定事件 </summary>
+        //public static bool IsHaveRegisterEvent(this Type t, string eventName, string registerMethodName)
+        //{
+        //    var ev = t.GetEvent(eventName);
+
+        //    var eventHandle = t.GetEvent(eventName);
+
+        //    if (eventHandle == null) return false;
+
+        //    //FieldInfo fieldInfo = (t.GetField(p_EventName, BindingFlags.Static | BindingFlags.NonPublic));
+
+        //    MethodInfo[] ms = eventHandle.GetOtherMethods();
+
+        //    return ms.ToList().Exists(l => l.Name == registerMethodName);
+
+        //    return false;
+        //}
+
         /// <summary> 注册事件 </summary>
         public static void AddEvent(this object obj, string eventName, Delegate dele)
         {
@@ -141,7 +173,7 @@ namespace HebianGu.ObjectBase.ObjectHelper
         {
             var e = obj.GetType().GetEvent(eventName);
 
-            Delegate dele= Delegate.CreateDelegate(e.DeclaringType, method);
+            Delegate dele = Delegate.CreateDelegate(e.DeclaringType, method);
 
             obj.AddEvent(eventName, dele);
         }
@@ -160,6 +192,24 @@ namespace HebianGu.ObjectBase.ObjectHelper
             if (_EventList == null) return null;
 
             return _EventList.GetInvocationList();
+        }
+
+        /// <summary> 获取类型静态事件的所有注册委托 </summary> 
+        public static Delegate[] GetStaticEventList(this Type t, string p_EventName)
+        {
+            var _PropertyInfo = t.GetEvent(p_EventName);
+
+            if (_PropertyInfo == null) return null;
+
+            //FieldInfo fieldInfo = (t.GetField(p_EventName, BindingFlags.Static | BindingFlags.NonPublic));
+
+            _PropertyInfo.GetOtherMethods();
+            //Delegate _EventList = (Delegate)_PropertyInfo.GetValue(null);
+
+            //if (_EventList == null) return null;
+
+            //return _EventList.GetInvocationList();
+            return null;
         }
 
     }

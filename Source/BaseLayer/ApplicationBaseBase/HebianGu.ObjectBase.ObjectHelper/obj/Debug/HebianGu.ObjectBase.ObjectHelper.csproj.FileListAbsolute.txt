@@ -4,3 +4,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.Obje
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.ObjectHelper.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\obj\Debug\HebianGu.ObjectBase.ObjectHelper.exe
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ObjectBase.ObjectHelper.exe.config

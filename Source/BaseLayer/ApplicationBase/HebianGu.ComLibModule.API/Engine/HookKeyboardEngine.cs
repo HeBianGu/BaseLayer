@@ -23,7 +23,7 @@ namespace HebianGu.ComLibModule.API
 
         /// <summary> 键盘检测活动将被称为每次回调函数。 </summary>
         private static int KeyboardHookProc(int nCode, Int32 wParam, IntPtr lParam)
-        {
+         {
             //表示如有underlaing事件设置e.Handled标志
             bool handled = false;
 

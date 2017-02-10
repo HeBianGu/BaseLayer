@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.BreadCrumbNode breadCrumbNode2 = new DevExpress.XtraEditors.BreadCrumbNode();
+            DevExpress.XtraEditors.BreadCrumbNode breadCrumbNode1 = new DevExpress.XtraEditors.BreadCrumbNode();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.propertyGridControl1 = new DevExpress.XtraVerticalGrid.PropertyGridControl();
             this.winExplorerView = new DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView();
             this.gridControl = new DevExpress.XtraGrid.GridControl();
-            this.editBreadCrumb = new DevExpress.XtraEditors.BreadCrumbEdit();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.editBreadCrumb = new DevExpress.XtraEditors.BreadCrumbEdit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             this.splitContainerControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.propertyGridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.editBreadCrumb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editBreadCrumb.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl1
@@ -50,6 +50,7 @@
             this.splitContainerControl1.CollapsePanel = DevExpress.XtraEditors.SplitCollapsePanel.Panel1;
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             this.splitContainerControl1.Panel1.Controls.Add(this.propertyGridControl1);
             this.splitContainerControl1.Panel1.Text = "Panel1";
@@ -57,8 +58,8 @@
             this.splitContainerControl1.Panel2.Controls.Add(this.editBreadCrumb);
             this.splitContainerControl1.Panel2.Controls.Add(this.gridControl);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(728, 422);
-            this.splitContainerControl1.SplitterPosition = 253;
+            this.splitContainerControl1.Size = new System.Drawing.Size(971, 528);
+            this.splitContainerControl1.SplitterPosition = 250;
             this.splitContainerControl1.TabIndex = 3;
             this.splitContainerControl1.Text = "splitContainerControl1";
             // 
@@ -66,9 +67,10 @@
             // 
             this.propertyGridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.propertyGridControl1.Location = new System.Drawing.Point(0, 0);
+            this.propertyGridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.propertyGridControl1.Name = "propertyGridControl1";
             this.propertyGridControl1.SelectedObject = this.winExplorerView;
-            this.propertyGridControl1.Size = new System.Drawing.Size(253, 422);
+            this.propertyGridControl1.Size = new System.Drawing.Size(334, 528);
             this.propertyGridControl1.TabIndex = 0;
             // 
             // winExplorerView
@@ -82,29 +84,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gridControl.Location = new System.Drawing.Point(0, 37);
+            this.gridControl.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl.Location = new System.Drawing.Point(0, 46);
             this.gridControl.MainView = this.winExplorerView;
+            this.gridControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(347, 424);
+            this.gridControl.Size = new System.Drawing.Size(468, 530);
             this.gridControl.TabIndex = 0;
             this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.winExplorerView});
-            // 
-            // editBreadCrumb
-            // 
-            this.editBreadCrumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.editBreadCrumb.Location = new System.Drawing.Point(1, 9);
-            this.editBreadCrumb.Name = "editBreadCrumb";
-            this.editBreadCrumb.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            breadCrumbNode2.Caption = "Root";
-            breadCrumbNode2.Value = "Root";
-            this.editBreadCrumb.Properties.Nodes.AddRange(new DevExpress.XtraEditors.BreadCrumbNode[] {
-            breadCrumbNode2});
-            this.editBreadCrumb.Properties.SelectedNode = breadCrumbNode2;
-            this.editBreadCrumb.Size = new System.Drawing.Size(346, 22);
-            this.editBreadCrumb.TabIndex = 1;
             // 
             // navBarControl1
             // 
@@ -113,9 +101,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1});
-            this.navBarControl1.Location = new System.Drawing.Point(358, 3);
+            this.navBarControl1.Location = new System.Drawing.Point(482, 4);
+            this.navBarControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.Size = new System.Drawing.Size(109, 390);
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 145;
+            this.navBarControl1.Size = new System.Drawing.Size(145, 488);
             this.navBarControl1.TabIndex = 2;
             this.navBarControl1.Text = "navBarControl1";
             // 
@@ -125,12 +115,31 @@
             this.navBarGroup1.Expanded = true;
             this.navBarGroup1.Name = "navBarGroup1";
             // 
+            // editBreadCrumb
+            // 
+            this.editBreadCrumb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.editBreadCrumb.Location = new System.Drawing.Point(1, 11);
+            this.editBreadCrumb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editBreadCrumb.Name = "editBreadCrumb";
+            this.editBreadCrumb.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            breadCrumbNode1.Caption = "Root";
+            breadCrumbNode1.Value = "Root";
+            this.editBreadCrumb.Properties.Nodes.AddRange(new DevExpress.XtraEditors.BreadCrumbNode[] {
+            breadCrumbNode1});
+            this.editBreadCrumb.Properties.ReadOnly = false;
+            this.editBreadCrumb.Properties.SelectedNode = breadCrumbNode1;
+            this.editBreadCrumb.Size = new System.Drawing.Size(466, 26);
+            this.editBreadCrumb.TabIndex = 1;
+            // 
             // DemoWinExplorer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 422);
+            this.ClientSize = new System.Drawing.Size(971, 528);
             this.Controls.Add(this.splitContainerControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DemoWinExplorer";
             this.Text = "DemoWinExplorer";
             this.Load += new System.EventHandler(this.DemoWinExplorer_Load);
@@ -139,8 +148,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.propertyGridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.winExplorerView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.editBreadCrumb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.editBreadCrumb.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

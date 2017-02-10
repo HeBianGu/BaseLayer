@@ -7,7 +7,7 @@
     <ProjectGuid>{3C7A51F6-3BC2-427D-9F02-9D6B0788301C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.FileEx</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.FileHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.File</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -37,6 +37,10 @@
     <Reference Include="HebianGu.ObjectBase.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

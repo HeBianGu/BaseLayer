@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.EnumEx
+namespace HebianGu.ComLibModule.EnumHelper
 {
     /// <summary> 公用枚举扩展类  --   Add by lihaijun 2015.09.30 11：42 </summary>
     public static partial class EnumHelper

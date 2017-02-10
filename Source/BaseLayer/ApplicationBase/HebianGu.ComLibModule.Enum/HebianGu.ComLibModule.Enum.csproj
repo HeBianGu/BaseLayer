@@ -7,7 +7,7 @@
     <ProjectGuid>{C681B403-4A6B-4094-9187-81317012B749}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.Enum</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.EnumHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Enum</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

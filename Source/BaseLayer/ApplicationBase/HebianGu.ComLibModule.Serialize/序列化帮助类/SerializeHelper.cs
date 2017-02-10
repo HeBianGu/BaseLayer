@@ -4,7 +4,7 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 //using System.Runtime.Serialization.Json;
-using System.Runtime.Serialization.Formatters.Soap;
+//using System.Runtime.Serialization.Formatters.Soap;
 using System.Runtime.Serialization.Formatters.Binary;
 
 namespace DotNet.Utilities
@@ -126,35 +126,35 @@ namespace DotNet.Utilities
         /// SoapFormatter序列化
         /// </summary>
         /// <param name="item">对象</param>
-        public string ToSoap<T>(T item)
-        {
-            SoapFormatter formatter = new SoapFormatter();
-            using (MemoryStream ms = new MemoryStream())
-            {
-                formatter.Serialize(ms, item);
-                ms.Position = 0;
-                XmlDocument xmlDoc = new XmlDocument();
-                xmlDoc.Load(ms);
-                return xmlDoc.InnerXml;
-            }
-        }
+        //public string ToSoap<T>(T item)
+        //{
+        //    SoapFormatter formatter = new SoapFormatter();
+        //    using (MemoryStream ms = new MemoryStream())
+        //    {
+        //        formatter.Serialize(ms, item);
+        //        ms.Position = 0;
+        //        XmlDocument xmlDoc = new XmlDocument();
+        //        xmlDoc.Load(ms);
+        //        return xmlDoc.InnerXml;
+        //    }
+        //}
 
         /// <summary>
         /// SoapFormatter反序列化
         /// </summary>
         /// <param name="str">字符串序列</param>
-        public T FromSoap<T>(string str)
-        {
-            XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.LoadXml(str);
-            SoapFormatter formatter = new SoapFormatter();
-            using (MemoryStream ms = new MemoryStream())
-            {
-                xmlDoc.Save(ms);
-                ms.Position = 0;
-                return (T)formatter.Deserialize(ms);
-            }
-        }
+        //public T FromSoap<T>(string str)
+        //{
+        //    XmlDocument xmlDoc = new XmlDocument();
+        //    xmlDoc.LoadXml(str);
+        //    SoapFormatter formatter = new SoapFormatter();
+        //    using (MemoryStream ms = new MemoryStream())
+        //    {
+        //        xmlDoc.Save(ms);
+        //        ms.Position = 0;
+        //        return (T)formatter.Deserialize(ms);
+        //    }
+        //}
         #endregion
 
         #region BinaryFormatter序列化

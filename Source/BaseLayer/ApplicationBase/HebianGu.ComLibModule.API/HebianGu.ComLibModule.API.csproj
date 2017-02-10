@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ComLibModule.API</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.API</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -51,12 +53,14 @@
     <Compile Include="KeyHelper\KeyHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemHelper\IconHelper.cs" />
     <Compile Include="WindowsManager\WindowsManager.cs" />
     <Compile Include="钩子API\摄像头控制\VideoEntity.cs" />
     <Compile Include="钩子API\摄像头控制\VideoAPI.cs" />
     <Compile Include="钩子API\摄像头控制\VideoService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="KeyHelper\键盘操作说明.dgml" />
     <None Include="WindowAPI调用.dgml" />
     <None Include="钩子API\摄像头控制\摄像头说明.dgml" />
