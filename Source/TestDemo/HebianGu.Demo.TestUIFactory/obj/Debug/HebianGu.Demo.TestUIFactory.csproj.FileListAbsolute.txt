@@ -10,7 +10,6 @@ E:\WorkArea\DevTest\HebianGu\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Deb
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.dll.config
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.dll
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\bin\Debug\HebianGu.Demo.TestUIFactory.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.MainFormToButton.resources
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.Properties.Resources.resources
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csproj.GenerateResource.Cache

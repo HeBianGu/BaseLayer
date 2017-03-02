@@ -15,7 +15,7 @@ namespace HebianGu.ComLibMethods.UnitTester
 
             Thread.Sleep(3000);
 
-            WindowsManager.Lock();
+            //WindowsManager.Lock();
 
             Console.WriteLine("锁定完成！");
 

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AdrHookDemo</RootNamespace>
     <AssemblyName>AdrHookDemo</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -35,8 +35,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HebianGu.ComLibModule.API">
-      <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.API.dll</HintPath>
+    <Reference Include="HebianGu.ComLibModule.API, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.API.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

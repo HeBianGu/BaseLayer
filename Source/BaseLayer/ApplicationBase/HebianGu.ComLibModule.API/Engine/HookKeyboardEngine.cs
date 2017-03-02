@@ -70,7 +70,6 @@ namespace HebianGu.ComLibModule.API
                     s_KeyUp.Invoke(null, e);
                     handled = handled || e.Handled;
                 }
-
             }
 
             //如果事件在应用程序处理的不换手到其他听众
@@ -92,10 +91,9 @@ namespace HebianGu.ComLibModule.API
 
                 //为了避免GC把它清理干净。
                 s_KeyboardDelegate = KeyboardHookProc;
+
                 //安装钩子
-                s_KeyboardHookHandle = HookApi.SetWindowsHookEx(
-                    HookType.WH_KEYBOARD_LL,
-                    s_KeyboardDelegate, mo, 0);
+                s_KeyboardHookHandle = HookApi.SetWindowsHookEx(HookType.WH_KEYBOARD_LL, s_KeyboardDelegate, mo, 0);
 
                 // Marshal.GetHINSTANCE(Assembly.GetExecutingAssembly().GetModules()[0])
 

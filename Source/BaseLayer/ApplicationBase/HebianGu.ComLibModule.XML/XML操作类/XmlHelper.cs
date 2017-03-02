@@ -1,5 +1,6 @@
 ﻿using System.Xml;
 using System.Data;
+using System.IO;
 
 namespace DotNet.Utilities
 {
@@ -30,8 +31,8 @@ namespace DotNet.Utilities
         /// <param name="xmlFilePath">Xml文件的相对路径</param>
         public XmlHelper(string xmlFilePath)
         {
-            //获取XML文件的绝对路径
-            _filePath = SysHelper.GetPath(xmlFilePath);
+            ////获取XML文件的绝对路径
+            //_filePath = SysHelper.GetPath(xmlFilePath);
         }
         #endregion
 
@@ -45,7 +46,7 @@ namespace DotNet.Utilities
             //创建一个XML对象
             _xml = new XmlDocument();
 
-            if (DirFile.IsExistFile(_filePath))
+            if (File.Exists(_filePath))
             {
                 //加载XML文件
                 _xml.Load(this._filePath);
@@ -198,8 +199,8 @@ namespace DotNet.Utilities
             //定义变量，表示XML文件的绝对路径
             string filePath = "";
 
-            //获取XML文件的绝对路径
-            filePath = SysHelper.GetPath(xmlFilePath);
+            ////获取XML文件的绝对路径
+            //filePath = SysHelper.GetPath(xmlFilePath);
 
             //创建XmlDocument对象
             XmlDocument xmlDocument = new XmlDocument();

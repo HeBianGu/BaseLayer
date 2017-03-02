@@ -70,5 +70,21 @@ namespace HebianGu.ComLibModule.CMD
 
         /// <summary> 控制面板 "/c  regedit" </summary>
         public const string CmdControl = "control";
+
+        /// <summary> 休眠计算机 </summary>
+        public const string CmdSleep = "shutdown /h";
+
+        /// <summary> 画图工具 </summary>
+        public const string Cmdmspaint = "mspaint";
+
+        /// <summary> 远程连接 </summary>
+        public const string Cmdmstsc= "mstsc";
+
+        /// <summary> 记事本 </summary>
+        public const string Cmdnotepad= "notepad";
+
+        /// <summary> 截图工具 </summary>
+        public const string Cmdsnippingtool = "snippingtool";
+
     }
 }

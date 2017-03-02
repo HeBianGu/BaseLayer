@@ -15,10 +15,10 @@
     	<Grid Grid.Row="1" Background="#FF3487FF">
             <Button x:Name="btn_home" Content="" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="64" Height="64" Click="btn_home_Click">
                 <Button.Background>
-                    <ImageBrush ImageSource="images/home.png"/>
+                    <ImageBrush ImageSource="image/home.png"/>
                 </Button.Background>
             </Button>
-            <Image HorizontalAlignment="Center" Height="64" Margin="0" VerticalAlignment="Top" Width="64" Source="images/home.png" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown"/>
+            <Image HorizontalAlignment="Center" Height="64" Margin="0" VerticalAlignment="Top" Width="64" Source="image/home.png" PreviewMouseLeftButtonDown="Image_PreviewMouseLeftButtonDown"/>
         </Grid>
     </Grid>
 </Page>

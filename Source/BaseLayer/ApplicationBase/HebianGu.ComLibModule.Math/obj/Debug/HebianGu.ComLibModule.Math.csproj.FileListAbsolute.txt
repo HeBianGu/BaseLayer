@@ -10,4 +10,3 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.MathHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.MathHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.MathHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.MathHelper.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Math\obj\Debug\HebianGu.ComLibModule.Math.csprojResolveAssemblyReference.cache

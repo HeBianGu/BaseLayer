@@ -13,15 +13,42 @@ namespace HebianGu.ComLibModule.API
     {
         static void Main()
         {
-            Console.WriteLine("准备锁定计算机！");
+            //Console.WriteLine("准备锁定计算机！");
 
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
 
-            WindowsManager.Lock();
+            ////WindowsAPI..Instance.Lock();
 
-            Console.WriteLine("锁定完成！");
+            //Console.WriteLine("锁定完成！");
+
+            //Console.Read();
+
+            
+
+            HookKeyboardEngine.KeyUp += HookKeyboardEngine_KeyUp;
+
+            HookKeyboardEngine.KeyDown += HookKeyboardEngine_KeyDown;
+
+            HookKeyboardEngine.KeyPress += HookKeyboardEngine_KeyPress;
 
             Console.Read();
         }
+
+        private static void HookKeyboardEngine_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void HookKeyboardEngine_KeyDown(object sender, KeyEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void HookKeyboardEngine_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            string ss = string.Empty;
+        }
+        
     }
 }

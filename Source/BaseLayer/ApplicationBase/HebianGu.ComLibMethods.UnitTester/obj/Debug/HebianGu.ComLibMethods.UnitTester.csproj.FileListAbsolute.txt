@@ -8,4 +8,9 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.ObjectHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\obj\Debug\HebianGu.ComLibMethods.UnitTester.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ComLibModule.Serialize.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ComLibModule.Serialize.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ComLibModule.XML.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ComLibModule.XML.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.Factory.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.Factory.pdb

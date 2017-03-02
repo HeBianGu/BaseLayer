@@ -50,7 +50,15 @@ namespace HebianGu.ComLibModule.API
 
             if (Path.HasExtension(p_Path))
             {
-                return Icon.ExtractAssociatedIcon(p_Path);
+                try
+                {
+                    return Icon.ExtractAssociatedIcon(p_Path);
+                }
+                catch
+                {
+                    return null;
+                }
+          
             }
             else
             {
