@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigFile>
+  <GroupItems>
+    <Model Id="1" Name="jim" Value="boy">Model</Model>
+    <Model Id="2" Name="Tom" Value="boy">Model</Model>
+    <Model Id="3" Name="Lucy" Value="gril">Model</Model>
+  </GroupItems>
+</ConfigFile>

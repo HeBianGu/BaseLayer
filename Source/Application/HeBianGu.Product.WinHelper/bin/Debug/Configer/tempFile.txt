@@ -1,0 +1,1 @@
+ internal static List<string> ExceptShowFile =new List<string> { ".ini" };

@@ -1,0 +1,9 @@
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\bin\Debug\license.txt
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\bin\Debug\WeifenLuo.WinFormsUI.Docking.pdb
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WinFormsUI.csprojResolveAssemblyReference.cache
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Resources.resources
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.Strings.resources
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WinFormsUI.csproj.GenerateResource.Cache
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\下载\dockpanelsuite-code-115-trunk\dockpanelsuite-code-115-trunk\WinFormsUI\obj\Debug\WeifenLuo.WinFormsUI.Docking.pdb

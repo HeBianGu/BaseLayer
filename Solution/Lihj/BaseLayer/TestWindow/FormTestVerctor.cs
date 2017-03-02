@@ -28,9 +28,13 @@ namespace TestWindow
 
             for (int i = 0; i < 100; i++)
             {
-                Vector3D p2 = new Vector3D(i * 80, 1 / (i+1));
+                //Vector3D p2 = new Vector3D(i * 80, 1 / (i+1));
+
+                Vector3D p2 = new Vector3D(i*10, i*10);
 
                 first.Add(p2);
+
+                // HTodo  ：说明 
 
             }
 

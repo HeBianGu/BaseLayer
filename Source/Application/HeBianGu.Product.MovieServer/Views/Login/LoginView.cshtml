@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "登录页面";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    @*<title>登录</title>*@
+</head>
+<body style="background-color:#f4f4f4;" id="indexDv">
+
+    <h2>登录</h2>
+    <div>
+        <div>
+            <p>用户名：<p />
+        </div>
+        <div>
+            <input id="username" placeholder="用户名/邮箱" />
+        </div>
+
+        <div>
+            <p>密码：</p>
+        </div>
+        <div>
+            <input id="password" placeholder="登录密码" />
+        </div>
+
+        <div>
+            <p>
+                <a href="javascript:;">立即登录</a>
+                <button class="" id="btn">登录</button>
+            </p>
+        </div>
+    </div>
+    @*添加引用*@
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Content/Js/LoginViewModel.js"></script>
+    <script type="text/javascript">
+        $("#btn").click(function () {
+            if ($.trim($("#username").val()) == "") {
+                alert("请输入手机号");
+                $("#username").focus();
+                return;
+            }
+
+            if ($.trim($("#password").val()) == "") {
+
+                alert("请输入密码");
+                $("#password").focus();
+                return;
+            }
+        });
+    </script>
+</body>
+</html>

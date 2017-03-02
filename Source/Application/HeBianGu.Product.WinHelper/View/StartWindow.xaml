@@ -1,0 +1,255 @@
+﻿<Window x:Class="HebianGu.Product.WinHelper.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HebianGu.Product.WinHelper"
+        mc:Ignorable="d"
+         Title="HeBianGu系统工具" Height="703.907" Width="264" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" Icon="/HebianGu.Product.WinHelper;component/skin/Feather.ico" Closing="Window_Closing" ShowInTaskbar="False" Topmost="True">
+
+    <Window.Resources>
+        <!--创建菜单资源-->
+        <ContextMenu x:Key="sampleContextMenu"  >
+            <MenuItem Header="添加文件" Style="{DynamicResource MenuItemStyle1}"  Click="Click_AddFile" />
+            <MenuItem Header="添加文件夹" Style="{DynamicResource MenuItemStyle1}"  Click="Click_AddFolder"/>
+            <MenuItem Header="粘贴" Style="{DynamicResource MenuItemStyle1}"  Click="Copy_AddFolder"/>
+            <MenuItem Header="删除" Style="{DynamicResource MenuItemStyle1}"  Click="Click_Delete"/>
+        </ContextMenu>
+
+        <ContextMenu x:Key="notepadContextMenu"  >
+            <MenuItem Header="添加" Style="{DynamicResource MenuItemStyle1}"  Click="AddNotePad_Click" />
+            <MenuItem Header="删除" Style="{DynamicResource MenuItemStyle1}"  Click="DeleteNotePad_Click"/>
+            <MenuItem Header="归档" Style="{DynamicResource MenuItemStyle1}"  Click="ClearNotePad_Click"/>
+        </ContextMenu>
+
+        <ContextMenu x:Key="clipboardContextMenu"  >
+            <MenuItem Header="复制" Style="{DynamicResource MenuItemStyle1}"  Click="Copyclipboard_Click" />
+            <MenuItem Header="打开" Style="{DynamicResource MenuItemStyle1}"  Click="Openclipboard_Click"/>
+            <MenuItem Header="删除" Style="{DynamicResource MenuItemStyle1}"  Click="Deleteclipboard_Click"/>
+        </ContextMenu>
+
+        <!--创建画笔资源-->
+        <LinearGradientBrush x:Key="MyBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#CFFFFFFF"/>
+            <GradientStop Color="#FF7EBDD8" Offset="1"/>
+        </LinearGradientBrush>
+
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Windows Logo.png"/>
+    </Window.Background>
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/skin/frame.jpg" TileMode="Tile" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="49*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="106*"/>
+            <RowDefinition Height="304*"/>
+            <RowDefinition Height="264*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+
+        <!--设置背景色-->
+
+        <!--设置按钮-->
+        <Button  HorizontalAlignment="Left" Margin="6,3,0,77.6"  Width="27" Name="icoButton" Style="{DynamicResource MNormalButtonStyle}"  Grid.Column="0" BorderThickness="0" >
+            <Button.Background>
+                <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/skin/Feather.ico"/>
+            </Button.Background>
+        </Button>
+        <Button Content="x" HorizontalAlignment="Right" Margin="0,-2,-1,77.6" Style="{DynamicResource SysButtonStyle}" Width="32" Name="closeButton" Click="closeButton_Click" Grid.Column="1" />
+        <Button Content="max" HorizontalAlignment="Right" Margin="0,-2,34,77.6" Style="{DynamicResource MaxButtonStyle}" Width="31" Name="maxButton" Click="maxButton_Click" Grid.Column="1" >
+            <Button.Background>
+                <ImageBrush ImageSource="../skin/Button/MAX.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Content="mni" HorizontalAlignment="Right" Margin="0,-2,64,77.6" Style="{DynamicResource MaxButtonStyle}" Width="31" Name="mniButton" Click="mniButton_Click" Grid.Column="1" >
+            <Button.Background>
+                <ImageBrush ImageSource="../skin/Button/MNI.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="menuButton" HorizontalAlignment="Right" Margin="0,-2,95,77.6" Style="{DynamicResource MButtonStyle}" Width="23" Click="menuButton_Click" Grid.Column="1" >
+            <Button.Background>
+                <ImageBrush ImageSource="../skin/Button/M.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+
+        <Popup x:Name="Menu" AllowsTransparency="True" Margin="0,-2,-1,6.6" PlacementTarget="{Binding ElementName=grid}"  StaysOpen="False" PopupAnimation="Scroll" Grid.ColumnSpan="2">
+            <Grid Height="113.667" Width="150" Margin="0" HorizontalAlignment="Left">
+                <Border BorderThickness="1" CornerRadius="3" Background="#FFEFEFEF" Margin="3">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="0" Opacity="0.495"/>
+                    </Border.Effect>
+                    <StackPanel Margin="0,4">
+                        <MenuItem Header="添加文件" Style="{DynamicResource MenuItemStyle}" Click="Click_AddFile" />
+                        <MenuItem Header="添加文件夹" Style="{DynamicResource MenuItemStyle}"  Click="Click_AddFolder" />
+                        <MenuItem Header="关 于"/>
+                        <MenuItem Header="退 出"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Popup>
+
+        <!--头像-->
+        <Rectangle Margin="0,24,14,8.6" Grid.Row="0" Grid.RowSpan="1" Stroke="Black" HorizontalAlignment="Right" Width="75" StrokeThickness="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/skin/Rabbit.ico" Stretch="Uniform"/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!--子网格-->
+        <Grid Grid.RowSpan="3" Grid.ColumnSpan="2"  Background="{Binding MyBrush}" Margin="0,1.4,0,30" Grid.Row="1" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="179*"/>
+            </Grid.RowDefinitions>
+
+            <Border BorderBrush="White" BorderThickness="0,1" Margin="0,1,1,0.4" Grid.ColumnSpan="1" Grid.RowSpan="1">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#A1C7CFDA" Offset="0.991"/>
+                        <GradientStop Color="#B5F1F1F1"/>
+                        <GradientStop Color="#FFD2D2D2" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Button ToolTip="我的电脑" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="0,3,0,2.4"  Name="mycompute" BorderThickness="0" Click="mycompute_Click" RenderTransformOrigin="0.5,0.505" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/skin/ico/360DiagnoseScan_413.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button ToolTip="控制面板" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="22,3,0,2.4"  Name="mycontrol" BorderThickness="0" Click="mycontrol_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="../skin/ico/ico_dsmain.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="回收站" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="44,3,0,2.4"  Name="mydushbin" BorderThickness="0" Click="mydushbin_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="../skin/ico/ico_RubbishCleaner.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="注册表" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="66,3,0,2.4"   Name="myregedit" BorderThickness="0" Click="myregedit_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Microsoft Frontpage.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="远程连接" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="88,3,0,2.4"  Name="mymstsc" BorderThickness="0" Click="mymstsc_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/remote_desktop.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="网络测速" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="110,3,0,2.4"  Name="mynetspeed" BorderThickness="0" Click="mynetspeed_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Flashget.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="锁定计算机" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="132,3,0,2.4"  Name="mylock" BorderThickness="0" Click="mylock_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/skin/csbt/AavanceTools_360passwordcheck.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="打开记事本" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="154,3,0,2.4"  Name="mynotepad" BorderThickness="0" Click="mynotepad_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Notepad.png"/>
+                </Button.Background>
+            </Button>
+
+            <Button  ToolTip="启动浏览器" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="176,3,0,2.4"  Name="explorer" BorderThickness="0" Click="myexplorer_Click" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Internet Explorer.png"/>
+                </Button.Background>
+            </Button>
+            <Button  ToolTip="截图工具" Style="{DynamicResource MNormalButtonStyle}"  HorizontalAlignment="Left" Margin="198,3,0,0"  Name="snippingtool" BorderThickness="0" Click="snippingtool_Click" Height="21" VerticalAlignment="Top" >
+                <Button.Background>
+                    <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Hammer.png"/>
+                </Button.Background>
+            </Button>
+
+
+
+            <TabControl AllowDrop="True" Margin="0" Grid.Row="1" TabStripPlacement="Left" BorderThickness="0" Background="Transparent" >
+                <TabItem Header="常用文件"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Mail 2.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="listBox"  Style="{DynamicResource styledItems}"  ContextMenu="{StaticResource sampleContextMenu}"  ItemsSource="{Binding BkSource,Mode=TwoWay}" MouseRightButtonUp="listBox_MouseRightButtonUp" MouseDoubleClick="listBox_MouseDoubleClick" DragEnter="listBox_DragEnter" Drop="listBox_Drop" DragOver="listBox_DragOver" PreviewMouseMove="listBox_PreviewMouseMove" QueryContinueDrag="listBox_QueryContinueDrag" >
+                    </ListBox>
+                </TabItem>
+                <TabItem Header="记事本"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Style.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="notepad"  Style="{DynamicResource styledItems3}"  ContextMenu="{StaticResource notepadContextMenu}"  ItemsSource="{Binding NotePadSource,Mode=TwoWay}" MouseDoubleClick="notepad_MouseDoubleClick"  >
+                    </ListBox>
+                </TabItem>
+
+                <TabItem Header="剪贴板"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Documents.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="clipboard"  Style="{DynamicResource styledItems4}"  ContextMenu="{StaticResource clipboardContextMenu}"  ItemsSource="{Binding ClipBoradSource}" MouseDoubleClick="clipboard_MouseDoubleClick"   >
+                    </ListBox>
+                </TabItem>
+
+                <TabItem Header="最近文档" Style="{DynamicResource TabItemStyle}"   ToolTip="最近文档" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Pictures.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="last"  Style="{DynamicResource styledItems}"   ItemsSource="{Binding LastSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
+                    </ListBox>
+                </TabItem>
+                <TabItem Header="系统资源" Style="{DynamicResource TabItemStyle}"   ToolTip="系统资源" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Earth.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="sys"  Style="{DynamicResource styledItems}"    ItemsSource="{Binding SysSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
+                    </ListBox>
+                </TabItem>
+                <TabItem Header="收藏夹" Margin="0,0,0,0.001" Style="{DynamicResource TabItemStyle}" FontSize="8">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Music.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="favofate"  Style="{DynamicResource styledItems}" Background="{Binding MyBrush}"  ItemsSource="{Binding FavoritesSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
+                    </ListBox>
+                </TabItem>
+                <TabItem Header="设置"  Margin="0" Style="{DynamicResource TabItemStyle}"  RenderTransformOrigin="1.725,0.4" FontSize="8">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/General.png" Stretch="UniformToFill"/>
+                    </TabItem.Background>
+                    <Grid Background="{DynamicResource MyBrush}"  Margin="0">
+                        <CheckBox x:Name="checkBox" IsChecked="{Binding Checked}" Content="启动监视快捷键" HorizontalAlignment="Left" Margin="31,21,0,0" VerticalAlignment="Top" Width="142" Unchecked="checkBox_Unchecked" Checked="checkBox_Checked"/>
+                        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="35,72,0,0" TextWrapping="Wrap" Text="快捷键" VerticalAlignment="Top"/>
+                        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="86,68,0,0" TextWrapping="Wrap" Text="Ctrl+Ctrl" VerticalAlignment="Top" Width="120"/>
+                        <CheckBox x:Name="cbx_isstart" IsChecked="{Binding IsStart}" Content="设置开机启动项" HorizontalAlignment="Left" Margin="52,135,0,0" VerticalAlignment="Top" Checked="cbx_isstart_Checked" Unchecked="cbx_isstart_Unchecked"/>
+                        <CheckBox x:Name="cbx_monitorClipboard" IsChecked="{Binding IsStart}" Content="监视剪贴板" HorizontalAlignment="Left" Margin="52,166,0,0" VerticalAlignment="Top" Checked="cbx_monitorClipboard_Checked" Unchecked="cbx_monitorClipboard_Unchecked" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </Grid>
+        <Label x:Name="userName" Content="河边骨" HorizontalAlignment="Left" Margin="84,30,0,0" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2" Height="33" Width="86"/>
+
+        <local:WeatherControl Height="62" VerticalAlignment="Top" Margin="65,36,0,0" Width="Auto" Grid.Column="1"/>
+
+        <Border BorderBrush="White" Grid.Row="3" BorderThickness="0,1" Margin="0,1,1,0.4" Grid.ColumnSpan="2">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#A1C7CFDA" Offset="0.991"/>
+                    <GradientStop Color="#B5F1F1F1"/>
+                    <GradientStop Color="#FFD2D2D2" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+    </Grid>
+</Window>
