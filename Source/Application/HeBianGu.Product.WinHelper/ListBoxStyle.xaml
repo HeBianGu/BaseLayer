@@ -31,24 +31,26 @@
                     </Grid>
                 </DataTemplate>
             </Setter.Value>
-            
+
         </Setter>
         <Setter Property="Grid.IsSharedSizeScope" Value="True" />
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
         <Setter Property="AllowDrop"   Value="True"/>
-
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
         <!--<Setter Property="Background">
             <Setter.Value>
                 <ImageBrush ImageSource="/skin/frame.jpg"/>
-                --><!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                -->
+        <!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#66FFFFFF" Offset="0"/>
                     <GradientStop Offset="0.379" Color="#24FFFFFF"/>
                     <GradientStop Color="#13FFFFFF" Offset="0.741"/>
                     <GradientStop Color="Transparent" Offset="0.879"/>
                     <GradientStop Color="#47FFFFFF" Offset="0.978"/>
-                </LinearGradientBrush>--><!--
+                </LinearGradientBrush>-->
+        <!--
             </Setter.Value>
         </Setter>-->
 
@@ -115,6 +117,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
     </Style>
     <!--第三种样式-->
     <Style x:Key="styledList2" TargetType="{x:Type ListBox}">
@@ -177,6 +180,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
     </Style>
 
     <!--第四种样式-->
@@ -220,8 +224,7 @@
                         </Image>
                         <!--</Grid>-->
                         <!--</Border>-->
-                        <TextBlock Grid.Row="0" Grid.RowSpan="2" FontSize="20" VerticalAlignment="Center" Margin="5" FontStyle="Italic" Text="{Binding Level}" FontWeight="UltraBold"  Grid.Column="0"/>
-                        <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Italic" Text="{Binding Title}" FontWeight="UltraBold"  Grid.Column="1"/>
+                        <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Normal" Text="{Binding Title}" FontWeight="Bold"  Grid.Column="1"/>
                         <TextBlock ToolTip="{Binding Detial}" Grid.Row="1" FontSize="8" VerticalAlignment="Center" Margin="5"  FontWeight="Normal"  Text="{Binding DetialMin}" Grid.Column="1" Grid.ColumnSpan="1" />
                         <TextBlock Grid.Row="1" FontSize="10" VerticalAlignment="Center" Margin="5" Text="{Binding CTime}" FontWeight="Normal"  Grid.Column="2" />
                     </Grid>
@@ -234,6 +237,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
     </Style>
 
     <!--第五种样式-->
@@ -258,7 +262,7 @@
                                 <ImageBrush ImageSource="{Binding ImagePath,Converter={StaticResource iconConverter}}"/>
                             </Image.OpacityMask>
                         </Image>
-                        <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Italic" Text="{Binding Title}" FontWeight="UltraBold"  Grid.Column="1"/>
+                        <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Normal"  Text="{Binding Title}" FontWeight="Bold"  Grid.Column="1"/>
                         <TextBlock Grid.Row="1" FontSize="10" VerticalAlignment="Center" Margin="5" Text="{Binding CreateTime}" FontWeight="Normal"  Grid.Column="1" />
                     </Grid>
                 </DataTemplate>
@@ -270,6 +274,44 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+    </Style>
+
+    <!--第六种样式-->
+    <Style x:Key="styledItems5" TargetType="{x:Type ListBox}">
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" SharedSizeGroup="MiddleColumn" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30" />
+                        </Grid.RowDefinitions>
+                        <Grid>
+                            <Image  Width="30" Margin="2,2,2,1" Source="{Binding ImagePath,Converter={StaticResource iconConverter}}">
+                                <Image.OpacityMask>
+                                    <!--设置图片背景色包含转换规则-->
+                                    <ImageBrush ImageSource="{Binding ImagePath,Converter={StaticResource iconConverter}}"/>
+                                </Image.OpacityMask>
+                            </Image>
+                        </Grid>
+                        <TextBlock FontSize="16" VerticalAlignment="Center" Margin="5" FontStyle="Italic"/>
+                        <TextBlock ToolTip="{Binding FilePath}" FontSize="16" VerticalAlignment="Center" Margin="5" Text="{Binding FileName}" FontWeight="Normal"  Grid.Column="1" />
+                    </Grid>
+                </DataTemplate>
+            </Setter.Value>
+
+        </Setter>
+        <Setter Property="Grid.IsSharedSizeScope" Value="True" />
+        <Setter Property="Grid.Background" Value="Transparent"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
+        <Setter Property="BorderThickness" Value="1,0,0,0"/>
+        <Setter Property="AllowDrop"   Value="True"/>
+        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
     </Style>
 </ResourceDictionary>
 

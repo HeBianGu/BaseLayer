@@ -54,3 +54,8 @@ D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\NotePadWindow.g.cs
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\NotePadWindow.baml
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Extend\FastStone Capture 8.0.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Match.dll
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Match.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\ParseFavoriteWindow.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\ParseFavoriteWindow.baml
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\HebianGu.Product.WinHelper.csprojResolveAssemblyReference.cache

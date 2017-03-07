@@ -6,7 +6,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    @*<title>登录</title>*@
+    @*<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")*@
 </head>
 <body style="background-color:#f4f4f4;" id="indexDv">
 
@@ -28,7 +33,6 @@
 
         <div>
             <p>
-                <a href="javascript:;">立即登录</a>
                 <button class="" id="btn">登录</button>
             </p>
         </div>
@@ -50,7 +54,22 @@
                 $("#password").focus();
                 return;
             }
+
+            window.location.href = "@Url.Action("Index", "Home")";
         });
     </script>
+
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    列表信息*@
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -21,7 +21,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.MatchEx
+namespace HebianGu.ComLibModule.MatchHelper
 {
     /// <summary> 正则表达式扩展封装 Add By lihaijun 2015.10.28 </summary>
     public static class RegexDao

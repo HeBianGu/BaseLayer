@@ -2,30 +2,216 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<style type="text/css">
+    /** {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        list-style-type: none;
+        color: #F5F5F5;
+    }*/
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    .navgationall {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        background: #000;
+        margin: 10px auto;
+    }
+
+    .nav1 {
+        width: 960px;
+        height: 36px;
+        margin: 0 auto;
+    }
+
+        .nav1 li {
+            float: left;
+            width: 70px;
+            border-right: #F5F5F5 solid 2px;
+            text-align: center;
+        }
+
+    /*.nav .last {
+            border-right: none;
+        }*/
+
+    .lastleft {
+        width: 25%;
+        float: left;
+        height: 100% auto;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .row {
+        width: 74%;
+        float: right;
+        height: 100% auto;
+        line-height: 36px;
+        /*background: #708090;*/
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .col-md-4 {
+        width: 50%;
+        float: left;
+        height: 300px;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .imgitem {
+        width: 40%;
+        float: left;
+        height: 90%;
+        line-height: 36px;
+        /*background: #708090;*/
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .imgdetial {
+        width: 58%;
+        float: right;
+        height: 70%;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+        /*.all {
+        width: 100%;
+        height: 100%;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }*/
+</style>
+
+@*左侧导航*@
+<div class="all">
+    <div class="lastleft">
+        <ul class="lastitem">
+            <li><a href="">首页</a></li>
+            <li><a href="">关于建冶</a></li>
+            <li><a href="">新闻资讯</a></li>
+            <li><a href="">产品中心</a></li>
+            <li><a href="#">工程应用</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+        </ul>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+    @*列表信息*@
+    <div class="row">
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" width="100" height="60">
+            <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+            <div class="imgdetial">
+                <h2>爆头BD1280高清</h2>
+                <p>
+                    ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites
+                </p>
+                <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+            </div>
+        </div>
     </div>
 </div>

@@ -65,11 +65,18 @@
     <Reference Include="HebianGu.ComLibModule.File">
       <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.File.dll</HintPath>
     </Reference>
+    <Reference Include="HebianGu.ComLibModule.Match">
+      <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.Match.dll</HintPath>
+    </Reference>
     <Reference Include="HebianGu.ComLibModule.Serialize">
       <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.Serialize.dll</HintPath>
     </Reference>
     <Reference Include="HebianGu.ComLibModule.WinHelper">
       <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.WinHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="HebianGu.ObjectBase.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
     </Reference>
     <Reference Include="HebianGu.ObjectBase.ObjectHelper">
       <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.ObjectHelper.exe</HintPath>
@@ -86,6 +93,7 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Printing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -111,6 +119,9 @@
     <Compile Include="Tool\Convert.cs" />
     <Compile Include="View\NotePadWindow.xaml.cs">
       <DependentUpon>NotePadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ParseFavoriteWindow.xaml.cs">
+      <DependentUpon>ParseFavoriteWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\StartWindow.xaml.cs">
       <DependentUpon>StartWindow.xaml</DependentUpon>
@@ -153,6 +164,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\NotePadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ParseFavoriteWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - 我的 ASP.NET 应用程序</title>
@@ -9,27 +9,148 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
+
+<style type="text/css">
+    /** {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        list-style-type: none;
+        color: #F5F5F5;
+    }*/
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+
+    .navgationall {
+        width: 100%;
+        height: 36px;
+        line-height: 36px;
+        background: #000;
+        margin: 10px auto;
+    }
+
+    .nav1 {
+        width: 960px;
+        height: 36px;
+        margin: 0 auto;
+    }
+
+        .nav1 li {
+            float: left;
+            width: 70px;
+            border-right: #F5F5F5 solid 2px;
+            text-align: center;
+        }
+
+    /*.nav .last {
+            border-right: none;
+        }*/
+
+    .lastleft {
+        width: 25%;
+        float: left;
+        height: 100% auto;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .row {
+        width: 74%;
+        float: right;
+        height: 100% auto;
+        line-height: 36px;
+        /*background: #708090;*/
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .col-md-4 {
+        width: 50%;
+        float: left;
+        height: 300px;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .imgitem {
+        width: 40%;
+        float: left;
+        height: 90%;
+        line-height: 36px;
+        /*background: #708090;*/
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    .imgdetial {
+        width: 58%;
+        float: right;
+        height: 70%;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }
+
+    /*.all {
+        width: 100%;
+        height: 100%;
+        line-height: 36px;
+        border: #708090 solid 2px;
+        margin: 10px auto;
+    }*/
+</style>
+
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("主页", "Index", "Home")</li>
-                    <li>@Html.ActionLink("关于", "About", "Home")</li>
-                    <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
-        </div>
+    <div class="jumbotron">
+        <h1>河边骨</h1>
+        <p class="lead">资源</p>
     </div>
+
+    @*菜单*@
+    <div class="navgationall">
+        <ul class="nav1">
+            <li>@Html.ActionLink("首页", "Index", "Home")"</li>
+            <li>@Html.ActionLink("动作片", "Action", "Home")"</li>
+            <li>@Html.ActionLink("喜剧片", "Comedy", "Home")"</li>
+            <li>@Html.ActionLink("爱情片", "AiQing", "Home")"</li>
+            <li>@Html.ActionLink("科幻片", "KeHuan", "Home")"</li>
+            <li>@Html.ActionLink("剧情片", "JuQing", "Home")"</li>
+            <li>@Html.ActionLink("悬疑片", "XuanYi", "Home")"</li>
+            <li>@Html.ActionLink("战争片", "ZhanZheng", "Home")"</li>
+            <li>@Html.ActionLink("恐怖片", "KongBu", "Home")"</li>
+            <li>@Html.ActionLink("灾难片", "Zhainan", "Home")"</li>
+            <li>@Html.ActionLink("连续剧", "LianXuJu", "Home")"</li>
+            <li>@Html.ActionLink("动漫", "DongMan", "Home")"</li>
+            <li>@Html.ActionLink("关于", "About", "Home")"</li>
+        </ul>
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    @*列表信息*@
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -37,9 +158,38 @@
             <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
+@*<body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("应用程序名称", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("主页", "Index", "Home")</li>
+                        <li>@Html.ActionLink("关于", "About", "Home")</li>
+                        <li>@Html.ActionLink("联系方式", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - 我的 ASP.NET 应用程序</p>
+            </footer>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </body>*@
 </html>

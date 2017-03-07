@@ -27,6 +27,8 @@ using HebianGu.Product.WinHelper.View;
 using System.Windows.Interop;
 using System.Runtime.InteropServices;
 using System.Collections.Specialized;
+using HebianGu.ObjectBase.Logger;
+using HebianGu.ComLibModule.MatchHelper;
 
 namespace HebianGu.Product.WinHelper
 {
@@ -205,29 +207,29 @@ namespace HebianGu.Product.WinHelper
                 }
             }
 
-            // HTodo  ：复制的图片 
-            BitmapSource bit = System.Windows.Clipboard.GetImage();
+            //// HTodo  ：复制的图片 
+            //BitmapSource bit = System.Windows.Clipboard.GetImage();
 
-            if (bit != null)
-            {
-                if (this._viewModel.ClipBoradSource.Count > 0)
-                {
-                    ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
+            //if (bit != null)
+            //{
+            //    if (this._viewModel.ClipBoradSource.Count > 0)
+            //    {
+            //        ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
 
-                    if (last.Detial != bit.ToString())
-                    {
-                        ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
-                        this._viewModel.ClipBoradSource.Insert(0, f);
-                    }
-                }
-                else
-                {
-                    ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
-                    this._viewModel.ClipBoradSource.Insert(0, f);
-                }
+            //        if (last.Detial != bit.ToString())
+            //        {
+            //            ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
+            //            this._viewModel.ClipBoradSource.Insert(0, f);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
+            //        this._viewModel.ClipBoradSource.Insert(0, f);
+            //    }
 
 
-            }
+            //}
 
         }
 
@@ -242,9 +244,18 @@ namespace HebianGu.Product.WinHelper
             switch (msg)
             {
                 case WM_CLIPBOARDUPDATE:
+                    {
+                        if (isclipDoubleClick <= 0)
+                        {
+                            if (ClipboardChangedHandle != null)
+                            {
+                                // HTodo  ：触发剪贴板变化事件 
+                                ClipboardChangedHandle.Invoke();
+                            }
+                        }
 
-                    // HTodo  ：触发剪贴板变化事件 
-                    ClipboardChangedHandle.Invoke();
+                        isclipDoubleClick--;
+                    }
                     break;
             }
 
@@ -262,6 +273,8 @@ namespace HebianGu.Product.WinHelper
             InitializeComponent();
 
             this.DataContext = _viewModel;
+
+
 
             string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, SysTemConfiger.ConfigerFolder);
 
@@ -281,6 +294,8 @@ namespace HebianGu.Product.WinHelper
             // HTodo  ：检查是否开机自启动 
             _viewModel.IsStart = this.IsAutoRun(this.GetType().FullName);
 
+            this.RegisterLog();
+
             this.RegisterNotify();
 
             this.LoadToList();
@@ -288,6 +303,8 @@ namespace HebianGu.Product.WinHelper
             this.LoadNotePad();
 
             this.LoadClipBoard();
+
+            this.LoadPrograms();
 
             this.RegisterAPI();
 
@@ -326,6 +343,62 @@ namespace HebianGu.Product.WinHelper
 
         }
 
+        /// <summary> 加载所有程序 </summary>
+        public void LoadPrograms()
+        {
+            //HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall 此键的子健为本机所有注册过的软件的卸载程序,通过此思路进行遍历安装的软件
+            RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall");
+            string[] key1 = key.GetSubKeyNames();//返回此键所有的子键名称
+            List<string> key2 = key1.ToList<string>();//因为有的项木有"DisplayName"或"DisplayName"的键值的时候要把键值所在数组中的的元素进行删除
+            RegistryKey subkey = null;
+
+            for (int i = 0; i < key2.Count; i++)
+            {
+
+                //通过list泛型数组进行遍历,某款软件项下的子键
+                subkey = key.OpenSubKey(key2[i]);
+
+                if (subkey.GetValue("DisplayName") == null) continue;
+                if (subkey.GetValue("DisplayIcon") == null) continue;
+
+
+                string path = subkey.GetValue("DisplayIcon").ToString();
+                //截取子键值的最后一位进行判断
+                string SubPath = path.Substring(path.Length - 1, 1);
+
+                //如果为o 就是ico 或 找不到exe的 表示为图标文件或只有个标识而没有地址的
+                if (SubPath == "o" || path.IndexOf("exe") == -1)
+                {
+                    //首先删除数组中此索引的元素
+                    key2.RemoveAt(i);
+                    //把循环条件i的值进行从新复制,否则下面给listview的项的tag属性进行赋值的时候会报错
+                    i -= 1;
+                    continue;
+                }
+
+                //如果为e 就代表着是exe可执行文件,
+                if (SubPath == "e")
+                {
+                    //则表示可以直接把地址赋给tag属性
+                    FileBindModel p = new FileBindModel(path);
+                    p.FileName = subkey.GetValue("DisplayName").ToString();
+                    this._viewModel.ProgramSource.Add(p);
+                    continue;
+                }
+                //因为根据观察 取的是DisplayIcon的值 表示为图片所在路径 如果为0或1,则是为可执行文件的图标  
+                if (SubPath == "0" || SubPath == "1")
+                {
+                    //进行字符串截取,
+                    path = path.Substring(0, path.LastIndexOf("e") + 1);
+                    //则表示可以直接把地址赋给tag属性
+                    FileBindModel p = new FileBindModel(path);
+                    p.FileName = subkey.GetValue("DisplayName").ToString();
+                    this._viewModel.ProgramSource.Add(p);
+                    continue;
+                }
+            }
+        }
+
         /// <summary> 注册托盘 </summary>
         public void RegisterNotify()
         {
@@ -342,6 +415,7 @@ namespace HebianGu.Product.WinHelper
                 this.ShowWindow();
             };
         }
+
 
         #endregion
 
@@ -551,7 +625,6 @@ namespace HebianGu.Product.WinHelper
             _viewModel.NotePadSource.Remove(m);
         }
 
-
         public void Copyclipboard_Click(object sender, RoutedEventArgs e)
         {
             if (this.clipboard.SelectedIndex == -1) return;
@@ -578,6 +651,7 @@ namespace HebianGu.Product.WinHelper
                 //Process.Start("mspaint", m.Detial);
             }
         }
+
         public void Openclipboard_Click(object sender, RoutedEventArgs e)
         {
             if (clipboard.SelectedIndex == -1) return;
@@ -622,6 +696,83 @@ namespace HebianGu.Product.WinHelper
             w.ShowDialog();
         }
 
+        /// <summary> 粘贴收藏夹 </summary>
+        private void Parsefavorite_Click(object sender, RoutedEventArgs e)
+        {
+            // HTodo  ：复制的文件路径 
+            string text = System.Windows.Clipboard.GetText();
+
+            if (!string.IsNullOrEmpty(text))
+            {
+                //if (text.IsURL()||text.IsHTML
+                if (Uri.IsWellFormedUriString(text, UriKind.RelativeOrAbsolute))
+                {
+                    string favorite = Environment.GetFolderPath(Environment.SpecialFolder.Favorites);
+
+                    ParseFavoriteWindow w = new ParseFavoriteWindow(text, text);
+
+                    if (w.ShowDialog() != null && w.DialogResult.Value)
+                    {
+                        string path = System.IO.Path.Combine(favorite, w.FileName + ".url");
+
+                        if (!File.Exists(path))
+                        {
+                            string urlstr = string.Format(@"[InternetShortcut]
+URL = {0}", w.Url);
+                            File.WriteAllText(path, urlstr);
+                        }
+                    }
+                }
+
+                // HTodo  ：复制的文件 
+                System.Collections.Specialized.StringCollection list = System.Windows.Clipboard.GetFileDropList();
+
+                foreach (var item in list)
+                {
+
+                    if (System.IO.Path.GetExtension(item).ToUpper() == ".URL")
+                    {
+                        string favorite = Environment.GetFolderPath(Environment.SpecialFolder.Favorites);
+
+                        string path = System.IO.Path.Combine(favorite, System.IO.Path.GetFileName(item));
+
+                        if (!File.Exists(path))
+                        {
+                            File.Copy(item, path);
+                        }
+                    }
+                }
+
+                this.RefreshFavoritesSource();
+            }
+
+        }
+
+        /// <summary> 打开收藏夹 </summary>
+        private void Openfavorite_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.favofate.SelectedIndex == -1) return;
+
+            FileBindModel f = this.favofate.SelectedItem as FileBindModel;
+
+            Process.Start(f.FilePath);
+        }
+
+        /// <summary> 删除收藏夹 </summary>
+        private void Deletefavorite_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.favofate.SelectedIndex == -1) return;
+
+            FileBindModel f = this.favofate.SelectedItem as FileBindModel;
+
+            File.Delete(f.FilePath);
+
+            this.RefreshFavoritesSource();
+
+
+        }
+
+        int isclipDoubleClick = 0;
         /// <summary> 双击列表项 </summary>
         private void clipboard_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
@@ -631,10 +782,10 @@ namespace HebianGu.Product.WinHelper
 
             if (m == null) return;
 
+            isclipDoubleClick = 2;
+
             if (m.Type == ClipBoardType.FileSystem)
             {
-                Process.Start(m.Detial);
-
                 // HTodo  ：添加到剪贴板中 
                 StringCollection c = new StringCollection();
 
@@ -644,10 +795,6 @@ namespace HebianGu.Product.WinHelper
             }
             else if (m.Type == ClipBoardType.Text)
             {
-                File.WriteAllText(this.tempFilePath, m.Detial);
-
-                Process.Start(this.tempFilePath);
-
                 System.Windows.Clipboard.SetText(m.Detial);
             }
             else
@@ -655,6 +802,14 @@ namespace HebianGu.Product.WinHelper
                 Process.Start("mspaint", m.Detial);
             }
 
+            LogBindModel log = new LogBindModel();
+            log.Message = "提示：复制成功！";
+            log.Act += () =>
+              {
+                  System.Windows.MessageBox.Show("剪贴板日志");
+              };
+
+            this.SetLog(log);
 
         }
 
@@ -709,11 +864,15 @@ namespace HebianGu.Product.WinHelper
             var files = recent.GetAllFile();
 
             _viewModel.FavoritesSource.Clear();
+
             foreach (var item in files)
             {
                 FileBindModel f = new FileBindModel(item);
+
                 if (string.IsNullOrEmpty(f.FilePath)) continue;
+
                 _viewModel.FavoritesSource.Add(f);
+
             }
         }
 
@@ -944,9 +1103,6 @@ namespace HebianGu.Product.WinHelper
         }
 
 
-
-
-
         #endregion
 
         #region - 配置信息 -
@@ -978,6 +1134,31 @@ namespace HebianGu.Product.WinHelper
 
 
         #endregion
+
+        #region - 日志信息 -
+
+        /// <summary> 注册日志 </summary>
+        public void RegisterLog()
+        {
+
+        }
+
+        /// <summary> 设置日志 </summary>
+        public void SetLog(LogBindModel log)
+        {
+            this._viewModel.Log = log;
+        }
+
+        private void textBlock1_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (this._viewModel.Log.Act != null)
+            {
+                this._viewModel.Log.Act.Invoke();
+            }
+        }
+
+        #endregion
+
 
         private void listBox_DragEnter(object sender, System.Windows.DragEventArgs e)
         {

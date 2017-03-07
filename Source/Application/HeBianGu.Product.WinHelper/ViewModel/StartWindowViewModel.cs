@@ -100,6 +100,19 @@ namespace HebianGu.Product.WinHelper.ViewModel
             }
         }
 
+        private ObservableCollection<FileBindModel> _programSource = new ObservableCollection<FileBindModel>();
+
+        /// <summary> 所有关键字 </summary>
+        public ObservableCollection<FileBindModel> ProgramSource
+        {
+            get { return _programSource; }
+            set
+            {
+                _programSource = value;
+                RaisePropertyChanged("ProgramSource");
+            }
+        }
+
 
         public StartWindowViewModel()
         {
@@ -129,7 +142,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
         /// <summary> 是否开机自启动 </summary>
         public bool IsStart
         {
-            get { return _checked; }
+            get { return _isStart; }
             set
             {
                 _isStart = value;
@@ -137,7 +150,65 @@ namespace HebianGu.Product.WinHelper.ViewModel
             }
         }
 
+        private bool _isMoniterClip = true;
 
+        /// <summary> 是否开机自启动 </summary>
+        public bool IsMoniterClip
+        {
+            get { return _isMoniterClip; }
+            set
+            {
+                _isMoniterClip = value;
+                RaisePropertyChanged("IsMoniterClip");
+            }
+        }
+
+
+        private LogBindModel _log;
+        /// <summary> 显示的日志 </summary>
+        public LogBindModel Log
+        {
+            get { return _log; }
+            set
+            {
+                _log = value;
+                RaisePropertyChanged("Log");
+            }
+        }
+
+
+    }
+
+    public class LogBindModel
+    {
+        private string _message;
+        /// <summary> 说明 </summary>
+        public string Message
+        {
+            get { return _message; }
+            set { _message = value; }
+        }
+
+        private Action _act;
+        /// <summary> 说明 </summary>
+        public Action Act
+        {
+            get { return _act; }
+            set { _act = value; }
+        }
+
+        public override string ToString()
+        {
+            return _message;
+        }
+
+        public Color FontColor
+        {
+            get
+            {
+                return _act == null ? Color.Black : Color.Blue;
+            }
+        }
     }
 
 
@@ -229,7 +300,26 @@ namespace HebianGu.Product.WinHelper.ViewModel
             set { _lastTime = value; }
         }
 
+    }
 
+    /// <summary> 文件绑定实体 </summary>
+    class ProgramBindModel
+    {
+        private string  _file;
+        /// <summary> 说明 </summary>
+        public string  File
+        {
+            get { return _file; }
+            set { _file = value; }
+        }
+
+        private string _path;
+        /// <summary> 说明 </summary>
+        public string Path
+        {
+            get { return _path; }
+            set { _path = value; }
+        }
 
     }
 

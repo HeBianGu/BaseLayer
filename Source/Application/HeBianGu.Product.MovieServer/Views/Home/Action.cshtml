@@ -1,0 +1,60 @@
+﻿@model IEnumerable<HeBianGu.Product.MovieServer.Models.MovieModel>
+
+@{
+    ViewBag.Title = "Action";
+}
+
+<h2>ActionView</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FileFullPath)
+        </th>
+        <th></th>
+    </tr>
+
+    <div class="lastleft">
+        <ul class="lastitem">
+            <li><a href="">首页</a></li>
+            <li><a href="">关于建冶</a></li>
+            <li><a href="">新闻资讯</a></li>
+            <li><a href="">产品中心</a></li>
+            <li><a href="#">工程应用</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+            <li><a href="#">人力资源</a></li>
+        </ul>
+    </div>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+            <div class="col-md-4" width="100" height="60">
+                <img class="imgitem" src="../Image/图标B/Ad Aware.png" />
+                <div class="imgdetial">
+                    <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
+                    <p>
+                        @Html.DisplayFor(modelItem => item.Detial)
+                    </p>
+                    <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">播放 &raquo;</a></p>
+                </div>
+            </div>
+        }
+    </div>
+
+</table>
