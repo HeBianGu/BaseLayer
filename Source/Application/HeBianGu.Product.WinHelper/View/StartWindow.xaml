@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HebianGu.Product.WinHelper"
         mc:Ignorable="d"
-         Title="HeBianGu系统工具" Height="703.907" Width="264" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" Icon="/HebianGu.Product.WinHelper;component/skin/Feather.ico" Closing="Window_Closing" ShowInTaskbar="False" Topmost="True">
+         Title="HeBianGu系统工具" Height="703.907" Width="264" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown" Icon="/HebianGu.Product.WinHelper;component/skin/Feather.ico" Closing="Window_Closing" ShowInTaskbar="False" Topmost="True" MouseDoubleClick="Window_MouseDoubleClick">
 
     <Window.Resources>
         <!--创建菜单资源-->
@@ -186,13 +186,15 @@
 
 
             <TabControl AllowDrop="True" Margin="0" Grid.Row="1" TabStripPlacement="Left" BorderThickness="0" Background="Transparent" >
-                <TabItem Header="常用文件"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                <TabItem Header="常用文件"  TabIndex="0" Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Mail 2.png"/>
                     </TabItem.Background>
-                    <ListBox  x:Name="listBox"  Style="{DynamicResource styledItems}"  ContextMenu="{StaticResource sampleContextMenu}"  ItemsSource="{Binding BkSource,Mode=TwoWay}" MouseRightButtonUp="listBox_MouseRightButtonUp" MouseDoubleClick="listBox_MouseDoubleClick" DragEnter="listBox_DragEnter" Drop="listBox_Drop" DragOver="listBox_DragOver" PreviewMouseMove="listBox_PreviewMouseMove" QueryContinueDrag="listBox_QueryContinueDrag"  />
+                    <!--<ScrollViewer Template="{DynamicResource ScrollViewerControlTemplate1}">-->
+                    <ListBox  x:Name="listBox"  Style="{DynamicResource styledItems }"  ContextMenu="{StaticResource sampleContextMenu}"  ItemsSource="{Binding BkSource,Mode=TwoWay}" MouseRightButtonUp="listBox_MouseRightButtonUp" MouseDoubleClick="listBox_MouseDoubleClick" DragEnter="listBox_DragEnter" Drop="listBox_Drop" DragOver="listBox_DragOver" PreviewMouseMove="listBox_PreviewMouseMove" QueryContinueDrag="listBox_QueryContinueDrag"  />
+                    <!--</ScrollViewer>--> <!---->
                 </TabItem>
-                <TabItem Header="记事本"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                <TabItem Header="记事本"  TabIndex="1" Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Style.png"/>
                     </TabItem.Background>
@@ -200,15 +202,15 @@
                     </ListBox>
                 </TabItem>
 
-                <TabItem Header="剪贴板"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                <TabItem Header="剪贴板" TabIndex="2" Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Documents.png"/>
                     </TabItem.Background>
-                    <ListBox  x:Name="clipboard"  Style="{DynamicResource styledItems4}" ItemsSource="{Binding ClipBoradSource ,Mode=TwoWay}"  ContextMenu="{StaticResource clipboardContextMenu}" MouseDoubleClick="clipboard_MouseDoubleClick"   >
+                    <ListBox x:Name="clipboard"  Style="{DynamicResource styledItems4 }" ItemsSource="{Binding ClipBoradSource ,Mode=TwoWay}"  ContextMenu="{StaticResource clipboardContextMenu}" MouseDoubleClick="clipboard_MouseDoubleClick"   >
                     </ListBox>
                 </TabItem>
 
-                <TabItem Header="所有程序"  Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
+                <TabItem Header="所有程序" TabIndex="3" Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Documents.png"/>
                     </TabItem.Background>
@@ -216,28 +218,28 @@
                     </ListBox>
                 </TabItem>
 
-                <TabItem Header="最近文档" Style="{DynamicResource TabItemStyle}"   ToolTip="最近文档" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
+                <TabItem Header="最近文档" TabIndex="4" Style="{DynamicResource TabItemStyle}"   ToolTip="最近文档" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Pictures.png"/>
                     </TabItem.Background>
                     <ListBox  x:Name="last"  Style="{DynamicResource styledItems}"   ItemsSource="{Binding LastSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
                     </ListBox>
                 </TabItem>
-                <TabItem Header="系统资源" Style="{DynamicResource TabItemStyle}"   ToolTip="系统资源" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
+                <TabItem Header="系统资源" TabIndex="5" Style="{DynamicResource TabItemStyle}"   ToolTip="系统资源" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Earth.png"/>
                     </TabItem.Background>
                     <ListBox  x:Name="sys"  Style="{DynamicResource styledItems}"    ItemsSource="{Binding SysSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
                     </ListBox>
                 </TabItem>
-                <TabItem Header="收藏夹" Margin="0,0,0,0.001" Style="{DynamicResource TabItemStyle}" FontSize="8">
+                <TabItem Header="收藏夹" TabIndex="6" Margin="0,0,0,0.001" Style="{DynamicResource TabItemStyle}" FontSize="8">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Music.png"/>
                     </TabItem.Background>
                     <ListBox  x:Name="favofate"  Style="{DynamicResource styledItems}" ContextMenu="{StaticResource favoriteContextMenu}" Background="{Binding MyBrush}"  ItemsSource="{Binding FavoritesSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
                     </ListBox>
                 </TabItem>
-                <TabItem Header="设置"  Margin="0" Style="{DynamicResource TabItemStyle}"  RenderTransformOrigin="1.725,0.4" FontSize="8">
+                <TabItem Header="设置"  TabIndex="7" Margin="0" Style="{DynamicResource TabItemStyle}"  RenderTransformOrigin="1.725,0.4" FontSize="8">
                     <TabItem.Background>
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/General.png" Stretch="UniformToFill"/>
                     </TabItem.Background>

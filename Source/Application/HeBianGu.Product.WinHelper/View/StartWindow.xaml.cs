@@ -414,6 +414,26 @@ namespace HebianGu.Product.WinHelper
             {
                 this.ShowWindow();
             };
+
+            ContextMenuStrip m = new ContextMenuStrip();
+            ToolStripItem t = new ToolStripMenuItem();
+            t.Text = "退出";
+            t.Click += (object ss, EventArgs ee) =>
+            {
+                this.Close();
+            };
+            this.notifyIcon.ContextMenuStrip = m;
+            this.notifyIcon.ContextMenuStrip.Items.Add(t);
+        }
+
+        private void T_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void DeleteMenu_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
 
@@ -424,7 +444,7 @@ namespace HebianGu.Product.WinHelper
         /// <summary> 此方法的说明 </summary>
         public void RegisterAPI()
         {
-            //HookKeyboardEngine.KeyUp += HookKeyboardEngine_KeyDown;
+            HookKeyboardEngine.KeyUp += HookKeyboardEngine_KeyDown;
         }
 
         /// <summary> 取消注册事件 </summary>
@@ -443,22 +463,14 @@ namespace HebianGu.Product.WinHelper
         {
             if (lastArgs != null)
             {
-                if (e.KeyData == Keys.LShiftKey)
+                if (e.KeyData == Keys.CapsLock)
                 {
-                    if (lastArgs.KeyData == Keys.LControlKey)
+                    if (lastArgs.KeyData == Keys.CapsLock)
                     {
                         // Todo ：上一次和这一次都为Ctrl 
                         if ((DateTime.Now - lastTime).TotalSeconds < 0.5)
                         {
-                            if (this.IsActive)
-                            {
-                                this.HideWindow();
-                            }
-                            else
-                            {
-
-                                this.ShowWindow();
-                            }
+                            this.ShowWindow();
                         }
                     }
                 }
@@ -947,7 +959,7 @@ URL = {0}", w.Url);
         /// <summary> 注册快捷键 </summary>
         private void checkBox_Checked(object sender, RoutedEventArgs e)
         {
-            this.RegisterAPI();
+            //this.RegisterAPI();
         }
 
         /// <summary> 双击列表项 </summary>
@@ -972,6 +984,11 @@ URL = {0}", w.Url);
         #endregion
 
         #region - 窗体事件 -
+
+        private void Window_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            this.ShowWindow();
+        }
 
         /// <summary> 关闭窗口时事件 </summary>
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -1151,7 +1168,7 @@ URL = {0}", w.Url);
 
         private void textBlock1_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if (this._viewModel.Log.Act != null)
+            if (this._viewModel.Log != null && this._viewModel.Log.Act != null)
             {
                 this._viewModel.Log.Act.Invoke();
             }
@@ -1234,6 +1251,7 @@ URL = {0}", w.Url);
             //         // Here, we should notice that dragsource param will specify on which 
             //System.Windows.DragDrop.DoDragDrop(listBox, dataObject, System.Windows.DragDropEffects.Copy);
         }
+
 
     }
 }

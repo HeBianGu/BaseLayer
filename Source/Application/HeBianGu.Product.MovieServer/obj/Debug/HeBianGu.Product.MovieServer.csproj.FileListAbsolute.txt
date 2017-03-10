@@ -199,3 +199,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer\bi
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer\bin\zh-Hans\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer\obj\Debug\HeBianGu.Product.MovieServer.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer\obj\Debug\HeBianGu.Product.MovieServer.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer\obj\Debug\HeBianGu.Product.MovieServer.csprojResolveAssemblyReference.cache

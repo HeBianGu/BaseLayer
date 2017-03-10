@@ -1,6 +1,7 @@
 ﻿using HeBianGu.Product.MovieServer.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -41,18 +42,30 @@ namespace HeBianGu.Product.MovieServer.Controllers
         /// <summary> 动作片 </summary>
         public ActionResult Action()
         {
-            ViewBag.Message = "Your contact page.";
-
             var items = new List<MovieModel>();
 
-            for (int i = 0; i < 15; i++)
+            string dataFolder = Path.Combine(@"D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer", "Data", "DZP");
+
+            DirectoryInfo dir = Directory.CreateDirectory(dataFolder);
+
+            foreach (var item in dir.GetDirectories())
             {
                 MovieModel mm = new MovieModel();
-                mm.Title = i.ToString();
-                mm.Detial = "343434";
+
+                mm.Title = item.Name;
+
+                string detial = Path.Combine(item.FullName, "Detail.txt");
+
+                mm.Detial = System.IO.File.ReadAllText(detial).Substring(0,20);
+
+                var imageFile = item.GetFiles().ToList().Find(l => l.Extension == ".jpg");
+
+                mm.ImagePath =Path.Combine("../Data/DZP",item.Name,imageFile.Name);
+
                 items.Add(mm);
 
             }
+
 
             return View(items);
         }
@@ -63,7 +76,19 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
 
@@ -72,16 +97,50 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
 
         /// <summary> 科幻片 </summary>
         public ActionResult KeHuan()
         {
-            ViewBag.Message = "Your contact page.";
+            var items = new List<MovieModel>();
 
-            return View();
+            string dataFolder = Path.Combine(@"D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer", "Data", "KHP");
+
+            DirectoryInfo dir = Directory.CreateDirectory(dataFolder);
+
+            foreach (var item in dir.GetDirectories())
+            {
+                MovieModel mm = new MovieModel();
+
+                mm.Title = item.Name;
+
+                string detial = Path.Combine(item.FullName, "Detail.txt");
+
+                mm.Detial = System.IO.File.ReadAllText(detial).Substring(0, 20);
+
+                var imageFile = item.GetFiles().ToList().Find(l => l.Extension == ".jpg");
+
+                mm.ImagePath = Path.Combine("../Data/KHP", item.Name, imageFile.Name);
+
+                items.Add(mm);
+
+            }
+
+
+            return View("Action",items);
         }
 
 
@@ -90,7 +149,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
         /// <summary> 悬疑片 </summary>
@@ -98,7 +168,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
         /// <summary> 战争片 </summary>
@@ -106,7 +187,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
         /// <summary> 恐怖片 </summary>
@@ -114,7 +206,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
 
@@ -123,7 +226,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
         /// <summary> 连续剧 </summary>
@@ -131,7 +245,18 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
 
         /// <summary> 动漫 </summary>
@@ -139,8 +264,55 @@ namespace HeBianGu.Product.MovieServer.Controllers
         {
             ViewBag.Message = "Your contact page.";
 
-            return View();
+            var items = new List<MovieModel>();
+
+            for (int i = 0; i < 8; i++)
+            {
+                MovieModel mm = new MovieModel();
+                mm.Title = i.ToString();
+                mm.Detial = "88";
+                items.Add(mm);
+
+            }
+
+            return View("Action", items);
         }
+
+        /// <summary> 详细信息 </summary>
+        public ActionResult MovieDetail(MovieModel m)
+        {
+
+            //var items = new List<MovieModel>();
+
+            //string dataFolder = Path.Combine(@"D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.MovieServer", "Data", "DZP");
+
+            //DirectoryInfo dir = Directory.CreateDirectory(dataFolder);
+
+            //foreach (var item in dir.GetDirectories())
+            //{
+            //    MovieModel mm = new MovieModel();
+
+            //    mm.Title = item.Name;
+
+            //    string detial = Path.Combine(item.FullName, "Detail.txt");
+
+            //    mm.Detial = System.IO.File.ReadAllText(detial).Substring(0, 20);
+
+            //    var imageFile = item.GetFiles().ToList().Find(l => l.Extension == ".jpg");
+
+            //    mm.ImagePath = Path.Combine("../Data/DZP", item.Name, imageFile.Name);
+
+            //    items.Add(mm);
+
+            //}
+
+
+            return View(m);
+
+            //return View(items.First());
+        }
+
+
 
     }
 }

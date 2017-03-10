@@ -34,14 +34,37 @@ namespace HeBianGu.Product.MovieServer.Models
             set { _image = value; }
         }
 
-        private string  _fileFullPath;
+        private string _imagePath;
         /// <summary> 说明 </summary>
-        public string  FileFullPath
+        public string ImagePath
+        {
+            get { return _imagePath; }
+            set { _imagePath = value; }
+        }
+
+
+        private string _fileFullPath;
+        /// <summary> 说明 </summary>
+        public string FileFullPath
         {
             get { return _fileFullPath; }
             set { _fileFullPath = value; }
         }
 
+        private MovieType _movieType;
+        /// <summary> 说明 </summary>
+        public MovieType MovieType
+        {
+            get { return _movieType; }
+            set { _movieType = value; }
+        }
 
+    }
+
+
+    /// <summary> 说明 </summary>
+    public enum MovieType
+    {
+        DZP = 0, XJP, AQP, KHP, JQP, XYP, ZZP, KBP, ZNP, LXJ, DM
     }
 }

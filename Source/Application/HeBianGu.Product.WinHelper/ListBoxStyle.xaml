@@ -245,7 +245,9 @@
         <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
+                    
                     <Grid>
+                        
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" SharedSizeGroup="MiddleColumn" />
@@ -255,7 +257,7 @@
                             <RowDefinition Height="20" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
-
+                        
                         <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="30" Margin="2,2,2,1" Source="{Binding ImagePath,Converter={StaticResource iconConverter}}">
                             <Image.OpacityMask>
                                 <!--设置图片背景色包含转换规则-->
@@ -265,6 +267,7 @@
                         <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Normal"  Text="{Binding Title}" FontWeight="Bold"  Grid.Column="1"/>
                         <TextBlock Grid.Row="1" FontSize="10" VerticalAlignment="Center" Margin="5" Text="{Binding CreateTime}" FontWeight="Normal"  Grid.Column="1" />
                     </Grid>
+                   
                 </DataTemplate>
             </Setter.Value>
         </Setter>

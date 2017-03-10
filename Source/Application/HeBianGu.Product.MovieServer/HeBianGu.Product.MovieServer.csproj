@@ -217,6 +217,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\1.jpg" />
     <Content Include="Image\图标B\Ad Aware.png" />
     <Content Include="Image\图标B\Adobe Acrobat 3D.png" />
     <Content Include="Image\图标B\Adobe Acrobat Distiller.png" />
@@ -396,6 +397,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Login\LoginView.cshtml" />
     <Content Include="Views\Home\Action.cshtml" />
+    <Content Include="Views\Home\MovieDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

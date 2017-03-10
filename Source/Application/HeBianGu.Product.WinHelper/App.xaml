@@ -13,6 +13,7 @@
                 <ResourceDictionary Source="DataGridStyle.xaml"/>
                 <ResourceDictionary Source="DataGridResource.xaml"/>
                 <ResourceDictionary Source="ListBoxStyle.xaml"/>
+                <ResourceDictionary Source="ScrollViewerStyle.xaml"/> 
             </ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
          
