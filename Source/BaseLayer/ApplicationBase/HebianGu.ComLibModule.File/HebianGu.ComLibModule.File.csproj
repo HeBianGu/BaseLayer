@@ -34,10 +34,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Interface.exe</HintPath>
     </Reference>
-    <Reference Include="HebianGu.ObjectBase.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
-    </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -54,6 +50,7 @@
     <Compile Include="FileHelper.cs" />
     <Compile Include="DirectoryHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemInfoExtension.cs" />
     <Compile Include="压缩解压\SharpZip.cs" />
   </ItemGroup>
   <ItemGroup>

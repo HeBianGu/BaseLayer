@@ -33,6 +33,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HebianGu.ObjectBase.Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Factory.dll</HintPath>
+    </Reference>
     <Reference Include="HebianGu.ObjectBase.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Interface.exe</HintPath>

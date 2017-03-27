@@ -1,0 +1,16 @@
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\Progress\MetroProgress.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\MainWindow.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\Progress\MetroProgress.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\App.g.cs
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls_MarkupCompile.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls_MarkupCompile.lref
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\bin\Debug\HebianGu.ComLibModule.WPF.Controls.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\bin\Debug\HebianGu.ComLibModule.WPF.Controls.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\bin\Debug\HebianGu.ComLibModule.WPF.Controls.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\MainWindow.baml
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls.g.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls.Properties.Resources.resources
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls.csproj.GenerateResource.Cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls.exe
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\HebianGu.ComLibModule.WPF.Controls.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\UI\WPF\Controls\HebianGu.ComLibModule.WPF.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs

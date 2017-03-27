@@ -22,7 +22,7 @@ namespace HebianGu.Product.WinHelper
 
         internal const string ConfigerExtend = "Extend";
 
-        internal const string ConfigerCut = "FastStone Capture 8.0.exe";
+        internal const string ConfigerCut = "最小的截图软件.exe";
 
     }
 }

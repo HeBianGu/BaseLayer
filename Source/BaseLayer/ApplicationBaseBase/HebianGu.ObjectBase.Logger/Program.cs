@@ -16,9 +16,9 @@ namespace HebianGu.ObjectBase.Logger
             // Todo ：测试Log4net 
 
             //  注册日志方法
-            LogProviderHandler.Instance.RunLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().RunLog(l);
-            LogProviderHandler.Instance.ErrLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
-            LogProviderHandler.Instance.ErrExLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.RunLog += (l,e) => LogFactory.Instance.GetLogService<Log4netEngine>().RunLog(l);
+            LogProviderHandler.Instance.ErrLog += (l, e) => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.ErrExLog += (l, e) => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
 
             //  写日志方法
             LogProviderHandler.Instance.OnRunLog(message);
@@ -27,9 +27,9 @@ namespace HebianGu.ObjectBase.Logger
             // Todo ：测试CosoleLog 
             
             // 注册日志方法
-            LogProviderHandler.Instance.RunLog += l => LogFactory.Instance.GetLogService<LogConsoleEngine>().RunLog(l);
-            LogProviderHandler.Instance.ErrLog += l => LogFactory.Instance.GetLogService<LogConsoleEngine>().ErrorLog(l);
-            LogProviderHandler.Instance.ErrExLog += l => LogFactory.Instance.GetLogService<LogConsoleEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.RunLog += (l, e) => LogFactory.Instance.GetLogService<LogConsoleEngine>().RunLog(l);
+            LogProviderHandler.Instance.ErrLog += (l, e) => LogFactory.Instance.GetLogService<LogConsoleEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.ErrExLog += (l, e) => LogFactory.Instance.GetLogService<LogConsoleEngine>().ErrorLog(l);
 
             //  写日志方法
             LogProviderHandler.Instance.OnRunLog(message);

@@ -1,1 +1,5 @@
-      perf.TempJJ = md_row.DIAM.ToString(); ;
+   public static T As<T, R>(this R o) where R : class 
+            where T : class
+        {
+            return o as T;
+        }

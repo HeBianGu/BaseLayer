@@ -144,11 +144,11 @@ namespace DotNet.Utilities
         #region 构造函数
         public YZMHelper()
         {
-            HttpContext.Current.Response.Expires = 0;
-            HttpContext.Current.Response.Buffer = true;
-            HttpContext.Current.Response.ExpiresAbsolute = DateTime.Now.AddSeconds(-1);
-            HttpContext.Current.Response.AddHeader("pragma", "no-cache");
-            HttpContext.Current.Response.CacheControl = "no-cache";
+            //HttpContext.Current.Response.Expires = 0;
+            //HttpContext.Current.Response.Buffer = true;
+            //HttpContext.Current.Response.ExpiresAbsolute = DateTime.Now.AddSeconds(-1);
+            //HttpContext.Current.Response.AddHeader("pragma", "no-cache");
+            //HttpContext.Current.Response.CacheControl = "no-cache";
             this.text = Rand.Number(4);
             CreateImage();
         }

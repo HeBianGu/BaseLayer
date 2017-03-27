@@ -4,9 +4,11 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.pdb
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\bin\Debug\HebianGu.ComLibModule.CaculateEngine.exe
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.exe
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\bin\Debug\HebianGu.ComLibModule.CaculateEngine.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\bin\Debug\HebianGu.ComLibModule.CaculateEngine.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.Properties.Resources.resources
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.csproj.GenerateResource.Cache
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\bin\Debug\HebianGu.ComLibModule.CaculateEngine.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.CaculateEngine\obj\Debug\HebianGu.ComLibModule.CaculateEngine.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.CaculateEngine.dll
+D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.CaculateEngine.pdb

@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{06FF1062-E53C-4314-89EE-31CB65DA381E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ObjectBase.ObjectHelper</RootNamespace>
     <AssemblyName>HebianGu.ObjectBase.ObjectHelper</AssemblyName>
@@ -55,8 +55,15 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ObjectHelper.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ObjectExtention\ConvertExtend.cs" />
+    <Compile Include="ObjectExtention\ComparerExtend.cs" />
+    <Compile Include="ObjectExtention\EnumerableHelper.cs" />
+    <Compile Include="ObjectExtention\ObjectExtend.cs" />
+    <Compile Include="ObjectExtention\Group\ObjectGroupExtension.cs" />
+    <Compile Include="ObjectExtention\ReflectExtend.cs" />
+    <Compile Include="ObjectExtention\SystemHelper.cs" />
+    <Compile Include="TypeHelper.cs" />
+    <Compile Include="WhileHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -70,20 +77,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ReflectHelper.cs" />
-    <Compile Include="WhileHelper.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="app.config" />
-    <None Include="Object底层帮助类.dgml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
+  <Import Project="..\HebianGu.ObjectBase.Share\HebianGu.ObjectBase.Share.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

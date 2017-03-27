@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="ComboboxEx.cs" />
     <Compile Include="Control.cs" />
+    <Compile Include="ControExtend.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeViewEx.cs" />

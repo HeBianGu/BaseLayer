@@ -4,42 +4,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ObjectBase.ObjectHelper
+namespace System.Linq
 {
     /// <summary> 循环执行 </summary>
     public static class WhileHelper
     {
 
         /// <summary> 循环执行指定次数任务 </summary>
-        public static void DoCount(int count, Action act)
+        public static void DoCount(this int count, params Action<int>[] act)
         {
 
             while (count > 0)
             {
-                act.Invoke();
+                foreach (var item in act)
+                {
+                    item.Invoke(count);
+                }
+               
 
                 count--;
             }
         }
 
         /// <summary> 循环执行指定次数任务 </summary>
-        public static void DoCount(int start, int end, Action act)
+        public static void DoCount(this int start, int end, params Action<int>[] act)
         {
             while (end > start)
             {
-                act.Invoke();
+                foreach (var item in act)
+                {
+                    item.Invoke(end);
+                }
 
                 end--;
             }
         }
 
-        /// <summary> 循环执行指定次数任务 </summary>
-        public static void DoCount(this int count, Action<int> act)
+        /// <summary> While方法扩展 </summary>
+        public static void While<T>(this T t, Predicate<T> predicate, Action<T> action) where T : class
         {
-            for (int i = 0; i < count; i++)
+            while (predicate(t)) action(t);
+        }
+
+        /// <summary> While方法扩展 </summary>
+        public static void While<T>(this T t, Predicate<T> predicate, params Action<T>[] actions) where T : class
+        {
+            while (predicate(t))
             {
-                act(i);
+                foreach (var action in actions)
+                    action(t);
             }
         }
+
+
     }
 }

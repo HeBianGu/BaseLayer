@@ -124,8 +124,6 @@ namespace HebianGu.ComLibModule.DelegateEx
 
         }
 
-
-
         /// <summary> 根据线程选择是否异步执行 </summary>
         public static void DoThread<T>(this EventHandler handle, EventArgs args)
         {

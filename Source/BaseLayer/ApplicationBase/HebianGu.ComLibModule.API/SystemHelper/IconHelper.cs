@@ -45,9 +45,6 @@ namespace HebianGu.ComLibModule.API
         /// <summary> 获取系统图标 </summary>  
         public Icon GetSystemInfoIcon(string p_Path)
         {
-            //Icon s = Icon.ExtractAssociatedIcon(p_Path);
-            //return Icon.ExtractAssociatedIcon(p_Path);
-
             if (Path.HasExtension(p_Path))
             {
                 try

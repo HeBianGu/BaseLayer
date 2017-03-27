@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <TreeView ItemsSource="{Binding MyProperty}" x:Name="treeView" HorizontalAlignment="Left" Height="207" Margin="19,22,0,0" VerticalAlignment="Top" Width="142"/>
+        <ListBox  ItemsSource="{Binding MyProperty}"  x:Name="listBox" HorizontalAlignment="Left" Height="100" Margin="186,17,0,0" VerticalAlignment="Top" Width="209"/>
+        <DataGrid ItemsSource="{Binding MyProperty}" x:Name="dataGrid" HorizontalAlignment="Left" Margin="229,175,0,0" VerticalAlignment="Top" Height="105" Width="223"/>
+
     </Grid>
 </Window>

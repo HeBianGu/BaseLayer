@@ -20,6 +20,7 @@ using HebianGu.ObjectBase.ObjectHelper;
 using HebianGu.ComLibModule.EnumHelper;
 using HebianGu.ComLibModule.FileHelper;
 using HebianGu.ComLibModule.WinHelper;
+using HebianGu.ComLibModule.FileEx;
 using HebianGu.ComLibModule.CMD;
 using Microsoft.Win32;
 using System.Collections.ObjectModel;
@@ -106,32 +107,6 @@ namespace HebianGu.Product.WinHelper
 
         #region - 监视剪切板 -
 
-        protected override void OnSourceInitialized(EventArgs e)
-        {
-
-            base.OnSourceInitialized(e);
-
-            this.win_SourceInitialized(this, e);
-
-            // HTodo  ：添加剪贴板监视 
-            System.IntPtr handle = (new System.Windows.Interop.WindowInteropHelper(this)).Handle;
-
-            AddClipboardFormatListener(handle);
-
-        }
-
-        void win_SourceInitialized(object sender, EventArgs e)
-        {
-
-            HwndSource hwndSource = PresentationSource.FromVisual(this) as HwndSource;
-
-            if (hwndSource != null)
-            {
-                hwndSource.AddHook(new HwndSourceHook(WndProc));
-            }
-
-        }
-
         /// <summary>
         /// 剪贴板内容改变时API函数向windows发送的消息
         /// </summary>
@@ -153,83 +128,119 @@ namespace HebianGu.Product.WinHelper
         [DllImport("user32.dll")]//引用dll,确保API可用
         public static extern bool RemoveClipboardFormatListener(IntPtr hwnd);
 
+        /// <summary> WPF窗口重写 </summary>
+        protected override void OnSourceInitialized(EventArgs e)
+        {
+
+            base.OnSourceInitialized(e);
+
+            this.win_SourceInitialized(this, e);
+
+            // HTodo  ：添加剪贴板监视 
+            System.IntPtr handle = (new System.Windows.Interop.WindowInteropHelper(this)).Handle;
+
+            AddClipboardFormatListener(handle);
+
+        }
+
+        /// <summary> 添加监视消息 </summary>
+        void win_SourceInitialized(object sender, EventArgs e)
+        {
+
+            HwndSource hwndSource = PresentationSource.FromVisual(this) as HwndSource;
+
+            if (hwndSource != null)
+            {
+                hwndSource.AddHook(new HwndSourceHook(WndProc));
+            }
+
+        }
 
         /// <summary> 剪贴板内容改变 </summary>
         void OnClipboardChanged()
         {
-            // HTodo  ：复制的文件路径 
-            string text = System.Windows.Clipboard.GetText();
-
-            if (!string.IsNullOrEmpty(text))
+            try
             {
-                if (this._viewModel.ClipBoradSource.Count > 0)
-                {
-                    ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
+                // HTodo  ：复制的文件路径 
+                string text = System.Windows.Clipboard.GetText();
 
-                    if (last.Detial != text)
-                    {
-                        ClipBoradBindModel f = new ClipBoradBindModel(text, ClipBoardType.Text);
-                        this._viewModel.ClipBoradSource.Insert(0, f);
-                    }
-                }
-                else
-                {
-                    ClipBoradBindModel f = new ClipBoradBindModel(text, ClipBoardType.Text);
-                    this._viewModel.ClipBoradSource.Insert(0, f);
-                }
-            }
-
-
-            // HTodo  ：复制的文件 
-            System.Collections.Specialized.StringCollection list = System.Windows.Clipboard.GetFileDropList();
-
-            foreach (var item in list)
-            {
-                if (Directory.Exists(item) || File.Exists(item))
+                if (!string.IsNullOrEmpty(text))
                 {
                     if (this._viewModel.ClipBoradSource.Count > 0)
                     {
                         ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
 
-                        if (last.Detial != item)
+                        if (last.Detial != text)
                         {
-                            ClipBoradBindModel f = new ClipBoradBindModel(item, ClipBoardType.FileSystem);
+                            ClipBoradBindModel f = new ClipBoradBindModel(text, ClipBoardType.Text);
                             this._viewModel.ClipBoradSource.Insert(0, f);
                         }
                     }
                     else
                     {
-                        ClipBoradBindModel f = new ClipBoradBindModel(item, ClipBoardType.FileSystem);
+                        ClipBoradBindModel f = new ClipBoradBindModel(text, ClipBoardType.Text);
                         this._viewModel.ClipBoradSource.Insert(0, f);
                     }
-
-
                 }
+
+
+                // HTodo  ：复制的文件 
+                System.Collections.Specialized.StringCollection list = System.Windows.Clipboard.GetFileDropList();
+
+                foreach (var item in list)
+                {
+                    if (Directory.Exists(item) || File.Exists(item))
+                    {
+                        if (this._viewModel.ClipBoradSource.Count > 0)
+                        {
+                            ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
+
+                            if (last.Detial != item)
+                            {
+                                ClipBoradBindModel f = new ClipBoradBindModel(item, ClipBoardType.FileSystem);
+                                this._viewModel.ClipBoradSource.Insert(0, f);
+                            }
+                        }
+                        else
+                        {
+                            ClipBoradBindModel f = new ClipBoradBindModel(item, ClipBoardType.FileSystem);
+                            this._viewModel.ClipBoradSource.Insert(0, f);
+                        }
+
+
+                    }
+                }
+
+                //// HTodo  ：复制的图片 
+                //BitmapSource bit = System.Windows.Clipboard.GetImage();
+
+                //if (bit != null)
+                //{
+                //    if (this._viewModel.ClipBoradSource.Count > 0)
+                //    {
+                //        ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
+
+                //        if (last.Detial != bit.ToString())
+                //        {
+                //            ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
+                //            this._viewModel.ClipBoradSource.Insert(0, f);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
+                //        this._viewModel.ClipBoradSource.Insert(0, f);
+                //    }
+
+
+                //}
             }
-
-            //// HTodo  ：复制的图片 
-            //BitmapSource bit = System.Windows.Clipboard.GetImage();
-
-            //if (bit != null)
-            //{
-            //    if (this._viewModel.ClipBoradSource.Count > 0)
-            //    {
-            //        ClipBoradBindModel last = this._viewModel.ClipBoradSource.First();
-
-            //        if (last.Detial != bit.ToString())
-            //        {
-            //            ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
-            //            this._viewModel.ClipBoradSource.Insert(0, f);
-            //        }
-            //    }
-            //    else
-            //    {
-            //        ClipBoradBindModel f = new ClipBoradBindModel(bit.ToString(), ClipBoardType.Image);
-            //        this._viewModel.ClipBoradSource.Insert(0, f);
-            //    }
-
-
-            //}
+            catch (Exception ex)
+            {
+                LogBindModel log = new LogBindModel();
+                log.Message = ex.Message;
+                this._viewModel.Log = log;
+            }
 
         }
 
@@ -274,8 +285,6 @@ namespace HebianGu.Product.WinHelper
 
             this.DataContext = _viewModel;
 
-
-
             string filePath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, SysTemConfiger.ConfigerFolder);
 
             if (!Directory.Exists(filePath))
@@ -306,6 +315,8 @@ namespace HebianGu.Product.WinHelper
 
             this.LoadPrograms();
 
+            this.LoadExtend();
+
             this.RegisterAPI();
 
             this.RefreshSysSource();
@@ -326,6 +337,31 @@ namespace HebianGu.Product.WinHelper
 
             this._viewModel.NotePadSource = b;
 
+        }
+
+        /// <summary> 加载扩展工具 </summary>
+        public void LoadExtend()
+        {
+
+            string extendPath = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, SysTemConfiger.ConfigerExtend);
+
+            if (!Directory.Exists(extendPath)) return;
+
+            DirectoryInfo folder = Directory.CreateDirectory(extendPath);
+
+            var extends = folder.GetDirectories();
+
+            foreach (var item in extends)
+            {
+                var file = item.Find<FileInfo>(l => l.Extension.EndsWith("exe"));
+
+                if (file == null) continue;
+
+                FileBindModel fileBind = new FileBindModel(file);
+                fileBind.FileName = item.Name;
+
+                this._viewModel.ExtendSource.Add(fileBind);
+            }
         }
 
         /// <summary> 加载记事本 </summary>
@@ -435,7 +471,6 @@ namespace HebianGu.Product.WinHelper
         {
             throw new NotImplementedException();
         }
-
 
         #endregion
 
@@ -925,9 +960,13 @@ URL = {0}", w.Url);
 
             File.WriteAllText(configerPath, s);
 
+           
+
             string n = _viewModel.NotePadSource.JsonSerialize<ObservableCollection<NotePadBindModel>>();
 
             File.WriteAllText(notepadPath, n);
+
+            _viewModel.ClipBoradSource.RemoveAtAfter(ControlConfiger.Instance.NotePadSaveCount);
 
             string c = _viewModel.ClipBoradSource.JsonSerialize<ObservableCollection<ClipBoradBindModel>>();
 
@@ -1096,17 +1135,12 @@ URL = {0}", w.Url);
         /// <summary> 启动浏览器 </summary>
         private void myexplorer_Click(object sender, RoutedEventArgs e)
         {
-            //Process.Start("explore.exe", "https://www.hao123.com/");
-
             //从注册表中读取默认浏览器可执行文件路径  
             RegistryKey key = Registry.ClassesRoot.OpenSubKey(@"http\shell\open\command\");
+
             string s = key.GetValue("").ToString();
 
-            //s就是你的默认浏览器，不过后面带了参数，把它截去，不过需要注意的是：不同的浏览器后面的参数不一样！  
-            //"D:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -- "%1"  
             System.Diagnostics.Process.Start(s.Substring(0, s.Length - 8), "https://www.hao123.com/");
-
-
         }
 
         /// <summary> 截图工具 </summary>

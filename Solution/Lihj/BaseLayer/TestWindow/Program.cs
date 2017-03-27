@@ -16,8 +16,12 @@ namespace TestWindow
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormTestVerctor());
-            
+            Application.Run(new FormTreeListModel());
+
+
+
+
         }
+
     }
 }

@@ -51,6 +51,12 @@
     <Compile Include="FormTestVerctor.Designer.cs">
       <DependentUpon>FormTestVerctor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTreeListModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTreeListModel.Designer.cs">
+      <DependentUpon>FormTreeListModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="TestThread.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormTestVerctor.resx">
       <DependentUpon>FormTestVerctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTreeListModel.resx">
+      <DependentUpon>FormTreeListModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TestThread.resx">
       <DependentUpon>TestThread.cs</DependentUpon>

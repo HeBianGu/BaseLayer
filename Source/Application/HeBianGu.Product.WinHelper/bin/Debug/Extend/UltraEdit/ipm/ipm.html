@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <meta charset="utf-8">
+    <title>Trial mode</title>
+    <script src="js/ipm-config.js"></script>
+    <script src="js/ipm-localize.js"></script>
+    <script src="js/ipm-arrange.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body id="ipm_body">
+
+    <!-- TOP content: trial indicator -->
+    <div id="trial-time-left">
+
+      <!-- Trial mode text-->
+      <h1 id="title">
+      </h1>
+
+      <!-- Days left text -->
+      <div id="trial-days-text">
+        <span class="l_trialDaysText">
+          Days left in free trial:
+        </span>
+        <strong id="daysLeft"></strong>
+      </div>
+
+      <!-- Progress bar -->
+      <div id="progress-bar"></div>
+
+    </div>
+
+
+
+    <!-- LEFT content - dynamically populated -->
+    <div id="ipm-dynamic">
+    </div>
+
+
+
+    <!-- RIGHT content: buy/activate buttons -->
+    <div id="ipm-action">
+
+      <h2 class="lic-key">
+        <img src="images/key.png" alt="">
+        <span class="l_licenseApp">
+          License <span class="appname"></span>
+        </span>
+      </h2>
+
+      <!-- Buy new button -->
+      <a href="#" id="buynew" target="_blank" class="button">
+        <span id="buy_ue_text" class="l_buyNew">
+          Buy new:
+        </span>
+        <strong>
+          <span id="buy_ue_price" class="price pnew">
+            
+          </span>
+        </strong>
+      </a>
+
+      <!-- Upgrade button -->
+      <a href="#" id="buyupg" target="_blank" class="button">
+        <span id="upg_ue_text" class="l_upgrade">
+          Upgrade:
+        </span>
+        <strong>
+          <span id="upg_ue_price" class="price pupg">
+            $39.95
+          </span>
+        </strong>
+      </a>
+
+      <!-- Phone text -->
+      <div id="phone-order">
+        <span class="l_phoneOrder">
+          You can also call +1-513-892-8600 to order over the phone.
+        </span>
+      </div>
+
+      <!-- Activate button -->
+      <a href="#" id="showLicenseDialog" class="button activate">
+        <span id="showLicenseDialogText" class="l_enterLicenseKey">
+          Enter license key
+        </span>
+      </a>
+
+    </div>
+
+    <!-- Support / version links -->
+    <div id="ipm-action-footer">
+
+      <p>
+        <!-- Support link -->
+        <a href="http://www.ultraedit.com/resources.html" target="_blank"><span class="l_support">Resources and support</span></a> &nbsp;&nbsp;
+        <!-- Version info link -->
+        <a href="#"><span id="showAboutDialog" class="l_version">Version info</span></a>
+      </p>
+
+    </div>
+
+
+  </body>
+</html>

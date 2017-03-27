@@ -1,5 +1,4 @@
-﻿using HebianGu.ObjectBase.Logger;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -14,51 +13,29 @@ namespace HebianGu.ComLibModule.FileEx
         /// <summary> 打开文件</summary>
         public static void OpenFileInfo(this string FilePath)
         {
-            if (File.Exists(FilePath))
-            {
-                System.Diagnostics.Process.Start("explorer.exe", FilePath);
-            }
-            else
-            {
-                ComLogProvider.Log.RunLog("No Find File " + FilePath);
-            }
+            System.Diagnostics.Process.Start("explorer.exe", FilePath);
         }
 
         /// <summary>  打开文件夹 </summary>
         public static void OpenDirectoryInfo(this string dirctroyPath)
         {
-
-            if (Directory.Exists(dirctroyPath))
-            {
-                System.Diagnostics.Process.Start("explorer.exe", dirctroyPath);
-            }
-            else
-            {
-                ComLogProvider.Log.RunLog("No Find File " + dirctroyPath);
-            }
-
+            System.Diagnostics.Process.Start("explorer.exe", dirctroyPath);
         }
 
         /// <summary> 删除文件 </summary>
         public static bool DeleteFile(this string fileFullPath)
         {
-            if (File.Exists(fileFullPath))
+            if (File.GetAttributes(fileFullPath) == FileAttributes.Normal)
             {
-                if (File.GetAttributes(fileFullPath) == FileAttributes.Normal)
-                {
-                    File.Delete(fileFullPath);
-                }
-                else
-                {
-                    File.SetAttributes(fileFullPath, FileAttributes.Normal);
-                    File.Delete(fileFullPath);
-                }
-                return true;
+                File.Delete(fileFullPath);
             }
             else
             {
-                ComLogProvider.Log.RunLog("No Find File " + fileFullPath);
+                File.SetAttributes(fileFullPath, FileAttributes.Normal);
+                File.Delete(fileFullPath);
             }
+            return true;
+
             return false;
         }
 
@@ -329,16 +306,11 @@ namespace HebianGu.ComLibModule.FileEx
         /// <summary> 对文件执行Func操作</summary>
         public static void FileSetAction(this string filePath, Action<FileInfo> action)
         {
-            if (File.Exists(filePath))
-            {
-                FileInfo file = new FileInfo(filePath);
 
-                action(file);
-            }
-            else
-            {
-                ComLogProvider.Log.RunLog("No Find File " + filePath);
-            }
+            FileInfo file = new FileInfo(filePath);
+
+            action(file);
+
         }
     }
 }

@@ -182,9 +182,7 @@
                     <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/Hammer.png"/>
                 </Button.Background>
             </Button>
-
-
-
+            
             <TabControl AllowDrop="True" Margin="0" Grid.Row="1" TabStripPlacement="Left" BorderThickness="0" Background="Transparent" >
                 <TabItem Header="常用文件"  TabIndex="0" Style="{DynamicResource TabItemStyle}" FontSize="8" IsSelected="True">
                     <TabItem.Background>
@@ -223,6 +221,13 @@
                         <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Pictures.png"/>
                     </TabItem.Background>
                     <ListBox  x:Name="last"  Style="{DynamicResource styledItems}"   ItemsSource="{Binding LastSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
+                    </ListBox>
+                </TabItem>
+                 <TabItem Header="集成程序" TabIndex="4" Style="{DynamicResource TabItemStyle}"   ToolTip="集成程序" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">
+                    <TabItem.Background>
+                        <ImageBrush ImageSource="/HebianGu.Product.WinHelper;component/image/图标B/My Pictures.png"/>
+                    </TabItem.Background>
+                    <ListBox  x:Name="extend"  Style="{DynamicResource styledItems}"   ItemsSource="{Binding ExtendSource,Mode=TwoWay}"  MouseDoubleClick="listBox_MouseDoubleClick">
                     </ListBox>
                 </TabItem>
                 <TabItem Header="系统资源" TabIndex="5" Style="{DynamicResource TabItemStyle}"   ToolTip="系统资源" AllowDrop="True" IsHitTestVisible="True" Margin="0,0,0,0.2" FontSize="8">

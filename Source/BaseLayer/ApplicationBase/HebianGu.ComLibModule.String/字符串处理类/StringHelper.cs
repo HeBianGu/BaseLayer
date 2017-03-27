@@ -128,17 +128,13 @@ namespace DotNet.Utilities
 
         #region 删除最后一个字符之后的字符
 
-        /// <summary>
-        /// 删除最后结尾的一个逗号
-        /// </summary>
+        /// <summary>  删除最后结尾的一个逗号 </summary>
         public static string DelLastComma(string str)
         {
             return str.Substring(0, str.LastIndexOf(","));
         }
 
-        /// <summary>
-        /// 删除最后结尾的指定字符后的字符
-        /// </summary>
+        /// <summary> 删除最后结尾的指定字符后的字符 </summary>
         public static string DelLastChar(string str, string strchar)
         {
             return str.Substring(0, str.LastIndexOf(strchar));
@@ -146,14 +142,7 @@ namespace DotNet.Utilities
 
         #endregion
 
-
-
-
-        /// <summary>
-        /// 转全角的函数(SBC case)
-        /// </summary>
-        /// <param name="input"></param>
-        /// <returns></returns>
+        /// <summary> 转全角的函数(SBC case)  </summary>
         public static string ToSBC(string input)
         {
             //半角转全角：
@@ -171,11 +160,7 @@ namespace DotNet.Utilities
             return new string(c);
         }
 
-        /// <summary>
-        ///  转半角的函数(SBC case)
-        /// </summary>
-        /// <param name="input">输入</param>
-        /// <returns></returns>
+        /// <summary> 转半角的函数(SBC case) </summary> 
         public static string ToDBC(string input)
         {
             char[] c = input.ToCharArray();
@@ -192,12 +177,7 @@ namespace DotNet.Utilities
             return new string(c);
         }
 
-        /// <summary>
-        /// 把字符串按照指定分隔符装成 List 去除重复
-        /// </summary>
-        /// <param name="o_str"></param>
-        /// <param name="sepeater"></param>
-        /// <returns></returns>
+        /// <summary> 把字符串按照指定分隔符装成 List 去除重复 </summary> 
         public static List<string> GetSubStringList(string o_str, char sepeater)
         {
             List<string> list = new List<string>();
@@ -214,12 +194,7 @@ namespace DotNet.Utilities
 
 
         #region 将字符串样式转换为纯字符串
-        /// <summary>
-        ///  将字符串样式转换为纯字符串
-        /// </summary>
-        /// <param name="StrList"></param>
-        /// <param name="SplitString"></param>
-        /// <returns></returns>
+        /// <summary> 将字符串样式转换为纯字符串 </summary> 
         public static string GetCleanStyle(string StrList, string SplitString)
         {
             string RetrunValue = "";
@@ -240,14 +215,7 @@ namespace DotNet.Utilities
         #endregion
 
         #region 将字符串转换为新样式
-        /// <summary>
-        /// 将字符串转换为新样式
-        /// </summary>
-        /// <param name="StrList"></param>
-        /// <param name="NewStyle"></param>
-        /// <param name="SplitString"></param>
-        /// <param name="Error"></param>
-        /// <returns></returns>
+        /// <summary> 将字符串转换为新样式 </summary> 
         public static string GetNewStyle(string StrList, string NewStyle, string SplitString, out string Error)
         {
             string ReturnValue = "";
@@ -298,12 +266,7 @@ namespace DotNet.Utilities
         }
         #endregion
 
-        /// <summary>
-        /// 分割字符串
-        /// </summary>
-        /// <param name="str"></param>
-        /// <param name="splitstr"></param>
-        /// <returns></returns>
+        /// <summary> 分割字符串 </summary> 
         public static string[] SplitMulti(string str, string splitstr)
         {
             string[] strArray = null;
@@ -327,11 +290,7 @@ namespace DotNet.Utilities
         }
 
         #region 获取正确的Id，如果不是正整数，返回0
-        /// <summary>
-        /// 获取正确的Id，如果不是正整数，返回0
-        /// </summary>
-        /// <param name="_value"></param>
-        /// <returns>返回正确的整数ID，失败返回0</returns>
+        /// <summary> 获取正确的Id，如果不是正整数，返回0 </summary> 
         public static int StrToId(string _value)
         {
             if (IsNumberId(_value))
@@ -341,11 +300,7 @@ namespace DotNet.Utilities
         }
         #endregion
         #region 检查一个字符串是否是纯数字构成的，一般用于查询字符串参数的有效性验证。
-        /// <summary>
-        /// 检查一个字符串是否是纯数字构成的，一般用于查询字符串参数的有效性验证。(0除外)
-        /// </summary>
-        /// <param name="_value">需验证的字符串。。</param>
-        /// <returns>是否合法的bool值。</returns>
+        /// <summary> 检查一个字符串是否是纯数字构成的，一般用于查询字符串参数的有效性验证。(0除外) </summary> 
         public static bool IsNumberId(string _value)
         {
             return QuickValidate("^[1-9]*[0-9]*$", _value);
@@ -372,26 +327,18 @@ namespace DotNet.Utilities
 
 
         #region 根据配置对指定字符串进行 MD5 加密
-        /// <summary>
-        /// 根据配置对指定字符串进行 MD5 加密
-        /// </summary>
-        /// <param name="s"></param>
-        /// <returns></returns>
-        public static string GetMD5(string s)
-        {
-            //md5加密
-            s = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(s, "md5").ToString();
+        ///// <summary> 根据配置对指定字符串进行 MD5 加密 </summary> 
+        //public static string GetMD5(string s)
+        //{
+        //    //md5加密
+        //    s = System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(s, "md5").ToString();
 
-            return s.ToLower().Substring(8, 16);
-        }
+        //    return s.ToLower().Substring(8, 16);
+        //}
         #endregion
 
         #region 得到字符串长度，一个汉字长度为2
-        /// <summary>
-        /// 得到字符串长度，一个汉字长度为2
-        /// </summary>
-        /// <param name="inputString">参数字符串</param>
-        /// <returns></returns>
+        /// <summary> 得到字符串长度，一个汉字长度为2 </summary> 
         public static int StrLength(string inputString)
         {
             System.Text.ASCIIEncoding ascii = new System.Text.ASCIIEncoding();
@@ -409,12 +356,7 @@ namespace DotNet.Utilities
         #endregion
 
         #region 截取指定长度字符串
-        /// <summary>
-        /// 截取指定长度字符串
-        /// </summary>
-        /// <param name="inputString">要处理的字符串</param>
-        /// <param name="len">指定长度</param>
-        /// <returns>返回处理后的字符串</returns>
+        /// <summary> 截取指定长度字符串 </summary> 
         public static string ClipString(string inputString, int len)
         {
             bool isShowFix = false;
@@ -457,11 +399,7 @@ namespace DotNet.Utilities
 
 
         #region HTML转行成TEXT
-        /// <summary>
-        /// HTML转行成TEXT
-        /// </summary>
-        /// <param name="strHtml"></param>
-        /// <returns></returns>
+        /// <summary>  HTML转行成TEXT </summary> 
         public static string HtmlToTxt(string strHtml)
         {
             string[] aryReg ={
@@ -500,11 +438,7 @@ namespace DotNet.Utilities
         #endregion
 
         #region 判断对象是否为空
-        /// <summary>
-        /// 判断对象是否为空，为空返回true
-        /// </summary>
-        /// <typeparam name="T">要验证的对象的类型</typeparam>
-        /// <param name="data">要验证的对象</param>        
+        /// <summary> 判断对象是否为空，为空返回true </summary>   
         public static bool IsNullOrEmpty<T>(T data)
         {
             //如果为null
@@ -532,10 +466,7 @@ namespace DotNet.Utilities
             return false;
         }
 
-        /// <summary>
-        /// 判断对象是否为空，为空返回true
-        /// </summary>
-        /// <param name="data">要验证的对象</param>
+        /// <summary> 判断对象是否为空，为空返回true </summary> 
         public static bool IsNullOrEmpty(object data)
         {
             //如果为null

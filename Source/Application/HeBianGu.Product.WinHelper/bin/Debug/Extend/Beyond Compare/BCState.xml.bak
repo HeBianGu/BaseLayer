@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 4 from Scooter Software -->
+<BCState Version="1" MinVersion="1">
+	<TBcState>
+		<FirstStartup Value="False"/>
+		<FormPositions>
+			<TCheckForUpdatesDialog Value="683;326;1236;713"/>
+			<TDirCompareSessionDialog Value="2581;218;3179;861"/>
+			<TDirSyncSessionDialog Value="661;198;1259;841"/>
+			<TFileFormatManagerDialog Value="660;228;1259;811"/>
+			<TProfileBrowseDialog Value="2431;175;3329;865"/>
+			<TSessionSaveAsDialog Value="750;392;1170;647"/>
+			<TSourceControlManagerDialog Value="660;228;1259;811"/>
+			<TTextCompareSessionDialog Value="661;198;1259;842"/>
+			<TTextFormatDialog Value="667;209;1253;831"/>
+			<TViewFrame Value="-1464;72;-36;923;3;120"/>
+		</FormPositions>
+	</TBcState>
+	<TCheckForUpdatesState>
+		<Build Value="21719"/>
+		<CheckID Value="13194139533312"/>
+		<LastChecked Value="2016-12-08 14:02:00"/>
+		<MsgDate Value="2016-11-01 00:00:00"/>
+		<MsgDaysDate Value="2016-11-01 00:00:00"/>
+	</TCheckForUpdatesState>
+	<TDataCompareState>
+		<LeftMRUSpecs>
+			<_0 Value="F:\ProdDesign历史源代码\20151222\DEV-6.2(20151222)\Product\Config\zh-CN\Modules\ResourceManagement\Equipment\Equipment.mdb"/>
+		</LeftMRUSpecs>
+		<MRUFonts>
+			<_0 Value="Consolas;10"/>
+		</MRUFonts>
+	</TDataCompareState>
+	<TDirCompareState>
+		<LeftMRUSpecs>
+			<_0 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtension"/>
+			<_1 Value="E:\WSE\Source\Modules\WSE\FunctionCallData"/>
+			<_2 Value="E:\WSE\Source\Modules\WSE\WSEAlg"/>
+			<_3 Value="E:\WSE\Source\Modules\WSE\WSE.UICommon"/>
+			<_4 Value="E:\WSE\Source\Modules\WSE\WSEProjectSetting"/>
+			<_5 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBaseGas"/>
+			<_6 Value="E:\WSE\Source\Modules\WSE\GlobalSetting"/>
+			<_7 Value="E:\WSE\Source\Modules\WSE\StimulationEvaluation"/>
+			<_8 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBase"/>
+		</LeftMRUSpecs>
+		<MRUFilters>
+			<_0 Value="-DayProductionTR.cs;-MonthProductionTR.cs;-PredictResultTable.cs"/>
+			<_1 Value="-*.csproj;-*.user;-*.vspscc;-AlgorithmLayer.zip;-.\OPT.OLMC\;-.\OPTSetup\;-.\PEOffice5Include\;-.\PEOfficeCenter\;-.\PEOfficeStartCenter\;-.\Tools\;-.\GeneralLayer\;-.\BaseLayer\;-.\Applications\;-.\Modules\ProdDesignforEffusion\;-.\Modules\ProdDesignforEffusion.Result\;-.\Modules\ProdDesignforPVTFitt\;-.\Modules\ProdDesignforStringPressAnalysis\;-.\Modules\ProdDesignforStringPressAnalysis.Result\;-.\Modules\ProdDesignGas\;-.\Modules\ProdDiag\;-.\Modules\ProdDiagESP\;-.\Modules\ProdForecast\;-.\Modules\ProdForecastforGas\;-.\Modules\ProdForecastforUCG\;-.\Modules\QKTestModule\;-.\Modules\ReModel\;-.\Modules\ReModelResult\;-.\Modules\ResourceManagement\;-.\Modules\ResultsManagerFunction\;-.\Modules\RockProperty\;-.\Modules\SaveResultDlg\;-.\Modules\Section\;-.\Modules\SectionResult\;-.\Modules\SimON\;-.\Modules\Temp\;-.\Modules\TestModule1\;-.\Modules\TestModule2\;-.\Modules\TestModuleResult\;-.\Modules\TestPublicDll\;-.\Modules\UnitTest\;-.\Modules\WellInfoAnalyze\;-.\Modules\WellInfoDriveParam\;-.\Modules\WellinfoSideCurveFunction\;-.\Modules\WellLogResult\;-.\Modules\WellMapDriverModule\;-.\Modules\WellMapIconEdit\;-.\Modules\WellMapModule\;-.\Modules\WellMapModuleResult\;-.\Modules\WellStringBrowserModule\;-.\Modules\WellStringModule\;-.\Modules\WellStringModuleResult\;-.\Modules\WellTrack3D\;-.\Modules\WIDesign\;-.\Modules\WIPA\;-.\Modules\WSE\;-.\Modules\BoundaryFaultPaserResult\;-.\Modules\CouplingForecastSys\;-.\Modules\DataManagerFunction\;-.\Modules\Fence3DModule\;-.\Modules\FieldAssis\;-.\Modules\FluidCal\;-.\Modules\ForceAnalysisModule\;-.\Modules\ForceAnalysisModuleResult\;-.\Modules\GatheringPumpCurveParser\;-.\Modules\IconEditModule\;-.\Modules\MatGasModule\;-.\Modules\MatOilModule\;-.\Modules\OPT.Product.GeneralLayer.XtraReportUnitSet\;-.\Modules\OPT.Product.Modules.HGMaps\;-.\Modules\OPT.Product.ProdDiag.DiagramShow\;-.\Modules\PEPS\;-.\Modules\PipeNet\;-.\Modules\PipeNetForGas\;-.\Modules\PipeProperty\;-.\Modules\PlanManagerModule\;-.\Modules\ProdAna\;-.\AlgorithmLayer\AlgorithmBase_Redo\;-.\AlgorithmLayer\AlgorithmBase\;-.\Modules\OPT.Product.DMParser.Equipment\;-.\Modules\OPT.Product.DMParser.SteadyWell\;-.\Modules\OPT.Product.Function.CodeSetting\;-.\Modules\ProdDesign\CompatibilityTest\;-.\Modules\ProdDesign\ConfigConverter\;-.\Modules\ProdDesign\OPT.Product.Function.ProdDesignCompatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Compatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.EquipmentUtil\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Base\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch\obj\;-.\AlgorithmLayer\AlgorithmProxy\obj\;-.\AlgorithmLayer\AlgInPEOffice5\TranslatorUtil\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesignForGas\;-.\AlgorithmLayer\AlgInPEOffice5\ProdForecastForGas\;-.\AlgorithmLayer\AlgInPEOffice5\SampleComp\;-.\AlgorithmLayer\AlgInPEOffice5\SandCtrl\;-.\AlgorithmLayer\AlgInPEOffice5\NeuralNetWork\;-.\AlgorithmLayer\AlgInPEOffice5\PipeNetCalcLib\;-.\AlgorithmLayer\AlgInPEOffice5\LMTestDll\;-.\AlgorithmLayer\AlgInPEOffice5\GaswellAnaAlgorithm\;-.\AlgorithmLayer\AlgInPEOffice5\GL_Algorithm\;-.\AlgorithmLayer\AlgInPEOffice5\AlgDll\;-.\AlgorithmLayer\AlgInPEOffice5\Equipment\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Release\;-.\DataEngine\;-.\DataLayer\;-.\Modules\ProdDiagGround\;-.\Modules\ReservoirPlan\;-.\Modules\SandCtrl\;-.\Modules\WellInfoData\;-.\Modules\WellInfoModule\;-.\Modules\WellWizard\;-.\Modules\CoSim\;-.\Modules\DxUtils\;-.\Modules\FieldGoal\;-.\Modules\HolzerIntegralFunction\;-.\Modules\IconDesignModule\;-.\Modules\IFieldGoal\;-.\Modules\ProdAna-xj\"/>
+			<_2 Value="-*.csproj;-*.user;-*.vspscc;-AlgorithmLayer.zip;-.\OPT.OLMC\;-.\OPTSetup\;-.\PEOffice5Include\;-.\PEOfficeCenter\;-.\PEOfficeStartCenter\;-.\Tools\;-.\GeneralLayer\;-.\BaseLayer\;-.\Applications\;-.\Modules\ProdDesignforEffusion\;-.\Modules\ProdDesignforEffusion.Result\;-.\Modules\ProdDesignforPVTFitt\;-.\Modules\ProdDesignforStringPressAnalysis\;-.\Modules\ProdDesignforStringPressAnalysis.Result\;-.\Modules\ProdDesignGas\;-.\Modules\ProdDiag\;-.\Modules\ProdDiagESP\;-.\Modules\ProdForecast\;-.\Modules\ProdForecastforGas\;-.\Modules\ProdForecastforUCG\;-.\Modules\QKTestModule\;-.\Modules\ReModel\;-.\Modules\ReModelResult\;-.\Modules\ResourceManagement\;-.\Modules\ResultsManagerFunction\;-.\Modules\RockProperty\;-.\Modules\SaveResultDlg\;-.\Modules\Section\;-.\Modules\SectionResult\;-.\Modules\SimON\;-.\Modules\Temp\;-.\Modules\TestModule1\;-.\Modules\TestModule2\;-.\Modules\TestModuleResult\;-.\Modules\TestPublicDll\;-.\Modules\UnitTest\;-.\Modules\WellInfoAnalyze\;-.\Modules\WellInfoDriveParam\;-.\Modules\WellinfoSideCurveFunction\;-.\Modules\WellLogResult\;-.\Modules\WellMapDriverModule\;-.\Modules\WellMapIconEdit\;-.\Modules\WellMapModule\;-.\Modules\WellMapModuleResult\;-.\Modules\WellStringBrowserModule\;-.\Modules\WellStringModule\;-.\Modules\WellStringModuleResult\;-.\Modules\WellTrack3D\;-.\Modules\WIDesign\;-.\Modules\WIPA\;-.\Modules\WSE\;-.\Modules\BoundaryFaultPaserResult\;-.\Modules\CouplingForecastSys\;-.\Modules\DataManagerFunction\;-.\Modules\Fence3DModule\;-.\Modules\FieldAssis\;-.\Modules\FluidCal\;-.\Modules\ForceAnalysisModule\;-.\Modules\ForceAnalysisModuleResult\;-.\Modules\GatheringPumpCurveParser\;-.\Modules\IconEditModule\;-.\Modules\MatGasModule\;-.\Modules\MatOilModule\;-.\Modules\OPT.Product.GeneralLayer.XtraReportUnitSet\;-.\Modules\OPT.Product.Modules.HGMaps\;-.\Modules\OPT.Product.ProdDiag.DiagramShow\;-.\Modules\PEPS\;-.\Modules\PipeNet\;-.\Modules\PipeNetForGas\;-.\Modules\PipeProperty\;-.\Modules\PlanManagerModule\;-.\Modules\ProdAna\;-.\AlgorithmLayer\AlgorithmBase_Redo\;-.\AlgorithmLayer\AlgorithmBase\;-.\Modules\OPT.Product.DMParser.Equipment\;-.\Modules\OPT.Product.DMParser.SteadyWell\;-.\Modules\OPT.Product.Function.CodeSetting\;-.\Modules\ProdDesign\CompatibilityTest\;-.\Modules\ProdDesign\ConfigConverter\;-.\Modules\ProdDesign\OPT.Product.Function.ProdDesignCompatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Compatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.EquipmentUtil\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Base\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch\obj\;-.\AlgorithmLayer\AlgorithmProxy\obj\;-.\AlgorithmLayer\AlgInPEOffice5\TranslatorUtil\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesignForGas\;-.\AlgorithmLayer\AlgInPEOffice5\ProdForecastForGas\;-.\AlgorithmLayer\AlgInPEOffice5\SampleComp\;-.\AlgorithmLayer\AlgInPEOffice5\SandCtrl\;-.\AlgorithmLayer\AlgInPEOffice5\NeuralNetWork\;-.\AlgorithmLayer\AlgInPEOffice5\PipeNetCalcLib\;-.\AlgorithmLayer\AlgInPEOffice5\LMTestDll\;-.\AlgorithmLayer\AlgInPEOffice5\GaswellAnaAlgorithm\;-.\AlgorithmLayer\AlgInPEOffice5\GL_Algorithm\;-.\AlgorithmLayer\AlgInPEOffice5\AlgDll\;-.\AlgorithmLayer\AlgInPEOffice5\Equipment\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Release\;-.\DataEngine\;-.\DataLayer\"/>
+			<_3 Value="-*.csproj;-*.user;-*.vspscc;-AlgorithmLayer.zip;-.\OPT.OLMC\;-.\OPTSetup\;-.\PEOffice5Include\;-.\PEOfficeCenter\;-.\PEOfficeStartCenter\;-.\Tools\;-.\GeneralLayer\;-.\BaseLayer\;-.\Applications\;-.\Modules\ProdDesignforEffusion\;-.\Modules\ProdDesignforEffusion.Result\;-.\Modules\ProdDesignforPVTFitt\;-.\Modules\ProdDesignforStringPressAnalysis\;-.\Modules\ProdDesignforStringPressAnalysis.Result\;-.\Modules\ProdDesignGas\;-.\Modules\ProdDiag\;-.\Modules\ProdDiagESP\;-.\Modules\ProdForecast\;-.\Modules\ProdForecastforGas\;-.\Modules\ProdForecastforUCG\;-.\Modules\QKTestModule\;-.\Modules\ReModel\;-.\Modules\ReModelResult\;-.\Modules\ResourceManagement\;-.\Modules\ResultsManagerFunction\;-.\Modules\RockProperty\;-.\Modules\SaveResultDlg\;-.\Modules\Section\;-.\Modules\SectionResult\;-.\Modules\SimON\;-.\Modules\Temp\;-.\Modules\TestModule1\;-.\Modules\TestModule2\;-.\Modules\TestModuleResult\;-.\Modules\TestPublicDll\;-.\Modules\UnitTest\;-.\Modules\WellInfoAnalyze\;-.\Modules\WellInfoDriveParam\;-.\Modules\WellinfoSideCurveFunction\;-.\Modules\WellLogResult\;-.\Modules\WellMapDriverModule\;-.\Modules\WellMapIconEdit\;-.\Modules\WellMapModule\;-.\Modules\WellMapModuleResult\;-.\Modules\WellStringBrowserModule\;-.\Modules\WellStringModule\;-.\Modules\WellStringModuleResult\;-.\Modules\WellTrack3D\;-.\Modules\WIDesign\;-.\Modules\WIPA\;-.\Modules\WSE\;-.\Modules\BoundaryFaultPaserResult\;-.\Modules\CouplingForecastSys\;-.\Modules\DataManagerFunction\;-.\Modules\Fence3DModule\;-.\Modules\FieldAssis\;-.\Modules\FluidCal\;-.\Modules\ForceAnalysisModule\;-.\Modules\ForceAnalysisModuleResult\;-.\Modules\GatheringPumpCurveParser\;-.\Modules\IconEditModule\;-.\Modules\MatGasModule\;-.\Modules\MatOilModule\;-.\Modules\OPT.Product.GeneralLayer.XtraReportUnitSet\;-.\Modules\OPT.Product.Modules.HGMaps\;-.\Modules\OPT.Product.ProdDiag.DiagramShow\;-.\Modules\PEPS\;-.\Modules\PipeNet\;-.\Modules\PipeNetForGas\;-.\Modules\PipeProperty\;-.\Modules\PlanManagerModule\;-.\Modules\ProdAna\;-.\AlgorithmLayer\AlgorithmBase_Redo\;-.\AlgorithmLayer\AlgorithmBase\;-.\Modules\OPT.Product.DMParser.Equipment\;-.\Modules\OPT.Product.DMParser.SteadyWell\;-.\Modules\OPT.Product.Function.CodeSetting\;-.\Modules\ProdDesign\CompatibilityTest\;-.\Modules\ProdDesign\ConfigConverter\;-.\Modules\ProdDesign\OPT.Product.Function.ProdDesignCompatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Compatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.EquipmentUtil\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Base\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch\obj\;-.\AlgorithmLayer\AlgorithmProxy\obj\;-.\AlgorithmLayer\AlgInPEOffice5\TranslatorUtil\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesignForGas\;-.\AlgorithmLayer\AlgInPEOffice5\ProdForecastForGas\;-.\AlgorithmLayer\AlgInPEOffice5\SampleComp\;-.\AlgorithmLayer\AlgInPEOffice5\SandCtrl\;-.\AlgorithmLayer\AlgInPEOffice5\NeuralNetWork\;-.\AlgorithmLayer\AlgInPEOffice5\PipeNetCalcLib\;-.\AlgorithmLayer\AlgInPEOffice5\LMTestDll\;-.\AlgorithmLayer\AlgInPEOffice5\GaswellAnaAlgorithm\;-.\AlgorithmLayer\AlgInPEOffice5\GL_Algorithm\;-.\AlgorithmLayer\AlgInPEOffice5\AlgDll\;-.\AlgorithmLayer\AlgInPEOffice5\Equipment\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Release\"/>
+			<_4 Value="*\Function\para\\;-.\CompatibilityTest\;-.\ConfigConverter\;-.\OPT.Product.Function.ProdDesignCompatibility\;-.\OPT.Product.ProdDesign.CapForecast.Result\;-.\OPT.Product.ProdDesign.Compatibility\;-.\OPT.Product.ProdDesign.DataExchanged\;-.\OPT.Product.ProdDesign.EquipmentUtil\;-.\OPT.Product.ProdDesign.IPRCalc.Result\;-.\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\OPT.Product.ProdDesign.NodalAna.Result\;-.\OPT.Product.ProdDesign.ProDesign.Result\;-.\OPT.Product.ProdDesign.PTCalc.Result\;-.\OPT.Product.ProdDesign.TarForecast.Result\;-.\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\OPT.Product.ProdDesign.WPMatch.Result\"/>
+			<_5 Value="-*.csproj;-*.user;-*.vspscc;-AlgorithmLayer.zip;-.\OPT.OLMC\;-.\OPTSetup\;-.\PEOffice5Include\;-.\PEOfficeCenter\;-.\PEOfficeStartCenter\;-.\Tools\;-.\GeneralLayer\;-.\BaseLayer\;-.\Properties\;-.\Applications\;-.\Modules\ProdDesignforEffusion\;-.\Modules\ProdDesignforEffusion.Result\;-.\Modules\ProdDesignforPVTFitt\;-.\Modules\ProdDesignforStringPressAnalysis\;-.\Modules\ProdDesignforStringPressAnalysis.Result\;-.\Modules\ProdDesignGas\;-.\Modules\ProdDiag\;-.\Modules\ProdDiagESP\;-.\Modules\ProdForecast\;-.\Modules\ProdForecastforGas\;-.\Modules\ProdForecastforUCG\;-.\Modules\QKTestModule\;-.\Modules\ReModel\;-.\Modules\ReModelResult\;-.\Modules\ResourceManagement\;-.\Modules\ResultsManagerFunction\;-.\Modules\RockProperty\;-.\Modules\SaveResultDlg\;-.\Modules\Section\;-.\Modules\SectionResult\;-.\Modules\SimON\;-.\Modules\Temp\;-.\Modules\TestModule1\;-.\Modules\TestModule2\;-.\Modules\TestModuleResult\;-.\Modules\TestPublicDll\;-.\Modules\UnitTest\;-.\Modules\WellInfoAnalyze\;-.\Modules\WellInfoDriveParam\;-.\Modules\WellinfoSideCurveFunction\;-.\Modules\WellLogResult\;-.\Modules\WellMapDriverModule\;-.\Modules\WellMapIconEdit\;-.\Modules\WellMapModule\;-.\Modules\WellMapModuleResult\;-.\Modules\WellStringBrowserModule\;-.\Modules\WellStringModule\;-.\Modules\WellStringModuleResult\;-.\Modules\WellTrack3D\;-.\Modules\WIDesign\;-.\Modules\WIPA\;-.\Modules\WSE\;-.\Modules\BoundaryFaultPaserResult\;-.\Modules\CouplingForecastSys\;-.\Modules\DataManagerFunction\;-.\Modules\Fence3DModule\;-.\Modules\FieldAssis\;-.\Modules\FluidCal\;-.\Modules\ForceAnalysisModule\;-.\Modules\ForceAnalysisModuleResult\;-.\Modules\GatheringPumpCurveParser\;-.\Modules\IconEditModule\;-.\Modules\MatGasModule\;-.\Modules\MatOilModule\;-.\Modules\OPT.Product.GeneralLayer.XtraReportUnitSet\;-.\Modules\OPT.Product.Modules.HGMaps\;-.\Modules\OPT.Product.ProdDiag.DiagramShow\;-.\Modules\PEPS\;-.\Modules\PipeNet\;-.\Modules\PipeNetForGas\;-.\Modules\PipeProperty\;-.\Modules\PlanManagerModule\;-.\Modules\ProdAna\;-.\AlgorithmLayer\AlgorithmBase_Redo\;-.\AlgorithmLayer\AlgorithmBase\;-.\Modules\OPT.Product.DMParser.Equipment\;-.\Modules\OPT.Product.DMParser.SteadyWell\;-.\Modules\OPT.Product.Function.CodeSetting\;-.\Modules\ProdDesign\CompatibilityTest\;-.\Modules\ProdDesign\ConfigConverter\;-.\Modules\ProdDesign\OPT.Product.Function.ProdDesignCompatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Compatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.EquipmentUtil\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Base\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch\obj\;-.\AlgorithmLayer\AlgorithmProxy\obj\;-.\AlgorithmLayer\AlgInPEOffice5\TranslatorUtil\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesignForGas\;-.\AlgorithmLayer\AlgInPEOffice5\ProdForecastForGas\;-.\AlgorithmLayer\AlgInPEOffice5\SampleComp\;-.\AlgorithmLayer\AlgInPEOffice5\SandCtrl\;-.\AlgorithmLayer\AlgInPEOffice5\NeuralNetWork\;-.\AlgorithmLayer\AlgInPEOffice5\PipeNetCalcLib\;-.\AlgorithmLayer\AlgInPEOffice5\LMTestDll\;-.\AlgorithmLayer\AlgInPEOffice5\GaswellAnaAlgorithm\;-.\AlgorithmLayer\AlgInPEOffice5\GL_Algorithm\;-.\AlgorithmLayer\AlgInPEOffice5\AlgDll\;-.\AlgorithmLayer\AlgInPEOffice5\Equipment\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Release\"/>
+			<_6 Value="-*.csproj;-*.user;-*.vspscc;-.\OPT.OLMC\;-.\OPTSetup\;-.\PEOffice5Include\;-.\PEOfficeCenter\;-.\PEOfficeStartCenter\;-.\Tools\;-.\GeneralLayer\;-.\BaseLayer\;-.\Applications\;-.\Modules\ProdDesignforEffusion\;-.\Modules\ProdDesignforEffusion.Result\;-.\Modules\ProdDesignforPVTFitt\;-.\Modules\ProdDesignforStringPressAnalysis\;-.\Modules\ProdDesignforStringPressAnalysis.Result\;-.\Modules\ProdDesignGas\;-.\Modules\ProdDiag\;-.\Modules\ProdDiagESP\;-.\Modules\ProdForecast\;-.\Modules\ProdForecastforGas\;-.\Modules\ProdForecastforUCG\;-.\Modules\QKTestModule\;-.\Modules\ReModel\;-.\Modules\ReModelResult\;-.\Modules\ResourceManagement\;-.\Modules\ResultsManagerFunction\;-.\Modules\RockProperty\;-.\Modules\SaveResultDlg\;-.\Modules\Section\;-.\Modules\SectionResult\;-.\Modules\SimON\;-.\Modules\Temp\;-.\Modules\TestModule1\;-.\Modules\TestModule2\;-.\Modules\TestModuleResult\;-.\Modules\TestPublicDll\;-.\Modules\UnitTest\;-.\Modules\WellInfoAnalyze\;-.\Modules\WellInfoDriveParam\;-.\Modules\WellinfoSideCurveFunction\;-.\Modules\WellLogResult\;-.\Modules\WellMapDriverModule\;-.\Modules\WellMapIconEdit\;-.\Modules\WellMapModule\;-.\Modules\WellMapModuleResult\;-.\Modules\WellStringBrowserModule\;-.\Modules\WellStringModule\;-.\Modules\WellStringModuleResult\;-.\Modules\WellTrack3D\;-.\Modules\WIDesign\;-.\Modules\WIPA\;-.\Modules\WSE\;-.\Modules\BoundaryFaultPaserResult\;-.\Modules\CouplingForecastSys\;-.\Modules\DataManagerFunction\;-.\Modules\Fence3DModule\;-.\Modules\FieldAssis\;-.\Modules\FluidCal\;-.\Modules\ForceAnalysisModule\;-.\Modules\ForceAnalysisModuleResult\;-.\Modules\GatheringPumpCurveParser\;-.\Modules\IconEditModule\;-.\Modules\MatGasModule\;-.\Modules\MatOilModule\;-.\Modules\OPT.Product.GeneralLayer.XtraReportUnitSet\;-.\Modules\OPT.Product.Modules.HGMaps\;-.\Modules\OPT.Product.ProdDiag.DiagramShow\;-.\Modules\PEPS\;-.\Modules\PipeNet\;-.\Modules\PipeNetForGas\;-.\Modules\PipeProperty\;-.\Modules\PlanManagerModule\;-.\Modules\ProdAna\;-.\AlgorithmLayer\AlgorithmBase_Redo\;-.\AlgorithmLayer\AlgorithmBase\;-.\Modules\OPT.Product.DMParser.Equipment\;-.\Modules\OPT.Product.DMParser.SteadyWell\;-.\Modules\OPT.Product.Function.CodeSetting\;-.\Modules\ProdDesign\CompatibilityTest\;-.\Modules\ProdDesign\ConfigConverter\;-.\Modules\ProdDesign\OPT.Product.Function.ProdDesignCompatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.Result\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Compatibility\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.EquipmentUtil\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.CapForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.Base\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.MaxProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.NodalAna\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.ProDesign\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.PTCalc\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.TarForecast\obj\;-.\Modules\ProdDesign\OPT.Product.ProdDesign.WPMatch\obj\;-.\AlgorithmLayer\AlgorithmProxy\obj\;-.\AlgorithmLayer\AlgInPEOffice5\TranslatorUtil\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesignForGas\;-.\AlgorithmLayer\AlgInPEOffice5\ProdForecastForGas\;-.\AlgorithmLayer\AlgInPEOffice5\SampleComp\;-.\AlgorithmLayer\AlgInPEOffice5\SandCtrl\;-.\AlgorithmLayer\AlgInPEOffice5\NeuralNetWork\;-.\AlgorithmLayer\AlgInPEOffice5\PipeNetCalcLib\;-.\AlgorithmLayer\AlgInPEOffice5\LMTestDll\;-.\AlgorithmLayer\AlgInPEOffice5\GaswellAnaAlgorithm\;-.\AlgorithmLayer\AlgInPEOffice5\GL_Algorithm\;-.\AlgorithmLayer\AlgInPEOffice5\AlgDll\;-.\AlgorithmLayer\AlgInPEOffice5\Equipment\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\;-.\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Release\"/>
+			<_7 Value="*\Function\\;-.\CompatibilityTest\;-.\ConfigConverter\;-.\OPT.Product.Function.ProdDesignCompatibility\;-.\OPT.Product.ProdDesign.CapForecast.Result\;-.\OPT.Product.ProdDesign.Compatibility\;-.\OPT.Product.ProdDesign.DataExchanged\;-.\OPT.Product.ProdDesign.EquipmentUtil\;-.\OPT.Product.ProdDesign.IPRCalc.Result\;-.\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\OPT.Product.ProdDesign.NodalAna.Result\;-.\OPT.Product.ProdDesign.ProDesign.Result\;-.\OPT.Product.ProdDesign.PTCalc.Result\;-.\OPT.Product.ProdDesign.TarForecast.Result\;-.\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\OPT.Product.ProdDesign.WPMatch.Result\"/>
+			<_8 Value="Function\\;-.\CompatibilityTest\;-.\ConfigConverter\;-.\OPT.Product.Function.ProdDesignCompatibility\;-.\OPT.Product.ProdDesign.CapForecast.Result\;-.\OPT.Product.ProdDesign.Compatibility\;-.\OPT.Product.ProdDesign.DataExchanged\;-.\OPT.Product.ProdDesign.EquipmentUtil\;-.\OPT.Product.ProdDesign.IPRCalc.Result\;-.\OPT.Product.ProdDesign.MaxProDesign.Result\;-.\OPT.Product.ProdDesign.NodalAna.Result\;-.\OPT.Product.ProdDesign.ProDesign.Result\;-.\OPT.Product.ProdDesign.PTCalc.Result\;-.\OPT.Product.ProdDesign.TarForecast.Result\;-.\OPT.Product.ProdDesign.WPMatch.DataExchanged\;-.\OPT.Product.ProdDesign.WPMatch.Result\"/>
+		</MRUFilters>
+		<RightMRUSpecs>
+			<_0 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtensionGas"/>
+			<_1 Value="E:\WSE\Source\Modules\WSE\FunctionCallDataGas"/>
+			<_2 Value="E:\WSE\Source\Modules\WSE\WSEAlgGas"/>
+			<_3 Value="E:\WSE\Source\Modules\WSE\WSE.UICommonGas"/>
+			<_4 Value="E:\WSE\Source\Modules\WSE\WSEProjectSettingGas"/>
+			<_5 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBase"/>
+			<_6 Value="E:\WSE\Source\Modules\WSE\GlobalSettingGas"/>
+			<_7 Value="E:\WSE\Source\Modules\WSE\StimulationEvaluationGas"/>
+			<_8 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBaseGas"/>
+		</RightMRUSpecs>
+	</TDirCompareState>
+	<TDirSyncState>
+		<LeftMRUSpecs>
+			<_0 Value="\\DEV-WANGHUI\Product"/>
+			<_1 Value="\\DEV-WANGHUI"/>
+			<_2 Value="\\192.168.205.169/PEOffice 6.3"/>
+			<_3 Value="\\ 192.168.205.169/PEOffice 6.3"/>
+			<_4 Value="\\ 192.168.205.169/PEOffice 6.3 "/>
+			<_5 Value="\\192.168.205.169\PEOffice 6.3"/>
+			<_6 Value="E:\ProdDesign\DEV"/>
+			<_7 Value="\\192.168.168.11\PEOffice 6(6.3底层)\Bin"/>
+			<_8 Value="\\192.168.168.11\PEOffice 6(6.3底层)"/>
+		</LeftMRUSpecs>
+		<MRUFilters>
+			<_0 Value="-Global.zip;-zh-CN.zip;-.\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\"/>
+			<_1 Value="-Global.zip;-zh-CN.zip"/>
+			<_2 Value="-Product.zip;-.\Solutions\;-.\Source\AlgorithmLayer\"/>
+			<_3 Value="-.\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\"/>
+			<_4 Value="AlgInPEOffice5"/>
+			<_5 Value="E:\ProdDesign\DEV\Source\AlgorithmLayer\AlgInPEOffice5\"/>
+		</MRUFilters>
+		<RightMRUSpecs>
+			<_0 Value="E:\ProdDesign\DEV"/>
+			<_1 Value="E:\ProdDesign\DEV\Product"/>
+			<_2 Value="D:\OPT\PEOffice 6"/>
+			<_3 Value="E:\ProdDesign (模拟)\DEV"/>
+			<_4 Value="E:\ProdDesign\DEV\Product\Bin"/>
+			<_5 Value="W:\赵迎新\DGV"/>
+			<_6 Value="W:\赵迎新"/>
+		</RightMRUSpecs>
+	</TDirSyncState>
+	<THexCompareState>
+		<LeftMRUSpecs>
+			<_0 Value="E:\ProdDesign (模拟)\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_1 Value="E:\ProdDesign\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_2 Value="C:\Users\Administrator\Desktop\Equipment-英.mdb"/>
+			<_3 Value="F:\ProdDesign\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_4 Value="F:\ProdDesign\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Equipment\Equipment.mdb"/>
+			<_5 Value="F:\ProdDesign\DEV\Source\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\Debug\DesignTimeResolveAssemblyReferences.cache"/>
+			<_6 Value="C:\Users\cong\Desktop\Beyond Compare 4\BCompare.exe"/>
+		</LeftMRUSpecs>
+		<MRUFonts>
+			<_0 Value="Consolas;10"/>
+		</MRUFonts>
+		<RightMRUSpecs>
+			<_0 Value="E:\ProdDesign\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_1 Value="E:\ProdDesign (模拟)\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_2 Value="C:\Users\Administrator\Desktop\Equipment-中.mdb"/>
+			<_3 Value="F:\ProdDesign - 副本\DEV\Source\AlgorithmLayer\AlgInPEOffice5\ProdDesign\Debug\PvtFunct.bsc"/>
+			<_4 Value="F:\ProdDesign - 副本\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Equipment\Equipment.mdb"/>
+			<_5 Value="F:\ProdDesign - 副本\DEV\Source\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\Debug\DesignTimeResolveAssemblyReferences.cache"/>
+			<_6 Value="C:\Users\cong\Desktop\BCompare.exe"/>
+		</RightMRUSpecs>
+	</THexCompareState>
+	<THomeState>
+		<DirMergeIsAlt Value="True"/>
+		<NewExpanded Value="True"/>
+		<PixCompareIsAlt Value="False"/>
+		<SessionType Value="TDirCompareSession"/>
+		<ShowWeb Value="False"/>
+	</THomeState>
+	<TPixCompareState>
+		<CenterRatio Value="785"/>
+		<LeftMRUSpecs>
+			<_0 Value="E:\ProdDesign\DEV\Source\Applications\TestApp1\Resources\DefaultSplash.png"/>
+			<_1 Value="C:\Users\Administrator\Desktop\2.png"/>
+			<_2 Value="E:\项目\源代码\湛江动态监测管理系统\Product\Bin\ProdForecastCommon.dll"/>
+			<_3 Value="E:\ProdDesign\DEV\Product\Config\zh-CN\Modules\OPT.Product.ProdDesign.ProDesign\Icons\Menu_CA_Calculation16_16.png"/>
+			<_4 Value="C:\Users\Administrator\Desktop\1.jpg"/>
+			<_5 Value="F:\ProdDesign\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Icon\tree_Ok.PNG"/>
+			<_6 Value="F:\ProdDesign\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Icon\calc16_16.png"/>
+			<_7 Value="C:\Users\Administrator\Desktop\1.png"/>
+			<_8 Value="C:\Users\Admin\Desktop\1.png"/>
+		</LeftMRUSpecs>
+		<RightMRUSpecs>
+			<_0 Value="F:\项目源代码\新疆协同平台\Source\Applications\xinjiang\Resources\DefaultSplash.png"/>
+			<_1 Value="C:\Users\Administrator\Desktop\4.png"/>
+			<_2 Value="E:\ProdDesign\DEV\Product\Config\ru-RU\Modules\OPT.Product.ProdDesign.ProDesign\Icons\Menu_CA_Calculation16_16.png"/>
+			<_3 Value="C:\Users\Administrator\Desktop\2.jpg"/>
+			<_4 Value="F:\ProdDesign - 副本\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Icon\tree_Ok.PNG"/>
+			<_5 Value="F:\ProdDesign - 副本\DEV\Product\Config\zh-CN\GeneralLayer\ModuleShare\ProdDesign\Icon\calc16_16.png"/>
+			<_6 Value="C:\Users\Administrator\Desktop\2.png"/>
+			<_7 Value="C:\Users\Admin\Desktop\2.png"/>
+		</RightMRUSpecs>
+	</TPixCompareState>
+	<TRegCompareState>
+		<MRUFonts>
+			<_0 Value="微软雅黑;9;;1"/>
+		</MRUFonts>
+	</TRegCompareState>
+	<TTextCompareState>
+		<FullEdit Value="False"/>
+		<LeftMRUSpecs>
+			<_0 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtension\CommonUIConfig.cs"/>
+			<_1 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtension\BxCompoundData\Sample.cs"/>
+			<_2 Value="E:\WSE\Source\Modules\WSE\WSEAlg\ArpsMethod\ArpsFitParamDay.cs"/>
+			<_3 Value="E:\WSE\Source\Modules\WSE\WSEAlg\ArpsMethod\ArpsFitParam.cs"/>
+			<_4 Value="E:\WSE\Source\Modules\WSE\WSEAlg\ArpsMethod\ArpsFitInfo.cs"/>
+			<_5 Value="E:\WSE\Source\Modules\WSE\WSE.UICommon\DataWindowBasicFormBased.cs"/>
+			<_6 Value="E:\WSE\Source\Modules\WSE\WSE.UICommon\ChartAreaExtend.cs"/>
+			<_7 Value="E:\WSE\Source\Modules\WSE\WSEProjectSetting\ProjectSetting\ProjectSetting.cs"/>
+			<_8 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBaseGas\StimulateKeyInfo.cs"/>
+		</LeftMRUSpecs>
+		<MRUFonts>
+			<_0 Value="Consolas;10"/>
+			<_1 Value="Courier New;9"/>
+		</MRUFonts>
+		<RightMRUSpecs>
+			<_0 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtensionGas\CommonUIConfig.cs"/>
+			<_1 Value="E:\WSE\Source\Modules\WSE\WSE.DataTableExtensionGas\BxCompoundData\Sample.cs"/>
+			<_2 Value="E:\WSE\Source\Modules\WSE\WSEAlgGas\ArpsMethod\ArpsFitParamDay.cs"/>
+			<_3 Value="E:\WSE\Source\Modules\WSE\WSEAlgGas\ArpsMethod\ArpsFitParam.cs"/>
+			<_4 Value="E:\WSE\Source\Modules\WSE\WSEAlgGas\ArpsMethod\ArpsFitInfo.cs"/>
+			<_5 Value="E:\WSE\Source\Modules\WSE\WSE.UICommonGas\DataWindowBasicFormBased.cs"/>
+			<_6 Value="E:\WSE\Source\Modules\WSE\WSE.UICommonGas\ChartAreaExtend.cs"/>
+			<_7 Value="E:\WSE\Source\Modules\WSE\WSEProjectSettingGas\ProjectSetting\ProjectSetting.cs"/>
+			<_8 Value="E:\WSE\Source\Modules\WSE\WSE.CommonBase\ClassHelper.cs"/>
+		</RightMRUSpecs>
+		<ShowDetailsWS Value="False"/>
+	</TTextCompareState>
+	<TTextFindState>
+		<FindItems>
+			<_0 Value="100015"/>
+			<_1 Value="AnalyticalforGasModule"/>
+			<_2 Value="CondensateOilModuleforUCG"/>
+			<_3 Value="WorkConditionEvaluate_PAESP"/>
+			<_4 Value="NodalAnaPEPS"/>
+			<_5 Value="OPT.Product.ProdDesign.ProDesign"/>
+			<_6 Value="NPIforGasModule"/>
+			<_7 Value="CoefficiencyAnalysisModule"/>
+			<_8 Value="CementDataEmptyCheckError"/>
+		</FindItems>
+		<ReplaceItems>
+			<_0/>
+		</ReplaceItems>
+	</TTextFindState>
+	<TTextMergeState>
+		<FullEdit Value="False"/>
+		<MRUFonts>
+			<_0 Value="Consolas;10"/>
+		</MRUFonts>
+	</TTextMergeState>
+	<TTipState>
+		<DontShowAgain Value="[tipFastRefresh]"/>
+	</TTipState>
+	<TVerCompareState>
+		<LeftMRUSpecs>
+			<_0 Value="E:\项目\源代码\湛江动态监测管理系统\Product\Bin\ProdForecastCommon.dll"/>
+			<_1 Value="C:\Users\Administrator\Desktop\Opt.Candy.dll"/>
+			<_2 Value="C:\Users\Administrator\Desktop\ProdForecastCommon.dll"/>
+			<_3 Value="F:\ProdDesign\DEV\Source\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\Debug\OPT.Product.ProdDesign.IPRCalc.dll"/>
+		</LeftMRUSpecs>
+		<MRUFonts>
+			<_0 Value="微软雅黑;9;;1"/>
+		</MRUFonts>
+		<RightMRUSpecs>
+			<_0 Value="E:\项目\源代码\湛江动态监测管理系统\Product\Bin\Opt.Candy.dll"/>
+			<_1 Value="C:\Users\Administrator\Desktop\ProdForecastCommonb.dll"/>
+			<_2 Value="F:\ProdDesign - 副本\DEV\Source\Modules\ProdDesign\OPT.Product.ProdDesign.IPRCalc\obj\Debug\OPT.Product.ProdDesign.IPRCalc.dll"/>
+		</RightMRUSpecs>
+	</TVerCompareState>
+</BCState>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>cb3cd8e8-ea8e-4b5f-9cc5-d366123c41f7</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HebianGu.ObjectBase.Share</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\ExtendGroupProvider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupMatchString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupPathString.cs" />
+  </ItemGroup>
+</Project>

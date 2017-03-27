@@ -21,5 +21,13 @@ namespace HebianGu.ComLibMethods.UnitTester
 
             Console.Read();
         }
+
+        [TestMethod]
+        public void WindowEnum()
+        {
+            WindowsEnumHelper.Instance.Register();
+
+            Console.Read();
+        }
     }
 }

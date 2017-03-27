@@ -7,7 +7,7 @@
     <ProjectGuid>{00D2080A-692C-4188-8000-B75A1B5E2D50}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.Path</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.PathHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Path</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,13 +40,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PathHelper.cs" />
+    <Compile Include="PathExtend.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="路径信息帮助类.dgml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApplicationBaseBase\HebianGu.ObjectBase.ObjectHelper\HebianGu.ObjectBase.ObjectHelper.csproj">
+      <Project>{06FF1062-E53C-4314-89EE-31CB65DA381E}</Project>
+      <Name>HebianGu.ObjectBase.ObjectHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

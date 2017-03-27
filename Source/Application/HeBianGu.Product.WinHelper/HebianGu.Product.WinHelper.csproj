@@ -79,7 +79,7 @@
       <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
     </Reference>
     <Reference Include="HebianGu.ObjectBase.ObjectHelper">
-      <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.ObjectHelper.exe</HintPath>
+      <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.ObjectHelper.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -115,6 +115,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="BusyDecorator.cs.cs" />
+    <Compile Include="Configer\ControlConfiger.cs" />
     <Compile Include="Configer\SysTemConfiger.cs" />
     <Compile Include="Tool\Convert.cs" />
     <Compile Include="View\NotePadWindow.xaml.cs">
@@ -690,7 +691,7 @@
     <Resource Include="image\Viewer\zhcn070.ico" />
     <Resource Include="image\Viewer\zhcn080.ico" />
     <Resource Include="image\Viewer\zhcn990.ico" />
-    <EmbeddedResource Include="Extend\FastStone Capture 8.0.exe">
+    <EmbeddedResource Include="Extend\最小的截图软件.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="Lib\Newtonsoft.Json.dll" />

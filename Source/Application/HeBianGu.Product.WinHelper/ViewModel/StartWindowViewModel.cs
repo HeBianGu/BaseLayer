@@ -21,7 +21,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<FileBindModel> _bkSource = new ObservableCollection<FileBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 常用文件 </summary>
         public ObservableCollection<FileBindModel> BkSource
         {
             get { return _bkSource; }
@@ -34,7 +34,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<FileBindModel> _lastSource = new ObservableCollection<FileBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 最近使用的文件 </summary>
         public ObservableCollection<FileBindModel> LastSource
         {
             get { return _lastSource; }
@@ -47,7 +47,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<FileBindModel> _favoritesSource = new ObservableCollection<FileBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 收藏夹 </summary>
         public ObservableCollection<FileBindModel> FavoritesSource
         {
             get { return _favoritesSource; }
@@ -61,7 +61,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<FileBindModel> _sysSource = new ObservableCollection<FileBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 系统文件 </summary>
         public ObservableCollection<FileBindModel> SysSource
         {
             get { return _sysSource; }
@@ -75,7 +75,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<ClipBoradBindModel> _clipBoradSource = new ObservableCollection<ClipBoradBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 剪贴板信息 </summary>
         public ObservableCollection<ClipBoradBindModel> ClipBoradSource
         {
             get { return _clipBoradSource; }
@@ -89,7 +89,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<NotePadBindModel> _notePadSource = new ObservableCollection<NotePadBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 记事本 </summary>
         public ObservableCollection<NotePadBindModel> NotePadSource
         {
             get { return _notePadSource; }
@@ -102,7 +102,7 @@ namespace HebianGu.Product.WinHelper.ViewModel
 
         private ObservableCollection<FileBindModel> _programSource = new ObservableCollection<FileBindModel>();
 
-        /// <summary> 所有关键字 </summary>
+        /// <summary> 系统资源 </summary>
         public ObservableCollection<FileBindModel> ProgramSource
         {
             get { return _programSource; }
@@ -113,6 +113,19 @@ namespace HebianGu.Product.WinHelper.ViewModel
             }
         }
 
+
+        private ObservableCollection<FileBindModel> _extendSource = new ObservableCollection<FileBindModel>();
+
+        /// <summary> 扩展工具 </summary>
+        public ObservableCollection<FileBindModel> ExtendSource
+        {
+            get { return _extendSource; }
+            set
+            {
+                _extendSource = value;
+                RaisePropertyChanged("ExtendSource");
+            }
+        }
 
         public StartWindowViewModel()
         {

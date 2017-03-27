@@ -6,13 +6,9 @@ D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.File.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Serialize.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.WinHelper.dll
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.ObjectHelper.exe
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Newtonsoft.Json.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\System.Data.SQLite.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.Logger.exe
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.Interface.exe
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\log4net.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.API.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.CMD.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Enum.pdb
@@ -22,9 +18,6 @@ D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.ObjectHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Newtonsoft.Json.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Newtonsoft.Json.xml
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.Logger.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.Interface.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\log4net.xml
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\ButtonResource.baml
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\MainWindow.baml
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\DataGridStyle.baml
@@ -53,10 +46,11 @@ D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.Product.WinHelper.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\NotePadWindow.g.cs
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\NotePadWindow.baml
-D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Extend\FastStone Capture 8.0.exe
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Match.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ComLibModule.Match.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\ParseFavoriteWindow.g.cs
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\View\ParseFavoriteWindow.baml
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\ScrollViewerStyle.baml
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\HebianGu.ObjectBase.ObjectHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\obj\x86\Debug\HebianGu.Product.WinHelper.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\bin\Debug\Extend\最小的截图软件.exe

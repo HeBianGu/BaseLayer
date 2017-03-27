@@ -21,6 +21,8 @@ namespace HebianGu.ComLibModule.Collection
             Console.WriteLine(v.Item2);
 
             Console.Read();
+
+            
         }
 
     }

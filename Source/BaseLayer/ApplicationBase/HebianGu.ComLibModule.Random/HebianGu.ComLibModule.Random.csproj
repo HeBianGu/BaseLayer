@@ -7,7 +7,7 @@
     <ProjectGuid>{ED5346BA-CC1F-4305-932B-45835C6C21A4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HebianGu.ComLibModule.Random</RootNamespace>
+    <RootNamespace>HebianGu.ComLibModule.RandomHelper</RootNamespace>
     <AssemblyName>HebianGu.ComLibModule.Random</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseRandom.cs" />
+    <Compile Include="RandomProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomHelper.cs" />
     <Compile Include="RandomOperate.cs" />

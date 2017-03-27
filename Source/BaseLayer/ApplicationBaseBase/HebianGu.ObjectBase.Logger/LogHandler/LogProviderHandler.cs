@@ -1,6 +1,8 @@
-﻿using System;
+﻿using HebianGu.ObjectBase.Factory;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,10 +10,10 @@ namespace HebianGu.ObjectBase.Logger
 {
 
     /// <summary> 注册事件写日志 (优势可以注册取消多个，静态注册) </summary>
-    partial class LogProviderHandler
+    public partial class LogProviderHandler : BaseFactory<LogProviderHandler>
     {
         /// <summary> 注册日志 p1=运行日志 p2=错误日志 p3=错误日志 </summary>
-        public void RegisterLogComponent(Action<string> runlog, Action<string> errlog, Action<Exception> errExlog)
+        public void RegisterLogComponent(Action<string, string> runlog, Action<string, string> errlog, Action<string, Exception> errExlog)
         {
             this.RunLog += runlog;
             this.ErrLog += errlog;
@@ -26,10 +28,10 @@ namespace HebianGu.ObjectBase.Logger
         }
 
 
-        Action<string> _runLog;
+        Action<string, string> _runLog;
 
         /// <summary> 运行日志委托 </summary>
-        public event Action<string> RunLog
+        public event Action<string, string> RunLog
         {
             add
             {
@@ -40,12 +42,13 @@ namespace HebianGu.ObjectBase.Logger
                 if (_runLog != null)
                     _runLog -= value;
             }
+
         }
 
-        Action<string> _errLog;
+        Action<string, string> _errLog;
 
         /// <summary> 错误日志委托 </summary>
-        public event Action<string> ErrLog
+        public event Action<string, string> ErrLog
         {
             add
             {
@@ -58,10 +61,10 @@ namespace HebianGu.ObjectBase.Logger
             }
         }
 
-        Action<Exception> _errExLog;
+        Action<string, Exception> _errExLog;
 
         /// <summary> 错误日志委托 </summary>
-        public event Action<Exception> ErrExLog
+        public event Action<string, Exception> ErrExLog
         {
             add
             {
@@ -76,63 +79,52 @@ namespace HebianGu.ObjectBase.Logger
 
 
         /// <summary> 此方法的说明 </summary>
+        public void OnRunLog(string tatol, string message)
+        {
+            if (this._runLog == null) return;
+
+            this._runLog(tatol, message);
+        }
+
+        /// <summary> 此方法的说明 </summary>
         public void OnRunLog(string message)
         {
             if (this._runLog == null) return;
 
-            this._runLog(message);
+            this._runLog("Run Message -" + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), message);
         }
+
+        /// <summary> 此方法的说明 </summary>
+        public void OnErrLog(string tatol, string message)
+        {
+            if (this._errLog == null) return;
+
+            this._errLog(tatol + " - " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), message);
+        }
+
 
         /// <summary> 此方法的说明 </summary>
         public void OnErrLog(string message)
         {
             if (this._errLog == null) return;
 
-            this._errLog(message);
+            this._errLog("Error Message - " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), message);
         }
+        /// <summary> 此方法的说明 </summary>
+        public void OnErrLog(string tatol, Exception message)
+        {
+            if (this._errExLog == null) return;
+
+            this._errExLog(tatol, message);
+        }
+
         /// <summary> 此方法的说明 </summary>
         public void OnErrLog(Exception message)
         {
             if (this._errExLog == null) return;
 
-            this._errExLog(message);
+            this._errExLog("Error Message - " + DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss"), message);
         }
-    }
-
-    public partial class LogProviderHandler
-    {
-
-        #region - Start 单例模式 -
-
-        /// <summary> 单例模式 </summary>
-        private static LogProviderHandler t = null;
-
-        /// <summary> 多线程锁 </summary>
-        private static object localLock = new object();
-
-        /// <summary> 创建指定对象的单例实例 </summary>
-        public static LogProviderHandler Instance
-        {
-            get
-            {
-                if (t == null)
-                {
-                    lock (localLock)
-                    {
-                        if (t == null)
-                            return t = new LogProviderHandler();
-                    }
-                }
-                return t;
-            }
-        }
-        /// <summary> 禁止外部实例 </summary>
-        private LogProviderHandler()
-        {
-
-        }
-        #endregion - 单例模式 End -
-
     }
 
     /// <summary> 日志文本格式化类 </summary>

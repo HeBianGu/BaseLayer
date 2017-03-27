@@ -13,6 +13,8 @@ namespace HebianGu.ComLibModule.ThreadEx
         //如果参数为true的，则初始值第一次WaitOne是直接通过的，不会阻塞。 如果是false的话，直接阻塞直到得到Set()信号通知
         static AutoResetEvent autoReset = new AutoResetEvent(false);
 
+        //ManualResetEvent finished = new ManualResetEvent(false);
+
         //程序入口方法
         public static void Run()
         {

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="数据虚拟化是指绑定到ItemControl的真实的数据对象的归档虚拟化的时间段。数据虚拟化不是由WPF提供的。作为对比，基本数据对象的小集合对内存的消耗不是很多；但是，大集合的内存消耗是非常严重的。另外，真实的检索数据（例如，从数据库）和实例化数据对象是很耗时的，尤其当是网络数据调用时。因此，我们希望使用数据虚拟化机制来限制检索的数据的数量和在内存中生成数据对象的数量。" Bounds="0,-55.3301332723167,211.943333333333,25.24" Label="http://www.wxzzz.com/1326.html" />
+    <Node Id="数据虚拟化是指绑定到ItemControl的真实的数据对象的归档虚拟化的时间段。数据虚拟化不是由WPF提供的。作为对比，基本数据对象的小集合对内存的消耗不是很多；但是，大集合的内存消耗是非常严重的。另外，真实的检索数据（例如，从数据库）和实例化数据对象是很耗时的，尤其当是网络数据调用时。因此，我们希望使用数据虚拟化机制来限制检索的数据的数量和在内存中生成数据对象的数量。1" Category="Comment" Bounds="66.812454386566,-0.0900332723167168,249.926666666667,162.4" Label="数据虚拟化是指绑定到ItemControl的真实的数据对象的归档虚拟化的时间段。数据虚拟化不是由WPF提供的。作为对比，基本数据对象的小集合对内存的消耗不是很多；但是，大集合的内存消耗是非常严重的。另外，真实的检索数据（例如，从数据库）和实例化数据对象是很耗时的，尤其当是网络数据调用时。因此，我们希望使用数据虚拟化机制来限制检索的数据的数量和在内存中生成数据对象的数量。" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="数据虚拟化是指绑定到ItemControl的真实的数据对象的归档虚拟化的时间段。数据虚拟化不是由WPF提供的。作为对比，基本数据对象的小集合对内存的消耗不是很多；但是，大集合的内存消耗是非常严重的。另外，真实的检索数据（例如，从数据库）和实例化数据对象是很耗时的，尤其当是网络数据调用时。因此，我们希望使用数据虚拟化机制来限制检索的数据的数量和在内存中生成数据对象的数量。1" Target="数据虚拟化是指绑定到ItemControl的真实的数据对象的归档虚拟化的时间段。数据虚拟化不是由WPF提供的。作为对比，基本数据对象的小集合对内存的消耗不是很多；但是，大集合的内存消耗是非常严重的。另外，真实的检索数据（例如，从数据库）和实例化数据对象是很耗时的，尤其当是网络数据调用时。因此，我们希望使用数据虚拟化机制来限制检索的数据的数量和在内存中生成数据对象的数量。" Bounds="119.843219630106,-22.6927098274564,15.6630698193077,22.6026765551397" />
+  </Links>
+  <Categories>
+    <Category Id="Comment" Label="注释" Description="表示在图表中用户定义的注释" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="注释" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="标签" Description="可批注对象的可显示标签" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="注释" ValueLabel="包含注释">
+      <Condition Expression="HasCategory('Comment')" />
+      <Setter Property="Background" Value="#FFFFFACD" />
+      <Setter Property="Stroke" Value="#FFE5C365" />
+      <Setter Property="StrokeThickness" Value="1" />
+      <Setter Property="NodeRadius" Value="2" />
+      <Setter Property="MaxWidth" Value="250" />
+    </Style>
+  </Styles>
+</DirectedGraph>

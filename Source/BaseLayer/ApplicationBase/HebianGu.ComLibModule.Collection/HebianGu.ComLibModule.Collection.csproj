@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Array\ArrayHelper.cs" />
     <Compile Include="DataTable\DataTableHelper.cs" />
+    <Compile Include="Dictionary\DictionaryHelper.cs" />
     <Compile Include="Entitys\TMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
