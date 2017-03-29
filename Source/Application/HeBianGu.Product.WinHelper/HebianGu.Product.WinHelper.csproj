@@ -41,7 +41,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>360.ICO</ApplicationIcon>
+    <ApplicationIcon>skin\Feather.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
@@ -74,9 +74,8 @@
     <Reference Include="HebianGu.ComLibModule.WinHelper">
       <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.WinHelper.dll</HintPath>
     </Reference>
-    <Reference Include="HebianGu.ObjectBase.Logger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>
+    <Reference Include="HebianGu.ObjectBase.Logger">
+      <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.dll</HintPath>
     </Reference>
     <Reference Include="HebianGu.ObjectBase.ObjectHelper">
       <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.ObjectHelper.dll</HintPath>
@@ -136,6 +135,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="DataGridResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HeBianGuBrush.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -263,9 +266,6 @@
     <Resource Include="skin\ico\toolbar_hover.png" />
     <Resource Include="skin\ico\toolbar_pushed.png" />
     <Resource Include="skin\logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="360.ICO" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Style\" />

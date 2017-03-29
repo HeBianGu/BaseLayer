@@ -965,7 +965,6 @@ URL = {0}", w.Url);
             string n = _viewModel.NotePadSource.JsonSerialize<ObservableCollection<NotePadBindModel>>();
 
             File.WriteAllText(notepadPath, n);
-
             _viewModel.ClipBoradSource.RemoveAtAfter(ControlConfiger.Instance.NotePadSaveCount);
 
             string c = _viewModel.ClipBoradSource.JsonSerialize<ObservableCollection<ClipBoradBindModel>>();

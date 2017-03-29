@@ -1,5 +1,1 @@
-   public static T As<T, R>(this R o) where R : class 
-            where T : class
-        {
-            return o as T;
-        }
+\\192.168.168.9\opt内部共享\产品与项目计划实施管理

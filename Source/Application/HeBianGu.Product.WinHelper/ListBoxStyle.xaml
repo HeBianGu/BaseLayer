@@ -33,27 +33,19 @@
             </Setter.Value>
 
         </Setter>
-        <Setter Property="Grid.IsSharedSizeScope" Value="True" />
-        <Setter Property="Grid.Background" Value="Transparent"/>
+
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
         <Setter Property="AllowDrop"   Value="True"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
-        <!--<Setter Property="Background">
+        <Setter Property="Background" Value="{DynamicResource centernColorN}"/>
+        <Setter Property="OpacityMask">
             <Setter.Value>
-                <ImageBrush ImageSource="/skin/frame.jpg"/>
-                -->
-        <!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#66FFFFFF" Offset="0"/>
-                    <GradientStop Offset="0.379" Color="#24FFFFFF"/>
-                    <GradientStop Color="#13FFFFFF" Offset="0.741"/>
-                    <GradientStop Color="Transparent" Offset="0.879"/>
-                    <GradientStop Color="#47FFFFFF" Offset="0.978"/>
-                </LinearGradientBrush>-->
-        <!--
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.861"/>
+                </RadialGradientBrush>
             </Setter.Value>
-        </Setter>-->
-
+        </Setter>
     </Style>
     <!--第二种样式-->
     <Style x:Key="styledList1" TargetType="{x:Type ListBox}">
@@ -114,10 +106,9 @@
         </Setter>
 
         <Setter Property="Grid.IsSharedSizeScope" Value="True" />
-        <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+        <Setter Property="Background" Value="{DynamicResource centernColorN}"/>
     </Style>
     <!--第三种样式-->
     <Style x:Key="styledList2" TargetType="{x:Type ListBox}">
@@ -180,7 +171,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+        <Setter Property="Background"   Value="{DynamicResource centernColorNLight}"/>
     </Style>
 
     <!--第四种样式-->
@@ -198,24 +189,7 @@
                             <RowDefinition Height="20" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
-
-                        <!--<Border Margin="4,0" Grid.Column="2" BorderThickness="2" CornerRadius="4">
-                            <Border.BorderBrush>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                    <GradientStop Color="#aaa" Offset="0" />
-                                    <GradientStop Color="#222" Offset="1" />
-                                </LinearGradientBrush>
-                            </Border.BorderBrush>-->
-
-                        <!--<Grid>-->
-                        <!--<Rectangle>
-                                    <Rectangle.Fill>
-                                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                            <GradientStop Color="#444" Offset="0" />
-                                            <GradientStop Color="#fff" Offset="1" />
-                                        </LinearGradientBrush>
-                                    </Rectangle.Fill>
-                                </Rectangle>-->
+                        
                         <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="30" Margin="2,2,2,1" Source="{Binding ImagePath}">
                             <Image.OpacityMask>
                                 <!--设置图片背景色包含转换规则-->
@@ -237,7 +211,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+        <Setter Property="Background"   Value="{DynamicResource centernColorNLight}"/>
     </Style>
 
     <!--第五种样式-->
@@ -245,9 +219,9 @@
         <Setter Property="ItemTemplate">
             <Setter.Value>
                 <DataTemplate>
-                    
+
                     <Grid>
-                        
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto" />
                             <ColumnDefinition Width="*" SharedSizeGroup="MiddleColumn" />
@@ -257,7 +231,7 @@
                             <RowDefinition Height="20" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
-                        
+
                         <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Width="30" Margin="2,2,2,1" Source="{Binding ImagePath,Converter={StaticResource iconConverter}}">
                             <Image.OpacityMask>
                                 <!--设置图片背景色包含转换规则-->
@@ -267,7 +241,7 @@
                         <TextBlock Grid.Row="0" FontSize="12" VerticalAlignment="Center" Margin="5" FontStyle="Normal"  Text="{Binding Title}" FontWeight="Bold"  Grid.Column="1"/>
                         <TextBlock Grid.Row="1" FontSize="10" VerticalAlignment="Center" Margin="5" Text="{Binding CreateTime}" FontWeight="Normal"  Grid.Column="1" />
                     </Grid>
-                   
+
                 </DataTemplate>
             </Setter.Value>
         </Setter>
@@ -277,7 +251,7 @@
         <Setter Property="Grid.Background" Value="Transparent"/>
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+        <Setter Property="Background"   Value="{DynamicResource centernColorNLight}"/>
     </Style>
 
     <!--第六种样式-->
@@ -314,7 +288,7 @@
         <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Hidden"/>
         <Setter Property="BorderThickness" Value="1,0,0,0"/>
         <Setter Property="AllowDrop"   Value="True"/>
-        <Setter Property="Background"   Value="{DynamicResource MenuItemSelectionFill}"/>
+        <Setter Property="Background"   Value="{DynamicResource centernColorNLight}"/>
     </Style>
 </ResourceDictionary>
 
