@@ -22,7 +22,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HebianGu.ComLibModule.Image
+namespace HebianGu.ComLibModule.ImageHelper
 {
     
     /// <summary> 图片验证码生成 </summary>

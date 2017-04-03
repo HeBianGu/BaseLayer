@@ -2,6 +2,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Threading;
 using HebianGu.ComLibModule.API;
+using System.Net;
+using System.Net.Sockets;
+using System.Diagnostics;
 
 namespace HebianGu.ComLibMethods.UnitTester
 {
@@ -28,6 +31,20 @@ namespace HebianGu.ComLibMethods.UnitTester
             WindowsEnumHelper.Instance.Register();
 
             Console.Read();
+        }
+
+        [TestMethod]
+        public void WindowGetIP()
+        {
+            string name = Dns.GetHostName();
+
+            IPAddress[] ipadrlist = Dns.GetHostAddresses(name);
+            foreach (IPAddress ipa in ipadrlist)
+            {
+                if (ipa.AddressFamily == AddressFamily.InterNetwork)
+                    Debug.WriteLine(ipa.ToString());
+            }
+            
         }
     }
 }

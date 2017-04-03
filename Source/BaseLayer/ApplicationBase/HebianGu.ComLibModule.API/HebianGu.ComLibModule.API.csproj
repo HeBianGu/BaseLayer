@@ -53,9 +53,6 @@
     <Compile Include="KeyHelper\KeyHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SystemHelper\IconHelper.cs" />
-    <Compile Include="WindowsHelper\WinAPIServer.cs" />
-    <Compile Include="WindowsHelper\WindowsAPI.cs" />
     <Compile Include="获取当前打开的文件夹\WindowsEnumHelper.cs" />
     <Compile Include="获取系统文件右键菜单\API.cs" />
     <Compile Include="获取系统文件右键菜单\Enums.cs" />

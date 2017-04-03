@@ -13,6 +13,6 @@ E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 E:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Wcf\obj\Debug\HebianGu.ComLibModule.Wcf.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Wcf.exe
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.Wcf.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Wcf\obj\Debug\HebianGu.ComLibModule.Wcf.csprojResolveAssemblyReference.cache
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Wcf\obj\Debug\HebianGu.ComLibModule.Wcf.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Wcf\obj\Debug\HebianGu.ComLibModule.Wcf.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.Wcf\obj\Debug\HebianGu.ComLibModule.Wcf.csprojResolveAssemblyReference.cache

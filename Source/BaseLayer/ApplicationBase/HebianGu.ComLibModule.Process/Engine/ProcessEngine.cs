@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
-using HebianGu.ComLibModule.EnumEx;
+using HebianGu.ComLibModule.EnumHelper;
 using HebianGu.ObjectBase.ObjectHelper;
 
 namespace HebianGu.ComLibModule.ProcessHelper

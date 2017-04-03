@@ -6,15 +6,15 @@
          
     	<ResourceDictionary>
     		<ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="TabControlStyle.xaml"/>
-                <ResourceDictionary Source="SysButtonStyle.xaml"/>
-                <ResourceDictionary Source="MenuItemStyle.xaml"/>
-                <ResourceDictionary Source="ButtonResource.xaml"/>
-                <ResourceDictionary Source="DataGridStyle.xaml"/>
-                <ResourceDictionary Source="DataGridResource.xaml"/>
-                <ResourceDictionary Source="ListBoxStyle.xaml"/>
-                <ResourceDictionary Source="ScrollViewerStyle.xaml"/>
-                <ResourceDictionary Source="HeBianGuBrush.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\TabControlStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\SysButtonStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\MenuItemStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\ButtonResource.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\DataGridStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\DataGridResource.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\ListBoxStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Control\ScrollViewerStyle.xaml"/>
+                <ResourceDictionary Source=".\Style\Brush\HeBianGuBrush.xaml"/>
             </ResourceDictionary.MergedDictionaries>
     	</ResourceDictionary>
          

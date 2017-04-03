@@ -33,8 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HebianGu.ObjectBase.Interface">
-      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Interface.exe</HintPath>
+    <Reference Include="HebianGu.ObjectBase.Factory, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Factory.dll</HintPath>
     </Reference>
     <Reference Include="HebianGu.ObjectBase.Logger">
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.exe</HintPath>

@@ -25,4 +25,3 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMo
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WPF.Provider\obj\Debug\HebianGu.ComLibModule.WPF.Provider.csproj.GenerateResource.Cache
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WPF.Provider\obj\Debug\HebianGu.ComLibModule.WPF.Provider.exe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WPF.Provider\obj\Debug\HebianGu.ComLibModule.WPF.Provider.pdb
-D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WPF.Provider\obj\Debug\HebianGu.ComLibModule.WPF.Provider.csprojResolveAssemblyReference.cache

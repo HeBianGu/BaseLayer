@@ -97,6 +97,7 @@ namespace HebianGu.ComLibModule.CaculateEngine
                 foreach (var item in cs)
                 {
                     T t = new T();
+
                     t.BuildFromNode(item);
 
                     n.AddChild(t);
@@ -117,9 +118,6 @@ namespace HebianGu.ComLibModule.CaculateEngine
 
             return ts;
         }
-
-
-
 
     }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HebianGu.ObjectBase.Share;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -28,6 +29,12 @@ namespace System.Linq
         public static bool Is<T>(this object obj)
         {
             return obj is T;
+        }
+
+        /// <summary> 转换成指定类型 </summary>
+        public static T As<T>(this object obj)
+        {
+            return (T)obj;
         }
 
         /// <summary> 获取特性 指定参数的类型的特性 </summary>

@@ -101,6 +101,34 @@ namespace HebianGu.ComLibModule.ProcessHelper
         }
 
 
+        /// <summary> 只可运行一个进程</summary>
+        public static void RunSingle()
+        {
+            Process current = Process.GetCurrentProcess();
+
+            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            foreach (Process process in processes)
+            {
+                if (process.Id != current.Id)
+                {
+                    process.Kill();
+                }
+            }
+        }
+
+        /// <summary> 只可运行一个进程</summary>
+        public static void RunSingle(Process current)
+        {
+            Process[] processes = Process.GetProcessesByName(current.ProcessName);
+            foreach (Process process in processes)
+            {
+                if (process.Id != current.Id)
+                {
+                    process.Kill();
+                }
+            }
+        }
+
 
         /// <summary> 设置进程单例 (删除原有更新)</summary>
         public static Process SetSingleRecover(this Process sender)

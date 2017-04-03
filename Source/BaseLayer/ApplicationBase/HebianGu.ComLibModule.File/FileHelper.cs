@@ -284,7 +284,6 @@ namespace HebianGu.ComLibModule.FileEx
             return result;//true 打开 false 没有打开
         }
 
-
         /// <summary> 设置文件特性 </summary>
         public static void SetAttribute(this string filePath, FileAttributes attr)
         {

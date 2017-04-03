@@ -1,9 +1,11 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HebianGu.ComLibModule.WinHelper
 {
@@ -18,7 +20,6 @@ namespace HebianGu.ComLibModule.WinHelper
 
             return Environment.GetFolderPath(folderEnum);
         }
-
 
         /// <summary> 开机启动项 </summary> 
         /// <param name=\"Started\">是否启动</param> 
@@ -59,7 +60,6 @@ namespace HebianGu.ComLibModule.WinHelper
             return true;
 
         }
-
 
         /// <summary> 加载所有程序 </summary>
         public List<Tuple<string, string>> LoadPrograms()
@@ -117,42 +117,87 @@ namespace HebianGu.ComLibModule.WinHelper
             }
             return ts;
         }
+
+
+
+        #region - 屏幕截取 -
+
+        /// <summary> 默认截图并保存当前程序目录下 </summary>
+        public void PrintScreemToSave()
+        {
+            string ImageName = DateTime.Now.ToString("yyyyMMdd_hhmmss") + ".jpg";
+            string path = System.IO.Path.Combine(Environment.CurrentDirectory, ImageName);
+            this.PrintScreemToSave(path);
+        }
+
+        /// <summary> 截屏并保存到指定目录下 </summary>
+        public void PrintScreemToSave(string path)
+        {
+            Bitmap bitmap = this.PrintScreem();
+            Graphics g = Graphics.FromImage(bitmap);
+            bitmap.Save(path);
+            //释放资源 
+            bitmap.Dispose();
+        }
+
+        /// <summary> 截取全屏幕到图片 </summary>
+        public Bitmap PrintScreem()
+        {
+            int width = Screen.PrimaryScreen.Bounds.Width;
+            int height = Screen.PrimaryScreen.Bounds.Height;
+            return this.PrintScreem(width, height);
+        }
+
+        /// <summary> 截取指定范围内屏幕到图片 </summary>
+        public Bitmap PrintScreem(int width, int height)
+        {
+            //获得当前屏幕的大小 
+            System.Drawing.Size mySize = new System.Drawing.Size(width, height);
+            Bitmap bitmap = new Bitmap(width, height);
+            Graphics g = Graphics.FromImage(bitmap);
+            g.CopyFromScreen(0, 0, 0, 0, mySize);
+            g.Dispose();
+            return bitmap;
+        }
+
+        #endregion
+
     }
 
 
     /// <summary> 此类的说明 </summary>
     partial class WinSysHelper
+    {
+        #region - Start 单例模式 -
+
+        /// <summary> 单例模式 </summary>
+        private static WinSysHelper t = null;
+
+        /// <summary> 多线程锁 </summary>
+        private static object localLock = new object();
+
+        /// <summary> 创建指定对象的单例实例 </summary>
+        public static WinSysHelper Instance
         {
-            #region - Start 单例模式 -
-
-            /// <summary> 单例模式 </summary>
-            private static WinSysHelper t = null;
-
-            /// <summary> 多线程锁 </summary>
-            private static object localLock = new object();
-
-            /// <summary> 创建指定对象的单例实例 </summary>
-            public static WinSysHelper Instance
+            get
             {
-                get
+                if (t == null)
                 {
-                    if (t == null)
+                    lock (localLock)
                     {
-                        lock (localLock)
-                        {
-                            if (t == null)
-                                return t = new WinSysHelper();
-                        }
+                        if (t == null)
+                            return t = new WinSysHelper();
                     }
-                    return t;
                 }
+                return t;
             }
-            /// <summary> 禁止外部实例 </summary>
-            private WinSysHelper()
-            {
-
-            }
-            #endregion - 单例模式 End -
+        }
+        /// <summary> 禁止外部实例 </summary>
+        private WinSysHelper()
+        {
 
         }
+        #endregion - 单例模式 End -
+
     }
+}

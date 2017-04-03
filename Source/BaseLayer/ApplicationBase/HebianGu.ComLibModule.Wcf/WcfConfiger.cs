@@ -19,11 +19,12 @@ namespace HebianGu.ComLibModule.Wcf
 
         /// <summary> 服务端IP </summary>
         [DataMember]
-        public string IP = "127.0.0.1";
+        public string IP = "localhost";
+        //public string IP = "127.0.0.1";
 
         /// <summary> 通信端口号 </summary>
         [DataMember]
-        public string Port = "22121";
+        public string Port = "22889";
 
         /// <summary> 服务名 </summary>
         [DataMember]

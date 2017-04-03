@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+html, body, form, fieldset, h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #828282;
+  background-color: #30302f;
+}
+
+a:link, a:visited {
+  color: #FFD553;
+}
+
+a:hover, a:active {
+  color: #e6cb79;
+}
+
+h1 {
+  margin-top: 26px;;
+  font-weight: normal;
+  font-size: 150%;
+  letter-spacing: -1px;
+  color: #f8cd4a;
+}
+
+#trialAlmostExpiredText {
+  color: #FF4242;
+}
+
+#trialExpiredText {
+  color: #FF4242;
+}
+
+#trial-time-left {
+  width: 100%;
+  height: 135px;
+  text-align: center;
+  background-color: #1e1e1d;
+}
+
+#trial-days-text {
+  font-size: 80%;
+  line-height: 140%;
+  color: #949494;
+}
+
+#trial-days-text strong {
+  color: #ffffff;
+}
+
+#trial-progress {
+  width: 67%;
+  height: 14px;
+  overflow: visible;
+  margin: 14px auto 0;
+  text-align: center;
+  background: #7C2929;
+  border: 1px solid #D14E4E;
+}
+
+#trial-progress > span {
+  display: block;
+  height: 16px;
+  margin: -1px 0 0 -1px;
+  z-index: 100;
+  height: 14px;
+  border: 1px solid #71f65c;
+  border-right: none;
+  background: #06b025;
+}
+
+h2.lic-key {
+  margin-top: 20px;
+  letter-spacing: -.03em;
+  font-weight: normal;
+  font-size: 100%;
+  color: #ffffff;
+}
+
+h2.attention {
+  padding-left: 14px;
+  margin-left: 6px;
+  letter-spacing: -1px;
+  line-height: 100%;
+  font-weight: normal;
+  font-size: 130%;
+  color: #ffffff;
+  background: url(images/triangle.png) no-repeat 0 6px;
+}
+
+h2.attention strong {
+  color: #f8cd4a;
+}
+
+/* Feature description styles */
+
+#ipm-dynamic {
+  float: left;
+  width: 66%;
+  overflow: visible;
+}
+
+#ipm-content-inner {
+  margin: 24px 0 0 8px;
+  overflow: visible;
+}
+
+.darkbg {
+  min-height: 226px;
+  background: #151514;
+}
+
+.left-col-box {
+  width: 28%;
+  float: left;
+  margin: 0 8px 0 0;
+  text-align: center;
+}
+
+.right-col-benefits p {
+  font-size: 85%;
+  line-height: 125%;
+}
+
+.benefits-list {
+  margin: 15px 0 10px 0;
+  line-height: 160%;
+  font-size: 100%;
+  letter-spacing: -.03em;
+  color: #ffffff;
+}
+
+.benefits-list > img {
+  float: left;
+  margin: 3px 6px 0 0;
+}
+
+.benefits-list + p {
+  margin-bottom: 24px;
+}
+
+img.feat-img {
+  float: left;
+  margin: 0 12px 8px 0;
+}
+
+img.img-left {
+  float: left;
+  margin: 0 8px 4px 0;
+}
+
+h3.feature {
+  margin: 14px 12px 12px 14px;
+  font-size: 90%;
+  color: #ffffff;
+}
+
+p.feat-desc {
+  overflow: visible;
+  margin: 8px 12px 20px 14px;
+  line-height: 120%;
+  font-size: 75%;
+  color: #919191;
+}
+
+p.feat-desc strong {
+  color: #BBBBBB;
+}
+
+/* UE/UC bundle promo styles */
+.prices {
+  font-size: 90%;
+  line-height: 110%;
+}
+
+.l_ueucPriceRetailAmt {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: line-through;
+}
+
+.l_ueucPriceAmt {
+  font-weight: bold;
+  color: #f8cd4a;
+}
+
+ul.benefitList {
+  display: block;
+  font-size: 65%;
+  margin: 10px 0 6px;
+  min-height: 78px;
+  list-style-type:none;
+}
+
+ul.benefitList li {
+  width: 48%;
+  margin: 3px 0;
+  padding-left: 0;
+  overflow: visible;
+  line-height: 100%;
+  float: left;
+}
+
+.savingsText {
+  width: 23%;
+  float: left;
+  margin: 12px 14px 0 0;
+  line-height: 110%;
+  text-align: center;
+  font-size: 75%;
+  color: #8CE855;
+}
+
+.l_ueucSavingsPercent {
+  font-size: 115%;
+  font-weight: bold;
+}
+
+/* Right col styles */
+
+#phone-order {
+  width: 188px;
+  min-height: 36px;
+  margin: 5px auto 0;
+  line-height: 100%;
+  font-size: 70%;
+  color: #949494;
+}
+
+#ipm-action, 
+#ipm-action-footer {
+  width: 34%;
+  float: right;
+  text-align: center;
+}
+
+#ipm-action-footer {
+  text-align: right;
+  font-size: 70%;
+  margin-bottom: 18px;
+}
+
+#ipm-action-footer > p {
+  margin: 6px 28px 0 0;
+}
+
+a.button,
+a.button:link,
+a.button:visited {
+  display: inline-block;
+  height: 26px;
+  width: 188px;
+  margin-top: 5px;
+  line-height: 26px;
+  letter-spacing: -.03em;
+  text-decoration: none;
+  font-size: 90%;
+  text-align: center;
+  color: #000000;
+  border-top: 1px solid #f5d87f;
+  border-bottom: 1px solid #caa341;
+  background: #fdcd54 url(images/button-bg.png) repeat-x 0 -26px;
+}
+
+a.button:hover, 
+a.button:active {
+  border-top: 1px solid #f5d87f;
+  border-bottom: 1px solid #c79d1f;
+  background: #f9c836 url(images/button-bg.png) repeat-x 0 0;
+}
+
+a.activate,
+a.activate:link,
+a.activate:visited {
+  border-top: 1px solid #b3d36d;
+  border-bottom: 1px solid #678a1a;
+  background: #fdcd54 url(images/button-activate-bg.png) repeat-x 0 0;
+}
+
+a.activate:hover,
+a.activate:active {
+  border-top: 1px solid #b6df6f;
+  border-bottom: 1px solid #6c9a1a;
+  background: #fdcd54 url(images/button-activate-bg.png) repeat-x 0 -26px;
+}

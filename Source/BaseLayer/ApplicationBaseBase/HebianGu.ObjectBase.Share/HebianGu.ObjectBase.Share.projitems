@@ -14,5 +14,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupMatchString.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupObject.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtendGroup\IGroupPathString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LogInterface\ILogInterface.cs" />
   </ItemGroup>
 </Project>

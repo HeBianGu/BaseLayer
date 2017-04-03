@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HebianGu.ComLibModule.WindowServer</name>
+    </assembly>
+    <members>
+        <member name="T:HebianGu.ComLibModule.WindowServer.WindowServerProvider">
+            <summary> window服务常用操作 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.IsInstalledOfName(System.String)">
+            <summary> 服务是否安装 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.InstallService(System.String,System.String[])">
+            <summary> 安装服务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.UnInstallService(System.String,System.String[])">
+            <summary> 卸载服务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.StartServiceOfName(System.String)">
+            <summary> 启动服务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.StopServiceOfName(System.String)">
+            <summary> 停止服务 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.IsStartOfName(System.String)">
+            <summary> 服务是否启动 </summary>
+        </member>
+        <member name="F:HebianGu.ComLibModule.WindowServer.WindowServerProvider.t">
+            <summary> 单例模式 </summary>
+        </member>
+        <member name="F:HebianGu.ComLibModule.WindowServer.WindowServerProvider.localLock">
+            <summary> 多线程锁 </summary>
+        </member>
+        <member name="P:HebianGu.ComLibModule.WindowServer.WindowServerProvider.Instance">
+            <summary> 创建指定对象的单例实例 </summary>
+        </member>
+        <member name="M:HebianGu.ComLibModule.WindowServer.WindowServerProvider.#ctor">
+            <summary> 禁止外部实例 </summary>
+        </member>
+    </members>
+</doc>

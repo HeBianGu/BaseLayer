@@ -15,3 +15,4 @@ D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\De
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csproj.GenerateResource.Cache
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.dll
 D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\TestDemo\HebianGu.Demo.TestUIFactory\obj\Debug\HebianGu.Demo.TestUIFactory.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.exe.config
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.Wcf.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.Wcf.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\obj\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\obj\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\obj\Debug\HeBianGu.Product.RemoteMonitor.Host.Console.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.CMD.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.CMD.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.WinHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Host.Console\bin\Debug\HebianGu.ComLibModule.WinHelper.pdb

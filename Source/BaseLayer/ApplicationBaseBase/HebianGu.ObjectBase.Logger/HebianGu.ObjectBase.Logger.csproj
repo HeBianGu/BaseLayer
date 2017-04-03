@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7C14EB6E-3632-46C9-A102-1CC42015B414}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HebianGu.ObjectBase.Logger</RootNamespace>
     <AssemblyName>HebianGu.ObjectBase.Logger</AssemblyName>
@@ -37,10 +37,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Factory.dll</HintPath>
     </Reference>
-    <Reference Include="HebianGu.ObjectBase.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\Product\Debug\HebianGu.ObjectBase.Interface.exe</HintPath>
-    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\..\..\Product\Debug\log4net.dll</HintPath>
     </Reference>
@@ -60,7 +56,6 @@
     <Compile Include="LogProvider\Log4netProvider.cs" />
     <Compile Include="ConsoleLogProvider.cs" />
     <Compile Include="LogHandler\LogProviderHandler.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +64,7 @@
   <ItemGroup>
     <None Include="日志说明.dgml" />
   </ItemGroup>
+  <Import Project="..\HebianGu.ObjectBase.Share\HebianGu.ObjectBase.Share.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

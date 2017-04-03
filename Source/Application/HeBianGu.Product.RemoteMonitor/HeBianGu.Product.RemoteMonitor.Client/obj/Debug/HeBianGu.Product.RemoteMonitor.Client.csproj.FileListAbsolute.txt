@@ -1,0 +1,11 @@
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HeBianGu.Product.RemoteMonitor.Client.dll
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HeBianGu.Product.RemoteMonitor.Client.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.Wcf.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.Wcf.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\obj\Debug\HeBianGu.Product.RemoteMonitor.Client.dll
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\obj\Debug\HeBianGu.Product.RemoteMonitor.Client.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.CMD.exe
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.CMD.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.WinHelper.dll
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\bin\Debug\HebianGu.ComLibModule.WinHelper.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.RemoteMonitor\HeBianGu.Product.RemoteMonitor.Client\obj\Debug\HeBianGu.Product.RemoteMonitor.Client.csprojResolveAssemblyReference.cache

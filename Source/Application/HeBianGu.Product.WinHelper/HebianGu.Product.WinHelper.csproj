@@ -74,6 +74,9 @@
     <Reference Include="HebianGu.ComLibModule.WinHelper">
       <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.WinHelper.dll</HintPath>
     </Reference>
+    <Reference Include="HebianGu.ComLibModule.WPF.Provider.vshost">
+      <HintPath>..\..\..\Product\Debug\HebianGu.ComLibModule.WPF.Provider.vshost.exe</HintPath>
+    </Reference>
     <Reference Include="HebianGu.ObjectBase.Logger">
       <HintPath>..\..\..\Product\Debug\HebianGu.ObjectBase.Logger.dll</HintPath>
     </Reference>
@@ -116,6 +119,12 @@
     <Compile Include="BusyDecorator.cs.cs" />
     <Compile Include="Configer\ControlConfiger.cs" />
     <Compile Include="Configer\SysTemConfiger.cs" />
+    <Compile Include="Model\ClipBoradBindModel.cs" />
+    <Compile Include="Model\Enum\EnumProvider.cs" />
+    <Compile Include="Model\FileBindModel.cs" />
+    <Compile Include="Model\LogBindModel.cs" />
+    <Compile Include="Model\NotePadBindModel.cs" />
+    <Compile Include="Model\ProgramBindModel.cs" />
     <Compile Include="Tool\Convert.cs" />
     <Compile Include="View\NotePadWindow.xaml.cs">
       <DependentUpon>NotePadWindow.xaml</DependentUpon>
@@ -130,19 +139,19 @@
     <Compile Include="View\WeatherControl.xaml.cs">
       <DependentUpon>WeatherControl.xaml</DependentUpon>
     </Compile>
-    <Page Include="ButtonResource.xaml">
+    <Page Include="Style\Control\ButtonResource.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="DataGridResource.xaml">
+    <Page Include="Style\Control\DataGridResource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="HeBianGuBrush.xaml">
+    <Page Include="Style\Brush\HeBianGuBrush.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ListBoxStyle.xaml">
+    <Page Include="Style\Control\ListBoxStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,15 +168,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="DataGridStyle.xaml">
+    <Page Include="Style\Control\DataGridStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MenuItemStyle.xaml">
+    <Page Include="Style\Control\MenuItemStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ScrollViewerStyle.xaml">
+    <Page Include="Style\Control\ScrollViewerStyle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,11 +192,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SysButtonStyle.xaml">
+    <Page Include="Style\Control\SysButtonStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="TabControlStyle.xaml">
+    <Page Include="Style\Control\TabControlStyle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -268,7 +277,10 @@
     <Resource Include="skin\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Style\" />
+    <ProjectReference Include="..\..\BaseLayer\ApplicationBase\HebianGu.ComLibModule.WPF.Provider\HebianGu.ComLibModule.WPF.Provider.csproj">
+      <Project>{985DEF86-1C78-4058-90EF-8673C03F8D8B}</Project>
+      <Name>HebianGu.ComLibModule.WPF.Provider</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="skin\ball-11.ico" />
@@ -691,7 +703,7 @@
     <Resource Include="image\Viewer\zhcn070.ico" />
     <Resource Include="image\Viewer\zhcn080.ico" />
     <Resource Include="image\Viewer\zhcn990.ico" />
-    <EmbeddedResource Include="Extend\最小的截图软件.exe">
+    <EmbeddedResource Include="Lib\Extend\最小的截图软件.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <Content Include="Lib\Newtonsoft.Json.dll" />

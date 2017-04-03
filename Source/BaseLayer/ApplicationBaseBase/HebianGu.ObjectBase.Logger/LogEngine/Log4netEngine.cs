@@ -1,4 +1,4 @@
-﻿using HebianGu.ObjectBase.Interface;
+﻿using HebianGu.ObjectBase.Share;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;

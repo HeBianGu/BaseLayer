@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -143,5 +144,22 @@ namespace HebianGu.ComLibModule.NetWork
                 return ip;
         }
         #endregion
+
+
+        /// <summary> 获取本机当前IP </summary>
+        public static string GetCurrentIp()
+        {
+            string name = Dns.GetHostName();
+
+            IPAddress[] ipadrlist = Dns.GetHostAddresses(name);
+
+            foreach (IPAddress ipa in ipadrlist)
+            {
+                if (ipa.AddressFamily == AddressFamily.InterNetwork)
+                    return ipa.ToString();
+            }
+
+            return null;
+        }
     }
 }

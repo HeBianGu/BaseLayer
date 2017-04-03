@@ -15,3 +15,4 @@ D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.dll
 D:\WorkArea\DevTest\BaseLayer\Product\Debug\HebianGu.ComLibModule.File.pdb
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibModule.File\obj\Debug\HebianGu.ComLibModule.File.csprojResolveAssemblyReference.cache

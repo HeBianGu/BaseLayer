@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\WorkArea\DevTest\BaseLayer\Source\Application\HeBianGu.Product.WinHelper\App.xaml
-141955177386
+14944665014
 21877353798
-15-1940362403
-301873203668
-ButtonResource.xaml;DataGridResource.xaml;HeBianGuBrush.xaml;ListBoxStyle.xaml;MainWindow.xaml;DataGridStyle.xaml;MenuItemStyle.xaml;ScrollViewerStyle.xaml;View\NotePadWindow.xaml;View\ParseFavoriteWindow.xaml;View\StartWindow.xaml;SysButtonStyle.xaml;TabControlStyle.xaml;View\WeatherControl.xaml;
+212037183145
+32-798936084
+Style\Control\ButtonResource.xaml;Style\Control\DataGridResource.xaml;Style\Brush\HeBianGuBrush.xaml;Style\Control\ListBoxStyle.xaml;MainWindow.xaml;Style\Control\DataGridStyle.xaml;Style\Control\MenuItemStyle.xaml;Style\Control\ScrollViewerStyle.xaml;View\NotePadWindow.xaml;View\ParseFavoriteWindow.xaml;View\StartWindow.xaml;Style\Control\SysButtonStyle.xaml;Style\Control\TabControlStyle.xaml;View\WeatherControl.xaml;
 
 False
 

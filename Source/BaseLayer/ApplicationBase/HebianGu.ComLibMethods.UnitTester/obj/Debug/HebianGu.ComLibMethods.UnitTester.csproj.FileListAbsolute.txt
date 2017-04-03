@@ -17,3 +17,7 @@ D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMe
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ComLibModule.CaculateEngine.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.ObjectHelper.dll
 D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\obj\Debug\HebianGu.ComLibMethods.UnitTester.csprojResolveAssemblyReference.cache
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.Logger.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\log4net.dll
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\HebianGu.ObjectBase.Logger.pdb
+D:\WorkArea\DevTest\BaseLayer\Source\BaseLayer\ApplicationBase\HebianGu.ComLibMethods.UnitTester\bin\Debug\log4net.xml

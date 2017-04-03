@@ -8,9 +8,9 @@ namespace HebianGu.ComLibModule.WindowServer
         static void Main(string[] args)
         {
             // Todo ：注册日志 
-            LogProviderHandler.Instance.RunLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().RunLog(l);
-            LogProviderHandler.Instance.ErrLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
-            LogProviderHandler.Instance.ErrExLog += l => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.RunLog += (l,k) => LogFactory.Instance.GetLogService<Log4netEngine>().RunLog(l);
+            LogProviderHandler.Instance.ErrLog += (l, k) => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
+            LogProviderHandler.Instance.ErrExLog += (l, k) => LogFactory.Instance.GetLogService<Log4netEngine>().ErrorLog(l);
 
             while (true)
             {

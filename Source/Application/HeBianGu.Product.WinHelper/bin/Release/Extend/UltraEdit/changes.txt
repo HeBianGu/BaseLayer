@@ -1,0 +1,1995 @@
+-------- 更新历史 -----------------------------------------
+
+// 更新历史 - 删除 v8.00 之前的更改
+
+v22.10
+  - Smarter indentation of auto-completed XML/HTML close tags
+    * After closing tag is automatically inserted, press Enter
+    * UE will reposition and properly indent the closing tag on the line beneath the new (active) line
+  - Convert Quick Find to multi-select
+    * Press Ctrl + , (comma) with Highlight All active to convert them to multi-selections
+    * Select some text, then press Ctrl + , to convert all occurrences of selection to multi-selections
+    * Create custom key mapping in Advanced -> Configuration -> Key Mapping (ViewConvertHighlightedToSelection)
+  - Highlight All Selected and search highlighting shown in the Document Map
+  - Highlight All Selected now uses entire selection (instead of just word under caret)
+  - Performance improvements for multi-caret editing with many selections/carets
+  - Document Map improvements with column mode, selecting, changing syntax highlighting, etc.
+  - Added support for Select All with Ctrl + A in "Edit Macro" dialog
+  - Addressed display issues in Asian languages (Chinese, Japanese, Korean) with child windows, file tabs, tooltips, and other UI elements
+  - Improved selection and highlighting in column mode
+  - Addressed split window issues
+  - Addressed issues with Revert to Saved after manually changing file encoding
+  - Addressed issues when converting file encoding and then reverting to saved
+  - Addressed issue with Wrap after column #, insert CR/LF
+  - Addressed issue with line change indicator not showing for changes on first line of folded/hidden block
+  - Addressed some minor Find/Find in Files issues
+  - Addressed issues with Recently Closed Files list
+  - Addressed CSS syntax highlighting colors with some themes
+  - Addressed issue with Open Address Bar width
+  - Various other minor improvements
+
+v22.0
+  - Document Map
+    * "Filmstrip" overview of active file for visual context and quick navigation
+    * Zoom in or out to see more or less of the file
+    * Optionally shows bookmarks, code folding, and active line
+    * Optionally reposition caret on click
+    * Toggle via View -> Views/Lists or via toolbar icon
+  - Vertically split window
+    * Accessible via Window menu or via splitter next to horizontal scrollbar
+    * Split window both vertically and horizontally for 4-way view of file
+  - "Recently Closed Files" menu item
+    * Added beneath "Recently Opened Files" in File menu
+    * Includes a "first in, first out" ordered list of most recently closed files
+    * Mirrors same number of entries set for "Recently Opened Files"
+  - Cut/copy all bookmarked lines (Search -> Bookmarks submenu)
+  - Trim Leading Spaces (Format menu)
+  - New Macro commands
+    * CopyAllBookmarkLines
+    * CutAllBookmarkLines
+    * TrimLeadingSpaces
+  - New Scripting commands (UltraEdit.activeDocument)
+    * copyAllBookmarkLines
+    * cutAllBookmarkLines
+    * trimLeadingSpaces
+  - New key mapping commands
+    * FormatTrimLeadingSpaces (CTRL + \ is default)
+    * FormatTrimTrailingSpaces (CTRL + / is default)
+    * ViewShowHideDocumentMap
+    * EditCopyAllBookmarkedLines
+    * EditCutAllBookmarkedLines
+    * WindowVerticalSplitWindow
+
+v21.30.0
+  - New FTP/SFTP options
+    * Enable Keep Alive
+    * Enable IPv6
+  - Find in Files improvements
+    * Find in Files speed writing to output window greatly improved
+  - Code folding improvements
+    * Code folding guide was not consistently drawn with many nested folds/unfolds
+  - FTP / SFTP issues addressed:
+    * Can't delete directory / folder via FTP if it contains files
+    * No prompt regarding FTP file overwrite if user doesn't connect to server first
+    * Canceling FTP transfer doesn't actually cancel it - it continues to run silently in the background
+    * Problems connecting to VMS FTP server from UltraEdit
+    * FTP browser won't reconnect after connecting, browsing, and disconnecting without restart
+    * Non-empty directories cannot be deleted but there is no error message
+  - Addressed scripting issues:
+    * Hotkeys to access scripts in Scripting menu no longer work
+    * Focus to edit window is lost after playing script from hotkey or script list
+    * isFound() always returns false in hex mode
+  - Addressed Find/Replace issues:
+    * Select Color dialog and Find String List both closed when pressing ESC
+    * Selected Text option should be disabled if no text is selected
+    * Ctrl + Home causes F3 to search for wrong string
+    * Perl regular expression Find with List lines containing string causes hang
+    * Find String List only lists matched string rather than entire line when searching with Perl regular expressions
+  - Addressed Find in Files/Replace in Files issues:
+    * Menu item to cancel FiF/RiF should reflect whether cancelling Find in Files or Replace in Files
+    * Impossible to cancel Find in Files when output is being written
+    * "In" setting for Find in Files reverts to "Files listed" when switching projects
+    * "Find in Files in this Directory" from Explorer context menu doesn't populate FiF dialog with path
+  - Addressed Split Window issues:
+    * Modifications done in split window are not reflected properly (or at all) in inactive window
+    * Split window does not show modified content of file after pressing BACKSPACE to remove recent change
+    * Split window doesn't reflect switch to column mode in both panes
+    * Line numbers in lower pane of split window are not properly updated after adding a line in the upper pane and deleting it with backspace
+  - Cursor position jumps to top of file after Decode Base64
+  - Comment Selection inserts HTML comment into PHP file
+  - Comment / Uncomment Selection should be disabled if nothing is selected
+  - Column number and file size in status bar jump around when moving selection of lines across columns
+  - Column mode status not tracked properly when using quick column mode and column mode together
+  - Toggling word wrap moves the active line to the bottom of the edit window
+  - Better handling for opening URLs in text via context menu
+  - Incorrect auto-correct applied after automatically closing XML/HTML
+  - Shift + scroll to select large amount of data fails to select everything
+  - Scroll thumb not resized after cutting selection from file
+  - Title bar context menu does not respond
+  - Insert Class doesn't allow users to correctly insert a Java class even though referenced in dialog
+  - Project doesn't reload workspace as closed (tiled/maximized state)
+  - With dockable tabs and hidden file-tabs, projects are always reloaded with maximized files
+  - Case sensitivity not consistent for line and block comments for syntax highlighting
+  - And more...
+
+v21.20.0
+  - This release is largely a maintenance release with over 150 improvements and fixes for the following:
+    * Column mode editing / drag 'n drop
+    * Quick column mode
+    * Hide / show lines and code folding
+    * Folding for block comments in HTML
+    * Scripted find / replace
+    * Perl regular expression find/replace
+    * Compare Files (UC Lite)
+    * Find in files with customized output format
+    * Shebang detection for syntax highlighting
+    * Mixed line terminator handling
+    * Open file under caret via context menu
+    * Word wrap
+    * Undo/redo
+    * Hex mode
+    * Themes and user interface
+    * Menu access via key accelerators
+    * OEM and special character input
+    * File and selection sort
+    * CSS color tooltips
+    * Project and workspace reload
+    * Status bar
+    * FTP connectivity and transfer issues
+    * Scrolling via mouse wheel in FTP dialogs
+    * Stability and performance
+    * And more...
+
+v21.10.0
+  - Dockable Find and Replace dialogs
+    * Tabbed Find, Replace, Find in Files and Replace in Files all in one dialog
+    * Matches your custom theme
+    * Can be floating or dockable and resizable
+  - Multi-caret editing
+    * Full cut/copy/paste support with multiple carets or selections
+  - Theming improvements
+    * Themed FTP account manager
+    * Themed FTP Open/Save dialogs
+    * Various other minor theme improvements
+
+v21.00.0
+  - Multi-caret editing
+    * Ctrl + Click to activate multiple carets
+    * Ctrl + Click on a caret to remove it from the set
+    * Press Ctrl + Alt + Z to remove last-activated caret
+    * Perform basic editing tasks in multiple locations in the file at once
+    * Supports HTML/XML tag auto-completion
+  - Quick Find
+    * Supersedes incremental search
+    * Press Ctrl + F to open Quick Find then begin typing search string. Matches are highlighted as you type
+    * Press Enter to move to the next search string
+    * Press Ctrl + Enter to move to the previous search string
+    * Number of matches shown in status bar
+  - Re-imagined FTP browser
+    * Split file view for both local and remote pane
+    * Drag-n-drop to download / upload files
+    * New controls and colors to match theme
+    * Various internal improvements for better performance
+  - Theme improvements
+    * Custom scrollbars to match theme colors
+    * Custom form elements (input fields, controls, etc.)
+  - FTP transfers shown in output window
+    * New "FTP Transfers" tab in output window
+    * Shows transfer status for remote files opened via Explorer view or via reload/recent files
+
+v20.00.0
+  - New Themes
+    * Dialog for modifying themes added under View -> Themes -> Manage Themes
+    * Allow users to customize display of menus, toolbars, dockable
+      windows, status bar, and more.
+    * Users may select pre-defined themes or define new ones
+    * Enables users to change layout and colors for application framework
+      and edit window/syntax highlighting with a single selection
+  - New CSS Color tooltips
+    * Hovering cursor over a supported color definition causes a color
+      "swatch" to be displayed.  Users can CTRL+CLICK on "swatch" to
+      invoke OS color picker to select a new color.
+    * "Display CSS color tooltips" Configuration option added under
+      Advanced -> Configuration -> Editor Display -> Miscellaneous
+    * Detects and supports colors defined in the following formats:
+      - Hex RGB
+      - Functional notation RGB
+      - RGBA
+      - HSL
+      - HSLA
+    * Tooltips supported in the following file types:
+      - HTML
+      - CSS
+      - Javascript
+      - PHP
+      - Perl
+      - Python
+      - Ruby
+  - Artistic Style updated to version 2.03
+    * Added support for configuration files
+    * Artistic Style dialog completely updated to support new features
+  - CSS wordfile updated to support CSS3
+  - Power User, Programmer, Notepad Replacement, Simplistic,
+    System Administrator, Technical Writer and Web Developer Environments
+    are replaced by Balanced, Clean, Lean and Multi-Window Layouts
+  - Various other minor enhancements and improvements
+
+v19.10.0
+  - Version backup support for remote FTP files
+    * "On FTP Save" added to Configuration -> File Handling -> Backup
+    * "Default FTP backup directory" added to Configuration -> File Handling -> Backup
+    * Existing auto-save options moved to Configuration -> File Handling -> Save
+  - Auto-complete improvements
+    * "Exact case matches listed first" option added under Configuration -> Editor -> Auto-complete
+    * Fully typed words are not shown in auto-complete dialog
+    * Auto-complete dialog now closes if the only match is typed completely
+  - UltraFinder integration
+    * Spawns "Find files" or "Find duplicates" search in active process directory
+  - UltraSentry integration
+    * Send active file to Shredder
+    * Send active file to Digital Locker
+    * Encrypt file
+  - Full Perl regex support for tree-style function list
+    * More robust and precise expressions
+    * Much improved matches for functions/parameters for default languages
+  - Full Jump List support
+    * "Pinned" and "Recent" items now listed in UltraEdit Jump List
+    * Accessible with right-click on taskbar icon
+  - UltraEdit set as generic association to text file types (will appear in "Open with" context menu)
+  - New Window menu item 'Enable tiling / Dockable tabs'
+    * Quickly toggle between dockable/non-dockable file tabs
+  - New "Simplistic" environment for minimalistic layout (replaces Notepad Replacement)
+  - Addressed reindent selection issue when 2 open indent strings are on one line
+  - Various other minor enhancements and improvements
+
+v19.00.0
+  - Significant performance gains in several areas:
+    * Startup speed
+    * Loading/opening files (with temp files)
+    * Switching between file tabs
+  - New status bar
+    * Encoding selector
+      - Changes encoding used to view active file
+      - Will not change file's original encoding
+    * Syntax highlighting selector
+    * Read-only toggle
+    * Insert/Overstrike toggle
+    * Separate areas for line terminator and file encoding properties
+    * Better display
+  - Perl regular expression overhaul
+    * Performance
+      - Searching in large files
+      - Find In Files
+    * Accuracy
+      - Several Perl regexp issues addressed
+      - Full support for negative lookahead/lookbehind searches
+  - File tab drag-and-drop improvements
+    * Drag file tab outside of UltraEdit to open it in new instance
+    * File's settings retained when dragging and dropping between instances
+  - Copy/Paste syntax highlighting in RTF and HTML
+    * Available under Edit -> Copy Special
+    * Paste text with HTML/CSS markup to render highlighting within a
+      browser
+    * Paste syntax colored text into other RTF editors (like MS Word)
+  - Automatic detection and highlighting for file types without extensions:
+    * Perl via shebang (ex: #!/bin/perl)
+    * PHP via shebang (ex: #!/bin/php)
+    * Python via shebang (ex: #!/bin/python)
+    * XML via declaration (ex: <?xml version="1.0"?>)
+  - File View improvements
+    * Modernized icons
+    * Optionally show hidden files
+  - New option to enable close button on each file tab
+  - Improved support for 'Maintain separate process for each file opened
+    from external application'
+  - Various other minor enhancements and improvements
+
+v18.20.0
+  - Smart Template improvements:
+    * Project-based templates
+    * Insert templates by name via macros/scripting (refer to Help
+      documentation for syntax)
+    * Drag-and-drop text to template list to create new templates
+    * Modify template name directly in template list
+    * Open template file directly in editor (right-click template group in
+      template list)
+    * Description field for templates (displayed in tooltip in template list)
+  - Line Change Indicator improvements:
+    * Jump to next or previous change in active file
+    * Ability to configure LCI width
+    * All reported LCI issues fixed
+  - Option to delete unencrypted backup file(s) when encrypting files
+  - Improved configuration options for File Associations
+  - Several improvements for running macros on large amounts of data
+  - Addressed issues with Backup/Restore User Customizations
+  - Addressed issues with Delete All Hidden Lines
+  - Several other enhancements and improvements
+
+v18.10.0
+  - Code folding based on indent level
+    * Automatic for Python files (.py file extension)
+    * Can be activated for other languages by adding "EnableCFByIndent" flag to wordfile
+  - Smart Template improvements:
+    * Ability to set selectable parameters in Smart Template variables
+      - Use pipe character to separate parameters (ex: [+dog|cat|pig+])
+      - When inserting template, variable will open auto-complete list with selectable parameters
+    * New context menu for template listing in Modify Templates dialog
+      - Sort templates alphabetically
+      - Move/copy selected template to group
+    * Modify Templates dialog is resizable
+    * Template editor in Modify Templates dialog now respects user's color settings
+    * Support for %APPDATA% environment variable in templates directory configuration
+  - File name variables ([FILE_PATH] and [FULL_FILE_NAME]) now work with FTP files
+  - Set Output Window font separately from other child window fonts (right-click in Output Window)
+  - Improved C/C++ function strings to eliminate false positives
+
+v18.00.0
+  - Smart Templates
+    * Redesigned, modeless "Modify Templates" dialog
+    * Ability to add user-defined variables to templates
+    * Template "Auto-suggestion" (provides smart suggestion of matching template based upon what you type)
+    * Ability to insert templates via auto-complete dialog
+    * Drag-and-drop templates from template list into active file to insert them
+    * New "Languages" template group to store templates based on syntax highlighting languages
+    * New template behavior configuration options in Advanced -> Configuration -> Templates
+    * Access Global, Environment, and Language templates at the same time
+    * Template files stored in XML format
+  - Automatic auto-completion of closing HTML/XML tags
+    * Configurable in Advanced -> Configuration -> Editor ->  XML/HTML
+    * Configure whether to close on same line or on new line
+  - Dockable "Lines containing find string" window
+    * This window can now be docked, floating, or auto-hidden
+    * Window options are now available in right-click context menu
+  - Full support for proportional fonts
+    * Corrected caret positioning issues with fonts that are not fixed-width
+    * Improved syntax highlighting for fonts that are not fixed-width
+  - Increased "Recent Files" list from 16 to 32
+  - Improved performance when creating and modifying FTP accounts
+  - Added support for automatically connecting to FTP account when opening FTP Open or Browse dialog
+  - Added support for both 32- and 64-bit shell integration DLLs on 64-bit systems
+
+v17.30.0
+  - New scripting functionality:
+    * UTF8ToASCII() - converts UTF-8 file to ASCII
+    * ASCIIToUTF8() - converts ASCII file to UTF-8
+  - New macro functionality:
+    * UTF8ToASCII - converts UTF-8 file to ASCII
+    * ASCIIToUTF8 - converts ASCII file to UTF-8
+  - Find/Replace improvements
+    * Better handling of Perl regex results in Lines Containing Find String window
+    * Better highlighting of Perl regex matches in Find in Files output
+    * Selecting text and pressing Find/Replace hotkey updates Find/Replace string when dialog is already open
+  - Syntax Highlighting improvements
+    * Improved highlighting of nested block comments
+    * Improved syntax highlighting with word wrap
+    * More flexible Comment Add/Remove
+    * Better writing of custom highlighting colors to wordfile
+  - Improved handling of saving multiple files to FTP
+  - Improved performance when selecting text in large files
+  - Improved handling of file paths with multi-byte Unicode characters
+  - Improvements to Explorer tab in File View
+  - Several translation/localization improvements in non-English versions
+  - Files created via command line respect default line terminator setting
+  - Specific fixes for issues, including:
+    * Fixed drag and drop editing issues
+    * Fixed Undo/Redo issue with restoring data
+    * Fixed Comment Add / Comment Remove with leading whitespace
+    * Fixed issue where toggling column mode closes Lines Containing Find String dialog
+    * Fixed auto-correction of word while word is still being typed
+    * Fixed issue where clicking "Cancel" to save changes prompt gives focus to wrong file
+    * Fixed issue where characters inserted via Alt + numeric keypad don't display properly in UTF-8 file
+    * Disabled tag insertion when in hex mode
+    * Fixed issue where Shift + Double Click doesn't highlight all selected if "Use presistent highlight all" is disabled
+  - Various other improvements and enhancements
+
+v17.20.0
+  - Active Column Highlighting
+    * Can be enabled and configured in View -> Set Colors
+    * Menu (View), toolbar, and key mapping command
+  - Open all files matched by Find in Files/Replace in Files
+    * New FindInFiles and ReplInFiles macro property: OpenMatchingFiles
+    * New scripting property: UltraEdit.frInFiles.openMatchingFiles (Boolean)
+  - New "Date created" ($Dc) and "Date modified" ($Dm) template options for Find in Files output
+    * Configured in Advanced -> Configuration -> Search -> Set Find Output Format
+  - New scripting functionality (all document objects)
+    * cancelSelect() - cancels the current selection (if any) without changing caret position
+    * gotoEndOfPrevWord() - moves caret to end of previous word
+    * gotoEndOfPrevWordSelect() - selects from current position to end of previous word
+    * gotoEndOfNextWord() - moves caret to end of next word
+    * gotoEndOfNextWordSelect() - selects from current position to end of next word
+  - New macro commands
+    * CancelSelect - cancels the current selection (if any) without changing caret position
+    * GotoEndOfPrevWord - moves caret to end of previous word
+    * GotoEndOfPrevWordSelect - selects from current position to end of previous word
+    * GotoEndOfNextWord - moves caret to end of next word
+    * GotoEndOfNextWordSelect - selects from current position to end of next word
+  - Selected bytes/lines information displayed in status bar
+  - Ability to "Add all open files" to lists/favorites in Lists tab of File View
+    * To access this option, click the "..." button in the Lists tab
+  - Ability to clear undo buffer
+    * New option in Edit menu
+    * New key mapping command: "EditClearUndo"
+    * Can be added as a toolbar button
+  - Ability to delete files in FTP Browser with DEL key
+  - Ctrl + Shift + Arrow Keys can now select to word boundaries in file path field of FTP Open/Save/Browse
+  - Removed prompt to close open files during project open if only unsaved Edit files are open
+  - Open files are no longer closed when creating a new project
+    * Only applicable if "Close all files when opening or switching projects" is enabled
+  - Ability to save user-specific project PUI files in %APPDATA%\IDMComp\UltraEdit
+    * Can be configured in Advanced -> Configuration -> File Handling -> Advanced
+  - "Yes to All" and "No to All" options added to "File no longer available" prompt
+  - Improvements to Goto in Hex mode to support addresses in very large files
+  - Non-default wordfiles no longer removed when updating default wordfiles
+  - New Python wordfile added to default wordfiles
+  - Cursor now changes to pointer when hovering over margin
+  - New MSI installer option (in addition to EXE)
+    * MSI requires Windows Vista SP2 or greater
+  - More user-friendly licensing/registration messaging
+  - Redesigned "Check for Updates" dialog and messaging
+  - Re-skinned installer with new messaging
+  - New file status icons in file tabs
+    * Note: This change should help make file tab icons more distinguishable to colorblind users
+  - Updated tag list
+  - Other minor improvements
+
+v17.10.0
+  - New scripting functionality (all document objects)
+    * gotoPos() - Goes to specified position (passed as parameter) in number of char from beginning of file
+    * gotoPosSelect() - Goes to specified position (passed as parameter) in number of char from beginning
+      of file while making a selection
+    * clearAllBookmarks() - Removes all bookmarks from file
+    * isReadOnly() - Returns true or false based on whether file is read-only
+    * readOnlyOn() - Sets "read only" attribute for file
+    * readOnlyOff() - Removes "read only" attribute for file
+    * isWordWrap() - Returns true or false based on whether word wrap is toggled
+    * wordWrapOn() - Turns word wrap on
+    * wordWrapOff() - Turns word wrap off
+  - Brace Matching advancements
+    * New "Jump to matching brace" functionality (no selection)
+    * New "SearchGoToBrace" key mapping item
+    * "SearchMatchBrace" is now "SearchSelectToBrace"
+  - Spell As You Type additions
+    * Ability to toggle from toolbar icon
+    * New "SpellAsYouType" key mapping item
+  - FTP advancements
+    * Clear FTP directory drop down history (added at bottom of drop down list)
+    * Improved "Download from server" and "Download with sync" with linked project folders
+    * Last-used FTP directory no longer remembered between instances
+  - Project improvements
+    * Improved relative path handling
+    * Separate "Add Folder" and "Add Group" commands
+  - General usability enhancements and advancements
+    * Option to disable file tab tool tips (from file tab context menu)
+    * Ability to hide all toolbars (from toolbar context menu)
+    * List Lines Containing String dialog reports total number of lines found
+    * Lower pane of split explorer view remembers column widths from session to session
+    * "XML Convert to CR/LF" now available for all files, regardless of extension
+    * Version backup support for UNC file paths
+    * "Save as type" always remembered in Save As dialog
+    * Improvements for default directory with File -> Open dialog
+    * Version details are now selectable in About dialog
+  - Internal speed/performance and other minor enhancements
+  - Added option to Advanced -> Configuration -> Toolbars/Menus -> Miscellaneous -> "Auto-detect files under cursor"
+    to disable the open file under cursor feature in the file context menu
+
+v17.00.0
+  - New menu and toolbar icons
+    * Locking toolbars
+  - File View enhancements
+    * Split Folder and File View
+    * Network browsing
+    * Open files dialog for folders - ability to open multiple files from a single or multiple selected directories
+    * Drag & Drop functionality - drag files to view to open or drag tabs to add to Lists or Project tabs in File View
+  - XML Manager enhancements
+    * Attribute pane - view a node's attributes with this split window
+    * Ability to "Format Document" from context menu
+    * Document tree remains expanded on refresh
+    * Double-clicking node expands code folding if applicable
+  - XML/HTML tag highlighting
+  - File tab status icons
+  - Vista / Windows 7 style open/save dialogs
+  - Ability to change order of file name and application name in title bar
+  - Shift + Double Click word to highlight all occurrences in file
+  - Persistent Highlight All
+  - Increase number of wordgroups in wordfile to 20
+  - Support Count All in selected text and with Search In Column
+  - Performance improvements when using Remove Indents
+  - New industry standard installer
+  - Other minor improvements
+
+v16.30.0
+  - FTP improvements
+    * FTP files saved locally reflect correct saved/unsaved state
+    * Internal/performance improvements for SFTP transfers
+    * Better management of permissions with multiple files (browser)
+    * Improvements for FTPS transfers
+    * Addressed FTP account issue when using registry for settings
+  - Find/Replace improvements
+    * Performance improvement to Find Next/Prev (F3)
+    * Minor improvements to dialogs / accelerator keys
+    * Better memory allocation when replacing with new line (^p)
+    * Perl regexp improvements
+    * Improvements to search Favorites dialog
+  - Macro performance advancements
+    * Better memory allocation
+    * Improved execution of column mode operations
+  - Line Change Indicator (LCI) improvements with:
+    * Trim trailing spaces
+    * Undo
+  - Folding improvements
+    * Better indicator for folded text with hide/show lines and first line in file
+    * Display adjustments for code folding gutter
+  - Column mode improvements
+    * Better management of columnar selection near end of lines
+    * Improved "Replace in Selected Text" while in column mode
+    * Improved Undo of column mode operations
+  - XML Manager improvements
+    * Improved integration between XML Manager and code folding
+    * Improved error report updating
+  - Framework/display improvements
+    * Better full-screen mode for larger screen resolutions
+    * Resizable Ctags symbol dialog
+    * More fluid child window animation
+    * Tooltips adjustments and improvements
+    * Ability to set font sizes in file tabs and child windows
+  - Font quality improvements
+    * Addressed clipping issues
+    * Improved quality at different point sizes
+    * Better rendering of font styles (bold, italic, etc.)
+  - Improvements for localizations
+    * Dialog adjustments for non-English operating systems and versions
+    * Improvements in German localization for Find in Files key accelerators
+    * Better display of diacritics in file tabs
+  - Other improvements
+    * Tag list
+    * XML Manager
+    * Bookmarks
+    * Command line support
+    * Environments
+    * Syntax highlighting
+    * HTML tidy UTF-8 output file
+    * Support for Description field in Script dialog
+    * Better management of locks on files/folders
+    * Changed default Ctags file location (for Vista/Win7)
+    * Improvements to opening Find in Files results from output window
+    * Better UltraCompare Pro integration for 3-way compare
+    * Several internal stability and performance improvements
+
+v16.20.0
+  - Dialog Refresh
+    * Re-engineered dialogs for ease of use, improved organization and space economy
+    * Better visual hierarchy for Tool, Project, and Advanced configuration dialogs
+    * Revamped Find/Replace dialogs
+  - Column editing
+    * Convert to Fixed Column/Convert to Character Delimited improvements
+    * New option for sort field auto-population, improved Cut/Undo
+  - Edit/Undo/Redo enhancements
+    * Improved Undo buffer; preservation when toggling to HEX mode
+    * Smarter RegEx, UTF-8, and Replace Undo operations
+  - FTP/SFTP revisions in Open, Import, Filter, History, Context menu
+    * Improved performance
+    * Import of legacy FTP account data
+    * Account sharing improvements
+  - Enriched Text Formatting
+    * Better performance of XML conversion to CR/LF
+    * HTML Tidy option for Character Encoding
+  - Numerous Display Upgrades
+    * UNICODE characters, scroll bars, file tabs, docked windows, output window
+    * Split window, HEX mode, undo operations with line change indicator (LCI)
+    * Many other LCI improvements
+    * Bold text in brace highlighting
+  - Increased Performance in opening a multiple file Macro or Project
+  - Find/Replace advancements
+    * Added accelerator keys for Hide/Show lines buttons to Find Dialog
+    * Find in Files/Replace in Files advancements
+    * Find in Projects ignore options
+    * Improved Find/Replace regular expressions
+    * Additional shortcuts for Find in Files dialog
+  - Sort advancements in performance and precision
+    * New option for auto-population of column fields
+  - Other Targeted Refinements of importance
+    * Environments, File Tabs, FileTree, Explorer
+    * Function List updating
+    * Status bar, HTML Tag List, HTML Toolbar, Save Operations
+    * Brace matching, Data to Output Window
+    * Column markers
+  - Much improved font rendering (predominantly with Clear-Type fonts)
+    * Font, Printer Font, Hex/Col Font, Reset Font
+  - Expanded XML functionality
+    * Improved Code Folding parsing Hide/Show lines for XML files
+    * Numerous XML Manager enhancements
+  - Syntax Highlighting
+    * Better handling of large (>2.5 GB) XML highlighted files
+    * Improved C# wordfile
+  - Miscellaneous
+    * Option to disable mouse wheel scroll/zoom
+    * New Print option to display first line of file in print header
+    * Greater Win 7 x64 compatibility
+    * Many, many user requested refinements and nuances addressed
+    * UE Mobile (portable) support for single/multiple instances
+    * UE3 Backup/Restore support of customizations
+  - Other minor improvements
+
+v16.10.0
+   - Code Folding - Indent Graphic Lines
+   - Replace In Files - Interactive Mode (Confirmation Dialog)
+   - Scroll Wheel Zooming
+   - Project - Auto Load Macro
+   - Scripting - Variable Dump Feature using var_dump function
+   - Shared FTP Accounts with UltraCompare and UEStudio
+   - Sort Dialog - pre-populate from column mode selection
+   - Performance improvements for load files
+   - More minor changes...
+
+v16.00.0
+    - 行修改指标
+    - 快速区块模式
+    - 在选定区中查找 - 维持选定区
+    - 隐藏/隐藏所有包含搜寻目标的行
+    - 删除所有隐藏行
+    - 在结果输出窗口中高亮显示搜寻字符串
+    - UTF-8 功能改善
+      * 在文件对话框的查找/取代中加入页码选择
+      * 加入 UTF-8 作为新增文件的创建设置
+    - 插入文件到转换成指定的文件类型
+    - 注记/未注记选择
+    - 脚本页码支持
+    - 脚本可包含其他的脚本
+    - 自动括弧配对以匹配前后括弧
+    - 加入的视觉化线索文件为唯读
+    - 容许从 XML 窗口编辑文本
+    - 正则表达式产生器
+
+v15.20.0
+   - Undo enhancements
+     * Users can undo larger than previous limit of approx 25-50k per operation
+   - Undo Support for the following:
+     * Wrap after column #, insert CR/LF
+     * Convert to Fixed Columns
+     * Convert to Character Delimited
+     * Insert String at Every Increment
+     * Sort
+     * Convert CRLFs to Wrap
+     * Convert Wrap to CRLF
+     * Tabs To Spaces
+     * Spaces To Tabs (all)
+     * Spaces To Tabs (leading)
+     * XML Convert To CRLFs
+     * Artistic Styler
+     * ReIndent Selection
+     * Reformat Paragraph
+   - Tabs to Spaces / Spaces to Tabs
+     * New setting to ignore tabs in string literals in Syntax Highlighted Files
+       in Advanced -> Configuration -> Editor Display -> Formatting
+       "Do not convert spaces and tabs inside comments and strings"
+   - Added support for Base64 encoding/decoding of selected text
+     * Key mapping support
+     * Macro support
+     * Scripting support (activeDocument object)
+       - encodeBase64
+       - decodeBase64
+   - List Lines containing string now uses Edit window font
+   - Performance improvements for multi-file open
+
+v15.10.0
+   - XML Manager
+     * Double-click position to any node
+     * SHIFT with double-click to select node
+     * Cut, copy, paste node
+     * Replace node with paste from clipboard
+     * Move node up/down
+     * Duplicate node
+     * Reformat XML document
+   - Column Marker enhancements
+     * Unlimited number of column markers
+     * Ability to define groups
+   - Code Folding enhancements
+     * Code folding graphical lines
+     * Folding processing in its own thread
+   - Sort removal of duplicates based on sort key criteria
+   - XML Lint obeys wordfile extensions for XML files
+
+v15.00.0
+   - 新界面和使用性的改进
+      * 所有新文件打开地址栅栏
+      * 所有新文件版面,有选择性着色
+      * 方便打开文件下拉菜单
+      * Tabbed 子视窗– 包括自动隐藏
+      * 所有新工具栏,有渐降的阴影
+      * 拖放垂直的/水平的平铺的视图
+      *可停靠文档版面自动调整大小
+      *自动隐藏视窗的用户可调节控制
+      * UltraCompare Lite Facelift
+      * 更多…
+   - 删除书签线的能力
+   -切换所有列标志的开和关的能力
+   -在模板列表移动模板上和下的能力
+   - 经由FTP浏览器在服务器创建一个文件
+   - SSH/Telnet session 记录
+   - Web搜寻工具栏
+      * 经由context 菜单修改
+      * 经由关键配对用户可分配
+   - 自动发现和代替列位置
+       从所选文字的开始和终点位置填充
+   - UltraEdit 和 UltraCompare的更佳整合
+       包括UE 和 UC 传达字体字体、代号页和稿本
+   - 无限数量的语言/ wordfiles
+   -句法颜色资料移动到wordfile
+   - 在单个文档的Wordfile
+
+v14.20.1
+   - FTP
+     * FTP dialogs have trouble with very long directory path.
+     * FTP Open account drop down list very small on Windows 2000.
+     * Relative file paths no longer work with FTP.
+     * Incorrect behavior of binary/ascii selectors in FTP Open/Save dialog.
+     * Saving new Unix file via FTP loses line terminators.
+     * Double-clicking symlink in FTP Save As dialog causes filename to be replaced with symlink dir name.
+     * FTP Browser folders can't be opened after selection by pressing ENTER
+     * Unable to close UltraEdit after Save to FTP error
+     * When using multiple SaveAs to FTP commands, only the first one executes
+     * Local copy directory no longer works
+     * Full FTP file path no longer populates Save As to FTP dialog
+   - Function List
+     * Function list not working with split window.
+     * Function list not working for files opened via FTP/SFTP/FTPS.
+     * Function list not working for duplicate window.
+     * Crash with function list and long function signatures.
+     * Function list with multi-language highlighting eats memory and CPU
+   - Javascript Engine
+     * JavaScript Replace in Files replaces in Hidden directories when instructed not to.
+     * Specific Javascript write to outputWindow causes application crash.
+     * Scripted Find in document referenced from document array fails.
+     * Scripting document method setActive() fails
+   - Comparing files opened in UltraEdit via FTP broken.
+   - Copy line jumps to top of file if file unsaved.
+   - Macros
+     * Unbalanced quotes cause issues in macro editor.
+     * Macro content lost when macro is saved.
+     * Adding ReplInFiles or modifying it in the editor causes it to be removed from the macro
+   - Find/Replace
+     * Incorrect highlighting of matched text when using F3 in column mode.
+     * Crash from perl regexp replace in files using hex value replace.
+
+v14.20.0
+    - FTP 增强
+      * 增加了对FTPS的支持
+      * 新的FTP打开/保存对话框
+      * Asynchronous Revert to Saved
+      * 在FTP帐户管理里新的选项到FTPS的支持
+    - 在自己线程里功能列表
+    - 在刷新时移动焦点到功能列表选项
+    - 能够合计达20个外部帮助文件
+    - 能够指定特定的列序在书签视图里
+    - 单击打开文件列表激活文件选项
+    - 在包含字符的列表行能够显示行号
+    - 增加功能移动所有浮动的窗口在Appl窗口
+      (located on View -> 显示/列表菜单)
+    - 支持UltraEdit.clipboardContent的Scripting的增强
+    - 对于并发安装，安装程序记得安装选项
+    - 在帮助菜单的UE图标
+
+v14.10.1
+   - Issue with UltraCompare integration with restricted install
+   - Indent/unindent issues with 12,2 as tab space values
+   - Syntax highlighting after copy/paste in PHP file
+   - Unexpected outcome indent/folding from auto XHTML detection
+   - SSH/telnet resize command to HP UX causes crash
+   - Local file deleted following Save As to FTP w/no temp files
+   - Cursor changes position following focus change
+   - File truncation with extremely large files and perl regex replace
+   - Crash using ENTER to open file from Open file list
+   - Out of memory error with Convert to Fixed Column
+   - Scrolling to bottom in SQL file
+   - Save as to FTP brings up FTP Open dialog
+   - Fix for blank Find in Files results file after cursor/scrollbar movement
+   - Restored functionality of selected text populating find window
+   - updated zlib DLL for latest security patch
+   - Fixed possible crash with NVidia submenu on context menu in taskbar
+   - Fixed crash with Unix-style regexp
+   - Fixed crash following hex edit in file converted to UTF-8
+   - Fixed issue with sort parameters being changed following sort via script
+   - Fixed issue with special replace characters in Perl regular expressions used in script
+   - Fixed issue with menu hotkeys not working on application open with no other files open
+   - Fixed WebSearch searching for last-used Find string instead of selected text
+   - "Lists" buttons in file tree view updated after adding new list
+   - Fixed cosmetic issue with Open button on Favorite Files dialog during resize
+   - (UEStudio only) ues64ctmn.dll added for 64-bit shell integration
+   - "Save As" hang when saving an unedited file with versioned backup enabled
+
+v14.10.0
+    - 增强查找功能
+      * 能够在查找/替换对话框中命名收藏夹
+      * 能够排除特定的文件名和扩展名
+      * 查找不匹配搜索条件的行
+      * 当替换被选择文字时，设置缺省被选择文字
+    - 插入菜单作为一个独立的主菜单
+    - "另打开为"功能支持Unicode和二进制文件
+    - 在浏览器中被选择的文件加载到单一新实例里
+    - 在UE浏览器中点击右键链接到Windows菜单
+    - 增强书签功能
+      * 自动命名书签包括在行号中
+      * 通过文件光标在列表视图中加亮书签
+    - 自动加密文件保存
+    - XHTML检测和可折叠
+    - 在快速指南中增加了缺省浏览器
+    - Wordfile和Taglist版本帮助将来升级
+
+v14.00b
+   - Installation support for Restricted Install (non-admin users)
+   - Resizable ASCII table
+   - Moved advanced configuration navigation box to top of dialog
+   - Fixes for some issues with Find/Replace in scripting
+   - Websearch supports extended ASCII characters
+   - Accelerator keys in Find/Replace dialogs now unique in all languages
+   - Fixed issue with Perl-style positive lookahead regular expressions
+   - Fixed issue with special Perl-style regex characters in replace not being interpreted
+   - Current regex style now indicated next to "Regular Expressions" checkbox
+   - Fix for Unicode files without BOM not being detected
+   - Project Settings Add/Remove buttons active for UNC paths
+   - Optimized performance for project loading
+   - Fix for Find Next in All Open Files not cycling through all files
+   - Fixes for some issues with replace command in macros
+   - Miscellaneous toolbar and environment enhancements
+   - Fixes for all known and reproducible crashes and hangs, including:
+     * Crash and "out of memory" errors with Perl Regex
+     * Open Road crash with German version
+     * Stack-overflow crash with user macro
+     * Crash when connecting to SFTP server in FTP browser
+     * Crash comparing blank "Edit1" file to previous selected file
+
+v14.00a
+   - Placement of ASpell spell as you type suggestion window
+   - Convert to fixed column and last char of line
+   - Find/Replace dialog shortcut keys
+   - Count All only enabled for 'Current File'
+   - Enable/disable menu functions cosmetic changes
+   - Find - Disable Highlight all items found in All Open Files
+   - Find - Disable List Lines Containing String in All Open Files
+   - Cursor pos after Perl regex replace
+   - When doing a replace, if the matching word is already selected it skips it.
+   - Macro looping with IfFound
+   - XML close comment
+   - Crash running script using method saveAs()
+   - File Save prompt after backup timer period, on new file
+
+v14.00
+   - File encryption / decryption to encrypt and
+     decrypt current or multiple files
+   - Environment Selector - Allows use of predefined
+     or user createable environments that remember the
+     state of all of UltraEdit's dockable windows,
+     toolbars and more for user convenience.  Quickly
+     switch to the environment you need for the task
+     at hand.
+     * Switchable items in each Environment include:
+       -- Menus and Toolbars
+       -- Application launch size and position
+       -- Dockable windows plus size and position
+       -- Template list
+     * Switch Environments with a single click
+     * Manage Environments
+     * Create your own custom Environments
+     * Import / Export Environments
+   - Redesigned and enhanced Find and Replace Dialogs
+     * Multi-line scrollable text boxes
+     * Collapsible Advanced options
+     * Ability to search in specified column range
+   - MSI installer
+   - Move current line up or down in file
+   - Compare modified file with version on disk
+   - Compare 2 snippets of text
+   - New WebSearch Toolbar
+   - Dockable named bookmark list
+   - Dockable ASCII table
+   - Redesigned Set Colors dialog
+   - Auto tab row adjustment (Fixed auto-adjust Tabs)
+   - Updated Navigate option to search all terms in
+     all config pages
+   - Single Open prompt for converting Unix files
+   - Single Save prompt for multiple modified files
+   - Separate project file for user-specific and
+     workspace information
+   - Other minor improvements
+
+v13.20
+   - 查找改进
+     - 查找和替换增添了收藏夹按钮
+     - 单独的线程进行在文件中查找
+     - 在文件中查找采用光标下的单词（可选）
+     - 在“未找到”对话框里显示查找字符串
+     - 在配置里的查找设置里增添自动重置的选项
+     - 查找历史记录里不再添加宏搜索字符串
+   - 连续选择
+     - 允许不使用 shift 键来选择文本
+     - 持续选择直至：
+        * 开始了另一个选择
+        * 选择已被剪切、删除或粘贴
+     - 选择可以在以后继续进行，通过再次选取持续选择
+     - 连续选择锚点可以使用 ctrl-鼠标左键来重置
+   - 增添选项可以在文件打开时自动按字母顺序排列标签
+   - 在状态栏上记录可视化的宏标志
+   - 可配置的自动完成结果
+   - SSH/Telnet 现在允许 ctrl+insert 复制和 shift+insert 粘贴
+   - 当 UE 窗口失去焦点时自动保存
+   - 仅在新建文档时提示一次自动保存
+
+v13.10a
+   - Crash when backspacing from end of file while selecting text
+   - Reverted to wordfile with UE regular expressions only
+   - Error opening FTP file in Explorer view when connecting to MVS server
+   - Cannot add FTP files to projects
+   - Moving caret when text is selected stops at selection boundary
+   - Incorrect alignment/position when Show Spaces/Tabs enabled
+   - Syntax highlighting of multi-line strings
+   - Fold of multi-line nested block comments in REXX
+   - Function list refresh on file changed from disk
+   - Adjust scroll thumb for Perl regex find target
+   - Bookmark edit and save with no file edits
+   - Word wrap with auto line indent, then undo
+   - Display of utf8 file following Conversions to ASCII
+   - Saving local file to FTP server generates local file open error
+   - Crash when exiting application while saving FTP file
+   - Save All command not disabled when all files saved
+   - Clear Histories command not completely removing all Recent Files menu entries
+   - Search with regular expressions enabled causes application hang
+   - Search option "Match Files if string is not found" not working with regular expressions enabled
+   - Replace in selection corrupts file when Perl regular expressions are enabled
+   - Crash with Find In Files with "Results to Edit Window" and closing and rerunning a Find In Files
+   - Invalid argument encountered when bringing up the Find or Replace dialog
+   - Function list not displaying functions from UTF-8 files when Perl regular expressions enabled
+   - Directory erroneously shows up in File/Types combobox of UE/UEStudio Find in Files dialog
+   - "Add or Remove Programs" not displaying UE icon
+   - If a file is loaded, and you open another file from command line, cursor disappears
+   - Ctrl and/or alt and any cursor key not allowed in key mapping
+   - Crash when connecting to ftp server with long server banner
+   - Saving an FTP file stalls part-way through reporting "Upload Command Failed"
+   - Added menu/toolbar icon for Show Spaces/Tabs command
+   - Added support for column mode to Goto line/col select in a Macro
+   - Added remember font option in ASCII Table dialog
+   - Added key mapping for Show Line Endings
+   - Updated SFTP component
+   - Updated SSH/Telnet component
+
+v13.10
+   - 特殊粘贴命令将 RTF 和 HTML 源文件粘贴到 UltraEdit
+   - 可以从高级菜单启动新的 UE 会话
+   - 快速入门指南对话框
+   - 脚本改进
+     - 新的脚本对象：outputWindow
+     - 新的脚本属性：
+       - UltraEdit 对象：
+         clipboardIdx, columnMode,
+         insertMode, regexMode
+       - 文档对象：
+         fileSize, currentPos,
+         currentLineNum, hexMode,
+         currentColumnNum
+       - outputWindow 对象：
+         visible, showOutput
+     - 新的脚本方法：
+       - outputWindow 对象：
+         showWindow, write,
+         clear, copy
+     - 命令行执行
+   - 增强的剪贴板历史记录
+   - IE 浏览器改进了对图片和 css 文件等依存文件的支持
+   - 优化了工作区管理器：
+     - 浏览器选项卡中可选的驱动器卷标
+     - 新的“列表”选项卡，提供收藏夹和用户创建的文件组
+       /列表
+     - 浏览器选项卡的过滤器
+     - 打开选项卡的文件查找
+   - Wordfile 选项现在支持函数列表的 Perl 正则表达式:
+     /Regexp Type = Perl
+   - 自动调整大小工具栏支持按钮溢出
+   - 空格/制表符和换行符选项用于颜色和个性化显示
+   - 支持多达 12 种可选的列标记
+   - 用以指定光标如何移出选择区域的选项
+   - 可以刷新包含字符串的列表行
+   - 提供选项自动复制选定的文本而无需右击复制或按 ctrl+c
+   - 提供弦用于宏
+   - 提供选项用于下划线脱字符
+   - 提供选项用于单词停止于一个单词中的每个大写字母处
+   - 改进的注册过程，现在支持粘贴整个注册邮件
+   - 其它细微修改
+
+v13.00a
+   -Improved startup time
+   -Support for additional code pages
+   -Improved handling of Perl regex in Find/Replace
+   -File modified date/time uses current locale format
+   -Added Toggle Browser View to main toolbar
+   -Added tex.conv file for Aspell filter support
+   -Changing of directories on VMS servers
+   -Handling of date/time for FTP/SFTP files
+   -"Not a plain file" message when opening multiple FTP files
+   -Truncated FTP file/folder names when names include spaces
+   -Handling of absolute/relative paths for files in projects
+   -[$replace$] in templates with UTF-8/UTF-16 files
+   -Previous bookmark select does not require a parameter
+   -JavaScript setActive function did not change activeDocument
+   -Script issue using insertMode, hexOn/Off, columnModeOn/Off
+   -Issue with replace selection in replace method in scripting
+   -Issue with extended ASCII characters in script method write()
+   -Issue converting CR/LFs to Wrap in UTF-8 files
+   -Read Only status when opening files from MRU list
+   -Erroneous IE save dialog when toggling browser view
+   -UTF-8 files and preserving cursor when switching to/from hex view
+   -HTML Color Selector in languages other than English
+   -Sort of UTF-8/UTF-16 files results in extraneous BOM
+   -"No Error Occurred" attempting to open a non-existent file
+   -Several Explorer view enhancements
+   -Out Of Memory condition in UE/Unix regular expression replace
+   -Issue with File Change Detection and UltraCompare integration
+   -Hang on exit using versioned backups
+   -Addressed several crash scenarios
+
+v13.00
+   - 集成脚本支持
+   - 输入时拼写检查
+   - 支持 MSI Installer
+   - 搜索收藏夹中的文件
+   - 能够在所有打开的文件中单步执行搜索和替换
+   - 在任何不包含搜索字符串的文件中执行“在文
+     件中搜索”
+   - 用户可以自定义“在文件中搜索”结果的格式
+   - 集成的 IE 浏览器支持显示活动的 HTML 文件
+   - 资源管理器视图使用系统注册的图标显示文件
+     类型
+   - 能够定义连续的选择
+   - 用于典型安装的“快速安装”
+   - 安装过程中将 UE 设置为查看源代码编辑器时
+     提示
+   - 可选择将光标位于词语左侧或右侧以便选择在
+     遇到下划线时停住
+   - 支持语法高亮显示逐字的字符串字符
+   - 语言内嵌注释
+
+v12.20b 2006-12-12
+        - Added "Open in UltraEdit" right click menu command to remote file listing of FTP/SFTP Browser
+        - Filenames with '$' are now handled correctly for VAX/VMS FTP Servers
+        - Fixed support for BS2000 FTP servers
+        - Fixed issue with date/time display in FTP/SFTP Browser
+        - Crash with SSH/Telnet window and host key verification
+        - Crash in print preview with Alt-C command
+        - Issue with HTML Tidy and "Use memory buffers for editing" option
+        - Sort preference now remembered in FTP/SFTP browser
+        - Fixed crash in Find when searching for ^p with "List Lines Containing String" option enabled
+        - Fixed crash when recovering files on application restart
+        - Fixed issue with data corruption of Unicode files saved via FTP/SFTP(Unix files only)
+        - Improved handling of spell-checking when using TeX filter
+        - FTP Open/Save as dialog will now correctly display file sizes larger than 4GB
+        - Fixed crash on application close when saving FTP files
+        - Fixed issue with FTP files failing to save on application close
+        - Fixed SSH/Telnet hang when switching between terminal tabs
+        - Support for CSE Validator free version
+        - Fixed issue with toggling external FTP accounts erasing account information
+        - Fixed issue with using negated character classes like [^a-c]+ with the Perl Regex Engine
+        - Improved handling of utf8 values in replace dialog when using "All Open Files" option
+        - Fixed issue with regular expression corrupting default colors of edit window
+        - Fixed issue with passing ignore options to UltraCompare Lite
+        - Fixed issue with horizontal scroll bars not being displayed in UltraCompare Lite
+        - Fixed issue with passing compare mode options to UltraCompare Lite
+        - Fixed unicode display issue with Function List
+        - Fixed issue with UE regex and extended ascii characters
+        - Fixed  XML Convert to CR LF on very large files
+        - Fixed issue with display of lines of Chinese chars from non-unicode files in List Lines Containing string
+        - Fixed issue with auto-indent wrapped lines
+        - Word wrap enhancement to bind trailing space with preceeding word
+        - Fixed cursor pos of trim trailing spaces when cursor is in trailing spaces
+        - Fixed crash involving undo and find/replace
+        - Fixed intermittent failures of perl regex engine within macros
+        - Fixed macro failure when using perl regex with replace
+        - Fixed crash when replacing large text blocks
+        - Fixed splitter window delete file on large files
+        - Fixed issue with Modified FTP file failing to save when closed
+        - Fixed issue with Modified FTP file failing to close when saved
+        - Fixed issue with FTP account data, such as server name, not being validated when creating an account
+        - Fixed issue with Replace always replacing from top
+        - Fixed Async-FTP open/save crash/hang with multiple FTP/SFTP files
+        - Fixed path handling for several FTP server variants
+        - Fixed path handling in FTP Browser when downloading/uploading single directories
+        - Fixed crash in FTP/SFTP and SSH/Telnet account manager
+        - Fixed crash in FTP/SFTP when using cached passwords or passphrases
+        - Improved handling of cached passwords and passphrases when opening/saving multiple FTP/SFTP files
+        - Fixed issue with Replace in "All Open Files" not displaying number of replaces
+
+v12.20a 2006-10-26
+        - Fixed focus issue on connect/disconnect in SSH/Telnet console
+        - Fixed crash when hitting escape in SSH/Telnet console
+        - Fixed issue with FTP save failure closing file
+        - Fixed issue with invalid hostname in SSH/Telnet window on connect
+        - Fixed issue with upload of subfolders of FTP linked folders
+        - Fixed issue with log window when switching between FTP and SFTP
+        - Fixed several issues with Explorer integration and shell extension dll
+        - Fixed issue with end of line replace including line terminators
+        - Fixed issue with multiple replace targets on multi-line match
+        - Fixed Replace All not using Perl Regex in replace dialog
+        - Fixed issue with Count All using Perl Regex engine
+        - Fixed Replace following a Convert to fixed column and Convert OEM -> ASCII
+        - Fixed issue with INI file using windows directory when Admin user
+        - Fixed ghost characters with auto indent wrapped lines with no indent
+        - Fixed issue scrolling window left using mouse select or drag
+        - Fixed issue with bookmark adjust when pasting lines in UTF-8 file
+        - Fixed issue with folding state not saved for some UTF-8 files
+        - Fixed Macro load error with Goto function
+        - Fixed print selection from HEX edit mode
+        - Fixed scroll bar in output window for HTML Validator output
+        - Fixed HTML Tidy to generate output when no errors are detected in file
+        - Fixed file tab coloring when tab is dragged to another position
+        - Added support for mouse wheel scroll in SSH/Telnet console
+        - Added SSH host fingerprint prompt and caching
+        - Remember last used account in FTP/SFTP Browser and Account Manager
+        - Remember password when opening previously open FTP/SFTP files
+
+v12.20 2006-10-12
+        - SSH/Telnet Window
+        - Multi-key mappings (sometimes called chords)
+        - Auto-indent wrapped lines
+        - Support for Windows x64 Shell integration
+        - Ability to view and print Key Mapping
+          from configuration
+        - Support for Alternate Data Streams on NTFS
+          Operating Systems
+        - Support for dual monitors
+        - Right-click Find in Files from Explorer
+          in File Tree view
+        - Spell check in "strings" or "comments"
+        - Grouped undo option
+        - File Tab Color Highlighting on a per file
+          extension basis (optional)
+        - Bookmark now includes column number with
+          line number (optional)
+        - Default the View As option for new unsaved
+          files (config item)
+        - Saving of folded lines is now optional
+          (config item)
+        - Showing of last line of fold in syntax
+          highlighted files is
+          now optional (config item)
+        - Ability to see path to the INI file in config
+        - Integration with Explorer now a configuration
+          item
+        - New Settings for Output Window
+          (via right-click context menu):
+         - Use spaces instead of Tabs
+         - Show Tool tips
+        - Change working directory if no files are
+          open in directory
+        - Mouse wheel scrolls window under mouse pointer
+
+v12.10b 2006-08-30
+         FTP/SFTP fixes:
+         -Removing an FTP/SFTP account leaves empty entry in Explorer view
+         -FTP disconnection causes tree view to revert to initial or root directory
+         -SFTP authentication failure requires application restart instead of prompting for correct credentials
+         -Blank filenames in FTP directory listing for BS2000 servers
+         -FTP Filename displayed when uploading is prepended with a number
+         -Crash when attempting to use a deleted FTP account
+         -Support for Tandem/Guardian FTP with FTP Browser and Explorer View
+         -FTP Browser, File View, and Open/Save do not use a mutual password/passphrase caching system
+         -Local Copy feature for FTP/SFTP no longer works
+         -FTP/SFTP files opened on program startup or when opening a project are corrupted if filenames are identical
+         -FTP Save failure leaves file in readonly mode
+         -Error dialog when attempting to use Version Backup with FTP Files
+         -Specifying line numbers in FTP files opened from the command line does not work
+         -Remove folder ignored when using FTP linked folders
+
+         Search using Regular Expressions:
+         -Search in selection incorrectly highlights previous character
+         -Replace in Files dialog settings were not being remembered
+         -Search and replace of end of line characters duplicated letters after the first line
+         -Perl compatible Regular Expression found no functions when used in Ctags
+         -Find next did not properly update cursor position
+         -Issue with not scrolling horizontally to highlighted found object
+         -Find Prev could cause hang or crash with Perl compatible Regular Expressions
+         -Replace in selection on multiline and partial line matching code
+         -Focus to find dialog problem with Perl compatible Regular Expressions
+
+         Other fixes:
+         -Open file paths are now relative for project files
+         -File Associations did not remember a new association to file
+         -Cursor move to next word stops working after a while when editing UTF-8 files
+         -Cursor positioning using command line options in UTF-8 files
+         -Pipe character appended to filenames saved using FTP Browser
+         -Clipboard history does not capture clipboard data from other clipboards only clipboard 0
+         -Improve readability of clipboard history entries by displaying line ending characters as '\r' and '\n'
+
+v12.10a 2006-06-12
+         - Crash when configuring custom tab stop values
+         - Crash while navigating file tree view
+         - Crash when deleting bookmark
+         - Crash on auto-recovery of an unsaved new file
+         - Fixed CSE validator .dll error with an expired v7.01 Pro Trial version
+         - Added FTP Log dialog, requires "Show FTP Log=1" in settings section of ini file
+         - Addressed MVS and Tandem parsing issues
+         - Inactivity or disconnection will no longer cause FTP Browser/Tree to revert to initial or root directory
+         - Passwords and key passphrases will be cleared if connection fails
+         - Passphrases for SFTP are now correctly remembered for all FTP functions(open/save, treeview, browser)
+         - PCRE and selecting between cursor and last find(Shift+F3) works correctly
+         - PCRE and code unfolding works correctly
+         - Local copy for FTP supported for tree view, browser, and async save
+         -  VMS FTP Servers when using logical path names will now work
+         - Issue with FTP Account Manager and clearing data fields
+         - Issue with UC Lite and registry corruption
+         - Crash with tooltips and tagslist window
+         - Clipboard History now captures Cut/Copy from all UE Clipboards
+         - Added support for Windows NT4
+         - Issue with UE Unix style regular expressions and Find/Replace with beginning of line anchor
+         - Fixed opening and saving of FTP files to MVS servers
+         - Account conversion will now correctly interpret nonstandard SFTP ports when updating from previous version
+         - Crash in Find in Files
+
+v12.10 2006-05-15
+         - 增强颜色选择器
+         - 重新设计 FTP 帐户对话框
+         - FTP 浏览器
+         - 异步保存/打开 FTP/SFTP 文件
+         - 对于 FTP 链接的方案文件夹按日期同步
+         - 剪贴板历史
+         - 支持代码页转换
+         - 支持 Xmllint
+         - 命名的书签
+         - 在文件中查找忽略查找和替换中的目录
+         - 备份 UE 工具栏和其它个人定制内容的方法
+
+v12.00  2006-03-15
+        - Perl 兼容的正则表达式/真 Unix 样式正则表达式
+        - FTP/SFTP 优化
+          - FTP 帐户在文件树视图里显示并可访问
+          - FTP 设置现在可以位于用户定义的文件中
+          - 能连接本地文件夹和远程文件夹并在远程服务器和本地系统之间上传/下载文件
+        - 查找/替换优化
+          - 进一步改良 UNICODE 支持
+          - 对话框完全支持 UNICODE
+          - 高亮显示所有找到的字符串
+        - 将用户工具和方案工具都增加到25个
+        - 新的宏命令：
+          - *IfFTP 检查文件是否为 FTP 文件
+          - *IfCharGt 检查字符是否大于值
+          - *IfColNumGt 检查列号是否大于值
+        - 用户工具和方案工具新改进的对话框
+        - 改进的 (Aspell) 拼写支持
+        - 代码折叠支持忽略字符串和注释字符串
+        - 优化对 UltraCompare Professional 的支持包括三方比较
+        - 在 UltraEdit 文件树视图里右键单击比较
+        - 更改用户概要文件时所有菜单和工具栏一道切换
+	- 添加新的键映射：
+            NextWindowPanel   Ctrl+F1O
+            PrevWindowPanel   Alt+F1O
+            EditPasteCopy     Ctrl+Shift+V
+            ProfileSelectMenu Alt+F8
+
+v11.20 2005-10-07
+        - 全新呈现高级配置对话框
+        - 用户可配置右键单击的上下文菜单，用于“主编辑窗口”和“文件”选项卡
+        - 能够定制由HTML 工具栏创建的标签（tag）
+        - 能够编辑Unicode big endian
+        - 支持直接编辑 ASCII escaped Unicode
+        - 能够从 Big endian 转换到 little endian
+        - 能够添加换行符到 XML 文件，这些XML 文件含有很少的换行符或不含换行符
+        - 增强了工具栏配置的可用性，包括拖放功能
+        - 增加与 UltraSentry 的集成，以安全删除 UltraEdit 临时文件。
+        - 提供选项删除最近打开的文档和方案历史记录
+        - 能够设置默认的编辑窗口大小
+
+
+v11.10c 2005-09-20
+         - Fixed intermittent scrolling crash
+         - Fixed extra new line issue when replacing with regular expression
+         - Changed compare function to not minimize all other open files
+         - Fixed font increase/decrease irregular point size behavior
+         - Changed EBCDIC to ASCII conversion to more closely match expected behavior
+         - Fixed syntax highlighting and function list parsing for FTP files
+         - Files opened via the explorer context menu will now be detected as read-only correctly
+         - The ESC key will now cancel out of the FTP Accounts dialog instead of saving
+         - Added EBCDIC and create CTAGS to available toolbar commands
+         - Files opened via FTP will now remember their ASCII/BINARY type when saved
+         - FTP fixes for Stratus VOS
+         - Fixed print/print preview of syntax-highlighted files
+         - Fixed syntax highlighting issues with multiple languages in single line
+         - Added INI setting for old style Windows file list management
+         - Fixed cursor positioning problem with Chinese font
+         - Other minor fixes
+
+v11.10b  - Fixed multi-line quoted string issue in mutli-language file
+         - Fixed on paste line ending conversions on Windows 9X
+         - Fixed issue with trailing spaces in FTP filenames
+         - Added error message to differentiate between folders and groups in new folder dialog
+         - Fixed heap corruption in undo buffer, specifically search/replace operations on files with long lines
+         - Fixed issue with missing Red/Green/Blue bitmaps in color selector
+         - Added crash dump feature
+         - Fixed filtered display of project folder subdirectories
+         - Fixed Find in Files, Function list, and Ctags when searching project folder subdirectories
+         - Fixed highlighting issues and crash of FTP/SFTP Save As with syntax highlighted files
+         - Fixed conflict when changing desktop background color on XP systems
+         - Fixed SFTP truncated or missing filenames in file listing
+         - Fixed UTF-8 false positive detection issue
+         - Fixed synchronization issue with multiple instances of UE
+         - Fixed simultaneous opening of multiple files with a single instance of UE
+         - Removed f90 and f95 from the default FORTRAN_LANG file extension list
+         - Explorer view will now update correctly when drives are added/removed from the system
+         - Fixed relative path issues with project tagfile/wordfile
+         - Fixed drag-and-drop when selection is top line of display and mouse is clicked left of first column
+         - Installer fixes(only applies to uedit32_all.zip NOT hotfix), added All Users desktop shortcut, fixed Admin issues with start menu shortcuts
+         - Fixed update of function list in multi-language syntax highlighted Unicode files
+         - Corrected multiline-string switch for unknown languages
+         - Added check for attempting reindent selection of lines >20k characters
+         - Maintain text selection while scrolling through large unicode files
+         - Fixed Undo issue with converted UNIX files
+         - Fixed screen jump when folding/unfolding code near the end of a file
+         - Improved SFTP support for VAX/VMS
+         - Fixed Aspell issue with single quotes causing false positive
+         - Fixed crash with scrolling through code folded sections of file
+         - Corrected painting issue when code folding sections >75k
+         - Fixed brace matching in non-syntax highlighted files
+         - Fixed crash when pasting UTF-16/UTF-8
+
+v11.10a  - Fixed corruption issue with Undo/Redo of Unix/Mac files
+         - FTP file list now correctly displays file sizes greater than 2GB
+         - Corrected bookmark display issue in word-wrapped file
+         - Fixed replace history when replacing with ""
+         - Find output from Mac/Unix files will now position correctly when double clicked in output window
+         - Output window command, Copy to Clipboard, will now include DOS line endings in the output
+         - Fixed possible screen jump going in and out of Column mode
+         - Re-wrap screen text when font size is changed while in Word Wrap mode
+         - Fixed Column mode copy/paste command with UTF-8/UTF-16 files
+         - Fixed FTP save issue with UTF-8 files
+         - Added FTP support for HP Tandem systems using Guardian filesystem
+         - Fixed double FTP change directory issue on some servers
+         - Fixed paste of text into find combo box w/read only files
+         - Added language indicator to status bar for syntax highlighted languages
+         - Fixed Aspell spell checking of non-syntax highlighted files
+         - Improved performance of large XML files without line feeds
+         - Fixed issue with auto-correct using cursor keys
+         - Fixed crash displaying ASCII chars above 128 in syntax highlighted files
+         - Corrected CSS highlighting in multi-language file
+         - Corrected parsing of VBScript language in multi-language file
+         - Project tool custom icons will now display in menus and toolbars
+         - Multibyte filenames(Korean) can now be opened from Project tree view.
+         - Fixed Save as ANSI/ASCII causes file to be corrupted.
+         - Multiple monitor tooltips now appear in the correct location
+         - Improved UTF-16 file detection
+         - Defaults button from keymapping dialog will now restore defaults instead of clearing all mappings
+         - Fixed issue where deleting Menu/Toolbar configuration files causes UE not to start
+         - Added support for detection of Windows 95 to correct graphical issues with the UE toolbar
+         - Fixed crash in Find in Files when trying to search with no documents open
+         - Fixed User tool crash when selection is passed to tool but no selection has been made in Hex Mode
+
+v11.10   - New Icons
+         - Clipboard conversion on paste, UNIX/MAC/DOS line endings
+         - Enhanced "Save As" dialog
+         - Replace in project files
+         - Check for Updates capability
+         - Auto-detect Unicode(UTF-16) files without BOM
+
+v11.00b  - Fix for Toolbar configuration save and load from INI file
+         - Fixed cursor positioning when toggling into HEX mode
+         - Added new INI option for windows font: Extra Windows Font=Font Name (Default: Extra Windows Font=Tahoma)
+         - Added new INI option for windows font size: Extra Windows Font Height=Font Size (Default: Extra Windows Font Height=13)
+         - Added new INI option for file tab font: TAB Windows Font=Font Name (Default: TAB Windows Font=Tahoma)
+         - Added new INI option for file tab font size: TAB Windows Font Height=Font Size (Default: TAB Windows Font Height=13)
+         - Added "Use Check Marks on Menus" conguration for blind users
+         - Fix for crash in Find in Files
+         - Fix for crash while attempting to add invalid words to spell checker word list
+         - Fix for Find in Files when searching Open Files and files are UTF-8/UTF-16
+         - Fix for replace in files for open files when files are UTF-8/UTF-16
+         - Fix for replace in all open files when files are UTF-8/UTF-16
+         - Project settings dialog now shows complete path
+         - Quick search toolbar entry now works if on multiple toolbars at once
+         - Auto-complete fixes
+         - FTP/SFTP bug fixes, including crash, and correctly reloading remote file
+         - Fixes for automatic outdenting in Perl
+         - Win 9x startup issue with ueres.dll
+         - Crash with split windows and delete
+         - Many changes for multi-language files with syntax highlighting, folding and indenting
+         - File tree view sort now includes path
+         - Project file fixes
+         - Added capability to change size (length) of that search window in toolbar by double-clicking on the find combobox item in toolbar customization window
+         - Fixed line number being chopped with some fonts
+         - Many other minor issues
+
+v11.00a  - Several project related issues including refresh
+         - Only partial project path showing in project list in some instances
+         - File Tree View no longer access floppy/removable drives with mouse over
+         - File Tree View did not display drives created using the SUBST command
+         - Files with an .s03 extension show up as .s0303 in the File Tree View
+         - Undocked windows (File tree view and others) now remember if they are undocked when closed
+         - The HTML-Toolbar function Text2HTML did not support some conversions
+         - HTML Bookmark button changed to anchor to avoid confusion
+         - HTML "B"(old) button undo did not remove the <B> tag
+         - Added more Icons to toolbar configuration.
+         - Toolbar position not saved in some conditions
+         - Fixed issues with capture output from tools not always working
+         - Output window fixes
+         - Function list not always detecting functions that previous versions detected
+         - Some functions not showing if function strings ended with asterisk (* )
+         - Fixed display issues with line numbers being clipped
+         - Fixed display issue with themes/manifest files.
+         - Configuration changes to spelling checker options did not always activate "apply"
+         - Support Ctrl-B brace matching on non-syntax highlighted files
+         - Fixes for multi-line strings
+         - Added default folding strings for XML
+         - Very slow drawing of XML files with very large lines
+         - Crash on save if it's a new file that is syntax highlighted
+         - Escape for Auto Complete dialog
+         - Positioning problem with spell checker and Unicode file
+         - Crash with GUID used multiple times at beginning of file
+         - Insert color default color issue
+         - Icons left in system tray when UltraEdit closes and minimized to system tray
+         - Auto correct on return key
+         - Several minor FTP/SFTP issues including MVS.
+         - Other minor fixes.
+
+v11.00  -Enhanced Configurable menu / TB support
+           - Easier to use
+           - Save configurations
+           - Multiple configurations, select for appropriate task
+        -HTML toolbar
+           - Preconfigured for most popular functions
+        -Improved HTML Tidy support
+           - Updated
+           - Configuration Dialog for Tidy Configuration
+        -Aspell Spell checker (more languages available)
+        -Enhanced User Interface
+           - Framework/window changes
+           - Improved bookmarks
+           - Ruler guide for caret position
+           - "Explorer" style File Tree view
+           - Improved document tabs
+        -Code Folding
+           - Fold any function or Structure (C/C++)
+           - Collapse All and Expand All
+        -Copy/append line if no select (option)
+        -Enhanced brace matching
+           - New highlight based on Line/Col Background
+           - User configurable match strings
+        -File Logging
+           - Automatically update log files at configurable interval
+           - Files can individually be set to be log files
+        -Multi-Language(HTML file types only) Syntax Highlighting
+        -Tools toolbar
+           - Enhanced color selector
+           - CSS Style Builder
+           - HTML Tidy enhanced interface/configuration dialog
+           - Globally Unique ID Number generator
+           - Number converter (converts selection: binary, octal, decimal,hexadecimal)
+           - Artistic Style formatter
+        -Other Minor Changes
+           - Lock Insert Mode Key (inhibit Overstrike)
+           - Disable auto hex mode
+           - Open from Explore does not change the most recent file list
+           - Always on Top function now in View Menu
+           - Enhancements to reindentation
+           - Syntax Highlighting is supported with wrapped lines
+
+v10.20d  -Bug Fixes
+			    - Fix right click context menu broke in v10.20d
+			    - Fix UNIX FTP dates
+			    - Multiple instance issues fixed
+			    - Several issues related to UTF-8/Unicode file handling fixed
+			    - Output window issues fixed
+			    - Access violation issues fixed
+			    - Find in files issues fixed
+			    - FTP Filter settings issue fixed
+			    - Fixed Project group issue with "Relative to Project File" setting
+			    - Opening files through symbolic links fixed
+			    - Duplicate entries in Recent File List from FTP Open/Save fixed
+			    - SFTP multi-file permissions issue fixed
+			    - Replace All issue fixed
+			    - Other minor issues
+
+v10.20c - Bug Fixes
+          - Random print problem fixed
+          - Print on NT4 fixed
+          - Works with debuggers running
+          - UTF-8 problem with UTF-8 last character of file
+          - A few reports of startup problems fixed
+          - Other minor issues
+
+v10.20b - Bug Fixes
+          - Lock up on some NT/98 systems on launch
+          - Some random crashes fixed
+          - Display/selection of Asian double-byte characters fixed
+          - FTP Save As sometimes reported change after save when no change was made
+          - UTF-8 character conversion on very large files
+          - Other minor issues
+          - Added %d to tools commands to represent directory name WITHOUT backslash
+            (%D for short directory name)
+
+v10.20a - Bug Fixes
+          - Problems with tabs, particularly on Win 9x/Me
+          - Problems with a few lockups when starting on Win 9x/Me
+          - Print preview problems
+          - Find in Files in macro after being editied did not work
+          - Load time for files from explorer after UltraEdit is
+            running is much quicker
+          - Other minor fixes
+
+V10.20  - Multiple Tab Positions
+        - Duplicate Line
+        - New Line/Insert Line
+        - Tooltips for Tabs show document path
+        - Tree View function to change view to drive/path of active file
+        - Character Properties POP-UP Dialog to show:
+              Value of character in Decimal/HEX and Display
+              Offset of character from start of file in Decimal/HEX
+        - Additional Macro Commands for:
+              Find and Replace in Files
+              Conversion from ASCII to UNICODE
+              UNICODE to ASCII
+              Duplicate Line
+              New Line/Insert Line
+        - Command line option (" -f") to search for a string from the command line
+              - Must be the last parameter of the command line
+              - Use the settings from the last find within UltraEdit to allow
+                flexibility
+        - Increased performance for Trim Trailing Spaces
+        - Display conversion for ISO 8859-2 Fonts from Windows normal fonts
+        - New CHM based help
+        - SFTP now supports PuTTY key format
+        - INI file is now by default under the %APPDATA% folder UNLESS one already
+          exists in the Windows Folder then it is used for compatability
+        - Other minor changes
+
+v10.10c - Bug Fixes
+          - FTP Current directory not always set correctly when switching
+            accounts if not doing a browse
+          - Project files sometimes does not sort the first file correctly
+          - Loading projects from older releases occasionally crashes
+          - Improvements to copy/paste between Unicode and non-Unicode
+            applications
+          - Screen sometimes not rendered correctly after selection on XP
+          - Other minor issues
+
+v10.10b - Bug Fixes
+          - Some list boxes not shown correctly when docked horizontally
+            (not vertically)
+          - Syntax highlighting dialog not showing all languages in some cases
+          - Output Window scroll width fixed for very long lines
+          - Folder files not always shown in Project List
+          - Opening project with open files in File Tree View would show
+            project files in list
+          - Print/print preview sometimes shows an extra character at end of
+            file
+          - Problem with cut/delete of large sections from files greater
+            than 2GB
+          - Revert to saved with UTF-8 BOM files would show the BOM characters
+          - UltraCompare Lite fixes
+          - Other minor issues
+        - Added check for UltraCompare Professional and use it if installed
+          instead of UltraCompare Lite
+        - For usability for those that are visually impaired added text
+          indicators in the General Configuration Tab to indicate items
+          that were checked or not
+
+v10.10a - Bug Fixes
+          - UltraCompare Binary Mode on Win 9x/Me not showing results
+          - Paste in HEX mode of data including nulls fails
+          - Paste some non-English characters in some locales caused
+            character conversions
+          - Several issues with projects including directories
+          - Find in Files always did a recursive search
+          - Fix spell checker dialogs for non-English versions
+          - Other minor issues
+        - Added Font Setting for UltraCompare
+        - Added INI settings allowing user to determine if the BOM should be
+          written:
+          - Write UTF-8 BOM = 1 - This setting causes the editor to write out
+            the Byte Order Mark (BOM) header in a file when it is saved.  If
+            this is not set, it will not write out the BOM unless the file
+            contained it when it was loaded into the editor.  If so, the BOM
+            will be written to the file irrespective of the setting.  The BOM
+            is an industry standard indicating the contents of the file for
+            various UNICODE formats.  This is set be default internally.
+          - Write UTF-8 BOM NF = 1 - This setting causes the editor to write out
+            the Byte Order Mark (BOM) header in a file when it is saved if the
+            file is a new file created within UltraEdit.  If the Write UTF-8 BOM
+            setting above is set, then the BOM will always be written and this is
+            ignored.  Otherwise, the BOM will only be written out for new files
+            if this is set.
+
+V10.10  - Resizeable dialogs for FTP Open/Save As, ASCII Table and
+           Find List lines containg string
+        - Column Insert Number feature allows Hex or Decimal
+        - Project Directories allow Recursive addition of files/folders
+        - SFTP allows Public/Private Key encryption
+        - Improved UTF-8 support with BOM detection
+        - Max columns increased to allow up to 20,000
+        - Word count enhanced with additional information
+        - Alt+ Up/Down commands to switch documents according to File Tab order
+        - Additional macro commands added for:
+            - Conversion to/from EBCDIC
+            - Next/Previous Document
+        - Setting of code page and locale:
+            - Locale used (optionally) for sort
+            - Code page used for Unicode conversions
+        - Increased UNDO buffer sizes
+        - Double click empty spaces to select all contiguous space
+        - Open of Unicode paths via Drag and Drop from Explorer
+        - Sort optionally uses locale to sort
+        - New file compare:
+            - Improved interface
+            - Better algorithms
+            - Supports binary compare
+            - Supports FTP files without saving locally
+        - Double click document file tab to close file
+        - Added INI setting to not automatically browse when changing FTP account
+          (Default now not to browse)
+        - Other minor changes
+
+v10.00c - Bug Fixes
+          - Correction for syntax highlighting block comments
+          - Fix problem with "Cannot allocate memory for text expansion" after
+            using Preserve Case find
+          - Fixed problems related to users with advanced setting to use memory buffers set
+          - Fixed problem with macros and column mode
+          - Other minor issues
+
+v10.00b - Bug Fixes
+          - Installer issue sometimes causing a path problem
+          - Word-wrap positioning bug
+          - Other minor issues
+
+v10.00a - Bug Fixes
+          - Uninstall not working correctly
+          - Sort issue with UNICODE files
+          - Regular expression problem fixed
+          - Project/Treeview issues
+          - SFTP issues
+          - Other minor issues
+
+V10.00  - Secure FTP Support (SFTP)
+        - CSE HTML Validator integration:
+          - Run Validation
+          - Setup Validator Options and Configuration
+          - Job Type support
+          * Requires CSE HTML Validator from www.htmlvalidator.com
+        - Syntax Highlighting based on file name
+        - Project additions include:
+          - Support for nested groups with no limit on depth
+          - Directories allowed as a group
+          - Directory groups dynamically updated
+          - Direct addition/removal of files from File Tree View
+        - FTP Dropdown for recent directories/per account
+        - Function to close all files but active file added to File Menu and File Tab right click menu
+        - Macro command additions:
+          - IfFTP to check if file is an FTP file
+          - IfCharGt to check if character is greater than value
+          - IfColNumGt to check if column number is greater than value
+        - User tool ability to pass the line and column of the cursor to tool
+        - Syntax Highlighting allows delimiters to be start character of word
+        - Support for OEM Fixed Font selection
+        - Preserve Case Replace to preserve the case of a word when being replaced
+        - Option for CHM user help files to always be on top, or not
+        - File Tree View remembers horizontal scroll position between sessions
+        - Many additional configuration items for user preferences
+        - INI Settings moved to configuration
+        - Other minor changes
+
+v9.20b  - Bug Fixes
+          - Fix "random" crash/UltraEdit disappear after Find in Files
+            and other list related operations (created in v9.20a)
+          - Fix issues relating to hiding lines
+          - Minor syntax highlighiting changes with string comments
+          - Fix problem with finding matches braces at end of file
+          - Other minor issues
+
+v9.20a  - Bug Fixes
+          - Function list scrollbar not shown
+          - Tools in macros run from command line did not display captured
+            output
+          - Project Menu could not be disabled on main menu
+          - Focus now goes to edit window if closing Function List or
+            Tree View when they have focus
+          - Corrected Save As issues with MVS FTP filenames
+          - Corrected FTP directory listing for Stratus
+          - Other minor issues
+
+v9.20   - Function list highlights function that cursor is in
+        - Auto-Complete includes functions in function list
+        - Automatic highlighting of brackets/braces as typing or positioning occurs
+        - Automatic highlighting of brackets/braces includes < and > for HTML designated files
+        - Incremental Search
+        - QuickRecord Macros - One keystroke recording
+        - File tabs showing filenames may be dragged and dropped individually
+        - Macro support added for Copy Active Path/Name
+        - Macro support added for Save All
+        - Increase find/replace string limit to 30,000 characters when using ^c or ^s
+        - Allow environment variables in tool commands/paths (%Env:)
+        - New indent strings to specify indentation if string is at start of line
+        - Marker characters can now have same the same start and end characters
+        - FTP Save (not save as) option to save local copy of file automatically
+        - HEX mode copy function to copy HEX view of text to clipboard
+        - New INI Setting ("One Based Ruler") to allow the ruler to start at 1, not 0
+        - Output window now scrolls when data is added to it from tools commands
+        - Keystroke added for Split Window and File Rename
+        - Other minor changes
+
+v9.10b  - Changed directory browser to get rid of delay for non-connected
+          drives
+        - Bug Fixes
+          - Fix problem with Read-Only setting change changing properties of
+            file when INI setting not set
+          - Fix problem with sort of UNICODE files
+          - Fix problem with wrap/CRLF conversions on double byte files
+          - Fix delete line in column mode
+          - Fix problem with last line not being converted in UNIX-DOS
+            conversion
+          - Fix problem with UNDO and Replace All
+          - Other minor fixes
+
+v9.10a  - Bug Fixes
+          - Fix for column number range with line comment restrictions
+          - Added "Check Short Name" INI setting (set to 0 to disable check
+            when opening file for matching name with existing names).  On some
+            servers the shortname is the same, causing UltraEdit not to open
+            the file
+          - Fix problem with opening FTP files from command line if UltraEdit
+            already running
+          - Fix problem of opening multiple files with wildcards from command
+            line
+          - Fixed some issue with sort, including numeric sort
+          - Fixed issues with MVS Save/Save As
+          - Fix problem with replace in selected text in column mode
+          - Fix issues with find and selected text
+          - Other minor issues reported
+
+v9.10   - Support for files greater than 4GB (previously support was for files
+          up to 2GB)
+        - View menu items (and toolbar support) to zoom in/out by
+          increasing/decreasing font size
+        - Sort support for up to 4 sort keys, much quicker in most cases
+        - Sort option for numeric sort vs. alphanumeric
+        - Back/Forward functions take you to the previous place you edited,
+          or scrolled from, or jumped to a tag from etc. and works across
+          multiple files
+        - Added FTP support for AS400
+        - Added FTP support for MVS
+        - FTP Dialog now has a log mode that shows the FTP session between
+          UltraEdit and the FTP server
+        - Increased performance for Macros under some conditions
+        - Increased performance for Replace All on larger files
+        - Added default Open Directory and Default Project File Directory
+        - Syntax highlighting allows user to specify what characters precede line
+          comments
+        - Syntax highlighting allows user to specify what columns line comments
+          are valid for
+        - INI setting to disable new style toolbar and menus - use old style
+          toolbar configuration compatible with screen readers and quicker load
+        - Add option for tool configuration to save active file (or not)
+          before running the tool
+        - Quick Open now has option to open all match files recursively through
+          sub directories
+        - Command line option to force OEM character set
+        - Find in Files with an empty find string will create listing of all
+          files matching directory/name specification
+        - Undo supported for Replace all
+        - INI option to use memory for editing
+        - Updated HTML Tidy version
+
+v9.00c  - Bug Fixes
+          - New file created on load not automatically being closed when file is
+            opened
+          - Fix problem with UNICODE and syntax highlighting comments
+          - HEX mode not accepting ASCII character input
+          - Fixed problem with some UTF-8 or UNICODE files being corrupted
+            with extra '00'
+          - Other minor issues
+
+v9.00b  - Bug Fixes
+          - Issues relating to display of page break
+          - On XP, non printable characters are not displayed by system routines
+            and are ignored.  Changed UltraEdit to display '?' instead
+          - Fixed crash with macros invoked from the command line that also exit
+          - Corrected Find in Files positioning with some UNIX files
+          - Fixed several problems with UNICODE files
+          - Fixed problem with Print Preview and tabs with two pages on one page
+          - Fixed scrolling problem with hidden lines
+          - Fixed problem with replace in selection when selection made from
+            right to left
+          - Corrected problem with relative paths in projects
+          - Fixed crash at startup with nVidia drivers and nView
+          - Other minor issues
+        - Added INI setting "Display DOS Lines Only" that causes only lines
+          terminated with CR/LF to display as separate lines
+        - Added INI setting "ClearType" for XP users that use ClearType fonts
+          to provide better display of these with Syntax Highlighting
+        - Added View Template List to key mapping
+
+v9.00a  - Bug Fixes
+          - Issues relating to display of page break
+          - Unicode search of ASIAN characters sometimes failed
+          - Addressed several issues with menu hot keys
+          - Running tools will cause the file change detection to run
+          - Fixed issue with some user tool bitmaps not showing correctly
+            on some systems
+          - Fixed problem with UTF-8 and FTP save
+          - Fixed problems with Column Mode and UTF-8/Unicode files
+          - Fixed problem with file associations setting the wrong default icon
+            registry setting
+          - Fixed FTP problem with some passwords not working
+          - Fixed FTP problem with some links and directory changes
+          - Other minor issues reported
+        - Added PER TOOL option to display DOS box while running
+        - Changed Find in Files back to pre-V9 default for directory
+          with INI setting "FIFUseActiveFilePath" option in the [Settings]
+          section to default to active file path
+        - Added Hungarian Spelling Dictionary
+
+v9.00   - Multiple Tools bars available (user configurable)
+        - Configurable menus
+        - Icons on menus
+        - Find "entry" box/drop down on toolbar for quick finds
+        - Macros can be run when file is loaded and when file is saved
+        - Macro functions for "IfNameIs" and "IfExtIs" to check active filename/
+          extension within macros for conditional statements
+        - Improved macro shortcut support
+        - Reformmatting of existing code to indent/unindent based on language
+        - Automatic unindenting now happens when unindent string typed, not
+          after newline
+        - Syntax highlighting support for up to 20 languages
+        - EBCDIC/HEX combined view without conversion
+        - Printing support of hidden lines
+        - User tools may have user ICONS or BITMAPS
+        - User tools now run by default without command window showing
+        - Increased number of function strings to 6 for syntax highlighting
+        - Commands for going to END of next or previous WORD
+        - New template list view provided for quick access to templates
+        - Ctags support*:
+          - Project specific Ctag file with option to create automtaically when
+            opened
+          - Configurable parameters and tag file for use outside of projects
+          - Find Symbol command will locate symbol in ctag file of selected
+            item or item under cursor and postion to it in appropriate file
+          - *Requires the use of thirdpart CTag EXE for tagfile generation
+            (links provided)
+        - INI setting to disable left cursor from going to end of previous line
+        - Tools with output to output window run without showing DOS box
+        - Command line parameter (/a) added to allow specifying an already open
+          file without having the prompt to reload it (just position to
+          specified line)
+        - Command line parameter -lx and -cx allowed following each file name
+          to specify line and column to position to.  Older method still
+          supported also
+        - Multiple search paths allowed with find and replace in files
+        - View Menu includes option to show Page Breaks as line across the
+          screen
+        - Added ability to copy Function List contents to clipboard
+        - Find and Replace in Files now allows multiple directories to be
+          specified
+        - Other minor changes
+
+v8.20a  - Find in files sometimes listed the wrong line number for UNIX files
+        - Function List sometimes positioned to the wrong line for the function
+        - Improvements to UNIX style Regular Expressions
+        - File changed notification dialog corrected to show longer filenames
+        - UNIX UTF-8 files now converted correctly
+        - UNICODE column justify corrected
+        - Corrected print/print preview with Syntax Highlighting in Windows 95
+        - Line selection sometimes selected too much text for copy/paste
+        - Corrected auto-correct
+        - Full screen mode toolbar now remembers it's position
+        - Corrected input processing from IME2000
+        - Other minor changes
+
+v8.20   - Full Screen mode
+        - Improved UNICODE support on all Win32 platforms
+        - Support for UTF-8 and conversions to/from UTF-8
+        - Support for the new WM_UNICHAR message
+        - Rename of files supported
+        - Column mode justify (Left, Right, Center) to
+          justify text just in the specified columns
+        - Find in Files and Replace in Files option for UNICODE Searches
+        - Command line option to ignore file delete detection just for
+          the files loaded from the command line
+        - File change notification dialog now allow all or none options
+          for reloading changed files
+        - Search string not found dialog now has option to search from
+          other end of file
+        - Increased recent project list to 12 entries
+        - INI Setting for file compare EXE to use in place of UltraEdit's
+          compare
+        - INI option to ignore file delete detection
+        - Macro support to clear clipboard
+        - Macro support to close file with option to save file, or not
+          to save file without prompt
+        - Other minor changes
+
+v8.10b  - Bug Fixes
+          - SPANISH version spell checker fixed
+          - Column mode functions in macros on large files corrected
+          - Fix for page up positioning in some instances with wide files
+          - Fix for scrolling issues with hidden lines
+          - Tab indent of lines corrected to use indent value as appropriate
+          - Conversion of files to fixed column with null fields corrected
+          - Other minor issues
+
+v8.10a  - Bug Fixes
+          - On some systems the taglist and templates were not initially loaded
+          - Column Markers lost when loaded
+          - Function List would not position to function for UNIX non
+            converted files
+          - Once a tool captured wrote the output to the active file, all
+            tools wrote output to file
+          - Double byte systems did not show cursor position correctly
+            for double byte characters
+          - Some fonts show problems with cursor positioning under certain
+            conditions
+          - Other minor issues
+
+v8.10   - Ability to hide and unhide selected portions of text
+        - Edit Unix/MAC files without any conversion required
+          (^n/^r used in find/replace for lf/cr)
+        - Line numbers now based on real lines not wrapped lines
+        - Conversion of character delimited files to fixed column
+        - Conversion of fixed column file to character delimited
+        - User bitmaps for user and project tools
+        - User/project tools can have output go directly to the active document
+        - Separate indent and tab stop setting
+        - Commands to position active line at top, middle or bottom of screen
+        - Cache INI file for quicker load/shutdown
+        - Functions strings can recognize multiple lines
+        - Replace in Files option to list changed files and number of occurrences
+        - Output window double click will look for file in project directory if
+          not fully qualified and not found in active file directory
+        - Word count will count only selected text if selection exists
+        - Line comments up to 5 characters now supported
+        - Unix Regular Expressions setting can be changed in macros
+        - INI option to delete existing file before saving
+        - INI option to edit in text mode files containing nulls (HEX 00)
+        - Other minor changes
+
+v8.00b  - Bug Fixes
+          - Problem with some find in files results showing incorrect
+            line number
+          - Replace in all open files ignored read-only status of file
+          - When using View As File Type, the function list was not updated
+          - Various corrections for Unicode file types
+          - Fix for hanging indent with reformat file
+          - Minor fixes for regular expressions
+          - Problem with selection in some macros
+          - Other minor mixes
+
+v8.00a  - Bug Fixes
+          - Error created when function list selected to search project files
+             but no project active
+          - Focus now goes (again) to Function List when invoked
+          - Find in Files fixed for MAC files (returned wrong line number)
+          - Make Copy/Backup now works for FTP files (local copy)
+          - Fixed cursor jumping in hex mode in some configurations
+          - HTML Tidy now updates original file automatically IF the
+              HTML Tidy configuration is set to do so
+          - Fixed HOT Keys for templates 10-19
+          - Fixed delay on some systems after double click to open file
+              from explorer then going back to explorer
+          - Fixed running tool from within macro
+          - Other minor fixes
+
+v8.00   - Function list support for searching for functions in all project files
+        - Multiple function strings per language (3)
+        - HTML Tidy support (integrated)
+          see http://www.w3.org/People/Raggett/tidy/
+        - Project specific user tools (as well as standard set)
+        - Option to sort (or not) the function list
+        - Group support added for projects, allowing files to be
+          grouped together
+        - Option to open file without temp file now has threshold size to
+          allow only large files to use this option
+        - Copy - append, allows the user to copy the selection and append it to
+          the clipboard
+        - Cut - append, allows the user to cut the selection and append it to
+          the clipboard
+        - Color selector added to allow user to select a color and insert the value
+          into a file
+        - Delete next and previous word changed to act more like other applications
+        - Number of templates increased to 50
+        - Filter for File Tree View
+        - All macro lists are now sorted alphabetically
+        - The ESCAPE key will now abort a macro.
+        - The ESCAPE key will now abort a large file being loaded.
+        - Changes to the automatic UNIX detection to cater for mixed UNIX/DOS
+          and for UNIX files with ^M's
+        - FTP - Added OS9000 support
+              - Option not to display directories

@@ -52,6 +52,7 @@ namespace System.Linq
         }
 
         /// <summary> 将IEnumerable<T>转换为指定类型结合 </summary>
+     
         public static void RemoveAtAfter<T>(this Collection<T> source, int index)
         {
             int temp = source.Count;
@@ -61,5 +62,6 @@ namespace System.Linq
                 source.RemoveAt(index);
             }
         }
+
     }
 }

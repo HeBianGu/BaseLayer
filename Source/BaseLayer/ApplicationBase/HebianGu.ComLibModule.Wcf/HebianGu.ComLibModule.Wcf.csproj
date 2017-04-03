@@ -42,10 +42,19 @@
     <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HebianGu.ComLibModule.CMD, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\HebianGu.ComLibModule.CMD.exe</HintPath>
+    </Reference>
+    <Reference Include="HebianGu.ComLibModule.WinHelper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Product\Debug\HebianGu.ComLibModule.WinHelper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
@@ -58,6 +67,12 @@
     <Compile Include="LogProvider.cs" />
     <Compile Include="Entity\CaseConfiger.cs" />
     <Compile Include="Entity\Step.cs" />
+    <Compile Include="Service\ImageSenderService.cs" />
+    <Compile Include="ServiceInterface\IImageSenderService.cs" />
+    <Compile Include="ServiceInterface\IStreamPrivider.cs" />
+    <Compile Include="ServiceInterface\IExcuteService.cs" />
+    <Compile Include="Service\ExcuteService.cs" />
+    <Compile Include="Service\StreamPrivider.cs" />
     <Compile Include="WcfConfiger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
